@@ -2,18 +2,18 @@
   {
     "version": "1.0.2",
     "label": "v1.0.2",
-    "baseUrl": "/docs/category/api/"
+    "baseUrl": "api"
   },
   {
     "version": "1.0.0",
     "label": "v1.0.0",
-    "baseUrl": "/docs/category/api-2/",
-    "downloadUrl": "https://raw.githubusercontent.com/timler/fasp-api/master/documentation/static/api/test-v1.0.0.json"
+    "baseUrl": "api-2",
+    "downloadUrl": "https://raw.githubusercontent.com/timler/fasp-documentation/main/documentation/static/api//test-v1.0.0.json"
   },
   {
     "version": "1.0.1",
     "label": "v1.0.1",
-    "baseUrl": "/docs/category/api-1/",
-    "downloadUrl": "https://raw.githubusercontent.com/timler/fasp-api/master/documentation/static/api/test-v1.0.1.json"
+    "baseUrl": "api-1",
+    "downloadUrl": "https://raw.githubusercontent.com/timler/fasp-documentation/main/documentation/static/api//test-v1.0.1.json"
   }
 ]

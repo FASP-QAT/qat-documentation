@@ -25,6 +25,7 @@ const config = {
   baseUrl: `/${projectName}/`,
   organizationName: orgName,
   projectName: projectName,
+  trailingSlash: false,
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -221,7 +222,7 @@ const config = {
               showSchemas: true,
               version: "1.0.2", 
               label: "v1.0.2",
-              baseUrl: "/docs/category/api/",
+              baseUrl: "api",
               downloadUrl: `${apiDownloadUrl}/test-v1.0.2.json`,
               versions: {
                 // previous versions
@@ -229,14 +230,14 @@ const config = {
                   specPath: "static/api/test-v1.0.0.json",
                   outputDir: "docs/api/v1.0.0",
                   label: "v1.0.0",
-                  baseUrl: "/docs/category/api-2/",
+                  baseUrl: "api-2",
                   downloadUrl: `${apiDownloadUrl}/test-v1.0.0.json`,
                 },
                 "1.0.1": {
                   specPath: "static/api/test-v1.0.1.json",
                   outputDir: "docs/api/v1.0.1",
                   label: "v1.0.1",
-                  baseUrl: "/docs/category/api-1/",
+                  baseUrl: "api-1",
                   downloadUrl: `${apiDownloadUrl}/test-v1.0.1.json`,
                 }
               },
