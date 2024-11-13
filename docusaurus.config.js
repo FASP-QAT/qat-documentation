@@ -235,14 +235,14 @@ const config = {
                   specPath: "static/api/test-v1.0.0.json",
                   outputDir: "docs/api/v1.0.0",
                   label: "v1.0.0",
-                  baseUrl: "api-2",
+                  baseUrl: "/fasp-documentation/docs/api-2",
                   downloadUrl: `${apiDownloadUrl}/test-v1.0.0.json`,
                 },
                 "1.0.1": {
                   specPath: "static/api/test-v1.0.1.json",
                   outputDir: "docs/api/v1.0.1",
                   label: "v1.0.1",
-                  baseUrl: "api-1",
+                  baseUrl: "/fasp-documentation/docs/api-1",
                   downloadUrl: `${apiDownloadUrl}/test-v1.0.1.json`,
                 }
               },

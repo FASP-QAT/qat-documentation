@@ -101,6 +101,7 @@ const sidebars = {
       link: {
         type: "generated-index",
         title: "QAT API (1.0.2)",
+        slug: "api"
       },
       items: require("./docs/api/sidebar.ts"),
     },
@@ -146,6 +147,7 @@ const sidebars = {
       link: {
         type: "generated-index",
         title: "QAT API (1.0.0)",
+        slug: "api-1"
       },
       items: require("./docs/api/v1.0.0/sidebar.ts"),
     },
