@@ -43,7 +43,7 @@ function HomepageHeader() {
 function ResourceColumns() {
   const resources = [
     {
-      image: "/img/home/QAT Overview Cover.png",
+      image: "img/home/QAT Overview Cover.png",
       heading: "Overview",
       text: <>
         <p>Download this overview to learn how QAT enhances supply planning through its improved 
