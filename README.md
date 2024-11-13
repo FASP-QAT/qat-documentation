@@ -137,6 +137,13 @@ USE_SSH=true npm run deploy
 
 This will build the website and push it to the `gh-pages` branch of the repository.
 
+Note: before you deploy, you need to generate the API docs and run a build:
+
+```bash
+npm run gen-api-docs:all
+npm run build
+```
+
 ### Plugins
 
 #### OpenAPI Documentation
