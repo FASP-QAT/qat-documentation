@@ -6,7 +6,9 @@ This repository contains the documentation website for the FASP Quantification A
 
 ### Accessing the Documentation
 
-You can read the documentation at [insert-documentation-url-here]. The documentation is organized into:
+You can read the documentation at [https://timler.github.io/fasp-documentation/](https://timler.github.io/fasp-documentation/). 
+
+The documentation is organized into:
 - User guides
 - Technical references
 - API documentation
@@ -56,8 +58,8 @@ This documentation website is built using [Docusaurus](https://docusaurus.io/), 
 #### Check out the project
 
 ```bash
-git clone [repository-url]
-cd fasp-qat-documentation
+git clone git@github.com:timler/fasp-documentation.git
+cd fasp-documentation
 ```
 
 #### Installation
