@@ -83,7 +83,7 @@ const sidebars = {
     },
   ],
   // Current API version sidebar
-  "api-1.0.2": [ 
+  "api-latest": [ 
     {
       type: "html",
       defaultStyle: true,

@@ -79,7 +79,12 @@ const config = {
           src: 'img/QAT-logo.png',
         },
         items: [
-          {to: 'docs/category/api', label: 'API', position: 'left'},
+          {
+            type: 'docSidebar',
+            sidebarId: 'api-latest',
+            label: 'API',
+            position: 'left',
+          },
           {
             type: 'docSidebar',
             sidebarId: 'userSidebar',
