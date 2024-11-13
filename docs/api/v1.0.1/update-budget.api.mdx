@@ -1,0 +1,71 @@
+---
+id: update-budget
+title: "Update Budget"
+description: "API used to update a Budget"
+sidebar_label: "Update Budget"
+hide_title: true
+hide_table_of_contents: true
+api: eJydVttu2zgQ/RWCL32J5UsbtPVTncZFAuymie3sQ4MioKSxxVYSVXIY1zD87ztDypfY2xTdPAQQOZczM+cMvZaoFk4OH2Tq8wWg/Homc3CZ1Q1qU8uhHN1eC+8gF2iEb3KFIJS4iMZn0jRgFVte52Qb73eXjbKqAgTLCdaypg8ySrfXmsP/8GBX8jjprIA2hzDpN8hQYKFQrIwXS1XjHgt5uqyASsnhWuKq4QTRQ242VIsFSuDwwuQrtvj/WTJTI9TIQVTTlDoLVXe/OY60/iUIaoLlHqEGx7exeG7WzlJT4AVYMp0bWymMR68HcnMmS5VC+fuoUB/YOLS6XlD55K8y1E9wcJkaU4KqOXZmgUrLL7m+E+8DMNyADmqaXQDk8G+T67n+M09yRY0l27X0CPh4PNoCtQOth3DgGlO7WNag1zsd2gTQ29oRCac+y8A5kZkchJ7T8EDs+EgTdMJFi7kvn08Q4SduRxdwvOm9finTFWIzRYXeJZ8+Ty6uLy/HN9uM9w6syA04URsUhXoifURcRB+V58FoJ4mXQJy/XO4BiOub2XhyM/rrcTqe/DOePI4nk8+TFpCFWLqpqBv8LcBaYyO1c50HmKoszfKoYQQ3M1VTwjHfj4ASUhJ1YVjwjY86x4I+uqrR3UjwLusS7NNW+t4Si2VBFbhhl+yaxC3Vglhf+DShrOzquqMStXfdu9GsO0j6g5OtMI0+Vz4VlybzFeGL0FWdixnJPPD+7DjdcrlMfngSNLE2ylbVqlyhzlxi7OIkza01uc9C4FiDIEYLQkWWT8pqlZaBn2HBcF8m+yUz/qm4hc+l3jsQMkt1J9G9QJn+R5Ik+g/edHpvO4P3s/758Lw/HLxLem/7X+R/yfDX1hvetHMTJtlK8O5ZN0L7RtuWiBmtCK6UZhf70U96Sf+kS/QuvIocb9lOZKIeiWloWcsgKo/ztpv/02h6KxBURbd/OiLarpo9rqbTR47zeHX3YVG4rNO4KpjwctIZ0O44yDhqFC1mMUh6JynnxiSpsmE1NcZhpeoDx/v40u10+6z29V4dv3ke29UYFNSUSofFG3CsW9U80HOiyXL3KvILXBAevlqvU+Xg3pabDR/Ht3L48HXPQ/6ikAWonJrOUvsOZCI/RoCdGQNg89IzkJOni9USPUY0xgYPbPeyZ57vJH97zzpI2we1ot1Lh1Yt6ZD/D2X4VcAZwg4PZ2sibL3wasG2MST//Qvxf+Lc
+sidebar_class_name: "put api-method"
+info_path: docs/api/v1.0.1/quantification-and-analytics-tool
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Update Budget"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"put"}
+  path={"/api/budget/"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+API used to update a Budget
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"budget","in":"query","description":"The Budget object that you want to update","schema":{"type":"object"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"description":"The Budget object that you want to update","content":{"application/json":{"schema":{"type":"object","properties":{"budgetId":{"type":"integer","format":"int32"},"label":{"type":"object","properties":{"en":{"type":"string"}}},"active":{"type":"boolean"},"createdDate":{"type":"string","format":"date-time"},"lastModifiedDate":{"type":"string","format":"date-time"}},"title":"Budget"}}},"required":true}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Returns a Success code if the operation was successful","content":{"text/json":{}}},"403":{"description":"Returns a HttpStatus.FORBIDDEN if the User does not have access to add the Budget","content":{"text/json":{}}},"500":{"description":"Returns a HttpStatus.INTERNAL_SERVER_ERROR if there was some other error that did not allow the operation to complete","content":{"text/json":{}}}}}
+>
+  
+</StatusCodes>
+
+
+      

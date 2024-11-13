@@ -1,0 +1,33 @@
+---
+id: budget
+title: "Budget"
+description: ""
+sidebar_label: "Budget"
+hide_title: true
+hide_table_of_contents: true
+schema: true
+sample: {"budgetId":0,"label":{"en":"string"},"active":true,"createdDate":"2024-07-29T15:51:28.071Z","lastModifiedDate":"2024-07-29T15:51:28.071Z"}
+custom_edit_url: null
+---
+
+import Schema from "@theme/Schema";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Budget"}
+>
+</Heading>
+
+
+
+
+
+<Schema
+  schema={{"type":"object","properties":{"budgetId":{"type":"integer","format":"int32"},"label":{"type":"object","properties":{"en":{"type":"string"}}},"active":{"type":"boolean"},"createdDate":{"type":"string","format":"date-time"},"lastModifiedDate":{"type":"string","format":"date-time"}},"title":"Budget"}}
+  schemaType={"response"}
+>
+  
+</Schema>
+            

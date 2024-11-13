@@ -1,0 +1,63 @@
+---
+id: get-budget-list
+title: "Get Budget list"
+description: "Returns the complete list of Budgets List<Budget>"
+sidebar_label: "Get Budget list"
+hide_title: true
+hide_table_of_contents: true
+api: eJydVE1v2zAM/SuCLrukdpphl2IYlqFbW2AD2qU7FUVB20yszrZUiU4WGPnvI6WsTfqBob3EkcTHR/E9atAEi6CPrnTRVwskfT3SFYbSG0fGdvpI/0TqfRcU1ahK27oGCVVjAik7V18iKKjvvP6YFp/0SFuHHgR/VnEG3kxHEsWnHoOzXUCmHfRkPJbPy5wJGhkZW9qOsCOBgHONKSNNfhsEN+hQ1tiC/KO1Q84E3sOacYawDTv7trjFUhI6L8WSSdWkJkjV95GGCRfoOXRufQuUtt5P9GakGyiw+X9W7HZiAnnTLfRmw3goySxx57CwtkHoJHfpEQirY/55it4ppuKAAzItpoIC/bCVmZvXIRlKhhqJS/2W+mT3w3PynHFLfAeNQu+tZ5WAlPO4ZGGwiqJ5ZDZccsi9Sd6q4Es9Fepn25oKb5Fqu3WfgIFqXuTgTJ5Eznk3oF+iF/sPuvespK6JXDjKOc5lYQULVr7ui4yNL9CQTxsyfcgvppf5JDuc6MfTMkuY075Qx7bsW75pvJ+CrlKXGCgWOXpMt1qtsrseOmLlUkOA+7smU4bM+sUTmnNvq76MidMdFKuquCqOXII3UDSxTZsNz7Pp5jZ2aqvwxR5RrGz6j01dsgMlCbclUR1m42z8pIDp+dk7nk+roCwxpEllejWL1WxlZnsLbwet0H6bzs4VIbR8+trbsyWMIE5nsxvJc3N68XlRh/LAhTaGiPdNifyq7DBOHbCb1CTWv085tzYrwEfnOxuohW4HeMJ23Xft3u2HBxO/6XncWpbwD+WuARPnPdY3bI16xbNhOHL7KI+0vMs11ylHw1BAwF++2Wxk+65Hv+b96wfpZcUpa4SKxRB3/8a1NITFchQ90vTxeXw8geKX+9E5+XrJDfoLmVccxQ==
+sidebar_class_name: "get api-method"
+info_path: docs/api/v1.0.0/quantification-and-analytics-tool
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get Budget list"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/api/budget/"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Returns the complete list of Budgets List&lt;Budget&gt;
+
+<ParamsDetails
+  parameters={undefined}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Returns the Budget list","content":{"application/json":{"schema":{"type":"array","items":{"type":"object","properties":{"budgetId":{"type":"integer","format":"int32"},"label":{"type":"object","properties":{"en":{"type":"string"}}},"active":{"type":"boolean"},"createdDate":{"type":"string","format":"date-time"},"lastModifiedDate":{"type":"string","format":"date-time"}},"title":"Budget"}}}}},"500":{"description":"Internal error that prevented the retrieval of Budget list","content":{"application/json":{"schema":{"type":"object","properties":{"error":{"type":"string"}}}}}}}}
+>
+  
+</StatusCodes>
+
+
+      
