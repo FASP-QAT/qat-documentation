@@ -128,23 +128,12 @@ The `build` command generates static content into the `build` directory.
 
 #### Deploying to GitHub Pages
 
-1. Update `docusaurus.config.js` with your GitHub Pages settings:
-```javascript
-module.exports = {
-  url: 'https://username.github.io',
-  baseUrl: '/repository-name/',
-  organizationName: 'username',
-  projectName: 'repository-name',
-  deploymentBranch: 'gh-pages',  // The branch to deploy to
-}
-```
-
-2. Deploy using the following command:
+Deploy using the following command:
 ```bash
-GIT_USER=<GITHUB_USERNAME> npm run deploy
+USE_SSH=true npm run deploy
 ```
 
-This will build the website and push it to the `gh-pages` branch of your repository.
+This will build the website and push it to the `gh-pages` branch of the repository.
 
 ### Plugins
 
