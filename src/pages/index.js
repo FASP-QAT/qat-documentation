@@ -172,9 +172,9 @@ export default function Home() {
           Development or the U.S. government.
           </p>
           <div style={{ display: 'flex', justifyContent: 'center', flexWrap: 'wrap', gap: '2rem', marginTop: '2rem', marginBottom: '2rem' }}>
-            <img src="/img/home/USAID-wordmark.png" alt="USAID" style={{ maxWidth: '300px', width: '100%', height: 'auto', objectFit: 'contain' }} />
-            <img src="/img/home/PEPFAR-logo.png" alt="PEPFAR" style={{ maxWidth: '300px', width: '100%', height: 'auto', objectFit: 'contain' }} />
-            <img src="/img/home/USAID-presidents-malaria-initiative.png" alt="PEPFAR Malaria Initiative" style={{ maxWidth: '300px', width: '100%', height: 'auto', objectFit: 'contain' }} />
+            <img src="img/home/USAID-wordmark.png" alt="USAID" style={{ maxWidth: '300px', width: '100%', height: 'auto', objectFit: 'contain' }} />
+            <img src="img/home/PEPFAR-logo.png" alt="PEPFAR" style={{ maxWidth: '300px', width: '100%', height: 'auto', objectFit: 'contain' }} />
+            <img src="img/home/USAID-presidents-malaria-initiative.png" alt="PEPFAR Malaria Initiative" style={{ maxWidth: '300px', width: '100%', height: 'auto', objectFit: 'contain' }} />
           </div>
         </div>
       </main>
