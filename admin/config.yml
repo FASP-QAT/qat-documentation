@@ -2,6 +2,7 @@ backend:
   name: github
   repo: timler/fasp-documentation
   branch: main
+  auth_endpoint: https://github.com/login/oauth/authorize
   base_url: https://timler.github.io/fasp-documentation/admin
 
 # Media files configuration
