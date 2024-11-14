@@ -2,7 +2,6 @@ backend:
   name: github
   repo: timler/fasp-documentation
   branch: main
-  auth_endpoint: https://github.com/login/oauth/authorize
   base_url: https://timler.github.io/fasp-documentation/admin
 
 # Media files configuration
@@ -15,7 +14,8 @@ collections:
     label: "User Documentation"
     folder: "docs/user"
     create: true
-    slug: "{{slug}}"
+    slug: "{{slug}}",
+    preview_path: "docs/user/{{slug}}",
     fields:
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Sidebar Label", name: "sidebar_label", widget: "string"}
@@ -28,6 +28,7 @@ collections:
     folder: "docs/developer"
     create: true
     slug: "{{slug}}"
+    preview_path: "docs/developer/{{slug}}"
     fields:
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Sidebar Label", name: "sidebar_label", widget: "string"}
@@ -40,6 +41,7 @@ collections:
     folder: "docs/implementer"
     create: true
     slug: "{{slug}}"
+    preview_path: "docs/implementer/{{slug}}"
     fields:
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Sidebar Label", name: "sidebar_label", widget: "string"}
@@ -52,6 +54,7 @@ collections:
     folder: "docs/community"
     create: true
     slug: "{{slug}}"
+    preview_path: "docs/community/{{slug}}"
     fields:
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Sidebar Label", name: "sidebar_label", widget: "string"}
@@ -64,6 +67,7 @@ collections:
     folder: "docs/product"
     create: true
     slug: "{{slug}}"
+    preview_path: "docs/product/{{slug}}"
     fields:
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Sidebar Label", name: "sidebar_label", widget: "string"}
