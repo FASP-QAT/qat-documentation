@@ -2,8 +2,9 @@ backend:
   name: github
   repo: timler/fasp-documentation
   branch: main
-  auth_endpoint: https://github.com/login/oauth/authorize
-  base_url: https://timler.github.io/fasp-documentation/admin
+
+# Enable local backend when running locally
+local_backend: true
 
 # Media files configuration
 media_folder: "static/img"
