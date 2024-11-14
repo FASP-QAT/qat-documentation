@@ -14,8 +14,8 @@ collections:
     label: "User Documentation"
     folder: "docs/user"
     create: true
-    slug: "{{slug}}",
-    preview_path: "docs/user/{{slug}}",
+    slug: "{{slug}}"
+    preview_path: "docs/user/{{slug}}"
     fields:
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Sidebar Label", name: "sidebar_label", widget: "string"}
