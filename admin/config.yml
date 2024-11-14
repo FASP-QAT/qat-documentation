@@ -2,6 +2,7 @@ backend:
   name: github
   repo: timler/fasp-documentation
   branch: main
+  base_url: https://timler.github.io/fasp-documentation/admin
 
 # Enable local backend when running locally
 local_backend: true
