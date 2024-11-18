@@ -66,12 +66,23 @@ Before proceeding, ensure you have the following installed:
       -d mysql:8
       ```
 
-      3.3. **Import database dumps**
+      3.3. **Create database and user** (__Optional__)
+      ```bash
+      docker exec -it qat-mysql mysql -uroot -proot
+      ```
+      Then create the database and user:
+      ```sql
+      CREATE DATABASE  IF NOT EXISTS `fasp` DEFAULT CHARACTER SET utf8 COLLATE utf8_bin;
+      CREATE USER 'faspUser'@'%' IDENTIFIED BY 'faspP@ssw0rd';
+      GRANT ALL PRIVILEGES ON fasp.* TO 'faspUser'@'%';
+      GRANT CREATE VIEW, CREATE ROUTINE ON fasp.* TO 'faspUser'@'%';
+      ```
+
+      3.4. **Import database dumps**
       ```bash
       cd src/main/resources
       7zz x fasp-db.7z -o"$QAT_CODE"
       docker exec -i qat-mysql mysql -uroot -proot < "$QAT_CODE/fasp-db.sql"
-      docker exec -i qat-mysql mysql -uroot -proot fasp < "$QAT_CODE/fasp-api/src/main/resources/mod2scripts/completeScript.sql"
       ```
 
    ***3B Locally***
@@ -80,6 +91,18 @@ Before proceeding, ensure you have the following installed:
       ```bash
       cd src/main/resources
       7zz x fasp-db.7z -o"$QAT_CODE"
+      ```
+
+      Set up the database and user:
+      ```bash
+      mysql -u root -p
+      ```
+      Then run the following SQL commands:
+      ```sql
+      CREATE DATABASE  IF NOT EXISTS `fasp` DEFAULT CHARACTER SET utf8 COLLATE utf8_bin;
+      CREATE USER 'faspUser'@'%' IDENTIFIED BY 'faspP@ssw0rd';
+      GRANT ALL PRIVILEGES ON fasp.* TO 'faspUser'@'%';
+      GRANT CREATE VIEW, CREATE ROUTINE ON fasp.* TO 'faspUser'@'%';
       ```
 
       Then import the database dumps:
@@ -127,6 +150,55 @@ Before proceeding, ensure you have the following installed:
    tail -f "$QAT_HOME/QAT/logs/qat/faspLogger.log"
    ```
    :::
+
+:::warning FIXME:
+Add information on how to add new accounts to the application, or provide a script to do so.
+:::
+
+## Verify the API is running
+
+1. Open the following URLs in your browser:
+
+   http://localhost:8084/actuator/health
+
+   You should see a response similar to the following:
+
+   ```json
+   {
+      "status": "UP"
+   }
+   ```
+
+## Swagger / OpenAPI
+
+Access the Swagger UI at:
+
+* http://localhost:8084/swagger-ui/index.html
+
+Access the OpenAPI spec at:
+
+* http://localhost:8084/v3/api-docs (JSON)
+* http://localhost:8084/v3api-docs.yaml
+
+### Authenticate
+
+To use the API, you need to authenticate. To do so, follow these steps:
+
+To get an access token:
+
+1. Scroll to `jwt-authentication-rest-controller`
+2. Open the `Post` `/authenticate` endpoint
+3. Click "Try it out"
+4. Enter your login details
+5. Click "Execute"
+
+To use the token to authenticate your requests:
+
+6. Scroll to the top, click "Authorize" button
+7. Enter token
+8. Click "Authorise"
+
+Now you can use the Swagger API endpoints
 
 # Troubleshooting
 

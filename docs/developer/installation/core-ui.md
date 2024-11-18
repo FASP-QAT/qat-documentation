@@ -46,3 +46,9 @@ Before you begin, ensure you have the following installed:
 :::tip Login
 To login to the application, you will need to create a new user in the backend.
 :::
+
+## Access the Application
+
+The application will be available at:
+
+http://localhost:4202/
