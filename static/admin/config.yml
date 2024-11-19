@@ -1,0 +1,90 @@
+
+# Media files configuration
+media_folder: "static/img"
+public_folder: "/static"
+
+backend:
+  name: github
+  repo: timler/fasp-documentation
+  branch: main
+  base_url: https://sveltia-cms-auth.dagmar-timler.workers.dev/
+
+collections:
+  # User Documentation
+  - name: "user-docs"
+    label: "User"
+    description: "Documentation for users of the FASP platform"
+    folder: "docs/user"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Sidebar Label", name: "sidebar_label", widget: "string"}
+      - {label: "Position", name: "sidebar_position", widget: "number"}
+      - {label: "Content", name: "body", widget: "markdown"}
+
+  # Developer Documentation
+  - name: "developer-docs"
+    label: "Developer"
+    description: "Documentation for developers of the FASP platform"
+    folder: "docs/developer"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Sidebar Label", name: "sidebar_label", widget: "string"}
+      - {label: "Position", name: "sidebar_position", widget: "number"}
+      - {label: "Content", name: "body", widget: "markdown"}
+
+
+  # Developer Documentation for Installation
+  - name: "developer-docs-installation"
+    label: "Developer/Installation"
+    description: "Documentation for developers of the FASP platform"
+    folder: "docs/developer/installation"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Sidebar Label", name: "sidebar_label", widget: "string"}
+      - {label: "Position", name: "sidebar_position", widget: "number"}
+      - {label: "Content", name: "body", widget: "markdown"}
+
+  # Implementer Documentation
+  - name: "implementer-docs"
+    label: "Implementer"
+    description: "Documentation for implementers of the FASP platform"
+    folder: "docs/implementer"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Sidebar Label", name: "sidebar_label", widget: "string"}
+      - {label: "Position", name: "sidebar_position", widget: "number"}
+      - {label: "Content", name: "body", widget: "markdown"}
+
+  # Community Documentation
+  - name: "community-docs"
+    label: "Community"
+    description: "Documentation for the FASP community"
+    folder: "docs/community"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Sidebar Label", name: "sidebar_label", widget: "string"}
+      - {label: "Position", name: "sidebar_position", widget: "number"}
+      - {label: "Content", name: "body", widget: "markdown"}
+
+  # Product Documentation
+  - name: "product-docs"
+    label: "Product"
+    description: "Documentation for the FASP product"
+    folder: "docs/product"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Sidebar Label", name: "sidebar_label", widget: "string"}
+      - {label: "Position", name: "sidebar_position", widget: "number"}
+      - {label: "Content", name: "body", widget: "markdown"}

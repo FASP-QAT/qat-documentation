@@ -3,11 +3,6 @@
 media_folder: "static/img"
 public_folder: "/static"
 
-# (Decap CMS only) Use local backend for development, run `npx decap-server` to proxy
-#local_backend: true
-#backend:
-#  name: git-gateway
-
 backend:
   name: github
   repo: timler/fasp-documentation
