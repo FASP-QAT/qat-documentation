@@ -7,7 +7,7 @@ sidebar_position: 1
 
 # Introduction
 
-This section provides detailed information for software engineers working on the QAT project. It covers the QAT architecture, database structure, and software design patterns used throughout the codebase.
+This section provides technical information for software and system engineers working on the QAT project. For developers, it includes information on the architecture, database, and system design. For system engineers, it includes information on server setup and configuration, external system integrations, and data flow.
 
 ## Contents
 - [Getting Started](./getting-started.md)

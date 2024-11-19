@@ -7,7 +7,7 @@ sidebar_position: 1
 
 # Introduction
 
-Welcome to the End User Guide for the FASP-QAT software. This guide is designed to help you, the end-user, understand and use the core features of the QAT application.
+Welcome to the User Documentation for the FASP QAT. This section is aimed at users of the FASP QAT. Both end-users and more technical users will find useful information here.
 
 ## What's Covered
 - [Getting Started](./getting-started.md)
