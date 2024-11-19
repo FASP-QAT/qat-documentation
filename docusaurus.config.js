@@ -145,6 +145,10 @@ const config = {
                 href: 'https://www.quantificationanalytics.org',
               },
               {
+                label: 'Login (Demo)',
+                href: 'https://demo.quantificationanalytics.org',
+              },
+              {
                 label: 'QAT Helpdesk',
                 href: 'https://qathelpdesk.atlassian.net/servicedesk/customer/portals',
               },
