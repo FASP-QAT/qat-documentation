@@ -19,9 +19,14 @@ Before you begin, ensure you have the following installed:
 
 1. **Clone the Repository**
    ```bash
-   git clone https://github.com/FASP-QAT/fasp-core-ui.git
+   git clone git@github.com:FASP-QAT/fasp-core-ui.git
    cd fasp-core-ui
    ```
+
+   Please make sure that you have:
+    - An SSH key generated on your local machine
+    - The SSH key added to your GitHub account
+    - An SSH agent running on your local machine
 
 2. **Configure Node Version (Optional)**  
    If you're using nvm to manage Node.js versions:
@@ -47,8 +52,7 @@ Before you begin, ensure you have the following installed:
 To login to the application, you will need to create a new user in the backend.
 :::
 
-## Access the Application
+## Verify the application is running
 
 The application will be available at:
-
 http://localhost:4202/

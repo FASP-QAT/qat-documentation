@@ -18,9 +18,14 @@ Before proceeding, ensure you have the following installed:
 
 1. **Clone the Repository**
    ```bash
-   git clone https://github.com/FASP-QAT/fasp-api.git
+   git clone git@github.com:FASP-QAT/fasp-api.git
    cd fasp-api
    ```
+
+   Please make sure that you have:
+    - An SSH key generated on your local machine
+    - The SSH key added to your GitHub account
+    - An SSH agent running on your local machine
 
 2. **Set up Application Directory Structure**  
 
