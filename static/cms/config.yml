@@ -52,20 +52,6 @@ collections:
       - {label: "Position", name: "sidebar_position", widget: "number"}
       - {label: "Content", name: "body", widget: "markdown"}
 
-  # Implementer Documentation
-  - name: "implementer-docs"
-    label: "Implementer"
-    icon: "build"
-    description: "Documentation for implementers of the FASP platform"
-    folder: "docs/implementer"
-    create: true
-    slug: "{{slug}}"
-    fields:
-      - {label: "Title", name: "title", widget: "string"}
-      - {label: "Sidebar Label", name: "sidebar_label", widget: "string"}
-      - {label: "Position", name: "sidebar_position", widget: "number"}
-      - {label: "Content", name: "body", widget: "markdown"}
-
   # Community Documentation
   - name: "community-docs"
     label: "Community"

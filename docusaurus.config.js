@@ -99,12 +99,6 @@ const config = {
           },
           {
             type: 'docSidebar',
-            sidebarId: 'implementerSidebar',
-            label: 'Implementer',
-            position: 'left',
-          },
-          {
-            type: 'docSidebar',
             sidebarId: 'communitySidebar',
             label: 'Community',
             position: 'left',
@@ -164,10 +158,6 @@ const config = {
               {
                 label: 'End-User Guide',
                 to: 'docs/user/intro',
-              },
-              {
-                label: 'Implementers Guide',
-                to: 'docs/implementer/intro',
               },
               {
                 label: 'Developer Onboarding',
