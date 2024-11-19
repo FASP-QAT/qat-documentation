@@ -20,7 +20,11 @@ There are several ways to contribute to our documentation:
 
 1. **Direct Editing**: Each page has an "Edit this page" link at the bottom. Clicking this will take you to GitHub where you can suggest changes.
 
-2. **Visual Editor**: We provide a user-friendly editor for non-technical users (coming soon).
+2. **Visual Editor**: We provide a user-friendly editor for non-technical users:
+   - Go to [/admin](/admin) to login to the Decap CMS editor
+   - Go to [/cms](/cms) to login to the Sveltia CMS editor
+
+Note: you will need to have a GitHub account and authenticate with GitHub.
 
 3. **File Creation**: Documentation pages are written in Markdown (.md) or MDX (.mdx) format:
    - Markdown (.md) files are simple text files with basic formatting
@@ -165,3 +169,40 @@ Features:
 - Offline search capability
 - Multiple language support
 - Customizable search settings
+
+### Editors
+
+To allow for non-technical users to edit the documentation, there are various 
+options for CMS (Content Management Systems). 
+
+These usually take the form of a hosted 3rd-party service that integrates 
+with your Git repository, such as:
+- [Halcyon CMS](https://halcyon.sh/)
+- [Dhub](https://dhub.io/)
+
+Or a self-hosted option, such as:
+- [Decap CMS](https://decapcms.org/)
+- [Sveltia CMS](https://sveltia.com/)
+
+We are trialing the above two self-hosted options for this project.
+
+The main difference between the two is that Decap CMS uses a traditional 
+CMS editor with a sidebar tree view, while Sveltia CMS uses a more modern, 
+React-based editor with a sidebar tree view.
+
+Sveltia CMS was built to be a drop-in replacement for Decap CMS, with some 
+additional features.
+
+They both require an OAuth2 backend to handle authentication. We are currently
+using [Sveltia CMS Auth](https://github.com/sveltia/sveltia-cms-auth) for this.
+
+#### Nested folders
+
+Decap CMS supports [nested folders (beta)](https://decapcms.org/docs/collection-nested/), which 
+allows for more complex content organization, however the directory structure is
+limited to a single level of folders.
+
+Sveltia CMS does not support nested folders yet.
+
+Any new folders added under `/docs` will need to be added to collections in
+`/admin/config.yml` and `/cms/config.yml`.
