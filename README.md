@@ -14,6 +14,43 @@ The documentation is organized into:
 - API documentation
 - Tutorials
 
+### Sections
+
+- **About (Product)**: This section contains product information about the FASP QAT project.
+   The following types of content can be found here:
+   - Application overview
+   - Value proposition, benefits, and use cases, etc
+   - Brochureware
+- **User**: This section is aimed at users of the FASP QAT. Both end-users and more technical users will find useful information here.
+   The following types of content can be found here:
+   - Getting started (for end-users)
+   - User guide
+   - Cheatsheets
+   - Troubleshooting and support
+   - Configuration and customization (for more technical users)
+   - Dashboard integration API documentation (for more technical users)
+- **Developer**: This section is aimed at developers who are interested in contributing to the FASP QAT.
+   The following types of content can be found here:
+   - Getting started (for developers to install the FASP QAT on their own systems)
+   - Software architecture
+   - Database schema and other documentation
+   - System design
+   - Server setup and configuration
+   - External system integrations
+   - Data flow
+   - Code documentation (high level)
+   - Developer tutorials (or links to external tutorials)
+- **Community**: This section contains information for the FASP community.
+   The following types of content can be found here:
+   - Contributing to the FASP QAT
+   - Development process
+   - Code of conduct
+   - Security policy
+   - Community meetings and events
+   - Release notes
+   - Roadmap
+- **API documentation** contains generated API documentation for the FASP QAT APIs.
+
 ### Contributing to Documentation
 
 There are several ways to contribute to our documentation:
