@@ -128,15 +128,30 @@ npm run docusaurus docs:version 1.0
 ```
 
 This will:
-- Create a snapshot of your current docs
+- Create a snapshot of your current docs as a new version
+- Set the current version as the latest version
 - Create a new version dropdown
-- Copy the current docs to a new version directory
+
+The following files will be updated/created:
+- The current docs will be copied to a new version directory (under `versioned_docs`)
+- The current sidebar will be copied to a new version sidebar (under `versioned_sidebars`)
+- The `versions.json` file will be updated to include the new version
+
+**Note:**
+If using the API documentation version, you will need to manually exclude the 
+`api` folder from the `versioned_docs` folder. You also need to update the
+sidebar under `versioned_sidebars` to exclude all the API sidebars.
+
+**Important:**
+The [Docusaurus documentation on versioning](https://docusaurus.io/docs/versioning)
+has more details on how versioning works in Docusaurus. Including information on
+when it is appropriate to create a new version and how to manage versions.
 
 #### API Documentation
 
 ##### Adding a New API Version
 
-1. Add the new OpenAPI/Swagger JSON file under `static/api/`
+1. Add the new OpenAPI/Swagger JSON or YAML file under `static/api/`
 2. Update the `docusaurus-plugin-openapi-docs` configuration in `docusaurus.config.js` to include the new version
 3. Generate the API documentation:
 ```bash
