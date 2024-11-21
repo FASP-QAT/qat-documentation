@@ -1,5 +1,7 @@
 # FASP QAT Documentation
 
+[![Documentation CI](https://github.com/timler/fasp-documentation/actions/workflows/documentation.yml/badge.svg)](https://github.com/timler/fasp-documentation/actions/workflows/documentation.yml)
+
 This repository contains the documentation website for the FASP Quantification Analytics Tool (QAT), built using [Docusaurus](https://docusaurus.io/).
 
 ## For Documentation Readers
@@ -162,6 +164,60 @@ npm run gen-api-docs:all
 npm run clean-api-docs:all
 ```
 
+### Software Development Life Cycle (SDLC)
+
+#### Branch Strategy
+
+This repository uses a release-based workflow:
+- `main`: Main development branch
+- `release`: Production branch, triggers deployments
+- Feature branches: For development of new content
+
+#### Development Process
+
+1. **Create Feature Branch**
+   ```bash
+   git checkout main
+   git pull
+   git checkout -b feature/your-feature-name
+   ```
+
+2. **Make Changes**
+   - Edit documentation files
+   - Test locally using `npm start`
+   - Commit changes with meaningful messages
+
+3. **Create Pull Request**
+   - Push feature branch to GitHub
+   - Create PR targeting `main` branch
+   - Get review and approval
+   - Merge to `main`
+
+4. **Deploy to Production**
+   - Create PR from `main` to `release` branch
+   - CI will build and test on PR
+   - After approval and merge, CI will automatically deploy
+
+#### Continuous Integration
+
+This project uses GitHub Actions for CI/CD, configured in `.github/workflows/documentation.yml`.
+
+The CI pipeline:
+1. Triggers on push/PR to `release` branch
+2. Sets up Node.js environment
+3. Installs dependencies
+4. Generates API documentation
+5. Builds the Docusaurus site
+6. Deploys to GitHub Pages (only on push to `release`, not on PR)
+
+To monitor deployments:
+1. Go to repository Actions tab
+2. Look for "Documentation Platform CI" workflow
+3. Check deployment status and logs
+4. Access the deployed site via environment URL
+
+**Note:** The CI process will only deploy when changes are merged to the `release` branch, ensuring controlled and reviewed deployments.
+
 ### Building and Deployment
 
 #### Local Build
@@ -178,19 +234,14 @@ The `build` command generates static content into the `build` directory.
 
 #### Deploying to GitHub Pages
 
-Deploy using the following command:
+Deployment is handled automatically by our CI pipeline when changes are merged to the `release` branch. 
+
+For manual deployment (if needed):
 ```bash
 USE_SSH=true npm run deploy
 ```
 
-This will build the website and push it to the `gh-pages` branch of the repository.
-
-Note: before you deploy, you need to generate the API docs and run a build:
-
-```bash
-npm run gen-api-docs:all
-npm run build
-```
+Note: Manual deployment should only be used in exceptional circumstances. Prefer the CI-based deployment process through the `release` branch.
 
 ### Plugins
 
