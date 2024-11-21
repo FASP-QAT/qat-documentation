@@ -51,13 +51,9 @@ The documentation is organized into sections:
 
 There are several ways to contribute to our documentation:
 
-1. **Direct Editing**: Each page has an "Edit this page" link at the bottom. Clicking this will take you to GitHub where you can suggest changes.
+1. **Direct Editing**: Each page has an "Edit this page" link at the bottom. Clicking this will take you to GitHub where you can make changes directly to the documentation.
 
-2. **Visual Editor**: We provide a user-friendly editor for non-technical users:
-   - Go to [/admin](/admin) to login to the Decap CMS editor
-   - Go to [/cms](/cms) to login to the Sveltia CMS editor
-
-Note: you will need to have a GitHub account and authenticate with GitHub.
+2. **Visual Editor**: No visual editor is currently supported, but you can use an external application to edit the documentation and commit the changes to this Github repository.
 
 3. **File Creation**: Documentation pages are written in Markdown (.md) or MDX (.mdx) format:
    - Markdown (.md) files are simple text files with basic formatting
@@ -69,7 +65,7 @@ If you're new to Markdown, don't worry! It's a simple way to format text:
 - Use `**text**` for bold
 - Use `[text](url)` for links
 
-Find more details in the [Docusaurus Markdown Features](https://docusaurus.io/docs/markdown-features) page.
+Find more details here: [Docusaurus Markdown Features](https://docusaurus.io/docs/markdown-features) page.
 
 ## For Documentation Maintainers
 
