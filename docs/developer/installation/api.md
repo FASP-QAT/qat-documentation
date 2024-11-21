@@ -183,7 +183,7 @@ Access the Swagger UI at:
 Access the OpenAPI spec at:
 
 * http://localhost:8084/v3/api-docs (JSON)
-* http://localhost:8084/v3api-docs.yaml
+* http://localhost:8084/v3/api-docs.yaml
 
 ### Authenticate
 
