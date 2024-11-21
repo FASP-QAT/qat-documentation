@@ -8,11 +8,7 @@ This repository contains the documentation website for the FASP Quantification A
 
 You can read the documentation at [https://timler.github.io/fasp-documentation/](https://timler.github.io/fasp-documentation/). 
 
-The documentation is organized into:
-- User guides
-- Technical references
-- API documentation
-- Tutorials
+The documentation is organized into sections:
 
 ### Sections
 
