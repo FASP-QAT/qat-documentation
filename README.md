@@ -214,7 +214,7 @@ options for CMS (Content Management Systems).
 
 These usually take the form of a hosted 3rd-party service that integrates 
 with your Git repository, such as:
-- [Halcyon CMS](https://halcyon.sh/)
+- [Holocron CMS](https://holocron.so/docusaurus-editor)
 - [Dhub](https://dhub.io/)
 
 Or a self-hosted option, such as:
