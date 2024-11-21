@@ -236,17 +236,21 @@ Or a self-hosted option, such as:
 - [Decap CMS](https://decapcms.org/)
 - [Sveltia CMS](https://sveltia.com/)
 
-We are trialing the above two self-hosted options for this project.
-
 The main difference between the two is that Decap CMS uses a traditional 
 CMS editor with a sidebar tree view, while Sveltia CMS uses a more modern, 
-React-based editor with a sidebar tree view.
+React-based editor with a sidebar tree view. Sveltia CMS was built to be a drop
+-in replacement for Decap CMS, with some additional features.
 
-Sveltia CMS was built to be a drop-in replacement for Decap CMS, with some 
-additional features.
+Docusaurus has a feature-request issue for a built-in CMS editor, but it is not
+currently supported. [Read more](https://docusaurus.io/feature-requests/p/make-content-editing-easier).
 
-They both require an OAuth2 backend to handle authentication. We are currently
-using [Sveltia CMS Auth](https://github.com/sveltia/sveltia-cms-auth) for this.
+#### Authentication
+
+Embedded CMS require an OAuth2 backend to handle authentication. There are a
+few off-the-shelf solutions for this such as [Sveltia CMS Auth](https://github.com/sveltia/sveltia-cms-auth).
+
+It can be deployed as a Cloudflare worker and hooked up to a Github OAuth application.
+Set `baseUrl` in the CMS `config.yml` to the base URL of the OAuth application.
 
 #### Nested folders
 
