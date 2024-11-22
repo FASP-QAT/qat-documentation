@@ -18,12 +18,8 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
-  build-and-deploy:
+  build:
     runs-on: ubuntu-latest
-    environment:
-      name: ${{ github.event_name == 'push' && 'github-pages' || '' }}
-      url: ${{ steps.deployment.outputs.page_url }}
-
     steps:
       # Setup phase
       - name: Checkout repository
@@ -50,14 +46,34 @@ jobs:
         run: npm run build
         continue-on-error: false
 
-      # Deploy phase - only runs on push to release (not PR)
-      - name: Upload artifact
-        if: github.event_name == 'push'
+      - name: Upload build artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: docusaurus-build
+          path: './build'
+
+  deploy:
+    needs: build
+    if: github.event_name == 'push' && github.ref == 'refs/heads/release'
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Setup GitHub Pages
+        uses: actions/configure-pages@v4
+
+      - name: Download build artifact
+        uses: actions/download-artifact@v3
+        with:
+          name: docusaurus-build
+          path: './build'
+
+      - name: Upload pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
           path: './build'
 
       - name: Deploy to GitHub Pages
-        if: github.event_name == 'push'
         id: deployment
         uses: actions/deploy-pages@v4
