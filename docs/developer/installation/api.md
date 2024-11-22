@@ -29,39 +29,44 @@ Before proceeding, ensure you have the following installed:
 
 2. **Set up Application Directory Structure**  
 
-   2.1. Extract the required folder structure to your desired location.
    Set temporary variables to specify the location of your code and application home folder:
+
    ```bash
    QAT_CODE="$HOME/Code/QAT"
    QAT_HOME="$HOME/Code/QAT/home"
    ```
 
-   2.2. Create application home folder:
+   Note: these variables are temporary and are only used to set up the application
+   so it's not necessary to export them.
+
+   Create application home folder:
    ```bash
    mkdir -p $QAT_HOME
    ```
 
-   2.3. Extract the required folder structure:
+   Extract the required folder structure:
    ```bash
    7zz x docs/QATFolders.7z -o"$QAT_HOME"
    ```
 
-   2.4. Configure application home path:
+   Configure application home path:
    Edit `src/main/resources/application.properties` and set `qat.homeFolder` to the path of your application home folder (i.e. `QAT_HOME`).
 
 
 3. **Setup MySQL Database**
 
-   You can either use Docker to run MySQL 8, or install MySQL 8 locally.
+   You can either use Docker to run MySQL 8, or run MySQL 8 as a service on your local machine.
 
-   ***3A. Using Docker***
+   Depending on your choice, follow the instructions under 3a or 3b below.
 
-       3.1. **Create a Docker network**
+   ***3a) Using Docker***
+
+       **Create a Docker network**
        ```bash
        docker network create qat-network
       ```
 
-      3.2. **Start MySQL container**
+      **Start MySQL container**
       ```bash
       docker run --name qat-mysql \
       --network qat-network \
@@ -71,7 +76,7 @@ Before proceeding, ensure you have the following installed:
       -d mysql:8
       ```
 
-      3.3. **Create database and user** (__Optional__)
+      **Create database and user** (__Optional__)
       ```bash
       docker exec -it qat-mysql mysql -uroot -proot
       ```
@@ -83,14 +88,14 @@ Before proceeding, ensure you have the following installed:
       GRANT CREATE VIEW, CREATE ROUTINE ON fasp.* TO 'faspUser'@'%';
       ```
 
-      3.4. **Import database dumps**
+      **Import database dumps**
       ```bash
       cd src/main/resources
       7zz x fasp-db.7z -o"$QAT_CODE"
       docker exec -i qat-mysql mysql -uroot -proot < "$QAT_CODE/fasp-db.sql"
       ```
 
-   ***3B Locally***
+   ***3b) Locally***
 
       Navigate to the project's resource directory and extract the database dump:
       ```bash
