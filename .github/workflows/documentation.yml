@@ -28,7 +28,7 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '18'
+          node-version: '20'
           cache: 'npm'
 
       - name: Setup GitHub Pages
@@ -47,7 +47,7 @@ jobs:
         continue-on-error: false
 
       - name: Upload build artifact
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: docusaurus-build
           path: './build'
@@ -64,7 +64,7 @@ jobs:
         uses: actions/configure-pages@v4
 
       - name: Download build artifact
-        uses: actions/download-artifact@v3
+        uses: actions/download-artifact@v4
         with:
           name: docusaurus-build
           path: './build'
