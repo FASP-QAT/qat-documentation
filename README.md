@@ -169,9 +169,8 @@ npm run clean-api-docs:all
 
 #### Branch Strategy
 
-This repository uses a release-based workflow:
-- `main`: Main development branch
-- `release`: Production branch, triggers deployments
+This repository uses a simple workflow:
+- `main`: Main development branch, triggers deployments
 - Feature branches: For development of new content
 
 #### Development Process
@@ -192,24 +191,19 @@ This repository uses a release-based workflow:
    - Push feature branch to GitHub
    - Create PR targeting `main` branch
    - Get review and approval
-   - Merge to `main`
-
-4. **Deploy to Production**
-   - Create PR from `main` to `release` branch
-   - CI will build and test on PR
-   - After approval and merge, CI will automatically deploy
+   - Merge to `main` (this will automatically trigger deployment)
 
 #### Continuous Integration
 
 This project uses GitHub Actions for CI/CD, configured in `.github/workflows/documentation.yml`.
 
 The CI pipeline:
-1. Triggers on push/PR to `release` branch
+1. Triggers on push/PR to `main` branch
 2. Sets up Node.js environment
 3. Installs dependencies
 4. Generates API documentation
 5. Builds the Docusaurus site
-6. Deploys to GitHub Pages (only on push to `release`, not on PR)
+6. Deploys to GitHub Pages (only on push to `main`, not on PR)
 
 To monitor deployments:
 1. Go to repository Actions tab
@@ -217,7 +211,7 @@ To monitor deployments:
 3. Check deployment status and logs
 4. Access the deployed site via environment URL
 
-**Note:** The CI process will only deploy when changes are merged to the `release` branch, ensuring controlled and reviewed deployments.
+**Note:** The CI process will only deploy when changes are merged to the `main` branch, ensuring controlled and reviewed deployments.
 
 ### Building and Deployment
 
@@ -235,14 +229,14 @@ The `build` command generates static content into the `build` directory.
 
 #### Deploying to GitHub Pages
 
-Deployment is handled automatically by our CI pipeline when changes are merged to the `release` branch. 
+Deployment is handled automatically by our CI pipeline when changes are merged to the `main` branch. 
 
 For manual deployment (if needed):
 ```bash
 USE_SSH=true npm run deploy
 ```
 
-Note: Manual deployment should only be used in exceptional circumstances. Prefer the CI-based deployment process through the `release` branch.
+Note: Manual deployment should only be used in exceptional circumstances. Prefer the CI-based deployment process through the `main` branch.
 
 ### Plugins
 

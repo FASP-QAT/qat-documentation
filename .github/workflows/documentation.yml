@@ -3,10 +3,10 @@ name: Documentation Platform CI
 on:
   push:
     branches:
-      - 'release'
+      - 'main'
   pull_request:
     branches:
-      - 'release'
+      - 'main'
 
 permissions:
   contents: read
@@ -54,7 +54,7 @@ jobs:
 
   deploy:
     needs: build
-    if: github.event_name == 'push' && github.ref == 'refs/heads/release'
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
     runs-on: ubuntu-latest
     environment:
       name: github-pages
