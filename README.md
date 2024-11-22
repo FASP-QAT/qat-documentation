@@ -1,6 +1,7 @@
 # FASP QAT Documentation
 
-[![Documentation CI](https://github.com/timler/fasp-documentation/actions/workflows/documentation.yml/badge.svg)](https://github.com/timler/fasp-documentation/actions/workflows/documentation.yml)
+[![Documentation CI](
+https://github.com/decode-development/fasp-documentation/actions/workflows/documentation.yml/badge.svg)](https://github.com/decode-development/fasp-documentation/actions/workflows/documentation.yml)
 
 This repository contains the documentation website for the FASP Quantification Analytics Tool (QAT), built using [Docusaurus](https://docusaurus.io/).
 
@@ -8,7 +9,7 @@ This repository contains the documentation website for the FASP Quantification A
 
 ### Accessing the Documentation
 
-You can read the documentation at [https://timler.github.io/fasp-documentation/](https://timler.github.io/fasp-documentation/). 
+You can read the documentation at [https://decode-development.github.io/fasp-documentation/](https://decode-development.github.io/fasp-documentation/). 
 
 The documentation is organized into sections:
 
@@ -93,7 +94,7 @@ This documentation website is built using [Docusaurus](https://docusaurus.io/), 
 #### Check out the project
 
 ```bash
-git clone git@github.com:timler/fasp-documentation.git
+git clone git@github.com:decode-development/fasp-documentation.git
 cd fasp-documentation
 ```
 

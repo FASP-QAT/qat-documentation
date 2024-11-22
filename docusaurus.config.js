@@ -7,7 +7,7 @@
 import {themes as prismThemes} from 'prism-react-renderer';
 
 /** define the GIT repository details */
-const orgName = 'timler';
+const orgName = 'decode-development';
 const projectName = 'fasp-documentation';
 const repoRoot = `https://github.com/${orgName}/${projectName}`;
 const apiDownloadUrl = `https://raw.githubusercontent.com/${orgName}/${projectName}/main/documentation/static/api/`;
