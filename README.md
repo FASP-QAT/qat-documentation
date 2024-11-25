@@ -5,7 +5,7 @@ https://github.com/decode-development/fasp-documentation/actions/workflows/docum
 
 This repository contains the documentation website for the FASP Quantification Analytics Tool (QAT), built using [Docusaurus](https://docusaurus.io/).
 
-## For Documentation Readers
+## For Documentation Readers 
 
 ### Accessing the Documentation
 
