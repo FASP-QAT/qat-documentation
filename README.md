@@ -41,10 +41,12 @@ The documentation is organized into sections:
    - Developer tutorials (or links to external tutorials)
 - **Community**: This section contains information for the FASP community.
    The following types of content can be found here:
-   - Contributing to the FASP QAT
-   - Development process
+   - FAST QAT open source license overview (Apache-2.0)
+   - Contributing to the FASP QAT community
+   - FAST QAT software development process
    - Code of conduct
-   - Security policy
+   - Privacy policy
+   - Do no harm policy (TBD)
    - Community meetings and events
    - Release notes
    - Roadmap
