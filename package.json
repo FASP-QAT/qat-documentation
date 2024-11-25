@@ -20,8 +20,8 @@
     "clean-api-docs:all": "docusaurus clean-api-docs all && docusaurus clean-api-docs:version api:all"
   },
   "dependencies": {
-    "@docusaurus/core": "3.6.1",
-    "@docusaurus/preset-classic": "3.6.1",
+    "@docusaurus/core": "^3.6.3",
+    "@docusaurus/preset-classic": "^3.6.3",
     "@easyops-cn/docusaurus-search-local": "^0.45.0",
     "@mdx-js/react": "^3.0.0",
     "clsx": "^2.0.0",
@@ -32,8 +32,8 @@
     "react-dom": "^18.0.0"
   },
   "devDependencies": {
-    "@docusaurus/module-type-aliases": "3.6.1",
-    "@docusaurus/types": "3.6.1"
+    "@docusaurus/module-type-aliases": "^3.6.3",
+    "@docusaurus/types": "^3.6.3"
   },
   "browserslist": {
     "production": [
