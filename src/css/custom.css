@@ -179,3 +179,47 @@ html[data-theme="dark"] .header-github-link:before {
 .menu__list-item--deprecated > .menu__link:hover {
   text-decoration: line-through;
 }
+
+/* Diagram Editor (button and popup) */
+.diagram-editor {
+  margin: 1rem 0;
+}
+.diagram-editor a {
+  text-decoration: underline;
+}
+.diagram-editor__trigger {
+  background: var(--ifm-color-primary);
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background 0.2s ease;
+}
+.diagram-editor__trigger:hover {
+  background: var(--ifm-color-primary-darker);
+}
+.diagram-editor__instructions {
+  background: var(--ifm-color-info-contrast-background);
+  border-radius: 8px;
+  padding: 1rem;
+  margin-top: 0.5rem;
+  animation: slideDown 0.2s ease-out;
+}
+.diagram-editor__instructions h4 {
+  margin-top: 0;
+}
+.diagram-editor__instructions ol {
+  margin-bottom: 0;
+}
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
