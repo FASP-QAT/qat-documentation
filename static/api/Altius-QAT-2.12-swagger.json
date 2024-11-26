@@ -15,7 +15,7 @@
     }
   },
   "servers" : [ {
-    "url" : "https://www.quantificationanalytics.org",
+    "url" : "https://api.quantificationanalytics.org",
     "description" : "Production server for QAT",
     "variables" : { }
   } ],

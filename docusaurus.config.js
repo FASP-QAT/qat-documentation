@@ -10,7 +10,7 @@ import {themes as prismThemes} from 'prism-react-renderer';
 const orgName = 'decode-development';
 const projectName = 'fasp-documentation';
 const repoRoot = `https://github.com/${orgName}/${projectName}`;
-const apiDownloadUrl = `https://raw.githubusercontent.com/${orgName}/${projectName}/main/documentation/static/api/`;
+const rawDownloadUrl = `https://raw.githubusercontent.com/${orgName}/${projectName}/refs/heads/main/`;
 
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
@@ -224,32 +224,25 @@ const config = {
           config: {
             api: {
               // current version
-              specPath: "static/api/test-v1.0.2.json",
-              outputDir: "docs/api",
+              specPath: "static/api/api-docs-2.92.json",
+              outputDir: "docs/generated/api",
               sidebarOptions: {
                 groupPathsBy: "tag",
                 categoryLinkSource: "tag",
               },
               showSchemas: true,
-              version: "1.0.2", 
-              label: "v1.0.2",
+              version: "2.92", 
+              label: "v2.92",
               baseUrl: "api",
-              downloadUrl: `${apiDownloadUrl}/test-v1.0.2.json`,
+              downloadUrl: `${rawDownloadUrl}/static/api/api-docs-2.92.json`,
               versions: {
                 // previous versions
-                "1.0.0": {
-                  specPath: "static/api/test-v1.0.0.json",
-                  outputDir: "docs/api/v1.0.0",
-                  label: "v1.0.0",
-                  baseUrl: "/fasp-documentation/docs/api-2",
-                  downloadUrl: `${apiDownloadUrl}/test-v1.0.0.json`,
-                },
-                "1.0.1": {
-                  specPath: "static/api/test-v1.0.1.json",
-                  outputDir: "docs/api/v1.0.1",
-                  label: "v1.0.1",
-                  baseUrl: "/fasp-documentation/docs/api-1",
-                  downloadUrl: `${apiDownloadUrl}/test-v1.0.1.json`,
+                "2.12": {
+                  specPath: "static/api/Altius-QAT-2.12-swagger.json",
+                  outputDir: "docs/generated/api/v2.12",
+                  label: "v2.12",
+                  baseUrl: "api-2.12",
+                  downloadUrl: `${rawDownloadUrl}/static/api/Altius-QAT-2.12-swagger.json`,
                 }
               },
             },

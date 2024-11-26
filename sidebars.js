@@ -1,4 +1,4 @@
-const apiVersions = require("./docs/api/versions.json");
+const apiVersions = require("./docs/generated/api/versions.json");
 const { versionSelector, versionCrumb } = require("docusaurus-plugin-openapi-docs/lib/sidebars/utils");
 
 // @ts-check
@@ -80,21 +80,21 @@ const sidebars = {
     {
       type: "html",
       defaultStyle: true,
-      value: versionCrumb("v1.0.2"),
+      value: versionCrumb("v2.92"),
     },
     {
       type: "category",
       label: "API",
       link: {
         type: "generated-index",
-        title: "QAT API (1.0.2)",
+        title: "QAT API (2.92)",
         slug: "api"
       },
-      items: require("./docs/api/sidebar.ts"),
+      items: require("./docs/generated/api/sidebar.ts"),
     },
   ],
   // Previous API version sidebar
-  "api-1.0.1": [
+  "api-2.12": [
     {
       type: "html",
       defaultStyle: true,
@@ -104,41 +104,19 @@ const sidebars = {
     {
       type: "html",
       defaultStyle: true,
-      value: versionCrumb("v1.0.1"),
+      value: versionCrumb("v2.12"),
     },
     {
       type: "category",
       label: "API",
       link: {
         type: "generated-index",
-        title: "QAT API (1.0.1)",
+        title: "QAT API (2.12)",
+        slug: "api-2.12"
       },
-      items: require("./docs/api/v1.0.1/sidebar.ts"),
+      items: require("./docs/generated/api/v2.12/sidebar.ts"),
     },
-  ],
-  "api-1.0.0": [
-    {
-      type: "html",
-      defaultStyle: true,
-      value: versionSelector(apiVersions),
-      className: "version-button",
-    },
-    {
-      type: "html",
-      defaultStyle: true,
-      value: versionCrumb("v1.0.0"),
-    },
-    {
-      type: "category",
-      label: "API",
-      link: {
-        type: "generated-index",
-        title: "QAT API (1.0.0)",
-        slug: "api-1"
-      },
-      items: require("./docs/api/v1.0.0/sidebar.ts"),
-    },
-  ],
+  ]
 };
 
 export default sidebars;
