@@ -1,0 +1,78 @@
+---
+id: requirements
+title: Requirements
+sidebar_label: Requirements
+sidebar_position: 7
+---
+
+# Business & Technical Requirements
+
+| No. | Scope Summary | Scope Description |
+| :---- | :---- | :---- |
+| BR01 | Data: Commodity Information | Shall store data on list of health commodities, with an ID \#, dosage, pack size, quantity, weight, package, volume, price (by different funders) etc |
+| BR02 | Data: Commodity Information | Shall allow for grouping of key products (e.g. "male condoms") |
+| BR03 | Data: Commodity Information | Shall store data on health commodity regimens |
+| BR04 | Data: Commodity Information | Shall store data on WHO recommended regimens, and shall receive updates when these shift Country Forecasting |
+| BR06 | Data: Commodity Information | Shall store information on commodity volume, weight, etc. |
+| BR07 | Data: Commodity Information | Shall store country Standard Treatment Guidelines, and relationships between medicines, regimens, and commodity consumption |
+| BR08 | Data: Commodity Information | Shall store facility information (with GLN codes) |
+| BR09 | Reporting & System Interactions | Shall accept import from Quantimed for historical data |
+| BR10 | Data: Budget | Shall store country, donor funding disbursement schedules |
+| BR11 | Data: Budget | Shall store total, commodity, and TO budgets |
+| BR12 | Data: Budget | Shall store price data across donors |
+| BR13 | Data: Budget | Shall store other order costs, shipping, etc |
+| BR14 | Data: Budget | Shall identify and store funding gaps |
+| BR15 | Data: Inventory | Shall store current inventory reported level, as well as inventory projections (most recent inventory data point \+ shipments \- consumption \+adjustments) by date |
+| BR16 | Data: Inventory | Shall store inventory data at the sub national (facility of other levels) |
+| BR17 | Data: Inventory | Shall store inventory expiry data and projections unique per product (and batch) |
+| BR18 | Data: Inventory | Shall store warehouse capacity data |
+| BR19 | Data: Inventory | Shall make programmatic recommendations for max/min levels of stock |
+| BR20 | Data: Inventory | Shall store desired max/ min levels of stock |
+| BR21 | Data: Inventory | Shall have capacity for manual stock adjustment notes (expiry, shifting, loss, etc) |
+| BR22 | Data: Inventory | Shall distinguish between on hand inventory, sales order inv, and inventory in transit |
+| BR23 | Supply Planning Capability | Shall connect with donor system, order management system to id status, delivery date, updated cost etc of placed shipment |
+| BR24 | Supply Planning Capability | Shall use forecast (current month \+ next two months) to project months of stock figure |
+| BR25 | Supply Planning Capability | Shall store donor order lead times by products and trigger order reminders |
+| BR26 | Supply Planning Capability | Shall indicate whether a shipment is intended to be "Targeted Local Procurement" (TLP) and store separate lead times, etc |
+| BR27 | Supply Planning Capability | Shall recommend shipments by date, quantity and donor to maintain inventory between min and max stock level(with options for manual update) |
+| BR28 | Supply Planning Capability | Shall assist country in dividing up/staggering large shipments that may be logistically difficult to deliver in same order. (Shall flag large shipments, recommend how to split up) |
+| BR29 | Supply Planning Capability | Shall recommend shipments by date, quantity and donor using inventory optimization or economic order quantity principles, lead times and standard deviation of demand |
+| BR30 | Supply Planning Capability | Shall recommend inventory holding levels (max and min, safety stock and order to) based on lead time, forecast and consumption standard deviation, expiry, etc |
+| BR31 | Supply Planning Capability | Shall utilize optimization techniques to recommend shipment allocation across donors based on funding availability and price differences. |
+| BR32 | Supply Planning Capability | Shall allow comparison of supply plan scenarios : inventory and price scenarios between differing recommended shipments |
+| BR33 | Supply Planning Capability | Shall allow for "what-if" scenarios if shipment expected quantity and timeframes shift |
+| BR34 | Supply Planning Capability | Shall store comments for "TBD" and "planned" shipments in near term, and allow country to add context regarding funding assignment and/or order placement timeframe |
+| BR35 | Supply Planning Capability | Shall consider "restrictions" such as lead times \[frozen planning period\] and donor budgets, impending expiry, etc \- and alert user |
+| BR36 | Supply Planning Capability | Shall consider supply planning at the sub national (/facility) level, with an understanding of lead times from natoinal medical store to sub national level |
+| BR37 | Reporting & System Interactions | Shall be interoperable with forecasting system |
+| BR38 | Reporting & System Interactions | Shall be interoperable with donor order management system (e.g. ARTMIS), if possible |
+| BR39 | Reporting & System Interactions | Shall document key risks in Notes |
+| BR40 | Reporting & System Interactions | Shall report on metrics such as planned shipments, & projected stock levels |
+| BR41 | Reporting & System Interactions | Shall report on measures such as cost of inventory |
+| BR42 | Reporting & System Interactions | Shall interface with PPMR, PPMR(M), PPMR(A), and existing collaborative planning tools |
+| BR43 | Reporting & System Interactions | Shall provide cost based reporting, and identify potential budget shortfalls |
+| BR44 | Reporting & System Interactions | Shall report on metrics such as delivery, inventory turns, slow-moving/expired inventory |
+| BR45 | Reporting & System Interactions | Shall generate Supply Planning Action reports, which list dates recommended to place ROs based on specific (product, country, donor) lead times |
+| BR46 | Reporting & System Interactions | Shall allow reporting for supply planning, warehouse and transportation functions using commodity weight and volume |
+| BR47 | Reporting & System Interactions | Shall allow for transparency of calculations by demonstrating a visual depiction of forecasting and supply planning data flow |
+| BR48 | Reporting & System Interactions | Shall accept imports from PipeLine for historical data |
+| TR1 | Data Mapping | System shall have the ability to map different Product Catalogs / Hierarchies against the USAID catalog |
+| TR10 | API/Integrations | System shall the ability to export an entire model (Forecast/Supply Plan) by version |
+| TR12 | API/Integrations | System shall have the ability to import/export in multiple formats (XML, CSV, JSON, PDF) |
+| TR13 | Authentication | If a multi-user system, shall have the ability to provision individual accounts for access |
+| TR14 | Authentication | If a multi-user system, shall have the ability to connect authentication sources with external sources (i.e. Active Directory, LDAP, etc.) |
+| TR15 | Authorization | If a multi-user system, shall have the ability to separate account access by roles (i.e. groups) |
+| TR16 | Authorization | If a multi-user system, shall have the ability to assign roles to capabilities (i.e. read only, read-write, create) |
+| TR17 | Audit | System will maintain an audit log of login, changes to permissions and changes to models |
+| TR2 | Data Mapping | System shall have the ability to update Reference Mapping Data without disrupting existing models |
+| TR21 | Platform / Tech Stack | System shall have support customizable language localization |
+| TR22 | Scalability & Performance | System shall demonstrate user responsiveness regardless of location in the world |
+| TR3 | Data Mapping | System shall have the ability to version Reference Data |
+| TR4 | Scheduling | System shall have the ability to batch import/export/jobs scheduled and monitored |
+| TR5 | Scheduling | System shall have the ability to detect if an import of data is executed twice |
+| TR6 | API/Integrations | System shall the ability to import data from external systems |
+| TR7 | API/Integrations | System shall have an API that respects the applications security model |
+| TR8 | API/Integrations | System shall have a method for extensibility that allows for customization without modifying core code |
+| TR9 | API/Integrations | System shall have the ability to export change sets |
+
+Note: BR5 was removed during the development process.

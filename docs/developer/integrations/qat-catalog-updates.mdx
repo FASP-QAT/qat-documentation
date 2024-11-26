@@ -1,0 +1,22 @@
+---
+id: qat-catalog-updates
+title: QAT Catalog Updates
+sidebar_label: QAT Catalog Updates
+sidebar_position: 4
+---
+
+# QAT Catalog Updates
+
+The QAT Catalog is created using the ARTMIS data. The Forecasting Unit, Planning Unit and Procurement Unit are all taken from ARTMIS database. If user changes any one of these data and ARTMIS pushes a new feed, then the former will be replaced by the `feed`. The non-ARTMIS data can be updated by the user on QAT. All Alternate Reporting Units are managed directly on QAT.
+
+**Planning Unit:** The product to be planned for in QAT. It is a product with full description up to the primary packaging (e.g. bottle of 30 tablets, 10x10 blister pack, etc.)
+
+**Forecasting Unit** is the base unit that will be used for a specified forecasting period. e.g. one tablet, one condom, one milliliter.
+
+**Procurement Unit** is the product at item level. In other words, it is a higher-level description of the planning unit including supplier-specific attributes. This information will not be visible/selectable by QAT users but will be sent automatically from procurement management systems.
+
+**Alternate Reporting Unit (ARU):** This is the higher-level description of the planning unit including supplier-specific attributes. This information will not be visible/selectable by QAT users but will be sent automatically from procurement management systems. The ARU is country specific.
+
+:::tip ARTMIS Sample files
+[ARTMIS Sample files](https://github.com/FASP-QAT/fasp-api/tree/master/docs/Sample%20ARTMIS%20Feeds)
+:::

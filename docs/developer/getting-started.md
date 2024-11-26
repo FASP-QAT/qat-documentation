@@ -13,11 +13,11 @@ This guide will help you set up both the frontend and backend components of the 
 
 ### Frontend
 
-See [Frontend Setup](./installation/core-ui.md) for detailed instructions on how to set up `fasp-core-ui`.
+See [Frontend Setup](./installation/fasp-core-ui.md) for detailed instructions on how to set up `fasp-core-ui`.
 
 ### Backend
 
-See [Backend Setup](./installation/api.md) for detailed instructions on how to set up `fasp-api`.
+See [Backend Setup](./installation/fasp-api.md) for detailed instructions on how to set up `fasp-api`.
 
 ## Reference Documentation
 

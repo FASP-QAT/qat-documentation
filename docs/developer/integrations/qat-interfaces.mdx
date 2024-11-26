@@ -1,0 +1,104 @@
+---
+id: qat-interfaces
+title: QAT Interfaces
+sidebar_label: QAT Interfaces
+sidebar_position: 2
+---
+
+# QAT Interfaces
+
+This section describes the data exchange interfaces between QAT and ARTMIS and GFPVAN.
+
+## File formats
+
+The following file formats are used for data exchange:
+
+* Files shared with ARTMIS are done via SFTP (xml formats); 
+* Files imported from Pipeline and Quantimed are via xml- (formats dictated by each software).
+* Files shared with GFPVAN are JSON.
+
+Note that edits are made to the ERP-linking functionality, after which time this section will updated to include those edits, including detail on fields to be shared and which items are shared as deltas versus full files. Only if the scripts below fail will QAT send an automated notification of this failure.
+
+:::warning FIXME
+Clarify the paragraph above - it's not clear what it means, and if it's still relevant.
+:::
+
+## QAT Server Scripts
+
+The following scripts are used to transfer data between QAT and external systems:
+
+| Script name | Description&nbsp;of&nbsp;the&nbsp;script | Script Path | Source folder | Source folder after completing script | Destination folder | Log Path | Schedule Time (EST) |
+| :---- | :---- | :---- | :---- | :---- | :---- | :---- | :---- |
+| [task1.sh](https://github.com/FASP-QAT/fasp-api/raw/master/docs/scripts/task1.sh) | To pull Catalog files from ARTMIS to QAT and then import them into the QAT db | /home/ubuntu/QAT/script/task1.sh | Remote server \-\> /FASP/ARTMIS | Remote server \-\> /FASP/processed | Local server \-\> /home/ubuntu/QAT/ARTMIS | /home/ubuntu/QAT/logs/ARTMIS/task1-yyyy-mm-dd.txt | 23:00 |
+| [task2.sh](https://github.com/FASP-QAT/fasp-api/raw/master/docs/scripts/task2.sh) | To first generate the Order and Program files and then push the files from QAT to ARTMIS | /home/ubuntu/QAT/script/task2.sh | Local server \-\> /home/ubuntu/QAT/supplyPlan | Local server \-\> /home/ubuntu/QAT/supplyPlan/processed | Remote server \-\> /FASP/supplyPlan | /home/ubuntu/QAT/logs/ARTMIS/task2-yyyy-mm-dd.txt | 23:00 |
+| [task3.sh](https://github.com/FASP-QAT/fasp-api/raw/master/docs/scripts/task3.sh) | To push Supply Plan files from QAT to ARTMIS | /home/ubuntu/QAT/script/task3.sh | Local server \-\> /home/ubuntu/QAT/supplyPlan/Artmis | Local server \-\> /home/ubuntu/QAT/supplyPlan/Artmis/processed | Remote server \-\> /FASP/supplyPlan and Sharepoint | /home/ubuntu/QAT/logs/ARTMIS/task3-yyyy-mm-dd.txt | Every 15 min |
+| [task6.sh](https://github.com/FASP-QAT/fasp-api/raw/master/docs/scripts/task6.sh) | To push GFPVAN files from QAT to GFPVAN SFTP Server | /home/ubuntu/QAT/script/task6.sh | Local server \-\> /home/ubuntu/QAT/supplyPlan/GFPVAN | Local server \-\>/home/ubuntu/QAT/supplyPlan/GFPVAN/processed | Remote server \-\> /e2open/b2b/scpusers2/e2net/E2NETSTG/e2c0000e9a-2ed8866a49-0/in | /home/ubuntu/QAT/logs/ARTMIS/task3-yyyy-mm-dd.txt | Every 15 min |
+
+Table 1 QAT Server Scripts
+
+Note there is no task 4 and task 5.
+:::warning FIXME
+Find out why there are no task 4 and task 5.
+:::
+
+### Task1.sh
+
+`importProductCatalog.sh`
+
+1. We have a Local Directory on QAT Server `/home/ubuntu/QAT/ARTMIS` in which we will download the data from SFTP server from the `/FASP/ARTMIS`.  
+1. After Downloaded we will move data in processed folder on SFTP Server `/FASP/processed`.  
+1. Import the files into QAT, once they are imported they are moved to the `/home/ubuntu/QAT/ARTMIS/processed` folder  
+1. Log will be generated in QAT Server `/home/ubuntu/QAT/logs/ARTMIS/task1-yyy-ymm-dd.txt`
+
+Script Location `/home/ubuntu/QAT/script/task1.sh` (QAT Server)
+
+### Task2.sh
+
+`exportProgramAndOrder.sh`
+
+1. Generate the Program and Order csv files in `/home/ubuntu/QAT/supplyPlan` folder  
+1. We have Local path in QAT server `/home/ubuntu/QAT/supplyPlan` in which we need to transfer the csv file on SFTP server in `/FASP/supplyPlan` directory.  
+1. After transferring all the files on SFTP Server all the files will move in local folder `/home/ubuntu/QAT/supplyPlan/processed`.  
+1. Log will be generated in QAT Server `/home/ubuntu/QAT/logs/ARTMIS/task2-yyyy-mm-dd.txt`
+
+### Task3.sh
+
+1. We have Local path in QAT server `/home/ubuntu/QAT/supplyPlan/Artmis` in which we need to transfer the json file on SFTP server in `/FASP/supplyPlan` directory.  
+1. Copy of same files will be copied to sharepoint (Only Production Server)  
+1. After transferring all the files on SFTP Server all the files will move in local folder `/home/ubuntu/QAT/supplyPlan/Artmis/processed`  
+1. Log will be generated in QAT Server `/home/ubuntu/QAT/logs/ARTMIS/task3-yyyy-mm-dd.txt`
+
+Script Location `/home/ubuntu/QAT/script/` (QAT Server)
+
+### Task6.sh
+
+1. We have Local path in QAT server /home/ubuntu/QAT/supplyPlan/GFPVAN in which we need to transfer the text file on GFPVAN SFTP server in `/e2open/b2b/scpusers2/e2net/E2NETSTG/e2c0000e9a-2ed8866a49-0/in directory.`  
+1. After transferring all the files on SFTP Server all the files will move in local folder `/home/ubuntu/QAT/supplyPlan/GFPVAN/` processed.  
+1. Log will be generated in QAT Server `/home/ubuntu/QAT/logs/ARTMIS/task3-yyyy-mm-dd.txt`
+
+Script Location `/home/ubuntu/QAT/script/`
+
+:::tip ARTMIS Sample files
+[ARTMIS Sample files](https://github.com/FASP-QAT/fasp-api/tree/master/docs/Sample%20ARTMIS%20Feeds)
+:::
+
+**TO CONNECT SFTP SERVER**
+
+sh QAT/script/sftp.sh
+
+:::warning FIXME
+Where is this script located?
+:::
+
+```
+Prodcution Server SFTP: \<YOUR\_PROD\_SFTP\_SERVER\_IP\_ADDRESS\>
+UAT Server SFTP: \<YOUR\_UAT\_SFTP\_SERVER\_IP\_ADDRESS\>
+SHAREPOINT: \<YOUR\_SHAREPOINT\_URL\>
+GFPVAN SFTP for UAT :bastion3.e2open.net
+GFPVAN SFTP for PROD :bastion7.e2open.net
+```
+
+:::warning FIXME
+Where are the above variables used?
+:::
+

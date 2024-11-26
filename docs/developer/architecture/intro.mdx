@@ -1,0 +1,40 @@
+---
+id: overview
+title: High-level Architecture Overview
+sidebar_label: Overview
+sidebar_position: 1
+---
+
+import DiagramEditor from '@site/src/components/DiagramEditor';
+
+# High-level architecture
+
+QAT is built on Java spring boot backend and React front end. The high-level architecture is below.
+
+![QAT High-level Architecture](/diagrams/high-level-architecture.png)
+
+Figure 1 QAT High-level Architecture
+
+
+ For a more detailed diagram of the system please refer to the [Tech Stack documentation](/docs/developer/architecture/tech-stack).
+
+## Front End \- React based PWA
+
+The React based application is hosted on a NodeJS server. It is built as a Progressive Web App (PWA) and can work even if the User is offline. To initialize the application the User will have to login to the application once while he is online. The Username and Password that the user has entered is sent to the backend and once authorized a Token is returned. The Local application then does all subsequent calls to the API using the Token to identify and authenticate the request.
+
+At the first login the application Syncs all the Master data with the Server side pulling in any updates to the Master data. Since Master data is only edited on the live server. Server side always takes precedence during the Sync process and updates from Server will overwrite Client side Master data.
+
+Once a User has logged in the application stores his credentials and access rights locally and he can then continue to Login and access the application even if he is Offline. Authentication of the Username and Password is done locally.
+
+To begin editing a Program the user will need to Load the Program from the Server. Once a program has been loaded the user can then begin editing the Supply Plan by making changes to the Consumption, Inventory and Shipments. All of the changes that the user has made are stored locally on the IndexedDb. Once the user is ready to commit his changes to the Server he then selects the Commit version option.
+
+Please refer to [Process Flows](process-flow.mdx) for additional information on process flows.
+
+## Back End \- Java Spring Boot Application
+
+The Back end is a Java Spring Boot application. The Front end connects to the Server side through a REST API interface.
+
+### API
+
+Please refer to [API Documentation](/docs/api) for more details on the API.
+

@@ -1,0 +1,39 @@
+---
+id: overview
+title: QAT-ERP Integrations
+sidebar_label: Overview
+sidebar_position: 1
+---
+
+# QAT-ERP Integrations
+
+QAT has several data integrations with Enterprise Resource Planning (ERP) systems, as shown in the below diagram. 
+
+There are 3 main types of interfaces between QAT and external systems
+
+1. **Supply plan sharing.** QAT sends supply plans to external systems. Currently QAT shares supply plans with the GHSC-PSM order management system ARTMIS, and to the GFPVAN. 
+1. **Catalog Updates.** QAT receives the ARTMIS product catalog, which updates the QAT planning unit details
+1. **ERP Shipment linking** Currently the only active ERP shipment linking interface is with ARTMIS for GHSC-PSM orders. 
+
+To summarise:
+
+- QAT receives ARTMIS Orders and Shipments  
+- QAT sends QAT shipments to ARTMIS  
+- QAT sends QAT Program IDs to ARTMIS
+
+
+![QAT data interfaces with ERP systems](/diagrams/QAT-ERP-Integrations.png)
+
+Figure 1 QAT data interfaces with ERP systems
+
+## QAT Supply Plan Sharing
+
+Refer to the [QAT Supply Plan Sharing](/docs/developer/integrations/qat-supply-plan-sharing) page for more information.
+
+## QAT Catalog Updates
+
+Refer to the [QAT Catalog Updates](/docs/developer/integrations/qat-catalog-updates) page for more information.
+
+## ERP Shipment Linking
+
+Refer to the [ERP Shipment Linking](/docs/developer/integrations/erp-shipment-linking) page for more information.
