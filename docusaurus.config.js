@@ -192,6 +192,17 @@ const config = {
           },
         ],
       },
+      zoom: {
+        selector: '.markdown :not(em) > img',
+        background: {
+          light: 'rgb(255, 255, 255)',
+          dark: 'rgb(50, 50, 50)'
+        },
+        config: {
+          margin: 0,
+          scrollOffset: 1000
+        }
+      },
       prism: {
         theme: prismThemes.github,
         darkTheme: prismThemes.dracula,
@@ -204,6 +215,7 @@ const config = {
     }),
 
     plugins: [
+      require.resolve('docusaurus-plugin-image-zoom'),
       [
         'docusaurus-plugin-openapi-docs',
         {

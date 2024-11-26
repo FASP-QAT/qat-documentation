@@ -262,7 +262,15 @@ Features:
 - Multiple language support
 - Customizable search settings
 
-### Editors
+#### Image Zoom
+
+This project uses [docusaurus-plugin-image-zoom](https://gabrielcsapo.github.io/docusaurus-plugin-image-zoom/docs/getting-started/) for image zooming. This plugin uses [medium-zoom](https://github.com/francoischalifour/medium-zoom) under the hood.
+
+Features:
+- Zoom on click
+- Configurable options
+
+### WYSIWYG Editors
 
 To allow for non-technical users to edit the documentation, there are various 
 options for CMS (Content Management Systems). 
