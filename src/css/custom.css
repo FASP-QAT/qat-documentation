@@ -62,7 +62,7 @@ See: https://docusaurus.community/knowledge/design/css/variables/
 a {
   text-decoration: underline;
 }
-.navbar__inner a, .menu__link a, .footer__link-item a, a.button {
+.navbar__inner a, a.menu__link, a.footer__link-item, a.button {
   text-decoration: none;
 }
 
