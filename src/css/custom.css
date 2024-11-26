@@ -58,6 +58,14 @@ See: https://docusaurus.community/knowledge/design/css/variables/
   --docusaurus-highlighted-code-line-bg: rgba(0, 47, 108, 0.3);
 }
 
+/* add underline to all links and remove from navbar, sidebar and footer */
+a {
+  text-decoration: underline;
+}
+.navbar__link, .menu__link, .footer__link-item {
+  text-decoration: none;
+}
+
 /* custom styles for the left sidebar */
 .menu__link--active:not(.menu__link--sublist) {
   border-left: 0.25rem solid var(--custom-accent);
