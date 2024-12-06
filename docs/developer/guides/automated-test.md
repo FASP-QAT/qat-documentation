@@ -98,8 +98,27 @@ public void shouldReturnUserById() {
     assertEquals("John Doe", result.getName());
 }
 ```
+### Integration Tests (Using `AbstractIntegrationTest`)
+`AbstractIntegrationTest` serves as a base class for integration tests in the application. It provides a common setup and teardown logic for integration tests, ensuring consistency across tests that require database interactions and HTTP request simulations.
+
+### Integrated Testing Utilities and Frameworks
+This class integrates several testing utilities and frameworks:
+- **Spring Boot Test Framework**: Utilizes `@SpringBootTest` for testing.
+- **Testcontainers**: Manages a MySQL container for database operations during testing.
+- **MockMvc**: Simulates HTTP requests and responses in the context of integration tests.
+- **Dynamic Property Source**: Dynamically configures the database connection properties.
+
+### Inherited Functionality
+By extending this class, tests automatically inherit the following:
+- A preconfigured `MockMvc` instance for simulating HTTP requests.
+- The necessary setup for a Testcontainers-managed MySQL container.
+- Common utility methods like converting objects to JSON.
+- Stops the MySQL container after all tests are completed.
+
+
+
 ## Code Coverage
-We aim for **10% coverage** as the minimum threshold. Ensure your tests cover:
+We aim for **10% coverage** as the minimum threshold for existing code and 100% coverage for new classes. Ensure your tests cover:
 - Edge cases
 - Error handling
 - Key workflows
