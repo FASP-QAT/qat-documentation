@@ -1,4 +1,4 @@
-# Automated Testing
+# Automated Testing - Backend
 
 This document serves as a guide for setting up, writing, and running automated tests for our project. It explains the frameworks, tools, and conventions used to ensure consistency and efficiency.
 
@@ -22,7 +22,6 @@ Automated tests are a crucial part of our development workflow to ensure code qu
 
 - **Unit Tests**: Validate individual methods and classes.
 - **Integration Tests**: Test how different components interact.
-- **E2E Tests**: Simulate user interactions and workflows.
 
 ## Test Frameworks and Tools
 
