@@ -117,7 +117,7 @@ By extending this class, tests automatically inherit the following:
 
 
 ## Code Coverage
-We aim for **10% coverage** as the minimum threshold for existing code and 100% coverage for new classes. Ensure your tests cover:
+We aim for a low minimum threshold for existing code but at least 80% coverage for new classes. Ensure your tests cover:
 - Edge cases
 - Error handling
 - Key workflows
@@ -132,7 +132,7 @@ Configure JaCoCo in `pom.xml`:
       <limit>
         <counter>LINE</counter>
         <value>COVEREDRATIO</value>
-        <minimum>0.10</minimum>
+        <minimum>0.80</minimum>
       </limit>
     </limits>
   </rule>
