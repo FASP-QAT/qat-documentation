@@ -93,7 +93,7 @@ Before proceeding, ensure you have the following installed:
       ```bash
       docker exec -i qat-mysql mysql -uroot -proot fasp -e "SET GLOBAL sql_mode=(SELECT REPLACE(@@sql_mode,'ONLY_FULL_GROUP_BY',''));"
       ```
-      Note: This is command will need to be run every time the container is restarted.The config should be added to the MySQL config file, but the default MySQL container does not have a config file. Once we are using docker compose we should be able to add this to the startup script, so it's not needed to be run manually.
+      Note: This command will need to be run every time the container is restarted.The config should be added to the MySQL config file, but the default MySQL container does not have a config file. Once we are using docker compose we should be able to add this to the startup script, so it's not needed to be run manually.
       :::
 
       **Import database dumps**
@@ -134,9 +134,21 @@ Before proceeding, ensure you have the following installed:
       sql_mode=STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION
       ```
 
-   :::warning FIXME: 
-   Currently it's unclear which scripts need to be executed after the database dump is imported.
-   :::
+:::warning FIXME: 
+Currently it's unclear which scripts need to be executed after the database dump is imported.
+:::
+
+:::info 
+Add a user to the application by running the following SQL script:
+```sql
+INSERT INTO fasp.us_user (REALM_ID, USERNAME, PASSWORD, EMAIL_ID, ORG_AND_COUNTRY, LANGUAGE_ID, ACTIVE, FAILED_ATTEMPTS, EXPIRES_ON, SYNC_EXPIRES_ON, LAST_LOGIN_DATE, CREATED_BY, CREATED_DATE, LAST_MODIFIED_BY, LAST_MODIFIED_DATE, AGREEMENT_ACCEPTED, DEFAULT_MODULE_ID, DEFAULT_THEME_ID, SHOW_DECIMALS) VALUES ('1', 'Test User', "$2a$10$wk103RbWjloLY4iuWATn0.0ifqnXfAKGpKM/NaeoWgGMwh8CeaCia", 'testuser@qat.com', 'Altius', '1', '1', '0', NOW(), '2024-11-26 11:15:22', '2024-11-26 11:15:22', '1', '2020-02-12 12:00:00', '1', '2024-11-20 08:44:46', '1', '2', '1', '0');
+SET @user_id=last_insert_id();
+INSERT INTO us_user_role VALUES(null,@user_id,'ROLE_INTERNAL_USER',1,NOW(),1,NOW());
+INSERT INTO us_user_acl VALUES(null,@user_id,'ROLE_INTERNAL_USER',null,null,null,null,1,NOW(),1,NOW());
+```
+
+Login will be `testuser@qat.com` with password `pass`.
+:::
 
 4. **Update the QAT properties**  
    Edit `qat.properties` and add the database connection properties:
@@ -173,10 +185,6 @@ Before proceeding, ensure you have the following installed:
    tail -f "$QAT_HOME/QAT/logs/qat/faspLogger.log"
    ```
    :::
-
-:::warning FIXME:
-Add information on how to add new accounts to the application, or provide a script to do so.
-:::
 
 ## Verify the API is running
 

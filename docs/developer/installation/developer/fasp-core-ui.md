@@ -49,7 +49,11 @@ Before you begin, ensure you have the following installed:
    To connect to a different backend server, modify the `API_URL` in `Constants.js`. The application is set up to connect to the live backend server by default.
 
 :::tip Login
-To login to the application, you will need to create a new user in the backend.
+To login to the application, you will need to create a new user in the backend. 
+
+The instructions for creating a user are available in the [fasp-api](/docs/developer/installation/developer/fasp-api) installation guide, if you are running your own backend server. 
+
+If you are connecting to the demo QAT server, you, you will need to request a new user account from the FASP team.
 :::
 
 ## Verify the application is running
