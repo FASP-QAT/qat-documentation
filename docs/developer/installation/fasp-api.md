@@ -93,7 +93,7 @@ Before proceeding, ensure you have the following installed:
       ```bash
       docker exec -i qat-mysql mysql -uroot -proot fasp -e "SET GLOBAL sql_mode=(SELECT REPLACE(@@sql_mode,'ONLY_FULL_GROUP_BY',''));"
       ```
-      This should be added to the docker container startup script, once we have one.
+      Note: This is command will need to be run every time the container is restarted.The config should be added to the MySQL config file, but the default MySQL container does not have a config file. Once we are using docker compose we should be able to add this to the startup script, so it's not needed to be run manually.
       :::
 
       **Import database dumps**
@@ -127,6 +127,11 @@ Before proceeding, ensure you have the following installed:
       ```bash
       # Import main database structure
       mysql -u root -p fasp < "$QAT_CODE/fasp-db.sql"
+      ```
+
+      Then add this line to my.conf, to allow group by without an alias, and restart MySQL:
+      ```
+      sql_mode=STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION
       ```
 
    :::warning FIXME: 
