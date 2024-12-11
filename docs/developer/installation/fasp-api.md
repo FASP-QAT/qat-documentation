@@ -88,6 +88,14 @@ Before proceeding, ensure you have the following installed:
       GRANT CREATE VIEW, CREATE ROUTINE ON fasp.* TO 'faspUser'@'%';
       ```
 
+      :::warning FIXME:
+      Run this command to set MySQL config to allow group by without an alias:
+      ```bash
+      docker exec -i qat-mysql mysql -uroot -proot fasp -e "SET GLOBAL sql_mode=(SELECT REPLACE(@@sql_mode,'ONLY_FULL_GROUP_BY',''));"
+      ```
+      This should be added to the docker container startup script, once we have one.
+      :::
+
       **Import database dumps**
       ```bash
       cd src/main/resources
