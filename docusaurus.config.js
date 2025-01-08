@@ -16,7 +16,7 @@ const rawDownloadUrl = `https://raw.githubusercontent.com/${orgName}/${projectNa
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'FASP QAT Documentation',
+  title: 'QAT Documentation',
   tagline: 'Quantification Analytics Tool',
   favicon: 'img/favicon.ico',
 
@@ -73,7 +73,7 @@ const config = {
         },
       },
       navbar: {
-        title: 'FASP QAT Documentation',
+        title: 'QAT Documentation',
         logo: {
           alt: 'Quantification Analytics Tool',
           src: 'img/QAT-logo.png',

@@ -15,7 +15,7 @@ function HomepageHeader() {
           Quantification Analytics Tool
         </Heading>
         <p className="hero__subtitle">
-          FASP QAT Documentation Platform
+          QAT Documentation Platform
         </p>
         <p style={{ textAlign: 'center', maxWidth: '800px', margin: '2rem auto', fontSize: '1.2rem' }}>
           The Quantification Analytics Tool (QAT), is a modernized solution for 
@@ -28,13 +28,6 @@ function HomepageHeader() {
           procurement and delivery schedules, monitor the stock status of 
           products and share data with external platforms and key stakeholders.
           </p>
-          <div style={{ textAlign: 'center', marginTop: '2rem' }}>
-            <Link
-              className="button button--secondary button--lg"
-              to="https://www.quantificationanalytics.org">
-              Login
-            </Link>
-          </div>
       </div>
     </header>
   );
@@ -67,7 +60,7 @@ function ResourceColumns() {
           <li>Instructions for monitoring stock status, optimizing procurement, and sharing data</li>
         </ol></p>
       </>,
-      link: "https://www.ghsupplychain.org/sites/default/files/2024-04/QAT-UserGuide.pdf"
+      link: "https://www.ghsupplychain.org/sites/default/files/2025-01/QAT-UserGuide.pdf"
     },
     {
       image: "img/home/QAT Reports Reference Sheet Image.png",
