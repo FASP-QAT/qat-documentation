@@ -81,8 +81,14 @@ const config = {
         items: [
           {
             type: 'docSidebar',
-            sidebarId: 'api-latest',
-            label: 'API',
+            sidebarId: 'productSidebar',
+            label: 'About',
+            position: 'left',
+          },
+          {
+            type: 'docSidebar',
+            sidebarId: 'communitySidebar',
+            label: 'Community',
             position: 'left',
           },
           {
@@ -99,14 +105,8 @@ const config = {
           },
           {
             type: 'docSidebar',
-            sidebarId: 'communitySidebar',
-            label: 'Community',
-            position: 'left',
-          },
-          {
-            type: 'docSidebar',
-            sidebarId: 'productSidebar',
-            label: 'About',
+            sidebarId: 'api-latest',
+            label: 'API',
             position: 'left',
           },
           {
