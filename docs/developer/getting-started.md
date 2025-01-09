@@ -7,7 +7,7 @@ sidebar_position: 2
 
 # Getting Started
 
-This guide will help you set up both the frontend and backend components of the FASP application. The system consists of a React-based frontend and a Java Spring Boot backend with MySQL database.
+This guide will help you set up both the frontend and backend components of the QAT application. The system consists of a React-based frontend and a Java Spring Boot backend with MySQL database.
 
 ## Installation
 

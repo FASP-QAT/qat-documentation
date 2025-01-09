@@ -15,12 +15,12 @@ The documentation is organized into sections:
 
 ### Sections
 
-- **About (Product)**: This section contains product information about the FASP QAT project.
+- **About (Product)**: This section contains product information about the QAT project.
    The following types of content can be found here:
    - Application overview
    - Value proposition, benefits, and use cases, etc
    - Brochureware
-- **User**: This section is aimed at users of the FASP QAT. Both end-users and more technical users will find useful information here.
+- **User**: This section is aimed at users of the  QAT. Both end-users and more technical users will find useful information here.
    The following types of content can be found here:
    - Getting started (for end-users)
    - User guide
@@ -28,9 +28,9 @@ The documentation is organized into sections:
    - Troubleshooting and support
    - Configuration and customization (for more technical users)
    - Dashboard integration API documentation (for more technical users)
-- **Developer**: This section is aimed at developers who are interested in contributing to the FASP QAT.
+- **Developer**: This section is aimed at developers who are interested in contributing to the QAT.
    The following types of content can be found here:
-   - Getting started (for developers to install the FASP QAT on their own systems)
+   - Getting started (for developers to install the QAT on their own systems)
    - Software architecture
    - Database schema and other documentation
    - System design
@@ -39,18 +39,18 @@ The documentation is organized into sections:
    - Data flow
    - Code documentation (high level)
    - Developer tutorials (or links to external tutorials)
-- **Community**: This section contains information for the FASP community.
+- **Community**: This section contains information for the QAT community.
    The following types of content can be found here:
-   - FAST QAT open source license overview (Apache-2.0)
-   - Contributing to the FASP QAT community
-   - FAST QAT software development process
+   - QAT open source license overview (Apache-2.0)
+   - Contributing to the QAT community
+   - QAT software development process
    - Code of conduct
    - Privacy policy
    - Do no harm policy (TBD)
    - Community meetings and events
    - Release notes
    - Roadmap
-- **API documentation** contains generated API documentation for the FASP QAT APIs.
+- **API documentation** contains generated API documentation for the QAT APIs.
 
 ### Contributing to Documentation
 

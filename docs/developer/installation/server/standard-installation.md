@@ -5,7 +5,7 @@ sidebar_label: Standard Installation
 sidebar_position: 2
 ---
 
-# FASP Application Installation Guide
+# QAT Application Installation Guide
 
 ## Prerequisites
 - Java Runtime Environment
@@ -13,7 +13,7 @@ sidebar_position: 2
 - MySQL database server
 - Git
 - PM2 (Node.js process manager)
-- Access to FASP repositories
+- Access to FASP-QAT repositories
 
 ## Pre-Installation Preparation
 
