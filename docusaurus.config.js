@@ -178,7 +178,7 @@ const config = {
               },
               {
                 label: 'User Guide',
-                href: 'https://www.ghsupplychain.org/sites/default/files/2024-04/QAT-UserGuide.pdf',
+                href: 'https://www.ghsupplychain.org/sites/default/files/2025-01/QAT%20User%20Manual_2024.12.31.pdf',
               },
               {
                 label: 'Reports Reference',

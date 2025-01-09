@@ -60,7 +60,7 @@ function ResourceColumns() {
           <li>Instructions for monitoring stock status, optimizing procurement, and sharing data</li>
         </ol></p>
       </>,
-      link: "https://www.ghsupplychain.org/sites/default/files/2025-01/QAT-UserGuide.pdf"
+      link: "https://www.ghsupplychain.org/sites/default/files/2025-01/QAT%20User%20Manual_2024.12.31.pdf"
     },
     {
       image: "img/home/QAT Reports Reference Sheet Image.png",
