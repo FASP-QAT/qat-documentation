@@ -16,9 +16,9 @@ Automated tests are crucial for ensuring our React application's reliability and
 ├── src/
 │   ├── __tests__/          # Unit tests
 │   │   ├── components/     # Component tests
-│   │   └── unit/          # Utility function tests
+│   │   └── unit/           # Utility function tests
 ├── cypress/
-│   ├── e2e/               # unit tests
+│   ├── e2e/               # Integration tests
 │   ├── fixtures/          # Test data
 │   └── support/           # Custom commands & utilities
 ```
@@ -134,6 +134,12 @@ describe('Login Flow', () => {
    - Use `vi.mock()` for module mocks
    - Use `vi.fn()` for function mocks
    - Reset mocks between tests
+   - Keep mocks minimal:
+     - If your test requires more than 2-3 mocks, this is often a code smell
+     - Consider either:
+       - Refactoring the component to reduce dependencies
+       - Writing an integration test instead of a unit test
+       - Breaking down the component into smaller, more focused pieces
 
 ### E2E Tests
 1. **Structure**
