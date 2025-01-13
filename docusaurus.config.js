@@ -7,8 +7,8 @@
 import {themes as prismThemes} from 'prism-react-renderer';
 
 /** define the GIT repository details */
-const orgName = 'decode-development';
-const projectName = 'fasp-documentation';
+const orgName = 'FASP-QAT';
+const projectName = 'qat-documentation';
 const repoRoot = `https://github.com/${orgName}/${projectName}`;
 const rawDownloadUrl = `https://raw.githubusercontent.com/${orgName}/${projectName}/refs/heads/main/`;
 

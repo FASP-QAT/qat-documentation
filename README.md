@@ -1,7 +1,7 @@
 # QAT Documentation
 
 [![Documentation CI](
-https://github.com/decode-development/fasp-documentation/actions/workflows/documentation.yml/badge.svg)](https://github.com/decode-development/fasp-documentation/actions/workflows/documentation.yml)
+https://github.com/FASP-QAT/qat-documentation/actions/workflows/documentation.yml/badge.svg)](https://github.com/FASP-QAT/qat-documentation/actions/workflows/documentation.yml)
 
 This repository contains the documentation website for the Quantification Analytics Tool (QAT), built using [Docusaurus](https://docusaurus.io/).
 
@@ -9,7 +9,7 @@ This repository contains the documentation website for the Quantification Analyt
 
 ### Accessing the Documentation
 
-You can read the documentation at [https://decode-development.github.io/fasp-documentation/](https://decode-development.github.io/fasp-documentation/). 
+You can read the documentation at [https://FASP-QAT.github.io/qat-documentation/](https://FASP-QAT.github.io/qat-documentation/). 
 
 The documentation is organized into sections:
 
@@ -96,8 +96,8 @@ This documentation website is built using [Docusaurus](https://docusaurus.io/), 
 #### Check out the project
 
 ```bash
-git clone git@github.com:decode-development/fasp-documentation.git
-cd fasp-documentation
+git clone git@github.com:FASP-QAT/qat-documentation.git
+cd qat-documentation
 ```
 
 #### Installation
