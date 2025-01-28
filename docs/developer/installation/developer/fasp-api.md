@@ -100,7 +100,7 @@ Before proceeding, ensure you have the following installed:
       ```bash
       cd src/main/resources
       7zz x fasp-db.7z -o"$QAT_CODE"
-      docker exec -i qat-mysql mysql -uroot -proot < "$QAT_CODE/fasp-db.sql"
+      docker exec -i qat-mysql mysql -uroot -proot fasp < "$QAT_CODE/fasp-db.sql"
       ```
 
    ***3b) Locally***
