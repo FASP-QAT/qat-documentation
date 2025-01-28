@@ -164,6 +164,8 @@ npm run gen-api-docs:all
 ```
 4. Update the sidebar configuration in `sidebars.js` to include the new API version sidebar
 
+Note: to avoid bloating the API documentation, we will replace the existing API documentation with the new version, except for major versions.
+
 ##### Updating API Documentation
 
 To regenerate API documentation:

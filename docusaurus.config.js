@@ -224,17 +224,17 @@ const config = {
           config: {
             api: {
               // current version
-              specPath: "static/api/api-docs-2.92.json",
+              specPath: "static/api/api-docs-2.97.json",
               outputDir: "docs/generated/api",
               sidebarOptions: {
                 groupPathsBy: "tag",
                 categoryLinkSource: "tag",
               },
               showSchemas: true,
-              version: "2.92", 
-              label: "v2.92",
+              version: "2.97",
+              label: "v2.97",
               baseUrl: "api",
-              downloadUrl: `${rawDownloadUrl}/static/api/api-docs-2.92.json`,
+              downloadUrl: `${rawDownloadUrl}/static/api/api-docs-2.97.json`,
               versions: {
                 // previous versions
                 "2.12": {
@@ -243,7 +243,7 @@ const config = {
                   label: "v2.12",
                   baseUrl: "api-2.12",
                   downloadUrl: `${rawDownloadUrl}/static/api/Altius-QAT-2.12-swagger.json`,
-                }
+                },
               },
             },
           }

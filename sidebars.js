@@ -80,14 +80,14 @@ const sidebars = {
     {
       type: "html",
       defaultStyle: true,
-      value: versionCrumb("v2.92"),
+      value: versionCrumb("v2.97"),
     },
     {
       type: "category",
       label: "API",
       link: {
         type: "generated-index",
-        title: "QAT API (2.92)",
+        title: "QAT API (2.97)",
         slug: "api"
       },
       items: require("./docs/generated/api/sidebar.ts"),
