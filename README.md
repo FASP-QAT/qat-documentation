@@ -318,3 +318,75 @@ Sveltia CMS does not support nested folders yet.
 
 Any new folders added under `/docs` will need to be added to collections in
 `/admin/config.yml` and `/cms/config.yml`.
+
+### Upgrading Docusaurus
+
+#### Before Upgrading
+1. Check the [Docusaurus changelog](https://raw.githubusercontent.com/facebook/docusaurus/main/CHANGELOG.md) for breaking changes
+2. Create a new branch for the upgrade:
+   ```bash
+   git checkout -b upgrade/docusaurus-3.7
+   ```
+
+#### Upgrade Steps
+1. Update Docusaurus packages in package.json:
+   ```json
+   {
+     "dependencies": {
+       "@docusaurus/core": "^3.7.0",
+       "@docusaurus/preset-classic": "^3.7.0"
+     },
+     "devDependencies": {
+       "@docusaurus/module-type-aliases": "^3.7.0",
+       "@docusaurus/types": "^3.7.0"
+     }
+   }
+   ```
+
+2. Install updated dependencies:
+   ```bash
+   npm install
+   ```
+
+3. Verify the upgrade:
+   ```bash
+   npm list @docusaurus/core
+   ```
+
+4. Clear cache and rebuild:
+   ```bash
+   npm run clear
+   npm run build
+   ```
+
+5. Test the site locally:
+   ```bash
+   npm run start
+   ```
+
+#### Troubleshooting
+If you encounter issues:
+1. Clear Docusaurus cache:
+   ```bash
+   npm run clear
+   ```
+2. Delete dependency files and reinstall:
+   ```bash
+   rm -rf node_modules package-lock.json
+   npm install
+   ```
+3. Check plugin compatibility:
+   - docusaurus-plugin-image-zoom
+   - docusaurus-plugin-openapi-docs
+   - docusaurus-theme-openapi-docs
+   - @easyops-cn/docusaurus-search-local
+
+#### Rolling Back
+If needed, revert to the previous version:
+1. Reset package.json to previous versions
+2. Clear cache and reinstall:
+   ```bash
+   npm run clear
+   rm -rf node_modules package-lock.json
+   npm install
+   ```
