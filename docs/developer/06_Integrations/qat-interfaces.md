@@ -35,10 +35,7 @@ The following scripts are used to transfer data between QAT and external systems
 
 Table 1 QAT Server Scripts
 
-Note there is no task 4 and task 5.
-:::warning FIXME
-Find out why there are no task 4 and task 5.
-:::
+Note there is no task 4 and task 5. task 4 and task 5 used to exist but are no longer in use and therefore have been removed form the documentation.
 
 ### Task1.sh
 

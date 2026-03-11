@@ -88,7 +88,7 @@ Before proceeding, ensure you have the following installed:
       GRANT CREATE VIEW, CREATE ROUTINE ON fasp.* TO 'faspUser'@'%';
       ```
 
-      :::warning FIXME:
+      :::info Note:
       Run this command to set MySQL config to allow group by without an alias:
       ```bash
       docker exec -i qat-mysql mysql -uroot -proot fasp -e "SET GLOBAL sql_mode=(SELECT REPLACE(@@sql_mode,'ONLY_FULL_GROUP_BY',''));"
@@ -134,9 +134,6 @@ Before proceeding, ensure you have the following installed:
       sql_mode=STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION
       ```
 
-:::warning FIXME: 
-Currently it's unclear which scripts need to be executed after the database dump is imported.
-:::
 
 :::info 
 Add a user to the application by running the following SQL script:
@@ -163,9 +160,6 @@ Login will be `testuser@qat.com` with password `pass`.
    spring.datasource.password=root
    ```
 
-   :::warning FIXME: 
-   Additional forecastStats properties are currently needed for the application to function correctly. Defaults should be included in the properties file
-   :::
 
 5. **Configure Java Version (Optional)**  
    If you're using jenv to manage Java versions:
