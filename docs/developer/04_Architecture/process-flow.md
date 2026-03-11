@@ -9,10 +9,6 @@ import DiagramEditor from '@site/src/components/DiagramEditor';
 
 # Process Flows
 
-:::warning FIXME
-These diagrams should be integrated into other pages of the documentation as they provide more context closer to the functionality they illustrate.
-:::
-
 ## Update Master Data
 
 ![Initiate User Update Master Data process Flow](/diagrams/master-data-flow-new-user-initiation.drawio.png)

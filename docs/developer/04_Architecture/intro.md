@@ -1,22 +1,22 @@
 ---
 id: overview
-title: High-level Architecture Overview
-sidebar_label: Overview
+title: High-level Architecture
+sidebar_label: High-level Architecture
 sidebar_position: 1
 ---
 
 import DiagramEditor from '@site/src/components/DiagramEditor';
 
-# High-level architecture
+# High-level Architecture
 
 QAT is built on Java spring boot backend and React front end. The high-level architecture is below.
 
 ![QAT High-level Architecture](/diagrams/high-level-architecture.png)
 
-Figure 1 QAT High-level Architecture
+Figure:QAT High-level Architecture
 
 
- For a more detailed explaination of the above, please refer to the [Tech Stack documentation](/docs/developer/architecture/tech-stack).
+For a more detailed explaination of the above, please refer to the [Tech Stack documentation](/docs/developer/architecture/tech-stack).
 
 ## Front End \- React based PWA
 

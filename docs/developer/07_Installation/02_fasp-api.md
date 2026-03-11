@@ -1,8 +1,8 @@
 ---
 id: fasp-api
-title: API
-sidebar_label: fasp-api
-sidebar_position: 1
+title: Backend
+sidebar_label: Backend
+sidebar_position: 2
 ---
 
 # Backend Setup

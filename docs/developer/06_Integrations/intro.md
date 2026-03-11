@@ -19,7 +19,9 @@ To summarise:
 
 - QAT receives ARTMIS Orders and Shipments  
 - QAT sends QAT shipments to ARTMIS  
-- QAT sends QAT Program IDs to ARTMIS
+- QAT sends QAT Supply Plans to ARTMIS and GFPVAN
+- Country Dashboards. A recent addition has been made to QAT where countries can pull updated Supply plans directly from QAT via an API and build their own Dashboards for reporting. To get more information on how this works please refer to [Country Dashboard](/docs/developer/Guides/country-dashboards)
+To get more information on 
 
 
 ![QAT data interfaces with ERP systems](/diagrams/QAT-ERP-Integrations.png)

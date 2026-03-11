@@ -2,7 +2,7 @@
 id: rollback-procedure
 title: Rollback Procedure
 sidebar_label: Rollback Procedure
-sidebar_position: 3
+sidebar_position: 6
 ---
 
 # QAT Application Rollback Procedure

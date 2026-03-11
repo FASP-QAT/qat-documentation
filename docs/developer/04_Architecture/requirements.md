@@ -1,7 +1,7 @@
 ---
 id: requirements
-title: Requirements
-sidebar_label: Requirements
+title: Business & Technical Requirements
+sidebar_label: Business & Technical Requirements
 sidebar_position: 7
 ---
 

@@ -2,7 +2,7 @@
 id: standard-installation
 title: Standard Installation
 sidebar_label: Standard Installation
-sidebar_position: 2
+sidebar_position: 4
 ---
 
 # QAT Application Installation Guide

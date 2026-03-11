@@ -2,7 +2,7 @@
 id: server-setup
 title: Server Setup
 sidebar_label: "Server Setup"
-sidebar_position: 1
+sidebar_position: 4
 ---
 
 # Server Setup

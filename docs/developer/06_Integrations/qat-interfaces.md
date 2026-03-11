@@ -13,15 +13,14 @@ This section describes the data exchange interfaces between QAT and ARTMIS and G
 
 The following file formats are used for data exchange:
 
-* Files shared with ARTMIS are done via SFTP (xml formats); 
+* Files shared with ARTMIS are done via SFTP (xml formats). The formats of the files were provided by ARTMIS and used by QAT as is.
 * Files imported from Pipeline and Quantimed are via xml- (formats dictated by each software).
 * Files shared with GFPVAN are JSON.
 
-Note that edits are made to the ERP-linking functionality, after which time this section will updated to include those edits, including detail on fields to be shared and which items are shared as deltas versus full files. Only if the scripts below fail will QAT send an automated notification of this failure.
+Only if the scripts below fail will QAT send an automated notification of this failure.
+* Script files on Sharepoint [here](https://chemonics.sharepoint.com/sites/FASP-FHI360_Suncontract/Shared%20Documents/Forms/AllItems.aspx?id=%2Fsites%2FFASP%2DFHI360%5FSuncontract%2FShared%20Documents%2FGeneral%2FDocumentation%2FBatch%20job%20scripts&viewid=5438e9ce%2D8d16%2D4183%2D8b68%2Daf909e3acd8e)
+* ARTMIS Sample file details [here](https://github.com/FASP-QAT/fasp-api/tree/master/docs/Sample%20ARTMIS%20Feeds)
 
-:::warning FIXME
-Clarify the paragraph above - it's not clear what it means, and if it's still relevant.
-:::
 
 ## QAT Server Scripts
 
@@ -85,11 +84,6 @@ Script Location `/home/ubuntu/QAT/script/`
 **TO CONNECT SFTP SERVER**
 
 sh QAT/script/sftp.sh
-
-:::warning FIXME
-Where is this script located?
-:::
-
 ```
 Prodcution Server SFTP: \<YOUR\_PROD\_SFTP\_SERVER\_IP\_ADDRESS\>
 UAT Server SFTP: \<YOUR\_UAT\_SFTP\_SERVER\_IP\_ADDRESS\>
@@ -97,8 +91,4 @@ SHAREPOINT: \<YOUR\_SHAREPOINT\_URL\>
 GFPVAN SFTP for UAT :bastion3.e2open.net
 GFPVAN SFTP for PROD :bastion7.e2open.net
 ```
-
-:::warning FIXME
-Where are the above variables used?
-:::
 

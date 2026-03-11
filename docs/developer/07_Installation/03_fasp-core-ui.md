@@ -1,8 +1,8 @@
 ---
 id: fasp-core-ui
-title: Core UI
-sidebar_label: fasp-core-ui
-sidebar_position: 2
+title: Frontend
+sidebar_label: Frontend
+sidebar_position: 3
 ---
 
 # Frontend Setup
