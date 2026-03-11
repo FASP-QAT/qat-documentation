@@ -109,17 +109,10 @@ const config = {
             label: 'API',
             position: 'left',
           },
-          {
-            type: 'docsVersionDropdown',
-            position: 'right',
-            dropdownItemsBefore: [],
-            dropdownItemsAfter: [],
-            dropdownActiveClassDisabled: true,
-          },
-          {
-            type: 'localeDropdown',
-            position: 'right',
-          },
+          // {
+          //   type: 'localeDropdown',
+          //   position: 'right',
+          // },
           {
             href: 'https://github.com/FASP-QAT',
             className: 'header-github-link',
@@ -207,11 +200,11 @@ const config = {
         theme: prismThemes.github,
         darkTheme: prismThemes.dracula,
       },
-      announcementBar: {
-        id: "announcementBar_1",
-        content: "Draft version",
-        isCloseable: false,
-      },
+      // announcementBar: {
+      //   id: "announcementBar_1",
+      //   content: "Draft version",
+      //   isCloseable: false,
+      // },
     }),
 
     plugins: [

@@ -9,10 +9,11 @@ sidebar_position: 1
 
 Welcome to the User Documentation for the QAT. This section is aimed at users of the QAT. Both end-users and more technical users will find useful information here.
 
-## What's Covered
-- [Getting Started](./getting-started.md)
-- [User Guide](./user-guide.md)
-- [Troubleshooting](./troubleshooting.md)
+The complete User manual is a large document and is constantly updated to stay current. You can click the link below to download the User manual in your preferred language
 
-## Versioning
-This guide will be updated with each new version of the QAT software. You can find the current version at the top of this page.
+### User manual
+- [English](/user_manual/UserManual_en.docx)
+- [French](/user_manual/UserManual_fr.docx)
+- [Spanish](/user_manual/UserManual_sp.docx)
+- [Pourtegese](/user_manual/UserManual_pr.docx)
+
