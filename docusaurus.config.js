@@ -35,7 +35,25 @@ const config = {
   // may want to replace "en" with "zh-Hans".
   i18n: {
     defaultLocale: 'en',
-    locales: ['en'],
+    locales: ['en', 'fr', 'es', 'pt'],
+    localeConfigs: {
+      en: {
+        label: 'English',
+        direction: 'ltr',
+      },
+      fr: {
+        label: 'Français',
+        direction: 'ltr',
+      },
+      es: {
+        label: 'Español',
+        direction: 'ltr',
+      },
+      pt: {
+        label: 'Português',
+        direction: 'ltr',
+      },
+    },
   },
 
   presets: [
@@ -109,10 +127,10 @@ const config = {
             label: 'API',
             position: 'left',
           },
-          // {
-          //   type: 'localeDropdown',
-          //   position: 'right',
-          // },
+          {
+            type: 'localeDropdown',
+            position: 'right',
+          },
           {
             href: 'https://github.com/FASP-QAT',
             className: 'header-github-link',
@@ -249,7 +267,7 @@ const config = {
         "@easyops-cn/docusaurus-search-local",
         ({
           hashed: true,
-          language: ["en"],
+          language: ["en", "fr", "es", "pt"],
           indexDocs: true,
           highlightSearchTermsOnTargetPage: true,
           searchBarPosition: "right",

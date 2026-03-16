@@ -2,7 +2,7 @@
 id: acronyms
 title: Acronyms & Definitions
 sidebar_label: Acronyms
-sidebar_position: 5
+sidebar_position: 15
 ---
 
 This page provides definitions for commonly used acronyms and terms in the QAT documentation.
