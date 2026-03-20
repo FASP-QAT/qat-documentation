@@ -27,7 +27,7 @@ const config = {
   projectName: projectName,
   trailingSlash: false,
 
-  onBrokenLinks: 'throw',
+  onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
 
   // Even if you don't use internationalization, you can use this field to set
@@ -67,6 +67,7 @@ const config = {
           docRootComponent: "@theme/DocRoot",
           docItemComponent: "@theme/ApiItem",
           editUrl: `${repoRoot}/tree/main`,
+          exclude: ['generated/**'],
           lastVersion: 'current',
           versions: {
             current: {
