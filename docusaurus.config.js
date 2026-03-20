@@ -67,7 +67,6 @@ const config = {
           docRootComponent: "@theme/DocRoot",
           docItemComponent: "@theme/ApiItem",
           editUrl: `${repoRoot}/tree/main`,
-          exclude: ['generated/**'],
           lastVersion: 'current',
           versions: {
             current: {

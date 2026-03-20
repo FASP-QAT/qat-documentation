@@ -90,7 +90,7 @@ const sidebars = {
         title: "QAT API (2.97)",
         slug: "api"
       },
-      items: require("./docs/generated/api/sidebar.ts"),
+      items: require("./docs/generated/api/sidebar.ts").default,
     },
   ],
   // Previous API version sidebar
@@ -114,7 +114,7 @@ const sidebars = {
         title: "QAT API (2.12)",
         slug: "api-2.12"
       },
-      items: require("./docs/generated/api/v2.12/sidebar.ts"),
+      items: require("./docs/generated/api/v2.12/sidebar.ts").default,
     },
   ]
 };
