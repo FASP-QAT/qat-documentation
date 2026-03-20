@@ -1,0 +1,71 @@
+---
+id: get-latest-version-for-program
+title: "Get Latest Version for Programs"
+description: "Retrieve the latest version for a list of programs"
+sidebar_label: "Get Latest Version for Programs"
+hide_title: true
+hide_table_of_contents: true
+api: eJy1VdFu00oQ/ZXVPJukKvQirKsrhVJQUXUpbYCHKA8Te2IvOLvu7LghivzvV7O2Wze3IIpEnpzd2Zlz5pzZ3UNOIWNbi/UOUrgiYUu3ZKQkU6FQEHNLHKx3Zu3ZoKlsEOPXpmZfMG4CJOBrYtQE5zmkUJBcxIOfu3NvPV92sZAA001DQV77fAfpHjLvhJzoJ9Z1ZbOYZvo1KJg9hKykDeqX7GqCFJAZd5CAFdqE0XoQtq6Atm3b5IDRXIk8xGzO3wQj3vDPyfZwLVMOqXBDrS6E2rtAsfjx0dEBCaHv8nT0fvWVMoEEatZWiu3S92i1qXeh1gkVpNDWnjco3dLzY2gT6KH/YnybgFipNOhyKDRz+ee7JI8184qkYRee4I42gRdHz5/Uph+0Y0MhYEGnPqfHlL+nc9VrFCMfIfEpEJvcUzDOiynxlgzbopToCcwyCkrQhoGEcjh5otR/msO5E2KHlSFmz2Zb2opMQSLWFY8pc0dFa2ARIF0Msps3KAjLBDYkpdcJrn2I0FFKSGGKtZ325zV0+uMB18sgEGthSBd7aLiCFEqROqRTzTO5adCJXfeDjg6rndgsTDwXcMjxHTm9Vyg3XU6j6dqllsgatrKLNVaETDxrFOtiOd6+VlG6vo+Dhn9vh4F4/2X+v9pn2t9o8/df5kb8N3LGurjQDVJqXscs5u+4+Y8yj/Ug7fNDMuirDYidV7tc3d+AZ99xU6vci8ECywSsW3sF+RDPxwd9M7OhcWbufQUJVDYjF6KpHEYQsxqzksxFt2F6rczx5AiSA2G22+0EY7jqMO1zhenF+enZv9dnz/TMyJsfZ9qv3l2QwvHk1cvFyclfL5capebZoBsheUdiOsPcoVBLjjzzgOtoyn7vOeq7Hge0rtA6hRUZ73tPLwBr2w3n4GpIfvJwBRWm1KlIF7DfrzDQJ67aVpdvGmJ14jKBW2SLqyjosk2gJMyJo0m/0Q5SOO14PZsrQA2vmvgsHL58bTKcmGUZ1TKKvb912vHEXn64Vk1W/bO6ifcLMG71DcMtpBCfaS0R5yGu7aFCVzRYaGyXU3//AdcW0XA=
+sidebar_class_name: "post api-method"
+info_path: docs/generated/api/qat
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get Latest Version for Programs"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/api/programData/getLatestVersionForPrograms"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Retrieve the latest version for a list of programs
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={undefined}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"content":{"application/json":{"schema":{"type":"array","items":{"type":"string"}}}},"description":"The list of program IDs to retrieve the latest version for","required":true}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"content":{"text/json":{"schema":{"type":"array","items":{"type":"object","properties":{"programId":{"type":"integer","format":"int32"},"versionId":{"type":"integer","format":"int32"}},"title":"ProgramIdAndVersionId"}}}},"description":"Returns the latest version for a list of programs"},"403":{"content":{"text/json":{"schema":{"type":"object","properties":{"messageCode":{"type":"string"}},"title":"ResponseCode"}}},"description":"User does not have rights to access this program"},"500":{"content":{"text/json":{"schema":{"type":"object","properties":{"messageCode":{"type":"string"}},"title":"ResponseCode"}}},"description":"Internal error while getting latest version for program"}}}
+>
+  
+</StatusCodes>
+
+
+      

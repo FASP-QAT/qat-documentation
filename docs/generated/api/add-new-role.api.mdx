@@ -1,0 +1,71 @@
+---
+id: add-new-role
+title: "Add Role"
+description: "Add new role"
+sidebar_label: "Add Role"
+hide_title: true
+hide_table_of_contents: true
+api: eJztWlFvGzcM/isCnzbgYjte06yHYYCdpUOKtF2TdAVmGAOto221Z+kq6eIYhv/7QN1dfHacZsEaLE0vT45IkRRFffpMawkJOWlV5pXREEMvSYSmubAmJYjAZGSRRScJxIBJ8obmZ4XI0uecnO+bZAHxEqTRnrTnj5hlqZJhWvujY7NLcHJKM+RPfpERxGBGH0l6iCCz7MQrciwd5U5pcu5lriUbOFXO12ahtbiACJSnmbvbGkqvLqmmNzImJdSwimCEjl6bhNKvZgaksjJP0f7QrwZ/hAikJfSU9Bd3O8odWc70tZ7SniZkIYKxsTP0xdBPXfbMyhpn9bict0pPYLWKwCuf8lAfnZLvHVmeUobyG/ods2o+EvS059WMeFKKzr82iRqrx7GIejz3WcmmvXLTeAe3Sm4j9iqYp7CNo69Y682R+Z6PzLe/PyNK/3VUQftv0jthoRCO7ReE2ZeELrtF+OQq6DQA0NNcW3/rDgnC7YulTlhuIzK1WCXqo1DcTLj+Gw9qsL/B/gb7G+z//7Gfv1fuJNg15aM68N2EwnvCaIN9DfY12Ndg37eBfSXkrYr+mrKUQOxtTmHAZUa7Yt3dTgc2u26ervy9220zcg4ndGSSO5JyVjoPmiG+zb7hGfncaidQuFxKck5Ik5BQY+GnJK7biGKOrtIY5yErzzrPH9dKTEoCU0uYLARdKecdh3nwyBJ+oj0XcyrIWmPFfKo47CRRehJSbqu70+PEQTyAUNHDCGbkp4a7uZlxIT70U4ihjZlql11fR/aSLM9aQm75upp6n7m4zUqtzzlqr8Zlhxc1pguvpGsZy4dhM8rfSfPOUyIKm4LNrYbsQuZW+UXwMSK0ZHs5BzIY1sXnnNayM1xTqv57WZ28Vx8ubvg+5gyFXLz6cCG8+URaKB0GihMbi36wIn4Jwl955cEfX9tBAlG1Q5yAkE7e8LN16/v4CmdZGvZyd+t6sOYEfI63yMSmaON6qZCtU8etm/3IApSg2+k+2+sc7nVfXOwfxAf7cffnVudw/y/YBal3mb4Jerfbv6WBukbHh1rUaFcGn15yHzB9paX1Nb/etPXtvj2W7Rjju7w+9sApeWAHw52dm0FlbrizMzNYNiX5HZdkRe2uLWxXyVYFNbXS1ErNgtJjw542Ccy7DaIlehXTEhfGpBypkqRd4B5lTL0M5ZTEaSEQf5J1PLPb6kC0xeTm83kLgzoTt3Zpy7VPT46O35wf7/GcGh1912OCdVkY5AW2XhwODg6eHw5Zi6nkDHU9kiQR5UOBjUXVGPT2W4OSaQVanaWoQs8kBL0sSeoAMFNQZJBP0dQE6IXlkg/Oe5uuVjz8OSfLxHIYwSVahSNewWC4imBKmJANaP2JFtxqKoLZu2DfrJ7moa20/YJhFVUzelJS5mu6668Bqzq7/uPtOWdsVD6PmAXCDxbnHD/OIYbwvOL6d4EwxpeInuQ4Yd3CJv/9A/VcTyI=
+sidebar_class_name: "post api-method"
+info_path: docs/generated/api/qat
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Add Role"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/api/role"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Add new role
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={undefined}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"content":{"application/json":{"schema":{"type":"object","properties":{"businessFunctionList":{"type":"array","items":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":"circular(BaseModel)","createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"}},"title":"BaseModel"},"businessFunctionId":{"type":"string"},"createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"label":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":"circular(BaseModel)","createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"}},"title":"BaseModel"},"createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"labelId":{"type":"integer","format":"int32"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"}},"title":"Label"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"}},"title":"BusinessFunction"}},"businessFunctions":{"type":"array","items":{"type":"string"}},"canCreateRoleList":{"type":"array","items":{"type":"object","properties":{"label":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":"circular(BaseModel)","createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"}},"title":"BaseModel"},"createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"labelId":{"type":"integer","format":"int32"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"}},"title":"Label"},"roleId":{"type":"string"}},"title":"CanCreateRole"}},"canCreateRoles":{"type":"array","items":{"type":"string"}},"label":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":"circular(BaseModel)","createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"}},"title":"BaseModel"},"createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"labelId":{"type":"integer","format":"int32"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"}},"title":"Label"},"roleId":{"type":"string"}},"title":"Role"}}},"required":true}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"content":{"text/json":{"schema":{"type":"object","properties":{"messageCode":{"type":"string"}},"title":"ResponseCode"}}},"description":"Returns a success code if the operation was successful"},"406":{"content":{"text/json":{"schema":{"type":"object","properties":{"messageCode":{"type":"string"}},"title":"ResponseCode"}}},"description":"Role already exists"},"500":{"content":{"text/json":{"schema":{"type":"object","properties":{"messageCode":{"type":"string"}},"title":"ResponseCode"}}},"description":"Internal error while adding the role"}}}
+>
+  
+</StatusCodes>
+
+
+      

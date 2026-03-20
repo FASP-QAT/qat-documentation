@@ -1,0 +1,71 @@
+---
+id: add-tracer-category
+title: "Add TracerCategory"
+description: "API used to add a TracerCategory"
+sidebar_label: "Add TracerCategory"
+hide_title: true
+hide_table_of_contents: true
+api: eJztWt9v2zYQ/leIe9kGKI7jNuimpzmJiwRom8R297AgCM7i2WIniQpJxTUM/e/DUXYs2YHjva2p/CSRx/vlj8dPJy3B4cxCeAfOYETmHB3NtFnAfQCSbGRU7pTOIIT+zZUoLEnhtEApBYpxc0UAOieDLH4lIQSUckfC0GNB1p1puYBwuWVhHNOWTqEn3yhywsXoxEIXYo6ZWzkAAUQ6c5Q51oR5nqjIGz/+ZlndEmwUU4p85RY5QQiVNgggN+yqU2R5NjKEjuTZ4nXRwpLh4J7lVOZoRgYCmGqToquG3vWgDLxwhinVxK0zKptBWQbglEt46Aytir5aMrxk5coFuhdW1WxIdHTkVEq8KEHrPmuppur/EUTdn/8WCUZOPdXlJ1onhBnPNfF5sP+GMElfz4k6VF+CE0paTL0NTPk/82C3vfQDZS+4vZ60+Z7Jqdkzmb88OUFLn7VsIfdWIFf7QyFSJioSNL+erQd/g6Y3K9G6j598AeIka/lSOAEoOaqu98Y6Umme0LmWdF3ltwwgJkxc3Dd0wKnZVsyfEb5txWwh11bMTcVsi9sbQlpb3FrI/bDFrYVGC40mNLa6b2VZVg04ZUhC6ExBfsDmOrNVonrdLuy05YbkCpNZgWJURBFZK/gcFWoqXEziuecn5miFrSSmRdJszzn67tZ9Oe/H++67fZYunctHDl1hOx+vh2dXFxeDL2uLnHUhNVmRaSdifCKB3uorJk/3B1czefVlPBh+6X96GA2Gfw2GD4Ph8Hq4Mm+oClSnJDTfCzJGm6pFKZX0TmGS6PlWepwWkWYC4Wivo2UAKblYcws119ajGV0MIRxjro6bbbBjCMCSeSLDPdwlFIbREjuX2/CY5TuPBWZOTVe9UcwwWTgV2Y42jMpmMm6MlkXkva2Uiqk24rY/hgCe0CicJB4nZXkfAHs83LRzB9+Rg9spL+u9163vrNqJ1igA0Ov23h91Pxz1/hifnIanJ2Hv9073w8nf8NKmf0317rbcp3+9FXlfvNRt7NZ6iaq6fyZ/byHiZ/LTrVObTQHbMJrtMSYy22N5Y6xxNv34ySqfnyU2IW4eIWommv2UFjUtag5BTQuQnxcgbzAklU215zkrWnrbYCQCMyn6a1oixlozdWRCU3GSXuek1+nuUJX+zdUv1r8Jrigpc63b/liMPG9ZESyMPMFaxfOxP7oRjjCFYIsnzefzV3gSpah4xeVo9MB6Hi5v/5zFNjrKbepFOEsqosxSzWI/xygmUfnfNDnVujNB4/k6s7wUs/pCKXffrjcSsNwwyEPezK+eLjzVzBNU/gHDe7Rcscs7wFzBNvGBAPhLgJh5aHgHyyXj86tJypKHHwsyCwjv7jf0kO+qg0+S8ZT0H1pACOeVt0djdoTFk4Id2nltXwbrFf0ootzVZDc8mennM0e+uR4xP52sPilIqwprcM6fG+AcQvBfJrAJ/4zjx5aQYDYrcMaylU7+/QtibRLp
+sidebar_class_name: "post api-method"
+info_path: docs/generated/api/v2.12/quantification-and-analytics-tool
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Add TracerCategory"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/api/tracerCategory/"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+API used to add a TracerCategory
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={undefined}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"description":"The TracerCategory object that you want to add","content":{"application/json":{"schema":{"type":"object","properties":{"createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"},"active":{"type":"boolean"},"tracerCategoryId":{"type":"integer","format":"int32"},"realm":{"type":"object","properties":{"id":{"type":"integer","format":"int32"},"label":{"type":"object","properties":{"createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"},"active":{"type":"boolean"},"labelId":{"type":"integer","format":"int32"},"label_en":{"type":"string"},"label_sp":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"baseModel":{"type":"object","properties":{"createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"},"active":{"type":"boolean"},"baseModel":"circular(BaseModel)"},"title":"BaseModel"}},"title":"Label"},"code":{"type":"string"},"idString":{"type":"string"}},"title":"SimpleCodeObject"},"healthArea":{"type":"object","properties":{"id":{"type":"integer","format":"int32"},"label":{"type":"object","properties":{"createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"},"active":{"type":"boolean"},"labelId":{"type":"integer","format":"int32"},"label_en":{"type":"string"},"label_sp":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"baseModel":{"type":"object","properties":{"createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"},"active":{"type":"boolean"},"baseModel":"circular(BaseModel)"},"title":"BaseModel"}},"title":"Label"},"code":{"type":"string"},"idString":{"type":"string"}},"title":"SimpleCodeObject"},"label":{"type":"object","properties":{"createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"},"active":{"type":"boolean"},"labelId":{"type":"integer","format":"int32"},"label_en":{"type":"string"},"label_sp":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"baseModel":{"type":"object","properties":{"createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"},"active":{"type":"boolean"},"baseModel":"circular(BaseModel)"},"title":"BaseModel"}},"title":"Label"},"baseModel":{"type":"object","properties":{"createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"},"active":{"type":"boolean"},"baseModel":"circular(BaseModel)"},"title":"BaseModel"}},"title":"TracerCategory"}}},"required":true}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Returns a Success code if the operation was successful","content":{"text/json":{}}},"403":{"description":"Returns a HttpStatus.FORBIDDEN if the User does not have access","content":{"text/json":{}}},"500":{"description":"Returns a HttpStatus.INTERNAL_SERVER_ERROR if there was some other error that did not allow the operation to complete","content":{"text/json":{}}}}}
+>
+  
+</StatusCodes>
+
+
+      

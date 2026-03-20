@@ -1,0 +1,71 @@
+---
+id: can-edit
+title: "Check user edit permissions"
+description: "Check if a user can edit another user"
+sidebar_label: "Check user edit permissions"
+hide_title: true
+hide_table_of_contents: true
+api: eJylVN9r2zAQ/lfEPW2gJSWjKzNjkHVZSSmDrtn6EPKgyJdYrS250rldMP7fx0nO6qZlbOwp8el+fPfdd9dCjkF7U5NxFjI4LVDfCrMRSjQBvdDKCswNCWUdFeijFSS4Gr3imHkOGWhlZ7khkFArryok9AGyZXuQfFGgmH8WbiOowJSfnND7kmzUjfdo6WlxkGA4vlZUgASrKoQM2GWegwSPd43xmENGvkEJQRdYKchaoF3NnsYSbiPsjfOVomR6O4GuW3F4qJ0NGDhicnTEP9pZQksxB/6k8U3gBtrnqQN5Y7fQdZ08aPYbUuNtiF1FBlOfHkNTEnQSjv+xlFvfoI4ce2afTEJcYQhqi6cux5dwSSBDJUZAqc/o+QLguSX0VpUCvXdePBSmxATa2O3vNlJKteX5wgIDwUpChVQ4FsIWkwiogAzGqjZjwkDjXh/jNs2sAwkB/f1eJY0vIYOCqA7ZmKNGd42yZDZGR40pq8odGR1Gzm/hEPcZWtYi5iLlFJyOBxtQN97QLtZYo/Lopw0jW66Gz1dMdOJy6LT/+rKXzPn14lntGXMWuTm/Xghyt2iFsdGQpJaJTzGL+BAfP0IvTx5Iyg9yPzMmINJr7MYxgKe1Lp9wIqZ7UsTCuRIklEajDVEE/YZMa6ULFBfpQfxAHzhyMjoCeUD6w8PDSEV35njc5wrji/np7OvV7A3HDLR0OWUu7lNCyGAyen+yPD5+d7Jir9oFqpQdIElnJS513IUafWUCB4dDTgcb8dfXqCcw7k9dKmMZRWyw7cW4BFUb9mTFysHByvozspJQuEDs2bZrFfC7L7uOzXcNetbQSsK98katmQG+bSbw/xyyjSoD/qGNV9/6C/Va/McJfLHJ3qjsjuehyoa/QMIt7h5PZLfqJBSocvQReXqcao01DcIez0833Omz2QK67hcmPhsf
+sidebar_class_name: "get api-method"
+info_path: docs/generated/api/qat
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Check user edit permissions"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/api/test/canEdit/{userId}"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Check if a user can edit another user
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"description":"The ID of the user to check if the current user can edit","in":"path","name":"userId","required":true,"schema":{"type":"integer","format":"int32"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"content":{"text/json":{"schema":{"type":"string"}}},"description":"Returns the edit check result"},"500":{"content":{"text/json":{"schema":{"type":"object","properties":{"messageCode":{"type":"string"}},"title":"ResponseCode"}}},"description":"Internal error while checking the edit"}}}
+>
+  
+</StatusCodes>
+
+
+      

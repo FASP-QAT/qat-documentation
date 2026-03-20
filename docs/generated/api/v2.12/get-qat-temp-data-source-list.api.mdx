@@ -1,0 +1,71 @@
+---
+id: get-qat-temp-data-source-list
+title: "Get List of Data Source"
+description: "API used to get list of data source from temp tables"
+sidebar_label: "Get List of Data Source"
+hide_title: true
+hide_table_of_contents: true
+api: eJyllE1v2zAMhv+KwMs2QEu6Drv4NAPL2gBF13xslyIoWJmOtdmSKtHNAsP/fZDspp/ogO1kSxDJh+RLdsC4DZBdgtOOam0INhIKCsprx9oayCC/mIs2UCHYii2xqHVgYUtRIKMItvWKROltI5gaJxivawogwTryGF3MC8hgS7xAXlPjviDjKlmd6cAgwaHHhph85OjAYEOQHXjmBUjQkcMhV/AU7uLwTJTWi12lVSX2thWGInFFL+NaDxI83bTaUwEZ+5YkBFVRg5B1wHsXGbRh2lJ8WlrfIA9XH4+h7zfRPDhrAoVocXx0FD+P4ZbErTdB4IsQukx8hzqJHQYRWqUohLKtQYKyhslwIqLfPP0Zotuu73sJn14PeMrsVozchsn8fD1bnudnV6vZ8sdseTVbLr8tx+iehqi2IWHjWZD31guukEWhC2EsC6xru3vCylYo27iamF4F7SU0xJUdNZDazRVkMEWnp3dNnt4M2pjG+gzlmXb3CuhBQiB/eyeR1teQQcXsQjaNjiY3LRrWpVaJDg3We9YqTKzfPpeMt0WrUhaD06ScRb4GCbfo9SDgSL+JyittSktzHSWxeBRIoClEfhdNrK2NbYucQ6jjyYfjydEzgvxi/ibEEmJqdirtIl+LVcIZ64kq1XMch6/56kIwYQPySfq73e4v6VODOlqcrlZX0c/V6eLztgrqvQtNetJLqLUiE+hBxNyhqkgM/I9DltZOrtFD7K6zgRs0DwxPiMXZqPc47GKY9qdV6O5V868rZhzTJDlXozYxk4TajTK7BHQ6iu5uu0kYpRZxDmIDCdmDhbORUNnA0bzrrjHQd1/3fby+acnvIbvc3EslKbLQIf4XkJVYB3ol1bfLceu8E/+zu15MfbxEs09Srtt4Agm/aP94o/abXkJFWJBP+MODXCly/MD0fpbjKBzm+GS2hr7/A/2YJdo=
+sidebar_class_name: "get api-method"
+info_path: docs/generated/api/v2.12/quantification-and-analytics-tool
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get List of Data Source"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/api/pipeline/qatTemp/datasource/{pipelineId}"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+API used to get list of data source from temp tables
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"pipelineId","in":"path","description":"PipelineId for which you need the list of data source for","required":true,"schema":{"type":"integer","format":"int32"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Returns a list of data source if the operation was successful","content":{"text/json":{}}},"500":{"description":"Returns a HttpStatus.INTERNAL_SERVER_ERROR if there was some other error that did not allow the operation to complete","content":{"text/json":{}}}}}
+>
+  
+</StatusCodes>
+
+
+      

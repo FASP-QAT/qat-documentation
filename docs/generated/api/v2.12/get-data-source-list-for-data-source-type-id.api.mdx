@@ -1,0 +1,71 @@
+---
+id: get-data-source-list-for-data-source-type-id
+title: "Get DataSource for a DataSourceTypeId"
+description: "API used to get the DataSource for a specific DataSourceTypeId"
+sidebar_label: "Get DataSource for a DataSourceTypeId"
+hide_title: true
+hide_table_of_contents: true
+api: eJyllE1v2zAMhv+KwMs2wEuyrLv4NANd2wBDmzTpqQgKVqZjbbakSnTSwPB/H+S4zefWAjvZlinyfaWHrIFx4SG+hxQZp6ZykmAeQUpeOmVZGQ0xJOORqDylgo1YEAvOSZy/xovMOIHCW5IqU3Lnz2xtaZRCBMaSw5BslEIMC+JtzE/l+cK4E5ssOiyJyQV9NWgsCeIdna+BKmi0yDkcCj/MKjhHFmtTiRVqDnaOrUAEjp4q5SiFmF1FEXiZU4kQ18BrG0QozbSgEJoZVyJvlr4OoWnmYbu3RnvyYcdwMAiPfV23xJXT/qA6RCCNZtLclqJn7v/yIb5umiaCs8HZ3zOhuGK2U0aufO/6ZvZwcXN3fS5UdlCjO4fusigVqSEvtGFBz8rzGxK+nTIz0kxOYyHIOeM2R2wdLUlzQCYn4YgdqSUWwmTv9dtEUBLnpgOm5YFziKGPVvW3FPQPgejXhysNRODJLV9IqlwBMeTM1sf9kK73VKHmAG8LKWos1qyk7xm3OGJq7ExayfAhNklb/ifJDCJYolP4WLQ336KgdGZac4qLAM5kr5BAnYrkpZqYGVOEJOT8ptSw92XYGxwpSMajDz7Ai1KS31A0SWZi2srpThVle6pd11wk07FgwhKiA/ur1eoN+1SiCjuuptOHkOfhavJ9kXv52fqyDWkiKJQk7WmnYmJR5iQ2+vdLZsb0HtFBuGNrPJeodzZeEh8PlxPjYe9M6i1J/z+tuiZvgbQFKh0cthbqDsJ7QKuChl2WT0ym+GhtHkFuPIcUdf2Inu5c0TRh+akit4b4fr7FqKU1VT68pxBnWHj6h/GPt93c+nTc8O8bfCedd4uo1y3hRRW+IILftD41j5t5E0FOmJJr9W/CEinJ8k6CbbuHPnlt9csfM2iaP42ASOk=
+sidebar_class_name: "get api-method"
+info_path: docs/generated/api/v2.12/quantification-and-analytics-tool
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get DataSource for a DataSourceTypeId"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/api/dataSource/dataSourceTypeId/{dataSourceTypeId}"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+API used to get the DataSource for a specific DataSourceTypeId
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"dataSourceTypeId","in":"path","description":"DataSourceTypeId that you want to the DataSource for","required":true,"schema":{"type":"integer","format":"int32"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Returns the DataSource","content":{"text/json":{}}},"404":{"description":"Returns a HttpStatus.NOT_FOUND if the DataSourceTypeId specified does not exist","content":{"text/json":{}}},"500":{"description":"Internal error that prevented the retreival of DataSource","content":{"text/json":{}}}}}
+>
+  
+</StatusCodes>
+
+
+      

@@ -1,0 +1,71 @@
+---
+id: get-forecasting-unit-by-id-list
+title: "Get Forecasting Units"
+description: "Retrieve a list of forecasting units given a list of IDs."
+sidebar_label: "Get Forecasting Units"
+hide_title: true
+hide_table_of_contents: true
+api: eJztWG1v20YM/isHftoAxQ7SZcWEYUCcpoWLdG2dpP1gGAUt0da10p1yR9k1DP33gSd7URQ7LxhQrED8yT7yyIcPeWfy1pCST5wuWVsDMYyInaYFKVS59qzsTM2sowQ9azNXldHs1VwvyLQ0hq98DyKwJTkUO8MUYpgTv77ZeWU0D1bD9Fx7hggcXVfkeWDTFcRrSKxhMixfsSxznQQz/a9eMK3BJxkVKN94VRLE4NlpM4e6rqMO/suM9gIXnBvf2lEKMbuKalnwpTWevHg4OjzsIGL6zvuhoHO4ggg0U+Fb63b6lRIJtXTCC+vGPCasF9TSm1qbExqoI5iip3c2pfxhMy1VSLRLqhzdL4Pt4pcRldbxJ03LX8Uwa87F2C4Fkc9u56lts5PCW5bvbJS8/4tcG6Y5uUarQG6WXhyJwzkZcjo5x+kTg/2xvOSC7wuZHZW3Fc7cPcLyPqEvdxX0DahAzi5Az4Q9hTDP72yqZ5rSwephOipP7tFVLMoGC7of1gC9Tq48uXugvULeYaXlM0WmA9YFyc7S2bRK+BSZ5tY9Iir92Ih0etG43puF5+J7bPG1hBe6KHN6H0jogHaEefEwU4lNd5VZ9Jza/0VqT226O73sMCH3fFJ/rnTuTGUVOqPng/pTZ3bPQW3p7W94Zdy4M2+MiCtnvOKMVGdrmEME/W+HL540UuzJVEHe4zyEcD8Po808I5od/F340peo1JJXxrLKcEGqJFdo77U1im0zS92ZACWq4ycOSj8wqqFh6cxyRc5Zp5aZzpupUALYEYx4wbmHeNxOvwqz0CSCgjizMtKWNgyvJXIGMfSx1P3OBNSfroapDJme3IKcmFxD5eRwZcylj/uyq3ddoWE928y5aDBfsU58zzrp+m4H80ZmJWRKVWNTibl6Ii6SymleBR9TQkfupBJk40lbfCGJ2Jz1ltL21+vtBfT28+Ud32dCZKjtt58vFdtvZJQ2YaG5uGI1CFbUn0H4l0Qe/MlkGyQQbXMqBASupURGNw8AZ99Rjma779VmZgXibTQfb7GmTra0qUtrc4gg1wkZH8qoacvhpMQkI3XeCNQncqGuj3qHEHXSslwuexjUJQv9jS3fPx+env19cXYge1rV+PFE2Fo0BiGGo94fL8fHx7+/nIQO3Xou0LSQvCFW3dryXb5bp+k/PcRsCA/nscxRh9eFEO56U7xjwFLfHeAhgqaAJxFkUuzxGNZr+Yu4cnldy/J1RdLIjCcRLNBpnAod40kdQUaYkgvV+I1WEMNpE8zBpcAR9bwKLybdF5462u44SRIquaV7c6XU7YP44f2F0D/dPB8V4fIAh0t53sElxBCeo8RFKPywtoYczbzCueg2NuXzDwUEobA=
+sidebar_class_name: "post api-method"
+info_path: docs/generated/api/qat
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get Forecasting Units"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/api/forecastingUnit/byIds"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Retrieve a list of forecasting units given a list of IDs.
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={undefined}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"content":{"application/json":{"schema":{"type":"string"}}},"description":"The list of forecasting unit IDs","required":true}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"content":{"text/json":{"schema":{"type":"array","items":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":{"type":"object","properties":{"baseModel":"circular(BaseModel_ReportView)"},"title":"BaseModel_ReportView"},"forecastingUnit":"circular(ForecastingUnit_ReportView)","forecastingUnitId":{"type":"integer","format":"int32"},"genericLabel":{"type":"object","properties":{"baseModel":{"type":"object","properties":{"baseModel":"circular(BaseModel_ReportView)"},"title":"BaseModel_ReportView"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"}},"title":"Label_ReportView"},"label":{"type":"object","properties":{"baseModel":{"type":"object","properties":{"baseModel":"circular(BaseModel_ReportView)"},"title":"BaseModel_ReportView"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"}},"title":"Label_ReportView"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser_ReportView"},"lastModifiedDate":{"type":"string","format":"date-time"},"productCategory":{"type":"object","properties":{"id":{"type":"integer","format":"int32"},"idString":{"type":"string"},"label":{"type":"object","properties":{"baseModel":{"type":"object","properties":{"baseModel":"circular(BaseModel_ReportView)"},"title":"BaseModel_ReportView"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"}},"title":"Label_ReportView"}},"title":"SimpleObject_ReportView"},"realm":{"type":"object","properties":{"code":{"type":"string"},"id":{"type":"integer","format":"int32"},"idString":{"type":"string"},"label":{"type":"object","properties":{"baseModel":{"type":"object","properties":{"baseModel":"circular(BaseModel_ReportView)"},"title":"BaseModel_ReportView"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"}},"title":"Label_ReportView"}},"title":"SimpleCodeObject_ReportView"},"tracerCategory":{"type":"object","properties":{"id":{"type":"integer","format":"int32"},"idString":{"type":"string"},"label":{"type":"object","properties":{"baseModel":{"type":"object","properties":{"baseModel":"circular(BaseModel_ReportView)"},"title":"BaseModel_ReportView"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"}},"title":"Label_ReportView"}},"title":"SimpleObject_ReportView"},"unit":{"type":"object","properties":{"code":{"type":"string"},"id":{"type":"integer","format":"int32"},"idString":{"type":"string"},"label":{"type":"object","properties":{"baseModel":{"type":"object","properties":{"baseModel":"circular(BaseModel_ReportView)"},"title":"BaseModel_ReportView"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"}},"title":"Label_ReportView"}},"title":"SimpleCodeObject_ReportView"}},"title":"ForecastingUnit_ReportView"}}}},"description":"Returns the ForecastingUnit list"},"403":{"content":{"text/json":{"schema":{"type":"object","properties":{"messageCode":{"type":"string"}},"title":"ResponseCode_ReportView"}}},"description":"User does not have permission to list forecasting units"},"500":{"content":{"text/json":{"schema":{"type":"object","properties":{"messageCode":{"type":"string"}},"title":"ResponseCode_ReportView"}}},"description":"Internal error while listing forecasting units"}}}
+>
+  
+</StatusCodes>
+
+
+      

@@ -1,0 +1,63 @@
+---
+id: get-dimension
+title: "Get Active Dimensions"
+description: "Retrieve a list of all active dimensions"
+sidebar_label: "Get Active Dimensions"
+hide_title: true
+hide_table_of_contents: true
+api: eJztV1FvE0kM/isjP91JS1L1VNCtEFJKe1VRQQIKPEQRcnad7MDszOLxpkTR/nfk2aRsjkLpiQcO8ZTE9tj+vrGz326gpFiwbcQGDzm8IGFLKzJonI1iwsKgcwYLsSsypa3JRxt8hAxCQ4x67LyEHJYkJzsvZMAUm+AjRcg3cHhwoB9F8EJe9KvQRxm/i1pyA7GoqMZkXjcEOSAzriEDK1THgT3M31EhkEHDWlxsn75vbhA3D8EReugymGOkp6Ek98PSQGG5aB3yH8c745+QQcGEQuXx+vZCbSRWzq7jrBdaEkMGi8A1Sm/661Ara7DHethXFLZ+CV2XgVhxajrGaItXkViPbFs5Qbnh1KBGiUL3xNakhxxGeRpKu7A/B4hhP3dBsp9ve2nd//9+rlfvuztzOP+BY/97e35vz08B7T/ez5zc3TbnLfkbuto5F/wNZ/MtZ2y+4vzlJugi/QH9mtg+a52uU/sXKqplH41UdIuM6jI4uqM6+gppNcWIS3ocyluoeLGVZinyhubPvSijzhBzYCMVimmYVuSFygSJe5GITnGp4RpQQttXw2WEfDogapZBTVKFrVpUACgV5DDGxo7LgXiMxCtiPb6BlvWpUYk0MR9r5OhDi17swhZJfKJHtxZbxFFgvbd9LGfkVaRSafqcRtN1My1RtGxlnWrMCZl40mo309nQ/VLJ7/kdBu1+/bMbkidvLr+ofao8JnqevLk0Et6TN9YnQz9cuTlOWczD5HykyFM9fXomD2S7e1QCEq/WL4I2sF/r+R4nZrIjxVyG4CADZwvyMQ1GvyswabCoyFz0DvOaON3f4egAsn+RfnV1NcIUrhyPt7ni+OL88emzl6f39Mxgvp5PlItVnxByOBz9/WB6dHT/wUyjmhClRj/o5IzETPrFOBm+X+whHOzHXd5RtuylhWoc2iRHErrNdvqmgI2Fgb7SOa1CFHVtNipdXrHrOjV/aIl1YmYZrJAtzhXvdNZlUBGWxGmY3tNa6S0KanTGV+ja6xbSTnfDRTg7vYSu+wTckKOA
+sidebar_class_name: "get api-method"
+info_path: docs/generated/api/qat
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get Active Dimensions"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/api/dimension"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Retrieve a list of all active dimensions
+
+<ParamsDetails
+  parameters={undefined}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"content":{"text/json":{"schema":{"type":"array","items":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":"circular(BaseModel)","createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"}},"title":"BaseModel"},"createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"dimensionId":{"type":"integer","format":"int32"},"label":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":"circular(BaseModel)","createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"}},"title":"BaseModel"},"createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"labelId":{"type":"integer","format":"int32"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"}},"title":"Label"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"}},"title":"Dimension"}}}},"description":"Returns the list of all active dimensions"},"500":{"content":{"text/json":{"schema":{"type":"object","properties":{"messageCode":{"type":"string"}},"title":"ResponseCode"}}},"description":"Internal error that prevented the retrieval of the dimension list"}}}
+>
+  
+</StatusCodes>
+
+
+      

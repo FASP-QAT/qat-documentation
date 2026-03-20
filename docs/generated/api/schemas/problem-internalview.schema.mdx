@@ -1,0 +1,33 @@
+---
+id: problem-internalview
+title: "Problem_InternalView"
+description: ""
+sidebar_label: "Problem_InternalView"
+hide_title: true
+hide_table_of_contents: true
+schema: true
+sample: {"actionLabel":{"baseModel":{},"labelId":0,"label_en":"string","label_fr":"string","label_pr":"string","label_sp":"string"},"actionUrl":"string","actualConsumptionTrigger":true,"adjustmentTrigger":true,"baseModel":{},"forecastedConsumptionTrigger":true,"inventoryTrigger":true,"label":{"baseModel":{},"labelId":0,"label_en":"string","label_fr":"string","label_pr":"string","label_sp":"string"},"problemCategory":{"id":0,"idString":"string","label":{"baseModel":{},"labelId":0,"label_en":"string","label_fr":"string","label_pr":"string","label_sp":"string"}},"problemId":0,"shipmentTrigger":true}
+custom_edit_url: null
+---
+
+import Schema from "@theme/Schema";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Problem_InternalView"}
+>
+</Heading>
+
+
+
+
+
+<Schema
+  schema={{"type":"object","properties":{"actionLabel":{"type":"object","properties":{"baseModel":{"type":"object","properties":{"baseModel":"circular(BaseModel_InternalView)"},"title":"BaseModel_InternalView"},"labelId":{"type":"integer","format":"int32"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"}},"title":"Label_InternalView"},"actionUrl":{"type":"string"},"actualConsumptionTrigger":{"type":"boolean"},"adjustmentTrigger":{"type":"boolean"},"baseModel":{"type":"object","properties":{"baseModel":"circular(BaseModel_InternalView)"},"title":"BaseModel_InternalView"},"forecastedConsumptionTrigger":{"type":"boolean"},"inventoryTrigger":{"type":"boolean"},"label":{"type":"object","properties":{"baseModel":{"type":"object","properties":{"baseModel":"circular(BaseModel_InternalView)"},"title":"BaseModel_InternalView"},"labelId":{"type":"integer","format":"int32"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"}},"title":"Label_InternalView"},"problemCategory":{"type":"object","properties":{"id":{"type":"integer","format":"int32"},"idString":{"type":"string"},"label":{"type":"object","properties":{"baseModel":{"type":"object","properties":{"baseModel":"circular(BaseModel_InternalView)"},"title":"BaseModel_InternalView"},"labelId":{"type":"integer","format":"int32"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"}},"title":"Label_InternalView"}},"title":"SimpleObject_InternalView"},"problemId":{"type":"integer","format":"int32"},"shipmentTrigger":{"type":"boolean"}},"title":"Problem_InternalView"}}
+  schemaType={"response"}
+>
+  
+</Schema>
+            

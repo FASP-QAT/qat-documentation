@@ -1,0 +1,63 @@
+---
+id: get-planning-unit-capacity-list
+title: "Get Planning Unit Capacity List"
+description: "Retrieve a full list of all planning unit capacities"
+sidebar_label: "Get Planning Unit Capacity List"
+hide_title: true
+hide_table_of_contents: true
+api: eJztWG1v20YM/isHftoA1Q6yZsWEYUCSZUGKtF2bZP1gGAUt0fa1pzv1jnJmCPrvA09yICd2nQwd1pd8inPkkQ9fdWQNOYXM65K1s5DCG2KvaUEK1bQyRhkdWLmpQmNUadBabWeqsppVhiVmmjUFSMCV5FFEnOWQwoz4z473ymo+bjmX5zowJOAplM4GCpDWsL+3J38yZ5ksy0+mv3n4PgiaGkI2pwLj8bIkSAG9xyUkoJmK0Dt3k/eUifTSC5YIK60BM9YL6vFNnDOEFpoEJhjohcvJfDYxkGmfVQb9D0erwx8hgcwTMuVHy92KqkBeXHjDpy3TjDwkMHW+QG6PftoXzcJssejjCuy1nUHTJMCajRwdYdDZVSAvVzoovyNvuNXTkSPTE9YFySWDgV+4XE/1l2FEH89DLFmX1wVNnNLlZ0+OrYrJOuDcVRNDPR9+CZ74rsOZQNlrMrvt0Pe1QecXrd67NgjayWfsGI+N53vI1K2N56uPz4TMvVFF7ndkt5fVu6n/BLH8FDGUW4jfXAadxwbUJLBb9YUuSkOvWlNv9cvVo+ze1gZGz5sxR6ortxOrsjSa/G7/P/bor68HfHMV9tijH3v0/9Sje4RNEzQ0jbDcGdkrb8ODJvYmgad7Tx80eW+JRkEh4IyOXb7D0Dfd2B85N5jx0m2Fq6ausrmAPnjguuC/Bn1mWfLLKPLeeXU914bUjJjFio3mLFv5OAuQjm6CrOIIM06gIJ67bocisJHnkMIQSz3sf72HK2lDNAYSCOQX5EVkDZWXr82cuQzpUG4OPlZoWU91Flc0aNEsWWdh4Lzk8rpFp2RllUO5amUqEdeMRUVW+Tglj2qYEHryh5WgG4375AsJQevlPtPqvz9WhfP87eUd3SfiTcVzUs/fXip2H8gqbeNBW3CpOopS1K+R+JtYHvXJVzdSIFlFUxwQfa3t1AmAdV2v13yiDldOUZfOiUeNzsiGmB5tEcNhidmc1HlLUH+RD3Jzf7AHyS2nX19fDzCyi4+HnawwPD87Pnl5cfJE7vSy7PWh+GLRCoQU9ge/PBsdHPz8bBxfbS5wgbaH5JRYrWWOWjUI1e3Y1mzt1cu/3e91Po3FVhrU8XETba67HB0BlhpuzeS93UoCkqnjBOYusLDXtTyOrrxpGjn+WJGX3BonsECvUZYtkloJzAlzeTuOavhASwlEllEpwhdoqhtYsQc0/RI6PbmEpvkHDoMqyA==
+sidebar_class_name: "get api-method"
+info_path: docs/generated/api/qat
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get Planning Unit Capacity List"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/api/planningUnit/capacity/all"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Retrieve a full list of all planning unit capacities
+
+<ParamsDetails
+  parameters={undefined}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"content":{"text/json":{"schema":{"type":"array","items":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":"circular(BaseModel)","createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"}},"title":"BaseModel"},"capacity":{"type":"number","format":"double"},"createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"},"planningUnit":{"type":"object","properties":{"id":{"type":"integer","format":"int32"},"idString":{"type":"string"},"label":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":"circular(BaseModel)","createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"}},"title":"BaseModel"},"createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"labelId":{"type":"integer","format":"int32"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"}},"title":"Label"},"name":{"type":"string"}},"title":"SimpleObject"},"planningUnitCapacityId":{"type":"integer","format":"int32"},"startDate":{"type":"string"},"stopDate":{"type":"string"},"supplier":{"type":"object","properties":{"id":{"type":"integer","format":"int32"},"idString":{"type":"string"},"label":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":"circular(BaseModel)","createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"}},"title":"BaseModel"},"createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"labelId":{"type":"integer","format":"int32"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"}},"title":"Label"},"name":{"type":"string"}},"title":"SimpleObject"}},"title":"PlanningUnitCapacity"}}}},"description":"Returns a full list of all planning unit capacities"},"404":{"content":{"text/json":{"schema":{"type":"object","properties":{"messageCode":{"type":"string"}},"title":"ResponseCode"}}},"description":"No planning unit capacities found"},"500":{"content":{"text/json":{"schema":{"type":"object","properties":{"messageCode":{"type":"string"}},"title":"ResponseCode"}}},"description":"Internal error while getting planning unit capacity"}}}
+>
+  
+</StatusCodes>
+
+
+      

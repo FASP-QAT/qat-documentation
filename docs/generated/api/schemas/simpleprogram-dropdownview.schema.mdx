@@ -1,0 +1,33 @@
+---
+id: simpleprogram-dropdownview
+title: "SimpleProgram_DropDownView"
+description: ""
+sidebar_label: "SimpleProgram_DropDownView"
+hide_title: true
+hide_table_of_contents: true
+schema: true
+sample: {"active":true,"code":"string","currentVersionId":0,"healthAreaIdList":[0],"id":0,"idString":"string","label":{"baseModel":{},"labelId":0,"label_en":"string","label_fr":"string","label_pr":"string","label_sp":"string"},"programTypeId":0,"realmId":0}
+custom_edit_url: null
+---
+
+import Schema from "@theme/Schema";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"SimpleProgram_DropDownView"}
+>
+</Heading>
+
+
+
+
+
+<Schema
+  schema={{"type":"object","properties":{"active":{"type":"boolean"},"code":{"type":"string"},"currentVersionId":{"type":"integer","format":"int32"},"healthAreaIdList":{"type":"array","items":{"type":"integer","format":"int32"}},"id":{"type":"integer","format":"int32"},"idString":{"type":"string"},"label":{"type":"object","properties":{"baseModel":{"type":"object","properties":{"baseModel":"circular(BaseModel_DropDownView)"},"title":"BaseModel_DropDownView"},"labelId":{"type":"integer","format":"int32"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"}},"title":"Label_DropDownView"},"programTypeId":{"type":"integer","format":"int32"},"realmId":{"type":"integer","format":"int32"}},"title":"SimpleProgram_DropDownView"}}
+  schemaType={"response"}
+>
+  
+</Schema>
+            

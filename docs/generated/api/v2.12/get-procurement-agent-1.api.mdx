@@ -1,0 +1,71 @@
+---
+id: get-procurement-agent-1
+title: "Get ProcurementAgent for a ProcurementAgentId"
+description: "API used to get the ProcurementAgent for a specific ProcurementAgentId"
+sidebar_label: "Get ProcurementAgent for a ProcurementAgentId"
+hide_title: true
+hide_table_of_contents: true
+api: eJytlMFu2zAMhl9F4GUb4CVptl18moGtbS5t0qSnIghYmba12ZIq0UkDw+8+yEnXJnFXFNjJtiyS/y99ZAOMuYf4DqwzsnZUkeYkJ82wjCAlL52yrIyGGJLpRNSeUsFG5MSCCxLToyiRGSdQeEtSZUqe/J+kEIGx5DAknaQQQ058vGt1BhFYdFgRkwvyGtBYEcQnMruEKsizyAUcaz6tL7hAFltTiw1qDl5e8wEROHqolaMUYnY1ReBlQRVC3ABvbZCjNFNOYWtmXIW8W/oyhrZdhnBvjfbkQ8R4NAqPQ303xLXTvlcDRCCN5vAWCtIjD3/5ENW0bRvB19HX1/OhuGS2c0au/eDqerE6v769+iFU1ltpkj7dGKUiNeSFNizoUfm3RHzrMzXRTE5jKcg543YHbh2tSXOgpyDhiB2pNZbCZO/z3UZQERdmT07HCRcQwxCtGh7TMWxOeWkhAk9u/QRW7UqIoWC2Ph6GLIOHGjUHfDtIUWO5ZSX9wLi8D7C0luFD7JJ2HTBLFhDBGp3C+7K7/o4HpTPTeVJcBnpmB4UE6lQkT9XEwpgyJCHnd6XGg7PxYHSiIJlOPvjAMUpJfofSLFmIeSdnf5gou8PcN9F5Mp8KJqwgOrK/2WzesE8VqhBxOZ+vQp7V5ex7Xnj52fqq29JGUCpJ2tOLiolFWZDY6T8smRkzuEcH4Wqt8VyhfhF4QfzakOmdLQdn0zyD9P+m177zOy5tiUoHx52lZs/iHaBVgcxTsOOe+bWMoDCeQ1zT3KOnW1e2bVh+qMltIb5bPrPUIZsqH95TiDMsPf3D9ceb/QT71Nf07xmFvbb3i6i3He5lHb4ggt+07Z/V7bKNoCBMyXVOdhsTKcnyixTPTR/a5m/DX/xcQNv+Aev5WU0=
+sidebar_class_name: "get api-method"
+info_path: docs/generated/api/v2.12/quantification-and-analytics-tool
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get ProcurementAgent for a ProcurementAgentId"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/api/procurementAgent/{procurementAgentId}"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+API used to get the ProcurementAgent for a specific ProcurementAgentId
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"procurementAgentId","in":"path","description":"ProcurementAgentId that you want to the ProcurementAgent for","required":true,"schema":{"type":"integer","format":"int32"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Returns the ProcurementAgent","content":{"text/json":{}}},"404":{"description":"Returns a HttpStatus.NOT_FOUND if the ProcurementAgentId specified does not exist","content":{"text/json":{}}},"500":{"description":"Internal error that prevented the retreival of ProcurementAgent","content":{"text/json":{}}}}}
+>
+  
+</StatusCodes>
+
+
+      

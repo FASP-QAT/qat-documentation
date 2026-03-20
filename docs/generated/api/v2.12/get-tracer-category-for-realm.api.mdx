@@ -1,0 +1,71 @@
+---
+id: get-tracer-category-for-realm
+title: "Get TracerCategory list for Realm"
+description: "API used to get the complete TracerCategory list for a Realm"
+sidebar_label: "Get TracerCategory list for Realm"
+hide_title: true
+hide_table_of_contents: true
+api: eJylVE1z2zgM/SscXLY7o7WzaXvRqW7TNL7ky84p48kgFGRxK5EMCDn1aPTfd0jJG7ttmm57EkUSeA/gw+tAcB0gvwVh1MQfUGjteAurDAoKmo0X4yzkMLucqzZQocSpNYmSipR2ja9JSC0PglVtgqjSsUJ1TVg3kIHzxBhTzQvIYU1yGHLqeHfTI2NDQhxpdWCxIciB4+m8gAxMZONRKvia4vVwR0mForauVY9oB6LP8IMMmB5aw1RALtxSBkFX1CDkHcjWR2BjhdYUr5aOG5Rh6/Ux9P0qhgfvbKAQI46PjuLna1LSsg3P0YAMtLNCVhImfZHpPyEGdn3fZ/Dm6PXzKVGdifiFoLRhcnpx/X5+cvLxXJkygd0EYlU4Cso6URVuSKHWFMKLkG9+EvL8Ynl3enFzfrKD3D1A8KRNaah4wqcvLxf79nv9m1shtlgrYnY8vK1n2pCVKMaKFJMwmQ3WypX/u8V9Bg1J5UZVJv1JBTlM0Zvp4VBMRxFOu3HRQwaBeLPTass15FCJ+JBPY4LJQ4tWTGl00j5arLdidJg4Xn8j30t2RavjjxqSphG6mi0hgw2ywfs66SwJz9jSpXKM1FGmVwdACm2hZjs0tXSujkmIwwB1PPn7eHL0DYPZ5fyPEAd8EErq7tVsqRaJzthH1KmP41yezhaXSgjj5B6W//j4+EL51KCJEWeLxV3Mc3d29W5dBf2XD0260mdQG0020B7izKOuSA38DyFL5yb3yBBf1bsgDdq9wE8kzxrVznwO+tE96eZ37W80kyQ+X6OxsbZEvhsFdwvoTbx56MPZnvPlu+Uqg8oFiUFdd4+Bbrju+7j90BJvIb9dPUkmKbMwIa4LyEusA/2g0FfXoyP+qX7FT79b6LiJdpukXLfxDzL4TNs9a+9XfQYVYUGcOA+nM63Jy17c0wDHOfhveD99XELf/wsaqVqA
+sidebar_class_name: "get api-method"
+info_path: docs/generated/api/v2.12/quantification-and-analytics-tool
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get TracerCategory list for Realm"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/api/tracerCategory/realmId/{realmId}"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+API used to get the complete TracerCategory list for a Realm
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"realmId","in":"path","description":"RealmId that you want the TracerCategory list for","required":true,"schema":{"type":"integer","format":"int32"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Returns the TracerCategory list","content":{"text/json":{}}},"403":{"description":"Returns a HttpStatus.FORBIDDEN if the User does not have access","content":{"text/json":{}}},"404":{"description":"Returns a HttpStatus.NOT_FOUND if the RealmId specified does not exist","content":{"text/json":{}}},"500":{"description":"Internal error that prevented the retreival of TracerCategory list","content":{"text/json":{}}}}}
+>
+  
+</StatusCodes>
+
+
+      

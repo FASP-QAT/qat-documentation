@@ -1,0 +1,63 @@
+---
+id: get-problem-status-list
+title: "Get Problem Status List"
+description: "Retrieve a complete list of all problem statuses"
+sidebar_label: "Get Problem Status List"
+hide_title: true
+hide_table_of_contents: true
+api: eJzdVlFvGzcM/isCnzpAtYMMWdHDMCDpsiBFUjRNuj4YRkHraJ9anXSVeE4N4/57Qd15OLdJkw57GPrkM0l9JD99orSFkpKJtmEbPBTwhjhaWpNCZULdOGJSziZWYanQOdXEsHBUq8TIbaIEGkJDEWX5eQkFrIhf9zHXOeTCJgYNkVITvCwotnB4cCA/Jngmz/LJ9JmnH5KUsIVkKqoxmzcNQQEYI25Ag2Wq08geFh/ICHoTpQi2PbwtRzHWM60ogoZliDVyb/r1EDoNtrzmaP1qFJ56Q6fB4YLcw8nQsF3TKG4RgiP0ArHARJeh/A9hwNhoWofxycnO+AtoMJGQqTzZPJyoTRTPH0uQBHus6Q6COg1s2YnpBJM1bxNFWTKU8ifyHatGOUpkesq2pp7rxJehtEv7/2hiXM+PdLKPN2xa9zPsz4Lco6vK0e/J33+s3i/jd5zN95ypucf50ynoIg+gTsM9qfu6LtHjisq7JscIa28kQ9eJ75vB30afHj33Ow1HPzjG79mKmlLCFb0I5QMEvxnukBx5RwvnnmWfnKIYQ1S3lXWkVsRs/eqrBnJvPTiuEhSzHUMw11ATV2G4y6Ra5AoKmGJjp80ejxoSxTVFAdhCG2VAV8xNKqYSPfnUome7tCZfj+jRbdiaNAlRtn+/+DPyco1SqXpMJXDdXFKYNlre5BwLwkjxuJWKZvOx+1rY7gkdB+3+/bXT2st3N9/kPhXiFFekXr67URw+klfWZ0Ov0UKdZBT1e3b+IZ3nfCK37AG92zghIDNr/TJIAfu5rvY4Ucc7UtRNCA40OGvIp6yEXvdw3KCpSF30DvU3xSQrDycHoL8i/fb2doI5XDieDlhpenH+4vTV9elTWTMS1NWxcLHuAaGAw8nzZ7Ojo9+ezSWqCYlr9KNKzojVoBPVS0ANz5u9HkdH4t+8pwYe81lqHNr8Bsh9bgctzgAb25+jkRrnGqqQWNzbrbwZ3kbXdWL+1FIU/cw1rDFaXEj3s3mnoSIsKWZpfaSNkG0MNdLRGl37Txn5SHfjo3F2egNd9wUCMYYp
+sidebar_class_name: "get api-method"
+info_path: docs/generated/api/qat
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get Problem Status List"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/api/problemStatus"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Retrieve a complete list of all problem statuses
+
+<ParamsDetails
+  parameters={undefined}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"content":{"text/json":{"schema":{"type":"array","items":{"type":"object","properties":{"id":{"type":"integer","format":"int32"},"idString":{"type":"string"},"label":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":"circular(BaseModel)","createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"}},"title":"BaseModel"},"createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"labelId":{"type":"integer","format":"int32"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"}},"title":"Label"},"name":{"type":"string"},"userManaged":{"type":"boolean"}},"title":"ProblemStatus"}}}},"description":"Returns a complete list of all problem statuses"},"500":{"content":{"text/json":{"schema":{"type":"object","properties":{"messageCode":{"type":"string"}},"title":"ResponseCode"}}},"description":"Internal error while getting problem status list"}}}
+>
+  
+</StatusCodes>
+
+
+      

@@ -1,0 +1,63 @@
+---
+id: get-equivalency-unit-list-all
+title: "Get All Equivalency Units"
+description: "Retrieve a complete list of all equivalency units (includes disabled units)"
+sidebar_label: "Get All Equivalency Units"
+hide_title: true
+hide_table_of_contents: true
+api: eJztWW1r20gQ/ivLfOqBaoccuXLmKDg9X0hJ72iTtB+MKWNpbG272lV2R06N0X8/ZmX3ZMdJ0xK4pOiT7Z33Z1680qwgo5B6XbJ2FgbwjthrWpBClbqiNMSkjA6s3EyhMYquKr1AQzZdqspqDuqZtqmpMgoq0wGnhrKG8Ask4EryKJpPMxjAnHj0n/il1XymAw+NgQQ8hdLZQAEGKzg8OJCP1Fkmy/KV6Qv3PwVxcQUhzanAeLwsCQaA3uMSEtBMRWidu+knShkSKL14wrpRjynrBbX4ps4ZQgt1AlMM9MZlZB5MDaTap5VB/+x4cyjQpJ6QKTtefttQFcgLgF/5tGWak4cEZs4XyM3Rr4diWZgtFm2/Antt51DXCbBmI0fHGHR6GciLyNqVP5H3SLVsZMj0nHVBImQw8BuX6Zl+HEG0/fmeSLb1rZNWP/380Han3du/nNBwPvSE0pw/3mSpy/bFmIC+ryc6O2+E9mkxOH3AHu1avWv1RxHaD+ZnSubeXkXuj2Rvb6uPM38HsbyLGMpbiD9dBZ3FAVQn8G3T51ouUq9cRv804dbdAOsGWDfAugH2KAbYzxJbAtYxhb35K72beyy6a2s39Z9cXXdTv5v6j+PaKq/p0HRTtJuiT7oHuinaTdH/9+F/Q9xZh0BdC/XGRqbyNijOSe3wx82MuHH0nQuTW5AvKAScR2fvDurdelsTOff4fGpZ0mIUee+84hxZlZ4WZJmyGIkn9iSxyGJpf1hiD+cBBuM2TioCNUmgIM7deq0kkSDnMIA+lrq/8+67j3HFFMgvyIu+FVReJnbOXIZBX2R6VxVa1jOdxn0VWjRL1mnoOS/1sB3eCVnZa1GmGp1K1NUTMZFWXvMy2pgSevLDSvwaT9rkc8lHA3mbafPrr03xvf5wccP2SKCNEL7+cKHYfSartI0HTdEO1HHUov6IxJcSebQn/1yRAskmtQJABFrbmRMHtm293cJEDTegqAvnBFGjU7Ih1krTCDAsMc1JnTUE9Z58EMnD3gEkO6BfX1/3MLILxv21rtA/O301+vt89FxkWiX3dihYLBqFMIDD3u8vxkdHv72YxOc7F7hA2/LkhFgNjVG7pRN2EW21zQNvP9cgx1YsDep4Y4ggrNblOgYsNdxY1kACUrKTBHInO5gxrFZy07j0pq7l+KoiL0U2SWCBXovdWGNxfZORj/X3mZaSkTSlUjQu0FRf3YmToW530cnoAur6XzUvSv0=
+sidebar_class_name: "get api-method"
+info_path: docs/generated/api/qat
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get All Equivalency Units"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/api/equivalencyUnit/all"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Retrieve a complete list of all equivalency units (includes disabled units)
+
+<ParamsDetails
+  parameters={undefined}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"content":{"text/json":{"schema":{"type":"array","items":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":"circular(BaseModel)","createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"}},"title":"BaseModel"},"createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"equivalencyUnitId":{"type":"integer","format":"int32"},"healthAreaList":{"type":"array","items":{"type":"object","properties":{"code":{"type":"string"},"id":{"type":"integer","format":"int32"},"idString":{"type":"string"},"label":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":"circular(BaseModel)","createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"}},"title":"BaseModel"},"createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"labelId":{"type":"integer","format":"int32"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"}},"title":"Label"},"name":{"type":"string"}},"title":"SimpleCodeObject"}},"label":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":"circular(BaseModel)","createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"}},"title":"BaseModel"},"createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"labelId":{"type":"integer","format":"int32"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"}},"title":"Label"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"},"notes":{"type":"string"},"program":{"type":"object","properties":{"code":{"type":"string"},"id":{"type":"integer","format":"int32"},"idString":{"type":"string"},"label":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":"circular(BaseModel)","createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"}},"title":"BaseModel"},"createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"labelId":{"type":"integer","format":"int32"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"}},"title":"Label"},"name":{"type":"string"}},"title":"SimpleCodeObject"},"realm":{"type":"object","properties":{"code":{"type":"string"},"id":{"type":"integer","format":"int32"},"idString":{"type":"string"},"label":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":"circular(BaseModel)","createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"}},"title":"BaseModel"},"createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"labelId":{"type":"integer","format":"int32"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"}},"title":"Label"},"name":{"type":"string"}},"title":"SimpleCodeObject"}},"title":"EquivalencyUnit"}}}},"description":"Returns the EquivalencyUnit list"},"500":{"content":{"text/json":{"schema":{"type":"object","properties":{"messageCode":{"type":"string"}},"title":"ResponseCode"}}},"description":"Internal error that prevented the retreival of EquivalencyUnit list"}}}
+>
+  
+</StatusCodes>
+
+
+      

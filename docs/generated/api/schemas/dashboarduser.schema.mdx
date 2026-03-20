@@ -1,0 +1,33 @@
+---
+id: dashboarduser
+title: "DashboardUser"
+description: ""
+sidebar_label: "DashboardUser"
+hide_title: true
+hide_table_of_contents: true
+schema: true
+sample: {"count":0,"label":{"active":true,"baseModel":{"active":true,"createdBy":{"userId":0,"username":"string"},"createdDate":"2024-07-29T15:51:28.071Z","lastModifiedBy":{"userId":0,"username":"string"},"lastModifiedDate":"2024-07-29T15:51:28.071Z"},"createdBy":{"userId":0,"username":"string"},"createdDate":"2024-07-29T15:51:28.071Z","labelId":0,"label_en":"string","label_fr":"string","label_pr":"string","label_sp":"string","lastModifiedBy":{"userId":0,"username":"string"},"lastModifiedDate":"2024-07-29T15:51:28.071Z"}}
+custom_edit_url: null
+---
+
+import Schema from "@theme/Schema";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"DashboardUser"}
+>
+</Heading>
+
+
+
+
+
+<Schema
+  schema={{"type":"object","properties":{"count":{"type":"integer","format":"int32"},"label":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":"circular(BaseModel)","createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"}},"title":"BaseModel"},"createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"labelId":{"type":"integer","format":"int32"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"}},"title":"Label"}},"title":"DashboardUser"}}
+  schemaType={"response"}
+>
+  
+</Schema>
+            

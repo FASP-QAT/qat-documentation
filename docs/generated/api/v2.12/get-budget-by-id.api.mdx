@@ -1,0 +1,71 @@
+---
+id: get-budget-by-id
+title: "Get Budget for a BudgetId"
+description: "API used to get the Budget for a specific BudgetId"
+sidebar_label: "Get Budget for a BudgetId"
+hide_title: true
+hide_table_of_contents: true
+api: eJydlE1z2jAQhv+KZi9tZ1ygJL34VDL54pKQQE4ZJrPYa6zWlhRpDWE8/u8dySZAkjZpT2Bpd993pUdbA+PSQXwPiypdEsM8gpRcYqVhqRXEMJqMReUoFazFklhwTuIkxIpMW4HCGUpkJpNudZxCBNqQRV9gnEIMS+J272QTdg1aLInJeuEaFJYEcWcgBEgvbJBzeOlmqyE4RxYbXYk1KvbeDn1BBJYeK2kphZhtRRG4JKcSIa6BN8YLSsW0JB+aaVsit0tHQ2iauU93RitHzmcMBwP/c+jllriyyu0pQwSJVkyKgww9cf+n87F10zQRHA+O/lwFxSWzmTJy5Xrn17cn49PTsyshs1D/zpEVqSYnlGaR44oEJgk5d9j6uwaOP2jg6nr2cH59d3W6NfB88N11U7qzQ0/SvSf9/a0THCsmq7AQZK227Z0aSytS7IHLSVhiS3KFhdDZR3psIiiJc91hF2DjHGLoo5H9FrF+vUWtgQgc2dWWxMoWEEPObFzc9xm9xwoVe7oDzaiw2LBMXE/b5Ss2J1anVeI/RFs0PJCb0QwiWKGVuCgCTQEvqTId/EsuPIw3B0ICVSpGWzUx07rwRci6VmrY+zbsDV45GE3GnwIRWzZy8vpiGux0B4dJOLju1Z2PphPBhCVEL9pfr9fvtE8lSp9xOZ0++DoPlzc/lrlLvhpXhpAmgkImpBztKY4MJjmJ1v+hZKZ1b4EW/DUa7bhEtZd4QXw4efYGzsE51DtA/m98dQMisGUKlMp3EqzWHU/3gEZCtJ2aEcTP42seQa4d+5i6XqCjO1s0jV9+rMhuIL6f73gI2KXS+f8pxBkWjv7Szefbbqh9Ef8wCd9sp1tEtQl4FpX/ggh+0WZ/GDfzJoKcMCUbvLbboyQhw3uJu2fo4X5+ghdnM2ia3yRSLzA=
+sidebar_class_name: "get api-method"
+info_path: docs/generated/api/v2.12/quantification-and-analytics-tool
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get Budget for a BudgetId"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/api/budget/{budgetId}"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+API used to get the Budget for a specific BudgetId
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"budgetId","in":"path","description":"BudgetId that you want to the Budget for","required":true,"schema":{"type":"integer","format":"int32"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Returns the Budget","content":{"text/json":{}}},"403":{"description":"Returns a HttpStatus.FORBIDDEN if the User does not have access to the Budget","content":{"text/json":{}}},"404":{"description":"Returns a HttpStatus.NOT_FOUND if the BudgetId specified does not exist","content":{"text/json":{}}},"500":{"description":"Internal error that prevented the retreival of Budget","content":{"text/json":{}}}}}
+>
+  
+</StatusCodes>
+
+
+      

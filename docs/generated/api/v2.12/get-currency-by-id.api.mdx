@@ -1,0 +1,71 @@
+---
+id: get-currency-by-id
+title: "Get Currency for a CurrencyId"
+description: "API used to get the Currency for a specific CurrencyId"
+sidebar_label: "Get Currency for a CurrencyId"
+hide_title: true
+hide_table_of_contents: true
+api: eJydVE1v2zAM/SsCL9sAL8my7uLTso+2ubRpk56KoGBlOtZmS6pEJw0M//dBttPEabduO9miSL5H8okVMK48xLcgS+dIyy0sI0jIS6csK6MhhslsKkpPiWAjVsSCMxJfO2+RGidQeEtSpUo+2acJRGAsOQxJpgnEsCLe3X5p7y06LIjJBQIVaCwI4icijYsKBCxyBses9kiCM2SxNaXYoObA8pghRODooVSOEojZlRSBlxkVCHEFvLUBVmmmFQXX1LgCuTV9HENdL0O4t0Z78iFiPBqFT5/PNXHptO9hQwTSaCbNDRA98vCHD95VXdcRnIxOfp8HxTmznTNy6QcXl4u708ubi29CpT2EabLrPSUiMeSFNizoUXl+BfzTS0VMNZPTmAtyzri2sdbRmjSH+WckHLEjtcZcmPTv6qwjKIgz02mgmTtnEMMQrRrupj2s9nOvIQJPbr0TRulyiCFjtj4ehqjBQ4mag+AaeaHGfMtK+oFxq2dCmTmTlDIcRJu00ezVZAERrNEpvM+bsTZzVjo1TQ2K86CKqx6QQJ2IyQ5NLIzJQxJyvoUaDz6MB6NnDCaz6RsfdIlSkm8lcjVZiHlDp2seyqZ53SM4ncxnggkLiI7K32w2r5RPBaoQcT6f34U8d+dXn1eZl++tLxqXOoJcSdKeDhAnFmVGouXfh0yNGdyjgzBKazwXqA8Cz4iP10FvC/R6Ue2F8v97pXuxjc5sjkqHihrKVaetW0CrQmP3Ao0P9soygsx4Dn5VdY+eblxe18H8UJLbQny73GujkWCifPhPIE4x9/SHqt5ed5vmnfjHFfViWZ0R9baRa16GE0Twk7b9XVkv6wgywoRcw7h1mEhJlg9C948zyP3pYZ59X0Bd/wKgxRaN
+sidebar_class_name: "get api-method"
+info_path: docs/generated/api/v2.12/quantification-and-analytics-tool
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get Currency for a CurrencyId"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/api/currency/{currencyId}"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+API used to get the Currency for a specific CurrencyId
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"currencyId","in":"path","description":"CurrencyId that you want to the Currency for","required":true,"schema":{"type":"integer","format":"int32"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Returns the Currency","content":{"text/json":{}}},"404":{"description":"Returns a HttpStatus.NOT_FOUND if the CurrencyId specified does not exist","content":{"text/json":{}}},"500":{"description":"Internal error that prevented the retreival of Currency","content":{"text/json":{}}}}}
+>
+  
+</StatusCodes>
+
+
+      

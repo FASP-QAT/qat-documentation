@@ -1,0 +1,71 @@
+---
+id: get-stock-adjustment-report
+title: "Get Stock Adjustment Report"
+description: "Retrieve the stock adjustment report"
+sidebar_label: "Get Stock Adjustment Report"
+hide_title: true
+hide_table_of_contents: true
+api: eJztV21v4kYQ/ivWfGolBwhtmp5VVSJpesop1zRA7qQiFC32xGxi7zq743AI+b9Xs8bB5jV8POn4ZHbnfZ552QVEaEMjM5JaQQB9JCPxFT2aomdJh8+eiJ5ySykq8gxm2hD4oDM0glmuIwggRhowae+Nsl8RGnzJ0dKFjuYQLCDUilARf4osS2TohLSfLCtfgA2nmAr+onmGEICePGHIcjLDKkmi5dssEUpJFd8rSdfRgIxUcY3LlgeFv0ZoazTCGDEHHyRharfwFk5nbETKLr5dS0UYowEfHrVJBZVHv3RZmSVh6C9BuCmuRh4JwhOSKTZY9vhgSWfHSi059gh9RWOX6XuHb4UPJClhoq2JvlZZTg/l9xeJMyiYpYms4TZASWZcwkQajCAgk2PBBzbTypbp7nY6a+Ah/Ea7UbMrtzvQFAkSA52bEA/TyveCQe6DZSImmBxWNhEWP+voSFIIpQnzRJifLqrDWmp+hloytxG82feAarfxD49mz2W279Jm28utMurGUTXAVIOfTLMEb10Q1oyW6hUVaTM/rlgSYemzjuSjxOhifjjSuUXz7pbAxEqkW8wpmmmQ4b1Fs5GGlWnHOaU04bau1uyIP+D+HcN9OZ1+5PA7zqFdDVNMFd1Rvf+oPJ00MxXpfJLg4XF8m9PmPN4YyH2k3Ci7d9MrfDg7cvjuyHaK1ooYL3V0oBn2l5OfKQ+sFNeKuL0mHhqjjTebygS9GJXbTVXsPKscYQ0ithCMoBRqYexDijTVvMJm2jqbBU0hgLbIZLvkbNsdm61Fw0sUBKMF5IZBPCXKbNBm5tZLLhTJx+WCK5RI5iRD29KGm3bTjY+lxRh5pUyPxRVjVhHmRjIoRguYoDBoejkbOBrXrwecgmVN1Yiqf39X8Pn0dbih+4pD6AL16evQI/2MypPKHZSwC7wLJ8X7w13+yZ47fRAs5YNfZZMD4CLN4OivNv+rb4JLYPfmvhpnGwv7qLobNxbyTmPdhm6n++tJ5/yk+2F4ehacnQbd31ud89P/YMuKvVK22qz3C2hu0yv+2hLdcQvIo3b7ZCPCdw0keL0KCt5Q6wR8SGSIyrrglJsC9DIRTtG7KS+8L6UWr9vqgL8Gtdls1hKOnJHVXsqy7Zvry6t/BlcnzFOrrbvecGU2e936cD46O/vtfOwmiraUClWz5COS5zqMtyoA760CGn7WOsR7H5FL1Lh2kiVCKrcxGTc6ykIcgcikex5URbe1GMc+TLl+gxEsFjxW7k1SFHz8kqPh8hn78CqMFNw+uXp8mKKI0LjKesY5BHBZmn8yZKuYPMndW2L9mVr4FUcvDDGjGu2qMRb13vLv7YDDPlm+gVPXAsGIGXsmZhCAe1GzClfE7mwBiVBxLmKmLWXy739U5XQ3
+sidebar_class_name: "post api-method"
+info_path: docs/generated/api/qat
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get Stock Adjustment Report"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/api/report/stockAdjustmentReport"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Retrieve the stock adjustment report
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={undefined}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"content":{"application/json":{"schema":{"type":"object","properties":{"planningUnitIdString":{"type":"string"},"planningUnitIds":{"type":"array","items":{"type":"string"}},"programId":{"type":"integer","format":"int32"},"startDate":{"type":"string","format":"date-time"},"startDateString":{"type":"string"},"stopDate":{"type":"string","format":"date-time"},"stopDateString":{"type":"string"},"versionId":{"type":"integer","format":"int32"}},"title":"StockAdjustmentReportInput_ReportView"}}},"description":"The stock adjustment input","required":true}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"content":{"text/json":{"schema":{"type":"array","items":{"type":"object","properties":{"dataSource":{"type":"object","properties":{"id":{"type":"integer","format":"int32"},"idString":{"type":"string"},"label":{"type":"object","properties":{"baseModel":{"type":"object","properties":{"baseModel":"circular(BaseModel_ReportView)"},"title":"BaseModel_ReportView"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"}},"title":"Label_ReportView"}},"title":"SimpleObject_ReportView"},"inventoryDate":{"type":"string","format":"date-time"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser_ReportView"},"lastModifiedDate":{"type":"string","format":"date-time"},"notes":{"type":"string"},"planningUnit":{"type":"object","properties":{"id":{"type":"integer","format":"int32"},"idString":{"type":"string"},"label":{"type":"object","properties":{"baseModel":{"type":"object","properties":{"baseModel":"circular(BaseModel_ReportView)"},"title":"BaseModel_ReportView"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"}},"title":"Label_ReportView"}},"title":"SimpleObject_ReportView"},"program":{"type":"object","properties":{"id":{"type":"integer","format":"int32"},"idString":{"type":"string"},"label":{"type":"object","properties":{"baseModel":{"type":"object","properties":{"baseModel":"circular(BaseModel_ReportView)"},"title":"BaseModel_ReportView"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"}},"title":"Label_ReportView"}},"title":"SimpleObject_ReportView"},"stockAdjustemntQty":{"type":"number","format":"double"}},"title":"StockAdjustmentReportOutput_ReportView"}}}},"description":"Returns the stock adjustment report"},"500":{"content":{"text/json":{"schema":{"type":"object","properties":{"messageCode":{"type":"string"}},"title":"ResponseCode_ReportView"}}},"description":"Internal error while generating the report"}}}
+>
+  
+</StatusCodes>
+
+
+      

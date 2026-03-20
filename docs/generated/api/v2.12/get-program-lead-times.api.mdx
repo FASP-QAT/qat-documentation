@@ -1,0 +1,71 @@
+---
+id: get-program-lead-times
+title: "get the ProgramLeadTimesOutput list"
+description: "API used to get the ProgramLeadTimesOutput list."
+sidebar_label: "get the ProgramLeadTimesOutput list"
+hide_title: true
+hide_table_of_contents: true
+api: eJydVcGO2zYQ/RViLr0o9naLXnSqUqSIgQLxrp1eDGMxlsYSU4nkDkfrGIb+vRjKztreTROsL5ZGb/jImfeGBxCsI+QrYAqeBdYZVBRLtkGsd5BDMZ+ZPlJlxJuaxEhDZs6+Zuz+JqyWtqP4qZfQi2ltlAlk4AMxavqsghxqkms8ZMD02FOU977aQ36A0jshJ/qIIbS2TPnTL1H3cIBYNtShPsk+EOTgN1+oFMggsLKJpahfw0ikvN+g1gnVxJDB1nOHMoZ+u4Uhg9Cic9bVn52VWRXPspAZ95CBFerO41HYuhqGIVGXPVNHToqa3BsWuGBfjB9eIl9j+i54yECstBq6rvrMhV4e7lOf/7G0g0HR2gjLVEEu3FMKxOBdHAt6e3Ojf5eSuCfp2cUfSQGy87YKfZVTPxPx768tPXNC7LA1xOzZSINiAtMTOVEJNmSYhMk+YWv89s3sQwYdSeNVn8EncEBpIIcpBjsdvTANL2UbiZ+I1TAH6LmFHBqREPOp5k0ee3Rit0f1osN2L7aME881XPtqzr7qS30x46Jm69ncFUvI4AnZ4qZNLRiGdQa68/tnx3z4il3QHl8o/uYVPa9Owlh/R68XgFf1eAL8nwzPtGrd1qeKH1V4d1ETg64yxakwZul9q+cljmNVbie/3k5uXhSrmM9+iTqBsCwpjsq7K5ZmkSp3bDWWqdUOO+X9q1jMjRB2kF11arfb/aBT1KHVjI+LxYOu8/Dx7o+6ieW7ELsEGTJobUku0hljEbBsyIz7v6Tcej/ZII+u91E6dGeJPzFWrytyNjHfMqGPQyO5IrRonZ4obflwNMIKMNg0p9O1kMELM6wzaNQ6+QoOhw1G+sztMGj4sSfeQ75aPytZ34YMGsKKOLnnX9pDDn+Op3i31A0pvO3T8Ly+A4bslFGUJQU5wz5bW53yzdbzTwu10uZ4wXS+UjDjTg+FO8gh3VRKkSZdih2gRVf3WCt2XFN//wGDr4FF
+sidebar_class_name: "post api-method"
+info_path: docs/generated/api/v2.12/quantification-and-analytics-tool
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"get the ProgramLeadTimesOutput list"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/api/report/programLeadTimes"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+API used to get the ProgramLeadTimesOutput list.
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={undefined}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"content":{"application/json":{"schema":{"type":"object","properties":{"programId":{"type":"integer","format":"int32"},"planningUnitIds":{"type":"array","items":{"type":"string"}},"procurementAgentIds":{"type":"array","items":{"type":"string"}},"planningUnitIdString":{"type":"string"},"procurementAgentIdString":{"type":"string"}},"title":"ProgramLeadTimesInput_ReportView"}}},"required":true}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Returns the ProgramLeadTimesOutput list","content":{"text/json":{}}},"500":{"description":"Internal error that prevented the retreival of ProgramLeadTimesOutput list","content":{"text/json":{}}}}}
+>
+  
+</StatusCodes>
+
+
+      

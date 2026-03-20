@@ -1,0 +1,71 @@
+---
+id: get-currency-list-1
+title: "Get Currency"
+description: "Retrieve a currency by its ID"
+sidebar_label: "Get Currency"
+hide_title: true
+hide_table_of_contents: true
+api: eJztV21v2zYQ/ivEfWoBNs6yZsWEYoDzssBFOqCJ034IjOIsnS22MqmQJ3uGof8+HCXXcuKm2eAPXbdPtsh7efjwTnpuBRmF1JuSjbOQwBWxNzQnhSqtvCebLtV4qQwHNTgDDa4kj2I7yCCBKfFpa3VpAn/8CTSU6HFGTD5Acru6F36YkxqcKTdRnNMmAzvl28SgwYhliZyDBoszggTWloMMNHi6q4ynDBL2FWkIaU4zhGQFvCzF2limKXnQMHF+htws/XwEdT0S91A6GyiIx9HhofykzjJZjjHoT+59CgJ39TC0G3+ilOWYXqhg04TBlM2cOnZj5wpCC7WGMQZ66zIq9hYGUuPTqkD/7GS9+Bw0pJ6QKTtZfjtRFcjLDT6BMh2Nm3v4Yh7YGzuFutbAhgtZOsFg0ptAXlxaKGfIO7w6OTJkesFmRuJUYOC3LjMT830coovn75xkO157aUKKs3PywTh7hUxDdxO64G01G29jz1w1LqhD5/dAyj+62XX7nrpsVy7d7e+nITfhemnT3Z1S4HiPzfZ/z/6ne/Zffz9jKp6MKlp/JLuzR5vNiX9ks3xsM5Rf2fzhKugyvoB+zLOt9R7UsvpAPFbehm1ttzCcx5WpmZMVFVlreHn4ch+ya0Yh4JS+8lnpoL5qNV+03IF8+ChitcCgrGM1cZXNBP/xfmTj3vAPLEsxFIq8d15xjqxKT3OyTFk8S6uvsbgvvps8OBW5vrndkYYZce5alR91PeeQQA9L01v79labD3cNGgL5+Vr4V16+ejlzGZKeeB3cVWjZTEwaBwi0WCzZpOHAeam77QNdkJVBgzLVxFQSTtR7oLTyhpcxx5jQk+9Xgux21N2+lhtoSO4arZ9+Xxf5mw/DB7nPhczI0ZsPQ8XuM1llbFxomiNRJzGKeh03f4N2Bolf/7gDen2ZQkCk2NiJEwDbud5tcaL6a1LU0LkCNBQmJRtidbSjUL/ENCd12Wyo942iVEcHh6Dvkb5YLA4wmgvHvTZW6F0OTs//uD5/IT6dInvXFy5aiQoJHB38+ur2+PiXVyOxKl3gGdoOkgti9aVg7pHY6Y1vzpQtU7GDygJNlE7xJKu26m4BSwMbmQgako5kHGnIXWCxW61Ec934oq5l+a4iL6Uy0jBHb1D0dJxKTZD/GSQTLAI9Av7ZVTttPldPGl53HqZdRCvI51hU8gQaPtNye7itR7WGnDAjH3E2Bv00pZI7rpuXTd1t1IvzIdT1X8hwbR0=
+sidebar_class_name: "get api-method"
+info_path: docs/generated/api/qat
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get Currency"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/api/currency/{currencyId}"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Retrieve a currency by its ID
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"description":"The ID of the currency to retrieve","in":"path","name":"currencyId","required":true,"schema":{"type":"integer","format":"int32"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"content":{"text/json":{"schema":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":"circular(BaseModel)","createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"}},"title":"BaseModel"},"conversionRateToUsd":{"type":"number","format":"double"},"createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"currencyCode":{"type":"string"},"currencyId":{"type":"integer","format":"int32"},"isSync":{"type":"boolean"},"label":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":"circular(BaseModel)","createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"}},"title":"BaseModel"},"createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"labelId":{"type":"integer","format":"int32"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"}},"title":"Label"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"}},"title":"Currency"}}},"description":"Returns the currency with the given ID"},"404":{"content":{"text/json":{"schema":{"type":"object","properties":{"messageCode":{"type":"string"}},"title":"ResponseCode"}}},"description":"The currency with the given ID was not found"},"500":{"content":{"text/json":{"schema":{"type":"object","properties":{"messageCode":{"type":"string"}},"title":"ResponseCode"}}},"description":"Internal error that prevented the retrieval of the currency"}}}
+>
+  
+</StatusCodes>
+
+
+      

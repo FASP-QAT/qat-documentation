@@ -1,0 +1,33 @@
+---
+id: stockstatusovertimeoutput-reportview
+title: "StockStatusOverTimeOutput_ReportView"
+description: ""
+sidebar_label: "StockStatusOverTimeOutput_ReportView"
+hide_title: true
+hide_table_of_contents: true
+schema: true
+sample: {"actualConsumption":true,"amc":0,"amcMonthCount":0,"consumptionQty":0,"dt":"string","mos":0,"mosFuture":0,"mosPast":0,"planningUnit":{"id":0,"idString":"string","label":{"baseModel":{},"label_en":"string","label_fr":"string","label_pr":"string","label_sp":"string"}},"program":{"code":"string","id":0,"idString":"string","label":{"baseModel":{},"label_en":"string","label_fr":"string","label_pr":"string","label_sp":"string"}},"stock":0}
+custom_edit_url: null
+---
+
+import Schema from "@theme/Schema";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"StockStatusOverTimeOutput_ReportView"}
+>
+</Heading>
+
+
+
+
+
+<Schema
+  schema={{"type":"object","properties":{"actualConsumption":{"type":"boolean"},"amc":{"type":"number","format":"double"},"amcMonthCount":{"type":"integer","format":"int32"},"consumptionQty":{"type":"number","format":"double"},"dt":{"type":"string"},"mos":{"type":"number","format":"double"},"mosFuture":{"type":"integer","format":"int32"},"mosPast":{"type":"integer","format":"int32"},"planningUnit":{"type":"object","properties":{"id":{"type":"integer","format":"int32"},"idString":{"type":"string"},"label":{"type":"object","properties":{"baseModel":{"type":"object","properties":{"baseModel":"circular(BaseModel_ReportView)"},"title":"BaseModel_ReportView"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"}},"title":"Label_ReportView"}},"title":"SimpleObject_ReportView"},"program":{"type":"object","properties":{"code":{"type":"string"},"id":{"type":"integer","format":"int32"},"idString":{"type":"string"},"label":{"type":"object","properties":{"baseModel":{"type":"object","properties":{"baseModel":"circular(BaseModel_ReportView)"},"title":"BaseModel_ReportView"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"}},"title":"Label_ReportView"}},"title":"SimpleCodeObject_ReportView"},"stock":{"type":"number","format":"double"}},"title":"StockStatusOverTimeOutput_ReportView"}}
+  schemaType={"response"}
+>
+  
+</Schema>
+            

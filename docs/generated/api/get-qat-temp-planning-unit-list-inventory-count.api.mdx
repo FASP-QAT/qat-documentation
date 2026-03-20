@@ -1,0 +1,71 @@
+---
+id: get-qat-temp-planning-unit-list-inventory-count
+title: "Get QAT Temp Planning Unit List"
+description: "Retrieve a list of planning units for inventory count from temp tables"
+sidebar_label: "Get QAT Temp Planning Unit List"
+hide_title: true
+hide_table_of_contents: true
+api: eJzdVt9v2zgM/lcEPm2A1hQ99IYzDgPSrisydIe1S28PQTAoNhNrkyVVotMLAv/vB8p25/T3cHs47CmxSH36+JESuYUCYx60J+0sZHCBFDSuUShhdCThlsIbZa22K1FbTVEsXRDartGSCxuRu9qSWAZXCcLKC1ILgxEkOI9BMeikgAxWSOeKplj5jx3apdV0piNNeqhjRgIJXgVVIWGIkM22t+hNSxSTt8yKShReezTaoiAnQk88GYaU20CYIkjQjOIVlSDBqgr5q0OZFCAh4FWtAxaQUahRQsxLrBRkW6CNZ29tCVcYQMLShUpRu/TbATTNnLdH72zEyDsO9vf5J3eW0FLCwH9o9DVyKNu70CoEtWGOhFUcrLvFV8yTNIFVJd3C3yRh4GrrarFLrnD1wiA0EoxaoHkaVuWk1zjwWzhnUFmGWKiIH1zxE2Eg1yGvjQovjvrFlyAhD6gIi6PN0wfVEQPX2DMyJJNzm/Yb90hB2xU0jQTSZHjpSEWdX0YMvKWj8lbRPbuGQivCV6SrTutIH1yhl/r/EcSQz49EsovXJa35FfKzQPNsVsn7C9p7WPXGZXjE6B8zRv+A8ZeroLP0ADUS/KAHPJPzAOaeRnKriTQN+99pbHWw8cG+xrwOf/DBfiAVFcaoVnjsiicEvui6RfK8h/PEEufJCAzBBXFdaoNihUTM+qb53W127SFqxR0UPnZ+MJdQIZWu68ep1VIJGYyU16OrVtWRv9Wf32mrTKtv2Iy235tlAxIihnXfqOvAz3lJ5GM2Ysi9q1pZ0kudpzlAWWU2pPO45wIXy26op2h5XsBCtJiC4bijRszroGmTzligChjGNdOezYfmT5ybVv6hU//1ri+n95+nd84+YZnT3PD+81SQ+4ZWaJsW2jLMxFFCEX8m4xvo5oLU1pIFZJ9mFiDpr+3SMYHds853NBHjXhQxdc6ABKNztDHVTTeejL3KSxRnrUH8jSHyzoO9fZC3RL++vt5TyZ01HnVYcXQ2OT7569PJK94zvEhj1mLdAkIGB3t/vJ4dHv7+ep4uqYtUKTtgcookzsdTwXUi+usnuFAEV8ptXQcX6eeNlZ3K6V56o3SaJ5IK266cZ6C8BgldQcPuc3OnpEFCNpgA5xJKF4lhtlueUy6DaRpevqqRR63ZXMJaBc2E2gFVR/5fQLZUJuIjIry46IbLl+I/z7H36tDPkZajWitT8xdI+Iab3Tm3mTcSSlQFhhRD6zDOc/Q02Pr99WuGj8fpyRSa5l8t8ztd
+sidebar_class_name: "get api-method"
+info_path: docs/generated/api/qat
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get QAT Temp Planning Unit List"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/api/qatTemp/planningUnitListFinalInventry/{pipelineId}"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Retrieve a list of planning units for inventory count from temp tables
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"description":"The ID of the pipeline to retrieve the planning unit list from","in":"path","name":"pipelineId","required":true,"schema":{"type":"integer","format":"int32"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"content":{"text/json":{"schema":{"type":"array","items":{"type":"object","properties":{"inventory":{"type":"number","format":"double"},"label":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":"circular(BaseModel)","createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"}},"title":"BaseModel"},"createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"labelId":{"type":"integer","format":"int32"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"}},"title":"Label"},"planningUnitId":{"type":"integer","format":"int32"}},"title":"QatTempPlanningUnitInventoryCount"}}}},"description":"Returns a list of planning units"},"500":{"content":{"text/json":{"schema":{"type":"object","properties":{"messageCode":{"type":"string"}},"title":"ResponseCode"}}},"description":"Internal error while getting pipeline planning unit list"}}}
+>
+  
+</StatusCodes>
+
+
+      

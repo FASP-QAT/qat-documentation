@@ -1,0 +1,71 @@
+---
+id: save-inventory-for-program
+title: "Save Inventory Data For Program"
+description: "API used to save inventory for specified program into temp table"
+sidebar_label: "Save Inventory Data For Program"
+hide_title: true
+hide_table_of_contents: true
+api: eJytVttuIkcQ/ZVWvSSRZoF4N3ngKeway0jRLgacFwtZxUzBtDPT3e6uMYvQ/Puqerhj42gVP5meupy6nNO9BsZFgO4DOO2o0IZgmkBGIfXasbYGutAbDlQVKFNsVcAXUtq8kGHrV2puvQqOUj3XlCnn7cJjqbRhq5hKpxhnBUEC1pFHCTfIoAsSZLCNcWP9sPGDBBx6LInJC6Q1GCwJujtogwwS0ALJIedwinO4M4u4lrlOc7WylTJE2QHobRlz6yEBT8+V9pRBl31FCYQ0pxKhuwZeOcmuDdOCxHRufYncHH28grpO9hBddYan5z2ulJ0fpG4wCZ4gMGYUkWRQTxsgFPizzVaS/adjJZBaw2RYoqBzhU5j69tPQUKtzytECS6tZSrDwbmdPVHKMhYvA2RN8asr0BhtFvdGs8xzZx/Ya7OAOoEMGce28im9YeBpsdmGVz7uarxGpssW787pz09iX6KpsOhlT1XgctOa/+BmLFN4FQCmrF8Osc2sLQhNUxsW5RdbGfar4Vu9enurEiirgrUrNPkDB1OVs2P7zFbCrrpOgDUXYnSHPKHS7cgFdV3XpzseD4KzJjTFXXU65ws3Iq68CQrVuEpTCkGlNiOl54pzUjs+qyUGFRqLeVUcLx/Td95uXcTxqfPxUqZbZjdm5Cq0br6NPg+ur/tftxnvA3mVWQrKWFa58Bdj1ndS/nG5uIOUg6+T/uhr7+/HcX/0T3/02B+Nvo026T01hdqSlJXfiry3XnGOrDKdRVBYFHZ50h62KrWlK4jpIlCZOnFuRR5dFTknEteFNjrd3gpge7f37fVeFGtIIJB/2apm5QvoQs7sQrct/q3nCg3r+UYI0GCxYp2GlvWLcxX1NqvSCL4JGsX0rjeBBF7Qa1H0EEFPE5ACRnvd6n9HqTWiOFWJLXlOxWF/vteE/dmJFLzyAbqd1/jd2bF377MlbSP0l2jaOSZhR2rVZm7j5LZcO2qqQpOp3razamKtkEFm0rT1qvX7VatzfkcMB79E+W6WOW7PXW+ixrH1m5XBNK7M5qq56Y2Hiinel8ejXi6X74yaStTicTseP0qcx9u7vxZ5SD+4UEaTOoFCp2QCHWTsOUxzUg3+45Rza1sz9FGEnA1cojlwHAtNd2KkrpFR3Viv9hf+UTfWe4L8H4+OjXBGprkCdRTnCH+9YdcDoNPCte3b53CvEugePDymCeQ2sPis1zMMdO+Lupbj54pkCx+me35EAmQ6yP8ZdOdYBLpQ66+jjT7/pn7uDfNqpdvL3awic4tKfkEC/9Lq+E1VT+sEcsJMVv1hvTH40sD7MJEw+wBnDwp5BDUevTQlxwe2e40T/uz0bXgvWjLbvHNKm4mtx6VIAC4bkDa2KV5P8WwNBZpFhQuxbULK3w9cfLzA
+sidebar_class_name: "put api-method"
+info_path: docs/generated/api/v2.12/quantification-and-analytics-tool
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Save Inventory Data For Program"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"put"}
+  path={"/api/pipeline/inventory/{pipelineId}"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+API used to save inventory for specified program into temp table
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"pipelineId","in":"path","description":"PipelineId for which you need inventory to save for","required":true,"schema":{"type":"integer","format":"int32"}},{"name":"ppu","description":"Array of inventory which needs to be saved"}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"description":"Array of inventory which needs to be saved","content":{"application/json":{"schema":{"type":"array","items":{"type":"object","properties":{"planningUnitId":{"type":"string"},"dataSourceId":{"type":"string"},"regionId":{"type":"string"},"inventoryDate":{"type":"string"},"inventory":{"type":"integer","format":"int64"},"manualAdjustment":{"type":"integer","format":"int64"},"notes":{"type":"string"},"active":{"type":"boolean"},"realmCountryPlanningUnitId":{"type":"integer","format":"int32"},"multiplier":{"type":"number","format":"double"}},"title":"QatTempInventory"}}}},"required":true}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Returns a Success code if the operation was successful","content":{"text/json":{}}},"403":{"description":"Returns a HttpStatus.FORBIDDEN if the User does not have access","content":{"text/json":{}}},"500":{"description":"Returns a HttpStatus.INTERNAL_SERVER_ERROR if there was some other error that did not allow the operation to complete","content":{"text/json":{}}}}}
+>
+  
+</StatusCodes>
+
+
+      

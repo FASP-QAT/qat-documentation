@@ -1,0 +1,71 @@
+---
+id: get-simple-planning-unit-for-program-tracer-category
+title: "Get Simple Planning Units for Program and Tracer Category"
+description: "Retrieve a list of simple planning units for a specific program and tracer categories"
+sidebar_label: "Get Simple Planning Units for Program and Tracer Category"
+hide_title: true
+hide_table_of_contents: true
+api: eJztWm1vEzkQ/ivWfAJpaaoChy46ndSWgorgKH05PkQRmuxOEsOuvdizKVG0//009qbdNG1pT/SurTafEntmPK/POsmzgIx86nTJ2hrowyGx0zQjhSrXnpUdK6+LMidV5miMNhNVGc1eja1TqHxJqR7rVJXOThwWCk2m2GFKTqXINLFOk4cEbEkO5Yz9DPowIT4KVg8aoydG8xvrDqKV42BgN+rPIYESHRbE5Dz0B4sLLh9PSe2/Fk95SmeOsFVuGcu665CAFt0SeQoJGCxIPkXd/QwScPS90o4y6LOrKAGfTqlA6C+A56UIa8M0IbE0tq5AjkvPt6Cuh1GdPO/YbC46qTVMhuUtlmWu05CL3lcvESzWjaNzKIFrpsK31j07bSZQ13V90cWw4EtrPAWNrc3NCycz/eDbH2lHXyllKYKTIrKO5sfWUYqem+L9XEFnN0peAjo7ilGuh51AjiPKf34Ypqxn1JIbWZsTGjExQk8fbPYLzUCqXVrl6J7sLBefQgKpI2TKduY/P6jy5PZvmiARjh273hcJsOZclnbQ6/TEkxOVxpXXyJdotc7IkOkZ64Jirj1/sJke6/sRRNuf20Syaq8pWv0Y6jOi/MZeBekvZK4eqy9jd81med2mL6/YfHQd9D4AUL18ZlwSdOlsVqV89vjqkLFDxvvf1x0ydsh4t8jYEo2X/48xVFlfvfB3iNkh5v3v9w4xO8T83xCzutF37tRml99ROwB9eAP66Nq/A9AOQP9jAN212RmIrm2+Wf1J8xxsO7R8eNP46Hq9Q8sOLX8RWhZVzrrMNbXzYqpitOpuZqtRTtf+1tldQztgfehj0QFrB6z36Rra5kScCYnYGlOjcsb/WqJGncCLzedwG97AFWUryHuchEivz8hhQ1oIkpfEKXVSmSWvjGU1xRkppydT9kLxwDQl7xVPtV9GFmN4ca9iaHgtIYKxrUwmTr68JUHjrp3cNyzDkytyzjp1OtU5qQmxfB9abarQcdE2ToSSswwQhgkUxFMrJJ/S+uCtUGz60MNS95oS9RZnTJu6t/rbfy82ca9sDQEk4MnNluyfysnjdcpc+n5PzG58r9CwdHdg1aDBfM469RvWyfCuRvmWjDCRKFPRphJzwtjxlFZO8zycMSJ05LYrcX0wbG8fSVli5ttCy09vlkjx7vPx2tl7kuHAUnr3+Vix/UZGaRMWIsL01U6wov4Im39CwzsK14ywA8mywpKAUANpmMNzutHeD5QMSlWaJhgK2WlsxclVfz6t5E1tLxOnjq3NIYFcp2R8aKuGIbVdYjol9T5uqL/JedHc2tiE5EJhTk9PNzCISx16jS3fe7+/u/fX0d4z0Wl156dtydcsGoQ+bG38/mrw8uVvr4bhP3XruUDT8uQtsYp4qZaAqU7OAO+ghXKRTaZadLKVLLQm8M7Yb03JwnyXOepwWQzpWjTzMQAsdZztMEgJ9NtsNL7IiItuiUJ7UIYJTGXq+gNYLOQyeuLyupbl7xXJH2uDYQIzdBpHoUMWkGkv7zPojzH3dE1unhw2dLOn6l8y7i7NQrOIRqKaYV7JJ0jgG81XGHn1sE5gSpjJl5bBotnfje49OxYr5/prHLs6WWpspymV3JI9B926jV4HH4+kIUcNga8I8AoOT4UbiKfRSRvyFMAgrC0gRzOpcCKy0aa8/gF+jTQN
+sidebar_class_name: "post api-method"
+info_path: docs/generated/api/qat
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get Simple Planning Units for Program and Tracer Category"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/api/program/{programId}/tracerCategory/simple/planningUnit"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Retrieve a list of simple planning units for a specific program and tracer categories
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"description":"The ID of the program to retrieve planning units for","in":"path","name":"programId","required":true,"schema":{"type":"integer","format":"int32"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"content":{"application/json":{"schema":{"type":"array","items":{"type":"string"}}}},"required":true}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"content":{"text/json":{"schema":{"type":"array","items":{"type":"object","properties":{"forecastingUnit":{"type":"object","properties":{"id":{"type":"integer","format":"int32"},"idString":{"type":"string"},"label":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":"circular(BaseModel)","createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"}},"title":"BaseModel"},"createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"labelId":{"type":"integer","format":"int32"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"}},"title":"Label"},"name":{"type":"string"},"productCategory":{"type":"object","properties":{"id":{"type":"integer","format":"int32"},"idString":{"type":"string"},"label":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":"circular(BaseModel)","createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"}},"title":"BaseModel"},"createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"labelId":{"type":"integer","format":"int32"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"}},"title":"Label"},"name":{"type":"string"}},"title":"SimpleObject"},"tracerCategory":{"type":"object","properties":{"id":{"type":"integer","format":"int32"},"idString":{"type":"string"},"label":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":"circular(BaseModel)","createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"}},"title":"BaseModel"},"createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"labelId":{"type":"integer","format":"int32"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"}},"title":"Label"},"name":{"type":"string"}},"title":"SimpleObject"},"unit":{"type":"object","properties":{"code":{"type":"string"},"id":{"type":"integer","format":"int32"},"idString":{"type":"string"},"label":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":"circular(BaseModel)","createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"}},"title":"BaseModel"},"createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"labelId":{"type":"integer","format":"int32"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"}},"title":"Label"},"name":{"type":"string"}},"title":"SimpleCodeObject"}},"title":"SimpleForecastingUnitObject"},"id":{"type":"integer","format":"int32"},"idString":{"type":"string"},"label":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":"circular(BaseModel)","createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"}},"title":"BaseModel"},"createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"labelId":{"type":"integer","format":"int32"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"}},"title":"Label"},"multiplier":{"type":"number","format":"double"},"name":{"type":"string"},"unit":{"type":"object","properties":{"code":{"type":"string"},"id":{"type":"integer","format":"int32"},"idString":{"type":"string"},"label":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":"circular(BaseModel)","createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"}},"title":"BaseModel"},"createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"labelId":{"type":"integer","format":"int32"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"}},"title":"Label"},"name":{"type":"string"}},"title":"SimpleCodeObject"}},"title":"SimplePlanningUnitObject"}}}},"description":"Returns a list of simple planning units for a specific program and tracer categories"},"403":{"content":{"text/json":{"schema":{"type":"object","properties":{"messageCode":{"type":"string"}},"title":"ResponseCode"}}},"description":"User does not have rights to access this program"},"404":{"content":{"text/json":{"schema":{"type":"object","properties":{"messageCode":{"type":"string"}},"title":"ResponseCode"}}},"description":"Program not found"},"500":{"content":{"text/json":{"schema":{"type":"object","properties":{"messageCode":{"type":"string"}},"title":"ResponseCode"}}},"description":"Internal error while getting planning unit list"}}}
+>
+  
+</StatusCodes>
+
+
+      

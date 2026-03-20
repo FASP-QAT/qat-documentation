@@ -1,0 +1,71 @@
+---
+id: get-monthly-forecast
+title: "Get Monthly Forecast Report"
+description: "Retrieve the monthly forecast report"
+sidebar_label: "Get Monthly Forecast Report"
+hide_title: true
+hide_table_of_contents: true
+api: eJztWG1P20gQ/ivWfLpKJgm547ha1UlAaUUFxxHSorsIoY09ONvau8vuuGkU5b+fZm0HOy8QdF/6AT7B7jM7b8+MZ5hDgi620pDUCiIYIFmJ3zGgCQa5VjTJZsG9thgLR4FFoy1BCNqgFSxylkAEKdJFCf1QISEEiw8FOjrWyQyiOcRaESriX4UxmYy9ePerY7VzcPEEc8G/0cwgRKDHXzHmd4xlZSTRedk0tZgKwuPZPyhsQ2CsdYZCwcKLpFbkbNvyWirCFC2EcK9tLqg8+rXP+NKtLxKnOwo4EpbeC8IG3pGVKm3CE0G4RzLHUkSbl0kUStJZcl2C1qSWANe4E9aKGYQgCXO3QWYRwne0rsrbDq4uQiBJGYNWMnymTEF3g8fILRjcJtNwE4ckC1b8kBYTiMgW6LPgjFauzHO/11thDeEP2k6XbZ5voVFtjVTpZyXpeQG5K5fkUxnLxBiz55WNhcMLnbwQCrG0cZEJ+8txfdjIzxto5HITYGnfHartxt/d2ycuzVOXzmxmZG3UuUe1GPV4eS1zk+GlD8KK0XmbmO8F/Q9ixFq5IvcEvqJZA6+KfNxOeaKLcYZLC3Yt7O0lxZav+m8yodQrS39mloaQFxlJk0m0OxFmC61vJE0uli+tqLCYSq1eGfBTMmC3PuUww5gwWc5Ir/F9eXxXWuZlQetjyNocMkAqrHJPzrSLEA5eOHNsSUWOzokUT3SyYdhr+jKoBh5GPjNJnSlCq0QWoLXaBtOJzDBIUfkpXKXes9oR1iBSB9EIykcd3IaQI000D+tG+/HcCP5kQVcY2S0lu/naDO/Q8rwI0WgOhWVuTYiMi7os1nkohCJ5X43yQolsRjJ2HW3529d24GNpKyZB+WbAzy1uWUVcWMmf2tEcxigs2qOCTRvdNq+vOfgV1Rug+q8PdX/7dDNc033KwfMh+nQzDEh/QxVI5Q/KvhgFx/6V4J2//JM99/p4rfA3ENZ55AD4GDMtBo87zukPwZW/cUfhAbe1lfTaO0evtVFAv9f/ba93uNd/O9w/iA72o/4fnd7h/r/Q3CKeQrU3h8dxZLkwjOqz29ZC0OPvgrrX7EQ7hFetVAdHda6DodYZhJDJGJXz3ivh43ZkRDzB4Ly8CL6UWoJ+p8eGtLg0nU47wsOZOt3qLdc9Pzs5/ev6dI9lGmVzdcQprszmQHTeHo4ODn4/vPW7n3aUC9Ww5CNSULWNoOZ2MKg32ZafjeLfdROuaOE7hcmE9Auo929e1dgIhJFQZxzWBlZOwoSLMhrBfM6N/LPNFgs+fijQcmVwmoSVgscHLowQJigSHjdGc/iGM4jgpDR8b8j2MDwr/Pi7umsvwlriKI7RUAP72O0WzYbx9+U1B3xcLfK572tgxZR9ElOIwP9DgFX4+vRnc8iESguRMrZ8k3/+AwiKtR4=
+sidebar_class_name: "post api-method"
+info_path: docs/generated/api/qat
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get Monthly Forecast Report"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/api/report/monthlyForecast"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Retrieve the monthly forecast report
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={undefined}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"content":{"application/json":{"schema":{"type":"object","properties":{"aggregateByYear":{"type":"boolean"},"programId":{"type":"integer","format":"int32"},"reportView":{"type":"integer","format":"int32"},"startDate":{"type":"string","format":"date-time"},"stopDate":{"type":"string","format":"date-time"},"unitIdString":{"type":"string"},"unitIds":{"type":"array","items":{"type":"string"}},"versionId":{"type":"integer","format":"int32"}},"title":"MonthlyForecastInput_ReportView"}}},"description":"The monthly forecast input","required":true}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"content":{"text/json":{"schema":{"type":"array","items":{"type":"object","properties":{"forecastingUnit":{"type":"object","properties":{"id":{"type":"integer","format":"int32"},"idString":{"type":"string"},"label":{"type":"object","properties":{"baseModel":{"type":"object","properties":{"baseModel":"circular(BaseModel_ReportView)"},"title":"BaseModel_ReportView"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"}},"title":"Label_ReportView"}},"title":"SimpleObject_ReportView"},"monthlyForecastData":{"type":"array","items":{"type":"object","properties":{"consumptionQty":{"type":"number","format":"double"},"month":{"type":"string","format":"date-time"}},"title":"MonthlyForecastData_ReportView"}},"planningUnit":{"type":"object","properties":{"id":{"type":"integer","format":"int32"},"idString":{"type":"string"},"label":{"type":"object","properties":{"baseModel":{"type":"object","properties":{"baseModel":"circular(BaseModel_ReportView)"},"title":"BaseModel_ReportView"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"}},"title":"Label_ReportView"},"multiplier":{"type":"number","format":"double"}},"title":"SimpleObjectWithMultiplier_ReportView"},"region":{"type":"object","properties":{"id":{"type":"integer","format":"int32"},"idString":{"type":"string"},"label":{"type":"object","properties":{"baseModel":{"type":"object","properties":{"baseModel":"circular(BaseModel_ReportView)"},"title":"BaseModel_ReportView"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"}},"title":"Label_ReportView"}},"title":"SimpleObject_ReportView"},"selectedForecast":{"type":"object","properties":{"baseModel":{"type":"object","properties":{"baseModel":"circular(BaseModel_ReportView)"},"title":"BaseModel_ReportView"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"}},"title":"Label_ReportView"}},"title":"MonthlyForecastOutput_ReportView"}}}},"description":"Returns the monthly forecast report"},"500":{"content":{"text/json":{"schema":{"type":"object","properties":{"messageCode":{"type":"string"}},"title":"ResponseCode_ReportView"}}},"description":"Internal error while generating the report"}}}
+>
+  
+</StatusCodes>
+
+
+      

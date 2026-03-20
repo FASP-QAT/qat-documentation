@@ -1,0 +1,71 @@
+---
+id: get-dataset-data-1
+title: "Get dataset list for multiple programId and versionId"
+description: "API used to get the dataset list for multiple programId and versionId."
+sidebar_label: "Get dataset list for multiple programId and versionId"
+hide_title: true
+hide_table_of_contents: true
+api: eJytVU1v2zoQ/CvEXt5Fddy076LTU5umMfCQOLHTixEEa2ltsZVIhlzZMQz992Ipf6dFUqC5OKKHO7Pj2dUaGOcB0gkUyBiI4SGBgkLutWNtDaSQDQeqCVQotmpOrLgktQGrSgdWM+tV3VSsXUXKeTv3WA8KhaZQC/JBWzMoegoSsI48cnyGFObEF10Z+Xh8Dwl4emoo8CdbrCBdn+io0Sk72xJ86yr/LwK4RFYr26glGhaZv5IICeTWMBmW0uhcpfMo5ux7kPprCHlJNcp/vHIEKaD3uIIENFMdDs7t9DvlDAk4Ly2xpvjtrvUDqDZMcxLymfU1cnf04RzaBHbmvAnfJsCaKwENt0SZKb7tirStYMRC7amAlH1D8SA4a0In8bzff2nsHXHjTXjh2rFjTM+8tSoyfex/+H0tVFfMbsTITehd3tx9GlxcfLlWehZZ7gN5VVgKylhWJS5IYZ5TCK9Sfnwj5fXN+PHy5v76Yku5z6X1+1iq4CjXM03FXg49v977v7/ycWCYvMFKkffWd6l0nhZkWKanJOWJPekFVhLkN1vdJlATl1aGxtkIdsglpHCGTp8V+yGCBAJ56Q7SyRoaX0EKJbML6Zlge08NGtazTfLRYLVinYee9XM4nfuht0WTy4PqisZBv83GkMACvcZpFUPVtg8JiNq7/fR+ecbaSVYnR2PRPwp9Xy5qM7Ox5022b48UxiWSbWWqsbUV7GpACue99+e9/gvp2XDwT5BF0KUqen+bjdUo9rExG/NotsFaeC+z0VAxYQ3JiW/L5fIV36hGLTeuRqNHqfN4dfvfvAz5OxfqCGkTqHROJtABY+YwL0l1+o8pZ9b2pujj0MsvXqM5uPiV+M8X8KlH633g/uKG32yxGGBXoTbSeuxtvcnsBNBpEXOQ2ocESsl1OoH1eoqB7n3VtnL81JBfQTp52EdOntoESsKCfAzYD1pBCp+7dt6NRYLAqybu8NNF3ybbG1mek+MD7H7uJJm7mRvejCTz081bqbaFgD0u5Y2FS0ghvtuEIi7ZeLaGCs28wblgu5ry9xPzPJO0
+sidebar_class_name: "post api-method"
+info_path: docs/generated/api/v2.12/quantification-and-analytics-tool
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get dataset list for multiple programId and versionId"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/api/datasetData"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+API used to get the dataset list for multiple programId and versionId. 
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={undefined}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"description":"map of programVersionList that you want to the dataset list for","content":{"application/json":{"schema":{"type":"array","items":{"type":"object","properties":{"programId":{"type":"integer","format":"int32"},"versionId":{"type":"integer","format":"int32"}},"title":"ProgramIdAndVersionId"}}}},"required":true}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Returns the dataset list","content":{"text/json":{}}},"403":{"description":"Returns a HttpStatus.FORBIDDEN if the User does not have access","content":{"text/json":{}}},"404":{"description":"Returns a HttpStatus.NOT_FOUND if the programId or versionId specified does not exist","content":{"text/json":{}}},"500":{"description":"Internal error that prevented the retreival of dataset list","content":{"text/json":{}}}}}
+>
+  
+</StatusCodes>
+
+
+      

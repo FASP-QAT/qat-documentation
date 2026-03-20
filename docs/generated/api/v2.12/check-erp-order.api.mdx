@@ -1,0 +1,71 @@
+---
+id: check-erp-order
+title: "Check ERP order status"
+description: "API to check ERP order status"
+sidebar_label: "Check ERP order status"
+hide_title: true
+hide_table_of_contents: true
+api: eJy9VU1v2zgQ/SvEXNoCrJVmsRed1mjTrYGi63ydAqOYSGOLW4lkhqNkDYH/vSDt1lLcbFGgyEmcAWfekO/xaQDBTYDyBjy7DWP3DgVhpaGmULHxYpyFEubLhRKnqoaqL+rsYqkc18QqCEofQIPzxJj2LmooIW87Y/9P2gQaPDJ2JMQJaACLHUEJucUnBxpMgvAoDWhguusNUw2lcE8aQtVQh1AOIFufyoKwsRuIUX/v5Nl09NFY+i3dmLDt3rreCm8X9a82NFZok0+9dtyh7FJ/nE4HbtFaYzfX1shvhVil8uCdDRRSxenJSfpMybwg6dkGJQ0lHkc0Vs4KWclY9J8U/4ZUMMQYNfz5o1YLK8QWW0XMjpU0KMoz3ZMVqjMAkzCZe2yVW/9IOU9DRg0dSeOSojYkWUfSQAkFelOM5FpM9FbsdVUM+0UsRvoohlEQiynXxTCNYzElqhimcQQNgfj+m7B7bqGERsSHskhTzu56tGLWpsqPAy22WzFVmDnewOM3tmRX91UK1K6pWjtW5/Mr0HCPbPC2zaRmlo1du3xnRtqkifMJkEJbq/k3NHXlXJuaEIcd1Onszens5GiC+XLxIqR3jlVFYSeQ8/mVuszj7MnCKpO1V/L7+eVSCWEH+tHxHx4efnJ86tCkig+Xl59Tn88fzv/aNKF67UOXt0QNranIBhohzj1WDand/FPItXOzW+T01MC7IB3aUeHbp8xrcgnDQZE/db39e8y69S0amybOIw17rd4AepOUOzJXfeSPBycsD8upqZXT8MijyqPMkceUjzIrDY0LkoYchlsMdM1tjCl91xNvobxZHYSX9V2bkNY1lGtsA/3Pzb282JvYK/XUPe2TaLdZ322fItDwhbajn0MyzWeEHd/yM0M/IvC5Dz7VRlxFDQ1h0mdifrdpXlXkZVR+cOzkSd/d+u+zK4jxK7gU3Do=
+sidebar_class_name: "get api-method"
+info_path: docs/generated/api/v2.12/quantification-and-analytics-tool
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Check ERP order status"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/api/programData/checkErpOrder/orderNo/{orderNo}/primeLineNo/{primeLineNo}/realmCountryId/{realmCountryId}/planningUnitId/{planningUnitId}"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+API to check ERP order status
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"orderNo","in":"path","required":true,"schema":{"type":"string"}},{"name":"primeLineNo","in":"path","required":true,"schema":{"type":"string"}},{"name":"realmCountryId","in":"path","required":true,"schema":{"type":"integer","format":"int32"}},{"name":"planningUnitId","in":"path","required":true,"schema":{"type":"integer","format":"int32"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Returns the ordr status","content":{"text/json":{}}},"500":{"description":"Internal error that prevented the retreival of ERP order status","content":{"text/json":{}}}}}
+>
+  
+</StatusCodes>
+
+
+      

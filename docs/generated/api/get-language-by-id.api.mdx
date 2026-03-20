@@ -1,0 +1,71 @@
+---
+id: get-language-by-id
+title: "Get Language"
+description: "Retrieve a language by its ID."
+sidebar_label: "Get Language"
+hide_title: true
+hide_table_of_contents: true
+api: eJztV99v2zYQ/leIe2oB1g6yZsWEooDdZIGLdEBTd30IjIGWThJbmVTIkzPB0P8+HCXFcuKkGeCHLduTbd6vj98d6Y8bSNDHTpekrYEILpGcxjUKJQplskplKJa10OTF7HQEEmyJTrHzLIEIMqSLzm1azxKQUCqnVkjoPERXmzvZ5zmK2amwqaActwXICtfVBQmaPUtFOUgwaoUQQe8ZKji8rrTDBCJyFUrwcY4rBdEGqC7ZWxvCDB1ISK1bKWqXfjqGpllwuC+t8eg54vjoiD9iawgNhRz4J42/eYa7uZ/aLr9hTLxNx0SQbtOomPQaB35LawtUBhoJS+Xxo02wOFgaiLWLq0K5F9N+8SVIiB0qwmRa/7hQ5dFx/55AmQzObR9u3T05bTJoGgmkqeClqfI6/uLRcUgH5VTRnqhBjUQRviK9Qg4qlKePNtGp/mdsYojn7+xkN1/XNCbFVoZc/d4m+1A8h/4tDzjk/5+V//RZ+df3Z4nFk1EF7z/Q7L0WWmPqHjGWjxl9+YDx2U3QRbiAQq5WLjx41Q70xFM79AzZajmAhlfvqcDKGb+r0lLrwkKm12jE7JRxvD56fQj9tELvH+7XAPRlJ96C5x7g/aaEsSRSW5mEUZ4cRuUdDOXMEHe8EOicdeIm1wWKDIm0yW75bjOqjHX0tlkLCSuk3HbiOwhuyiGCsSr1uI8db7YT3oAEj27dK/LK8d9iTlT6aMxRo+tKGdKpjoOuV0YVNenYj6zjMdqFfo6G9T8mos0pOB3Lao9x5TTVocYSlUM3qRjZ1WJo/sxct3QOnfpfv/Yz++Hr/F7tM6YtjOCHr3NB9jsaoU1YaGc9EtOQRbwNxnfQPQ6CPAgWkH3bmIBAsTapZQC7tT7tcCImPSlibm0BEgodo/FhDro3yqRUcY7iojWI39F5jjweHYG8Q/rNzc1IBXfmeNzl8uOL2fuz3z6fveKYwTh9mjAX6zYhRHA8+uXN1cnJz28W7FVaTytlBkjOkcTtwNwhcXAKfvzW66gKh6UslA7iKmxl043dFahSw/ZCBQnR4HJdSMitJ/bbbFiVfXFF0/DydYWOZ2UhYa2cVkveKb8XtefvCUSpKjw+gv7FZfcOfCme9Kzcu5luUZmaGVZFxb9Awnesd5+dzaKRkKNK0AWcrcMkjrGkQej2XmmGJ/X8bA5N8xd83EW/
+sidebar_class_name: "get api-method"
+info_path: docs/generated/api/qat
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get Language"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/api/language/{languageId}"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Retrieve a language by its ID.
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"description":"The ID of the language to retrieve","in":"path","name":"languageId","required":true,"schema":{"type":"integer","format":"int32"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"content":{"text/json":{"schema":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":"circular(BaseModel)","createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"}},"title":"BaseModel"},"countryCode":{"type":"string"},"createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"label":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":"circular(BaseModel)","createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"}},"title":"BaseModel"},"createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"labelId":{"type":"integer","format":"int32"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"}},"title":"Label"},"languageCode":{"type":"string"},"languageId":{"type":"integer","format":"int32"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"}},"title":"Language"}}},"description":"Returns the language for the given ID"},"404":{"content":{"text/json":{"schema":{"type":"object","properties":{"messageCode":{"type":"string"}},"title":"ResponseCode"}}},"description":"Language not found"},"500":{"content":{"text/json":{"schema":{"type":"object","properties":{"messageCode":{"type":"string"}},"title":"ResponseCode"}}},"description":"Internal error while getting language"}}}
+>
+  
+</StatusCodes>
+
+
+      

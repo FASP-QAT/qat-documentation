@@ -1,0 +1,71 @@
+---
+id: add-organisation
+title: "Add Organisation"
+description: "API used to add an Organisation"
+sidebar_label: "Add Organisation"
+hide_title: true
+hide_table_of_contents: true
+api: eJztWttu4zYQ/RViXtoCiuN4b62eKideJEA2dmxvHxoEwVgcW9xKokJS8RqG/r0g5YvkuHYWKNBuVn6SyOHcdDQ8HGsJBmca/DuQaoap0GiETOHeA046VCJztz4EgyuWa+LMSIacM0xZv7rAA5mRctdXHHxAznfmFT3mpE1X8gX4yx3144hq+picfKHQMBOhYQuZszmmZmUbPAhlaig1Vg9mWSxCt+j0i7bKlqDDiBK0V2aREfhQagMPMmXdNIK0nQ0VoSHeXRwXzTUpG9hGTqSGZqTAg6lUCZpy6E0HCs8Jp5hQRVwbJdIZFIUHRpjYDnVRi/CzJmWXrFy5QLNnVcUGR0MnRiRkF8WozSfJxVT8P4Ko+vNtkWBoxFNVfiJlTJjauSowX+x9ddG55PuisJDEODmeNvFSozFOKG5g9zpg5x7mi9120g+U7sVZOamzA5NTdWAy2z85QU2fJG8g91ogV3mgEAoV5jGqn7vrwV+g7s1KtOrjtStANsn/VPIEH5XXB2MdiSSLydbNfpnfnYo6diubutmAuKmbDeT+c8j9e3XzW8rjtjQ29esVgampXw3kvtv65U605zJPjVoESmE1ZejuPRCGEr0/5gZZDbLqyKo18YqiKPt4QhEH36ic3IDOZKrLNHXabXjW3RuSyVWqGbJRHoakNbPnEyamzETENo1DNkfNdCkxzeN6n8/QV7Nu8Dk/3rbfHLJ0aUw2Mmhy3frYH3avLi56N2uLNueMS9IslYZF+EQMndWjJt+/0ORNf/wQnJ/3BuOge91b2+VokOncdiyJM1Gaz1PxmNMRy+8Op7Vi+epm3BveBNcPo97wj97woTcc9ocrBxSVKZYJMWnvGSklVdll5YI7fzCO5XznwRjJQmk5jznsaOFBQiaStgOcSe3eIjQR+HCKmTitHiFPwQNN6omU7T4vIVcWo5ExmfZPrXTrMcfUiOmquYspxgsjQt2Syr4L9VQMlOR56HwtlbKpVOw2GIMHT6gETmKHz6K498D6O9x2o3tf0Yb2rKit3/h29X2ubMO1sgOdduftSfvDSee38dk7/92Z3/m11f5w9ifsKzXHVD8vBof0rwuAfR+ft0vb+5qh25qy6YGKUnbDZV9DLjZcrl1latvgtwRtd8zyst2xrDZW2yu//2QVm67RNsTtaahiYl8fqMHOD4+dvVhpAPHjAmLPUeRurfz+VUYs0ql0pGjFnW9rBIZhylmwZjFsLKVluJb/lBSm0zrrtNrPmE0wuPpJu3++S+ZsidltMGYjR3NWbAxDx8ZW8XwMRgNmCBPwdmjVfD4/QqsoQWFXXI5GD1bPw+Xt77NIhyeZTpyIzZIIKdVUsRhkGEbESv/rJqdStiao3KHCUsIE0+pCzne/I6iFv9ySzRd8grA6/zhSmsUo3BHIubNc8dA7wExAfRMDDywgI8tX/TtYLi00P6u4KOzwY07KQvd+SyTtXeFBRMhJOfL6Fy3Ah/PS1RO3K1rxOHfn7t0vFApvvSIIQ8pMRXbLpy1R3XDpQX9kmexk9e1EUu7TCueWwOEcfHAfYFgT7hTmxpYQYzrLcWZlS5329zcDYmWH
+sidebar_class_name: "post api-method"
+info_path: docs/generated/api/v2.12/quantification-and-analytics-tool
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Add Organisation"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/api/organisation/"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+API used to add an Organisation
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={undefined}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"description":"The Organisation object that you want to add","content":{"application/json":{"schema":{"type":"object","properties":{"createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"},"active":{"type":"boolean"},"organisationId":{"type":"integer","format":"int32"},"organisationCode":{"type":"string"},"realm":{"type":"object","properties":{"id":{"type":"integer","format":"int32"},"label":{"type":"object","properties":{"createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"},"active":{"type":"boolean"},"labelId":{"type":"integer","format":"int32"},"label_en":{"type":"string"},"label_sp":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"baseModel":{"type":"object","properties":{"createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"},"active":{"type":"boolean"},"baseModel":"circular(BaseModel)"},"title":"BaseModel"}},"title":"Label"},"code":{"type":"string"},"idString":{"type":"string"}},"title":"SimpleCodeObject"},"organisationType":{"type":"object","properties":{"id":{"type":"integer","format":"int32"},"label":{"type":"object","properties":{"createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"},"active":{"type":"boolean"},"labelId":{"type":"integer","format":"int32"},"label_en":{"type":"string"},"label_sp":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"baseModel":{"type":"object","properties":{"createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"},"active":{"type":"boolean"},"baseModel":"circular(BaseModel)"},"title":"BaseModel"}},"title":"Label"},"idString":{"type":"string"}},"title":"SimpleObject"},"label":{"type":"object","properties":{"createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"},"active":{"type":"boolean"},"labelId":{"type":"integer","format":"int32"},"label_en":{"type":"string"},"label_sp":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"baseModel":{"type":"object","properties":{"createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"},"active":{"type":"boolean"},"baseModel":"circular(BaseModel)"},"title":"BaseModel"}},"title":"Label"},"realmCountryArray":{"type":"array","items":{"type":"string"}},"baseModel":{"type":"object","properties":{"createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"},"active":{"type":"boolean"},"baseModel":"circular(BaseModel)"},"title":"BaseModel"}},"title":"Organisation"}}},"required":true}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Returns a Success code if the operation was successful","content":{"text/json":{}}},"403":{"description":"Returns a HttpStatus.FORBIDDEN if the User does not have access","content":{"text/json":{}}},"406":{"description":"Returns a HttpStatus.NOT_ACCEPTABLE if the data supplied is not unique","content":{"text/json":{}}},"500":{"description":"Returns a HttpStatus.INTERNAL_SERVER_ERROR if there was some other error that did not allow the operation to complete","content":{"text/json":{}}}}}
+>
+  
+</StatusCodes>
+
+
+      

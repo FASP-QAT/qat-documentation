@@ -1,0 +1,71 @@
+---
+id: get-funding-source
+title: "Get FundingSource for a FundingSourceId"
+description: "API used to get the FundingSource for a specific FundingSourceId"
+sidebar_label: "Get FundingSource for a FundingSourceId"
+hide_title: true
+hide_table_of_contents: true
+api: eJytlE1v2zAMhv+KwMs2wEuytLv4tAxt2lzapElPRVCwNh1rsyVVopMGhv/7IMVdPrd2wE6JZZHvS/oha2BcOIgfIKtUKtViqiubEMwjSMklVhqWWkEMg/FIVI5SwVosiAXnJIa7ISLTVqBwhhKZyWT/5SiFCLQhiz7dKIUYFsR7VyACgxZLYrLeUA0KS4J431hIJL0hg5zDocsDUcE5sljrSqxQsbd+0jZEYOm5kpZSiNlWFIFLcioR4hp4bbwLqZgW5K9m2pbIm6OzPjTN3Ic7o5Uj5yP6vZ7/2Xd2R1xZ5Y4NQASJVkyKgxq9cPeH8yF10zQRnPfO/pwMxTWzmTJy5TrD27vvo4uLyxshsyBz78iKVJMTSrPIcUkCk4Sce1Py/J2SN7ezx+Ht/c3Fq+Rh/1saKN36oBfp+A0HX091cKSYrMJCkLXabj6tsbQkxR7LnIQltiSXWAid/UOTmwhK4ly3VAYQOYcYumhkdw+/bn1AYwMROLLLV2YrW0AMObNxcdfHd54rVOwnIqCPCos1y8R1tF0c4Tu2Oq0S/yA2ScNQTQYziGCJVuJTERALzEmV6VCN5MITOtkTEqhSMXhVEzOtC5+ErNtI9Ttf+p3ekYPBePTB+UHZkBLaOhnMxDTYaduISWhjO5/DwXQsmLCE6KD81Wr1RvlUovQR19Ppo8/zeD35tshd8tm4MlxpIihkQsrRjuLAYJKT2Pjfl8y07jyhBf9RjXZcotoJvCI+ubSOd9VeV+otPP9jD7YbJVBoCpTKVxnKqFvyHgCN9KvmgOH4cBfOI8i1Yx9R10/o6N4WTeOPnyuya4gf5ltyAqCpdP5/CnGGhaO/VPrxrt2Jn47G+t1r9WSp7SGqdcC6qPwTRPCT1ifWfTNvIsgJU7KhgM2tQZKQ4Z347Uz72fg9z1eXM2iaX6xcZV4=
+sidebar_class_name: "get api-method"
+info_path: docs/generated/api/v2.12/quantification-and-analytics-tool
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get FundingSource for a FundingSourceId"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/api/fundingSource/{fundingSourceId}"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+API used to get the FundingSource for a specific FundingSourceId
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"fundingSourceId","in":"path","description":"FundingSourceId that you want to the FundingSource for","required":true,"schema":{"type":"integer","format":"int32"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Returns the FundingSource","content":{"text/json":{}}},"403":{"description":"Returns a HttpStatus.FORBIDDEN if the User does not have access","content":{"text/json":{}}},"404":{"description":"Returns a HttpStatus.NOT_FOUND if the FundingSourceId specified does not exist","content":{"text/json":{}}},"500":{"description":"Internal error that prevented the retreival of FundingSource","content":{"text/json":{}}}}}
+>
+  
+</StatusCodes>
+
+
+      

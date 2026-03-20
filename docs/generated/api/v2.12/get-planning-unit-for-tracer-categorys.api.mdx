@@ -1,0 +1,71 @@
+---
+id: get-planning-unit-for-tracer-categorys
+title: "Get the list of PlanningUnits for multiple tracerCategoryIds"
+description: "API used to get the list of PlanningUnits for multiple tracerCategoryIds"
+sidebar_label: "Get the list of PlanningUnits for multiple tracerCategoryIds"
+hide_title: true
+hide_table_of_contents: true
+api: eJytVcFu4zgM/RWBl724aafTufi06XS6DTBo0yY9FUHB2oytHVtSJTppYPjfB5TTiZPsogPs5hTJJN8j9Ui2wFgESJ/AVWiMNsWj0QyLBHIKmdeOtTWQwng6UU2gXLFVBbHiklSlAyu7VNOBZ1BL61XdVKxdRYo9ZuS/IlNh/WaSB0jAOvIoYSc5pFAQD/2vrZ/v+YiHp9eGAl/afANpe8jMe9wIjSMsxSWy2thGrdH0lIdQ6rvwX1oPCWTWMBmW6OhcpbNI8PTvIBAthKykGuUfbxxBCiigkIBmqsPgPrDXpoCu67qetvaUQ8q+oXgRnDWBosf52dlxMg/EjTchcsWM9eqAspR8ny7TG7/zjKgXZ5//PS6qG2Y3Y+QmjK7vHi4nV1ffbpVeRsTHQF7lloIyllWJKyGRUQgfQl78JuTt3fz5+u7x9uod8vjRgqNMLzXlOyb09nHaX/6pnBPD5A1Wiry3vteD87QiwyLlkpQn9qRXWB0K+eNSdwnUxKUVFTsbjR1yCSmcotOnw37aP/CRwAP5FXlpwxYaX0EKJbML6alEGr02aFgvt6JEg9WGdRZG1hdw2KdTb/Mmk4Pqg8Z+vB/PIYEVeo0vVZRf1y0SkFwedr317Q1rV5EMg62OFwlos7Qxec3yCe73yCg0uRq/M1JzaysBIh96OuejT+ejsyOW4+nkjyCjpJdXfIn78VzNIuVt1TGLVTdYC+71eDZVTFhDclCi9Xr9QYmoRi0eN7PZs8R5vrn/syhDduJCHU26BCqdkQk0QBw7zEpSPf99yKW1oxf0IBqQp6/RDBz/+m/zca9U7U6A/+cM3o6rqGhXoTZSgphjuxXxE6DTIunhWjg6Hkp5kUAprZA+Qdu+YKBHX3WdXL825DeQPi12OpRTl0BJmJOP2v9BG0jha5/xyVxIinnVxJl7OJi75N1jnGXkeGC7a1XR+a82nd7NpBFetouktrkYe1zLksE1pBD3k0DEGR3vWqjQFA0WYtvHlN9PDsiI/g==
+sidebar_class_name: "post api-method"
+info_path: docs/generated/api/v2.12/quantification-and-analytics-tool
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get the list of PlanningUnits for multiple tracerCategoryIds"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/api/planningUnit/planningUnit/tracerCategorys"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+API used to get the list of PlanningUnits for multiple tracerCategoryIds
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={undefined}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"description":"Array of tracerCategoryIds that you want the PlanningUnit List for","content":{"application/json":{"schema":{"type":"array","items":{"type":"string"}}}},"required":true}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Returns the active PlanningUnit list","content":{"text/json":{}}},"403":{"description":"Returns a HttpStatus.FORBIDDEN if the User does not have access","content":{"text/json":{}}},"404":{"description":"Returns a HttpStatus.NOT_FOUND if the tracerCategoryIds specified does not exist","content":{"text/json":{}}},"500":{"description":"Internal error that prevented the retreival of PlanningUnit list","content":{"text/json":{}}}}}
+>
+  
+</StatusCodes>
+
+
+      

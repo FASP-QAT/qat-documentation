@@ -1,0 +1,71 @@
+---
+id: get-planning-unit-with-prices-by-id-list
+title: "Get Planning Units with Prices"
+description: "Retrieve a list of planning units with prices"
+sidebar_label: "Get Planning Units with Prices"
+hide_title: true
+hide_table_of_contents: true
+api: eJztWd9v2zgM/lcEPt0Atyl66A1nHA5Ium7I0N26/lgfgmBQbMbWZkuqRDcLgvzvA2WnddKkTfcwdIf0KRUpivz4UZKpGaToE6csKaMhhnMkp/AWhRSF8iTMWNhCaq10JiqtyIuJolxYpxL0EIGx6CTP7acQQ4Z01mhfaUXXivKzoNmb9tNT5QkicHhToaeeSacQzyAxmlAT/5TWFioJ1jpfPbszA5/kWEr+RVOLEIMnp3QG8/k8WnH9Msf1Pov+Gy/ICNfE1jihHKYQk6twzgPeGu3R81KHBwcrrhF+p80+SefkFCJQhKVvjZvRV0w4ZusYJ1K1eZmQusWW3siYAqWGeQQj6fGDSbF42kxLFRLlkqqQ7o/eYvDLOVrj6LPCySs2TIoKNrZOgeVj4zCRnprU/V+iuLf5dlm0ZPnBRGbznedKE2boaq1SUj305yEvmKFGp5JTOXpmsL8Wl4L9+4J6TSEthGP3iNA+JvR2XX3eOxXAWefQDrDnAObpg0nVWGHamz4NR+XRbc1iVtayxMfd6kmvkiuP7hHX3khaY6W1ZioJ90iVyDOtM2mV0LEkzIzbIiq1bUQqvaiX3piFHfm2JV9LeKFKW+DHAMKK0w5lUT6NVGLSdTSLdql9Eak9Nun69JKTCbpdpf5e6Vybymqr+92uUF90ZjcUaktv84V3h//uAlZfwMqqIGULhW20dFWOlv1MTTUq6htb6/N+6+isM0nlsERN3Qw1hZ5AaAf89Df0bnd6WdURGkJbcWjDGRU4sbqV7U6q348LP3FSre8ZLms/7PedI1VO++06lfMIjp7Z1duQvBK9l1mI6nFozpuWImuuxLIaSl8T7/+FQOeME5NcFSgyJD67V3qZHGu9jMw8xIM78ERoeA0jKJFyw91Ya0LD1UrKIYaOtKrT3r47kzuoO6NpP+V2rkd3i47tzqByzM+cyPq4w7P3byqpSY2bHq3UspiSSvy+cXzCLIf0jhtjkjAVtU3B5uZDXiKpnKJpWGOE0qHrVuzhYNgWX3A6mnJpKS3+e7uo4ffXlw/WPmE4BeUo3l9fCjLfUAulw0Bd+7HoBSvinyD8lyMP63EbM0ggWmSWAQiAM1HO75vXJ98ls7t9xio9NuzisjefllAT3QVs4tKYAiIoVILaBzLVVwDoWpnkKE5rgfiMzvPMw/0DiFbSMplM9mVQ5yx0Glu+c9o/Pvnv4mSP57Q4+anLaN3WBiGGw/2/Xw+Ojv56PQybuPFUSt3y5B2SWCJYU1Vni/7/Uqit4nr2Q0KDdihJW0gV+sgh1lnD4AFIq2D5CgIR3LMYIqh5PIwgZ+7HA5jNeLO9csV8zsM3FfLH62AYwa10SvKJxMSLIEeZ8i1oMINvOIUYjutQ9i7ZMVYvqnBPWX2kmEeLGd0kQUst3fv9Zd6uy7OPF5yFUfMCUoadBJyc8MOEnEAM4WGFlwj8D2MzKKTOKpmxbm2T/34AIz765A==
+sidebar_class_name: "post api-method"
+info_path: docs/generated/api/qat
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get Planning Units with Prices"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/api/planningUnit/withPrices/byIds"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Retrieve a list of planning units with prices
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={undefined}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"content":{"application/json":{"schema":{"type":"string"}}},"description":"The list of planning unit IDs to retrieve","required":true}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"content":{"text/json":{"schema":{"type":"array","items":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":{"type":"object","properties":{"baseModel":"circular(BaseModel_ReportView)"},"title":"BaseModel_ReportView"},"forecastingUnit":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":{"type":"object","properties":{"baseModel":"circular(BaseModel_ReportView)"},"title":"BaseModel_ReportView"},"forecastingUnit":"circular(ForecastingUnit_ReportView)","forecastingUnitId":{"type":"integer","format":"int32"},"genericLabel":{"type":"object","properties":{"baseModel":{"type":"object","properties":{"baseModel":"circular(BaseModel_ReportView)"},"title":"BaseModel_ReportView"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"}},"title":"Label_ReportView"},"label":{"type":"object","properties":{"baseModel":{"type":"object","properties":{"baseModel":"circular(BaseModel_ReportView)"},"title":"BaseModel_ReportView"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"}},"title":"Label_ReportView"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser_ReportView"},"lastModifiedDate":{"type":"string","format":"date-time"},"productCategory":{"type":"object","properties":{"id":{"type":"integer","format":"int32"},"idString":{"type":"string"},"label":{"type":"object","properties":{"baseModel":{"type":"object","properties":{"baseModel":"circular(BaseModel_ReportView)"},"title":"BaseModel_ReportView"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"}},"title":"Label_ReportView"}},"title":"SimpleObject_ReportView"},"realm":{"type":"object","properties":{"code":{"type":"string"},"id":{"type":"integer","format":"int32"},"idString":{"type":"string"},"label":{"type":"object","properties":{"baseModel":{"type":"object","properties":{"baseModel":"circular(BaseModel_ReportView)"},"title":"BaseModel_ReportView"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"}},"title":"Label_ReportView"}},"title":"SimpleCodeObject_ReportView"},"tracerCategory":{"type":"object","properties":{"id":{"type":"integer","format":"int32"},"idString":{"type":"string"},"label":{"type":"object","properties":{"baseModel":{"type":"object","properties":{"baseModel":"circular(BaseModel_ReportView)"},"title":"BaseModel_ReportView"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"}},"title":"Label_ReportView"}},"title":"SimpleObject_ReportView"},"unit":{"type":"object","properties":{"code":{"type":"string"},"id":{"type":"integer","format":"int32"},"idString":{"type":"string"},"label":{"type":"object","properties":{"baseModel":{"type":"object","properties":{"baseModel":"circular(BaseModel_ReportView)"},"title":"BaseModel_ReportView"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"}},"title":"Label_ReportView"}},"title":"SimpleCodeObject_ReportView"}},"title":"ForecastingUnit_ReportView"},"label":{"type":"object","properties":{"baseModel":{"type":"object","properties":{"baseModel":"circular(BaseModel_ReportView)"},"title":"BaseModel_ReportView"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"}},"title":"Label_ReportView"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser_ReportView"},"lastModifiedDate":{"type":"string","format":"date-time"},"multiplier":{"type":"number","format":"double"},"planningUnitId":{"type":"integer","format":"int32"},"procurementAgentPriceList":{"type":"array","items":{"type":"object","properties":{"code":{"type":"string"},"id":{"type":"integer","format":"int32"},"idString":{"type":"string"},"label":{"type":"object","properties":{"baseModel":{"type":"object","properties":{"baseModel":"circular(BaseModel_ReportView)"},"title":"BaseModel_ReportView"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"}},"title":"Label_ReportView"},"price":{"type":"number","format":"double"}},"title":"SimpleObjectPrice_ReportView"}},"unit":{"type":"object","properties":{"code":{"type":"string"},"id":{"type":"integer","format":"int32"},"idString":{"type":"string"},"label":{"type":"object","properties":{"baseModel":{"type":"object","properties":{"baseModel":"circular(BaseModel_ReportView)"},"title":"BaseModel_ReportView"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"}},"title":"Label_ReportView"}},"title":"SimpleCodeObject_ReportView"}},"title":"PlanningUnitWithPrices_ReportView"}}}},"description":"Returns a list of planning units with prices"},"500":{"content":{"text/json":{"schema":{"type":"object","properties":{"messageCode":{"type":"string"}},"title":"ResponseCode_ReportView"}}},"description":"Internal error while getting planning unit list"}}}
+>
+  
+</StatusCodes>
+
+
+      

@@ -1,0 +1,71 @@
+---
+id: get-qat-temp-consumption-list
+title: "Get Consumtion List"
+description: "API used to get consumption data from adb tables"
+sidebar_label: "Get Consumtion List"
+hide_title: true
+hide_table_of_contents: true
+api: eJydVE1v2zgQ/SvEXNoFWDubYi86VVh4GwNBG3+0l8AIxtTIYlYiGXJUryHovxek5NhOFinQkyRqhu/NmzfTAeMuQHYPTjuqtSHYSCgoKK8da2sgg/xuLtpAhWArdsRCWRPaJv0VBTKK0ttGYLEVjNuaAkiwjjzGgHkBGeyIF8hratzfp9RbHRgkOPTYEJOPJDow2BBkz2TmBUjQkYRDruAls7vnMFFaL/aVVpU42FYYGuieU6114BgGEjw9tdpTARn7liQEVVGDkHXABxfxtWHaUQwtrW+Qh6OP19D3m5genDWBQsy4vrqKj0tiS+LWmyBwQLWleC2AsNtHUix0Kbgi8SyZ2GMQoVWKQijbGiQoa5gMJ370H08fQwTp+r6X8Nfb8DfMbsXIbZjMv6xnyy/57cNqtvw+Wz7MlsuvyxHd04BqGxI2fgvy3nrBFbIodCGMZYF1bfcvuCaNG1cT05tEewkNcWVHO6TGcwUZTNHp6bHd06dBpelZ36bdyQw9SAjkfxzd0voaMqiYXcim8abJU4uGdalVoocG6wNrFSbW7167x9uiVamM4dJkokW+Bgk/0OvBzJH+JpqwtKkuzXV0yOICSKApRH5EE2trY98izwHqevLn9eTqFYP8bv4uRA0xdTtpu8jXYpXojIKiSoKOk/FPvroTTNiAfFH+fr//RfnUoI4ZN6vVQ7zn4WbxaVcF9cGFJoX0EmqtyAQ6Q8wdqorEwP8SsrR2skUPsb3OBm7QnCV+JhaD35NE48BfKNCdLPM7a2ac1uQ1V6M2sYJEsRv9dQ/odHTbcbtJGD02qHtEAAnZ2dLZSKhs4JjfdVsM9M3XfR+Pn1ryB8juNyePJCsWOsT3ArIS60Bv1Pl+OW6fP8Tv7q//rXs8RHNI/q3b+AUS/qXD5UbtN72EirAgn6gPAblS5Pgs9TTB0f/P0/t5toa+/wkXYyhq
+sidebar_class_name: "get api-method"
+info_path: docs/generated/api/v2.12/quantification-and-analytics-tool
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get Consumtion List"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/api/pipeline/qatTemp/consumption/{pipelineId}"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+API used to get consumption data from adb tables
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"pipelineId","in":"path","description":"PipelineId for which you need to consumption list for","required":true,"schema":{"type":"integer","format":"int32"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Returns a list of QatTempConsumption object if the operation was successful","content":{"text/json":{}}},"500":{"description":"Returns a HttpStatus.INTERNAL_SERVER_ERROR if there was some other error that did not allow the operation to complete","content":{"text/json":{}}}}}
+>
+  
+</StatusCodes>
+
+
+      

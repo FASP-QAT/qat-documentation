@@ -1,0 +1,63 @@
+---
+id: realm-level-dashboard-user-list
+title: "Get Realm Level Dashboard User List"
+description: "Retrieve a list of users for realm-level administrators"
+sidebar_label: "Get Realm Level Dashboard User List"
+hide_title: true
+hide_table_of_contents: true
+api: eJzdVlFvE0kM/isjP4G0TaqeCmJ1QmqhVxUFJEqBhyg6ObtOdmB2ZvF4U6Jo//vJs0m7gUKp7h5OPGVjez7bnz32bKCkWLBtxAYPOVySsKUVGTTORjFhYdpIHM0isGFCVx84WpEzWNbW2yiMEjhCBqEhRkW5KCGHZDpRy5cYq3lALt9H4omNAhkwxSb4SBHyDRwdHupPEbyQF/0U+irjT1ED2kAsKqoxidcNQQ7IjGvIwArVcSAP809UKHrDGovYHr4I7Ra1N7NeaEkMGSwC1yi96I8j6DJwOCd3PyQWYlc0sJuH4Ai9Qswx0utQ/ocwUFguWof86HQnfAwZFEwoVJ6u73ekFdSq/BIHauyxHsYVha1fQtdlIFacik4x2kIrqke2obxEuePUwEeJQgdia+q5jvI6lHZh/x9JDON5SCb7eNuidb9DfebkfjmqZP03+Tui2ikX/BNl8zNlbH6g/O06aJIG0FCyNz6h61T33chu2UcjFT1sZncZHD9w9v6A2ZpixCW9COU9fF1uB3+yvCOXCy9KuzPEHNhIhWIaphV5oTJlyP2CQqdpqkBTTXn3jnAZIZ/e0gazDGqSKuhWWlKKHaWCHMbY2HG5sxvfbqxxe7upIvGKWCE30LJO40qkiflYT4++tOjFLmyRFh96dGuxRRwF1lrvp3ZOXhcklabHNArXzdRF0bKVdfIxJ2Tik1YjnM6G6ndai57uodHu31+7xnr18eo732dKa2Lr1ccrI+EzeWN9EvQNmZvThGL+TMrnmnnyp1spaSDblVUJSFxbvwgawL6vt3ucmJMdKeYqBAcZOFuQj6lP+vsFJw0WFZlJrzAfiKOePBodQvYN6dfX1yNM5srxeIsVx5OLF2dv3p0d6JlBu709US5WPSDkcDR69nR6fPzk6UytmhClRj+I5JzEXGofmNQI5qaLjN4+s+2JvXwHl+dfPJ621KbL1zi06Q2QUt9s23UK2Fh1ftPY2eCRBf3ASgHOMqhCFD2y2eg74j27rlPxl5ZY22yWwQrZ4lxJms66DCrCkjh14Gdaa02KghpNdoWuvQktzYVueKPOz66g6/4BDy+KjQ==
+sidebar_class_name: "get api-method"
+info_path: docs/generated/api/qat
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get Realm Level Dashboard User List"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/api/dashboard/realmLevel/userList"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Retrieve a list of users for realm-level administrators
+
+<ParamsDetails
+  parameters={undefined}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"content":{"text/json":{"schema":{"type":"array","items":{"type":"object","properties":{"count":{"type":"integer","format":"int32"},"label":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":"circular(BaseModel)","createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"}},"title":"BaseModel"},"createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"labelId":{"type":"integer","format":"int32"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"}},"title":"Label"}},"title":"DashboardUser"}}}},"description":"Returns the list of users for realm-level administrators"},"500":{"content":{"text/json":{"schema":{"type":"object","properties":{"messageCode":{"type":"string"}},"title":"ResponseCode"}}},"description":"Internal error that prevented the retrieval of the user list"}}}
+>
+  
+</StatusCodes>
+
+
+      

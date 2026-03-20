@@ -1,0 +1,71 @@
+---
+id: add-language
+title: "Add Language"
+description: "API used to add a Language"
+sidebar_label: "Add Language"
+hide_title: true
+hide_table_of_contents: true
+api: eJztWFFv4zYM/isCX7YBbpJm193mp7ldhhbotWmS28OKImAkJtbNtlyJbi4I/N8H2U7jJF26e9uK9qmlKPKjTH38qjUwLhyE95BgtihwQfAQgCInrc5ZmwxCiIZXonCkBBuBSgkU1xvfAExOFr3jlYIQUKnWmqXHghyfG7WCcL0XdRLTcxxhZl9IsuAYWaxMIZaYcZMOApAmY8rYx8A8T7SsEna/OB9oDU7GlKL/jVc5QQh1NAggtx4ea3J+VVpCJnW+et21cGR9Qc9+OmNakIUA5samyLXpxz6UQeWcYUotd8dWZwsoywBYc+JN5+i0/OzI+i0NlN+QX9jVyqGQ6YR1Sn5Tgo4/GaXn+r9RRBvPt1WCkvVT239mTEKY1VHrnvjXyBOcUfL+9d/K159R8m2ffkrZC7A3iy4/sji3Rxbzlxdn6OiTUe8t91ZarvVBQWoriwTt9+cb4w+wi6ZxbWO8rgioRV0XRr1Ulh9kRcZ29Y/r77313lv7vdWoqdJbvaDSlhSEbAuqDC43mauPqN/rHcqsEXFhMydQjAspyTkhjSKh54JjEs/qTSzRCVd7zItkV3QxfeWN2qpwfOj9dCzTJXM+ZuTCdW5uJ9Po4mIwnETn14NNWoWMwhVey5ES2onMsCgy/VjQK5nPjtfYynx1MxmMbqLr6Xgw+mMwmg5Go9tRA8BSXa9JSRj/tyBrja31p9KqwoNJYpZ7p8RGSJPmCfFxoGUAKXFsvCbOjavaGTmGELqY6+6GKLoQgCP7RNZL8DUU1jdKzJy7sOs9O48FZqznjeTFDJMVa+k6xvqG3D2GoTWqkBXOOqiYGyvuogkE8IRW4yypGqUsHwLwWEdbfT74ir6sA2bZXLte+1K1Ga1996Hf63846X086f8yOT0Lz07D/s+d3sfTP+Gl+/5a6MMbeSz+5hb6i7ErInstifg2amskUq8tgLYstdU9+zYvd/Zt+Y5tZwD9/w+rPBjK21J3ZvGbPgGdzU3FUc1MudvhFIGZEtGGWMTEGM/+npJqVul3Tvud3gHZRMOr71z1L3o9VTxP3kUTMa6YpyFHlBU5NvX8Ho2HgglTCPaYbrlcvsJ0lKL2Oy7H46mPM728+3URO3mSu7Ry8aekJWWOWhmjHGVMosa/m3JuTGeGthq2nqFTzNoblWo/cuyUvt7y/vGnkUYOVKMhT1BXiqBCsW6mwT1grmHboxCAf36J/cQI72G99t342SZl6c2PBdkVhPcPWzr3f5UBxISKbDVC/qIVhHBRIzyZeAjePSk8lIPXkzLY7IikpJxbvtuJ5sfF8zQb3o79PJk1bzppfX0sLv17Dy4hhOpRyKeoREllW28rDKGO6X/+BqYXNrY=
+sidebar_class_name: "post api-method"
+info_path: docs/generated/api/v2.12/quantification-and-analytics-tool
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Add Language"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/api/language/"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+API used to add a Language
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={undefined}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"description":"The Language object that you want to add","content":{"application/json":{"schema":{"type":"object","properties":{"createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"},"active":{"type":"boolean"},"languageId":{"type":"integer","format":"int32"},"label":{"type":"object","properties":{"createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"},"active":{"type":"boolean"},"labelId":{"type":"integer","format":"int32"},"label_en":{"type":"string"},"label_sp":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"baseModel":{"type":"object","properties":{"createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"},"active":{"type":"boolean"},"baseModel":"circular(BaseModel)"},"title":"BaseModel"}},"title":"Label"},"languageCode":{"type":"string"},"countryCode":{"type":"string"},"baseModel":{"type":"object","properties":{"createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"},"active":{"type":"boolean"},"baseModel":"circular(BaseModel)"},"title":"BaseModel"}},"title":"Language"}}},"required":true}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Returns a Success code if the operation was successful","content":{"text/json":{}}},"406":{"description":"Returns a HttpStatus.NOT_ACCEPTABLE if the data supplied is not unique","content":{"text/json":{}}},"500":{"description":"Returns a HttpStatus.INTERNAL_SERVER_ERROR if there was some other error that did not allow the operation to complete","content":{"text/json":{}}}}}
+>
+  
+</StatusCodes>
+
+
+      

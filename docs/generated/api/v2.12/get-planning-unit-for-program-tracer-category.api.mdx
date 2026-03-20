@@ -1,0 +1,71 @@
+---
+id: get-planning-unit-for-program-tracer-category
+title: "Get Planning Unit List For Specified ProgramId and TracerCategoryIds"
+description: "API used to get the Planning unit list for specified programId and tracerCategoryIds"
+sidebar_label: "Get Planning Unit List For Specified ProgramId and TracerCategoryIds"
+hide_title: true
+hide_table_of_contents: true
+api: eJy1VU1v20YQ/SuLubQFGMl10gtPVeKoFlDYsiWfDMEYkyNyW3J3vTu0Igj878UsqS/LqZMA4Ylc7s5783bmzQYYiwDpPThvC481LBLIKWReO9bWQAqj6UQ1gXLFVhXEiktS0wqN0aZQjdGsKh1YLa1XwVGml5py1Ueb5ApNrthjRv4TMhXWryd5gASsI48CMckhhYJ4G/POaB5bP+0izI+OQgIOPdbE5IX1BgzWBCns8CABLawdcgkvU9mz4hJZrW2jVmh4m9nrWUECnp4a7SmHlH1DCYSspBoh3QCvncBrw1SQbF1aXyN3S+/PoW2THcfXVHghtfe4VnZ5Kth3EW4XHWUK/NHma+H5U3ASyKxhMiwI6Fyls3ijw3+CwGxOdUIBlitiqsPBemCvTQFt27Yv1Y4LwVkTKJ44Pzs7TeiWuPEmfKU2j4kyfeEtw4j34ez91yOiumR2M0ZuwmB8fftxcnHx+UrpZcS6C+RVbikoY1mV+EwKs4xCeBPywzdCXl3PH8bXd1cXW8hga4pXV5JqTE6+WkuyOTLumdTIWTl4g8Qfryk5MUzeYKXIe+u7cnCensmwWEBJyhN70s9YCYvvFLtNoCYurbS8s3FzbNQUhuj0sO/P4WbXqO3wuESH7sAlIIFA/nlrBY2vIIWS2YV0KPEGTw0a1su+LNFgtWadhYH1xUnvTb3Nm0w+VBc0OtrNaA4JPKPX+FjFAmyluySj232Hff6CtatIbLSv5IXY0NJGCTTLL7g5IhN9cbRlpObWVgJEPnR0zge/nw/OTh1iOvklSFt2ZRYv5GY0V7NIudces6h9bzvj0WyqmLCG5IVEq9XqDYmoRi0nLmezB4nzcHnzZ1GG7J0LddzSJlDpjEygA8SRw6wk1fE/hlxaO3hEL74YC6BGc3Dwr0OvkRtWf4vXjK1Xs91omR6NlvlbprrZl+PPGmW9icVadxVqI7LEvDd9ed8DOi3F3g/ZBNLDicUnQ+6wyhcJlNIr6T1sNo8Y6M5XbSvLTw35NaT3i32Jxk7IdZD3HNIlVoH+R5Ffb3uz/U396HB8Nfut35t1bJ+qkS9I4F9aH03rdtEmUBLm5CPz7v+njt+7uUTZnz8ZMTJcuxOjLCPHB3v3xiP9ujOd6fVMGvqxH4u1zWWzx5VMeVx1JG0UKk6buLaBCk3RYCF7u5jy/Afk9TpB
+sidebar_class_name: "post api-method"
+info_path: docs/generated/api/v2.12/quantification-and-analytics-tool
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get Planning Unit List For Specified ProgramId and TracerCategoryIds"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/api/program/{programId}/tracerCategory/planningUnit"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+API used to get the Planning unit list for specified programId and tracerCategoryIds
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"programId","in":"path","description":"programId that you want to get Planning unit list for","required":true,"schema":{"type":"integer","format":"int32"}},{"name":"tracerCategoryIds","description":"Array of tracerCategoryIds that you want to get Planning unit list for"}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"description":"Array of tracerCategoryIds that you want to get Planning unit list for","content":{"application/json":{"schema":{"type":"array","items":{"type":"string"}}}},"required":true}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Returns the Planning unit list","content":{"text/json":{}}},"403":{"description":"Returns a HttpStatus.FORBIDDEN if the User does not have access","content":{"text/json":{}}},"404":{"description":"Returns a HttpStatus.NOT_FOUND if the some of the underlying data does not match.","content":{"text/json":{}}},"500":{"description":"Internal error that prevented the retreival of Planning unit list","content":{"text/json":{}}}}}
+>
+  
+</StatusCodes>
+
+
+      

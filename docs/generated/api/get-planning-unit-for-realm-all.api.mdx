@@ -1,0 +1,71 @@
+---
+id: get-planning-unit-for-realm-all
+title: "Get all Planning Units for Realm"
+description: "Retrieve a list of all planning units (active and disabled) for a specific realm"
+sidebar_label: "Get all Planning Units for Realm"
+hide_title: true
+hide_table_of_contents: true
+api: eJztWW1P20gQ/iur+QSSSxAtV511qhQoICrauwZoP0RRtbEn8bbrXbM7DhdF/u+nWTvFCSGE6q6ip3xKsvOyM8/MjjePZ5CiT5wqSFkDMfSQnMIJCim08iTsSEitRaGlMcqMRWkUebEjE1KsZFKRKi+HGtNdMbJOSOELTNRIJcKh1DlEYAt0kt2fpxDDGOmvxtm1UXRqXY/1ulpDBIV0MkdC5yHuz5ZCu8pQnL/liCjD2rsgK9w84qUYR9ZBBIotC0kZRGBkjhBDsDxPIQKHN6VymEJMrsQIfJJhLiGeAU0LVlWGcIzsZ2RdLqleenkAVTVgc19Y49GzxcH+Pn8k1hAaCj7wb+p89Rz77L5r6ZyccoCEuW+t2+FXTIixcAwcqdp9DXhLb2itRmmgimAoPb63KerH3bRUIVEuKbV0O0fzxS89LKyjTwpvd9kxKdLsbJUCy0fWYSI9NbX8v2Rx5/N0UbTg+Z4ht/cGnRPBGA06lVzI4ROT/bm4aI7vC5rWvp6cMuM74citERbrhL5YIWwFFcBZFdAWsKcA5um9TdVIYXo0fRyO0qPbuItZuZ6o68I6kl4l1x7dmtDeSlrhpbVnKglfkMqRLQtn0zKhY0k4tm6DrNSmGan0st76wSpsm2/T5msJL1VeaPwzgLAUdH1FeBSpxKar2izalvZZlPbYpqvLS04m6LYn9dcq58pSlhvd77YH9VlX9oGD2tJ7+MK7xX97AasvYHmpSRVaYRstU+bDxThTWw51fWNr/d/fPLvtwPnlGv4HBk6bC1rUYa173FTpjP/XqKkqglf7L5/E2jxQ1Ry9l+OQ7nrMeg1lxJpL6S5ny2dWpBa9MJZEJiconBpn5Jn0kkmC3gvKlG8n8+q5JvPB3qfnSpOGujCb11QG07tsDp9IqP3EbM4N8ejVAp2zTtxmSqMYI/FjczHP0Kn1NnLMpOb3hheBaxpEkCNltmFGAwVKGcTQkYXqtAdnp6EtO7PmS9WRgTP16CZzwrR0PFcyosLHHXaxd1NKQ9zzgYGVRuopqcTvWccDfjGtM+alJGEqap+C3THR6TEpnaJp2GOI0qHrlhxmf9AWX3JJmjHXUpr/Op3P3nefr+7tfcKQhlZ49/lKkP2GRigTFuqZHYuj4EX8EYRvoKFrA4sYJBDNq8sABNCVGVkOYHGvjwuYiO4cFHFlLSOqVYLGh3ZpKONuIZMMxUUtEJ/QebY82NuHaAn029vbPRnUGeNO48t3Ls6PTz5cnrxgm1bXfewyFpPaIcRwsPf76/7h4W+vB+HJaT3l0rQiOUMKU2+hjQLZLXoN376QbOsA/RfcfgN4OJmFliowuQGQWdPJfZCFgsVLAEQtEj6++8oNPYggs57YcDbjp+W101XFyzcl8p/I/iCCiXSKA6vfEjRBQjyS2uMaAHZ6DeG/K37oZcLKbOd8vmE2fyJ1yb8ggm84bb1sqAZVBBnKlG9N/Vkj7SYJFtSyuxtxVXs0nJ1cQVX9A5cg8BY=
+sidebar_class_name: "get api-method"
+info_path: docs/generated/api/qat
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get all Planning Units for Realm"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/api/planningUnit/realmId/{realmId}/all"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Retrieve a list of all planning units (active and disabled) for a specific realm
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"description":"The ID of the realm to retrieve planning units for","in":"path","name":"realmId","required":true,"schema":{"type":"integer","format":"int32"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"content":{"text/json":{"schema":{"type":"array","items":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":{"type":"object","properties":{"baseModel":"circular(BaseModel_ReportView)"},"title":"BaseModel_ReportView"},"forecastingUnit":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":{"type":"object","properties":{"baseModel":"circular(BaseModel_ReportView)"},"title":"BaseModel_ReportView"},"forecastingUnit":"circular(ForecastingUnit_ReportView)","forecastingUnitId":{"type":"integer","format":"int32"},"genericLabel":{"type":"object","properties":{"baseModel":{"type":"object","properties":{"baseModel":"circular(BaseModel_ReportView)"},"title":"BaseModel_ReportView"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"}},"title":"Label_ReportView"},"label":{"type":"object","properties":{"baseModel":{"type":"object","properties":{"baseModel":"circular(BaseModel_ReportView)"},"title":"BaseModel_ReportView"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"}},"title":"Label_ReportView"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser_ReportView"},"lastModifiedDate":{"type":"string","format":"date-time"},"productCategory":{"type":"object","properties":{"id":{"type":"integer","format":"int32"},"idString":{"type":"string"},"label":{"type":"object","properties":{"baseModel":{"type":"object","properties":{"baseModel":"circular(BaseModel_ReportView)"},"title":"BaseModel_ReportView"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"}},"title":"Label_ReportView"}},"title":"SimpleObject_ReportView"},"realm":{"type":"object","properties":{"code":{"type":"string"},"id":{"type":"integer","format":"int32"},"idString":{"type":"string"},"label":{"type":"object","properties":{"baseModel":{"type":"object","properties":{"baseModel":"circular(BaseModel_ReportView)"},"title":"BaseModel_ReportView"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"}},"title":"Label_ReportView"}},"title":"SimpleCodeObject_ReportView"},"tracerCategory":{"type":"object","properties":{"id":{"type":"integer","format":"int32"},"idString":{"type":"string"},"label":{"type":"object","properties":{"baseModel":{"type":"object","properties":{"baseModel":"circular(BaseModel_ReportView)"},"title":"BaseModel_ReportView"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"}},"title":"Label_ReportView"}},"title":"SimpleObject_ReportView"},"unit":{"type":"object","properties":{"code":{"type":"string"},"id":{"type":"integer","format":"int32"},"idString":{"type":"string"},"label":{"type":"object","properties":{"baseModel":{"type":"object","properties":{"baseModel":"circular(BaseModel_ReportView)"},"title":"BaseModel_ReportView"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"}},"title":"Label_ReportView"}},"title":"SimpleCodeObject_ReportView"}},"title":"ForecastingUnit_ReportView"},"label":{"type":"object","properties":{"baseModel":{"type":"object","properties":{"baseModel":"circular(BaseModel_ReportView)"},"title":"BaseModel_ReportView"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"}},"title":"Label_ReportView"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser_ReportView"},"lastModifiedDate":{"type":"string","format":"date-time"},"multiplier":{"type":"number","format":"double"},"planningUnitId":{"type":"integer","format":"int32"},"unit":{"type":"object","properties":{"code":{"type":"string"},"id":{"type":"integer","format":"int32"},"idString":{"type":"string"},"label":{"type":"object","properties":{"baseModel":{"type":"object","properties":{"baseModel":"circular(BaseModel_ReportView)"},"title":"BaseModel_ReportView"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"}},"title":"Label_ReportView"}},"title":"SimpleCodeObject_ReportView"}},"title":"PlanningUnit_ReportView"}}}},"description":"Returns a list of all planning units (active and disabled) for a specific realm"},"403":{"content":{"text/json":{"schema":{"type":"object","properties":{"messageCode":{"type":"string"}},"title":"ResponseCode_ReportView"}}},"description":"User does not have rights to access this realm"},"404":{"content":{"text/json":{"schema":{"type":"object","properties":{"messageCode":{"type":"string"}},"title":"ResponseCode_ReportView"}}},"description":"No planning units found for the specified realm"},"500":{"content":{"text/json":{"schema":{"type":"object","properties":{"messageCode":{"type":"string"}},"title":"ResponseCode_ReportView"}}},"description":"Internal error while getting planning unit list"}}}
+>
+  
+</StatusCodes>
+
+
+      

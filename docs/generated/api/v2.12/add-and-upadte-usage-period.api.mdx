@@ -1,0 +1,71 @@
+---
+id: add-and-upadte-usage-period
+title: "Add or Update UsagePeriod"
+description: "API used to add or update UsagePeriod"
+sidebar_label: "Add or Update UsagePeriod"
+hide_title: true
+hide_table_of_contents: true
+api: eJztWF1PKzcQ/SuWX9pKS1hyv9o8NUCuiMSFkIQ+FCE0WU+yvt21F3uW3CjKf6/Gm8BuiAL3rUXwROyx58zs+Myxl5Jg5mXnRpYeZjhAp62St5FU6BOnC9LWyI7sDvqi9KgEWQFKCetEWSggFNe1ZZG0BTrgNX0lOxKU6hp1XYAibNo5vC/R07FVC9lZbjkbpygy7UnYaX17YSffMSEvKAUSC1uKORh6hqgl+lNRC6avhPbClFnGNrGgFI3QxIOgFCqhd5lbqpaAUcJYI+L1ksoHh5BYQ2iI4UNRZDoJcR9+9xzDUvokxRz4P1oUyMlwDhYykpow97XxKioZycJx9khjmE0csqPjxcumpUfH+X6004Zwhk5GcmpdDlQNfWjLVRSMDeRYM/fktJnJ1SqSpCnjoWPwOrn26HjJGsop0I5VNR+cmQPSOfKiDDx9s0pP9X8jiDqen4sEEtIPdfuJtRmCqYDUCueV4DOYYPZeAG+jAMLH/LlPf4dmB+zNpC/2TE7dnsli9+QEPH6z6r3k3krJ1T6oTLRLygzcr8ebwd9kE83atI7xPBDQKrSwB3Q0tt+sobTmzZT5pJkGZctJhu/19F5Pz+upLu1WK55heacdKtkhV2IY8IU1vkpTO46fi74hUumMFyBGZZKg9yKxClmcUYriUVeKOXjhK4tpmTV1GOEP2giwgONj/GGfpzOiYkRApW99vRwe909PexfskbWlskEEpvCAwulZyrozKM3DtfClVHvxWAj7UXx+JYqLy/Fd9+SkNxh3j897m+AVEAhfssjER3UKSYIFAR/K/d4/7c92zXv/YtwbXnTP70a94V+94V1vOLwcrkE4rDJvcxSWfwt0zrpKiyutKkxZZudb34usSGxeZEj7ga4imSOllu8NhfXhcAGTkjyEQh+WjeuDR/eAjq8tS1k6LtyUqPCdQ7Zt3ZdgSE/XihwMZAvSiW9ZxwekmYiBs6pMAtJqUzG1Tlx1xzKSD+A0J9gHhLeRZLTDp5tL7wdwYAFFg+o2PBDXT3mtJTfISLbj9seD+MtB+4/x0afOp6NO+/dW/OXob7mLgF7a+jlF7Nt/Qwt8Sp+J2bgmVd9CeI9SLa4LsSfmfNJf22Msu7bHisZYoyn+/5O12iEO4jcY5W0ktZnaQEfrZnbVII9w/+9uGESMreWWw9xT0Ue7ddRuxc9YpTvo/1L1i6qVMSVedcdiFChmzYOQBB5cB/S1OxoIQshltEVp8/n8BUrDHDSvOBuN7nifu7OrP2epTw4KnwcTTpNO0HiseewWkKQoKvxNl1NrWxNwocszGedg6gur55brXQ9AjTwsn/j+1S9Ia30SukORga6u2S6UXNUQbiQUWkbbD1YpN43OjVwuuUyvXbZa8fB9iW4hOze3T3zOv1aRTBEUusDe/+BCduRJBfZgzBDYPCvDw832684q2qzohiZcs31qalxbjw1tcDnihjJZP3flVrGxgzk/hcFcdmR4O2MXQSGFsaXMwMxKmLFttSf//QsFYaVJ
+sidebar_class_name: "post api-method"
+info_path: docs/generated/api/v2.12/quantification-and-analytics-tool
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Add or Update UsagePeriod"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/api/usagePeriod"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+API used to add or update UsagePeriod
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={undefined}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"description":"The list of UsagePeriod objects that you want to add or update. If usagePeriodId is null or 0 then it is added if usagePeriodId is not null and non 0 it is updated","content":{"application/json":{"schema":{"type":"array","items":{"type":"object","properties":{"createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"},"active":{"type":"boolean"},"usagePeriodId":{"type":"integer","format":"int32"},"label":{"type":"object","properties":{"createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"},"active":{"type":"boolean"},"labelId":{"type":"integer","format":"int32"},"label_en":{"type":"string"},"label_sp":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"baseModel":{"type":"object","properties":{"createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"},"active":{"type":"boolean"},"baseModel":"circular(BaseModel)"},"title":"BaseModel"}},"title":"Label"},"convertToMonth":{"type":"number","format":"double"},"baseModel":{"type":"object","properties":{"createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"},"active":{"type":"boolean"},"baseModel":"circular(BaseModel)"},"title":"BaseModel"}},"title":"UsagePeriod"}}}},"required":true}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Returns a Success code if the operation was successful","content":{"text/json":{}}},"403":{"description":"Returns a HttpStatus.FORBIDDEN if you do not have rights to add/update this object","content":{"text/json":{}}},"406":{"description":"Returns a HttpStatus.NOT_ACCEPTABLE if the data supplied is not acceptable","content":{"text/json":{}}},"500":{"description":"Returns a HttpStatus.INTERNAL_SERVER_ERROR if there was some other error that did not allow the operation to complete","content":{"text/json":{}}}}}
+>
+  
+</StatusCodes>
+
+
+      

@@ -1,0 +1,71 @@
+---
+id: get-unit-by-dimension
+title: "Get Units by Dimension"
+description: "Get Units by Dimension ID"
+sidebar_label: "Get Units by Dimension"
+hide_title: true
+hide_table_of_contents: true
+api: eJztWF9v2zYQ/yrEPbUAawcZsmLCMMBussJFuqGJsz4ERkFLZ4utRCrkyZlh8LsPR8me7DhuOvQhK/xk6/7+7o5H6W4FGfrU6Yq0NZDAWyRxYzR5MV2Kc12i8doaMToHCbZCp1hulEECcyQWHC43UiChUk6VSOg8JLerHdvjHEW2bVIzvVKUgwSjSoQENhKjDCQ4vKu1wwwScjVK8GmOpYJkBbSsWFwbwjk6kDCzrlTUkH46hRAmrO4razx61jg9OeGf1BpCQ9EG/k39z57RrR6aVs6pJYMkLH2HbqefMSWO1nFKSDfmVUp6gR25qbUFKgNBwlR5fG8zLL6bGUi1S+tCuRfDNfElSEgdKsJsuPy6o9qj40o+IZUyCjcF2oh7ctrMIQQJpKlg0lB5nd54dKzSQjlXtEer4yNThK9Il8hKhfL03mZ6pp9HEF083xLJtr22aOH/X59Nd34dv34qdp1dN04fYucCTL9j1xyb79h8zyK0/1ifKRZPRhWlP6F5vK0+zdwBZnWI6atHmD/cCbqMF1BYf58ccn2ty6rAP5tQj3fX8e463l3Hu+tZ3F0/SmwSaqPpjc32OWuYT4TdQcZjLITApO2B9QqpdsYLylEU2pOwM8EuPPs6+8Zp8pFMl+i9muMjIXVQXrWjbJTcA3ZkiMtQCHTOOnGf6wLFHIm0mccIGHkMozGr5jyjN8FPJJRIuW3n+jjIUw4J9FWl+6zY33z491edCT2ABI9usR74a8dvmJyo8kmflXt3tTKkZzqNmwNlVLEknfqedVzj3eWD4Q0DZqKxKdgcj/Ee09ppWkYfU1QO3aBmgLeTLvuac96ktSu0fvp9fQTefRw/8H3B6Yt5evdxLMh+QSO0iYTm6CRiGK2IXyPzN2iXEfFNGzkg1+XjBMQsazOzDGDb14etnIjBOilibG0BEgqdovHxPLRLkUGl0hzFZcMQf6GLO5TT3gnInaTf39/3VBTnHPdbW75/OXpz8cf1xSvW6RyrDwPOxaIxCAmc9n55fXt29vPrCUtV1lOpTAfJ/gXRbjo7fXFwpdTmK3ZOVSgdP1ZiPKv2CN6CqjQ0rQ3d+VNC0l0VTSTk1hMrrFb8uXPjihCYfFej45MzkbBQTqspx83LKe35fwbJTBUeD0Tw4qrdQr0Ue3ZYe2NYr5AML5AWqqj5CSR8weXOjitMgoQcVYYuwmokBmmKFXV0/71cQrdb316MIYR/AA3DwJ4=
+sidebar_class_name: "get api-method"
+info_path: docs/generated/api/qat
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get Units by Dimension"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/api/unit/dimension/{dimensionId}"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Get Units by Dimension ID
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"description":"The dimension ID","in":"path","name":"dimensionId","required":true,"schema":{"type":"integer","format":"int32"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"content":{"text/json":{"schema":{"type":"array","items":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":"circular(BaseModel)","createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"}},"title":"BaseModel"},"createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"dimension":{"type":"object","properties":{"id":{"type":"integer","format":"int32"},"idString":{"type":"string"},"label":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":"circular(BaseModel)","createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"}},"title":"BaseModel"},"createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"labelId":{"type":"integer","format":"int32"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"}},"title":"Label"},"name":{"type":"string"}},"title":"SimpleObject"},"label":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":"circular(BaseModel)","createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"}},"title":"BaseModel"},"createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"labelId":{"type":"integer","format":"int32"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"}},"title":"Label"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"},"unitCode":{"type":"string"},"unitId":{"type":"integer","format":"int32"}},"title":"Unit"}}}},"description":"Returns the list of units"},"500":{"content":{"text/json":{"schema":{"type":"object","properties":{"messageCode":{"type":"string"}},"title":"ResponseCode"}}},"description":"Internal error while getting the unit list"}}}
+>
+  
+</StatusCodes>
+
+
+      

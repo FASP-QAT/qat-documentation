@@ -1,0 +1,71 @@
+---
+id: get-tracer-category
+title: "Get TracerCategory for a TracerCategoryId"
+description: "API used to get the TracerCategory for a specific TracerCategoryId"
+sidebar_label: "Get TracerCategory for a TracerCategoryId"
+hide_title: true
+hide_table_of_contents: true
+api: eJytVE1v2zAM/SsCL9sAL8nS7uLTvPUrlzZp0lMRFKxNx9psSZXoZIHh/z5IcZfmY2sH7GRbJvkeqffYAOPCQXwPbDEl+w2ZFtquYR5BRi610rDUCmJIxiNRO8oEa7EgFlyQmO3kiFxbgcIZSmUu072/owwi0IYs+oKjDGJYEO/GQAQGLVbEZD2pBhRWBPEeuVBKelIGuYB9pvu4ggtksda1WKFiz/84d4jA0lMtLWUQs60pApcWVCHEDfDaeCJSMS3Ih+baVsibo5MhtO3cpzujlSPnM4aDgX/scrslrq1yRxhABKlWTIoDHP3k/nfnc5q2bSM4HZz8uRqKK2YzZeTa9S5ubr+Ozs7Or4XMA86dIysyTU4ozaLAJQlMU3LuVcjTN0Je38weLm7urs+eIQ+uoBMFZVsi9FM6foXC52MzHCkmq7AUZK22m9s1lpak2MuzIGGJLckllkLn/zLmNoKKuNCdOIMcuYAY+mhkf1eE/WZflC1E4Mgun7Vb2xJiKJiNi/u+Qu+pRsXeG8EDqLBcs0xdT9vFgYrHVmd16j/Epmiw1ySZQQRLtBIfy6CzIDypch36kVx6mU52gASqTCTPaGKmdemLkHUbqGHv07A3OGCQjEfvnLfLRi1hspNkJqaBTjdITMMgO59eJNOxYMIKor32V6vVK+1ThdJnXE2nD77Ow9Xky6Jw6UfjqhDSRlDKlJSjF4iJwbQgseG/C5lr3XtEC/5ajXZcoXqReEl8fH8dWVs7c2m2Avo/S7FbLUGLpkSpfKehlabT3z2gkT5yX8rxwWKcR1Boxz6naR7R0Z0t29YfP9Vk1xDfz7f6CTLNpPPvGcQ5lo7+0u372249fjg0+Nt37NF2u0NU6yDvsvZfEMEPWh9b/+28jaAgzMiGHjZhSZqS4RcFtvb2Jvlt7cvzGbTtL3CMbX0=
+sidebar_class_name: "get api-method"
+info_path: docs/generated/api/v2.12/quantification-and-analytics-tool
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get TracerCategory for a TracerCategoryId"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/api/tracerCategory/{tracerCategoryId}"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+API used to get the TracerCategory for a specific TracerCategoryId
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"tracerCategoryId","in":"path","description":"TracerCategoryId that you want to the TracerCategory for","required":true,"schema":{"type":"integer","format":"int32"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Returns the TracerCategory","content":{"text/json":{}}},"403":{"description":"Returns a HttpStatus.FORBIDDEN if the User does not have access","content":{"text/json":{}}},"404":{"description":"Returns a HttpStatus.NOT_FOUND if the TracerCategoryId specified does not exist","content":{"text/json":{}}},"500":{"description":"Internal error that prevented the retreival of TracerCategory","content":{"text/json":{}}}}}
+>
+  
+</StatusCodes>
+
+
+      

@@ -1,0 +1,63 @@
+---
+id: get-funding-source-dropdown-list
+title: "Get Funding Sources"
+description: "Retrieve a list of funding sources"
+sidebar_label: "Get Funding Sources"
+hide_title: true
+hide_table_of_contents: true
+api: eJztVttu2kAQ/ZXVPLWSCxFVGtWqKpGrEtFWCTR5QCha7AFvYnY3s2soQv73atYmMiGhSd8q9Qkzc+Zy5mavIEWXkLJeGQ0xXKEnhXMUUuTKeWEmYlLoVOmpcKagBB1EYCySZIPzFGKYoj+tIP2AOCZjU7PQPeU8REDorNEOHcQr6Ozt8U9itEft+dHjL9++cxx8BS7JcCaDeGkRYpBEcgkRKI8z15Cb8R0m7N0SJ+NV5T4xKTZQzpPSUygjmDQTHATtX/tSaUOstMcpEkQwMTSTvhJ97FTAfmX0nJdcjjH/cxZj6fCbSd8IhURRUuSS3h2uhbfclmOz0NcKF+85A698zu6ehzzmeP5augF9i/plurcT2qG0u5TOPqNskOgF1CaBhrqvZjbHI5Pij1C8Lar/m/qvNnXj9jzb3ZKNts5cQdoJn+GLd66MYP+N5+qFJs7QOTkN47eb8FV9Kxm5ReIph3PtkbTMBRIZEj6TXljCOWqPaWBG1TGXOdPbSZVzkFMH8RDW59vBKIIZ+szUR55pSZ9BDG1pVTutce2N2woROKQ5EvtaQUE8uJn31sVtNms9FFJ7NVFJeIFILfOlV4lrGZrCU4ZnqPlFg6mofAp2V444RFKQ8ssQY4ySkLoFpzYcNdV97k+9Rw3Q+t/petovbgZbsU+4uqFoFzcD4c09aqF0EFRbEovD4EV8CcqvzDzEg7j2D9G61VyAUGSlJ4YT2Ix1uVET0V0XRQyMySGCXCWoXZgdLUOArpVJhqJXKcQ1kmPLTmsPoidFXywWLRngXON27cu1e+dHJ9/7Jx/YpjGCl12uxbxyCDF0Wp8Phvv7nw5GjLLG+ZnUjUzO0It6BUX/8Qthg19jgV73fVFXLeyazaXSHDqwWtUjOARpFcephxCevOJ5djPjPCNXKz6iPykvSxY/FEg8OKMI5pKUHDPt4aiMIEOZIoWZusclVzlJ0PLcz2VePGYUtr9sLsfZyQDK8jexOzoG
+sidebar_class_name: "get api-method"
+info_path: docs/generated/api/qat
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get Funding Sources"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/api/dropdown/fundingSource"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Retrieve a list of funding sources
+
+<ParamsDetails
+  parameters={undefined}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"content":{"text/json":{"schema":{"type":"array","items":{"type":"object","properties":{"code":{"type":"string"},"fundingSourceType":{"type":"object","properties":{"code":{"type":"string"},"id":{"type":"integer","format":"int32"},"idString":{"type":"string"},"label":{"type":"object","properties":{"baseModel":{"type":"object","properties":{"baseModel":"circular(BaseModel_DropDownView)"},"title":"BaseModel_DropDownView"},"labelId":{"type":"integer","format":"int32"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"}},"title":"Label_DropDownView"}},"title":"SimpleCodeObject_DropDownView"},"id":{"type":"integer","format":"int32"},"idString":{"type":"string"},"label":{"type":"object","properties":{"baseModel":{"type":"object","properties":{"baseModel":"circular(BaseModel_DropDownView)"},"title":"BaseModel_DropDownView"},"labelId":{"type":"integer","format":"int32"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"}},"title":"Label_DropDownView"}},"title":"SimpleFundingSourceObject_DropDownView"}}}},"description":"Returns the list of funding sources"},"500":{"content":{"text/json":{"schema":{"type":"object","properties":{"messageCode":{"type":"string"}},"title":"ResponseCode_DropDownView"}}},"description":"Internal error that prevented the retrieval of the list of funding sources"}}}
+>
+  
+</StatusCodes>
+
+
+      

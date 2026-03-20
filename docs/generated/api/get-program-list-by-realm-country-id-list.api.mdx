@@ -1,0 +1,71 @@
+---
+id: get-program-list-by-realm-country-id-list
+title: "Get Supply Plan Programs for Realm Countries"
+description: "Retrieve a simple list of supply plan programs by realm country IDs"
+sidebar_label: "Get Supply Plan Programs for Realm Countries"
+hide_title: true
+hide_table_of_contents: true
+api: eJzdV21v2zYQ/ivEfdoAJQ7SZUWFYUCcZoWLdE3tdP0QGMVZOktsJVIhT3YFQ/99OEpuFNdJGqADhvqTfby3517IxxtIySdOV6ytgRimxE7TihQqr8uqIFVoz8oula+rqmhUVaBRlbOZw9KrRaMcYVGqxNaGXaMmLz1EYCtyKB4nKcSQEV92Bhfa87iZisVZZzBJRQYROLqpyfPYpg3EG0isYTIsX7GqCp0Ed6NPXrLcgE9yKlG+cVMRxIDOYQMRaKbSD+SenTYZtG3bRjtQr/JbcN+AUGyV29biK9yldX2q2lEKMbuaWhH4yhpPIfDx0dEOAKYv/PTM7eITJVKZykk5WXfuE5vSHnwR6HQg1oYpI0l2aV2J3ImeHXeKs85on5cCF1Q8ngUmrFfDPBbWFoRGXCzQ0xub/kA3kGiX1AW6X8Zb4a8QQeIImdJx83ig2pObfG+BRNlgua/MbQSsuRDRGL1O3ntyYtKn8hJ5j9UgRopMB6xL6mrt+Y1N9VL/P0AM83kKkrv++qa1P0N/FlR8d1ZB+yOZ+9fq49I9cFg9dOirew5/ugm6CBdQG8HjoWfhgTqzKb3t4O675afEtTNe4de7/uHHq43gt6NnT7rB7yl2Sd5jFvJ7GMe0fz6C5h4IUl2VWvLKWFY5rkg5neUcHilMEvJeca59h0YQnDzxDfqvEUwMyywVipyzTq1zXZDKiFmbbNuPrj/7eyKhMPMQX0PPJGAeQUmcWyEYlQ0UokLOIYYRVnrUOx25AdfomYYntyInzjZQO3lecubKxyMxPLyp0bBe9oQDDRYN68QfWifDexfWKzLCcyhVnU8l7tq5hEhqp7kJMRaEjtxpLcldz4fHM+lDV+qh0vbXX9tNef3h6pvY51JSxTmp1x+uFNvPZJQ2QdBtWKzGwYv6Ixz+KchDPHlmwwlE25ZKAUKVZUKmt0zs/AvKiknd+67PI9BmaSXJu/m8u1M3dbotnLqytoAICp2Q8WGOus2G0wqTnNRFd6D+IefF8vjwCKKdxqzX60MM6tKHUe/Ljy4mZ+d/z84PxGYwju9OpV6rziHEcHz44vn1ycnvz+eiJdNSohlk8opYzTp6eyn09nLA91Rgq6obIdmLnUYMtuwHkee+J2FjqwJ1YEOhHpt+xK8BK91ta9gFYaA7Yz6PIJetiK9hsxEq9d4VbSvim5qcDOY8ghU6jYvQ33kbQU6Ykgsz+5kaiOGsQ3ZwJRmJelEHxrpLyNtoa3GaJFTxQPf23mmHG3v5diYtWvRsvww3DDhcCxZcQwzhX4SECOsRZBso0GQ1ZqLb+ZTPv2s0aT0=
+sidebar_class_name: "post api-method"
+info_path: docs/generated/api/qat
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get Supply Plan Programs for Realm Countries"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/api/program/realmCountryList"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Retrieve a simple list of supply plan programs by realm country IDs
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={undefined}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"content":{"application/json":{"schema":{"type":"array","items":{"type":"string"}}}},"description":"The list of realm country IDs to retrieve programs for","required":true}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"content":{"text/json":{"schema":{"type":"array","items":{"type":"object","properties":{"code":{"type":"string"},"id":{"type":"integer","format":"int32"},"idString":{"type":"string"},"label":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":"circular(BaseModel)","createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"}},"title":"BaseModel"},"createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"labelId":{"type":"integer","format":"int32"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"}},"title":"Label"},"name":{"type":"string"}},"title":"SimpleCodeObject"}}}},"description":"Returns a list of programs by realm country IDs"},"403":{"content":{"text/json":{"schema":{"type":"object","properties":{"messageCode":{"type":"string"}},"title":"ResponseCode"}}},"description":"User does not have rights to access this realm"},"500":{"content":{"text/json":{"schema":{"type":"object","properties":{"messageCode":{"type":"string"}},"title":"ResponseCode"}}},"description":"Internal error while getting program list by realm country IDs"}}}
+>
+  
+</StatusCodes>
+
+
+      

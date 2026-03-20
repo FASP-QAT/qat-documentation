@@ -1,0 +1,71 @@
+---
+id: save-shipment-data
+title: "Save Shipment Data For Program"
+description: "API used to save shipment for specified program into temp table"
+sidebar_label: "Save Shipment Data For Program"
+hide_title: true
+hide_table_of_contents: true
+api: eJytl11v2zYUhv8KcW62AYqjeCu66Wpem6IBtjax3V0sMAJaOpLYSSRLHtkxDP33gZRkyR9142K5ivlxzktS53nJLRDPLESPoIXGQkiERQAJ2tgITUJJiGByf8cqiwkjxSxfIbO50CVKYqkyzGqMRSowYdqozPCSCUmKEZaaEV8WCAEojYa7aHcJROBizNoQbzlxCEBzw0skNE7KFiQvEaKdpLsEAhBOiuaUw6G++90wL2idizhnG1UxiZj0Yjv1qTIQgMEvlTCYQESmwgBsnGPJIdoCbbRLLiRhhm5oqkzJqWn6eQx1HewUdsHtkaiJMXzDVLrLb1thTpR1Ypbo9SRQLxo5aOkPlWychu+OFUCsJKEkF4VrXYjYb/z1Z+tCbY/XyV1wt7+EpR20q+VnjMmdjXHHRwJ9byfBneQL9ioAXXAphcw+SUGDKZaMkJkbgM8aY8LkLRZihWbzlhMeDxyETjjhFYkS3WxbZRlawuSBNoNZsiqX+4ISVbmPsfYLiiuDbhWTrN2qI1WDQV9Vbiu3wWhOdn6puCTxYlFmf9Xf0J9UMb1Rll44ozu0v1RyYmvrAFKDIssvCemPFZNLD2tZCqJLp3GtjVpdnCwXWl+cyhhxcSaDMV4+qzuUGXGq7MljkYrwdE/Cic9UZeLT58njWFWS3hU8G/QvlSqQS190Rn+9c4XGtrB+UYmnlUyEzM7qIbHCU9nqAEhQ4doeOM2x1J01QF3X9SGofYPVStpmY8ZheMzLKVJlpGWczao4RmtZrBJkImWUI9uZEVtzy2wzIq2KfXYSPlMHTa/j1flM74l0c5Kjuw/z2+mHyZ9Ps9vp37fTp9vp9OO0zW6wyapKZMr9ZmiMMoxyTiwRCZOKGC8KtT7QSorFqtQFEp4VWgdQIuXKGa125Rw0phnBNdfiurPU6+7ru972LltDABbNqrPhyhQQQU6kbXTtpo8aqKWtqXDJiw2J2I6UyY5tucGUE98E9e78MJlDACtuhLsbWC96EYBbwLT3wNtn7tbqVQwdJzz0k77ITtsIjMPxL1fh66vxb/ObV9Grm2j86yh8ffMPHFpHeMoY+vBHftB39TbQt/X0Dzu2hwfkDg+5PADGEMfhAWzPL2kPsOeG7kP1bNAhSM+GHMLz3MB9YH4r9xCS/R61bOwbhkjsW/dI2Fz1duxrfg5oFx6xbBioQZin0MLdR1Pl66+j115pMC4TNunqg82VcnxpU7klj27Go/D41nh/94O/0PGGW44BD5M5m/kCagufx77w2yvou8nsnhHyEoKDgl2v198oWCy5cDPez2ZPLs7T+4ffs9zGV9qWfkgdQCFilBYHGSeaxzmyRv9+ylSp0ZIbj3VHn5LLwcSZu353eGfu6s/eKcPum3fD4WZse8r9D0+Q1nc8LXXBhTc6L37bAvIRuBau0ruHUP/1QQDR4DGyCCD3pfkI2+2SW/xkirp2zV8qNBuIHhc94jzDEmHd/wlEKS8snlnpj9PW735i3/WuObnO7qovN569ReV+QQD/4mb/mVUv6gBy5Imj2eO2HfCmUXc1d2H6AEfPC/cwamZM4hg1Dcb2LuVqZ+dQ9x9nzg6W7bOnbDho+NpBgq8blcpvk7d737aFgsus4pkb28R0f/8Bm6QHVg==
+sidebar_class_name: "post api-method"
+info_path: docs/generated/api/v2.12/quantification-and-analytics-tool
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Save Shipment Data For Program"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/api/pipeline/shipment/{pipelineId}"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+API used to save shipment for specified program into temp table
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"pipelineId","in":"path","description":"PipelineId for which you need shipment to save for","required":true,"schema":{"type":"integer","format":"int32"}},{"name":"shipments","description":"Array of shipments which needs to be saved"}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"description":"Array of shipments which needs to be saved","content":{"application/json":{"schema":{"type":"array","items":{"type":"object","properties":{"shipmentId":{"type":"integer","format":"int32"},"planningUnit":{"type":"string"},"expectedDeliveryDate":{"type":"string","format":"date-time"},"suggestedQty":{"type":"number","format":"double"},"procurementAgent":{"type":"string"},"procurementUnit":{"type":"string"},"supplier":{"type":"string"},"quantity":{"type":"number","format":"double"},"rate":{"type":"number","format":"double"},"productCost":{"type":"number","format":"double"},"shipmentMode":{"type":"string"},"freightCost":{"type":"number","format":"double"},"plannedDate":{"type":"string","format":"date-time"},"submittedDate":{"type":"string","format":"date-time"},"approvedDate":{"type":"string","format":"date-time"},"shippedDate":{"type":"string","format":"date-time"},"arrivedDate":{"type":"string","format":"date-time"},"receivedDate":{"type":"string","format":"date-time"},"shipmentStatus":{"type":"string"},"notes":{"type":"string"},"dataSource":{"type":"string"},"accountFlag":{"type":"boolean"},"erpFlag":{"type":"boolean"},"versionId":{"type":"integer","format":"int32"},"fundingSource":{"type":"string"},"active":{"type":"boolean"}},"title":"QatTempShipment"}}}},"required":true}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Returns a Success code if the operation was successful","content":{"text/json":{}}},"500":{"description":"Returns a HttpStatus.INTERNAL_SERVER_ERROR if there was some other error that did not allow the operation to complete","content":{"text/json":{}}}}}
+>
+  
+</StatusCodes>
+
+
+      

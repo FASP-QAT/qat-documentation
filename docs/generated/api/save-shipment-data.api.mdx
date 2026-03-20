@@ -1,0 +1,71 @@
+---
+id: save-shipment-data
+title: "Save Shipment Data"
+description: "Save shipment data for a program"
+sidebar_label: "Save Shipment Data"
+hide_title: true
+hide_table_of_contents: true
+api: eJydV21v2zYQ/ivEfdoAxVa8ZVmFYYCbpEOKdmtidwVm+AMtnWW2EsmSJzuGof8+kJImyXYMe/5kkffOu+chd5CgjY3QJJSECCZ8jcyuhM5REks4cbZUhnGmjUoNzyEApdFwJ/6YQASWr3FSy99z4hCA5obnSGgsRLPdnoPpCtnjPVNLRitkWmjMhERGijlLfrHvXkhSEIBwyprTCgKQPEf3VSs/JhCAwe+FMJhARKbAAGy8wpxDtAPaaictJGGKBgJYKpNzqpZ+GkFZzit1tPRWJVunEytJKMn95VpnIvYJD79al8Pu0LhafMWYXO7GlYcEWq8bx6qQ9C7jaUd4oVSGXEIZAI9JrPGVPa2NWmNyz6krYckImXbTSDjhFYkcvZYx4mIlV+iJKkx8RKcMAI1+PQV80RgTJveYiTWa7WWelwZFuqI7ZamjJIt80T+qRBWLrNIoZCJkeiJcqagq/8GOzriUlxbHKwmZfpaCjls1Ki4MupYdp3XXnBI6ZSgp4kuK8b3gkgRtzxQ3/cRPimKMlzdSM7oOGs6YvFbho0qOH2YjMCFOxfFTdSL64kiLRS6ILldLU7SEydPZRbeFQxA0R2Nfo7E1lJ6DVAGQoMwJPXGaYq4b6IXSbR5CbR9La5Q9gEt/3lYraavBGYXhHgoSvtDr8Hci4oOonpEKIy27dunfXOjoFZzN0Vqe4t3xJupU7bnO0kseCe5REhrJM4bGKMM2K5GhK5mQactVvZpW5nnquA4+1SIwDyBHWinHkNqNc1BxVwRDrsWwMTVsTA13LZmVEIBFs274szAZRLAi0jYaOvVBNfXLmpW45NmWRGwHyrjG7Wf0B0pH15iwyiZz5hzjWYwL46FjtoMFcoNmXLgQZ/Pu9sQdQVXlrlDz9a457/dfpge+H1w1PaW//zJlpL6hZEL6hapPIvbWW2G/+c3foeZtTzF+B4LmNF0BfLFdczy3dP3wwnOd4QHdVteAhmDrrx6lwigc/XwV3l6N3kyvb6Kb62j06yC8vf4H9mj0lGCXOlvw+I8xK7/HOfKU2R4vhges13qqya5d6HHcKRd9XusYOKCzo3tH1FryCrvUFDbEE+7TyqnwulQS7hNF63afH/o7+ixPfSo4LdqF/7AL7q3jDqaHpbu5LpXrzv5sPPVmmI2bIWZTpTIIIBMxSuvbur7ujjWPV8g+VBvs78oLGw1CCPZAYrPZDLgXd5gwrG3Z4YfHu4c/Jw9XTqfLJeNpG7YrwODN7ezm5pfbub+VKEs5l51I/COhYR5W3/p76XUg/ZwnRT3iHvt1xoW/WPqUdjVuzoBr4bqsQdj25CGAqPMUmAew8j04g91uwS1+NllZuuXvBRoHd/MA1twI7vjZP1CEdf8TiJY8s3gilR+ea9r8kf3fd8zRVOtFLrfuHHhWuC8I4Btu+++ccl4GsEKeuI6b7WqBuyrAq6kz0xo4eLmUQaMxjmPU1JFtabfsctenvyauNRb1syivhs/wjbtC8E0VpfKV8hTh13aQcZkWPHWylU33+xdI/+HI
+sidebar_class_name: "post api-method"
+info_path: docs/generated/api/qat
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Save Shipment Data"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/api/pipeline/shipment/{pipelineId}"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Save shipment data for a program
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"description":"The ID of the pipeline to save the shipment data into","in":"path","name":"pipelineId","required":true,"schema":{"type":"integer","format":"int32"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"content":{"application/json":{"schema":{"type":"object","properties":{"accountFlag":{"type":"boolean"},"active":{"type":"boolean"},"approvedDate":{"type":"string","format":"date-time"},"arrivedDate":{"type":"string","format":"date-time"},"dataSource":{"type":"string"},"erpFlag":{"type":"boolean"},"expectedDeliveryDate":{"type":"string","format":"date-time"},"freightCost":{"type":"number","format":"double"},"fundingSource":{"type":"string"},"notes":{"type":"string"},"plannedDate":{"type":"string","format":"date-time"},"planningUnit":{"type":"string"},"procurementAgent":{"type":"string"},"procurementUnit":{"type":"string"},"productCost":{"type":"number","format":"double"},"quantity":{"type":"number","format":"double"},"rate":{"type":"number","format":"double"},"receivedDate":{"type":"string","format":"date-time"},"shipmentId":{"type":"integer","format":"int32"},"shipmentMode":{"type":"string"},"shipmentStatus":{"type":"string"},"shippedDate":{"type":"string","format":"date-time"},"submittedDate":{"type":"string","format":"date-time"},"suggestedQty":{"type":"number","format":"double"},"supplier":{"type":"string"},"versionId":{"type":"integer","format":"int32"}},"title":"QatTempShipment"}}},"description":"The shipment data to save","required":true}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"content":{"text/json":{"schema":{"type":"integer","format":"int32"}}},"description":"Returns 1"},"500":{"content":{"text/json":{"schema":{"type":"object","properties":{"messageCode":{"type":"string"}},"title":"ResponseCode"}}},"description":"Internal error while saving pipeline shipment data"}}}
+>
+  
+</StatusCodes>
+
+
+      

@@ -1,0 +1,71 @@
+---
+id: get-product-category-by-realm-id
+title: "Get ProductCategory list for Realm"
+description: "API used to get the complete ProductCategory list for a Realm"
+sidebar_label: "Get ProductCategory list for Realm"
+hide_title: true
+hide_table_of_contents: true
+api: eJzNVU1v4zYQ/SvEXNoCqpWm6EWnqsF210APzsY9BcZiIo0tdimSIUd2BUH/vSAlxx9RNl2nWPRkmiJn3gzfm9cB48ZDdg/WmbIp+AaZNsa1sEqgJF84aVkaDRnki7loPJWCjdgQC65IFKa2ipjE4vS2UNKzWBsnUHwkVDUkYCw5DLHmJWSwIT6781sbT85LSMCiw5qYXIDWgcaaIAP39F0GQBa5gnOUYwzBFbJoTSN2qAesL0GEBBw9NtJRCRm7hhLwRUU1QtYBtzZklpppQ+Ho2rgaedj6+Rr6PnmCd9bBV4Auzk9PQF46ov8UotSFakq6aZwjzX/QltQXQYZcQupSFsjkzxEaMcYbuDAEFdqUJMw67nEoQOq4Ng3bhhOxRuVJ7KRSwn+W9uSuCogE6lJs5JYEKjV8rqQqY2D/b1rxYIwi1FOV50rdhGCO9OuFR4z7Eiew7Cs7rtKRt0Z7OqnTaNWe9ErWNZUS+Q2lrcLpIZcPB66vrsLPuRq4cdq/yH9IoDCaSXPMQX9z+pcPN7u+7xP4ZSrmXDM5jUqQc8YNnLCOtqQ5DIfYA3Ykt6gCDb46bZ9ATVyZcUrEacAVZJCilemZyNJxJqTduOjTkCDtnomxT7sJ9h92j5jRQwKe3HY/fhqnIIOK2fosDShmjw1qlusgC2k0alQty8LPjNu8JHRptBiCxrl4my8hgS06iQ8qvmB8UqnXJvZEsgrvfXuSKCoj32cTS2OCfAPOIdX17Kfr2dUzBPli/p0PcsWiID+w4TZfirsIZ3wMLOJjjHL5Pb9bCCYMg/u0/N1u90r5VKMMNz7c3X0KcT59uP11U/niR+vreKRPQMmCtKejjLnFoiIx4D9NuTZm9oAu6Bms8VyjPrr4nvhl+9mbz0lDugP73uxqoy4jh61CqUN1EX438vYe0MrA4jODTY78LDssR31kU26STc/vbGK4rRKojOeQvuse0NOfTvV92H5syLWQ3a8O9IssL6UP6xKyOLm+0LPvP45j6gdxkd1O9mzcRN1GXagm/IMEPlN7ZP1hol8E9Cvt9gKIzx/sYrD/S9u9oCVTdH1bU769JV9e9rEc+1WfQEVYkotiGw7mRUGWj0IcrDCYwZMNvn+3hL7/BwenFck=
+sidebar_class_name: "get api-method"
+info_path: docs/generated/api/v2.12/quantification-and-analytics-tool
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get ProductCategory list for Realm"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/api/productCategory/realmId/{realmId}/list/{productCategoryId}/{includeCurrentLevel}/{includeAllChildren}"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+API used to get the complete ProductCategory list for a Realm
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"realmId","in":"path","description":"RealmId that you want the ProductCategory list for","required":true,"schema":{"type":"integer","format":"int32"}},{"name":"productCategoryId","in":"path","description":"ProductCategoryId that you want the Tree for","required":true,"schema":{"type":"integer","format":"int32"}},{"name":"includeCurrentLevel","in":"path","description":"true indicates that you want to include the current node of the tree in the output, false will skip the current level and give all the child nodes","required":true,"schema":{"type":"boolean"}},{"name":"includeAllChildren","in":"path","description":"true will include all the child nodes in the tree in the response, false will only include the immediate child nodes","required":true,"schema":{"type":"boolean"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Returns the ProductCategory list","content":{"text/json":{}}},"500":{"description":"Internal error that prevented the retreival of ProductCategory list","content":{"text/json":{}}}}}
+>
+  
+</StatusCodes>
+
+
+      

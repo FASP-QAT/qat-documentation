@@ -1,0 +1,33 @@
+---
+id: shipmentglobaldemandcountryshipmentsplit-reportview
+title: "ShipmentGlobalDemandCountryShipmentSplit_ReportView"
+description: ""
+sidebar_label: "ShipmentGlobalDemandCountryShipmentSplit_ReportView"
+hide_title: true
+hide_table_of_contents: true
+schema: true
+sample: {"country":{"code":"string","id":0,"idString":"string","label":{"baseModel":{},"label_en":"string","label_fr":"string","label_pr":"string","label_sp":"string"}},"orderedShipmentAmt":0,"plannedShipmentAmt":0}
+custom_edit_url: null
+---
+
+import Schema from "@theme/Schema";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"ShipmentGlobalDemandCountryShipmentSplit_ReportView"}
+>
+</Heading>
+
+
+
+
+
+<Schema
+  schema={{"type":"object","properties":{"country":{"type":"object","properties":{"code":{"type":"string"},"id":{"type":"integer","format":"int32"},"idString":{"type":"string"},"label":{"type":"object","properties":{"baseModel":{"type":"object","properties":{"baseModel":"circular(BaseModel_ReportView)"},"title":"BaseModel_ReportView"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"}},"title":"Label_ReportView"}},"title":"SimpleCodeObject_ReportView"},"orderedShipmentAmt":{"type":"number","format":"double"},"plannedShipmentAmt":{"type":"number","format":"double"}},"title":"ShipmentGlobalDemandCountryShipmentSplit_ReportView"}}
+  schemaType={"response"}
+>
+  
+</Schema>
+            

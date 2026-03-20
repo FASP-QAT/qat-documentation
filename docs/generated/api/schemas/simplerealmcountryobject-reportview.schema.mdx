@@ -1,0 +1,33 @@
+---
+id: simplerealmcountryobject-reportview
+title: "SimpleRealmCountryObject_ReportView"
+description: ""
+sidebar_label: "SimpleRealmCountryObject_ReportView"
+hide_title: true
+hide_table_of_contents: true
+schema: true
+sample: {"countryCode":"string","countryCode2":"string","label":{"baseModel":{},"label_en":"string","label_fr":"string","label_pr":"string","label_sp":"string"},"realmCountryId":0}
+custom_edit_url: null
+---
+
+import Schema from "@theme/Schema";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"SimpleRealmCountryObject_ReportView"}
+>
+</Heading>
+
+
+
+
+
+<Schema
+  schema={{"type":"object","properties":{"countryCode":{"type":"string"},"countryCode2":{"type":"string"},"label":{"type":"object","properties":{"baseModel":{"type":"object","properties":{"baseModel":"circular(BaseModel_ReportView)"},"title":"BaseModel_ReportView"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"}},"title":"Label_ReportView"},"realmCountryId":{"type":"integer","format":"int32"}},"title":"SimpleRealmCountryObject_ReportView"}}
+  schemaType={"response"}
+>
+  
+</Schema>
+            

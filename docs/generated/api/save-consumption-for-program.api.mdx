@@ -1,0 +1,71 @@
+---
+id: save-consumption-for-program
+title: "Save Consumption"
+description: "Save consumption data for a program"
+sidebar_label: "Save Consumption"
+hide_title: true
+hide_table_of_contents: true
+api: eJzNVt1v2zYQ/1eIe9oANTbSZcWEYUCaJkOKrs2Hsz4YfjhLZ4kNRTIkFdcQ9L8PR8m1bKVBir3UTxZ5v/vi3e+ugZx85qQN0mhI4RYfSWRG+7qKRyLHgGJlnEBhnSkcVpCAseSQry9zSMHjI53tIBfGXX2TtOiwokDOQzpvDozNShKX74RZiVCSsNKSkppEMIJVxsORK1IHAwlIxlsMJSSgsSL+6vGXOSTg6KGWjnJIg6spAZ+VVCGkDYSNZWmpAxXkIIGVcRWG7uj1MbTtooOTD29NvmFMZnQgHfgvWqtkFoOffPEcRjNWbpZfKAscvuNUBUk+YrNQo7pQWAxkl8YoQg1twmb8x7r6x+hQvsjVDtLn5x0GGqB8cFIXBzL8Xj+q9zpsBiBdV8t9TG7qpSIG8QPdmtpltGdn50mOm0+r22Cy+091eKEnVa2CtEqSe6EX2oQu3SPzVqHWUhd3WobveOgIVXVmah3c5up74s+566g4zPNWe5tAkEHx0TWGGVV20DXQ8v24P0YN0HfHqMajbW+N9l30x9PpQekG+hp+uGYr8h4LOjP5U8U1COmmNx4lnwjmhkLttBcofJ1l5L3IomQCv01f/1Se3nlyIjfkhTZBlExFThZl8ANmkn70MhzKyU+W9EsdyGlUgpwzTqxLqYhDkLrY8e04ELaABVM2XPVSsEigolAaZnxbR5+ZflOYoJWTrbLJQNmk2VFyCwl4co/bQVA7BSmUIVifTljD0UONOshVz62oUW2CzPyRcQUchvU3aR5AlItOp2B1zNuestpJJqx5A0tCR+60Zi/ni+H1Lb9Dl+qh0PbrYtvV7z/PRrbPOaVxNr3/PBPB3JMWUseDjg1S8TZqEX/Gy7+gnz6R7OMNJNsn5QTEdHOF3OyGzvlXrKyiw6HRzbL9MTF9YghsS2XE/dMxs08PeXsHPqDr6T4ZT79R7Q5xyLC7m+eIdTqkzQEZS70ynIL9B7jeKxRxuq0UMTNGQQJKZqR9zF2/GZxazEoSH7oL8S85z8jjoykkB5W4Xq+PMIpz4U16XX7y4fLs/OPt+SvGDHn8lAvksVMIKRwf/fFmfnLy+5tFnDfGhwr1wJO4Xg1Z/6C6BtTxwlWsL6RIM1ahjItEjKnpG3QOaCW/zbaT92oAEkgHm9MigdL4wKimWaKnO6falo8fanLcV4sEHtFJ5GkbVzrp+X8O6QqVp2cC+uWmH1i/iv+x+T0ZcH+IesPPgarmL0jgnjb7m2G7aBMoCXOu4HnTC5x1Pr6asZqdgtGu1yZbxGmWkQ0D2R3Pt0OmvLrjAln2e2QVCR0crrkjcN05aWKQkY3iWQMKdVFjwbKdSv79B2QFD1w=
+sidebar_class_name: "put api-method"
+info_path: docs/generated/api/qat
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Save Consumption"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"put"}
+  path={"/api/pipeline/consumption/{pipelineId}"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Save consumption data for a program
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"description":"The ID of the pipeline to save the consumption data into","in":"path","name":"pipelineId","required":true,"schema":{"type":"integer","format":"int32"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"content":{"application/json":{"schema":{"type":"object","properties":{"actualFlag":{"type":"boolean"},"consNumMonth":{"type":"integer","format":"int32"},"consumptionDate":{"type":"string"},"consumptionId":{"type":"integer","format":"int32"},"consumptionQty":{"type":"number","format":"double"},"dataSourceId":{"type":"string"},"dayOfStockOut":{"type":"integer","format":"int32"},"multiplier":{"type":"number","format":"double"},"notes":{"type":"string"},"planningUnitId":{"type":"string"},"realmCountryPlanningUnitId":{"type":"integer","format":"int32"},"regionId":{"type":"string"}},"title":"QatTempConsumption"}}},"description":"The consumption data to save","required":true}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"content":{"text/json":{"schema":{"type":"object","properties":{"messageCode":{"type":"string"}},"title":"ResponseCode"}}},"description":"Returns a success code"},"403":{"content":{"text/json":{"schema":{"type":"object","properties":{"messageCode":{"type":"string"}},"title":"ResponseCode"}}},"description":"User does not have rights to save this consumption data"},"500":{"content":{"text/json":{"schema":{"type":"object","properties":{"messageCode":{"type":"string"}},"title":"ResponseCode"}}},"description":"Internal error while saving pipeline consumption data"}}}
+>
+  
+</StatusCodes>
+
+
+      

@@ -1,0 +1,71 @@
+---
+id: save-forecasting-unit-for-procurement-agent
+title: "Save Forecasting Unit for Procurement Agent"
+description: "Create or update a list of forecasting units for a procurement agent"
+sidebar_label: "Save Forecasting Unit for Procurement Agent"
+hide_title: true
+hide_table_of_contents: true
+api: eJztWW1v2zYQ/ivEfdoAxXbcZlmFYoCTJUOKtGsTpwUWGAUtnS02MqmQlF3D0H8fjpJrWnZit/CwNHA+OSTvleQ9z1EziNFEWmRWKAkhnGrkFpnSLM9i+sVZKoxlasAGSmPEjRVyyHIprKERxlmmVZRrHKG0jA9RWghAZag5qbyIIQTDx3i+kL6Rwp4r/X4h16nENN7naOyJiqcQziBS0tJEOAOeZamInMrmF0OuzsBECY44/bLTDCEE1f+CEenJNDlgBRonG1kxRm9dX6kUuYQigD43+FbFmO5MDURCR3nK9S8n88FfIYDIJTY+mW42lBvUlLdv64S0OEQNAQyUHnFbDr1ok2VaLPnI98tYLeQQiiIAK2xKQyfciOjGoCaRypU/uV0j5dmg/T+wYoQklHJj36pYDMTTCML353siWdZXbVrx8+/PYPl+bY5CbBuBiK9L06sR0Db0d3h39ldwfwWfRGg/uD99TLf2yq3+jPLha/V5oB+ZzB6bNNkDk8/uBF26AlQEsNn0tRhlKf5dhvqMsuH8XKZSG2OJVLzOtWAPCz9h2Xkex3gPC3tY+P9g4VTFHjTUC2qte906eHOXn66vtJ4D9Ua4ZgwKWrzcpncTZEJmuWXlFjFqlbmQ1Juv9OMrnTuL0XKRmqrjFhpjCK3OsaABkylpyo1ut1q1PtziV/vdDfgIjeFD3JyJq8q4W7km7Cu0uZaGcWbyKEJjmMOxIoCXrRdPylM6yixWaJhUliV8jEyLYWINs2rxtLL6dFIEcPTEkn4hLd3glKHWSrNJIlIsQ6DztDYI0s6HBsJb/3Czkpv0AhihTRS9DGW5c5zbBEJo8kw06zevWW9sAzCox6hJ+wxyTcCeWJuZsEkKGvc5l1YMqsciLnk6tSIyDaWpbCyH9hdKeqfCmJU6GakremQiyrWwU2ejj1yj7uTk5G3Pn76mvSjT7S+a/3c+rwdvPnVXbJ9RWplNkL351GVW3aFkQrqBso6E7MRpYa/d5B8UubNHBMfNQDDfVkqASzudkqvFK9rZV07FzSdJdM9r7Gp5aglv56W+5RdyDzqWEBHarfbLg9bxQftV9/AoPDoM2783WseH/8A6jNmkehUFHtZfpwk7c3vNs4oo9S747wKUvtHefbJ/zO2KKbV8HlRLr6M/9bFszRiRHX/sP07Jo/K7t7i+6SvbukXU+7O6P6vbnNUt+G7LY7P+e4EcKPJwGdw+LIEw68xRmHWVSilCEaE0DpcqXzoZjxJkl+UE+4jakGS70YKghvKTyaTB3XIC9WalyzQvL07P3l2fHZCMx28+dAh8x6VCSkzj1fHt0dFvxz0XuTJ2xKXnyTWRNS8BjDLgvnWtcpkaqHusbVdf0iqAdxQwS7lwjxouH7OKN90Cz8S6erCKXr0AEmUsycxmdNNvdFoUNHyfoya20wtgzLXgfUrdba8IIEEeo3ZE6A6nFFgZ4kGXPKPlaU4ernyhK4K5RCeKMLPe2gWhLXw2+P6Gdqpfff0blUdN8wn1KXwCIbgvi2TBUS43NoOUy2HOh7S2VEl//wKWg8S9
+sidebar_class_name: "put api-method"
+info_path: docs/generated/api/qat
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Save Forecasting Unit for Procurement Agent"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"put"}
+  path={"/api/procurementAgent/forecastingUnit"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Create or update a list of forecasting units for a procurement agent
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={undefined}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"content":{"application/json":{"schema":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":"circular(BaseModel)","createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"}},"title":"BaseModel"},"createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"forecastingUnit":{"type":"object","properties":{"id":{"type":"integer","format":"int32"},"idString":{"type":"string"},"label":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":"circular(BaseModel)","createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"}},"title":"BaseModel"},"createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"labelId":{"type":"integer","format":"int32"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"}},"title":"Label"},"name":{"type":"string"}},"title":"SimpleObject"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"},"procurementAgent":{"type":"object","properties":{"code":{"type":"string"},"id":{"type":"integer","format":"int32"},"idString":{"type":"string"},"label":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":"circular(BaseModel)","createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"}},"title":"BaseModel"},"createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"labelId":{"type":"integer","format":"int32"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"}},"title":"Label"},"name":{"type":"string"}},"title":"SimpleCodeObject"},"procurementAgentForecastingUnitId":{"type":"integer","format":"int32"},"skuCode":{"type":"string"}},"title":"ProcurementAgentForecastingUnit"}}},"description":"The input object containing procurement agent forecasting unit details","required":true}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"content":{"text/json":{"schema":{"type":"object","properties":{"messageCode":{"type":"string"}},"title":"ResponseCode"}}},"description":"Returns a success code"},"403":{"content":{"text/json":{"schema":{"type":"object","properties":{"messageCode":{"type":"string"}},"title":"ResponseCode"}}},"description":"User does not have rights to update a procurement agent"},"500":{"content":{"text/json":{"schema":{"type":"object","properties":{"messageCode":{"type":"string"}},"title":"ResponseCode"}}},"description":"Internal error while updating a procurement agent"}}}
+>
+  
+</StatusCodes>
+
+
+      

@@ -1,0 +1,71 @@
+---
+id: get-shipment-overview
+title: "get the ShipmentOverviewOutput object"
+description: "API used to get the ShipmentOverviewOutput object."
+sidebar_label: "get the ShipmentOverviewOutput object"
+hide_title: true
+hide_table_of_contents: true
+api: eJylVlFz4jYQ/iuefemLQwht5lo/lV7bOZ5CYq4PZZjMYi+2rrakrNbkGMb//UYyCQYC17S8YEvftyvJ+33aLQgWDpI5MFnDAosYcnIZKyvKaEhgPJ1EjaM8EhMVJJGUFKWlsjVpuVsTrxU93zViG4nM8gtlMoAYjCVGH2CSQwIFyTEDYmB6asjJbybfQLKFzGghLf4Rra1UFvjXX5xfxRZcVlKN/kk2liCBLhnEYNlnE0XOzzJhVfusr0ClhQpiiGFluEbphn4cQRuDE2T5HYV6eCesdNGH5yh0JaqmjmLs+xhhSR9No4U3k9z1iMiMG4hBCdXuNGDbht0VjPX7eRVqrXTxWSt5N3nV6FzpIjUNZ/Ruttt961RQGvdueuNobC2bNeVpY221mVao73S16cGXxlSEGg4OKO1inAY9OY0LyOOtX4AefdcLyJMTOYttYxAllR86lsxE20YeH4JM//ISatu2U5FiyiERbigMOGu069QwGg7936GiH0ga1u77Soa4r0qhr/Iix5D69q3gEy3EGquImA1HUqJElmlNWryHlBQxCZNaYxWZ1f/I38ZQk5TGG4w1LjgBSgkJXKNV152dXbtT33HEa2LveVtouIIEShHrkmvPGzw1qEWtdvaDGquNqMwNDHuBH+51yiZvMv8SdUGjleHofjyDGNbICpdV+Axtu4jBr/xhb3l/fMXaVnRgWcMDQ4LRcPTT1fDD1eiX2c1tcnuTjH4eDD/c/A19E7qEOjGe+UudLQ6N5WD82Dj6k6fG0J99Q/j96QvC9rX7lpT31npGwT3vPSPcPeKMXveAszLtSVnplQnVuFPp/UG9RKjzaPxSNNHMmMrXArHrKmY0uBkNhieFNJ5OfnD+gsUsI9cp8348i9JQVTsZYBZkoLH2ef8cp9NICGuIj6r4+fn5O1VMNSrP+JSmjz7O46f7X4vSZVfW1QHSxlCpjLSjXsaxxaykqFv/YcqVMYMlcnfxGCc16h7xX3UNx2fSawj+WwuyM9bgGrZCFS6LsOztzijmgFaFugidz/77v5rFIobSW0syh+12iY4+c9W2fvipId5AMl/sle7f2hhKwpw4uMs/tIEEPnb7uJr5BXl41YSb8LjJaeMXxjjLyEoPu7c+7ySvtje9S73VLHcdVG1yD2YM3RU+QwKhFfMput7Ij22hQl00WHhsF9P/vgFqXIK3
+sidebar_class_name: "post api-method"
+info_path: docs/generated/api/v2.12/quantification-and-analytics-tool
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"get the ShipmentOverviewOutput object"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/api/report/shipmentOverview"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+API used to get the ShipmentOverviewOutput object.
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={undefined}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"content":{"application/json":{"schema":{"type":"object","properties":{"realmId":{"type":"integer","format":"int32"},"startDate":{"type":"string","format":"date-time"},"stopDate":{"type":"string","format":"date-time"},"realmCountryIds":{"type":"array","items":{"type":"string"}},"programIds":{"type":"array","items":{"type":"string"}},"planningUnitIds":{"type":"array","items":{"type":"string"}},"fundingSourceIds":{"type":"array","items":{"type":"string"}},"shipmentStatusIds":{"type":"array","items":{"type":"string"}},"useApprovedSupplyPlanOnly":{"type":"boolean"},"programIdsString":{"type":"string"},"planningUnitIdsString":{"type":"string"},"fundingSourceIdsString":{"type":"string"},"realmCountryIdsString":{"type":"string"},"shipmentStatusIdsString":{"type":"string"}},"title":"ShipmentOverviewInput_ReportView"}}},"required":true}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Returns the ShipmentOverviewOutput object","content":{"text/json":{}}},"500":{"description":"Internal error that prevented the retreival of ShipmentOverviewOutput object","content":{"text/json":{}}}}}
+>
+  
+</StatusCodes>
+
+
+      

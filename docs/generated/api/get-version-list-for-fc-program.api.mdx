@@ -1,0 +1,71 @@
+---
+id: get-version-list-for-fc-program
+title: "Get Version List for Dataset Program"
+description: "Retrieve a list of versions for a specific dataset program"
+sidebar_label: "Get Version List for Dataset Program"
+hide_title: true
+hide_table_of_contents: true
+api: eJztVt9v2zYQ/leIe2oB1QoyZMWEYUDa/ICLbGtjr30IjOAinW22EsmQJ3uGof99OEp25DjNnO1xe7JFfrz77jse79ZQUMi9dqytgQyuib2mBSlUpQ6s7FQtyAdtTVBT6xWq4CjXU52rAhkDsXLezjxWkIB15FEMDQvIYEb8uT16pQNfWH+Rf9xCHXqsiMkHyG7Wj0iM57SxqoZn0S/PaUMkEoMEtEAd8hwSMFiRfLWHhgUk4Om+1p4KyNjXlEDI51QhZGvglROwNkwz8pDA1PoKuV364RiaZiLHg7MmUJATx0dH8pNbw2Q42qA/Of0ahO563zR6jyuhyFSF3rq9+0q5cHdetGLdms89IVNxhkw9cGCvzaxPr0CmN6wrgiauUo6BR4ye/+lR6152skuB5PcAHbf4ESPXBwihD7Wri1FLdI95k0CJd1T+vbM7DPSrLV4IhVz7vC7Rv3q3Wbw989ad2aX5rGn5Whiw5lLMPQ3ZcjxYxoi+JfP9cG+n/plN99xmcE9s9oK4iqjdAHrbI125kn6Pwu2F2eV/HI3/n/3/VPZ7qK4PPAYIZK/91N6E+Ny/tP80CZy88J3+TsIrCgFn9N4WTzyN/biuuyYhyL3gHsc2NEzeYKnI+9jRULjTggxTESP2bfPFUsJ+SoLWOc6kaYL4K+zSBJgkUBHPbdd1Y3vlOWSQotNp0eHSzko61SWTT6d5uu2X6Xr7t4EEAvnFpjXXXu79nNmFLBWDg/saDUsKYq9Hg+WKdR4G1kvj2A36kozMBFSo1qYSc9JfA+W117yKPu4IPfnTWkjfTPrbI0lZV4Y90ObrYlMsH76M93yfi+BRxw9fxortNzJKm7jQFlmm3kUr6ue4+Qt0U4KktrUPySb7IkCUX5upFQK7vj7taKJON6KosbUlJFDqnEyI16mbVU4d5nNSV+2G6kpEHQ+OIHkk+nK5HGCEi8ZpZyukV8P357+Nzt/Imd6t/HQqWnTZhgyOBz+9vTk5+fHtRFDOBq7Q9JhcEm/dy6gWC+2sq66HkW0n4F6R/buZsZM31qkrURvhGMNfd7f4BtBp8d/d415sCbR3Wf7kbRlv57/s4WOSwNwGFlPrtbzmf/iyaWT5viYvV3CSwAK9xjsRUOZRHeR/AdkUy0DPBP/qupszX6vDxtYnA97MjUamxgWWtXxBAt9otTPWNpMmgTlhQT7ybPdP85wc904+vHpN/224PB9D0/wFLjUkvg==
+sidebar_class_name: "get api-method"
+info_path: docs/generated/api/qat
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get Version List for Dataset Program"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/api/dropdown/version/filter/fc/programId/{programId}"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Retrieve a list of versions for a specific dataset program
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"description":"The program ID for the version list","in":"path","name":"programId","required":true,"schema":{"type":"integer","format":"int32"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"content":{"text/json":{"schema":{"type":"array","items":{"type":"object","properties":{"createdDate":{"type":"string","format":"date-time"},"forecastStartDate":{"type":"string","format":"date-time"},"forecastStopDate":{"type":"string","format":"date-time"},"versionId":{"type":"integer","format":"int32"},"versionStatus":{"type":"object","properties":{"id":{"type":"integer","format":"int32"},"idString":{"type":"string"},"label":{"type":"object","properties":{"baseModel":{"type":"object","properties":{"baseModel":"circular(BaseModel_DropDownView)"},"title":"BaseModel_DropDownView"},"labelId":{"type":"integer","format":"int32"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"}},"title":"Label_DropDownView"}},"title":"SimpleObject_DropDownView"},"versionType":{"type":"object","properties":{"id":{"type":"integer","format":"int32"},"idString":{"type":"string"},"label":{"type":"object","properties":{"baseModel":{"type":"object","properties":{"baseModel":"circular(BaseModel_DropDownView)"},"title":"BaseModel_DropDownView"},"labelId":{"type":"integer","format":"int32"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"}},"title":"Label_DropDownView"}},"title":"SimpleObject_DropDownView"}},"title":"Version_DropDownView"}}}},"description":"Returns the list of versions for a specific dataset program"},"500":{"content":{"text/json":{"schema":{"type":"object","properties":{"messageCode":{"type":"string"}},"title":"ResponseCode_DropDownView"}}},"description":"Internal error that prevented the retrieval of the list of versions"}}}
+>
+  
+</StatusCodes>
+
+
+      

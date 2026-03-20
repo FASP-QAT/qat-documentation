@@ -1,0 +1,71 @@
+---
+id: get-dropdowns-for-stock-status-vertical
+title: "Get Dropdowns for Stock Status Vertical Report"
+description: "Retrieve a list of dropdowns for stock status vertical report"
+sidebar_label: "Get Dropdowns for Stock Status Vertical Report"
+hide_title: true
+hide_table_of_contents: true
+api: eJztV1FPGzkQ/ivWPN1JW4I4cdWtTicFChUVd6UJhYcoQs7uZOPi2Mt4NmkU5b9X483STSBQeifdCzwFe+bzzDffeMdLyDFkZEo23kEKPWQyOEOllTWBlR+rnHyZ+7kLauxJBfbZrQqsuQpqhsQm01YRlp4YEvAlkhassxxSKJDfNd6nnvri24+uV2tPSIDwrsLARz5fQLqEzDtGx/JTl6U1WYTrfAkS3xJCNsGpll+8KBFS8KMvmMnRJcnhbDDIrnd20bXWzy+qC8KAjrsZ+RC61l6QL0hPQwtk5L1F7WAVYWT3LG/vayK9gAQM44ZfYDKugNVqlQAbtrL2SJYNCWeurPimF8m6MjivHTcrcDnBHSQ3hVBGYNbMGcIcUqYKV7IQSu9CzcDB/v4Wn4xfeTeRu3LcQbCcPdMWXbb47Ayfm8A/Dzb2hJkObFwhYC8kPwGTt9aNYyyQIBHYqeZ66bcDiIb92ushTAJWj9A+H+xIB/zb5y80hcxQVllNvxw1iy0l/AotBT1mcB/fDbrdwd+M6YnN8qnNUD5ObRPUebTa0G5L82ZaWjzZlMS2cWm1c+sK/8dy+eHqv8rk/5fJx0jCteHJabVtSajt9NhXjmlx8aqXV708qZeW6TNzxseKH356H3x7e8gVuaB4gj8z/qwSOHzhR3dHgacYgi7w2Of4NH299RdfLJ8ZLM4cIzltFRJ5UvOJsagKdHFgc0VMuklETtBFgHQANWiAYQJT5ImXua70IcaseQIpdHRpOrVnJzykvnPPICQQkGZIAryEikS/E+YypB0B2burtGMzXs982mm7YJOFPU8FbKfzvo4cc1VjKoFbDeWIrCLDi3jGCDUhdSsJdDBsb/elFOt2ahk1/502Pf7h+vLB2SdCZSTsw/WlYn+LMpTFhfpuSNVRRFF/xs2/JPN4nsyacQeSpqpCQGRcRNL7PgyffNWi/h8eZmUG3BxfB41ihnJFubEXrM1MPm0wrroN5erSexnOrcnQhRiE0zH8bqmzCarzekNdIQXxPNjbh2SrpPP5fE9Hc6lgZ40VOudnxyf/9E/eiE9Ly5+6wvSsBoQUDvb+eDs4PPz97TDO5T7wVLtWJO+R1buN7oyNr2r5qUZ/qtc8TjZSbzXpv371rCsZW7202sSHRORiuW6SAejSxJF97fJIo0iE960yTGAiXZYOYLmU+/4z2dVKlu8qJBH3MIGZJqNHQt5ASjxBnSNF3d/iAlI4rjN8cynxibmt4tdz+121ShqPbpZhyS3b79fXqn0DXHzsS7FG60fbNF5UQHouOeo5pBAfg3JEbLG4tgSrXVHpQmxrTPn7Bl0ZHeE=
+sidebar_class_name: "post api-method"
+info_path: docs/generated/api/qat
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get Dropdowns for Stock Status Vertical Report"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/api/report/stockStatusVertical/dropdowns"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Retrieve a list of dropdowns for stock status vertical report
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={undefined}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"content":{"application/json":{"schema":{"type":"object","properties":{"onlyAllowPuPresentAcrossAllPrograms":{"type":"boolean"},"programIds":{"type":"array","items":{"type":"string"}}},"title":"StockStatusVerticalDropdownInput_ReportView"}}},"description":"The stock status vertical dropdown input","required":true}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"content":{"text/json":{"schema":{"type":"array","items":{"type":"object","properties":{"equivalencyUnitList":{"type":"array","items":{"type":"object","properties":{"forecastingUnitIds":{"type":"array","items":{"type":"string"}},"id":{"type":"integer","format":"int32"},"idString":{"type":"string"},"label":{"type":"object","properties":{"baseModel":{"type":"object","properties":{"baseModel":"circular(BaseModel_ReportView)"},"title":"BaseModel_ReportView"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"}},"title":"Label_ReportView"}},"title":"SimpleEquivalencyUnit_ReportView"}},"planningUnitList":{"type":"array","items":{"type":"object","properties":{"forecastingUnitId":{"type":"integer","format":"int32"},"id":{"type":"integer","format":"int32"},"idString":{"type":"string"},"label":{"type":"object","properties":{"baseModel":{"type":"object","properties":{"baseModel":"circular(BaseModel_ReportView)"},"title":"BaseModel_ReportView"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"}},"title":"Label_ReportView"}},"title":"SimpleObjectWithFu_ReportView"}},"realmCountryPlanningUnitList":{"type":"array","items":{"type":"object","properties":{"forecastingUnitId":{"type":"integer","format":"int32"},"id":{"type":"integer","format":"int32"},"idString":{"type":"string"},"label":{"type":"object","properties":{"baseModel":{"type":"object","properties":{"baseModel":"circular(BaseModel_ReportView)"},"title":"BaseModel_ReportView"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"}},"title":"Label_ReportView"}},"title":"SimpleObjectWithFu_ReportView"}}},"title":"DropdownsForStockStatusVerticalOutput_ReportView"}}}},"description":"Returns the list of dropdowns for stock status vertical report"},"500":{"content":{"text/json":{"schema":{"type":"object","properties":{"messageCode":{"type":"string"}},"title":"ResponseCode_ReportView"}}},"description":"Internal error while generating the report"}}}
+>
+  
+</StatusCodes>
+
+
+      

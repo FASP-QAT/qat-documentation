@@ -1,0 +1,71 @@
+---
+id: get-stock-status-across-products
+title: "get the StockStatusAcrossProductsOutput list"
+description: "API used to get the StockStatusAcrossProductsOutput list."
+sidebar_label: "get the StockStatusAcrossProductsOutput list"
+hide_title: true
+hide_table_of_contents: true
+api: eJylVk1z4kYQ/StTfclFfJjEtYlOUVxJLSdjQ3IIRbkaqZFmV5oZ97RgKUr/PTUSXoQNTjbLBdF6/THT73VzAMHcQ7wEJmdZYBVBRj5l7URbAzEks6mqPWVKrMpJlBSk5mLTz3NBqX2SsvV+xjarU/H3tbhaVKm9DCEC64gxxJlmEENOctURImB6rsnLbzbbQ3yA1BohI+ERnSt12gYaffKhqgP4tKAKw5PsHUEMdv2JUoEIHIe0osmHt0xYViH9V6A2QjkxRLCxXKF0ph8n0ESQSQ/ohbXJ+7gMhQaiKwpYYUyJ71Aot7yfZr7nisy4hwi0UOXfhmyaqCvsztZG/oezY5szVt/sV3tKnGO7pWxeO1fuZyWae1Pue/C1tSWhgbM08y7G26AX7uEd7KtDX0WGsFrKYLpKmalxtTw9trT9S9MOmu5an2vNlEEsXFNr8M4a37FhMh6Hr3OGP5LUbPx/ZjZEfXIKfZEXVrYV3F7KMTVCbLBUxGxZSYGiHNOWjARpFaSYhElvsVR28/1lNBFUJIUNunO2BTuUAmIYodOjTuwj/44cPfGWOIyGA9RcQgyFiPPxKAQYPtdoRG+OqkSD5V506oeWg2DOz34Mqq1RXVC1sawekgVEsEXWuC7b7jTNKoJwhMfTJPj9C1Yu8KCn5HGnU5iMJz8Nxh8Gk18WN7fx7U08+Xk4/nDzN1zU5vKFXKsL2uu/7Gurb39HO4Fql9RyGiFXRXKCXNFGTz3abGzb66M0Hs6aoNBkKnnphFpYW4YLJvZdGybDm8lw/KY7yWz6gw/DHdOUfKeCh2Sh5m2rjiTDtCWZwSrk/SOZz5QQVhC9osZut/sXalCFOnh8nM+fQpynjw+/5oVPB85XLaSJoNQpGU+9jInDtCDV1X+ecmPtcI3cjUXrpULTc/yWjfX6ano76Lu24HG2tQp1Jep2tLaHOBxFuQR0uqVAu4MjuC7MVQRF0HO8hMNhjZ7+5LJpgvm5Jt5DvFydVBV+NREUhBlxq+TPtIcY7rpzDRahsgAv63aBvN6zTfTikaQpOelhT/MmqPbrrJndz4Os18clXtksgBl34XS4gxjavwUhRbeeg+0AJZq8xjxgu5jh8w9irAf4
+sidebar_class_name: "post api-method"
+info_path: docs/generated/api/v2.12/quantification-and-analytics-tool
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"get the StockStatusAcrossProductsOutput list"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/api/report/stockStatusAcrossProducts"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+API used to get the StockStatusAcrossProductsOutput list.
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={undefined}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"content":{"application/json":{"schema":{"type":"object","properties":{"realmId":{"type":"integer","format":"int32"},"dt":{"type":"string","format":"date-time"},"tracerCategoryIds":{"type":"array","items":{"type":"string"}},"realmCountryIds":{"type":"array","items":{"type":"string"}},"programIds":{"type":"array","items":{"type":"string"}},"useApprovedSupplyPlanOnly":{"type":"boolean"},"programIdsString":{"type":"string"},"tracerCategoryIdsString":{"type":"string"},"realmCountryIdsString":{"type":"string"}},"title":"StockStatusAcrossProductsInput_ReportView"}}},"required":true}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Returns the StockStatusAcrossProductsOutput list","content":{"text/json":{}}},"500":{"description":"Internal error that prevented the retreival of StockStatusAcrossProductsOutput list","content":{"text/json":{}}}}}
+>
+  
+</StatusCodes>
+
+
+      

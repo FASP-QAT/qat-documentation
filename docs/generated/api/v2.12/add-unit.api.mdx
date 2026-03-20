@@ -1,0 +1,71 @@
+---
+id: add-unit
+title: "Add Unit"
+description: "API used to add a Unit"
+sidebar_label: "Add Unit"
+hide_title: true
+hide_table_of_contents: true
+api: eJztWVFvIjcQ/ivWvLSVNoTQu167TyUpVSLlEgKkD40iNKwH8HXX3tjecAjtf6/Gu4Ql5EjvrZeDJ3Y89nxjjz3f2CvwOHMQ30GhlYf7CCS5xKrcK6Mhhm7/QhSOpPBGoJQCxS3rRWBysshKFxJiQClruaWHgpw/NXIJ8erZaKM5hf7CTD5R4oWfoxdLU4gFal+bgAgSoz1pz/0xz1OVBEPHnxwPsgKXzClD/ueXOUEM1WgQQW4ZllfkuDWxhJ7k6fJ11cKRZUee9JT2NCMLEUyNzdBXop87UEZBWWNGDXXnrdIzKMsIvPIpi07RqeTWkeUuNZQ/0L/Qq2FDoqcjrzLiTik6/9FINVX/DyeaeL7OE0y8emzqT4xJCXUAopX/z6hTnFB6WPm3sfJhMb9u6cekX4C9bnT5nsap3dOYv9w4QUcfjTyE3FsJucaCQqJsUqRofzxdC3+CbTS1ahPjZTiA6mPrzMiXXIpAqoy0U0a/Po/qcPR9h3F4OPoOIffNHn1KDisYe10aqixP6bqawkNAHQJqJ6BCxViyhItGZUlC7G1BQeByo101PZ12e7eUHJAvrHYCxbBIEnJOJEaSUFPh5ySeqlOxQCdcpTEt0u3i0tNnv64qA4537V/2WTr3Ph969IVrXV2Pxt2zs15/1D297K3NSvQoXME1K0mhnNDGi0Krh4Jesfx+v48NyxdXo97gqns5HvYGf/UG495gcD2oAViq/DUZCcPfgqw1tqqzpZIBD6apWTybJW9EYni/+v1Aywgy8nPDNX9uXAhl9HOI4Rhzdcyk6BgicGQfyfK1wgoKywEy9z538TFrtR4K1F5N67IeNaZLrxLXMpYDcXsK+tbIIgkYq0HF1Fhx0x1BBI9oFU7SECRleR8B4xxs7h96n5Fd2jlR1tut3dxMjdS3teeh0+68O2p/OOr8Njp5H78/iTu/ttofTv6Gl/b5a0Pv7sR94693H2+KTaHcbnDBt+DXExdqN5nO5mTaEJznMuY1z2X5lmwr6Xz7k1VuFR4bN7fqDXWIke89RjYM7UuM/o34qacmZKmaUdxsZRaBWoruOr2IkTGc/zkxVbml0zrptNo7Kafbv/jBhcvoildwprzpjsQw5J86PWIS0mPtz5/dYV94wgyiZ/lusVi8ku8oQ8U9zofDMY8zPr/5fTZ3yVHusqDCs6QS0o4aFrs5JnMSFf5tk1NjWhO0gWpxjs5QNztKub7C33J7tcn6X770r0lgIAV5iqq6wLUhoioecAeYK6hOKYiAHxTmzBPiO1itOAJvbVqWLH4oyC4hvrvfJHL+KiOYE0qygTz8Q0uI4axCdjRi86yeFgxj522gjNY9uklCuW/obngME4UnDtO/HjKTmNSvFVl1rlpc8EsGLiCG8NTBJgIVDbIVpKhnBc5YtxqTf/8Ce2p3hw==
+sidebar_class_name: "post api-method"
+info_path: docs/generated/api/v2.12/quantification-and-analytics-tool
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Add Unit"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/api/unit/"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+API used to add a Unit
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={undefined}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"description":"The Unit object that you want to add","content":{"application/json":{"schema":{"type":"object","properties":{"createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"},"active":{"type":"boolean"},"unitId":{"type":"integer","format":"int32"},"label":{"type":"object","properties":{"createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"},"active":{"type":"boolean"},"labelId":{"type":"integer","format":"int32"},"label_en":{"type":"string"},"label_sp":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"baseModel":{"type":"object","properties":{"createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"},"active":{"type":"boolean"},"baseModel":"circular(BaseModel)"},"title":"BaseModel"}},"title":"Label"},"unitCode":{"type":"string"},"dimension":{"type":"object","properties":{"id":{"type":"integer","format":"int32"},"label":{"type":"object","properties":{"createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"},"active":{"type":"boolean"},"labelId":{"type":"integer","format":"int32"},"label_en":{"type":"string"},"label_sp":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"baseModel":{"type":"object","properties":{"createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"},"active":{"type":"boolean"},"baseModel":"circular(BaseModel)"},"title":"BaseModel"}},"title":"Label"},"idString":{"type":"string"}},"title":"SimpleObject"},"baseModel":{"type":"object","properties":{"createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"},"active":{"type":"boolean"},"baseModel":"circular(BaseModel)"},"title":"BaseModel"}},"title":"Unit"}}},"required":true}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Returns a Success code if the operation was successful","content":{"text/json":{}}},"406":{"description":"Returns a HttpStatus.NOT_ACCEPTABLE if the data supplied is not unique","content":{"text/json":{}}},"500":{"description":"Returns a HttpStatus.INTERNAL_SERVER_ERROR if there was some other error that did not allow the operation to complete","content":{"text/json":{}}}}}
+>
+  
+</StatusCodes>
+
+
+      

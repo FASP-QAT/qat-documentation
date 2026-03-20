@@ -1,0 +1,71 @@
+---
+id: get-load-dataset-1
+title: "Load Program (paginated)"
+description: "Retrieve a paginated list of programs for a specific program ID"
+sidebar_label: "Load Program (paginated)"
+hide_title: true
+hide_table_of_contents: true
+api: eJztWm1v2zYQ/ivEfUoBNc6ydsWMYUDSZIWLdG0Td/0QGMVZOttsJVIhT3YNQ/99OEpO5DhxnbZbmkJf4ogv9/Lw+FCmnwUk5GOnc9bWQBdOiZ2mKSlUOY61QaZEpdqzsiOVOzt2mHk1sk6h8jnFeqTjZbvqHUEENieHYq2XQBfGxCcWkyNk9MQffoEIcnSYEZPz0D1fXPPfn5DqHYkzntClYbbKbRsYRKDFUo48gQgMZiRP1YheAhE4uii0owS67AqKwMcTyhC6C+B5LoO1YRqTWBpZlyFXTb/uQ1lGNwWc45iUKbIhuWaot0SCY/rGIAYy3efWePIyY39vTz5ia5gMBxv0mTsfvUS4WDeNzuFcomPKfKPdDj9SzLJETlaRdWU+Lpwjw28k8G3ii2BCmPLkwNFNXmdOM7026XyZ+rZh2KTp37PTZizedLJlWDo5qybdZCXFIaVfjgJj1tNmHENrU0IjJobo6ZVNvqMZiLWLixTdzuGy8RFEEDuS+j+cf9lR4cn1tgVIBldlugZQGQFrTqXpEL2O33lyMqUO5Qj5hlkNHwkyPWadUYW151c20SP9YyTRjOcumazaqxet/BnWZ0jp1lGF0R/I3L6tPozchs58U6fPb+n86SroJBBQuTwoNrk+01me0nOb0Osq3XKFdHvJifa8BeFvOuga9ra01vJ2y9sPbte1vN3y9v3ydoaf5dV6O16OwLoxGu2x+v7Rkm9Lvg9367Tk25LvPZJvtLwWanm05dGHvAtaHm159F551BGm2XNbGHZb4NGSaUumP+5WaMm0JdN7JdMpOa+t+cZb1wdeuCPrKEbPZ4yOv3aqze8201heuYe5qtJ6TVZgWus9Y+Rii7Vpj7mHVo0/IUm1x1x7zP3Px9zaEdcPE1q6bOnyhy/2li5burwnumzasJj8U3EnlNc73tSX2WXoWdN1Fs74SlW5WdgpQ2ppJyVNbWcZwZO9J3AXpeEtq5WR9zgOX3s2A3FayxzDyBvSEvVlUmlL1UzzJAQ/1lMyjcDVDL0yltXIFiaRNJ7eUTD5X6fRMywVmSpyLqwAssodTcnIKklOtaYU06U0ts66coNj0dJCrbKFQQQZ8cTWAtygueUJdKGDue6kV3rczqUstrO4/LfsiES1s5C/JUTgyU2XYt3CyaE1Yc59tyPWdi8KNCwq4PCDNBpM56xjv2udbInVNF+QEW0wJaqyqcScqFk9xYXTPA8+hoSO3EEhEZ8Pmt1nsi4V9M1By6e/lvvv5fv+mu9jgTgg9/J9X7H9REZpExqqfdtVh8GK+iN0/gm1Jjcc3qEHouUSCwABeW1GVgJY9fV2BRN1sARF9a1NIYJUx2R8qJlaFHyQYzwhdVJ1qHqLq/3dPYiugT6bzXYxDBeMO7Ut3znpPT/+++z4scxplN7bA8Gift+CLuzv/v7s/OnT354Nwu9f1nOGphGJEImqmUTtXFLFo+uANnbPdxCN17iGXZinqMN7Ush7UdfuOWCuBbur6oXL3++CrLvbfKhV1t3wOYhgYuUy5RwWC3n7eufSspTmi4Lkwvp8EMEUncahYCaidO3l/wS6I0w9bch957QWcj9S30W7fiMSyysgIxdAU0wLeYIIPtF8Rdse5OlfG/rtKvaviUlwLweVjDAhF1Ctug7imHJuTLri3rLJXC+O+1CW/wIy753T
+sidebar_class_name: "get api-method"
+info_path: docs/generated/api/qat
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Load Program (paginated)"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/api/loadDataset/programId/{programId}/page/{page}"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Retrieve a paginated list of programs for a specific program ID
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"description":"The ID of the program to retrieve a paginated list of programs for","in":"path","name":"programId","required":true,"schema":{"type":"integer","format":"int32"}},{"description":"The page number to retrieve","in":"path","name":"page","required":true,"schema":{"type":"integer","format":"int32"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"content":{"text/json":{"schema":{"type":"array","items":{"type":"object","properties":{"currentPage":{"type":"integer","format":"int32"},"healthArea":{"type":"array","writeOnly":true,"items":{"type":"object","properties":{"code":{"type":"string"},"id":{"type":"integer","format":"int32"},"idString":{"type":"string"},"label":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":"circular(BaseModel)","createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"}},"title":"BaseModel"},"createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"labelId":{"type":"integer","format":"int32"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"}},"title":"Label"},"name":{"type":"string"}},"title":"SimpleCodeObject"}},"healthAreaIdList":{"type":"array","items":{"type":"integer","format":"int32"}},"healthAreaList":{"type":"array","items":{"type":"object","properties":{"code":{"type":"string"},"id":{"type":"integer","format":"int32"},"idString":{"type":"string"},"label":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":"circular(BaseModel)","createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"}},"title":"BaseModel"},"createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"labelId":{"type":"integer","format":"int32"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"}},"title":"Label"},"name":{"type":"string"}},"title":"SimpleCodeObject"}},"maxPages":{"type":"integer","format":"int32"},"organisation":{"type":"object","properties":{"code":{"type":"string"},"id":{"type":"integer","format":"int32"},"idString":{"type":"string"},"label":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":"circular(BaseModel)","createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"}},"title":"BaseModel"},"createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"labelId":{"type":"integer","format":"int32"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"}},"title":"Label"},"name":{"type":"string"}},"title":"SimpleCodeObject"},"program":{"type":"object","properties":{"code":{"type":"string"},"id":{"type":"integer","format":"int32"},"idString":{"type":"string"},"label":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":"circular(BaseModel)","createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"}},"title":"BaseModel"},"createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"labelId":{"type":"integer","format":"int32"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"}},"title":"Label"},"name":{"type":"string"}},"title":"SimpleCodeObject"},"realmCountry":{"type":"object","properties":{"code":{"type":"string"},"id":{"type":"integer","format":"int32"},"idString":{"type":"string"},"label":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":"circular(BaseModel)","createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"}},"title":"BaseModel"},"createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"labelId":{"type":"integer","format":"int32"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"}},"title":"Label"},"name":{"type":"string"}},"title":"SimpleCodeObject"},"versionList":{"type":"array","items":{"type":"object","properties":{"createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"forecastStartDate":{"type":"string","format":"date-time"},"forecastStopDate":{"type":"string","format":"date-time"},"notes":{"type":"string"},"versionId":{"type":"string"},"versionStatus":{"type":"object","properties":{"id":{"type":"integer","format":"int32"},"idString":{"type":"string"},"label":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":"circular(BaseModel)","createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"}},"title":"BaseModel"},"createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"labelId":{"type":"integer","format":"int32"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"}},"title":"Label"},"name":{"type":"string"}},"title":"SimpleObject"},"versionType":{"type":"object","properties":{"id":{"type":"integer","format":"int32"},"idString":{"type":"string"},"label":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":"circular(BaseModel)","createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"}},"title":"BaseModel"},"createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"labelId":{"type":"integer","format":"int32"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"}},"title":"Label"},"name":{"type":"string"}},"title":"SimpleObject"}},"title":"LoadVersion"}}},"title":"LoadProgram"}}}},"description":"Returns the paginated list of programs for the specified program ID"},"404":{"content":{"text/json":{"schema":{"type":"object","properties":{"messageCode":{"type":"string"}},"title":"ResponseCode"}}},"description":"The dataset with the given program ID was not found"},"500":{"content":{"text/json":{"schema":{"type":"object","properties":{"messageCode":{"type":"string"}},"title":"ResponseCode"}}},"description":"Internal error that prevented the retrieval of the dataset"}}}
+>
+  
+</StatusCodes>
+
+
+      

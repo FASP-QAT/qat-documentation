@@ -1,0 +1,71 @@
+---
+id: get-procurement-agent-type-for-realm
+title: "Get Procurement Agent Types for Realm"
+description: "Retrieve a list of active procurement agent types for a realm"
+sidebar_label: "Get Procurement Agent Types for Realm"
+hide_title: true
+hide_table_of_contents: true
+api: eJztWG1v2zYQ/ivEfWoBOQ7SZsWEYYDTpkGKtFsTd/0QGAMtnS22EqkcT84MQ/99OEpqlMZ5bYcFgb8kMu/9heTxWUGKPiFTsnEWYjhGJoMLVFrlxrNyM6UTNgtUJbmkIizQstJz+cvLEr2aOVJaEeq8gAhciaRF12EKMcyR/7wQG4nUeFniW0fHLX+pSRfISB7i09V3zowzVIdvxAfOsDGh2CnqfLzBJYjAiIpScwYRWF0gxBBUHKYQAeFZZQhTiJkqjMAnGRYa4hWICojBWMY5ip6Zo0Jzs/RiB+p6IuK+dNajF4md7W35lzjLaDnowH94+MVLEKurqjWRXoqDjIXvrbvpF0xYkkKSRjaN+ib/Pb6pczlqC3UEU+3xvUsx/2lqIDGUVLmmZ3vd4nOIICHUjOne8nZDlUeS6t8hlVFgborzjd0zGTuHuo6ADeeytKe9ST55JBFpXXmjeY1Uz0aqGQdsChShXHt+71IzM48jiL4/94nksr62aPVTqM/0JzbxZi9s9sKjCO3he+HOXgXuv9Gu8aojzugGYnkT0ZfXEJ9cBx2FA+gJxRb8vDJ6vXbpOuPrme8cVjP93Zqq5Drj5q6GTHrSCF3bsps7ZHOHbO6QzR3yv94ht5s+MUWZh9P4jybcPnHdmxnqWliuvNYrsv5hj/U6gpfbL+71cr2mNAV6r+fX3S29wI7bZ3PgXBOP1EKlDr2yjlWmF6jIzDP28uzXSYLeK86M70fw8lFF8MHdXoLKpqEQAmr4EpPQchch7d4TTvivQzq0LJspV0jkSJ1nJscOgzF2/sDmEwf0XFCf/ugxCPwD4R8Qeh5IFsjlORJMIiiQM9cCSwE84gxiGOrSDNfNL8MW7xmu2o8aIvBIiw5uqkhu6Iy59PFQ1GydVdqymZkkgFja6nzJJvFbjmT/X07MAVoBuzBVjU4l6gQd8phUZHgZbExRE9KoEldPJ33yiVSyKVafqfv1tjts3n0eX7G9L0UJHfTu81ix+4pWGRsWmkMqVntBi/otEH+HFuMKk0qgQNQ1hSQgVMTYmRMHLtv6eCknatQlRY2dyyGC3CRofeiyFmcblTrJUB01BPUXkhfJna1tiL5L+vn5+ZYO7JLjYavLD48OX+9/ONkfiEyvWT+OJBeLRiHEsLP166vT3d1fXk3CEOs8F9r2PDlAVr3jVIXeUONv/djhkJci7m2+HwZE2xSHLVzm2oT5MKRg1fbvKejSwPoJHKIeZhl3n5MIMudZRFcrmTU/UV7XsnxWIUnbTSJYaDJ6KkkTXNV4+U4hnunc4w3xPjtukdHn6sfg17WBdwioFfxzofNKfkEEX3HZg2frSR1BhjpFCt431FGSYMk9uYtjse6fDQf7Y6jrfwFGwt9v
+sidebar_class_name: "get api-method"
+info_path: docs/generated/api/qat
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get Procurement Agent Types for Realm"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/api/procurementAgentType/realmId/{realmId}"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Retrieve a list of active procurement agent types for a realm
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"description":"The ID of the realm to retrieve procurement agent types for","in":"path","name":"realmId","required":true,"schema":{"type":"integer","format":"int32"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"content":{"text/json":{"schema":{"type":"array","items":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":"circular(BaseModel)","createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"}},"title":"BaseModel"},"createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"label":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":"circular(BaseModel)","createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"}},"title":"BaseModel"},"createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"labelId":{"type":"integer","format":"int32"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"}},"title":"Label"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"},"procurementAgentTypeCode":{"type":"string"},"procurementAgentTypeId":{"type":"integer","format":"int32"},"realm":{"type":"object","properties":{"code":{"type":"string"},"id":{"type":"integer","format":"int32"},"idString":{"type":"string"},"label":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":"circular(BaseModel)","createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"}},"title":"BaseModel"},"createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"labelId":{"type":"integer","format":"int32"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"}},"title":"Label"},"name":{"type":"string"}},"title":"SimpleCodeObject"}},"title":"ProcurementAgentType"}}}},"description":"Returns a list of active procurement agent types for a realm"},"403":{"content":{"text/json":{"schema":{"type":"object","properties":{"messageCode":{"type":"string"}},"title":"ResponseCode"}}},"description":"User does not have rights to access this realm"},"404":{"content":{"text/json":{"schema":{"type":"object","properties":{"messageCode":{"type":"string"}},"title":"ResponseCode"}}},"description":"No active procurement agent types found for the specified realm"},"500":{"content":{"text/json":{"schema":{"type":"object","properties":{"messageCode":{"type":"string"}},"title":"ResponseCode"}}},"description":"Internal error while retrieving a list of active procurement agent types for a realm"}}}
+>
+  
+</StatusCodes>
+
+
+      

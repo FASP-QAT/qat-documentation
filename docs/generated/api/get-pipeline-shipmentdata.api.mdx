@@ -1,0 +1,71 @@
+---
+id: get-pipeline-shipmentdata
+title: "Get Pipeline Shipment Data"
+description: "Retrieve pipeline shipment data by pipeline ID"
+sidebar_label: "Get Pipeline Shipment Data"
+hide_title: true
+hide_table_of_contents: true
+api: eJzNVt9v20YM/lcOfFoBNQ7SZsWEoYCXpEGKbmgSZ30w/HCWaOla6e7Co5wahv73gWepkRvHiDEM2JOt448jeeTHbw05hoyMZ+MspHCDTAaXqLzxWBmLKpTG12hZ5Zq1mq8eJVfnkIDzSFqMr3JIoUD+3IlvOzsxgwS8Jl0jIwVIp+ufbp2U4k25heJycDU7RX08ItgOZUGuhgSMOPCaS0jA6hrlq3NwlUMChPeNIcwhZWowgZCVWGtI18ArL9rGMhZIkMDCUa15c/TmBNp2JubBOxswiMXJ8bH8ZM4yWo4+8DuPvgbJYv3UtSbSK4mRsQ6Dczf/ihlLVUjqx2bjXmeZayx/qHQxUJ47V6G20CagMzZLfEbmPbkl5ueahxqBydhimFyuGV+zqTFaEZmDjaT8t66hbIdNmwCSfz4F/O4xY8zPsTJLpNVhNy8ITVHymQs8MLJNPd9+wNw182pj0djc2GJPuNYxhp0SX2lrDy1ONDK2uLOGd3sllzWE0sjjom+jPUr7HOVNdkgx7htt2fDqheq0nfheVczw8EbqB1qw4wXz+Gjwp8t3P2avcMuam92vKir+4EibeW2YDzcrCgyM+fWLix4a7yuDtDP2JVLosPYl+JUAG65E6VrzBGvfgzK0rUifYH9DNij9DPhLAG+P3xyEgM8gXY0h6ALPdj/jIO6bDn6j5o6Y7wKSyh0GZR2rUi9RkSBEkOWhswxDUFyasDelt/+rlD7v3ryS38I1NpeYTw9cRP91zFeWkayuFBI5Ug+lqVAVyGxs8Wzpxb8uhA/8yBlmCdTIpevIRCQOXEIKI+3NqPc06j2N1o+7voUEAtKypxgNVZBCyexDOhLzow38LUwWCYu2ulqxycKRI5ng7Ywu0QqxwVxtfCpxJ4QgYNZQxNDpGuaoCWncSIjT2VB8K0+wqfJQqf/60I/qxy+TJ3dfSDUj4/n4ZaLYfUOrjI0HmxFP1R/Ri/o9Ct9DR2viro0SSPrXlALEWhu7cBLA9l3XWzVR474oauJcBQlUJkMbYnt07GrsdVai+rQRqL83kKROjo4h+anoDw8PRzqqS41Hna8w+nR1dvHX7cVrsRmC1Fhq0WEcpHBy9Nu76enpr+9mcd25wLW2g0gukdWPaemhTZ1vCOdWmoNROZzidoWME+YrbSKPiYmuu+6cgvZGerVv48dFBAmkAz46S6CM+3oK6/VcB7yjqm3l+L5BkqaaJbDUZLSsg8iUTZD/OaQLXQXck9gvNx3VfaX+DaHemW5PaK3Q2aWuGvmCBL7haptwt7M2gRJ1Lhtsuu4UxlmGngemj3DVDkf+8mICbfsPrK5cXw==
+sidebar_class_name: "get api-method"
+info_path: docs/generated/api/qat
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get Pipeline Shipment Data"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/api/pipeline/shipment/{pipelineId}"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Retrieve pipeline shipment data by pipeline ID
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"description":"The ID of the pipeline to retrieve the shipment data from","in":"path","name":"pipelineId","required":true,"schema":{"type":"integer","format":"int32"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"content":{"text/json":{"schema":{"type":"array","items":{"type":"object","properties":{"accountFlag":{"type":"boolean"},"active":{"type":"boolean"},"approvedDate":{"type":"string","format":"date-time"},"arrivedDate":{"type":"string","format":"date-time"},"dataSource":{"type":"string"},"erpFlag":{"type":"boolean"},"expectedDeliveryDate":{"type":"string","format":"date-time"},"freightCost":{"type":"number","format":"double"},"fundingSource":{"type":"string"},"notes":{"type":"string"},"plannedDate":{"type":"string","format":"date-time"},"planningUnit":{"type":"string"},"procurementAgent":{"type":"string"},"procurementUnit":{"type":"string"},"productCost":{"type":"number","format":"double"},"quantity":{"type":"number","format":"double"},"rate":{"type":"number","format":"double"},"receivedDate":{"type":"string","format":"date-time"},"shipmentId":{"type":"integer","format":"int32"},"shipmentMode":{"type":"string"},"shipmentStatus":{"type":"string"},"shippedDate":{"type":"string","format":"date-time"},"submittedDate":{"type":"string","format":"date-time"},"suggestedQty":{"type":"number","format":"double"},"supplier":{"type":"string"},"versionId":{"type":"integer","format":"int32"}},"title":"QatTempShipment"}}}},"description":"Returns a pipeline shipment data"},"403":{"content":{"text/json":{"schema":{"type":"object","properties":{"messageCode":{"type":"string"}},"title":"ResponseCode"}}},"description":"User does not have rights to access this pipeline shipment data"},"404":{"content":{"text/json":{"schema":{"type":"object","properties":{"messageCode":{"type":"string"}},"title":"ResponseCode"}}},"description":"Pipeline shipment data not found"},"500":{"content":{"text/json":{"schema":{"type":"object","properties":{"messageCode":{"type":"string"}},"title":"ResponseCode"}}},"description":"Internal error while getting pipeline shipment data"}}}
+>
+  
+</StatusCodes>
+
+
+      

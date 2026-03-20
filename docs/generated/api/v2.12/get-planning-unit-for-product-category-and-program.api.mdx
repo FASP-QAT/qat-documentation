@@ -1,0 +1,71 @@
+---
+id: get-planning-unit-for-product-category-and-program
+title: "Get the list of PlanningUnits for productCategoryId and programId"
+description: "API used to get the list of PlanningUnits for productCategoryId and programId"
+sidebar_label: "Get the list of PlanningUnits for productCategoryId and programId"
+hide_title: true
+hide_table_of_contents: true
+api: eJy9VcFu2zgQ/RViLu0Cqp1NuxedVt00jS+JEzunwAgm0khiVyIZcuTUMPTvBSkllmJv3S2KniRSmnmPjzNvtsBYOIjvwFSolFTFrZIMqwgycqmVhqVWEEMyn4nGUSZYi4JYcEmiko6FzsV8EOlErq0wVmdNyv8gU6HtZpYJVJnfLSzWswwi0IYs+tyzDGIoiIdJzrWdjzMkKpt30RCBQYs1MVnPewsKa4IY9jAhAumpG+QSXp9nnyGXyGKjG/GEigW+OlU4a64tRGDpsZGWMojZNhSBS0uqEeIt8MZ4JlIxFeR/zbWtkbut96fQttGQ7osY36XZ/fV76K18uDNaOXI+4vTkxD/GnG6IG6tcKAFMWa5pRCZwgQhSrZgUB2D6ytMvzkdv27aN4MPJ+//Oi+KC2SwYuXGT86ubj7Ozs0+XQuYB8daRFZkmJ5RmUeLak0jJuaOQH34Q8vJqeX9+dXt59gx5pJqFM5TKXFK240Vfj4vw1yFxZ4rJKqwEWattd+vG0poU++YrSVhiS3KN1evWOy58G0FNXOq+5UIrcQkxTNHI6dAAXi3GAky3e4q00xc5wtfutYUIHNn1c6c2toIYSmbj4qnHnDw2qFjmMg1egAqrDcvUTbQt9nqhtwSpleiSBqu5TpYQwRqtxIcqVG0oY6lyHRSQXPmivx4BhQtMntHEUuvKJyHrOqjTyZ+nk5M9Bsl89sZ5B+wqLlzHdbIUi0Cnlx7TIH3f5ufJYi6Ygm+Nj//09HTk+FSj9BEXi8W9z3N/cf13Ubr0nXF1+KWNoJIpKUcDxMRgWpLo+I8hc60nD2i9D4HRjmtUg8DPv8DWR3ptd6X4y+dH72WhwE2FUnkxwmm3fVHfARrpS3w41/aXYySIID40SIbQ8W6xiqDUjj3YdvuAjm5t1bZ++7Ehu4H4brWrzdACmXT+PYM4x8rRdxR7e9Mb+R8H5PjhaXBQp34T1Sa0TtX4FUTwL20ODlI/tn6W+P8dXz9HuL+PdtVGUBJmZIPa3fckTcnwIHJni94qXizx86cltO03hHctyw==
+sidebar_class_name: "get api-method"
+info_path: docs/generated/api/v2.12/quantification-and-analytics-tool
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get the list of PlanningUnits for productCategoryId and programId"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/api/planningUnit/planningUnit/productCategory/{productCategoryId}/programId/{programId}"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+API used to get the list of PlanningUnits for productCategoryId and programId
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"productCategoryId","in":"path","description":"productCategoryId that you want a PlanningUnits list for","required":true,"schema":{"type":"integer","format":"int32"}},{"name":"programId","in":"path","description":"programId that you want a PlanningUnits list for","required":true,"schema":{"type":"integer","format":"int32"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Returns the active PlanningUnit list","content":{"text/json":{}}},"403":{"description":"Returns a HttpStatus.FORBIDDEN if the User does not have access","content":{"text/json":{}}},"404":{"description":"Returns a HttpStatus.NOT_FOUND if the productCategoryId and programId specified does not exist","content":{"text/json":{}}},"500":{"description":"Internal error that prevented the retreival of PlanningUnit list","content":{"text/json":{}}}}}
+>
+  
+</StatusCodes>
+
+
+      

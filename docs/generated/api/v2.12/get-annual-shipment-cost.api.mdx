@@ -1,0 +1,71 @@
+---
+id: get-annual-shipment-cost
+title: "get the AnnualShipmentCostOutput list"
+description: "API used to get the AnnualShipmentCostOutput list."
+sidebar_label: "get the AnnualShipmentCostOutput list"
+hide_title: true
+hide_table_of_contents: true
+api: eJylVk1z2zYQ/SuYvfRCybJaT1qeoqTtRCfLltJDNRrPilyRSEkAXiytaDT87x2QkkV92IkTXkgC+wm894AtCGYe4jkwOcsCiwhS8glrJ9oaiGE0GavKU6rEqoxESU5qZEyFxTTXriQjH62X20pcJarQXvoQgXXEGAKMU4ghIzn3gAiYHivy8sGmG4i3kFgjZCR8onOFTpoIV198qGMLPsmpxPAlG0cQg11+oSTEcRzyiSYfZh3bjLEMmZ9NtRHKiCGCleUSpR36dQh1BE/Eflfpd9m7Ao3RJvtstIxT3/FCZtxABFqo7I57YW0yqOum1KRiCoswysi8PcCqMqk22dRWnNCbvf1uA6aCUvm3uwuy/IlC59OdlUpRqCe6JGhcrHubRwvED+gpvTU/tCfTNsF5C5fW/xXjk7V+xfJ0XV80rSMQLUUYOqfE2LhKHu6b/v/RtIa6rluWaKYUYuGKmgHvrPEt2oeDQXgdc/aepGLjv81ViLqsE/oqe7o1qW8uBR8bITZYKGK2rCRHUY7piYwElchJMQmTfsJC2dVP5K8jKElyGyTEtYrhUHKI4QqdvmpxcoWXlMUTB1pDPN9CxQXEkIs4H18Fz/5jhUb0aicwaLDYiE5833JA5XG3E7ZplYQf1QZVK8vqbjSDCJ6QNS6LZiPqehFBqP3+IGp/fcXSFXQiSoMjyRlcEJT5Hi6LFwSja3AuCN3ZC4Q/mj4QGoaD4W+9wbve8I/Z9U18cx0Pf+8P3l3/C10Sv2Z1QtyzzvakOAjAy2zsiMRlEh4MXuJeh57arGwDsB317o4AoNCkarRHgZpZW8DzHoWW+9fD/uAMGaPJ+BcfTkVMEvIt2e5GMzVtYLJDNiYNsg2WIe/fo+lECWEJ0Qks1+v1N2BJJerg8Wk6fQhxHj7dvc9yn/ScLxuTOoJCJ2Q8dTKOHCY5qbb+45Qra/tL5PZYsl5KNB3H7zrqT9ekc4b/2L1hp5aNELgCtQldNWVvd9yfAzr9DDaI4AL/FxHk4R3PYbtdoqfPXNR1GH6siDcQzxcH8oa/OoKcMCVuBOM/2kAMH9tOerNQUjAvquaUPL2Z1NHeY5Qk5KRje9CzIA7PWja5nQb1WO6uPaVNgzHjOrSFa4ihuUGFFI3EN2NbKNBkFWbBto0Znv8BOE9kdg==
+sidebar_class_name: "post api-method"
+info_path: docs/generated/api/v2.12/quantification-and-analytics-tool
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"get the AnnualShipmentCostOutput list"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/api/report/annualShipmentCost"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+API used to get the AnnualShipmentCostOutput list.
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={undefined}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"content":{"application/json":{"schema":{"type":"object","properties":{"programId":{"type":"integer","format":"int32"},"versionId":{"type":"integer","format":"int32"},"planningUnitIds":{"type":"array","items":{"type":"string"}},"procurementAgentIds":{"type":"array","items":{"type":"string"}},"fundingSourceIds":{"type":"array","items":{"type":"string"}},"shipmentStatusIds":{"type":"array","items":{"type":"string"}},"startDate":{"type":"string","format":"date-time"},"stopDate":{"type":"string","format":"date-time"},"reportBasedOn":{"type":"integer","format":"int32"},"planningUnitIdString":{"type":"string"},"procurementAgentIdString":{"type":"string"},"fundingSourceIdString":{"type":"string"},"shipmentStatusIdString":{"type":"string"}},"title":"AnnualShipmentCostInput_ReportView"}}},"required":true}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Returns the AnnualShipmentCostOutput list","content":{"text/json":{}}},"500":{"description":"Internal error that prevented the retreival of AnnualShipmentCostOutput list","content":{"text/json":{}}}}}
+>
+  
+</StatusCodes>
+
+
+      

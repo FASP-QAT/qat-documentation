@@ -1,0 +1,71 @@
+---
+id: get-program-product-catalog
+title: "Get Program Product Catalog"
+description: "Retrieve a list of program product catalog"
+sidebar_label: "Get Program Product Catalog"
+hide_title: true
+hide_table_of_contents: true
+api: eJztWN9PGzkQ/ldW83QnbUnEiatudToJEK2ooFBC24coQo53suvi2K49SxpF+d9P493AJiQkvB2n8EJizy9/34w3+80gxyC9cqSsgQxukLzCB0xEolWgxI4S523hxZj/55WkRAoS2haQgnXoBTue55BBgXRdm17XlqePhh5/VhjoxOZTyGYgrSE0xB+Fc1rJGKTzI3AJMwiyxLHgTzR1CBnY4Q+UBCk4zylJYeBd95gGC+unXMSjizKEBXpIYWT9WFC99MchzGMUrnJne/JCon9lGvZTpNloLSrnxlV0d4POevqmcAJzdlkm47bETegniv0baJXHHDLyFc55IThrQg3RYbe7AjjhL9qMtPBeTCEFRTgO2xkQktQDtuyG1moUhlFrCr32SrYtTDUeLgOW22qokV1G1qMUgZQpvhpF2/OrXSlUeY+8MkXLPNQL8xS0GKLenmwoAl7a/JWmIJWXlRb+t5PFYov136HVJ+sMHuu7Q7O5+LuRf2HTvbQZ3JrNVlEX0WqpT582e2rsNF5FEFaKbnFJ9loLYxpWLytNymmFfkfuCjTolfwsxrgnaVeSGDYa7TZF0ua4Nvl+vP4L43Vq8/UjViC5PcP/Z4bHylxaQ2W4GvXIyvtdf+C0rtv9Q/Rt9MBa/ld+4e65fNtc8g/5/WX9xsndeFl7tD5H/yG+7Bo5PW/u7h1JCyXq0YUa4Y72y2+l+6vhbXTPms7ZphRcVfRcKnimFdwgVd6EhErcqtzMUzh6pTCwgbwxhiCKOBMvQ3PTqBJsuUX1ODeE3gidoPfWJ5NSaUziS6Dgt8l4Qh8j1BlEESDrQx00wCCFMVJpWZJyNsSaBZWQQUc41ak9O26DUhXQP6DngDOoPPdkSeRC1mHng5+VMKRGjWAljNBTUjIcWM++y8f4WFeMeVLHTDjcfMApZOUVTWOOIQqP/rjiAvuD9naPKWhGpGW0+PZhMbefvt8+y33GEEagPn2/Tcjeo0mUiQv1vGfJSYyS/B03/+GTx3ys4cQdSBdsMgARaW6Omycl7+yX4I7eoMR1l3S27joVrcuXjRlZjrBc/5clnJPjBdDJrbUaUtBKogkxtYmyABw7IUtMLuqN5Bv6wJ6HB11IV4icTCYHIpozb50mVuhcnJ+efe6dvWOfVud+OWZ8H+qAkMHhwV/v+0dHf74fxKe6DTQWplXJR6SkmeOkaa/kqb+Wztmav9cJrw0zcWSdFioKbvGUs6bZ+yCcivJgHJRHMlYafpBCyTOS9WE245v4q9fzOS//rJCfKv1BCg/CK8ESHXdoCiWKnMWb/gzucQoZnNaHeHfLVbG5rqKWuCrtztOFx7GU6Khl+3T5zNvze33VY/CHjW48jtcMeDHhk4kJZBBVaE4RByWuzUALU1SiYNs6Jv/9C6iz/Tc=
+sidebar_class_name: "post api-method"
+info_path: docs/generated/api/qat
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get Program Product Catalog"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/api/report/programProductCatalog"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Retrieve a list of program product catalog
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={undefined}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"content":{"application/json":{"schema":{"type":"object","properties":{"productCategoryId":{"type":"integer","format":"int32"},"programId":{"type":"integer","format":"int32"},"tracerCategoryId":{"type":"integer","format":"int32"}},"title":"ProgramProductCatalogInput_ReportView"}}},"description":"The program product catalog input","required":true}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"content":{"text/json":{"schema":{"type":"array","items":{"type":"object","properties":{"active":{"type":"boolean"},"catalogPrice":{"type":"number","format":"double"},"forecastingUnit":{"type":"object","properties":{"id":{"type":"integer","format":"int32"},"idString":{"type":"string"},"label":{"type":"object","properties":{"baseModel":{"type":"object","properties":{"baseModel":"circular(BaseModel_ReportView)"},"title":"BaseModel_ReportView"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"}},"title":"Label_ReportView"}},"title":"SimpleObject_ReportView"},"forecastingtoPlanningUnitMultiplier":{"type":"integer","format":"int32"},"genericName":{"type":"object","properties":{"baseModel":{"type":"object","properties":{"baseModel":"circular(BaseModel_ReportView)"},"title":"BaseModel_ReportView"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"}},"title":"Label_ReportView"},"getfUnit":{"type":"object","properties":{"code":{"type":"string"},"id":{"type":"integer","format":"int32"},"idString":{"type":"string"},"label":{"type":"object","properties":{"baseModel":{"type":"object","properties":{"baseModel":"circular(BaseModel_ReportView)"},"title":"BaseModel_ReportView"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"}},"title":"Label_ReportView"}},"title":"SimpleCodeObject_ReportView"},"getpUnit":{"type":"object","properties":{"code":{"type":"string"},"id":{"type":"integer","format":"int32"},"idString":{"type":"string"},"label":{"type":"object","properties":{"baseModel":{"type":"object","properties":{"baseModel":"circular(BaseModel_ReportView)"},"title":"BaseModel_ReportView"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"}},"title":"Label_ReportView"}},"title":"SimpleCodeObject_ReportView"},"minMonthsOfStock":{"type":"integer","format":"int32"},"planningUnit":{"type":"object","properties":{"id":{"type":"integer","format":"int32"},"idString":{"type":"string"},"label":{"type":"object","properties":{"baseModel":{"type":"object","properties":{"baseModel":"circular(BaseModel_ReportView)"},"title":"BaseModel_ReportView"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"}},"title":"Label_ReportView"}},"title":"SimpleObject_ReportView"},"productCategory":{"type":"object","properties":{"id":{"type":"integer","format":"int32"},"idString":{"type":"string"},"label":{"type":"object","properties":{"baseModel":{"type":"object","properties":{"baseModel":"circular(BaseModel_ReportView)"},"title":"BaseModel_ReportView"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"}},"title":"Label_ReportView"}},"title":"SimpleObject_ReportView"},"program":{"type":"object","properties":{"code":{"type":"string"},"id":{"type":"integer","format":"int32"},"idString":{"type":"string"},"label":{"type":"object","properties":{"baseModel":{"type":"object","properties":{"baseModel":"circular(BaseModel_ReportView)"},"title":"BaseModel_ReportView"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"}},"title":"Label_ReportView"}},"title":"SimpleCodeObject_ReportView"},"reorderFrequencyInMonths":{"type":"integer","format":"int32"},"shelfLife":{"type":"integer","format":"int32"},"tracerCategory":{"type":"object","properties":{"id":{"type":"integer","format":"int32"},"idString":{"type":"string"},"label":{"type":"object","properties":{"baseModel":{"type":"object","properties":{"baseModel":"circular(BaseModel_ReportView)"},"title":"BaseModel_ReportView"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"}},"title":"Label_ReportView"}},"title":"SimpleObject_ReportView"}},"title":"ProgramProductCatalogOutput_ReportView"}}}},"description":"Returns the list of program product catalog"},"500":{"content":{"text/json":{"schema":{"type":"object","properties":{"messageCode":{"type":"string"}},"title":"ResponseCode_ReportView"}}},"description":"Internal error while generating the report"}}}
+>
+  
+</StatusCodes>
+
+
+      

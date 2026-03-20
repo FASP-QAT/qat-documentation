@@ -1,0 +1,71 @@
+---
+id: get-planning-unit-by-forecasting-unit-id
+title: "Get a PlanningUnit list for forecastingUnitId"
+description: "API used to get a PlanningUnit list for forecastingUnitId"
+sidebar_label: "Get a PlanningUnit list for forecastingUnitId"
+hide_title: true
+hide_table_of_contents: true
+api: eJyllVFv2jAQx7+KdS/bpAy6rnvJ0zKNtkhTS4HupULo6hzEW2K79qUMRfnuk03aQmGtqj0gsPH973+Xny8NMC49pDdgS9Ra6eW1VgyzBHLy0inLymhIIRsNRe0pF2zEkligGG2dF6XyLBbGhQ9J9Nz9McwhAWPJYdAZ5pDCkng79Nv69ECIRYcVMblgrQGNFUEKh8RVcGeRC3hueU9XcIEs1qYWK9QsuCDxULSot6uABBzd1cpRDim7mhLwsqAKIW2A1zZ4UZppSeHowrgKebP1+RjadhbCvTXakw8Rx0dH4WvX3Zi4dtpHF3uthASk0UyaY0b6w/1fPoQ1bdsmcHJ08m9BFOfMdsLIte9dXE7np5fXF9+FWsRU+03xlqRaKMpFbsgLbVjQn9c9fHmpqB0Pw4vpYHyR/ZhPBuOfg/F8MB5fjjs/jsQKvfCmImHCWpBzxm2eVK7yaAfL0qyi+0eSAobSVLYkpheNtglUxIXpyItocQEp9NGq/jbzu4tnqPWbPfZaSMCTu39gtHYlpFAwW5/2g3rvrkbNaqFktIwayzUr6XvGLfdgHTmT1zKWthGNt+kqm0IC9+gU3pYRpkiX0gsTa1VcBhavdhIJ1LnIHrKJqTFlECHnN6mOe5+Oe0d7DrLR8J0PfUUpyW/AvMqmYhLtdE1GGZvc3cfTbDISTFhB8qz81Wr1SvlUoQoR55PJPOjMz6++LgsvP1pfxSNtAqWSpD1tZcwsyoLExv9uyoUxvVt0EB65NZ4r1FuBZ2+cWTu9aZ4A+69B2I2OiKgtUelQZKyi6bC8AbQqQLo9jPeWz7QhgXQ/3SyBwngOmk1zi56uXdm2YfuuJreG9Gb2hFYkOFc+/M4hXWDp6YUmvB934/HDgYHyhil7sCHdJup1ZL+swwoS+E3rg++AdtYmUBDm5GIZm3OZlGR5S+FpMIQr9DgUzgZTaNu/EOV1SA==
+sidebar_class_name: "get api-method"
+info_path: docs/generated/api/v2.12/quantification-and-analytics-tool
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get a PlanningUnit list for forecastingUnitId"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/api/planningUnit/planningUnit/forecastingUnit/{forecastingUnitId}"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+API used to get a PlanningUnit list for forecastingUnitId
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"forecastingUnitId","in":"path","description":"ForecastingUnitId that you want the planning unit list for","required":true,"schema":{"type":"integer","format":"int32"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Returns the PlanningUnit list","content":{"text/json":{}}},"404":{"description":"Returns a HttpStatus.NOT_FOUND if the ForecastingUnitId specified does not exist","content":{"text/json":{}}},"500":{"description":"Returns a HttpStatus.INTERNAL_SERVER_ERROR if there was some other error that did not allow the operation to complete","content":{"text/json":{}}}}}
+>
+  
+</StatusCodes>
+
+
+      

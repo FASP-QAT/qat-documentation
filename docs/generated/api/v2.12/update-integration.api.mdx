@@ -1,0 +1,71 @@
+---
+id: update-integration
+title: "Update Integration"
+description: "API used to update an Integration"
+sidebar_label: "Update Integration"
+hide_title: true
+hide_table_of_contents: true
+api: eJztWN1v4jgQ/1csv9yelFLKtru3eTpoqYrUpRToPlxVoSEZiPeSOLWdUoTyv5/G4cOhFOg93Z2uT2Q8H7+xPb8Zd8ENTDX3H7lIDU4VGCFT/uTxEHWgRGY/fd7sdViuMWRGsjwLwSCDlHUcE4/LDMvfnZD7vNSqaih8zlGblgzn3F9shRhG6DpkcvwTA8NMBIbNZc5mkJpNeO7xQKYGU0OeIMtiEVi705+a3C24DiJMgH6ZeYbc56VD7vFMEVQjUNOqkzcBX6tbOSru8YlUCZhS9LnBC8+16UKCjpU2SqRT0lEIcXJE+GNjxjDG+LC/QCEYDFvzw6q5RnV0yqSc7s618LgRJiZRC7QIHjQqMllCuaLjemPlxKDzPDEiwTJNbb7LUEzEPyMJF8/HMoHAiBdXfyxljJCuD/No2FZ7hOnOe1Yu6mzP4kTtWcx2L45B43cZ/n/l/itXzjlQHggV5DGoT62V8FdeRbNUdTHeWgIi9gsHJYy9KQ1EksV4V25hQYjjENWtLGl6552biBjf5VOHc38InH2I2Mng75A72V2hDo4B9A5wZ0c6Wxm8s8aLoih7pVAYct+oHK1AZzLVZW6Nev1tB+2jyVWqGbBBHgSoNQtkiExMmImQrdszm4FmutSY5HG1kxp8NasWanGc1z/vi3RjTDYwYHJdu77rtzpXV+3uKiLdZxZK1CyVhkXwggxs1IMhz48M2b0bjq7vHrpXq5Adt5kzndNcgOEGBL4KbQ6G//KB8M3Ly3Zv2GzdtlcYQjCwCS3KwHkqnnM8EPli/6k6kTvdYbvfbd6OBu3+j3Z/1O737/pLAArLE5YJMknfDJWSqpykQhFaPBDHcrZ1L4xkgaSi3R6vtoAWHk/QRJLGvCy3hQcm4j4/hUycOmVxyj2uUb2goglzwXNF5BMZk2n/lJRrzzmkRkyWsxukEM+NCHRNKiK56kb0lAzzwCItnbKJVOy+OeQefwElYBzb4iiKJ48T2v5m3Gy/AiW2Y96r75jmNjS7HuJEqboewio9b9UQ6i7dO0xR6Uq8UW+cn9S/njS+Dc8u/Iszv/Fbrf717A++qxMdcv22V+zzv+oPRCnOEFJ3R4xN8pvJYltGA8W2LKvIKuPDv3+zikrbc1vWVldzOvS6mW1kO3rYji5Vf6cHveunGsZiTSfSVu6yvdxX6oxBGrLmqtjYUErqAlSmZQ6N2lmjVn9TgM1e5xdNLFGyuGWP++aQDWw1LikDAksZy72/bg56zCAk3Nuq/tlsdqD6MQFBFjeDwYj8jG7uf59GOjjJdGJV6ERFgKlGJ2IzgyBCVuKvhpxIWRuDshuUSW0SSB3Dh/JZW32xVjZgseHEox7Ey0nAsmcWg7BjmIW0WDLmI4dMVM+Te5ye35HUhtYXC6qkBxUXBYmfc1Rz7j8+bSiPvgqPRwghKkuzf+Kc+/yyxHoyJBSkHueE5s1TufBWFs0gwMw4uhveJ0pdc37vgSh3vHzFJzIkXQUz4kuYcZ/bfwZQBDurWNmCx5BOc5iSbumS/v4Cq1miqg==
+sidebar_class_name: "put api-method"
+info_path: docs/generated/api/v2.12/quantification-and-analytics-tool
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Update Integration"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"put"}
+  path={"/api/integration/"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+API used to update an Integration
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={undefined}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"description":"The Integration object that you want to update","content":{"application/json":{"schema":{"type":"object","properties":{"integrationId":{"type":"integer","format":"int32"},"integrationName":{"type":"string"},"realm":{"type":"object","properties":{"id":{"type":"integer","format":"int32"},"label":{"type":"object","properties":{"createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"},"active":{"type":"boolean"},"labelId":{"type":"integer","format":"int32"},"label_en":{"type":"string"},"label_sp":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"baseModel":{"type":"object","properties":{"createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"},"active":{"type":"boolean"},"baseModel":"circular(BaseModel)"},"title":"BaseModel"}},"title":"Label"},"idString":{"type":"string"}},"title":"SimpleObject"},"folderLocation":{"type":"string"},"fileName":{"type":"string"},"integrationView":{"type":"object","properties":{"integrationViewId":{"type":"integer","format":"int32"},"integrationViewDesc":{"type":"string"},"integrationViewName":{"type":"string"}},"title":"IntegrationView"}},"title":"Integration"}}},"required":true}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Returns a Success code if the operation was successful","content":{"text/json":{}}},"403":{"description":"Returns a HttpStatus.FORBIDDEN if the User does not have access","content":{"text/json":{}}},"404":{"description":"Returns a HttpStatus.NOT_FOUND if the IntegrationId supplied does not exist","content":{"text/json":{}}},"406":{"description":"Returns a HttpStatus.NOT_ACCEPTABLE if the data supplied is not unique","content":{"text/json":{}}},"500":{"description":"Returns a HttpStatus.INTERNAL_SERVER_ERROR if there was some other error that did not allow the operation to complete","content":{"text/json":{}}}}}
+>
+  
+</StatusCodes>
+
+
+      

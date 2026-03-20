@@ -1,0 +1,71 @@
+---
+id: get-supply-plan-for-program-1
+title: "Get Supply Plan Data"
+description: "Retrieve supply plan data for a specific program and version, with optional start date filtering"
+sidebar_label: "Get Supply Plan Data"
+hide_title: true
+hide_table_of_contents: true
+api: eJzNWG1v2zgM/isCP90BvqbXvWHG4YCs64YOw61vWz8ExcDaTKzNljSJThsE/u8Hyk7irt0t9XZDPyWy9JDiQ4oitYScQua1Y20NpHBC7DXNSYXauXKhXIlG5cioptYrVMFRpqc6U87bmcdKocnVnHzQ1iTqSnOhbJSFpQqMngVMaqpLJq/NDBKwjjzKksMcUpgRn0ZVRyWaV9YftXI//gkJOPRYEZMPkE6WoGWDDrmABAxWJKN29WEOCXj6UmtPOaTsa0ogZAVVCOkSeOFksTZMM/KQwNT6Crn99GgPmia5U3pn1w9LvxB4cNYECoLY292Vn8waJsNRBl3z6FMQFyxvi7aXnyhjIcQLeaxbMRvjt9lFAmHN80tkeqsD94DoPS4gAc1Uhe/rvkTOih8TgfmnOnC1YuD7+486t7Y2wzKrS2TK960JddVF+HDsuQvbwksbtJm9wBJNRoNA91B2b+vIu7Fz3s4pPy20Ew8c82J78DtT2HIYVILPDFR7QhnpoXsWkBuKrS8rzTwIfe0kaZyyzT4PgGwfBRG1kHPdAwSOKbdJoEJTYznc6y1+qONb9GDft/Dh7m/xgyOggw8PAuvI3Dsd3ARtHwjh3tsL9wjOzRWydR6uTUX8kio0AxDb2t0kwJpLWbSpJl7E+8JM7ceDa2c9j53+oOkqrpa6Rvh9bzRvbQp7NOGbZ6w2WJY2G3bj3A3+IfNlo3dYvilqBku+JbVJbpeRtTdBcfGNSjJOtLUk5YOLySaBx7uPfkYtVVEIOKN9m9/l3B4LJ10hJyu/z8NZQaoO5FVuKShjWRU4J+X1rOCg2EYeupJXSYlJgSlv7Xr8gO06veU661ee29hK11IgRmOePmBjXkpQ6qC0mWOpO/afP+ANr6OqwKAcetZYKsyyjMI6qLpgEmOe/Jx2438y5tAweTnh5H1MDMjKeZqTYco7U2JPiqWy0zszSqsdZ9ImQqtQjY8O4SKBiriwXZ8ZO0ouIIUROj2iuHC0udJG64ZqtFz/bUbrhDlarv82I0ggkJ+vetPal5BCwexCOhLxO19qNCytcux10WC5YJ2FHeulCb7JwWsy0hNTrlqZSsRJ2xgoq72Wq3yyhEtCT35ciwmTi/70qbiwa8x6i1ajV6uk/ub87JbuA+E/0vrm/Eyx/UxGaRM/tJdBql5EKeqvOPk3dM2vuLqVD8kqGoSA6A1tplY2cFPX8Q1O1HhFijqztoQESp2RCTG8uhZ87DArSL1tJ9SHLsXs7exC8hXpV1dXOxiXC8ejTlYYvT3cP/jn9OAPwfSi9HgsXHQehRT2dp4/mzx58vTZhaxyNnCFpreT18SqvQKVBIuSrPE1mb1D9iteUjrS42l2JWoTKwkhZdlF+gTQaYjtgfVyADbR3p7v9etJ2h/0Hz7S/kCOVGGl65/AcnmJgd77smnk85eavMTpRQJz9BovheXJEnId5H8O6RTLQP/B2G8n3RvL7+pbxq1eGoy8M8yxrGUECXymxY3XIHnQ+YWKNxQ1F00CBWFOPlrfzo+zjBz3kJsE3PST1OuDM2iafwHVsMxW
+sidebar_class_name: "get api-method"
+info_path: docs/generated/api/qat
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get Supply Plan Data"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/api/export/supplyPlan/programId/{programId}/versionId/{versionId}/"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Retrieve supply plan data for a specific program and version, with optional start date filtering
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"in":"path","name":"programId","required":true,"schema":{"type":"integer","format":"int32"}},{"in":"path","name":"versionId","required":true,"schema":{"type":"integer","format":"int32"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"content":{"text/json":{"schema":{"type":"object","properties":{"programId":{"type":"integer","format":"int32"},"supplyPlanDateList":{"type":"array","items":{"type":"object","properties":{"batchList":{"type":"array","items":{"type":"object","properties":{"adjustment":{"type":"integer","format":"int32"},"batchId":{"type":"integer","format":"int32"},"calculatedConsumption":{"type":"integer","format":"int32"},"calculatedConsumptionWps":{"type":"integer","format":"int32"},"closingBalance":{"type":"integer","format":"int32"},"closingBalanceWps":{"type":"integer","format":"int32"},"consumption":{"type":"integer","format":"int32"},"erpApprovedShipmentQty":{"type":"integer","format":"int32"},"erpOnholdShipmentQty":{"type":"integer","format":"int32"},"erpPlannedShipmentQty":{"type":"integer","format":"int32"},"erpReceivedShipmentQty":{"type":"integer","format":"int32"},"erpShippedShipmentQty":{"type":"integer","format":"int32"},"erpSubmittedShipmentQty":{"type":"integer","format":"int32"},"expiredStock":{"type":"integer","format":"int32"},"expiredStockWps":{"type":"integer","format":"int32"},"expiryDate":{"type":"string"},"manualApprovedShipmentQty":{"type":"integer","format":"int32"},"manualOnholdShipmentQty":{"type":"integer","format":"int32"},"manualPlannedShipmentQty":{"type":"integer","format":"int32"},"manualReceivedShipmentQty":{"type":"integer","format":"int32"},"manualShippedShipmentQty":{"type":"integer","format":"int32"},"manualSubmittedShipmentQty":{"type":"integer","format":"int32"},"openingBalance":{"type":"integer","format":"int32"},"openingBalanceWps":{"type":"integer","format":"int32"},"shipmentQty":{"type":"integer","format":"int32"},"stock":{"type":"integer","format":"int32"},"supplyPlanId":{"type":"integer","format":"int32"},"unmetDemand":{"type":"integer","format":"int32"},"unmetDemandWps":{"type":"integer","format":"int32"}},"title":"SupplyPlanBatchInfo_ExportApiView"}},"planningUnitId":{"type":"integer","format":"int32"},"transDate":{"type":"string"},"unallocatedConsumption":{"type":"integer","format":"int32"},"unallocatedConsumptionWps":{"type":"integer","format":"int32"}},"title":"SupplyPlanDate_ExportApiView"}},"versionId":{"type":"integer","format":"int32"}},"title":"SupplyPlan_ExportApiView"}}},"description":"Returns the supply plan data for the specified program and version, with optional start date filtering"},"403":{"content":{"text/json":{"schema":{"type":"object","properties":{"messageCode":{"type":"string"}},"title":"ResponseCode_ExportApiView"}}},"description":"The user does not have rights to the Program requested"},"404":{"content":{"text/json":{"schema":{"type":"object","properties":{"messageCode":{"type":"string"}},"title":"ResponseCode_ExportApiView"}}},"description":"Specified program or version does not exist"},"406":{"content":{"text/json":{"schema":{"type":"object","properties":{"messageCode":{"type":"string"}},"title":"ResponseCode_ExportApiView"}}},"description":"Data is invalid"},"409":{"content":{"text/json":{"schema":{"type":"object","properties":{"messageCode":{"type":"string"}},"title":"ResponseCode_ExportApiView"}}},"description":"The user has partial acccess to the request"},"500":{"content":{"text/json":{"schema":{"type":"object","properties":{"messageCode":{"type":"string"}},"title":"ResponseCode_ExportApiView"}}},"description":"Internal error that prevented the retrieval of the supply plan data"}}}
+>
+  
+</StatusCodes>
+
+
+      

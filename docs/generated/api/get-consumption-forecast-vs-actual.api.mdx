@@ -1,0 +1,71 @@
+---
+id: get-consumption-forecast-vs-actual
+title: "Get Consumption Forecast vs Actual"
+description: "Retrieve a list of consumption forecast vs actual"
+sidebar_label: "Get Consumption Forecast vs Actual"
+hide_title: true
+hide_table_of_contents: true
+api: eJydVm1v2kgQ/iur+WzA4Y7L1TqdRHNJlaq6toSm0iF0Gsxgb2vvOrvjUIT830+zhmKSNiHHJ7P7zOsz89hbWJJPna5YWwMJTIidpntSqArtWdmVSq3xdRkAamUdpehZ3XuFKddYQAS2Iodyfb2EBDLii4PF1c7g1o/3cEd3NXl+bZcbSLaQWsNkWB6xqgqdBleDL17y2YJPcypRnnhTESRgF18oZYigchKYNXm5rQo0Rpvsk9EseXzHa8OUkYMIVtaVyO3RL0NogovMYXky3lFlHd9qWp9o4Bkd/4VMHbxnp03WhS+Rqce6pNbEVi+zuCfnd90/IakmAtZcCOgJnq5NVfO/k0O9jRgez8o0p2eGQ2lxs+NcO1pCwq6m0ElfWeNb7oZx/GASmL7xz0cAncMNRKCZSv/8aLS5dIrtmJi6XBy3aWnrRRH6uq+Hli+3ZYfGv4TG02h5X/NjXh4RMyGunfGKczp1i5sIRi9k4SfdLsl7zOjCLn9Qe7fMyW4EBPnMpF0bJmewUOScdWqd64JURibojslCoe1uthEw85DMoHXqYR5BSZxbkafK+pAzcg4JDLDSg9ZykD6pWp6c7Bkksy3UroAEcubKJwNx0b+r0bBe7cQLDRYb1qnvWyd8Hxfzps2blqr1qcRdM5cQae00b0KMBaEjN64lzdm8e30jRLS97oL2/672w/X28/RR7EtpZGjX289TxfYrGaVNOGiHMlGvgxf1R7j8UyoP8SDZ+Ydoz6k0IPRbRmRyUPXLb1hWBf1IleMjzY2PFTU+0ksYxsNfe/F5b/hqejZKRmfJ8Pd+fH72D3Q18ilURxfjJgJtVlZyOu7IxyPm1HhPnZpaK7wXOiXjQzEGQxvGFaY5qXfthbpto6hhP4bowWis1+s+BrhMwmDnyw/eXV9c/n1z2RObzkZ8HE8PaUtt/Vfns9Hot/N5eFlZzyWaTiZviFVHLNRVZ6+/D+5RuZ31/l+v+h3zQRiqArWRxELN291KzQArDXtiIYKn1moeQS77mMxgu12gp0+uaBo5vqvJySLMI7hHp1FkVfYggpxwSS7syFfatHIpFfWmkpvAizq8JB5+TDTR3mKcplRxB3sQuqarFR/e3wghi92XShkkDRyupT5cQwLh60dChHUMZ1so0GQ1ZoJtfcrvP0rIQ9k=
+sidebar_class_name: "post api-method"
+info_path: docs/generated/api/qat
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get Consumption Forecast vs Actual"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/api/report/consumptionForecastVsActual"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Retrieve a list of consumption forecast vs actual
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={undefined}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"content":{"application/json":{"schema":{"type":"object","properties":{"planningUnitId":{"type":"integer","format":"int32"},"programId":{"type":"integer","format":"int32"},"reportView":{"type":"integer","format":"int32"},"startDate":{"type":"string","format":"date-time"},"stopDate":{"type":"string","format":"date-time"},"versionId":{"type":"integer","format":"int32"}},"title":"ConsumptionForecastVsActualInput_ReportView"}}},"description":"The consumption forecast vs actual input","required":true}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"content":{"text/json":{"schema":{"type":"array","items":{"type":"object","properties":{"actualConsumption":{"type":"number","format":"double"},"forecastedConsumption":{"type":"number","format":"double"},"transDate":{"type":"string","format":"date-time"}},"title":"ConsumptionForecastVsActualOutput_ReportView"}}}},"description":"Returns the list of consumption forecast vs actual"},"500":{"content":{"text/json":{"schema":{"type":"object","properties":{"messageCode":{"type":"string"}},"title":"ResponseCode_ReportView"}}},"description":"Internal error while generating the report"}}}
+>
+  
+</StatusCodes>
+
+
+      

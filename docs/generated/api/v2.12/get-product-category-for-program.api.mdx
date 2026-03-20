@@ -1,0 +1,71 @@
+---
+id: get-product-category-for-program
+title: "Get ProductCategory list for Realm and Program"
+description: "API used to get the complete ProductCategory list for a Realm and Program"
+sidebar_label: "Get ProductCategory list for Realm and Program"
+hide_title: true
+hide_table_of_contents: true
+api: eJy9VE1v2zAM/SsCL9sAL+4y7OLTjGFtc0ua7FQEBWsztjZbUiU6WWD4vw+S3XwtXbFg2MmSzI9H8vG1wFg4SO7BWJ03GX9BpkLbLSwjyMllVhqWWkEC6XQiGke5YC0KYsEliUzXpiImMT32FpV0LFbaChR3hFUtUOXeqLBYQwTakEUfd5JDAgXxif+1tntjgxZrYrIeZwsKa4IErA87ySEC6dEZ5BJOId/1NoJLZLHVjdig6oG/hBcisPTUSEs5JGwbisBlJdUISQu8NT6zVEwFedOVtjVy//RxDF0X7eCZHv4rAKfPVv8P4tK7O6OVI+c9xldX/nPaOG6sci/igAgyrZgUh6T0k+Pvznu2XddF8OlczIlisgorQdZq2xdsLK1JsSdVScISW5JrrIRe/X3aLoKauNQDowJxuIQEYjQyPqF3PNAnbodDF+8mFre7YwcROLLrZ+41toIESmbjktjHHT01qFiuZBbojAqrLcvMjbQtzk3bY5BaiT5o2JBZuoAI1mglPlZhJmFIUq10qFJy5Uc6O0oU9il9ziYWWlc+CFnXpxqPPoxHV78hSKeTN84vMGYZuX6+s3Qh5gHO0F7MQnsHIl+n86lgCpt4XP5ms3mlfKpReo/b+fzBx3m4nX0uSpe9N64OJl0ElcxIOTrImBrMShI9/uOUK61Hj2j9poHRjmtUB443xC8L0TkZOmpOu+fWP9W6YSUDW02FUvmqQ1ntwNB7QCM9X08kODoQuWR/PJSWZH9ZRlBqxz5c2z6io2+26jr//NSQ3UJyv9zTLLA5l86fc0hWWDn6Qz/e3g2K805cpKlnezA8otoG/leNv0EEP2h7oO9eUy8CeqG2XgB1P4Nu2UVQEuZkQ4f7/2mWkeEDz71y+U3fqdbN1wV03S/93qDa
+sidebar_class_name: "get api-method"
+info_path: docs/generated/api/v2.12/quantification-and-analytics-tool
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get ProductCategory list for Realm and Program"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/api/productCategory/realmId/{realmId}/programId/{programId}"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+API used to get the complete ProductCategory list for a Realm and Program
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"realmId","in":"path","description":"RealmId that you want the ProductCategory list for","required":true,"schema":{"type":"integer","format":"int32"}},{"name":"programId","in":"path","description":"ProgramId that you want the ProductCategory list for","required":true,"schema":{"type":"integer","format":"int32"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Returns the ProductCategory list","content":{"text/json":{}}},"500":{"description":"Internal error that prevented the retreival of ProductCategory list","content":{"text/json":{}}}}}
+>
+  
+</StatusCodes>
+
+
+      

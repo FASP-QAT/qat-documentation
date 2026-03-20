@@ -1,0 +1,71 @@
+---
+id: get-planning-unit-for-country-all
+title: "Get all Planning Units for Country"
+description: "Retrieve a list of all planning units (administrative reporting units) for a given realm country"
+sidebar_label: "Get all Planning Units for Country"
+hide_title: true
+hide_table_of_contents: true
+api: eJztWm1v2zYQ/ivEfUoANQ7SZsWMYYCTpkGKpGvzsn4wjIGWzhYbilTIk7PA0H8fjpJdOY4TZ+vWJNMn2yTveK+PKfGZQoI+dionZQ104RTJKZygkEIrT8KOhNRa5Foao8xYFEaRFxsyyZRRnpwkNUHhMLeO5vObYmSdkGKsJmiEQ6kzEdvCkLuBCGyOLGbNUQJdGCN9qpVfGEXvrduvVva0hghy6WSGhM5Dtz+9Zex5iuLoHdtIKS7uI8gKN/dl2YORdRCBYi25pBQiMDJD6ELQUptwlEAEDq8K5TCBLrkCI/BxipmE7hToJmcJZQjHyOpG1mWSqqHXO1CWAxb3uTUePUvsbG/zR2wNoaGgA/+kzlfP7kyXVUvnJIdMEWa+MW6HXzEmDo/jaJKq1MuYs9FYN7RWozRQRjCUHk9sgvq7qYFYubjQ0m3szQY3IYLYoSRM9m4e3qjw6LgI1ghlFBZXOZov9+SUGUNZRkCKNA/tSa/iC4+ORWpT3km6Q6qxRyIJX5HKkIW09HRiEzVST8OJpj2P8WRRX500Doo1E3ReWXOClNp1Lf8m9rHIhugaYqYaaJphi6HGRgqeQiD/ZjUMv2PLtJ33v+68Z5+fIeq1rQqr/0Bzh1WzyZG7ZzK/b9LnKyZfXAUdBwB6Qb5FkBWaVK7V2n8ieeOA+LDjal2nVXJWGbqyzlrgb4G/Bf4W+H8o8D+89ZnKco2/Va6W0cIzbIuXLV4+g2pv8bLFyyeBl82XkWt77C+LfZvctWsExVqH1hYXW1x88biYqAyNV9Y8bH97KHluyW2b76nnpz2UPKdDSYtdLXa12NVi14/HrpfiW/Usdu+D2ppmNywLdxLNgdMVD5NQlrxsiW5TOOMDf2U134ate7P9Gh5DHVmRmwy9l2NcEYQFNyreSlh5h+WcDJFY9MJYEqlkFpAap+SZeRNcuZt1I+ScChS8evOkvPrUtDd4NrKFSdjU3Udyd/5tU48Mcedogc5ZJ65TpVGMkQIN6+HY805yzKyqqmLF7H3xIIKsJoYwOStwsCiFLnRkrjrNVyWd6SJZquw0L+o6MhC4PLrJjL1VOD5CpES573ZY3dZVIQ2pkYoDIUwaqW9IxX7LOm7iRYcP0TBxDBNR6RSsjilWHuPCKboJewxROnS9gk3uD5rTZ5yhKgnNRbNf72c9/uHL+dLeBxzs0KUfvpwLspdohDJhoMKGrtgLWsQvYfJXqIli4SgVZiCaJZsDEBKgzMiyAYt7fV6IiejNgiLOreWIahWj8aF6as5aL5dxiuK4mhC/VzwdsbO1DdGtoF9fX2/JsJxj3Kl1+c7x0f7Bx7ODVyzTKMLPPY5FTfyBLuxs/fy2v7v709tBuJe1njJpGpYcYtX38z66mNfe/pwAuOBuo6P+C/JhnYLQurmWKhxwQ4imdZ33QeYKbl2iRNBdIgYu3EpHwOU+iCC1nljJdMrH5guny5KHrwrku5j+IIKJdEryzXYgNCrP3xPojqT2eE9wNk5rIuKm+Me8xzujUA9Kw+5OpC74F0RwiTfLvMhyUEaQokz4Er8/rRf14hhzaoh/g8iyiSuHB+dQln8B6gyTUg==
+sidebar_class_name: "get api-method"
+info_path: docs/generated/api/qat
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get all Planning Units for Country"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/api/realmCountry/{realmCountryId}/planningUnit/all"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Retrieve a list of all planning units (administrative reporting units) for a given realm country
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"description":"The ID of the realm country to retrieve all planning units for","in":"path","name":"realmCountryId","required":true,"schema":{"type":"integer","format":"int32"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"content":{"text/json":{"schema":{"type":"array","items":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":"circular(BaseModel)","createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"}},"title":"BaseModel"},"conversionMethod":{"type":"integer","format":"int32"},"conversionNumber":{"type":"number","format":"double"},"createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"label":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":"circular(BaseModel)","createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"}},"title":"BaseModel"},"createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"labelId":{"type":"integer","format":"int32"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"}},"title":"Label"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"},"multiplier":{"type":"number","format":"double"},"planningUnit":{"type":"object","properties":{"id":{"type":"integer","format":"int32"},"idString":{"type":"string"},"label":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":"circular(BaseModel)","createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"}},"title":"BaseModel"},"createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"labelId":{"type":"integer","format":"int32"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"}},"title":"Label"},"name":{"type":"string"}},"title":"SimpleObject"},"realmCountry":{"type":"object","properties":{"id":{"type":"integer","format":"int32"},"idString":{"type":"string"},"label":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":"circular(BaseModel)","createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"}},"title":"BaseModel"},"createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"labelId":{"type":"integer","format":"int32"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"}},"title":"Label"},"name":{"type":"string"}},"title":"SimpleObject"},"realmCountryPlanningUnitId":{"type":"integer","format":"int32"},"skuCode":{"type":"string"},"unit":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":"circular(BaseModel)","createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"}},"title":"BaseModel"},"createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"dimension":{"type":"object","properties":{"id":{"type":"integer","format":"int32"},"idString":{"type":"string"},"label":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":"circular(BaseModel)","createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"}},"title":"BaseModel"},"createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"labelId":{"type":"integer","format":"int32"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"}},"title":"Label"},"name":{"type":"string"}},"title":"SimpleObject"},"label":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":"circular(BaseModel)","createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"}},"title":"BaseModel"},"createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"labelId":{"type":"integer","format":"int32"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"}},"title":"Label"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"},"unitCode":{"type":"string"},"unitId":{"type":"integer","format":"int32"}},"title":"Unit"}},"title":"RealmCountryPlanningUnit"}}}},"description":"Returns the list of all planning units"},"403":{"content":{"text/json":{"schema":{"type":"object","properties":{"messageCode":{"type":"string"}},"title":"ResponseCode"}}},"description":"User does not have rights to list all planning units for a country"},"404":{"content":{"text/json":{"schema":{"type":"object","properties":{"messageCode":{"type":"string"}},"title":"ResponseCode"}}},"description":"Planning unit not found"},"500":{"content":{"text/json":{"schema":{"type":"object","properties":{"messageCode":{"type":"string"}},"title":"ResponseCode"}}},"description":"Internal error while getting all planning units for a country"}}}
+>
+  
+</StatusCodes>
+
+
+      

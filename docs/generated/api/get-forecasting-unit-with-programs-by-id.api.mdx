@@ -1,0 +1,71 @@
+---
+id: get-forecasting-unit-with-programs-by-id
+title: "Get Forecasting Units with Programs"
+description: "Retrieve a forecasting unit and its associated supply plan and forecasting programs (active and disabled)."
+sidebar_label: "Get Forecasting Units with Programs"
+hide_title: true
+hide_table_of_contents: true
+api: eJy9ld9v0zAQx/8V655AMu00GIgIIRXYpiKE+NGxh6kPt+TaGBLbsy8tVZX/HZ2TQtpOQ7zwFCX2fe/89ecuWygo5sF4Ns5CBl+Ig6EVKVQLFyjHyMYuVWMNK7SFMhwVxuhyg0yFio331Ub5Cm1aHsb44JYB66geYc5GJG2hChPxtqLi8Qg0OE8BJfG0gAyWxBd/wq+s4WvD5ade5c1mWoAGjwFrYgoRspvtQfGzktT0nXILxSUd1Q8ajOzyyCVosFgTZLDYT5mSBLprTKACMg4NaYh5STVCtgXeeAkylmlJAbSE18jdp6en0LZzCY/e2UhRIk5PTuSRO8tkOWnQTx5/j1Lx9lg6cjB2CW3b6uOraYKN6WwHRqm14fK34dBqeHby9IG0x+JXkYIqHEVlHasSV6Q8hdrEaJxV7NSS+JiIe9I++6e0F4eKkn3hGluI2tmD3h2rTS1TsFgpCsEFtS5NRVJ4kv9b8a0GxqVgtVeV2AtzDTVx6XpME4dcQgZj9GZ8gNB4e8RUO14PUAYNkcJqx3ATKsigZPYxG4vg6K5By2Zh8tQcaLHasMnjyIUlHJ75kqw0kfRi0lQiJxRGyptgeJNy3BIGCpNGir6ZD5e/CoAdqsNNu7eLHd/vr2dHuc/F78Tj++uZYveDrDJ213w1cqbeJBX1Ki2+hr6XBPROH/QOfDEg3YKxCycF7Of6vOeJmuxMUTPnKtBQmZxsJAnsO3viMS9JfegW1DcKieXT0QnoA9PX6/UI03bxeNxrxfGH6dvzj1/Pn0iM8GG4EuXPE/Fi1QlCBqejly9uzs6ev5jLLu8i12gHlVwSq0OmYsffgIm98w6o/78zub+N1Gi+QmPlSMmtbQ/9DaA33egbUg4asvuG6R75cw2liywi2+0tRroKVdvK57uGgrA617DCYKSgbsL3xUG2wCrSAzY9+tKP7cfqrz+Ce0/Zf0S7kdvFqpE30PCDNvf+KNp5q6EkLCikUrt9kzwnzwOFPzOrHc6Ry/MZtO0vt/Ghbg==
+sidebar_class_name: "get api-method"
+info_path: docs/generated/api/qat
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get Forecasting Units with Programs"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/api/forecastingUnit/{forecastingUnitId}/withPrograms"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Retrieve a forecasting unit and its associated supply plan and forecasting programs (active and disabled).
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"description":"The ID of the forecasting unit","in":"path","name":"forecastingUnitId","required":true,"schema":{"type":"integer","format":"int32"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"content":{"text/json":{"schema":{"type":"string"}}},"description":"Returns the ForecastingUnit with programs"},"403":{"content":{"text/json":{}},"description":"User does not have permission to get forecasting unit with programs"},"404":{"content":{"text/json":{}},"description":"Forecasting unit not found"},"500":{"content":{"text/json":{}},"description":"Internal error while getting forecasting unit with programs"}}}
+>
+  
+</StatusCodes>
+
+
+      

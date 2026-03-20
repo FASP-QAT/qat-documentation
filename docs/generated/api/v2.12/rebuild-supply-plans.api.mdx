@@ -1,0 +1,71 @@
+---
+id: rebuild-supply-plans
+title: "To rebuild supply plan for listed programIds and versionIds "
+description: "API is to rebuild supply plan for listed programIds and versionIds"
+sidebar_label: "To rebuild supply plan for listed programIds and versionIds "
+hide_title: true
+hide_table_of_contents: true
+api: eJytVU1vEzEQ/SvWXLiYJBRx2RMLArUSEikJXKIKTXYnWRev7dqzDdFq/zsaJ81HKR8S5BRPxvPePL+Z9MC4TlAsIHUh2O3UooMbDTWlKprAxjsooJxeKZMUexVp2Rlbq122ChadWvmorElMtQrRryO2V3VS6Gp1TzEZ7+QIGnygiJzPUMC+0uwAm0BDpLuOEr/x9RaK/hGLcP/BJM5Qyq9+g/VrnqCh8o7JsZTHEKypMqXxbRKMHlLVUIvyjbeBoACMEbegwTC16STul7dUMWgIURpjQ/nXA6uTVOOY1iTgKx9b5F3o5QUMGg60/yp/0MCGrSRNH4BKV385FBkGyREZTaQaCo4d5UAK3qUdxYvJ5GdxPxF30SXFDanUVRWlNKYYfVQtpYRrOpeO6Ts/aJYhXz1V9MoxRYdW7Spxg6xCpHtyYpYn3ui3IIOGlrjx4p7gU9YeuYECxhjM+Gjg8ZPeShRFbCgWPXTRQgENc0jFWG6P7jp0bFZ7O6BDu2VTpZGPa3g8DtPo666Sg9oVzSNwXc5Bwz1Gg0ublR6GGw3C/9PR1u++YxvkARdnXpmcOWEiF41b+azC/sGvzxhmz5cPNNXcewuHGlDAxejFxWjyE/VyevUsDwjmJ87PfV3O1Sz3sZcfqyy/w1Zw35ezqWLCFvQj3TabzR90oxaN3Liczb5Kna+X16/XTaqeh9TmlEGDNRW5RCeIZcCqIbXjfw658n60xJgnQTzQoju5OP+3BXUmVX904n/af/vpzq4OFo2T7nN7/d7IC8BgxKrHXayfWpQ3GhoZgGIBfb/ERJ+jHQYJ33UUt1Asbo5OlNOgoSGsKWbffaMtFPB2197zudCSdNvlffd4KQ764UZZVRT4JPc4oGLYw3BOP85kFJb7Ld76WpIjbqQb3EAB+d9AIPJCyrEeLLp1J5umgF1N+fwAm5dP3g==
+sidebar_class_name: "post api-method"
+info_path: docs/generated/api/v2.12/quantification-and-analytics-tool
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"To rebuild supply plan for listed programIds and versionIds "}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/api/supplyPlan/rebuildSupplyPlans"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+API is to rebuild supply plan for listed programIds and versionIds 
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={undefined}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"description":"pvList list of programIds and versionIds to rebuild supply plan for","content":{"application/json":{"schema":{"type":"array","items":{"type":"object","properties":{"programId":{"type":"integer","format":"int32"},"versionId":{"type":"integer","format":"int32"}},"title":"ProgramIdAndVersionId"}}}},"required":true}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Returns the success/error message","content":{"text/json":{}}},"500":{"description":"Internal error that prevented rebuild supply plan","content":{"text/json":{}}}}}
+>
+  
+</StatusCodes>
+
+
+      

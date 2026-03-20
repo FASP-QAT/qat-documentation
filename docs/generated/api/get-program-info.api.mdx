@@ -1,0 +1,71 @@
+---
+id: get-program-info
+title: "Get Pipeline Program Info"
+description: "Retrieve pipeline program information by pipeline ID"
+sidebar_label: "Get Pipeline Program Info"
+hide_title: true
+hide_table_of_contents: true
+api: eJzNVt1v2zYQ/1eIe1oBNQ7SZsWEoUDWZYGLYkjTdH0w/HCmzhJbilTIk1PX0P8+HC3HSqpkWZeHPdniffB3H/zdbaCgqINp2HgHOVwQB0MrUo1pyBpHqgm+DFgr45Y+1Ch6arHey6e/Qwa+oZBE0wJyKInPt1ZTt/SQQYMBa2IKEfLZ5s6Vl5U4UX6puBrcy16FHZgkGMGxDL6GDIy4aZAryMBhTfLVu5kWkEGgq9YEKiDn0FIGUVdUI+Qb4HUj2sYxlRQgg63v7dGLI+i6uZjHxrtIUSyODg/lR3vH5Dj5oK88+Rwlls33rv3iM2mWHARJEputGwy6MisqkGmgHDkYVw5hiMJzNjVBl+2MjNO2LYZ2C+8toRvorAnDowLMQPvWcVhrX4xA2cu3iR2RF8hYmECafViPa9ASW8uWsJBQfChoCM619eI2tsK3C0sjpo1F92OWsTLNv7MUC+0jP9KKajR2NPwlfh09NxE1m9U9hTRRtyHsemxE3MMcF1t0ZYvleMWcH+u6Lhu+msf1Tv8o7+2dG7lj1PyQyr3tFRkDR/NtXMpkqam8G5OK2LCVo/PG9owk9AFdl8p8h/ja4KLCB5lPrnx5+OIpGKCmGLGkN+OpG2C/6OknaY4g/xgpqMJTVM6zqnBFKpiy4igUilpTjIorEx8R2Mv/VWDnD40giXXpW1cI8uOnIeUnQz51TMGhVRSCD+q6MpZUSczGlf9QBrkFS5mTN/HDPIOauPL9bE0DlSvIYYKNmez8TZr9zJ1s9k+5gwwihdVu+rbBQg4VcxPziXg4uGrRsVkanTCgQ7tmo+OBDzKLbod2Rk5GPRVq61OJO5mSkXQbDK/THQvCQOGkFZSz+VD8QWqxTfdQaff1x45i3n66/O7uU0lrWgbefrpU7L+QU8alg20Gc/Vb8qJ+TcLX0M/6RI5JAtmurJKAlO7ECPndreT9rZyok11S1KX3FjKwRpOLqU/6leOkQV2RercVqL8oRLE8OjiE7E7Sr6+vDzCpS44nva84eTd9c/rnh9PnYjNot/cnkovV1iHkcHTwy6vZ8fHPr+aJQH3kejsWeyRnxOrm8fS8p/pV7FaUgyfzo5tfn8303hqLJjFJinbTd+kMsDGwHy5ww/k9pHwwduYZVGnmzmCzWWCkj8F2nRxftSTrxWyewQqDQRm7aZk0Uf4XkC/RRnogwp8u+j3wmfrvO+do3P0hurXUC20rX5DBF1rf3km7eZdBRZgWodmmVzjRmhoemO5ZrBtywNnpJXTd31l8GF4=
+sidebar_class_name: "get api-method"
+info_path: docs/generated/api/qat
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get Pipeline Program Info"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/api/pipeline/programInfo/{pipelineId}"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Retrieve pipeline program information by pipeline ID
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"description":"The ID of the pipeline to retrieve the program information from","in":"path","name":"pipelineId","required":true,"schema":{"type":"integer","format":"int32"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"content":{"text/json":{"schema":{"type":"object","properties":{"archivedate":{"type":"string","format":"date-time"},"archiveinclude":{"type":"boolean"},"archiveyear":{"type":"integer","format":"int32"},"countrycode":{"type":"string"},"countryname":{"type":"string"},"datadirectory":{"type":"string"},"defaultleadtimeorder":{"type":"number","format":"double"},"defaultleadtimeplan":{"type":"number","format":"double"},"defaultleadtimeship":{"type":"number","format":"double"},"defaultshipcost":{"type":"number","format":"double"},"email":{"type":"string"},"fax":{"type":"string"},"isactive":{"type":"boolean"},"iscurrent":{"type":"boolean"},"isdefault":{"type":"boolean"},"language":{"type":"string"},"note":{"type":"string"},"pipelineId":{"type":"integer","format":"int32"},"programcode":{"type":"string"},"programcontact":{"type":"string"},"programname":{"type":"string"},"startsize":{"type":"string"},"telephone":{"type":"string"}},"title":"PplPrograminfo"}}},"description":"Returns a pipeline program information"},"403":{"content":{"text/json":{"schema":{"type":"object","properties":{"messageCode":{"type":"string"}},"title":"ResponseCode"}}},"description":"User does not have rights to access this pipeline program information"},"404":{"content":{"text/json":{"schema":{"type":"object","properties":{"messageCode":{"type":"string"}},"title":"ResponseCode"}}},"description":"Pipeline program information not found"},"500":{"content":{"text/json":{"schema":{"type":"object","properties":{"messageCode":{"type":"string"}},"title":"ResponseCode"}}},"description":"Internal error while getting pipeline program information"}}}
+>
+  
+</StatusCodes>
+
+
+      

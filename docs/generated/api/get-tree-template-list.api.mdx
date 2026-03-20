@@ -1,0 +1,63 @@
+---
+id: get-tree-template-list
+title: "Get Tree Templates"
+description: "Retrieve a list of tree templates"
+sidebar_label: "Get Tree Templates"
+hide_title: true
+hide_table_of_contents: true
+api: eJztV99v2zYQ/leIe9oAzQ4yZMWEoUCaJoELt2sbr3kwjICWzhZbimTJkz3D0P8+HCUX8o+48R4KbMiT7OPx7r6P31GnNeQYMq8cKWsghY9IXuEChRRaBRJ2JsgjCsLSaUkYIAHr0Ev2H+SQwhxp5BFHrcNQBYIEPAZnTcAA6RrOz874kVlDaIh/Ev5N/c+BU64hZAWWMppXDiEF6b1cQQKKsAwdu51+xoyjO881kGrCT2XAtzZHfZIrZMpnlZb+p1cb48Nrb91ruzSfFC5/hjoBUqQ53GEX9phpSRHzCeVvot5Yj5kM9M7myBzycycBZ2i93iIVNv8+RtX1UYZwjh5imFJSY/r1nEtX+R15ZeYd99AY6gS0nJ5I6I/nPtY4eCrc6P2A5nG4DzN/ZNEdWwzuwGIHxDB67QJg/yfW34l1p0qn8c/I8r2iYrRyu7J5Pr8fcn4aF6j/bfdzxw85wH7Ll9ZQEQbmpqLK4xP52Wx6L7fqObbFWMJwkBWPUpff10Rmczy4//kS+o+IeO9eubJ5e7fsQfXWNu+qmOH5PfR/lcAjx0+dMe/0t1Z3SNwtgP325tDKmyCowMcG0TqBixMHy0cUUWIIch6Vf5y9j+1Ue3VgUNuDMDCE3kgt0HvrBRWShPO4QEOYR2C+GbaljuiOIOUS5DxAOgbOmtulCTBJoGxHQh7CGZWkAlLoS6f6eevX754aJBDQL9BzqDVUnnugIHIh7fOu3tdKGlIzlcX5XhqpV6Sy0LN+Drv4btHwdwDmookpOFw94RRZ5RWtYo4pSo/+suLKxpPu8h2fTtuSHafNv5uNlN7cj/ZyXzO3kbI39yNB9gsaoUw0NBJMxasYRfwRF18y8pgP0jY+JJuDZgIix8rMLBewnevDFifickOKGFmrIQGtMjQhKsfImODSyaxAMWwWxCf0gXee984g2SF9uVz2ZHRnjvttrNAfDq6u391d/8J7OgL8cMlcLJqAkMJ57/cX44uL315M2MvZQKU0nUpukQQ3nhh1vt+24HW650kffy1nsc+clspw4ohp3epvDNIpTtMqELZvDtZtYXlEGcN6zZfxX17XNZu/VuhZNZMEFtIrOWXM40mdQIEyRx8F9QVXTHGWoWPNL6SuvhUUG7/uNsbt9Qjq+h/ZICkV
+sidebar_class_name: "get api-method"
+info_path: docs/generated/api/qat
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get Tree Templates"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/api/dropdown/treeTemplate"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Retrieve a list of tree templates
+
+<ParamsDetails
+  parameters={undefined}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"content":{"text/json":{"schema":{"type":"array","items":{"type":"object","properties":{"baseModel":{"type":"object","properties":{"baseModel":"circular(BaseModel_DropDownView)"},"title":"BaseModel_DropDownView"},"flatList":{"type":"array","items":{"type":"object","title":"ForecastNodeTreeNode_DropDownView"}},"forecastMethod":{"type":"object","properties":{"id":{"type":"integer","format":"int32"},"idString":{"type":"string"},"label":{"type":"object","properties":{"baseModel":{"type":"object","properties":{"baseModel":"circular(BaseModel_DropDownView)"},"title":"BaseModel_DropDownView"},"labelId":{"type":"integer","format":"int32"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"}},"title":"Label_DropDownView"},"typeId":{"type":"integer","format":"int32"}},"title":"SimpleObjectWithType_DropDownView"},"label":{"type":"object","properties":{"baseModel":{"type":"object","properties":{"baseModel":"circular(BaseModel_DropDownView)"},"title":"BaseModel_DropDownView"},"labelId":{"type":"integer","format":"int32"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"}},"title":"Label_DropDownView"},"levelList":{"type":"array","items":{"type":"object","title":"TreeLevel_DropDownView"}},"monthsInFuture":{"type":"integer","format":"int32"},"monthsInPast":{"type":"integer","format":"int32"},"notes":{"type":"string"},"realm":{"type":"object","properties":{"code":{"type":"string"},"id":{"type":"integer","format":"int32"},"idString":{"type":"string"},"label":{"type":"object","properties":{"baseModel":{"type":"object","properties":{"baseModel":"circular(BaseModel_DropDownView)"},"title":"BaseModel_DropDownView"},"labelId":{"type":"integer","format":"int32"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"}},"title":"Label_DropDownView"}},"title":"SimpleCodeObject_DropDownView"},"rootNodeType":{"type":"object","properties":{"id":{"type":"integer","format":"int32"},"idString":{"type":"string"},"label":{"type":"object","properties":{"baseModel":{"type":"object","properties":{"baseModel":"circular(BaseModel_DropDownView)"},"title":"BaseModel_DropDownView"},"labelId":{"type":"integer","format":"int32"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"}},"title":"Label_DropDownView"}},"title":"SimpleObject_DropDownView"},"treeTemplateId":{"type":"integer","format":"int32"}},"title":"TreeTemplate_DropDownView"}}}},"description":"Returns the list of tree templates"},"500":{"content":{"text/json":{"schema":{"type":"object","properties":{"messageCode":{"type":"string"}},"title":"ResponseCode_DropDownView"}}},"description":"Internal error that prevented the retrieval of the list of tree templates"}}}
+>
+  
+</StatusCodes>
+
+
+      

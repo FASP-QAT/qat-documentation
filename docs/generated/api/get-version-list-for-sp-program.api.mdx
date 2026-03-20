@@ -1,0 +1,71 @@
+---
+id: get-version-list-for-sp-program
+title: "Get Version List for Supply Plan Program"
+description: "Retrieve a list of versions for a specific supply plan program"
+sidebar_label: "Get Version List for Supply Plan Program"
+hide_title: true
+hide_table_of_contents: true
+api: eJztVlFv2zYQ/ivEPbWAGgUZsmLCMMBt0iBFtrWx1z4ERkBLZ5utRDLHk13D0H8fjpIdOU4zp3vcnmyRH++++47HuzUUGHIyno2zkME1MhlcoNKqNIGVm6oFUjDOBjV1pLQKHnMzNbkKtfflSvlSW+XJzUhXkIDzSFqMXRaQwQz5U3v8ygR+52joP2yhXpOukJECZDfrB0RGc9xYVZdn0TfPcUMmkoMEjEC95jkkYHWF8tUeuiwgAcK72hAWkDHVmEDI51hpyNbAKy9gYxlnSJDA1FGluV366QSaZizHg3c2YJATJ8fH8pM7y2g52sBvnH4JQne9b1oT6ZVQZKxCb91NvmAu3D2JVmxa8zmhZizONGMPHJiMnfXpFZrxFZsKoYmrmOvAQ9bEP3rU+eed7FIg+T1Axy1+yJrrA4Qwh9o1xbAluse8SaDUEyz/2dlEB/zdFc+EQm4or0tNL95sFm/PyPkzt7SfDC5fCgM2XIq5xyFbjgfLGNG3aL8f7u2Untj0T20G/8hmL4iriNoNoLc9NJUv8c8o3F6YXf5H0fj/2f9PZb+H6vrAQ4BA9lpQTTbE5/5HelCTwOkz3+rvJL3CEPQM37rikeexH9t11ygEuRfgw/guLSNZXSokil1Ns/KEC7SMRYya2iasSwn9MRla53omjRPEX+GWNsA4gQp57rrOG1sszyGDVHuTFh0u7aykU1MyUhp8uu2Z6Xr7t4EEAtJi055rkrs/Z/YhS8Xg0V2tLUsaYr/XVpcrNnk4ciTNYzfoC7QyF2ChWptKzEmPDZjXZHgVfUxQE9KgFtI34/72UFLWlWIPtPl6tymY959He77PRfCo4/vPI8XuK1plbFxoCy1Tb6IV9Wvc/A26SUFS29qHZJN9ESDKb+zUCYFdXx93NFGDjShq5FwJCZQmRxvidermlYHX+RzVVbuhujJRJ0fHkDwQfblcHukIF43TzlZIry7fnv8xPH8lZ3q38uNAtOiyDRmcHP3y+ub09OfXY0F5F7jStsfkAnnrXsa1WGzDtsI+SIXdj247QfcK7d/Pj53MsV59qY0VrlGGdXebb0B7Ixy6+9yLMYH2TksCfVvO21kwu/8YJzB3gcXUei0v+19UNo0s39VIchXHCSw0GT0RIWU2NUH+F5BNdRnwCQFeXHcz50t12Aj7aMCbGdLKBLnQZS1fkMBXXO2MuM24SWCOukCKPNv9QZ6j597J+9ev6b8RF+cjaJq/AQjcKzQ=
+sidebar_class_name: "get api-method"
+info_path: docs/generated/api/qat
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get Version List for Supply Plan Program"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/api/dropdown/version/filter/sp/programId/{programId}"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Retrieve a list of versions for a specific supply plan program
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"description":"The program ID for the version list","in":"path","name":"programId","required":true,"schema":{"type":"integer","format":"int32"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"content":{"text/json":{"schema":{"type":"array","items":{"type":"object","properties":{"createdDate":{"type":"string","format":"date-time"},"forecastStartDate":{"type":"string","format":"date-time"},"forecastStopDate":{"type":"string","format":"date-time"},"versionId":{"type":"integer","format":"int32"},"versionStatus":{"type":"object","properties":{"id":{"type":"integer","format":"int32"},"idString":{"type":"string"},"label":{"type":"object","properties":{"baseModel":{"type":"object","properties":{"baseModel":"circular(BaseModel_DropDownView)"},"title":"BaseModel_DropDownView"},"labelId":{"type":"integer","format":"int32"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"}},"title":"Label_DropDownView"}},"title":"SimpleObject_DropDownView"},"versionType":{"type":"object","properties":{"id":{"type":"integer","format":"int32"},"idString":{"type":"string"},"label":{"type":"object","properties":{"baseModel":{"type":"object","properties":{"baseModel":"circular(BaseModel_DropDownView)"},"title":"BaseModel_DropDownView"},"labelId":{"type":"integer","format":"int32"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"}},"title":"Label_DropDownView"}},"title":"SimpleObject_DropDownView"}},"title":"Version_DropDownView"}}}},"description":"Returns the list of versions for a specific supply plan program"},"500":{"content":{"text/json":{"schema":{"type":"object","properties":{"messageCode":{"type":"string"}},"title":"ResponseCode_DropDownView"}}},"description":"Internal error that prevented the retrieval of the list of versions"}}}
+>
+  
+</StatusCodes>
+
+
+      

@@ -1,0 +1,71 @@
+---
+id: get-organisation-display-name
+title: "Get Organisation by display name"
+description: "API used to get the complete Organisation by providing the display name of the Organisation and the Realm"
+sidebar_label: "Get Organisation by display name"
+hide_title: true
+hide_table_of_contents: true
+api: eJy9VEtv1DAQ/ivWXAApbEoRl5xYqdDuBXbbcqpW1TSZTQyJ7dqTLVHk/47spN1st7wqxCUPe57ffPP1wFg6yK5A2xKVdMhSK1gnUJDLrTTxN4P5ciFaR4VgLUpiwRWJXDemJibxeeIqbjphrN7KQqoymhXSmRo7obAhoTfxbM8DVREPzwnrBhLQhmy8WRSQQUk8tT4Zon3ChiABgxYbYrKhhR5CCsjAhkCLAhKQoXaDXMHjhs4HG8EVsuh0K+5QcejuoLyNtpCApdtWWiogY9tSAi6vqEHIeuDOhKRSMZUUTDfaNsjD0dtj8D55qEwNZf+8rJMpWP+sNsdWqhK8XwdjZ7Ry5ML98dFReD2Ghlur3EE2SCDXiklxDE3fOf3qgkfvvU/g3VOxForJKqwFWavt0JGxtCXFNEzdEluSW6wDN/44nU+gIa70yJBIBa4ggxSNTKdcTkviCWnSkRxpP374NGCd9uHpIQFHdnvPp9bWkEHFbFyWhsiz2xYVy43MY2xUWHcsczfTtjyY5dLqos3jnIagYVxiNb+EBLZoJd7UcQpxLFJtdOxTch1GttpLFHdkfp9NXGpdhyBk3ZDqePbmeHZ0UMF8uXjhAnEwz8kNE13NL8VFLGcEGPMI8MjQj/OLpWDCsIj77d/d3f2mfWpQBo+zi4vrEOf6bPW+rFz+2rgmmvgEapmTcjTJODeYVySG+vdTbrSe3aANKwRGO25QTRxPiQ+kZyo2j+Hod3z6r3o2LmFksKlRqoBDbLQfWXsFaGRQvn367zM3Lvq9sGW7z7HVLL7XCVTacQjZ9zfo6IutvQ/Hty3ZDrKr9Y58keOFdOG7gGyDtaNfYPbyfNSZV+Jv1fNJCMZDVF1ciLoNf5DAN+omIh7U81k1PktKn1FoxN2vfQIVYUE2ojpczfOcDE+cdioWdv5BwU4/XIL3PwBVMZ2D
+sidebar_class_name: "get api-method"
+info_path: docs/generated/api/v2.12/quantification-and-analytics-tool
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get Organisation by display name"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/api/organisation/getDisplayName/realmId/{realmId}/name/{name}"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+API used to get the complete Organisation by providing the display name of the Organisation and the Realm
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"realmId","in":"path","description":"RealmId that you want to the Organisation for","required":true,"schema":{"type":"integer","format":"int32"}},{"name":"name","in":"path","description":"Display name that you want to the Organisation for","required":true,"schema":{"type":"string"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Returns the Organisation","content":{"text/json":{}}},"500":{"description":"Internal error that prevented the retreival of Organisation","content":{"text/json":{}}}}}
+>
+  
+</StatusCodes>
+
+
+      

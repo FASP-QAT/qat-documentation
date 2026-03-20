@@ -1,0 +1,63 @@
+---
+id: get-health-area
+title: "Get Health Areas"
+description: "Retrieve a complete list of all health areas."
+sidebar_label: "Get Health Areas"
+hide_title: true
+hide_table_of_contents: true
+api: eJztWF9vGzcM/yoCn1bgagcZsmLGMMDJsixFuqJN2j4YxkDraJ9anXSVeM4M4777QJ2dKm3cNEOBdYWfbPM/fyJpUWsoKepgGjbewQheEgdDS1KotK8bS0zKmsjKzxVaqypCy5XCQBgHUIBvKKDonpcwggXxH0lgHAihgECx8S5ShNEaDg8O5EN7x+RYvjL9zcO3URyvIeqKakzkVUMwAgwBV1CAYapjRvezt6QZCmiCeGfTm0fNZkmZ3Mx7S+igK2CGkZ75kuxXMwPaBN1aDD8cb4mPoAAdCJnK49X9jtpIQUC7kTOOaUEBCpj7UCP3pB8PxbMIO6zzuCIH4xbQdQWwYSukY4xGv4oURGUTym/Id2hlPkpkesymJlGyGPmZL83cfBtJ5PE8JJPb9jaH1v3/z6e66a4TX97lLRf54ugtzr5ia+w7bN9h30Rq//J8ZmQf1jl/kbuzE3vmPHyG2XyOGZsdzO+ugi7SAPqOcpOrD9r6/gT0rjFuvjQrU172SjsLaT/Z95N9P9n3k/0/nez3u740sm/KvfZ5n+52ip741nFYjdM+eP9+eGM6s51tpV1ifLL1tsFFxdWHbfeDSpRIjh64ve44sppixAXtuL1nEb/crM5J8o6Qzx3LeVpFIfigritjSS2I2bhFvqWnfHrLuIgwmmywUAmMaQE1ceU3y7uEi1zBCIbYmGGV7/KRwpKCWFhDG2SMV8xNHA1FdPC+RcdmbnR6DECHdsVGx4EPUiS3Qz8jJ48GVKrephJz3VRc6DYYXiUfM8JAYdxKOJNpzr4UrHs4c6Htr9+3Ffn0zdUnvk8FtnTOT99cKfbvyCnjEqGv5JE6TlbUL4n5q2Se/MnfWeJAsT02ASBBa9zcSwC3fb24hYkab0FRV95bKMAaTS6mOui7A8YN6orURc9QrylE0TwcHEDxEejX19cDTOKC8XBjKw4vzk9O/7w8fSw6WTm9GAsWy94gjOBw8POTydHRT0+mItX4yDW6LJIzYpUVSvwYyKwTHvxmtEEv9U9j0aT7QcpuvSm/CWBjIN9lpVIrH1l467VcJl4F23VCft9SkJKZFrDEYHAmCU+m/SpcUkjV9I5Wgq/W1EiVL9G2NzGkHu7yVjg7vYKu+wcp/ofN
+sidebar_class_name: "get api-method"
+info_path: docs/generated/api/qat
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get Health Areas"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/api/healthArea"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Retrieve a complete list of all health areas.
+
+<ParamsDetails
+  parameters={undefined}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"content":{"text/json":{"schema":{"type":"array","items":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":"circular(BaseModel)","createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"}},"title":"BaseModel"},"createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"healthAreaCode":{"type":"string"},"healthAreaId":{"type":"integer","format":"int32"},"label":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":"circular(BaseModel)","createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"}},"title":"BaseModel"},"createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"labelId":{"type":"integer","format":"int32"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"}},"title":"Label"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"},"realm":{"type":"object","properties":{"code":{"type":"string"},"id":{"type":"integer","format":"int32"},"idString":{"type":"string"},"label":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":"circular(BaseModel)","createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"}},"title":"BaseModel"},"createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"labelId":{"type":"integer","format":"int32"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"}},"title":"Label"},"name":{"type":"string"}},"title":"SimpleCodeObject"},"realmCountryArray":{"type":"array","items":{"type":"string"}}},"title":"HealthArea"}}}},"description":"Returns the list of HealthAreas"},"500":{"content":{"text/json":{"schema":{"type":"object","properties":{"messageCode":{"type":"string"}},"title":"ResponseCode"}}},"description":"Internal error while getting health area list"}}}
+>
+  
+</StatusCodes>
+
+
+      

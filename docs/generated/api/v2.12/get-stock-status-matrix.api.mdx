@@ -1,0 +1,71 @@
+---
+id: get-stock-status-matrix
+title: "get the StockStatusMatrixOutput list"
+description: "API used to get the StockStatusMatrixOutput list."
+sidebar_label: "get the StockStatusMatrixOutput list"
+hide_title: true
+hide_table_of_contents: true
+api: eJydVUtv40YM/isDXnqRH3EbbKvTutsW60OxTuztoYYR0BItza40M+FQcQxD/72YkZPIdrb78MUS9fExw+8jDyBYeEhXwOQsC6wTyMlnrJ1oayCF6XymGk+5EqsKEiUlqYXY7PNCUBr/Nwrrxw+NuEZUpb0MIQHriDH4z3JIoSC5cIAEmO4b8vK7zfeQHiCzRshIeETnKp3FAKNPPlRxAJ+VVGN4kr0jSMFuPlEmkIDjkE40+fDVsS0Y65D4GaqNUEEMCWwt1yid6ecJtAk8EPtjod+E94Isf6BQD++FtSn68ByFBqJr6lys+z4PV6Ex2hQfjZZZ7nuOyIx7SEAL1f4yYNsmIIwZ8TsUKizvv9tdm6xqcpqHEihflNrVZKQP3lhbEZoumZYq2C4aPDOukbvbSKp/NO2gDfDQc82UQyrcUDR4Z43vejcZj8PfKf9uSRo2/qu8g6RPIaFHeeJOzHz9WuyZEWKDlSJmy0pKFOWYHshIIHxJikmY9ANWym5/PH2bQE1S2qAGZyPYoZSQwgidHnXSG/lXROKJA0MhXR2g4QpSKEWcT0fBcXjfoBG9PWoFDVZ70ZkfWg7cOj3rnG3eZOFFdUHV1rK6mS4hgQdkjZsqdqFt1wmE0m9f9PnnI9auojN9jU/UMz7RBkzGk18G4zeDyW/Lq+v0+iqd/Docv7n6F/p6+D/UhQZWTyxdv8rx/ucvcvjIOm22NrbpyN6bk3tUaHI1fbpMtbS2guejhqKHV5Ph+OKCp/PZTz5MScwy8h1hb6ZLtYi3feQHZpEfBuuQ96/pYq6EsIbkrLu73e4r3aUadfB4v1jchTh372/eFqXPBs7XEdImUOmMjKdexqnDrCTV1X+acmvtcIMcZR1IWqPpOX7L6D+/kt5Q/6E1cpw3UUyuQm3CmWLRh6N+VoBOx10Sl1fk1pmG1gmUQXLpCg6HDXr6yFXbBvN9Q7yHdLV+EUB4axMoCXPiKLrPtIcU3nXnGCxDRQFeNXGcni+qNnnymGYZOelhX0ZCENjzOJh/WAQFbo5bsLZ5ADPuwqlwBynEfRpSxBkZbQeo0BQNFgHbxQy//wBSmbMz
+sidebar_class_name: "post api-method"
+info_path: docs/generated/api/v2.12/quantification-and-analytics-tool
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"get the StockStatusMatrixOutput list"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/api/report/stockStatusMatrix"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+API used to get the StockStatusMatrixOutput list.
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={undefined}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"content":{"application/json":{"schema":{"type":"object","properties":{"programId":{"type":"integer","format":"int32"},"versionId":{"type":"integer","format":"int32"},"startDate":{"type":"string","format":"date-time"},"stopDate":{"type":"string","format":"date-time"},"planningUnitIds":{"type":"array","items":{"type":"string"}},"tracerCategoryIds":{"type":"array","items":{"type":"string"}},"includePlannedShipments":{"type":"boolean"}},"title":"StockStatusMatrixInput_ReportView"}}},"required":true}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Returns the StockStatusMatrixOutput list","content":{"text/json":{}}},"500":{"description":"Internal error that prevented the retreival of StockStatusMatrixOutput list","content":{"text/json":{}}}}}
+>
+  
+</StatusCodes>
+
+
+      

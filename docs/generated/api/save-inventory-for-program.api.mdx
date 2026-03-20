@@ -1,0 +1,71 @@
+---
+id: save-inventory-for-program
+title: "Save Inventory Data"
+description: "Save inventory data for a program"
+sidebar_label: "Save Inventory Data"
+hide_title: true
+hide_table_of_contents: true
+api: eJzNVlFv2zYQ/ivEPW2Aahtp02LCMMBN0sFFMaSJsz4YfjhLZ4kpRTIkZdcw9N+Ho2RbtpOu21P9ZJHfHe+7O37HLeTkMydtkEZDCve4IiH1inQwbiNyDCiWxgkU1pnCYQUJGEsOGT/JIQWPK5rsDD4Yd7vHWXRYUSDnIZ1tTw6aliQm18IsRShJWGlJSU0iGMEO4+JJGFIHAwlItrYYSkhAY0X81VlPckjA0VMtHeWQBldTAj4rqUJItxA2ltFSByrIQQJL4yoM7dLrC2iaeWtOPrw3+YZtMqMD6cB/0Vols0h8+OiZxPbcuVk8UhaYvOM0BUk+2mZBrqiHWxijCDU0CTC5e1O7jOM/IHxwUhcM2OfhX0m8fXOEv8ZAz3qsUNeoxvlj7UPV0fsBx1WtgrRKkusZ6LpaHONzUy8UsYE2oeV/FoFVqLXUxYOW4QXajlBVV6bWwW1uX4K/XEx2UHRNeua9SSDIoHjpM4YpVXbfwtDw7nmznnRj16hnDRfP9dZo3zK/GI1O+ijQt/CfG6gi77GgK5M/V9Eenbvu8Ih8hsodhdppL1D4OsvIe5FFZAJvRq9/qkgfPDmRG/JCmyBKVgUnizL4nkhIf1IXJnL5k6V8ogM5jUqQc8aJdSkVMQGpi4PwndJg/1iwcsJth4F5AhWF0rDs2jpGzDqYwhCtHO5cDfeuhtuDMjaQgCe32qlx7RSkUIZgfTpk+8FTjTrIZSdxqFFtgsz8wLgCTin9SZpnAOWi9SnYHcunp6x2MmziGQtCR25cc4yzeX/7nmvQprkP2n192N3lj1+mZ2ffcDrjgPj4ZSqC+UpaSB0XWg1IxfvoRfweN/+AbghE3Y07kOzKyQmIyebuuDto/803rKyivna34+RYrXftcCTSozMJPsDOlXd0rKujvWoejE7F8rDzPY0c9RXwaJwsDfM6zurno+qL8a78YmqMggSUzEj7mJBu6o4tZiWJT+2G+JucZ8uLwQiSk/Zar9cDjHDupmHnyw8/Ta5u/rq/ecU2fUkec9VXrUNI4WLw27vZ5eXbd/M4OowPFepeJPHRshdwcc0X6KRrenLwQ2+crj2icFiFMk7qSGrbXboZoJVcnN3t7PdAAmnvUTJPoDQ+sM12u0BPD041DS8/1cQdM5snsEInkedmfCtJz/9zSJeoPH2HzC933fj5VfzvJ9WzZLtF1MxmharmL0jgK22On1zNvEmgJMy5fWfbDnDVRvhqym4ODs4eUU2ysxhnGdnQwx5Uu+kr3+0Dd8eie6BVUZ7B4ZqvA67bIE3MVNSXuLYFhbqosWBs65J//wDzjtIX
+sidebar_class_name: "put api-method"
+info_path: docs/generated/api/qat
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Save Inventory Data"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"put"}
+  path={"/api/pipeline/inventory/{pipelineId}"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Save inventory data for a program
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"description":"The ID of the pipeline to save the inventory data into","in":"path","name":"pipelineId","required":true,"schema":{"type":"integer","format":"int32"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"content":{"application/json":{"schema":{"type":"object","properties":{"active":{"type":"boolean"},"dataSourceId":{"type":"string"},"inventory":{"type":"integer","format":"int64"},"inventoryDate":{"type":"string"},"manualAdjustment":{"type":"integer","format":"int64"},"multiplier":{"type":"number","format":"double"},"notes":{"type":"string"},"planningUnitId":{"type":"string"},"realmCountryPlanningUnitId":{"type":"integer","format":"int32"},"regionId":{"type":"string"}},"title":"QatTempInventory"}}},"description":"The inventory data to save","required":true}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"content":{"text/json":{"schema":{"type":"object","properties":{"messageCode":{"type":"string"}},"title":"ResponseCode"}}},"description":"Returns a success code"},"403":{"content":{"text/json":{"schema":{"type":"object","properties":{"messageCode":{"type":"string"}},"title":"ResponseCode"}}},"description":"User does not have rights to save this inventory data"},"500":{"content":{"text/json":{"schema":{"type":"object","properties":{"messageCode":{"type":"string"}},"title":"ResponseCode"}}},"description":"Internal error while saving pipeline inventory data"}}}
+>
+  
+</StatusCodes>
+
+
+      

@@ -1,0 +1,71 @@
+---
+id: create-realm-country-planning-units
+title: "Save Planning Unit For Realm Country"
+description: "API used to save planning unit for specified realm country"
+sidebar_label: "Save Planning Unit For Realm Country"
+hide_title: true
+hide_table_of_contents: true
+api: eJy9lVFv20YMx78KwZdtwM1OM+xFTxWKFDFQdI7t9CUwAuZEWbdJd5c7Kp4h6LsPJ9lO7LYpkAJ7siXwyB/J//3VodAmYnaH3niujWVcKyw46mC8GGcxw3w+gzZyAeIg0hODr8laYzfQWiNQugDRszal4QICU92Adq2VsEOFznOglGhWYIY6MAkvUsyHMWS+z3VrjURU6ClQw8IhQXVoqWHMjnCzAhWaBOVJKjwnnR/DBqptZXQFO9eCZS7OsA/NlC6gwsCPrQlcYCahZYVRV9wQZh3KzicCY4U3nEJLFxqS8dUfl9j36ogZXjT2A9TT0P8Td52OR+9s5JhOXF5cpJ9TvAVLG2wEgmWrNccI2hUMpgSpGI5LhS1FiGNE2daoUDsrbGVA4X9l+ndM+bq+7xX++XqlaxG/FJI2TmafV1eLz/mn++XV4svV4v5qsfhrsa8eeKzqGgaXnoFDcAGkIoHCFGCdANW1256xigPtGl+z8KugvcKGpXJJsL6VQZRSYYZT8mZ6kOI0fEfF0+5Zrf20O110jwojh6eDvttQY4aViI/ZNOWfPLZkxZRGD9Bkqd6J0XHiwuZrvQdXtHpobkw66OgmX6HCJwqGHuphx8PSjS3d0K2ROknk5qQQkC0gP1SDlXNpm4lzLHU5eXc5ufiKIJ/PfolpsjSqJE38Jl/BcsDZj5n0MOb9JfmYL+cgTA2qs/a32+0P2ueGTDpxvVzepzz31zfvN1XUv/vYDCG9wtpotpFfVMw96Yph5D8tWTo3eaCQbjF6F6Uh++LgMt24w24hLRc+ugCDf8GHo8edjKR7VtbPOef+Jg/i9DUZm5ob6Lu9IO+QvEnyPFi3wu+JEhVmJyaanXnVWmHloqSkXfdAkW9D3ffp9WPLYYfZ3fpZU4N0CxPT/wKzkurIr4zh18Xern6Dtzv0N8exf0l2Nyi+btMTKvyHd6dfjWTSbwL+OZ9+A/TZXvp1r7BiKjgMUx+Dcq3Zy4vjzxaWrvrRvua3K+z7/wBz9r/o
+sidebar_class_name: "put api-method"
+info_path: docs/generated/api/v2.12/quantification-and-analytics-tool
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Save Planning Unit For Realm Country"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"put"}
+  path={"/api/pipeline/realmCountryPlanningUnit/{pipelineId}/{realmCountryId}"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+API used to save planning unit for specified realm country
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"pipelineId","in":"path","description":"PipelineId for which you need planning unit to save for","required":true,"schema":{"type":"integer","format":"int32"}},{"name":"realmCountryId","in":"path","description":"realmCountryId for which you need planning unit to save for","required":true,"schema":{"type":"integer","format":"int32"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Returns a Success code if the operation was successful","content":{"text/json":{}}},"500":{"description":"Returns a HttpStatus.INTERNAL_SERVER_ERROR if there was some other error that did not allow the operation to complete","content":{"text/json":{}}}}}
+>
+  
+</StatusCodes>
+
+
+      

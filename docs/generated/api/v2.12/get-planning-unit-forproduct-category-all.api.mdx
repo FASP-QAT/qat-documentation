@@ -1,0 +1,71 @@
+---
+id: get-planning-unit-forproduct-category-all
+title: "Get PlanningUnit list for ProductCategory"
+description: "API used to get the complete PlanningUnit list for a ProductCategory"
+sidebar_label: "Get PlanningUnit list for ProductCategory"
+hide_title: true
+hide_table_of_contents: true
+api: eJytVctu2zAQ/BViL20B1k6T9KJT1eblS+LE9ikwgo20sthKJEOunBiC/r0g7TR+pUmBnmwT3J2Z5ey4BcaZh+QWbIVaKz2baMUwlZCTz5yyrIyGBNLhQDSecsFGzIgFlyQyU9uKmMRwrVRUyrMojBMohs7kTcY/kGlm3AIkGEsOQ8tBDgnMiNdLz4yzmxVpVYEEiw5rYnKBZwsaa4IEtq4OcpCgAlWLXMI2/53bgktksTCNeES91LNXBkhw9NAoRzkk7BqS4LOSaoSkBV7YQEVpphmFq4VxNfLy6OgQum4ayr012pMPFYcHB+Fjk9wNceO0308CJGRGM2mOiPTE/Z8+lLVd10k4Pjh6vSGKC2Y7YuTG986ubr4PTk5OL4UqItTEkxO5IS+0YVHinARmGXn/JuTxOyEvr8Z3Z1eTy5NnyN1n8JYyVSjKX5jQ09uyv+6b40AzOY2VIOeMW76wdTQnzcG5JQlH7EjNsRKm+MdRdxJq4tKsjBt9ySUk0Eer+uvb099S2W93ZHd9jNb25ObPvm5cBQmUzNYn/dC099CgZlWoLK4MaqwWrDLfM262Y/DVrimjxbJp3MHrdAwS5ugU3lfRgdGSShcmSlRcBQNfbwAJ1LlIn9HE2JhANfBcQh32vhz2DnYYpMPBBx/yYWmiOO/rdCxGkc5qtpjF2a52+CwdDQUT1iC35D8+Pr4hn2pUoeJiNLoLfe4urr/NSp99tr6OVzoJlcpIe1pDTC1mJYkl/03IwpjePToIL22N5xr1WuE58Ss5t5tyG3NpXzz1v1J0FTvRoLZCpYPWKKZdmfIW0Kpg0fVQl9spCBKSfTEavDmVUBrPoVXb3qOniau6Lhw/NOQWkNxOX4wV/ZsrH77nkBRYefrLGD7erBL1055AeH8u7x3D6hD1Ihq/asIvkPCLFnv/NLppJ6EkzMlFFct7aZaR5bUOL2EQ9udPEJyfjqHrfgN394uO
+sidebar_class_name: "get api-method"
+info_path: docs/generated/api/v2.12/quantification-and-analytics-tool
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get PlanningUnit list for ProductCategory"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/api/planningUnit/productCategory/{productCategoryId}/all"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+API used to get the complete PlanningUnit list for a ProductCategory
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"productCategoryId","in":"path","description":"productCategoryId that you want the PlanningUnit list for","required":true,"schema":{"type":"integer","format":"int32"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Returns the PlanningUnit list","content":{"text/json":{}}},"403":{"description":"Returns a HttpStatus.FORBIDDEN if the User does not have access","content":{"text/json":{}}},"404":{"description":"Returns a HttpStatus.NOT_FOUND if the productCategoryId specified does not exist","content":{"text/json":{}}},"500":{"description":"Internal error that prevented the retreival of PlanningUnit list","content":{"text/json":{}}}}}
+>
+  
+</StatusCodes>
+
+
+      

@@ -1,0 +1,33 @@
+---
+id: qattempinventory
+title: "QatTempInventory"
+description: ""
+sidebar_label: "QatTempInventory"
+hide_title: true
+hide_table_of_contents: true
+schema: true
+sample: {"planningUnitId":"string","dataSourceId":"string","regionId":"string","inventoryDate":"string","inventory":0,"manualAdjustment":0,"notes":"string","active":true,"realmCountryPlanningUnitId":0,"multiplier":0}
+custom_edit_url: null
+---
+
+import Schema from "@theme/Schema";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"QatTempInventory"}
+>
+</Heading>
+
+
+
+
+
+<Schema
+  schema={{"type":"object","properties":{"planningUnitId":{"type":"string"},"dataSourceId":{"type":"string"},"regionId":{"type":"string"},"inventoryDate":{"type":"string"},"inventory":{"type":"integer","format":"int64"},"manualAdjustment":{"type":"integer","format":"int64"},"notes":{"type":"string"},"active":{"type":"boolean"},"realmCountryPlanningUnitId":{"type":"integer","format":"int32"},"multiplier":{"type":"number","format":"double"}},"title":"QatTempInventory"}}
+  schemaType={"response"}
+>
+  
+</Schema>
+            

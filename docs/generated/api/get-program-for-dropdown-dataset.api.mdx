@@ -1,0 +1,71 @@
+---
+id: get-program-for-dropdown-dataset
+title: "Get Programs for Realm"
+description: "Retrieve a list of programs for a realm"
+sidebar_label: "Get Programs for Realm"
+hide_title: true
+hide_table_of_contents: true
+api: eJyVVlFv20YM/isHPrWAFgcZsmLCMMBt0sBFNrSJ2z4YRkBLtHWtdKfwTnYNQ/994OnUKI6bOU+WRR7J7xP58XaQk8tY115bAynckGdNa1KoSu28sktVs10xVk4tLStUTFhWkICtiVFOTXJIYUX+Y+f33vIF2zq3G3OBHh15SKBGxoo8sYN0ttvLOS2oi6omFyGJL+ghq7eKY1GQgJYDNfoCEjBYEaQQjk5ySIDpvtFMOaSeG0rAZQVVCOkO/LYWV208rYghgaXlCn336vczaNu5HHe1NY6cnDg7PZWfzBpPxocY9MOPvjkpefc0NDLjVgr0VLnBe7v4RlmggIUxr7vwmHm9poHfwtqS0ECbQGbzocV51mYVDA0zGf+F2EXej0CWQEFY+mLMhJP8Wjt/RNXPEJWAPjaxzm+72g+BKXFB5f8TtUBH/9j8ha6Qac6aEvnV2/7lnXTlhd2YL5o2r6UCr30p4Q67/KzxaJ6D9x2ZX8O9W/Izxvo5o6sPGAcgroPXPoA4RdNtTUfD6OfpyG7oC7jVVV1SFIG9QlpxfCI0DRsXZr1XmrzTi8OK0yZw/sKZ/EWfVOQcrujd4TEbQLqJgiCeTxDtA5oYT2ywVMQcNAwFCK3JeMoDzChjWArWocZ1SXEl4gi9eDqYJ1CRL2zU1yCjvoAURljrUR79RpG1UYw2CnSNdvEztpCAI1730tuwjEfhfe3SkQQ6uW/QeL3UWVBzNFhuvc7cieUV7IO8IiOqT7nqYioJJ9rpKGtY+23IsSBk4nEjxc7mQ/OtfKI4rQOn/t/7vr0+fJ0+yX0pBAfePnydKm+/k1HahBddW6bqbYii/grGvyFugCCvwQJJ/7WFgE7MzNJKAY9zfXrEiRr3pKiptSUkUOqMjAvtE7fQuMasIHXdGVTUaHV2cgrJHumbzeYEg7twPIqx3Oh68u7y39vL3+TMoAs/jYWLdRcQUjg7+fPN7Pz8jzfzMOHW+QrNoJIr8urjcIJu4sZ+BHEwRi9Y+pG9MHZ1iTrsq4BuF5tzBlhrSRbbUx4frgFdVIgiAwmkvdrMEyis7KYZ7Hai5J+5bFt5fd8QS1/NE1gja1wIK3KJ0E6ec0iXWDp6Bt+rm3gxeK1ectc4CLZfnEbW5hrLRv5BAt9pO7iLtPNu7+bEodbOOs4yqv3g3IN8tcNhv7qcQtv+B/pNTsA=
+sidebar_class_name: "get api-method"
+info_path: docs/generated/api/qat
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get Programs for Realm"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/api/dropdown/dataset/program/realm/{realmId}"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Retrieve a list of programs for a realm
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"description":"The realm ID for the programs to retrieve","in":"path","name":"realmId","required":true,"schema":{"type":"integer","format":"int32"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"content":{"text/json":{"schema":{"type":"array","items":{"type":"object","properties":{"active":{"type":"boolean"},"code":{"type":"string"},"currentVersionId":{"type":"integer","format":"int32"},"healthAreaIdList":{"type":"array","items":{"type":"integer","format":"int32"}},"id":{"type":"integer","format":"int32"},"idString":{"type":"string"},"label":{"type":"object","properties":{"baseModel":{"type":"object","properties":{"baseModel":"circular(BaseModel_DropDownView)"},"title":"BaseModel_DropDownView"},"labelId":{"type":"integer","format":"int32"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"}},"title":"Label_DropDownView"},"programTypeId":{"type":"integer","format":"int32"},"realmId":{"type":"integer","format":"int32"}},"title":"SimpleProgram_DropDownView"}}}},"description":"Returns the list of dataset programs for a realm"},"500":{"content":{"text/json":{"schema":{"type":"object","properties":{"messageCode":{"type":"string"}},"title":"ResponseCode_DropDownView"}}},"description":"Internal error that prevented the retrieval of the programs"}}}
+>
+  
+</StatusCodes>
+
+
+      

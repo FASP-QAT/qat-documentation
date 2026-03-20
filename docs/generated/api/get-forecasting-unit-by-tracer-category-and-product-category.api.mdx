@@ -1,0 +1,71 @@
+---
+id: get-forecasting-unit-by-tracer-category-and-product-category
+title: "Get Forecasting Units by Tracer Category and Product Category"
+description: "Retrieve a list of active forecasting units for a given tracer category and product category."
+sidebar_label: "Get Forecasting Units by Tracer Category and Product Category"
+hide_title: true
+hide_table_of_contents: true
+api: eJztWm1v2kgQ/iur+XQnORCll6vOOp0ENKlSpZc0kOYDQtViD7Ct2XV3x1CE+O+nWUNi8xLgw1VpZD7B7uy8PDM7HufJHGJ0kVUpKaMhhDskq3CCQopEORJmIGREaoJiYCxG0pHSQ5FpRY5XhBRDNUEtyMoIrYgk4dDYmZA6Fqk1cRbR42INAjApWsm2rmIIYYh0+aT2XitqzjpeU2t5pqHj21zNagUCsPg9Q0dNE88gnENkNKEm/irTNFGRN1D/6jiiObhohGPJ32iWIoRg+l8xIgggtewOKXS8m5bttI2lGxujLZx0ZJUewiIAKnnJwTwKKU04RAsBDIwdS8qX3pzBgs8pSlhoLaiGjstxv+vcfLnD1Fj6rHAKCz5bzlRnhELpNCORxyMYBqk05+eQbCxxVBZjCMlmuOAFlxrtcjzOTk/X0CX8QbthldZK1qoIx24/3HlZFeT6xiQoNaPblw4/mhiT/WoKohApG2WJtL81V4sFDH+HAvzbBHg/Mpmmm8FldGvN0MpSHLvz+niunR55blCu/l8UtY0onnSuXe+S5o2DB16jAIao0aroWvaPDPbn4pKwf19Qb+0g+eZge3vJN9PnNl26ZbPglAdnm0MVYMcA5uijidVAYdyc7Ycjc2gPrmIW1nKMz7vVlE5F9w7tM669k7RFS8FmLAlPSI2RT6496PZHpQ6NSMXt3PTOLFTFd2jxFTbbapwmeONBWHPaokzG+5GKTLytzIIqtS8itS0Tb09vecysbuqvkc6tqcwOmu+qi/qiM7vjohbkdg+8WyblauCtBt6XBlg18FaP0ZfRbKuB99Wmthp4X1U6q4H3tWb26IH3QdGoxX8NX6MvNviLO6TMaidohGJNh6eeOIw/Tt/AMRTEjpSN0Tk59LE8D8jdkv9gyT30Cw8oIjbohDYkRnKCIkU7Vs4powWZnD7bIM04qvMjiZWfGNWVJh7REoHWGiumI5Wgj4QD2BIMW5FDB2G3WAfCswC9AMZII8NEX2qcD0DSCEKoy1TV116F6uXOX1+f2QJwaCdo2dYcMsvXb0SUurDO6mrfM6lJDZbkn9QymZGKXM1YngvLUb7ntylJGItcp2B1ix6biDKraOZt9FFatI2MXe72itttztCyGxSEVr8uVy3qw0Nnw/YFI+yL/sNDR5D5hloo7Rfy1haKptci/vab/3Dk3h6TPX4HglWyGQCfBK6duydW9OKH5MsLz7KaT1PzJpl5yn1VDwxrKPv/qYSzaKyAFh1jEgggURFq503noz40UhmNUFznG+IzWn9FzmqnEKwlcjqd1qQX57zVl7pc/fqqdfFv++KEzxQK+1OD8Z3kCiGEs9pfb7vn53++7fmp3zgaS13w5D2SWC9TJ/ozkXOvolXkS5cMrShUYAmJwgX+31nzZbp9m0gTqTzd56GbL+9UF2SqNhm1jeTC5ttQL4ARX8+wC/M5P93ubbJY8PL3DHkG6/YCmEirZJ9R7/YWAYxQ+hrqzuEbziCEVo7FSYc9ZfEkY483+PhFsDrRiCJMqSD71AQXxdZxe9PmLPeXZP/YtzuwcsoEtpxCCP7fCtiEv5F+bQ6J1MNMDlk218mf/wDiiojX
+sidebar_class_name: "post api-method"
+info_path: docs/generated/api/qat
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get Forecasting Units by Tracer Category and Product Category"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/api/forecastingUnit/tracerCategory/productCategory"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Retrieve a list of active forecasting units for a given tracer category and product category.
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={undefined}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"content":{"application/json":{"schema":{"type":"object","properties":{"productCategorySortOrder":{"type":"string"},"tracerCategoryId":{"type":"integer","format":"int32"}},"title":"ProductCategoryAndTracerCategoryDTO_ReportView"}}},"description":"The input object containing tracer category and product category","required":true}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"content":{"text/json":{"schema":{"type":"array","items":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":{"type":"object","properties":{"baseModel":"circular(BaseModel_ReportView)"},"title":"BaseModel_ReportView"},"countOfFcPrograms":{"type":"integer","format":"int32"},"countOfSpPrograms":{"type":"integer","format":"int32"},"forecastingUnit":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":{"type":"object","properties":{"baseModel":"circular(BaseModel_ReportView)"},"title":"BaseModel_ReportView"},"forecastingUnit":"circular(ForecastingUnit_ReportView)","forecastingUnitId":{"type":"integer","format":"int32"},"genericLabel":{"type":"object","properties":{"baseModel":{"type":"object","properties":{"baseModel":"circular(BaseModel_ReportView)"},"title":"BaseModel_ReportView"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"}},"title":"Label_ReportView"},"label":{"type":"object","properties":{"baseModel":{"type":"object","properties":{"baseModel":"circular(BaseModel_ReportView)"},"title":"BaseModel_ReportView"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"}},"title":"Label_ReportView"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser_ReportView"},"lastModifiedDate":{"type":"string","format":"date-time"},"productCategory":{"type":"object","properties":{"id":{"type":"integer","format":"int32"},"idString":{"type":"string"},"label":{"type":"object","properties":{"baseModel":{"type":"object","properties":{"baseModel":"circular(BaseModel_ReportView)"},"title":"BaseModel_ReportView"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"}},"title":"Label_ReportView"}},"title":"SimpleObject_ReportView"},"realm":{"type":"object","properties":{"code":{"type":"string"},"id":{"type":"integer","format":"int32"},"idString":{"type":"string"},"label":{"type":"object","properties":{"baseModel":{"type":"object","properties":{"baseModel":"circular(BaseModel_ReportView)"},"title":"BaseModel_ReportView"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"}},"title":"Label_ReportView"}},"title":"SimpleCodeObject_ReportView"},"tracerCategory":{"type":"object","properties":{"id":{"type":"integer","format":"int32"},"idString":{"type":"string"},"label":{"type":"object","properties":{"baseModel":{"type":"object","properties":{"baseModel":"circular(BaseModel_ReportView)"},"title":"BaseModel_ReportView"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"}},"title":"Label_ReportView"}},"title":"SimpleObject_ReportView"},"unit":{"type":"object","properties":{"code":{"type":"string"},"id":{"type":"integer","format":"int32"},"idString":{"type":"string"},"label":{"type":"object","properties":{"baseModel":{"type":"object","properties":{"baseModel":"circular(BaseModel_ReportView)"},"title":"BaseModel_ReportView"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"}},"title":"Label_ReportView"}},"title":"SimpleCodeObject_ReportView"}},"title":"ForecastingUnit_ReportView"},"forecastingUnitId":{"type":"integer","format":"int32"},"genericLabel":{"type":"object","properties":{"baseModel":{"type":"object","properties":{"baseModel":"circular(BaseModel_ReportView)"},"title":"BaseModel_ReportView"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"}},"title":"Label_ReportView"},"label":{"type":"object","properties":{"baseModel":{"type":"object","properties":{"baseModel":"circular(BaseModel_ReportView)"},"title":"BaseModel_ReportView"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"}},"title":"Label_ReportView"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser_ReportView"},"lastModifiedDate":{"type":"string","format":"date-time"},"productCategory":{"type":"object","properties":{"id":{"type":"integer","format":"int32"},"idString":{"type":"string"},"label":{"type":"object","properties":{"baseModel":{"type":"object","properties":{"baseModel":"circular(BaseModel_ReportView)"},"title":"BaseModel_ReportView"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"}},"title":"Label_ReportView"}},"title":"SimpleObject_ReportView"},"realm":{"type":"object","properties":{"code":{"type":"string"},"id":{"type":"integer","format":"int32"},"idString":{"type":"string"},"label":{"type":"object","properties":{"baseModel":{"type":"object","properties":{"baseModel":"circular(BaseModel_ReportView)"},"title":"BaseModel_ReportView"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"}},"title":"Label_ReportView"}},"title":"SimpleCodeObject_ReportView"},"tracerCategory":{"type":"object","properties":{"id":{"type":"integer","format":"int32"},"idString":{"type":"string"},"label":{"type":"object","properties":{"baseModel":{"type":"object","properties":{"baseModel":"circular(BaseModel_ReportView)"},"title":"BaseModel_ReportView"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"}},"title":"Label_ReportView"}},"title":"SimpleObject_ReportView"},"unit":{"type":"object","properties":{"code":{"type":"string"},"id":{"type":"integer","format":"int32"},"idString":{"type":"string"},"label":{"type":"object","properties":{"baseModel":{"type":"object","properties":{"baseModel":"circular(BaseModel_ReportView)"},"title":"BaseModel_ReportView"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"}},"title":"Label_ReportView"}},"title":"SimpleCodeObject_ReportView"}},"title":"ForecastingUnitWithCount_ReportView"}}}},"description":"Returns the ForecastingUnit list"},"403":{"content":{"text/json":{"schema":{"type":"object","properties":{"messageCode":{"type":"string"}},"title":"ResponseCode_ReportView"}}},"description":"User does not have permission to list forecasting units"},"500":{"content":{"text/json":{"schema":{"type":"object","properties":{"messageCode":{"type":"string"}},"title":"ResponseCode_ReportView"}}},"description":"Internal error while listing forecasting units"}}}
+>
+  
+</StatusCodes>
+
+
+      

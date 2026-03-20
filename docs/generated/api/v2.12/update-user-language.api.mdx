@@ -1,0 +1,71 @@
+---
+id: update-user-language
+title: "Update user language"
+description: "API used to update user language"
+sidebar_label: "Update user language"
+hide_title: true
+hide_table_of_contents: true
+api: eJyNVE1v2zAM/SsCL7u4SddhF5/mDRlaoNjSJN2lKApGZmJttqRK9LLA8H8fKOer6bAtp0h+JB8fn9gB4zpC/gBtpACPGZQUdTCejbOQQzG9UW2kUrFTrS+RSY5B1WjXLa4JMnCeAgr8poQcBtB9pHB7hAR6binyR1duIe/OSuxxEqPc8jtpVlwhq61r1QYtH4odSUAG2lkmy5IPva+NThzG36Mk7SDqihqUf7z1BDkMmSEDH4QxG4ryVboR4gecsUxrCpDByoUGebh6dwV9Bnsin1xJJyGRg7Fr6PsM2HBNZ01BL19EAxOohJxDS+kiemfjQOPq8vK1MjPiNtioUM1brSlGpV1JyqwUV6QOuqsNRhUHxKqtX2rD9Iv3oiQe7/9e6ZrZzxm5jaObL4vJ7Etx+zSfzL5NZk+T2ezrbFc90FDVNaScnBWF4MIwuNKUyjpWWNduc8aVndKu8TWdD/GMaJ9BQ1w58ZR3MQ0OuYIcxujNWMY2PjFhpPCTghi5gzbUkEPF7GM+FvTouUXLZrXzCFqst2x0HLmwhnPHT4MrW524DknVygV1Vywgg58YDC7rNLK+f8xA+M6O5p78Qmnt1FeX5645uCUDY1cutb4zzd0LmgptqYo9V7VwTkYrXQ5Er0Zvr0aXr/gX05s3UWTGwTIi/12xUPPUzE5z1Elzi43U/VzMp4oJG8jOxNtsNv8Qjxo0EnE9nz9Jnqfruw/rKuoLH5sEkWdjNNlIJxULj7oiNfB/WXLl3GiJIb0mGXyD9iTw/s876IUE3dFW/7O/do84+c/XaKxQTpy6neUeAL0RojEJeIh9zKASa+YP0HVLjHQf6r6X6+eWwhbyh8ejZ+TUZ1ARlhSST3/QFnL4NHC9WAgNgdet0Hm10/psH1FoTZ5PsMenI548PJvp17mYdrnbus1gv4Ab2ci4gRzS9pYSaQelu+7YXg5DTvn9BuC1IJQ=
+sidebar_class_name: "post api-method"
+info_path: docs/generated/api/v2.12/quantification-and-analytics-tool
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Update user language"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/api/user/language"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+API used to update user language
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={undefined}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"description":"LanguageUser object that you want language to update","content":{"application/json":{"schema":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"languageCode":{"type":"string"}},"title":"LanguageUser"}}},"required":true}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Returns a Success code if the operation was successful","content":{"text/json":{}}},"500":{"description":"Returns a HttpStatus.INTERNAL_SERVER_ERROR if there was some other error that did not allow the operation to complete","content":{"text/json":{}}}}}
+>
+  
+</StatusCodes>
+
+
+      

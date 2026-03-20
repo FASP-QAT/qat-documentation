@@ -1,0 +1,63 @@
+---
+id: get-user-list
+title: "Get User List"
+description: "Get user list"
+sidebar_label: "Get User List"
+hide_title: true
+hide_table_of_contents: true
+api: eJztWttu2zgQ/RVhnnYBNQ6yyBZrLAo4lxYpnAJNnfbBMAKaGktsKVIlKbuGoX9fDCWn8i2R0Y2bFnqKQ859zoxGFBcQoeVGZE5oBV14gy7ILZpACusgBJ2hYbR3FUEXYnS3Fk2/3DNoM60sWugu4OT4mP5wrRwqRz8dfnOdz5bELsDyBFPml+cZQheYMWwOIQiHqa2t6/Fn5CQ9M6TbiVI8405MsUY31loiU1CEMGYWr3WE8nExNVLgwvBcMvPH2XLxbuncR4GzP0m0E06SuO0kXnluhUJrX+eKU5x8bB530zojVAxFEQI3yBxGZ/PHzafMUCLu6YRyGKOBECbapMyVS3+dkGVErFiK27XWPBOcnNrwrLLrgrktImoKI+bwhRMpElOEE5ZLd62jXGJjUyuuQYJpcyaMhGNjuQMUmDIhV2QtnQ9hwoSMes5hmjnbUJtkKs5ZjHth7PBw5DpXzszPdbQt7+TGeE/DDu+Dt7ExDDz1Hard7t5NzAOb2UObNnu4evqeatOBEisPZKEkaOjkisKSc4tO6/o6Fmq/eiW2ax2JiXiGHahu3H5uaRP3VHReFsPWFGTM2pk22xuEQSbTZ14lVc+8WTO11gLbWj9ArXuo7Cx0v7t/lfukbqrSEhuOFzvy1yLiEIjQa5PPFs4bLddbeMVpG2S3JtAmenaBXKRM2u1dgJpwj8sfA041VrxbbeYtfJ4APgky6ZKeQdbYi+8sbYIOMd39wFTClLD379ONIlBnatP79OnNjI4N2/1Ir/Ybu1jRt6k7WOoG86z5KUI1v/nHW3MmLfECLW8T+pNGqfuxZq930f/5xfW2NGFzjqtsazLKtfPWz8ZYO2898wS189Zvnd523vrVU9fOW79LQn/heesJdK0rKvype/1r+Q263CgbuARrX82LEE73/Bq+A6IpWrv7O9LKgXH5KZ4oN8xet/pKOQqBDNAYbYJZIiQGMTonVLzuCulgsYXu0IcERiGk6BJd3QYgi5lLoAsdlokOMUIIFs0UDTEtIDdUX4lzme12iOjoa86UExPB/SOWKSbnTnB7pA09ydevIyi6f4BRUMoMSFwxIhU8N8LNvY4xMoOml5Mhw1F9+wMFuir3GtHyv9dLdLz9NNjQfUlh8vF4+2kQOP0FVSCUXyhR1Q3OvJTgX7/5ijz3+ugA1u9AuMwZBcBHU6iJJgNWdb1fiUnQWwYlGGgtIQQpOCrrQVBiF3oZ4wkG/XIj+IjGEufJ0TGEa0GfzWZHzJNTjDuVLNvpX51fvvtw+YJ4alh636NYTEuB0IWTo39eDk9P/3458j1fW5cyVbOErowQNoLqWsiKZ7Ua2LhbUoXGV0YmmSiPq41v3SWqhsAyAWXNEvQSTYfYQ1gsqHnfGlkUtPw1R/rKNxyFMGVGlJcChqNyUo/QeJB8wTmFjXPMSPmUyfxeu6/Loo7tN5cDKIr/AIYPIpY=
+sidebar_class_name: "get api-method"
+info_path: docs/generated/api/qat
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get User List"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/api/user"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Get user list
+
+<ParamsDetails
+  parameters={undefined}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"content":{"text/json":{"schema":{"type":"array","items":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":{"type":"object","properties":{"baseModel":"circular(BaseModel_UserListView)"},"title":"BaseModel_UserListView"},"businessFunctionList":{"type":"array","items":{"type":"string"}},"createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser_UserListView"},"createdDate":{"type":"string","format":"date-time"},"defaultModuleId":{"type":"integer","format":"int32"},"defaultThemeId":{"type":"integer","format":"int32"},"editable":{"type":"boolean"},"emailId":{"type":"string"},"faildAttempts":{"type":"integer","format":"int32"},"language":{"type":"object","properties":{"baseModel":{"type":"object","properties":{"baseModel":"circular(BaseModel_UserListView)"},"title":"BaseModel_UserListView"},"countryCode":{"type":"string"},"label":{"type":"object","properties":{"baseModel":{"type":"object","properties":{"baseModel":"circular(BaseModel_UserListView)"},"title":"BaseModel_UserListView"},"labelId":{"type":"integer","format":"int32"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"}},"title":"Label_UserListView"},"languageCode":{"type":"string"},"languageId":{"type":"integer","format":"int32"}},"title":"Language_UserListView"},"lastLoginDate":{"type":"string","format":"date-time"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser_UserListView"},"lastModifiedDate":{"type":"string","format":"date-time"},"orgAndCountry":{"type":"string"},"password":{"type":"string"},"realm":{"type":"object","properties":{"baseModel":{"type":"object","properties":{"baseModel":"circular(BaseModel_UserListView)"},"title":"BaseModel_UserListView"},"defaultRealm":{"type":"boolean"},"label":{"type":"object","properties":{"baseModel":{"type":"object","properties":{"baseModel":"circular(BaseModel_UserListView)"},"title":"BaseModel_UserListView"},"labelId":{"type":"integer","format":"int32"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"}},"title":"Label_UserListView"},"realmCode":{"type":"string"},"realmId":{"type":"integer","format":"int32"}},"title":"Realm_UserListView"},"roleList":{"type":"array","items":{"type":"object","properties":{"label":{"type":"object","properties":{"baseModel":{"type":"object","properties":{"baseModel":"circular(BaseModel_UserListView)"},"title":"BaseModel_UserListView"},"labelId":{"type":"integer","format":"int32"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"}},"title":"Label_UserListView"},"roleId":{"type":"string"}},"title":"Role_UserListView"}},"roles":{"type":"array","items":{"type":"string"}},"showDecimals":{"type":"boolean"},"userAclList":{"type":"array","items":{"type":"object","properties":{"countryName":{"type":"object","properties":{"baseModel":{"type":"object","properties":{"baseModel":"circular(BaseModel_UserListView)"},"title":"BaseModel_UserListView"},"labelId":{"type":"integer","format":"int32"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"}},"title":"Label_UserListView"},"healthAreaId":{"type":"integer","format":"int32"},"healthAreaName":{"type":"object","properties":{"baseModel":{"type":"object","properties":{"baseModel":"circular(BaseModel_UserListView)"},"title":"BaseModel_UserListView"},"labelId":{"type":"integer","format":"int32"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"}},"title":"Label_UserListView"},"lastModifiedDate":{"type":"string","format":"date-time"},"organisationId":{"type":"integer","format":"int32"},"organisationName":{"type":"object","properties":{"baseModel":{"type":"object","properties":{"baseModel":"circular(BaseModel_UserListView)"},"title":"BaseModel_UserListView"},"labelId":{"type":"integer","format":"int32"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"}},"title":"Label_UserListView"},"programCode":{"type":"string"},"programId":{"type":"integer","format":"int32"},"programName":{"type":"object","properties":{"baseModel":{"type":"object","properties":{"baseModel":"circular(BaseModel_UserListView)"},"title":"BaseModel_UserListView"},"labelId":{"type":"integer","format":"int32"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"}},"title":"Label_UserListView"},"programTypeId":{"type":"integer","format":"int32"},"realmCountryId":{"type":"integer","format":"int32"},"roleDesc":{"type":"object","properties":{"baseModel":{"type":"object","properties":{"baseModel":"circular(BaseModel_UserListView)"},"title":"BaseModel_UserListView"},"labelId":{"type":"integer","format":"int32"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"}},"title":"Label_UserListView"},"roleId":{"type":"string"},"userAclId":{"type":"integer","format":"int32"},"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"UserAcl_UserListView"}},"userAcls":{"type":"array","items":{"type":"object","properties":{"countryName":{"type":"object","properties":{"baseModel":{"type":"object","properties":{"baseModel":"circular(BaseModel_UserListView)"},"title":"BaseModel_UserListView"},"labelId":{"type":"integer","format":"int32"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"}},"title":"Label_UserListView"},"healthAreaId":{"type":"integer","format":"int32"},"healthAreaName":{"type":"object","properties":{"baseModel":{"type":"object","properties":{"baseModel":"circular(BaseModel_UserListView)"},"title":"BaseModel_UserListView"},"labelId":{"type":"integer","format":"int32"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"}},"title":"Label_UserListView"},"lastModifiedDate":{"type":"string","format":"date-time"},"organisationId":{"type":"integer","format":"int32"},"organisationName":{"type":"object","properties":{"baseModel":{"type":"object","properties":{"baseModel":"circular(BaseModel_UserListView)"},"title":"BaseModel_UserListView"},"labelId":{"type":"integer","format":"int32"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"}},"title":"Label_UserListView"},"programCode":{"type":"string"},"programId":{"type":"integer","format":"int32"},"programName":{"type":"object","properties":{"baseModel":{"type":"object","properties":{"baseModel":"circular(BaseModel_UserListView)"},"title":"BaseModel_UserListView"},"labelId":{"type":"integer","format":"int32"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"}},"title":"Label_UserListView"},"programTypeId":{"type":"integer","format":"int32"},"realmCountryId":{"type":"integer","format":"int32"},"roleDesc":{"type":"object","properties":{"baseModel":{"type":"object","properties":{"baseModel":"circular(BaseModel_UserListView)"},"title":"BaseModel_UserListView"},"labelId":{"type":"integer","format":"int32"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"}},"title":"Label_UserListView"},"roleId":{"type":"string"},"userAclId":{"type":"integer","format":"int32"},"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"UserAcl_UserListView"}},"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"User_UserListView"}}}},"description":"Returns the user list"},"500":{"content":{"text/json":{"schema":{"type":"object","properties":{"messageCode":{"type":"string"}},"title":"ResponseCode_UserListView"}}},"description":"Internal error while getting the user list"}}}
+>
+  
+</StatusCodes>
+
+
+      

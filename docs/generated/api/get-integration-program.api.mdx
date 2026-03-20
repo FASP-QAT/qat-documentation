@@ -1,0 +1,63 @@
+---
+id: get-integration-program
+title: "Get Integration Program List"
+description: "Retrieve a complete list of all integration programs."
+sidebar_label: "Get Integration Program List"
+hide_title: true
+hide_table_of_contents: true
+api: eJztWW1v2zYQ/ivEfdoA1Q4yZMWEYUDSZkEKt2trt/1gGMNZOttsKVElz84MQ/99OEpuFceunaBA3UCfLJP3+vD4kOCtICWfOF2wtjnE8JbYaVqQQpXYrDDEpIz2rOxEoTFK50xThyKtCmenDjPfgQhsQdXodQoxTImvvwq+ruQgAke+sLknD/EKTk9O5CexOVPO8sn0H3c/eglkBT6ZUYZheFkQxIDO4RIi0EyZb4zb8UdKGCIonETBujKPCesFNeTG1hrCHMoIxujppU3JfDczkGiXzA26Xy7Wg79CBIkjZEovlvsdzT05Ae+LXICaHEQwsS5DroZ+OxXPIpxj1ozLs9P5FMoyAtZsZOgCvU7eeXKiUofyHHmLVsNHikxPWGckSgY9v7SpnujjSKIZz30yuW2vXrTy51+fxnbcn8FEG3q1PSixb1JyPZtsGvsq0nB2MBANnZ2uGzLvNd3sT2RD4Tn55BDDDwla9HYE3ljI640MSqE6NNkBqRwcU9qv/G5L1OD4O3JZS4ktJR5Fag9cnzGZg6MK0v/SdsKrJifuG5PFtyZ9sWPy0VVQLxBQGcF+130t18p/qlR3kOgGCdcXyHss6uMAOMQZrs7tOdKeI0dapO050p4jP/4ciWBBzmub9xl5fsDzQEuYP9+GfHTl3hJmS5g/mjAHQaGly5Yuj77YW7ps6fKo3inWna2yFIE7nbS5y73iGamGiqp1QldNIjm7ZxtsB/gZeY9TembTPXm9rXtwQXJL3BKry9Eocs46xTNkVThaUM6UhmwcsSO9QCNNwd2piU+ceoiHsEUIRhFkxDNb9wslIeQZxNDFQnfvvv5ABJ6cHFoQD1cwd0LdM+bCx11R6XyeY856oqsOBuZolqwT37FOCuN2kleUS7+SUlXZVGKuHImLZO40L4OPMaEjdz6XsIaj5nRfVqUCvim0/vf3ugpffBjc8X0pAAcgX3wYKLafKFc6DwNV9cbqIlhRf4bJvyTz4E+OsDAD0XqBBYAAtc4nVgK47evNLUzU+RoUNbDWQARGJ5T7UDHVjoDzApMZqV41od5XlwR12jmBaAP0m5ubDgZxwbhb2/Ld3vWzy1f9yyei0yi8N+eCRX3rgBhOO388HZ6d/f50FF66rOcM80YkV8Rbq6sn1bUBamP/PLiFXSMadl9hUId7Qsh4VZfmELDQsO1pUqp5Zj2LzGoll4t3zpSlDH+ek5NyGkWwQKdxLGAMR2UEM8KUXKi0T7QU7JOECsltgWb+JZbABGVzu1xdDqAs/wf3c+ML
+sidebar_class_name: "get api-method"
+info_path: docs/generated/api/qat
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get Integration Program List"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/api/integrationProgram"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Retrieve a complete list of all integration programs.
+
+<ParamsDetails
+  parameters={undefined}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"content":{"text/json":{"schema":{"type":"array","items":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":"circular(BaseModel)","createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"}},"title":"BaseModel"},"createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"integration":{"type":"object","properties":{"fileName":{"type":"string"},"folderLocation":{"type":"string"},"integrationId":{"type":"integer","format":"int32"},"integrationName":{"type":"string"},"integrationView":{"type":"object","properties":{"integrationViewDesc":{"type":"string"},"integrationViewId":{"type":"integer","format":"int32"},"integrationViewName":{"type":"string"}},"title":"IntegrationView"},"realm":{"type":"object","properties":{"id":{"type":"integer","format":"int32"},"idString":{"type":"string"},"label":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":"circular(BaseModel)","createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"}},"title":"BaseModel"},"createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"labelId":{"type":"integer","format":"int32"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"}},"title":"Label"},"name":{"type":"string"}},"title":"SimpleObject"}},"title":"Integration"},"integrationProgramId":{"type":"integer","format":"int32"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"},"program":{"type":"object","properties":{"id":{"type":"integer","format":"int32"},"idString":{"type":"string"},"label":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":"circular(BaseModel)","createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"}},"title":"BaseModel"},"createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"labelId":{"type":"integer","format":"int32"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"}},"title":"Label"},"name":{"type":"string"}},"title":"SimpleObject"},"versionStatus":{"type":"object","properties":{"id":{"type":"integer","format":"int32"},"idString":{"type":"string"},"label":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":"circular(BaseModel)","createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"}},"title":"BaseModel"},"createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"labelId":{"type":"integer","format":"int32"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"}},"title":"Label"},"name":{"type":"string"}},"title":"SimpleObject"},"versionType":{"type":"object","properties":{"id":{"type":"integer","format":"int32"},"idString":{"type":"string"},"label":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":"circular(BaseModel)","createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"}},"title":"BaseModel"},"createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"labelId":{"type":"integer","format":"int32"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"}},"title":"Label"},"name":{"type":"string"}},"title":"SimpleObject"}},"title":"IntegrationProgram"}}}},"description":"Returns the Integration Program list"},"500":{"content":{"text/json":{"schema":{"type":"object","properties":{"messageCode":{"type":"string"}},"title":"ResponseCode"}}},"description":"Internal error that prevented the retreival of Integration Program list"}}}
+>
+  
+</StatusCodes>
+
+
+      

@@ -1,0 +1,71 @@
+---
+id: add-manual-json-push
+title: "Manual JSON Push"
+description: "Manually pushes integration data to external systems. Handles batch requests with authentication validation and error tracking."
+sidebar_label: "Manual JSON Push"
+hide_title: true
+hide_table_of_contents: true
+api: eJzdWG1vGjkQ/iuWP91JG6C0uVxXp5NIQ6+JEmiBttIhFA3rgXW7a29sbwhC/PfTeHfDQshLq1bKlU+L531szzzjFRdoIyMzJ7XiIb8AlUOSLFmW2xgtk8rh3ABRmQAHzGmGNw6NgoTZpXWY2gZ7B0okaNkUXBQzg1c5WmfZQrqYQe5iVE5GhZJrSKQoPkEJhsZow5yB6KtU8wYPuM6wsHcqeMhBiMKlM6vV+9zGPOCl/mMtljxc8Ugrh8rRJ2RZUhpqfrEU0IrbKMYU6MstM+Qh19MvGDke8MyQLSfRFmrSLEGH4gQc1titM1LNecBn2qTgeMgFODxwMkW+DnhkEByK4+XjFnKLhoK65fPJRVPXLZV72Sa9xKwg3ePJeh1wJ11CS8dgZfTRoqm58m3+z2SCvf12SCQRaO4l1w7Hk+OqyTxF7yeJi+/RTXL36k/9iTr9Du8zo+cG0qecJnFPbE8ORgwLoX1aEphi8rgXEDl5XfdjqnWCoEjFFCxeaPED1fBImihPwPx2XC3+zv//NyQB6y60kDP5PIKo+/MtkWzrKzftF6hg/i482SvPfYnq/mt1OTMPELOHiDa7h/jLnaBzX4DWAX/c9FBSY32jBfaLcNcBv0Zjn153a8oudks3XxN5G8R0FANjYMn0jBUCrCaxwScuBseWOmcLUI6QDQhR4gtpUPDQmRzXtGAzrWyxOe1Wawd1OLxx3ww3UrQW5j4tD6dvUBr3nHuCHaDLjbIM2DCPIrSWUe9hcsZcjOwWTbEFWGYLjlnut+5V6+UzjeSdc9nQgctt421/cHx6ctLtVRHRIWZCo2VKOxbDNTLwURUhvXr+IfX6o8u3/Y+9kyqkLSTCbE4oFsUmSLyR1l+bw2d79mrhnfZG3UGvc3457A4+dQeX3cGgPyhDNVicQ50i0/S/GgDoJgopfLiQJHqxc3qdZhVALzyEueXhmNfv9fsSnE0CnqKLNc0PmbY+fnAxD3kTMtmsocRSopnejhg84BYNlScejlc8N4RrYucyGzZJunGVg3JyVk4ZoCBZOhnZhjZUNbfT8w8q8h8FK3QyUreekIkoN9ItvY0pgkHTycnD8aROHtJ+FltWZ6r+va3K5Nnn0R3bXeXQ+CSefR4xp7+iYlL5haK8huzYa2F/eeLfFLm3R/jOU3hQHQ1KgE87nbTBZvzq3gDtyZ7xibdb7VcHraOD9uvRi8Pw8EXY/rPROnrx7y4grHpdq97Jar1zCxI8pHUzyNSb2GZ+2azujC2tPUPJXuZqFmndM2lshPYOGK2t8aEYEGp2SsW3qH9DugX7FQ6ntrQD4LdJPyfDd2HMY6rvAo379e8i0R/odokPW3X0t5NeD/p217I9awTx6ms/OSV35GvIqeVH3pkms9uX/8NWkWKdqkqxkdYJuS0jVNbf29JAJ4MoRnZeENinwgprN1o82KmCi8WiAZ6dil6z1GWb56dvur1h94Bkaj3kQ4eKU+k2Rdt4fTQ+PPzjaOIHam1dCqrmSQnYzob9HisffLaCq7W/Z/BaVRZI34azBKSfiX2+VmXTGXPI5HYhqRpVVSh845kEPKZmFY75akV3+6NJ1mtavsrRUKuYBPwajIQp5XU8WQc8RhBofBf5ikse8jdFag5G5BaxJzm5d+ddbB1UEp0owszVeDeIYl1vpO/7Q9rHafnolhbly8CCADMseMj92x2Z8A3Lr614Amqew5x4C530+w+TnP6M
+sidebar_class_name: "post api-method"
+info_path: docs/generated/api/qat
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Manual JSON Push"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/api/integrationProgram/manualJson"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Manually pushes integration data to external systems. Handles batch requests with authentication validation and error tracking.
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={undefined}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"content":{"application/json":{"schema":{"type":"object","properties":{"completedDate":{"type":"string","format":"date-time"},"createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"fileName":{"type":"string"},"folderName":{"type":"string"},"integrationId":{"type":"integer","format":"int32"},"integrationName":{"type":"string"},"integrationViewId":{"type":"integer","format":"int32"},"integrationViewName":{"type":"string"},"manualIntegrationId":{"type":"integer","format":"int32"},"program":{"type":"object","properties":{"code":{"type":"string"},"id":{"type":"integer","format":"int32"},"idString":{"type":"string"},"label":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":"circular(BaseModel)","createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"}},"title":"BaseModel"},"createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"labelId":{"type":"integer","format":"int32"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"}},"title":"Label"},"name":{"type":"string"}},"title":"SimpleCodeObject"},"versionId":{"type":"integer","format":"int32"}},"title":"ManualIntegration"}}},"description":"An array of Manual Integration requests that you want to add","required":true}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"content":{"text/json":{"schema":{"type":"object","properties":{"messageCode":{"type":"string"}},"title":"ResponseCode"}}},"description":"Returns a Success code if the operation was successful"},"403":{"content":{"text/json":{"schema":{"type":"object","properties":{"messageCode":{"type":"string"}},"title":"ResponseCode"}}},"description":"Returns a HttpStatus.FORBIDDEN if the User does not have access"},"404":{"content":{"text/json":{"schema":{"type":"object","properties":{"messageCode":{"type":"string"}},"title":"ResponseCode"}}},"description":"Returns a HttpStatus.NOT_FOUND if the IntegrationId supplied does not exist"},"500":{"content":{"text/json":{"schema":{"type":"object","properties":{"messageCode":{"type":"string"}},"title":"ResponseCode"}}},"description":"Returns a HttpStatus.INTERNAL_SERVER_ERROR if there was some other error that did not allow the operation to complete"}}}
+>
+  
+</StatusCodes>
+
+
+      

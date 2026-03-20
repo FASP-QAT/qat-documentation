@@ -1,0 +1,71 @@
+---
+id: get-program-version-list
+title: "Get the list of programVersion based on given parameters and date range"
+description: "API used to get the list of programVersion based on given parameters and date range"
+sidebar_label: "Get the list of programVersion based on given parameters and date range"
+hide_title: true
+hide_table_of_contents: true
+api: eJzFl91zozYQwP8Vzb60naEmzV1feKrbXC6e6eTT6Usmk9nAGtSCRKTFOQ/D/34jwBjsa+LD7fgJJC3an8R+lsAYWwgeIDc6NpidISM8ehCRDY3MWWoFAUyvZ6KwFAnWIiYWnJBIpWWhF6L98C8yVmolntHJaSViuSQlcjSYEZOxAlUkImQSBlVM4IHOyaDTMIsggJj4erDVn9IyeLDZAYKHEhRmBMEadxaBB9Ih5sgJbHN3UoITZLHShXhFxe4Y7ghb6PWJFtqAB4ZeCmkogoBNQR7YMKEMISiBV7nTLxVTTE50oU2G3Ex9OIWq8jrIZbPxO5Cd1HEgDWGa/aELxWb1DulQ9Di4CWHKydQQvgPbFzwOqjYxKmnXJv4W7FD0qNY6X+W0n8U2kkeFvWPkwu6Hu5Y9DrBlNHyGTG+idlLfAWl0tg+lZSNVvMWk8z2QGqH9iVim6XcRPTphm2tlybr105MT9xhy3BIXRtk3cg94EGrFpLhWQl/Y/9u6b8uqqjz4ePLh33dFccGcNyYyOb+6/X12dvbpUshFre/ekhGRJiuUZpHgkgSGIVn7rsqPe6q8vJo/nV/dX56tVW5dbKecvjRp8S21v37r/maKyShMBRmjTfM3c0NLUuwSe0LCEBuSS0zd1Y644sqDjDjRbTavczcnEICPufR7BYY/3NTv0rRfdq+V3+VFv+xeK3+Yg/xyOK78ftj3y/6o8odR1i+H405jE9c6rc2wW12HkW59PVH5rrqxftk5ceXeG++pwANLZrkuYwqTuhzFnNvAd/czeSlQsVzIsMZBhemKZWgn2sQ7PnltdFSEbiCaTV2oEjfTOXiwRCPxOa09qXYtqRa6/luSU+d2NwNFdVk2XWsTc62d77ZHgwBOJ7+cTk52CKbXsx+sCwKNH9T2czOdi7sapzUTDGszaaPN+fTuWjChi1bD47++vr5zfMpQui8u7u6e3D5PFze/xYkNf85tVotUHqQyJGWpp3GaY5iQaPiHKhdaT57RuHAIubacoep9+Pk/q3EHt1ZunOd/KqnbyFo7Zp6iVO5i6pOXrTM+AObSuWav3u9GGy/v19dBf9CvaYP+YKeODHZmtmq3YGu8Uy8FOzPbNUqwPbFbFwS7U7WfuqV+Ug66bPjoQaItu7sqS3f59yatKjf9UpBZQfDwuHGz2psjad17BMECU0tv/PYfb9us+JMY3Zx88ye3k6hWdQxICzcCD/6h1aBdcul/FO7oNmUE7sauRuMe1quMYN6y9tHgh/QtI7AHPjga+rD+ZQT2VmQ41KrHtTLjLbuNV4dij21pxoN3UXQ0+vgWZwT1JsAfwDuy/xmF26ag6rGq02VEpk4wzfI0DCnn3oebAtwVel3x/fnTHKrqKy9l994=
+sidebar_class_name: "get api-method"
+info_path: docs/generated/api/v2.12/quantification-and-analytics-tool
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get the list of programVersion based on given parameters and date range"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/api/programData/programVersion/programId/{programId}/versionId/{versionId}/realmCountryId/{realmCountryId}/healthAreaId/{healthAreaId}/organisationId/{organisationId}/versionTypeId/{versionTypeId}/versionStatusId/{versionStatusId}/dates/{startDate}/{stopDate}"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+API used to get the list of programVersion based on given parameters and date range
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"programId","in":"path","description":"programId that you want to the programVersion list for","required":true,"schema":{"type":"integer","format":"int32"}},{"name":"versionId","in":"path","description":"versionId that you want to the programVersion list for","required":true,"schema":{"type":"integer","format":"int32"}},{"name":"realmCountryId","in":"path","description":"realmCountryId that you want to the programVersion list for","required":true,"schema":{"type":"integer","format":"int32"}},{"name":"healthAreaId","in":"path","description":"healthAreaId that you want to the programVersion list for","required":true,"schema":{"type":"integer","format":"int32"}},{"name":"organisationId","in":"path","description":"organisationId that you want to the programVersion list for","required":true,"schema":{"type":"integer","format":"int32"}},{"name":"versionTypeId","in":"path","description":"versionTypeId that you want to the programVersion list for","required":true,"schema":{"type":"integer","format":"int32"}},{"name":"versionStatusId","in":"path","description":"versionStatusId that you want to the programVersion list for","required":true,"schema":{"type":"integer","format":"int32"}},{"name":"startDate","in":"path","description":"startDate that you want to the programVersion list from","required":true,"schema":{"type":"string"}},{"name":"stopDate","in":"path","description":"stopDate that you want to the programVersion list till","required":true,"schema":{"type":"string"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Returns the list of programVersion","content":{"text/json":{}}},"403":{"description":"Returns a HttpStatus.FORBIDDEN if the User does not have access","content":{"text/json":{}}},"404":{"description":"Returns a HttpStatus.NOT_FOUND if the programVersion does not exist","content":{"text/json":{}}},"500":{"description":"Internal error that prevented the retreival of list of programVersion","content":{"text/json":{}}}}}
+>
+  
+</StatusCodes>
+
+
+      

@@ -1,0 +1,71 @@
+---
+id: get-country-by-id
+title: "Get Country"
+description: "Retrieve a country by its ID"
+sidebar_label: "Get Country"
+hide_title: true
+hide_table_of_contents: true
+api: eJztWF9v2kgQ/yqreWqlLUS0uarWqRIkaUSVXtWEtA8RqhZ7wNuaXWd3TIqQv/tp1oaahBBO4qHt8QSev7+ZnVl7ZgEJ+tjpnLQ1EMElktM4Q6FEbAtDbi5Gc6HJi/4pSLA5OsWi/QQimCCdVEK9eT8BCblyaoqEzkN0s7hnepCi6J8KOxaU4so6WeFqnyBBs2CuKAUJRk0RIqgFg32Ht4V2mEBErkAJPk5xqiBaAM1zFtaGcIIOJIytmyqqSC87UJZDVve5NR49a3SOjvgntobQULCBP6j9zTPYxUPTdvQNY+IgHWeBdGVGxaRn2JAbWZuhMlBKGCmPH2yC2d7MQKxdXGTKPestic9BQuxQESa9+dOOCo+OD2+HlMkgXB3DStyT02YCZSmBNGVM6imv42uPjlVqKKeKNmg1fCSK8AXpKbJSpjx9sIke618jiCae/xLJur360DgpVQ2f2GQTijV+Z5vAzjH/7gURF86hiXeAr3eFrpOryuem/GZqtMcuPTT7/7rZf/vzGWG2M6og/RXN4231dey2MPNtTJ8/wvzjKugiXEDl8qtnm+srPc0z/FiFeri7DnfX4e463F2/xN31B8ZWz7dQMvHBqFw449em2TtNaSBM9AwNz8ylhFdHr/YxaU7RezXBR4aIBubLeswNkhuAXxs1ypAn77E2ydP4j/czKe8Nf98Ql0Im0DnrBKWKRO5whoawCqfeKKjs3rahcqMmvJ5YHe1QwhQptfVGI6wxKIUI2irX7VqzvViNYCVI8Ohmyy1H4fh9lxLlPmqzTuu2UIb0WMdhVaKMyuakY9+yjituPZhzNLxSwURUNgWb42WFx7hwmubBxwiVQ9ctGNfNsMm+4uxXCW4KLZ/eLcv7/ZfBA99nnMiQn/dfBoLsdzRCm0Co2iISvWBF/B2Yb6FeuYT3fuCAXB4kJyDkV5uxZQDrvj6t5UR0l0kRA2szkJDpGI0PlVEvfrq5ilMUFxVDfEbnWbPTOgJ5L+l3d3ctFcQ5x+3alm9f9E/O/rk6e8E6jQL71OVczCqDEEGn9eb1zfHxX6+HLJVbT1NlGkjOkcSyWu7lsNEWT+3O6jyF3skzpcMnU4hjUVfcDahcw2raBwnRz8F/KCG1nlhqseAvrWuXlSWTbwt0XCZDCTPlNDd3tX7Tnv8nEI1V5nEL8meX9WLtudhlS7cxkpqoDOOeqazgJ5DwHedrW7xyWEpIUSXoAsqK341jzKmh+fOKKZsNen42gLL8F2QyFxk=
+sidebar_class_name: "get api-method"
+info_path: docs/generated/api/qat
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get Country"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/api/country/{countryId}"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Retrieve a country by its ID
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"description":"The ID of the country to retrieve","in":"path","name":"countryId","required":true,"schema":{"type":"integer","format":"int32"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"content":{"text/json":{"schema":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":"circular(BaseModel)","createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"}},"title":"BaseModel"},"countryCode":{"type":"string"},"countryCode2":{"type":"string"},"countryId":{"type":"integer","format":"int32"},"createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"currency":{"type":"object","properties":{"id":{"type":"integer","format":"int32"},"idString":{"type":"string"},"label":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":"circular(BaseModel)","createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"}},"title":"BaseModel"},"createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"labelId":{"type":"integer","format":"int32"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"}},"title":"Label"},"name":{"type":"string"}},"title":"SimpleObject"},"label":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":"circular(BaseModel)","createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"}},"title":"BaseModel"},"createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"labelId":{"type":"integer","format":"int32"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"}},"title":"Label"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"}},"title":"Country"}}},"description":"Returns the country with the given ID"},"404":{"content":{"text/json":{"schema":{"type":"object","properties":{"messageCode":{"type":"string"}},"title":"ResponseCode"}}},"description":"Unable to find the country with the given ID"},"500":{"content":{"text/json":{"schema":{"type":"object","properties":{"messageCode":{"type":"string"}},"title":"ResponseCode"}}},"description":"Internal error that prevented the retrieval of the country"}}}
+>
+  
+</StatusCodes>
+
+
+      

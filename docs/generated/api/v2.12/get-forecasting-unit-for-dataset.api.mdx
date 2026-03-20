@@ -1,0 +1,71 @@
+---
+id: get-forecasting-unit-for-dataset
+title: "Get forecasting unit for specific ProgramId and versionId"
+description: "API used to get the forecasting unit for a specific ProgramId and versionId"
+sidebar_label: "Get forecasting unit for specific ProgramId and versionId"
+hide_title: true
+hide_table_of_contents: true
+api: eJy9VU1vGjEQ/SvWXNpKW6A0veypSCkJlwQCOUUomuwOrNtd27FnIWi1/72yl++QpkJVT+wYj9+b8ZvnChjnDuIHmGlLCTqWan6vJMM0gpRcYqVhqRXE0BsOROkoFazFnFhwRmIvSZRKsl8QKJyhRM5kIoZWzy0Wg1SgSsWCrJNaDVKIQBuyyE0Uw5y4f4jf1/YSGR0xRGDQYkFM1jOtQGFBEIPZHA4RSM/QIGdwTHu7S3CGLFa6FEtU7Kt4qwKIwNJzKS2lELMtKQKXZFQgxBXwynhwqZjm5LfOtC2Qm6WvXajraMtwv+C3GW53/TeGU5/ujFaOnM/odjr+55DWHXFplQscji7HiVw6fzGJVkyKAyq9cPun86lVXdcRXHQu3j4UxTWzGTNy6Vo3t5PH/u39zaWQswC3uzNtd6rZyIpSkWpyQmkW9PI+kW+nqhsoJqswF2Sttk3njaUFKfYSz0hYYktygbnQszMaUEdQEGd6Le+gYs4ghjYa2T6atlfxtgPtavtZt7etaFfbzxoicGQXm+EobQ4xZMzGxW2P1XouUbEfxzBvqDBfsUxcS9v5Ky0OrU7LxAeiOTRM9Kg3gQgWaCU+5UEyQUNSzXSoXHLuFTc6AAoj39ugiYnWuT+k4Q0xdFtfuq3OKwa94eCD89rHJCHXyG/Um4hxoLNuOSah5esx6/fGQ8GEBURH5S+Xy3fKpwKlz7gejx/9OY/Xo+/zzCWfjSvCljqCXCakHO0h9gwmGYmG/yHkTOvWE1rvA2C04wLVXuIV8WnT/AvLPOhTtZPeP3bmtX0EOZscpfItCDVWawk/ABrZ+MrBk3FqZd+k4/1gHzLeBdMIMu3Yg1TVEzq6t3ld++XnkuwK4ofpTolB8Kl0/juFeIa5oz/06ePd2jM/ifNehZOtWS+iWoUZyUsfQQS/aHXwSPl34Syu570PZ3Dd3UI9rSPICFOyocfN/70kIcN7mTvL83awtburHxOo699kBerj
+sidebar_class_name: "get api-method"
+info_path: docs/generated/api/v2.12/quantification-and-analytics-tool
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get forecasting unit for specific ProgramId and versionId"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/api/forecastingUnit/forecastingUnit/programId/{programId}/versionId/{versionId}"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+API used to get the forecasting unit for a specific ProgramId and versionId
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"programId","in":"path","description":"programId that you want to the forecasting unit for","required":true,"schema":{"type":"integer","format":"int32"}},{"name":"versionId","in":"path","description":"versionId that you want to the forecasting unit for","required":true,"schema":{"type":"integer","format":"int32"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Returns the ForecastingUnits list","content":{"text/json":{}}},"404":{"description":"Returns a HttpStatus.NOT_FOUND if the programId or versionId specified does not exist","content":{"text/json":{}}},"500":{"description":"Internal error that prevented the retreival of ForecastingUnits list","content":{"text/json":{}}}}}
+>
+  
+</StatusCodes>
+
+
+      

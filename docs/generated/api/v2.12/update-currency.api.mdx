@@ -1,0 +1,71 @@
+---
+id: update-currency
+title: "Update Currency"
+description: "API used to update a Currency"
+sidebar_label: "Update Currency"
+hide_title: true
+hide_table_of_contents: true
+api: eJztWF1vKjcQ/SvWvLSVNmRD70e7TyUpVSLl5hIgfWgUIeMdWN/u2ht/hIvQ/vdqvAsskBtu39ooPMF4PD4zjM8ceQWOzy0k9yC8MajEEh4iSNEKI0sntYIEeoMr5i2mzGnmy5Q7ZJxdrN0j0CUaTr5XKSRQe7SWDT56tO5cp0tIVnuxxxluQjE9/YLCMZdxx5baswVXbnsoRCC0cqgcheFlmUsRjj39YinWCqzIsOD0zS1LhATqgBBBaQikk2hpVRjkDtPz5XFXb9FQWhs/qRzO0UAEM20K7mrTz12oouCseIEtd+uMVHOoqgicdDmZzrmV4s6ioS0NlN8pv4NdrTOoACdOFkibcm7dJ53KmfxvJNHG8+8y4cLJp7b/VOscuQqladriu5GvN1zo9Dn0hHOK+Vt7vI72CH/md8MO3hNU3+6LiS1fWJyZFxbL5xen3OInnb613GtpudYfCkIa4XNufjxfG3+CXTSNaxvjdSCgKgyyJzRWajXkDsf6zraLoXwx3a1Fqv00D/ikHS2VOIrvreHeGg4S2MiwiqykxKTBFBJnPAaDLbWydYm6cXyoz4bovFGWcTbyQqC1TOgUmZwxlyHbKD+24JbZ2mPm812p5vCrW2u0gONd/OGlky6dK0eOO287N5/Hk97FRX8w7p1f99fHXrQGPbOelCCmTFqmtGNeyUePRxC8fznXFoKrm3F/eNO7noz6wz/7w0l/OPw8bIAYrPPWBTJNvxkao00tYFOZBjw8z/Vir1pOM6GLMsd9VbsHtIqgQJdp0tWlD13NXQYJnPJSnq71zilEYNEQoUByvwJvqF8y50qbnJJn59Fz5eSs0ctc8XzppLAdbagvd6swMDr1IsCsg7KZNuy2N4YInriRfJqHfqmqhwgI6nCr7/tfOWV1QDDr2xe371ZrUu5QAHTj7ruT+ONJ99fx2fvk/VnS/aUTfzz7C5679sdCH17Ml+KvLyPdj10FGu/ry+293sjK15DzRlbFbdG0l2zQSvs2kkj7tnLHtjOf/v/Fqr41yOPtmK6L+goTl2qmA2M1k+Z2h2IYVynrrXmGjbWmmdBUig7qnHU78QH39AZXP1hiR17PGmLN296YjQIRNVTJRaDKJp8/eqMBc8gLiPaIb7FYHCE+LLikHZej0YTiTC5vf5tnVpyUtgguVCUpUFlsndgruciQ1fh3j5xp3ZlyE0Zwqa0ruGptvKvfTlpPIzvZr7aD4OiTSyMVwrgocy6DWghYVs2IuAdeStiSFkRALzuZto4WVyvqyTuTVxWZHz2aJST3D1uOp19VBBnyFE2YK3/jkiRFDfJkTBDIPfcE5eA9porWO3pCYOlavtspRzNkM+EGdzRjps07UVGzrOELekPiC0ggvDXRCUGvBNsKcq7mns/Jtw5Jn38Aqi5Z5A==
+sidebar_class_name: "put api-method"
+info_path: docs/generated/api/v2.12/quantification-and-analytics-tool
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Update Currency"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"put"}
+  path={"/api/currency/"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+API used to update a Currency
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={undefined}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"description":"The Currency object that you want to update","content":{"application/json":{"schema":{"type":"object","properties":{"createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"},"active":{"type":"boolean"},"currencyId":{"type":"integer","format":"int32"},"currencyCode":{"type":"string"},"label":{"type":"object","properties":{"createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"},"active":{"type":"boolean"},"labelId":{"type":"integer","format":"int32"},"label_en":{"type":"string"},"label_sp":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"baseModel":{"type":"object","properties":{"createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"},"active":{"type":"boolean"},"baseModel":"circular(BaseModel)"},"title":"BaseModel"}},"title":"Label"},"conversionRateToUsd":{"type":"number","format":"double"},"isSync":{"type":"boolean"},"baseModel":{"type":"object","properties":{"createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"},"active":{"type":"boolean"},"baseModel":"circular(BaseModel)"},"title":"BaseModel"}},"title":"Currency"}}},"required":true}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Returns a Success code if the operation was successful","content":{"text/json":{}}},"406":{"description":"Returns a HttpStatus.NOT_ACCEPTABLE if the CurrencyCode supplied is not unique","content":{"text/json":{}}},"500":{"description":"Returns a HttpStatus.INTERNAL_SERVER_ERROR if there was some other error that did not allow the operation to complete","content":{"text/json":{}}}}}
+>
+  
+</StatusCodes>
+
+
+      

@@ -1,0 +1,71 @@
+---
+id: get-dataset-planning-unit-dropdown-list
+title: "Get Planning Units by Program and Version"
+description: "Retrieve a list of planning units filtered on a program and version"
+sidebar_label: "Get Planning Units by Program and Version"
+hide_title: true
+hide_table_of_contents: true
+api: eJytVttu20YQ/ZXFPLUAIxou3KBEUUC+NHDg1o4lJw+CYIzIEbUJtbveHVoRCP57MEuqpuVLmqJ6onaGczlzziwbKCjkXjvW1kAG18Re0z0pVJUOrOxSuQqN0aZUtdEc1FJXTJ4KZY1C5bwtPa4VmkLdkw8SJQHryKNEPC8gg5L4FBkD8VUf6sZoPvXWFXZjLnRgSMDTXU2Bj22xhayB3Bomw/KIzlU6j+HSz0GqbCDkK1qjPPHWEWRgF58plzisuZKDq66wsSk+dmWdTi9vJeep3ZiPmjbQtm2y1/10Rc91pJbWKxbbEIoIUF+59lRAxr6mVg6CsyZQkPoODw72+mH6yi83gt7jFhLQTOvwXIPOC7qsu/C6GPhow1SShwSW1q+Ru6NfDqFNQBcT9tqUA/fQHbQJVLig6vvJFhjoL1v8oCvk2ud1hf6n493ho0H8LBXsxva8yz81nv/bdqP3LZmX271d+leM7jVjcM8YB01cRK89sj2YJ3rtKrqMwD2h5BNOXhPX3oTIv/8syTaBox8k4guDXVMIWNKJLeh1EK57FYjnd4V3bpi8wUqR91FryMp5uifDVMTWfbeYsJL+X8aiKwHLANkMdismwDyBNfHKyjpyNsrWIa8ggxSdToveMXWDBZUW3dJKO3hTt79RIIFAXiCGbNZA7YXsK2YXslTCju5qNKyX/fJCg9WWdR5G1pewj8A7MrIzqVBdTCXh2rmkyGuveRtzLAg9+XEtpc/mQ/NE5tdrb+C0+/fnTiHvP02f5D4T9COo7z9NFdsvZJQ28aBTVqaOYxT1ezT+IZ3HfJD18WXzdlQQAOIUhFnXD1v97CsK7SFrZBuZpZXiHtfx4RFearwDTE2trSCBSudkQuSdwZh87DBfkbroDKofjDocHUCyN5DNZjPC6C74p32skF6cn5z9PTl7I+8M6PthLDjt9JPB4ei3t7Ojo1/fzsVLOLRGM6jkHbHaXW/qJspysVVXAy0+sOZR1wNJ/k+3bz+IKG9XoY7yj2A0PetngE5LIT3vRQ4D5oul477s1pix2wN7/J8nsBIxZTNoGtn4N75qWzm+q8kLY+cJ3KPXuBBMZ/M2gRVhQT6S+QttIYOTrvs3U6la3Ks63oP7t36b7N4Y5zk5Hvg+LLJ2KPSry4nMcNF/UqzjygKPG7m0cQMZxE8VSRF1E88aqNCUNZbi28WU3zcSbDSF
+sidebar_class_name: "post api-method"
+info_path: docs/generated/api/qat
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get Planning Units by Program and Version"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/api/dropdown/planningUnit/dataset/filter/programAndVersion"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Retrieve a list of planning units filtered on a program and version
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={undefined}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"content":{"application/json":{"schema":{"type":"object","title":"ProgramAndVersionDTO_DropDownView"}}},"description":"The program and version for the planning unit list","required":true}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"content":{"text/json":{"schema":{"type":"array","items":{"type":"object","properties":{"id":{"type":"integer","format":"int32"},"idString":{"type":"string"},"label":{"type":"object","properties":{"baseModel":{"type":"object","properties":{"baseModel":"circular(BaseModel_DropDownView)"},"title":"BaseModel_DropDownView"},"labelId":{"type":"integer","format":"int32"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"}},"title":"Label_DropDownView"}},"title":"SimpleObject_DropDownView"}}}},"description":"Returns the list of planning units filtered on a program and version"},"500":{"content":{"text/json":{"schema":{"type":"object","properties":{"messageCode":{"type":"string"}},"title":"ResponseCode_DropDownView"}}},"description":"Internal error that prevented the retrieval of the list of planning units"}}}
+>
+  
+</StatusCodes>
+
+
+      

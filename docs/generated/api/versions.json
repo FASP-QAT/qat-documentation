@@ -1,0 +1,13 @@
+[
+  {
+    "version": "2.97",
+    "label": "v2.97",
+    "baseUrl": "api"
+  },
+  {
+    "version": "2.12",
+    "label": "v2.12",
+    "baseUrl": "api-2.12",
+    "downloadUrl": "https://raw.githubusercontent.com/FASP-QAT/qat-documentation/refs/heads/main//static/api/Altius-QAT-2.12-swagger.json"
+  }
+]

@@ -1,0 +1,63 @@
+---
+id: get-currency-list
+title: "Get Active Currency List"
+description: "Retrieve a complete list of active currencies"
+sidebar_label: "Get Active Currency List"
+hide_title: true
+hide_table_of_contents: true
+api: eJztV1Fv20YM/isHPm2AagcZsmLCUMDJsiBFOqCJsz4YxkCfaOta6U69o5wJhv77wJPUyK2TNUMfum5Ptkke+fE70vq0g4yC9qZi4yykcE3sDW1JodKurApiUoUJrNxaoWazJaVr78lqQwEScBV5lLOXGaSwIT7rvM2VCQwJeAqVs4ECpDs4PjqSD+0sk2X5yvQnT98GKb2DoHMqMZqbiiAF9B4bSMAwlWFkd6u3pCV75aU+my59h28Ut3KuILTQJrDCQK9cRsUXSwPaeF0X6L87HYzfQwLaEzJlp83fF6oDeaHtQ5yxTBvykMDa+RK5M/1wLJUl2GI5xhXYG7uBtk2ADRdiOsVg9G0gL0d6KL8gHzg1qpEh0zM2JcmhAgO/cplZm6+jiTGep3Syn6+/NCHF2S35YJy9Rqa5uw1j8LYuV/vYM1evChrR+TWQ8o9utt/b5sxlh2rdB3w2chNuGqsPb0qBqy+4bP/v7H96Z//197Oi4rNRxeg/yB7c0c659o84q8ecoXrA+c1N0FX8A/o2extEFrStmD+RcLW3QXH+mHRrEzh5ohx7gK+SQsANPfBYGaG+7rVgjDwA/NKykFko8t55xTmyqjxtyTJlsR3fqVMspCcxDI+s2GhXDDcB0sU9RcsESuLc9fpU4CPnkMIUKzMdEkACgbwoA0gXO6i9PC1y5iqkUwmcvK/RslkbHdUuWiwaNjpMnJf72m/kgqyoYspUl1NJunYpJXTtDTexxorQk5/VAmaxHLtvhPmO3HHQ8OvXYThevpl/UvtcSIzcvHwzV+zekVXGRkM3VKk6jVnUz9H5QjqP9eSpGT2QDJcoBERWjV07AbBf6/UeJ2o2kKLmzhWQQGE02RCnotsRmFWoc1JXnUP93ikxdTw5guQj0u/u7iYYw4XjaZ8rTK8uz85/uzl/JmdGw/V6Jlz00g5SOJ789HxxcvLj86VEVS5wiXaE5IJYzbqtGEZF9e8se02O9uPJL0c9i3GrqgJNlCOxy10/hAvAysC99JJpzV1g8ex2olxufdG2Yn5fk5fBWSawRW9QVKnMTQI5YUY+ztQ7aoRlramSTrZY1B8QxL1ux+twcT6Htv0LZXDP5g==
+sidebar_class_name: "get api-method"
+info_path: docs/generated/api/qat
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get Active Currency List"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/api/currency"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Retrieve a complete list of active currencies
+
+<ParamsDetails
+  parameters={undefined}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"content":{"text/json":{"schema":{"type":"array","items":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":"circular(BaseModel)","createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"}},"title":"BaseModel"},"conversionRateToUsd":{"type":"number","format":"double"},"createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"currencyCode":{"type":"string"},"currencyId":{"type":"integer","format":"int32"},"isSync":{"type":"boolean"},"label":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":"circular(BaseModel)","createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"}},"title":"BaseModel"},"createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"labelId":{"type":"integer","format":"int32"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"}},"title":"Label"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"}},"title":"Currency"}}}},"description":"Returns the list of active currencies"},"500":{"content":{"text/json":{"schema":{"type":"object","properties":{"messageCode":{"type":"string"}},"title":"ResponseCode"}}},"description":"Internal error that prevented the retrieval of the currency list"}}}
+>
+  
+</StatusCodes>
+
+
+      

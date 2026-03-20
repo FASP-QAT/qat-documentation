@@ -1,0 +1,71 @@
+---
+id: get-program-version-trans-1
+title: "Get Program Version Transactions"
+description: "Retrieve transactions for a specific program and version"
+sidebar_label: "Get Program Version Transactions"
+hide_title: true
+hide_table_of_contents: true
+api: eJztV21v2zYQ/ivEfWoBNcrSZcWEYUDSZEGKtFsTt/0QGMFFOltsJVIhT/YMQ/99OEpyZOc9AQYM2Cdb5HN3z72Qd1xCRj51umJtDSRwSuw0zUixQ+MxlWWvJtYpVL6iVE90qipnpw5LhSZTM3JeRCOwFTkU/HEGCUyJ/2phX1vESBRe/AQRVOiwJCbnITlfbhAY5aSOD5SdKM5pZYmtcncxgwi0SFbIOURgsCT5aiWPM4jA0VWtHWWQsKspAp/mVCIkS+BFJWBtmKYkmibWlcjt0tsdaJrofoKd+88g2Em+mOBYxH1ljScvEjvb2/KTWsNkOOigvzn+7oX98qZqdA4XQpGp9IN1e/mdUpZ0Ocks61Z9gZ4/2kxPNGX7i4fxtScnBfEIV6IAbsOzgnt22kwlEcCaC1naR6/TL57cxSlV1vFXTXORHlI7QL5Fy8BmhkxvWJckksYy+VuMRoMsPc6DDn/GyPUjoqkfq1dnZy2n20gWeEnFw8Yu0dNHmz0RCql2aV2ge7XfLw7i/hrWE3MDsOJ3QeZu8hcTd89mdd+mr+6vlpOAGhIabJ7psirozxCEDdJdJkdB8f95/I/mcYC5rR2tQQV8oxvWzvgnN8Mmgp+33z7pGr4jgSV5j1N6b7MHLsXTrgcIcsOtTa/k6lSZJa+MZZXjjJTT05y9dDFMU/Jeca5975q4s/vErvIvunNsWLpGocg569Q81wWpKTFrM72ZuZVPYgynMoL0laEOkBHGEZTEue2GmDCvcA4JxFjpuBOPM2SMu3THwUi8mjji5epvE68aSLxc/W0gAk9u1k9AtZPzmTNXPonFzNZVjYalvMJAhQaLBevUb1knTWzd/yMyMnhRplqdStTJWOAprZ3mRbBxSejI7dXiyvl4uH0mueuuiwGo//qjv8M+fBvdsH0osQ+D0IdvI8X2BxmlTVho775E7Qct6rew+Tt0w43kuNUPUV8GEoCQF20mVgis2/q8FhO11wdFjawtIIJCp2R8qKtuxNqrMM1JnbQbqjv5amdrG6KNoM/n8y0McIlx3Ony8cnx+8NPZ4dvRGZQnp/3JBb9cU9gZ+vXd+e7u7+8Gwuqsp5LNAMmR8Sqr7KexmhQmpuBHZy0l4zkXWDDUa0K1OFmCo4vu6o+B6x0e0zDsYhkMMKBbxEEs9eQMLAmw4/hJJtcf4wjyK1nsbFcSiP64oqmkeWrmpxU5TiCGTqNlxJTeQloL/8zSCZYeLonJq9Ou4n5tXrWg+HWwPQDsZFxeIZFLV8QwQ9arD0owpvg5VQf+XR4BtXrHDTjJoKcMCMXItzu76UpVTyQvL7Lm+H1d3Q4gqb5BzmV7RI=
+sidebar_class_name: "get api-method"
+info_path: docs/generated/api/qat
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get Program Version Transactions"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/api/program/data/version/trans/programId/{programId}/versionId/{versionId}"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Retrieve transactions for a specific program and version
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"description":"The ID of the program to retrieve transactions for","in":"path","name":"programId","required":true,"schema":{"type":"integer","format":"int32"}},{"description":"The ID of the version to retrieve transactions for","in":"path","name":"versionId","required":true,"schema":{"type":"integer","format":"int32"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"content":{"text/json":{"schema":{"type":"array","items":{"type":"object","properties":{"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser_ReportView"},"lastModifiedDate":{"type":"string","format":"date-time"},"notes":{"type":"string"},"versionId":{"type":"integer","format":"int32"},"versionStatus":{"type":"object","properties":{"id":{"type":"integer","format":"int32"},"idString":{"type":"string"},"label":{"type":"object","properties":{"baseModel":{"type":"object","properties":{"baseModel":"circular(BaseModel_ReportView)"},"title":"BaseModel_ReportView"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"}},"title":"Label_ReportView"}},"title":"SimpleObject_ReportView"},"versionType":{"type":"object","properties":{"id":{"type":"integer","format":"int32"},"idString":{"type":"string"},"label":{"type":"object","properties":{"baseModel":{"type":"object","properties":{"baseModel":"circular(BaseModel_ReportView)"},"title":"BaseModel_ReportView"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"}},"title":"Label_ReportView"}},"title":"SimpleObject_ReportView"}},"title":"ProgramVersionTrans_ReportView"}}}},"description":"Returns transactions for a specific program and version"},"403":{"content":{"text/json":{"schema":{"type":"object","properties":{"messageCode":{"type":"string"}},"title":"ResponseCode_ReportView"}}},"description":"User does not have rights to access this program"},"500":{"content":{"text/json":{"schema":{"type":"object","properties":{"messageCode":{"type":"string"}},"title":"ResponseCode_ReportView"}}},"description":"Internal error while getting transactions for program"}}}
+>
+  
+</StatusCodes>
+
+
+      

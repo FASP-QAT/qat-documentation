@@ -1,0 +1,71 @@
+---
+id: get-realm-country-1
+title: "Get Realm Country"
+description: "Retrieve a realm country by its ID"
+sidebar_label: "Get Realm Country"
+hide_title: true
+hide_table_of_contents: true
+api: eJztWm1v2zgM/isCP22A1/S69YYLDgf0HRnW69pmtw9FMDA2HWuzJVei0waB//tBsrM5adp5XQ7Yev7URiKphzQpUfYzh4hsaGTOUivowwWxkTQlgcIQppkIdaHYzMR4JiRbMTiEAHROBp3CIII+TIgvnOhBJfnxNwggR4MZMRkL/av5yhrDhMTgUOhYcEIry7AWpoYAAUgnniMnEIDCjKAPprHUIIIADF0X0lAEfTYFBWDDhDKE/hx4ljsNqZgmZCCAWJsMuRp6uQNlOXLqNtfKknUaO9vb7k+oFZNib4NuuffJOtzzu6b1+BOF7Pw1LiYsKzMYspxSQ26sdUqooAxgjJZOdUTpxsxAKE1YpGie7S8Gn0MAoSFkivZn316osGTco2wRssALV8/ii7hlI9UEyjIAlpy6oX20MnxvyTiVGsoh8hqtxhoRMr1gmZFTStHyqY5kLH8OJ5p4vseTZXv1Q3NBqXK4y6YumzaXTQc6WodiaX7nIYHWPv/qCREWxpAKW8CXbaHL6LJac118UxxvsEq7Yv9fF/sv/3zGlLZG5aU/krq/rD7G5oHJ/KFJm98z+eQy6K3fgMpFI/3Q0pcyy1M6q1zt9q5u7+r2rm7v+in2rifoW/0u4ynURkQxFikftG6tuxOjOzFaXG3VlIyVWl0g01C/t03wqsjGy9gjXYxTegr1tLij3n+rrwVaI5f2cqbC9ZXSdXldzXZdXtfldV3ef9HlLXqiJ+ReUH2M+7G9HkMuMD3QyhaZ/0B4qhUndqDeoeWWPnfHTnfsPIljp75AXayUVSNHY20oRMs/VjBSTUmxNrNH6HZtYlevXb12bWLXJm6uj8rw9lTbU7w9wcJEBmXaEmWGt+d5OtQpGVQhtdWSyr91PNbmdPnVwje0HgmyUpTqEYrvyIR3YT700ieT6nEhaWodFHwWxy11lT6LFwfpccGFoWNt9jWzzg7RJmONpm3WrTU11PmP2HFn+0YA1YYeAacm7d3zFsvPtizMRu1VXdJX69/DX1k18+UlfOm7sBVGZGGUvctVdEu/2n4JGyAMZmQtTuieCC2BrdiKXnINWLcViUiTFUqzSHBKwshJwtYRKyfEq7TOyodXP5UPF0uEUOdHrAsVOai7m+FnbgzqQLE7JVJBxmgjbhKZkgszSzW5G2pnGCeOEVv7uMi6UQAZcaJrNq3nz3ICfehhLnvN9O7Nl5O9hAAsmemCaFsY1wwnzLnt95z21nWBimUsQ0/YRYXpjGVot7Rxx9GyOyekHLGXIlHZFM6cI8laCgsjeebXGBMaMnuFQ3g1ak5fuvhXIW4KLX4dL4rwzYfhnbWPXCh9kb35MBSsP5MSUvmBqnj7Yt9bEX/6yb+gpvr6S4GfgWDxKF0AfLylirUDsLzW+VJMxN4iKGKodQoBpDIkZX1u1KzjvRzDhMTbakL8U32PEDtb2xCsBP3m5mYLvbiLca+2ZXtvBwdHf18evXA6jRQ733OxqD9wQB92tv54fbW7+/vrkZPKteUMVQPJCbFYzp6VSDbKox2bu46Zr6Q8RenvVt6neZ2HV4C5hOWNFgLor2y8owAS7e6RVzCfu8vZe5OWpRu+LsgxXa9GAUzRSHRHteeFS+v+j6AfY2rpAU+eXdQ07+eiPX18rWf1ICrnwhTTwv2CAD7T7C69vByVASSEERkPuBLaC0PKuaH+dRcqm7V8cjSEsvwXf9g80Q==
+sidebar_class_name: "get api-method"
+info_path: docs/generated/api/qat
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get Realm Country"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/api/realmCountry/{realmCountryId}"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Retrieve a realm country by its ID
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"description":"The ID of the realm country to retrieve","in":"path","name":"realmCountryId","required":true,"schema":{"type":"integer","format":"int32"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"content":{"text/json":{"schema":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":"circular(BaseModel)","createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"}},"title":"BaseModel"},"country":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":"circular(BaseModel)","createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"}},"title":"BaseModel"},"countryCode":{"type":"string"},"countryCode2":{"type":"string"},"countryId":{"type":"integer","format":"int32"},"createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"currency":{"type":"object","properties":{"id":{"type":"integer","format":"int32"},"idString":{"type":"string"},"label":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":"circular(BaseModel)","createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"}},"title":"BaseModel"},"createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"labelId":{"type":"integer","format":"int32"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"}},"title":"Label"},"name":{"type":"string"}},"title":"SimpleObject"},"label":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":"circular(BaseModel)","createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"}},"title":"BaseModel"},"createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"labelId":{"type":"integer","format":"int32"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"}},"title":"Label"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"}},"title":"Country"},"createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"defaultCurrency":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":"circular(BaseModel)","createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"}},"title":"BaseModel"},"conversionRateToUsd":{"type":"number","format":"double"},"createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"currencyCode":{"type":"string"},"currencyId":{"type":"integer","format":"int32"},"isSync":{"type":"boolean"},"label":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":"circular(BaseModel)","createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"}},"title":"BaseModel"},"createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"labelId":{"type":"integer","format":"int32"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"}},"title":"Label"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"}},"title":"Currency"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"},"realm":{"type":"object","properties":{"active":{"type":"boolean"},"actualConsumptionMonthsInPast":{"type":"integer","format":"int32"},"baseModel":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":"circular(BaseModel)","createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"}},"title":"BaseModel"},"createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"defaultRealm":{"type":"boolean"},"forecastConsumptionMonthsInPast":{"type":"integer","format":"int32"},"inventoryMonthsInPast":{"type":"integer","format":"int32"},"label":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":"circular(BaseModel)","createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"}},"title":"BaseModel"},"createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"labelId":{"type":"integer","format":"int32"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"}},"title":"Label"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"},"maxMosMaxGaurdrail":{"type":"integer","format":"int32"},"maxQplTolerance":{"type":"integer","format":"int32"},"minCountForMode":{"type":"integer","format":"int32"},"minMosMaxGaurdrail":{"type":"integer","format":"int32"},"minMosMinGaurdrail":{"type":"integer","format":"int32"},"minPercForMode":{"type":"number","format":"double"},"minQplTolerance":{"type":"integer","format":"int32"},"minQplToleranceCutOff":{"type":"integer","format":"int32"},"noOfMonthsInFutureForBottomDashboard":{"type":"integer","format":"int32"},"noOfMonthsInFutureForTopDashboard":{"type":"integer","format":"int32"},"noOfMonthsInPastForBottomDashboard":{"type":"integer","format":"int32"},"noOfMonthsInPastForTopDashboard":{"type":"integer","format":"int32"},"realmCode":{"type":"string"},"realmId":{"type":"integer","format":"int32"}},"title":"Realm"},"realmCountryId":{"type":"integer","format":"int32"}},"title":"RealmCountry"}}},"description":"Returns the realm country"},"403":{"content":{"text/json":{"schema":{"type":"object","properties":{"messageCode":{"type":"string"}},"title":"ResponseCode"}}},"description":"User does not have rights to get a realm country"},"404":{"content":{"text/json":{"schema":{"type":"object","properties":{"messageCode":{"type":"string"}},"title":"ResponseCode"}}},"description":"Realm country not found"},"500":{"content":{"text/json":{"schema":{"type":"object","properties":{"messageCode":{"type":"string"}},"title":"ResponseCode"}}},"description":"Internal error while getting a realm country"}}}
+>
+  
+</StatusCodes>
+
+
+      

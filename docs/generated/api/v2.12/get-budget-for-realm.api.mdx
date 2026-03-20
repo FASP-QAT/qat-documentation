@@ -1,0 +1,71 @@
+---
+id: get-budget-for-realm
+title: "Get Budget for a Realm"
+description: "API used to get the Budget for a specific BudgetId"
+sidebar_label: "Get Budget for a Realm"
+hide_title: true
+hide_table_of_contents: true
+api: eJydlE1v2zAMhv+KwMs2wEu6trv4tBT9CjC0aZOeiqBgbTrWZkuqRCcNDP/3QbK9JP3eTpYlke9L6RFrYFw4iG/hvkoXxDCPICWXWGlYagUxjCZjUTlKBWuxIBackzgKe0WmrUDhDCUyk0k3O04hAm3Iok8wTiGGBXG7dqrtNWFRQgQGLZbEZL14DQpLghisXw0ZpNc2yDk8NXTd7hGcI4u1rsQKVWvrp3QsdNYZcd4fRGDpoZKWUojZVhSBS3IqEeIaeG28qFRMC/JbM21L5HbqYB+aZu7DndHKkfMR+3t7/vPUEFdWudcstEb7uhOtmBQHeXrk4S/nc9RN00RwuHfwenYU58xmysiVG5xeXh+Nj49PLoTMgu6NIytSTU4ozSLHJQlMEnLOX5vf8DH9ww/qX1zO7k4vby6Oe/3+UjoYKN2YoUfp+B3l7y+d61gxWYWFIGv7YzSWlqTY45iTsMSW5BKLzZG/KdREUBLnuoMyYMg5xDBEI4ftCxh2DA7rbtBABI7sske1sgXEkDMbFw994OChQsX+CQTkUWGxZpm4gbaLZ/ROrE6rxP+INmlA5Go0gwiWaCXeFwG1wJ5UmQ5lSC48qVc7QgJVKka9mphpXfgkZF0rtT/4tj/Ye+ZgNBl/Clj0gOTk9cU02OnOD5Nwft2zPB1NJ4IJPUC75a9Wq3fKpxKljzifTu98nrvzqx+L3CVfjSvDliaCQiakHG0pjgwmOYnW/65kpvXgHi342zTacYlqK/CMeLc99eDvHEK9geT/GlzXOgJfpkCpfBnBZ90xdQtoJER9X422elvcD+cR5Nqx31zX9+joxhZN46cfKrJriG/nGyoCfKl0fpxCnGHh6I2yPl93fe+L+NeO+WJx3SSqdSC1qPwfRPCb1luNu5k3EeSEKdngt10dJQkZ3orbvEuP+d83eXYyg6b5A4DaP0M=
+sidebar_class_name: "get api-method"
+info_path: docs/generated/api/v2.12/quantification-and-analytics-tool
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get Budget for a Realm"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/api/budget/realmId/{realmId}"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+API used to get the Budget for a specific BudgetId
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"realmId","in":"path","description":"RealmId that you want the List of Budgets for","required":true,"schema":{"type":"integer","format":"int32"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Returns the List of Budgets for that Realm","content":{"text/json":{}}},"403":{"description":"Returns a HttpStatus.FORBIDDEN if the User does not have access to the Realm","content":{"text/json":{}}},"404":{"description":"Returns a HttpStatus.NOT_FOUND if the RealmId specified does not exist","content":{"text/json":{}}},"500":{"description":"Internal error that prevented the retreival of Budget","content":{"text/json":{}}}}}
+>
+  
+</StatusCodes>
+
+
+      

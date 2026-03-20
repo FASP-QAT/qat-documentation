@@ -1,0 +1,71 @@
+---
+id: get-region-by-id
+title: "Get Region for a RegionId"
+description: "API used to get the Region for a specific RegionId"
+sidebar_label: "Get Region for a RegionId"
+hide_title: true
+hide_table_of_contents: true
+api: eJydlE1z2jAQhv+KZi9tZ1ygJL34VDL54pJAIKcMk9nYa6zWlhRpDWE8/u8dySZAkjZpT7akXb2vVo+2Bsalg/gOLC2lVrCIICWXWGnYD2MYTcaicpQK1mJJLDgncRNiRaatQOEMJTKTSTc7TiECbcgit6MYlsTt2skmrBq0WBKT9cI1KCwJ4s5ACJBe2CDn8NLNVkNwjiw2uhJrVOy9HfqCCCw9VtJSCjHbiiJwSU4lQlwDb4wXlIppST4007ZEbqeOhtA0C5/ujFaOnM8YDgb+89ILV1a5PWWIINGKSXGQoSfu/3Q+tm6aJoLjwdGfd0FxyWxmjFy53vn1zcn49PTsSsgs7H/ryIpUkxNKs8hxRQKThJx7V/L4g5JX1/P78+vbq9Ot5HOpuwumdGeAnqTjd6S/v1WzsWKyCgtB1mrb3qKxtCLFHrGchCW2JFdYCJ19pKxNBCVxrjvQAl6cQwx9NLLfQtWvt3A1EIEju9qyV9kCYsiZjYv7PqP3WKFiz3PgFxUWG5aJ62m7fEXjxOq0SvxAtJuGJzEdzSGCFVqJD0XgJwAlVaaDf8mFx296ICRQpWK0VRNzrQu/CVnXSg1734a9wSsHo8n4k/P4tzSECk5HczELdrrCYRIK172z89FsIpiwhOjF8dfr9TvHpxKlz7icze79PveX0x/L3CVfjStDSBNBIRNSjvYURwaTnETr/1Ay07r3gBb8NRrtuES1l3hBfNhr9lrMQR3qHSD/17C6lhDYMgVK5U8SrNYdT3eARoa20iEZPzesRQS5duxj6voBHd3aomn89GNFdgPx3WLHQ8Aulc7/pxBnWDj6y2k+33Rt7Iv4h9735nG6SVSbgGdR+RFE8Is2++23WTQR5IQp2eC1XR4lCRneS9w9Qw/38xO8OJtD0/wGwzgrDg==
+sidebar_class_name: "get api-method"
+info_path: docs/generated/api/v2.12/quantification-and-analytics-tool
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get Region for a RegionId"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/api/region/{regionId}"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+API used to get the Region for a specific RegionId
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"regionId","in":"path","description":"RegionId that you want to the Region for","required":true,"schema":{"type":"integer","format":"int32"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Returns the Region","content":{"text/json":{}}},"403":{"description":"Returns a HttpStatus.FORBIDDEN if the User does not have access","content":{"text/json":{}}},"404":{"description":"Returns a HttpStatus.NOT_FOUND if the RegionId specified does not exist","content":{"text/json":{}}},"500":{"description":"Internal error that prevented the retreival of Region","content":{"text/json":{}}}}}
+>
+  
+</StatusCodes>
+
+
+      

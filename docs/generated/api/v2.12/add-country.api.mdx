@@ -1,0 +1,71 @@
+---
+id: add-country
+title: "Add Country"
+description: "API used to add a Country"
+sidebar_label: "Add Country"
+hide_title: true
+hide_table_of_contents: true
+api: eJztWVFvIjcQ/ivWvLSVNoTQy127TyUpVSLlEgJcHxpFaLCH4Ouy3tjecAjtf6/Gu4QFciR56yF4gvF4/M0w9nxjL8Djg4P4DqTJU2/ncB+BIietzrw2KcTQ7l6K3JES3ghUSqA4r1QjMBlZZL1LBTGgUqshS485OX9m1BzixYbNwYSWVoQZfSXphZ+gF3OTixmmvloLIpAm9ZR6NoFZlmgZljv+6tjOApyc0BT5m59nBDGU1iCCzDI4r8nxqLSEntTZ/HXV3JFld571dOrpgSxEMDZ2ir4U/dqCIgrKKU6ppu681ekDFEUEXvuERWfotPziyPKUCsqf6F+YVVtDoacjr6fEkxJ0/rNReqz/H07U8bzPE5ReP9X1R8YkhGkITZkSbwZe6Z8b9RL2tfHWiwoJjig5ZM9+ZE/4M98MO2gPKf1+XgxdtmNwbHcMZi8PjtDRZ6MOKbcvKVf7Q0FqK/ME7c9nS+EvsI6mUq1jvAoHEAc5t5ZS+YZI6Xdl+CHT9iPTDofbIeV+2MNNq34JY6dLfT3NEropQ3hIqENCbSXUsrssWMgNprakIPY2pyBwmUldGaFWs7nddvbI5zZ1AkU/l5KcE9IoEnos/ITEczMrZuiEKzXGebLehXr65pftZ8Dxoflx10oX3md9jz53jeubwbB9ft7pDtpnV53lsss+mLsU4XJuckkJ7URqvMhT/ZjTKwhOd/taQ3B5Pej0rttXw36n93enN+z0eje9Coil0m8zJWH4tyBrjS0bc6VVwINJYmYb0fJGSMNb1+8GWkQwJT8xfFWQGReyGv0EYjjGTB9XzdoxRODIPpHla4kF5JbTZeJ95uJjVmw85ph6Pa6uAjDFZO61dA1jOS3Xo9C1RuUywCyNirGx4rY9gAie0GocJSFfiuI+AobaW11bdL4he7V1viw3X7O+tepdZ/0EgFaz9eGo+emo9fvg5DQ+PYlbvzWan07+gZd2/Wumt/flLvvLvcj7Y625bm60zqtNvd4xr+TPXHIfIvHMpZp1prThbCBImzLmRZuybE22VrR+/GAVG62JrkVtPzw8pMM702FF5r5H/vfEz3RsQhWryMftWtkRmCrRXtYeMTCGeQJXrbLwtBonrUZzqx61u5c/uXC7XfIPrqS37YHoh+JUlU+UoXxW/vzV7neFJ5xCtFEMZ7PZK8WQpqh5xkW/P2Q7w4vbPx4mTh5lbhpUOEpaUuqotmI7QzkhUeJfX3JsTGOENrAyruFTTOsTlao9Dqx5vlgRg50vChVrDNQhS1AH4hgwLCq2cAeY6VWpggj4zWLChCK+g8WCU/GLTYqCxY852TnEd/ercs+/iggmhIpsoBj/0jyQy4DvaMAIWD3JGcnWq0MRLWe0paTM13RXhIfpxDPZ6d70mW+MqqeQaVlzLc74mQRnEEN4SuElAncNsgUkmD7k+MC6pU3+/AcAYp7O
+sidebar_class_name: "post api-method"
+info_path: docs/generated/api/v2.12/quantification-and-analytics-tool
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Add Country"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/api/country/"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+API used to add a Country
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={undefined}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"description":"The Country object that you want to add","content":{"application/json":{"schema":{"type":"object","properties":{"createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"},"active":{"type":"boolean"},"countryId":{"type":"integer","format":"int32"},"countryCode":{"type":"string"},"countryCode2":{"type":"string"},"label":{"type":"object","properties":{"createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"},"active":{"type":"boolean"},"labelId":{"type":"integer","format":"int32"},"label_en":{"type":"string"},"label_sp":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"baseModel":{"type":"object","properties":{"createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"},"active":{"type":"boolean"},"baseModel":"circular(BaseModel)"},"title":"BaseModel"}},"title":"Label"},"currency":{"type":"object","properties":{"id":{"type":"integer","format":"int32"},"label":{"type":"object","properties":{"createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"},"active":{"type":"boolean"},"labelId":{"type":"integer","format":"int32"},"label_en":{"type":"string"},"label_sp":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"baseModel":{"type":"object","properties":{"createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"},"active":{"type":"boolean"},"baseModel":"circular(BaseModel)"},"title":"BaseModel"}},"title":"Label"},"idString":{"type":"string"}},"title":"SimpleObject"},"baseModel":{"type":"object","properties":{"createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"},"active":{"type":"boolean"},"baseModel":"circular(BaseModel)"},"title":"BaseModel"}},"title":"Country"}}},"required":true}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Returns a Success code if the operation was successful","content":{"text/json":{}}},"406":{"description":"Returns a HttpStatus.NOT_ACCEPTABLE if the Country Code supplied is not unique","content":{"text/json":{}}},"500":{"description":"Returns a HttpStatus.INTERNAL_SERVER_ERROR if there was some other error that did not allow the operation to complete","content":{"text/json":{}}}}}
+>
+  
+</StatusCodes>
+
+
+      

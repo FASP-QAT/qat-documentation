@@ -1,0 +1,33 @@
+---
+id: globalconsumptionoutput-reportview
+title: "GlobalConsumptionOutput_ReportView"
+description: ""
+sidebar_label: "GlobalConsumptionOutput_ReportView"
+hide_title: true
+hide_table_of_contents: true
+schema: true
+sample: {"countryConsumption":{},"totalActualConsumption":0,"totalConsumption":0,"totalForecastedConsumption":0,"transDate":"2024-07-29T15:51:28.071Z"}
+custom_edit_url: null
+---
+
+import Schema from "@theme/Schema";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"GlobalConsumptionOutput_ReportView"}
+>
+</Heading>
+
+
+
+
+
+<Schema
+  schema={{"type":"object","properties":{"countryConsumption":{"type":"object","additionalProperties":{"type":"object","properties":{"actualConsumption":{"type":"number","format":"double"},"country":{"type":"object","properties":{"code":{"type":"string"},"id":{"type":"integer","format":"int32"},"idString":{"type":"string"},"label":{"type":"object","properties":{"baseModel":{"type":"object","properties":{"baseModel":"circular(BaseModel_ReportView)"},"title":"BaseModel_ReportView"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"}},"title":"Label_ReportView"}},"title":"SimpleCodeObject_ReportView"},"forecastedConsumption":{"type":"number","format":"double"}},"title":"CountryConsumptionData_ReportView"}},"totalActualConsumption":{"type":"number","format":"double"},"totalConsumption":{"type":"number","format":"double"},"totalForecastedConsumption":{"type":"number","format":"double"},"transDate":{"type":"string","format":"date-time"}},"title":"GlobalConsumptionOutput_ReportView"}}
+  schemaType={"response"}
+>
+  
+</Schema>
+            

@@ -1,0 +1,71 @@
+---
+id: get-planning-unit-forproduct-category
+title: "Get Planning Unit for Product Category"
+description: "Retrieve a list of active planning units for a specific product category"
+sidebar_label: "Get Planning Unit for Product Category"
+hide_title: true
+hide_table_of_contents: true
+api: eJztWdtu2zgQ/RVinlpAjYO02WKNxQJJmgQp0lsu7YNhFDQ1tthKpEKOnDUM/ftiKHkj2YrjbBdFuvBTIg15OHNmOKIP5xCjV07npK2BPlwgOY1TFFKk2pOwYyEV6SmKPJXGaDMRhdHkxdg6IYXPUemxViJ3Ni4UCSUJJ9bNIAKbo5MMexZDHyZIH2uEa6PpxLp6ytHdjFw6mSGh89AfzJc8u0pQnL1hhyjBlfUEWeEWvq+6ChFoBsklJRCBkRnyU9uDsxgicHhTaIcx9MkVGIFXCWYS+nOgWc6TtCGcICOOrcskVa9e7kFZDnm6z63x6HnG3u4u/1HWEBoKGPgX9b55Dmi+Ci2dk8yDJsx8470dfUNFTJBjUklX8FViGuNG1qYoDZQRjKTHdzbG9GGYxlBQ2qkile7Z4eLl1wvMraPPGm+fMzBpShmsawDbx9ahkp7qPP9forjDPGmbWsgrE7n0N6icCCZo0Gl1LkePDPbn8pKyf1/RNNb15LSZ3BnHbo0xX2f0eYex4VQgp8uhLWGPIczTOxvrscb4cPYwHYVHt3EV8+Cqt65z61B6ra49ujWuvZHUgdJYM5aEL0hnyDOXPyUPRqU3jUjHl9XS92ZhW3ybFl/DeKmzPMUPgYQlpx3KNHuYKWXjrjKLtql9Eqk9snF3eslJhW67U3+tdHamstjofLfdqE86s/ds1Ma4+w+8W/63B7DqAJYVKek81dhkyxTZqO1nbItRWp3YGlrA5tFtG84vV/D/ouE0daL2GB61olcVzvgflqvKCF7tvnyUWnNPNjP0Xk5CmOu5uqilIh65FOZylLxXRWzRC2NJJHKKwulJQp5lL6kUei8o0f6euF491bje29U8FSYO2WKVr84Xxp2B7T9SXvuJgZ0Z4kacCnTOOnGb6BTFBIk/ou2QqxXkhCXPfypfBNFpGEGGlNhaPg0CKSXQh57Mda/ZQXtLP4B78xVps+zVQlsEHt10obEWjrtOQpT7fo9xd24KaYg3SdBupZHpjLTyO9Zx+2+HecqqlSSMRYUpGI5lUI+qcJpmYY0RSofuoGDfB8Om+ZJTVDfBxqDF08miM7/9crWy9jFTHKrk7ZcrQfY7GqFNeFF19L44DCjij2D8E2oxN2iMwQLRIttMQMiENmPLDrTX+tTiRBwsSBFX1qYQQaoVGh/Kp5aWD3KpEhTnlUF8Rud55t7OLkRLpN/e3u7IMJw57tVYvnd+dnT8/vL4Bc9pVOGnA+ZiWgFCH/Z2fn892N//7fUwfFetp0yahienSKJVV2F3faz3U0N9b4Xc2Fb/5Z1ATXfYp3kqdVB5Ax3zurgHIHMN7QMCrCo8EfS71Pu6xocRJNYTo83n/Hm9dmlZ8uubAvlX52AYwVQ6Lfk4Eu4atOf/Y+iPZepxDRvPLuobgufiR68kOtlY3AUYDnIq04KfIILvOOu8siiHZQQJypjPXoN5Pe5AKcypgXDXGstmXzk9voKy/Bt4MRpD
+sidebar_class_name: "get api-method"
+info_path: docs/generated/api/qat
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get Planning Unit for Product Category"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/api/planningUnit/productCategory/{productCategoryId}/active"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Retrieve a list of active planning units for a specific product category
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"description":"The ID of the product category to retrieve planning units for","in":"path","name":"productCategoryId","required":true,"schema":{"type":"integer","format":"int32"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"content":{"text/json":{"schema":{"type":"array","items":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":{"type":"object","properties":{"baseModel":"circular(BaseModel_ReportView)"},"title":"BaseModel_ReportView"},"forecastingUnit":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":{"type":"object","properties":{"baseModel":"circular(BaseModel_ReportView)"},"title":"BaseModel_ReportView"},"forecastingUnit":"circular(ForecastingUnit_ReportView)","forecastingUnitId":{"type":"integer","format":"int32"},"genericLabel":{"type":"object","properties":{"baseModel":{"type":"object","properties":{"baseModel":"circular(BaseModel_ReportView)"},"title":"BaseModel_ReportView"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"}},"title":"Label_ReportView"},"label":{"type":"object","properties":{"baseModel":{"type":"object","properties":{"baseModel":"circular(BaseModel_ReportView)"},"title":"BaseModel_ReportView"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"}},"title":"Label_ReportView"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser_ReportView"},"lastModifiedDate":{"type":"string","format":"date-time"},"productCategory":{"type":"object","properties":{"id":{"type":"integer","format":"int32"},"idString":{"type":"string"},"label":{"type":"object","properties":{"baseModel":{"type":"object","properties":{"baseModel":"circular(BaseModel_ReportView)"},"title":"BaseModel_ReportView"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"}},"title":"Label_ReportView"}},"title":"SimpleObject_ReportView"},"realm":{"type":"object","properties":{"code":{"type":"string"},"id":{"type":"integer","format":"int32"},"idString":{"type":"string"},"label":{"type":"object","properties":{"baseModel":{"type":"object","properties":{"baseModel":"circular(BaseModel_ReportView)"},"title":"BaseModel_ReportView"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"}},"title":"Label_ReportView"}},"title":"SimpleCodeObject_ReportView"},"tracerCategory":{"type":"object","properties":{"id":{"type":"integer","format":"int32"},"idString":{"type":"string"},"label":{"type":"object","properties":{"baseModel":{"type":"object","properties":{"baseModel":"circular(BaseModel_ReportView)"},"title":"BaseModel_ReportView"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"}},"title":"Label_ReportView"}},"title":"SimpleObject_ReportView"},"unit":{"type":"object","properties":{"code":{"type":"string"},"id":{"type":"integer","format":"int32"},"idString":{"type":"string"},"label":{"type":"object","properties":{"baseModel":{"type":"object","properties":{"baseModel":"circular(BaseModel_ReportView)"},"title":"BaseModel_ReportView"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"}},"title":"Label_ReportView"}},"title":"SimpleCodeObject_ReportView"}},"title":"ForecastingUnit_ReportView"},"label":{"type":"object","properties":{"baseModel":{"type":"object","properties":{"baseModel":"circular(BaseModel_ReportView)"},"title":"BaseModel_ReportView"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"}},"title":"Label_ReportView"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser_ReportView"},"lastModifiedDate":{"type":"string","format":"date-time"},"multiplier":{"type":"number","format":"double"},"planningUnitId":{"type":"integer","format":"int32"},"unit":{"type":"object","properties":{"code":{"type":"string"},"id":{"type":"integer","format":"int32"},"idString":{"type":"string"},"label":{"type":"object","properties":{"baseModel":{"type":"object","properties":{"baseModel":"circular(BaseModel_ReportView)"},"title":"BaseModel_ReportView"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"}},"title":"Label_ReportView"}},"title":"SimpleCodeObject_ReportView"}},"title":"PlanningUnit_ReportView"}}}},"description":"Returns a list of active planning units for a specific product category"},"403":{"content":{"text/json":{"schema":{"type":"object","properties":{"messageCode":{"type":"string"}},"title":"ResponseCode_ReportView"}}},"description":"User does not have rights to access this product category"},"404":{"content":{"text/json":{"schema":{"type":"object","properties":{"messageCode":{"type":"string"}},"title":"ResponseCode_ReportView"}}},"description":"No planning units found for the specified product category"},"500":{"content":{"text/json":{"schema":{"type":"object","properties":{"messageCode":{"type":"string"}},"title":"ResponseCode_ReportView"}}},"description":"Internal error while getting planning unit"}}}
+>
+  
+</StatusCodes>
+
+
+      

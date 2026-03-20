@@ -1,0 +1,71 @@
+---
+id: get-realm-by-id
+title: "Get Realm for a RealmId"
+description: "API used to get the Realm for a specific RealmId"
+sidebar_label: "Get Realm for a RealmId"
+hide_title: true
+hide_table_of_contents: true
+api: eJydlE1v2zAMhv+KwMs2wEuytLv4NBf9yqVNm/RUBAVr07E2W1IlOmlg+L8Pkp0labu12CmxRPJ9RT1iA4xLB/E9WMKygkUEGbnUSsNSK4ghmU5E7SgTrMWSWHBB4taHilxbgcIZSmUu025xkkEE2pBFnz7JIIYlcdg62YRNgxYrYrJetAGFFUHciYd96UUNcgEvnfQCggtksdG1WKNib+vAEkRg6amWljKI2dYUgUsLqhDiBnhjvJpUTEvyobm2FXK3dDSGtl34dGe0cuR8xng08j8vnXBtldsJQwSpVkyKgwo98/Cn86FN27YRHI+O/l4ExSWzmTFy7Qbn17cnk9PTsysh81D+zpEVmSYnlGZR4IoEpik5967k8Qclr67nD+fXd1enW8ltn/ubpWynT8/S8TvK39/q2EQxWYWlIGu17a7QWFqRYo9WQcISW5IrLIXOP9DUNoKKuNA9YQEsLiCGIRo5DDgNm56qFiJwZFdb5mpbQgwFs3Hx0McPnmpU7CkO2KLCcsMydQNtl68wnFqd1an/EF3R8BBukjlEsEIr8bEM6ASWpMp1cC+59OTdHAgJVJlItmpirnXpi5B1ndR48G08GL1ykEwnn5wHvyMhtO8mmYtZsNO3DdPQtv59nSezqWBC39TD46/X63eOTxVKn3E5mz34Og+XNz+WhUu/GleFkDaCUqakHO0pJgbTgkTn/1Ay13rwiBb8JRrtuEK1l3hBfDBgdnPloAvNDo7/mVH9JAhUmRKl8qcINpuepHtAI8M06ViMtzNqEUGhHfuIpnlER3e2bFu//FST3UB8v9iREIDLpPP/M4hzLB394ySfb/vZ9UV8eNy9eZR+EdUmYFnW/gsi+EWbvXHbLtoICsKMbDDa7SZpSob38nZvzzP9591dnM2hbX8D46ghnw==
+sidebar_class_name: "get api-method"
+info_path: docs/generated/api/v2.12/quantification-and-analytics-tool
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get Realm for a RealmId"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/api/realm/{realmId}"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+API used to get the Realm for a specific RealmId
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"realmId","in":"path","description":"RealmId that you want to the Realm for","required":true,"schema":{"type":"integer","format":"int32"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Returns the Realm","content":{"text/json":{}}},"403":{"description":"Returns a HttpStatus.FORBIDDEN if the User does not have access","content":{"text/json":{}}},"404":{"description":"Returns a HttpStatus.NOT_FOUND if the RealmId specified does not exist","content":{"text/json":{}}},"500":{"description":"Internal error that prevented the retreival of Realm","content":{"text/json":{}}}}}
+>
+  
+</StatusCodes>
+
+
+      

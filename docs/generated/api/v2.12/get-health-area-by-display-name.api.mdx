@@ -1,0 +1,71 @@
+---
+id: get-health-area-by-display-name
+title: "Get HealthArea by display name"
+description: "API used to get the complete HealthArea by providing the display name of the HealthArea and the Realm"
+sidebar_label: "Get HealthArea by display name"
+hide_title: true
+hide_table_of_contents: true
+api: eJy9VE1v5DYM/SsCL90F1HE2RS8+1UXaZC5FvvYUDALG5tjatSVFoic1DP33hWQn45mkX8GiF1umKfKRfHwjMNYe8jtoCFtuCkcIGwkV+dIpy8poyKG4XIveUyXYiJpYcEOiNJ1tiUlcvFwUD4OwzuxUpXSdnCrlbYuD0NiRMNtkW/ijrpLpmrDtQIKx5DDmXFeQQ0289/11OJti/YEdgQSLDjtichH8CDEB5OBioHUFElTEbZEbOC7mevIR3CCLwfTiCTXHyo7AbY0DCY4ee+WogpxdTxJ82VCHkI/Ag40plWaqKbpujeuQJ9NPpxCCfMGlJ9B/Deps2ajvhMyzU7qGEDbR2VujPfn4//TkJL6O28K90/4oF0gojWbSnALTn5x98dF/DCFI+PmtSGvN5DS2gpwzbqrGOtqRZprm7YgdqR22kRP/MlmQ0BE3ZmZGogA3kEOGVmV79mY18YIq2UyJbJwPIYs9zsb4DCDBk9s9s6h3LeTQMFufZzHu6rFHzWqrykRL1NgOrEq/Mq5+NcNLZ6q+jB9iChoHJa6KW5CwQ6fwoU39TwNRemtSlYrbOKyrg0RpM4rnbOLWmDYGIeenVKerT6erk1cIisv1Dz4SBsuS/DTLq+JW3CQ4c3uxTO2dmfl7cXMpmDCu32H5T09P/1A+dajijYubm/sY5/7i6pe68eWP1nfJJUhoVUna0yJjYbFsSEz4D1NujVk9oIurA9Z47lAvLp4TH4nNUl6OmzHuufS/6de8eIm5tkWlYwdSiePM1jtAq0Au1VbCIWPTaj/LWL4/zkXm6b2R0BjPMeA4PqCnz64NIZofe3ID5HebPekStyvl47mCfIutp7/p1ofrWVk+iv+mlW+WPxtRD2kN2j5+gYSvNCwEO2rluxC+QzjfATP1PGxCGlxFLnV0+lWUJVleXNrrVtzzF806/+0WQvgGL++NbQ==
+sidebar_class_name: "get api-method"
+info_path: docs/generated/api/v2.12/quantification-and-analytics-tool
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get HealthArea by display name"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/api/healthArea/getDisplayName/realmId/{realmId}/name/{name}"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+API used to get the complete HealthArea by providing the display name of the HealthArea and the Realm
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"realmId","in":"path","description":"RealmId that you want to the HealthArea for","required":true,"schema":{"type":"integer","format":"int32"}},{"name":"name","in":"path","description":"Display name that you want to the HealthArea for","required":true,"schema":{"type":"string"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Returns the HealthArea","content":{"text/json":{}}},"500":{"description":"Internal error that prevented the retreival of HealthArea","content":{"text/json":{}}}}}
+>
+  
+</StatusCodes>
+
+
+      

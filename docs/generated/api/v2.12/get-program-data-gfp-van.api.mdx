@@ -1,0 +1,71 @@
+---
+id: get-program-data-gfp-van
+title: "Get Artmis view ProgramData list for given ProgramId and VersionId"
+description: "API used to get GfpVan view ProgramData list for given ProgramId and VersionId"
+sidebar_label: "Get Artmis view ProgramData list for given ProgramId and VersionId"
+hide_title: true
+hide_table_of_contents: true
+api: eJy9VU1v2zgQ/SvEXLYFtFaadi86rRZpEl8SJ3Z6CYxgIo0kdiWSIUd2DUH/vSDlD7lpm7a76EkixZn3ZvTmsQPG0kFyD8bq0mJzhoywjCAnl1lpWGoFCaSzqWgd5YK1KInFRWE+oBIrSWsxOwSKWjoWhbailCtSu0/TXKDKxQeyTmo1zSECbcgiD6sESuJRliE5RGDQYkNM1hPsQGFDkOyIhjTSkzPIFXzJeH9KcIUsNroVa1TsC+CKjkgX2kIElp5aaSmHhG1LEbisogYh6YA3xuNKxVSSP1po2yAPW29Poe+jPbnVqMZvk9uf+h3klj7cGa0cOR9xenLiH8eMbolbq9wzeP9DIYJMKybFAZA+cfzR+aiu7/sI3p28/XY+FJfMZs7IrZucX9/+Mz07e38lZBGQ7hxZkWtyQmkWFa5IYJaRcy9CvvtByKvrxcP59d3V2Q5yXJwzlMlCUn7gQJ9eLvivrzVwqpiswlqQtdoO/9VYWpFiPzYVCUtsSa6wFroY0/guWh9BQ1zp7ZSEoeAKEojRyHg0s3FZmBWqeK/7uNu/9vFecHG3f+0hAkd2tRuv1taQQMVsXBL79JOnFhXLQmZhUlFhvWGZuYm25TNJz6zO28wvxJA02MBNuoAIVmglPtZBfkGPUhU6FCu59uq9OQIKZpHu0MRC69onGXhDAqeTN6eTk2cM0tn0D+dHaJBQ6PlNuhDzQGfbZcxCl7fTep7OZ4IJG4i+KH+9Xr9QPjUofcTlfP7g8zxc3vxdVi7707gmHOkjqGVGytEIMTWYVSQG/seQhdaTR7TeTsBoxw2qUeAFsUgtN9L9B9c9alh3kN3/7+9bWwpqNjVK5dsR6u22Cr4HNNLr+WgSBhUftkOyZLwYO2xyWCwjqLRjn7frHtHRna373m8/tWQ3kNwvD0IMes+l8+85JAXWjr7TnVe3W/t9LX76WvlqI7abqDZhOurWryCCf2lzdMH5i+WXaP70BfMLNA+975d9BBVhTjZ0dvieZhkZHkUerM17wN7WLt4voO8/A5ef86Q=
+sidebar_class_name: "get api-method"
+info_path: docs/generated/api/v2.12/quantification-and-analytics-tool
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get Artmis view ProgramData list for given ProgramId and VersionId"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/api/programData/gfpvan/programId/{programId}/versionId/{versionId}"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+API used to get GfpVan view ProgramData list for given ProgramId and VersionId
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"programId","in":"path","description":"programId that you want to the ProgramData for","required":true,"schema":{"type":"integer","format":"int32"}},{"name":"versionId","in":"path","description":"versionId that you want to the ProgramData for","required":true,"schema":{"type":"integer","format":"int32"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Returns the ProgramData list","content":{"text/json":{}}},"403":{"description":"Returns a HttpStatus.FORBIDDEN if the User does not have access","content":{"text/json":{}}},"404":{"description":"Returns a HttpStatus.NOT_FOUND if the ProgramData specified does not exist","content":{"text/json":{}}},"500":{"description":"Internal error that prevented the retreival of ProgramData","content":{"text/json":{}}}}}
+>
+  
+</StatusCodes>
+
+
+      

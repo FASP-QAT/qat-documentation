@@ -1,0 +1,71 @@
+---
+id: update-dimension
+title: "Update Dimension"
+description: "API used to update a Dimension"
+sidebar_label: "Update Dimension"
+hide_title: true
+hide_table_of_contents: true
+api: eJztWEtv4zYQ/ivEXNoCiu24m26rU52siwTIZh3b6aFBYIypscWtJDIkFa9h6L8XQ/kh20HSvbVBfLKGw3mQw28+zAo8zh3E95ConAqndAEPESTkpFXG82cMvcGVKB0lwmtRmgQ9CRSftvoRaEMWWfkqgRhqlea6pceSnD/XyRLi1YH1cUo7Y0JPv5L0wqfoxVKXYoGF3/mFCKQuPBWe7aAxmZLBcfurY2MrcDKlHPmfXxqCGGqDEIGxHKZX5HhVWkJPyfnyddXSkeXEtnqq8DQnCxHMtM3R16Kfu1BFQbnAnBrqzltVzKGqIvDKZyw6R6fknSPLW9ahfOL8jnY1fPABnHiVE2/K0PnPOlEz9d9IohnP92WC0qunpv5U64yw4LVtUf7r0DOcUvZ+/W/j+sNlft/VT6h4JuzNojMvLM7sC4vm+cUpOvqsk/eSeysl17hQkMrKMkP74/lG+BPsR7NWbcZ4HQDovTTeS+OoNHaUqGIxsyJlKYHY25KCwBlduPqMup3OMVcaki9t4QSKUSklOSekTkiomfApiS0NEwt0wtUaszLbZ02evvkNXQpxfOj88pKnS+/NyKMvXevmy3jSu7joD8a98+v+xu2OvLmSGRklQjlRaC/KQj2W9Ir7s5cTbbi/uhn3hze968moP/yzP5z0h8Mvw3UUluqkdU5C87cga7WtiWSikhAPZpleHByV10Lq3GR0yC4PAq0iyMmnmhmuKUNNo08hhjYa1d4SlTZE4Mg+kWVWvYLScrmk3hsXt1m19Vhi4dVsTVyxwGzplXQtbbks949hYHVSyhBnbVTMtBW3vTFE8IRW4TQL1VJVDxFwrMMd0+5/Q07rCF82j6/TfFqNlraHANDtdD+cdD6edH8bn57FZ6dx99dW5+PpX/Dcq3/N9PG7fMn+5i3y6ziggp0G0XsLyW2JTqdJY3ZgtWMvhzImLYcysyfb60P//8OqDlvr20hJFTMdUGfdK273UEJgkYjeBirEWGsGdQaZGie6rdNuq3MEH73B1Q+OEQ7rZsHId9sbi1HAkjXcoQxwt87nj95oIDxhDtEBdi0Wi1ewi3JUvONyNJqwncnl7e/z1MkT4/KgwqekJBWOGh57BmVKoo5/3+VM69YUbWiiRjufY9HYeFePIpqDhr30Vzs0f32EsW73AfRNhip0/BDNag3094BGQQOIIAKelaTaeV5drbgs72xWVSx+LMkuIb5/2CE1f1URpIQJ2dAd/qYlxHBRh3ky5hhYPSs5lqPxRhVtdvSkJOMburtmxZ1g26gGd9wppuu5S64T1rW44JkMLiCGMLxhD4FzBNkKMizmJc5ZtzbJv38AMl0dQA==
+sidebar_class_name: "put api-method"
+info_path: docs/generated/api/v2.12/quantification-and-analytics-tool
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Update Dimension"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"put"}
+  path={"/api/dimension/"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+API used to update a Dimension
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={undefined}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"description":"The Dimension object that you want to update","content":{"application/json":{"schema":{"type":"object","properties":{"createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"},"active":{"type":"boolean"},"dimensionId":{"type":"integer","format":"int32"},"label":{"type":"object","properties":{"createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"},"active":{"type":"boolean"},"labelId":{"type":"integer","format":"int32"},"label_en":{"type":"string"},"label_sp":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"baseModel":{"type":"object","properties":{"createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"},"active":{"type":"boolean"},"baseModel":"circular(BaseModel)"},"title":"BaseModel"}},"title":"Label"},"baseModel":{"type":"object","properties":{"createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"},"active":{"type":"boolean"},"baseModel":"circular(BaseModel)"},"title":"BaseModel"}},"title":"Dimension"}}},"required":true}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Returns a Success code if the operation was successful","content":{"text/json":{}}},"406":{"description":"Returns a HttpStatus.NOT_ACCEPTABLE if the Dimension supplied is not unique","content":{"text/json":{}}},"500":{"description":"Returns a HttpStatus.INTERNAL_SERVER_ERROR if there was some other error that did not allow the operation to complete","content":{"text/json":{}}}}}
+>
+  
+</StatusCodes>
+
+
+      

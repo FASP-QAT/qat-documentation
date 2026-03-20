@@ -1,0 +1,71 @@
+---
+id: get-planning-unit-by-auto-complete-filter-for-product-category
+title: "Get Planning Units by Product Category"
+description: "Retrieve a sortable list of planning units filtered by product category"
+sidebar_label: "Get Planning Units by Product Category"
+hide_title: true
+hide_table_of_contents: true
+api: eJytVlFv2zYQ/ivEPW2AZgUpsmLCMMBNkyBFsbax0z4ExkBLZ4mtTDLkyY4h6L8XR0mLbMfb7O5JEnk8fvfdfXeqIUOfOmVJGQ0J3CE5hSsUUnjjSM5LFKXyJMxC2FJqrXQuKq3Ii4UqCR1mYr4R1pmsSkmkkjA3bgMRGItOstfbDBLIkT52x++1ojebcUXm0ixtiYTXwdO1cR9bN5fPXqx0comEzkPyUO+AnRYoPEqXFoLwicTCOEEFbgMN8CECxSespAIi0HKJkEB7dopPvO/wsVIOM0jIVRiBTwtcSkhqoI0N1uSUzqFpopdwlFLnlczxaBD9wR+HsJuEkEFhXIbuaFR2OxMT4+gDOzoK5YyNvTXao+f987MzfqRGE2oKJ/CJ4q+eQ6j3HUnnJBeBIlz6wbqZf8WUgVvHVUaqda+ygY3ShHnAuzBuKaldenUOTQQqm7QQ9zH3BLxAOZCikpcmisv2QwDx11tn7Fuz1q8+K1xD07DhnqQqp32g/xQpNRFcHEncAYKW6L3M8dJk/xLhXZc1ttyPcDfAW03otCwFOhfKTJKwDleoCbMQtmu7iiw59gNlGO6XOesc+MrMrLWHWQRLpMJ0PSR0BCoggVhaFWedXWwHvSWWFZm0ay1xS228U89x/az9Jq57DTZxfajwG4jAo1v1nahyJSRQEFmfxAxm9FhJTWqh0tD1pJblhlTqR8blsEvZDWrujpiJ1qdgd6wXj2nlFG3CHXOUDt244oAfZsPtCWe8TerQqP+67kv+3Zfp3t1XnK6QhXdfpoLMN9RC6bDQSiURb4IX8XvY/AM6jXNltP4h6ouHCQipU3phGMD2XZ+2OBHjnhQxNaaECEqVovahGrvGM7YyLVC8bzfEZ3SeT56PziDaIX29Xo9kMGeO486Xj9/fXl79Obn6hc8MivrTmLlYtQ4hgfPRb68fLi5+fT1jK2s8LaUeILlBEv3MEvdBp/ON6EaUGMyorZAHKv0fh2nHdlC9LaXSDDmwUXeCeABpFYPpJMFKGYgCIhjKgttiuLHtETtDN9kajMlgQiUH58IsgsJ4YiB1PZce713ZNLz8WKHjep5FsJJOMQvtLFee3zNIFrL0+A88/nTXjZyfxVEj/0XW+tmiOdKVLCv+ggi+4Wb7lyAM2VMx/rffgRMA/p2MH4J38q/CCYgPlkwzayIoUPI7F0RrPk5TtDRw9DzqmuE0uLmaQtN8B03ex48=
+sidebar_class_name: "get api-method"
+info_path: docs/generated/api/qat
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get Planning Units by Product Category"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/api/dropdown/planningUnit/autocomplete/filter/productCategory/{searchText}/{language}/{productCategorySortOrder}"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Retrieve a sortable list of planning units filtered by product category
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"description":"The search text for the planning unit list","in":"path","name":"searchText","required":true,"schema":{"type":"string"}},{"description":"The language for the planning unit list","in":"path","name":"language","required":true,"schema":{"type":"string"}},{"description":"The product category sort order for the planning unit list","in":"path","name":"productCategorySortOrder","required":true,"schema":{"type":"string"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"content":{"text/json":{"schema":{"type":"array","items":{"type":"object","properties":{"id":{"type":"integer","format":"int32"},"idString":{"type":"string"},"name":{"type":"string"}},"title":"SimpleObject_DropDown3View"}}}},"description":"Returns the list of planning units filtered by product category"},"500":{"content":{"text/json":{"schema":{"type":"object","properties":{"messageCode":{"type":"string"}},"title":"ResponseCode_DropDown3View"}}},"description":"Internal error that prevented the retrieval of the planning unit list"}}}
+>
+  
+</StatusCodes>
+
+
+      

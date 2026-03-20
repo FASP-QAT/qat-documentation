@@ -1,0 +1,71 @@
+---
+id: post-health-area
+title: "Add Health Area"
+description: "Add a new health area."
+sidebar_label: "Add Health Area"
+hide_title: true
+hide_table_of_contents: true
+api: eJztWW1v2zYQ/ivEfdoAxXbcpFmEYYCTZWuLtF0TdwVmGMNZulhsZVIhqTiG4f8+HCXHtGM3TZFiXmd/ksnjvfF49/A4hZRsYmThpFYQQydNBQpFY5ER5i4TaAgbEIEuyCATvUwhhkJb98ITdAwhRGDouiTrTnQ6gXgKiVaOlONPLIpcJn5p86NlIVOwSUYj5C83KQhi0IOPlDiIoDAsyEmyfm3i5A0FdAOtc0IFswgGaOm1Til/MjaQSJOUOZofTuaDP0IEiSF0lJ5MHhZUWjLsnzs6qRwNyUAEV9qM0FVDz9osmYkVjkK9rDNSDWE2i8BJl/PQCVqZvLdkeEmtyq/o1qwKZKToaM/JEfGiHK17rVN5JbfDiFCfx1iyzK/etNl/f3+yu3N0qtN10kKSL9Y+x8ETHo3dCdudsK0w7Sv3Z0D5407O36TWnsRq8sp8ZrL43KQtNkx+dxF07hPQd2QbgxzMRw8bkGxK4/JLrZLpZbVoYyDtMvsus+8y+y6z/6uZ/WHRl3JU5MS49m1l7jyLnupSOTPpGIOhU9D/j0A6Gtl1rAPewf3Tjy9fZLsZiQWFcFpgmtYXVWkohdiZkrw6ttDKVt5vt1or11dHt+7R99YRWYtD2oDnAxsuauGeco0VF+RKo6xAYcskIWuFLy6zCA5az7ZKU44vkWqyQmknMrwhYeQwc7Z2vXCZtELfRcFB6/lW6f9i0e4QmBvCdCLoVlpnK22Pt0pbjm4+/CJDKwo0TmIuMKlCxGnhMhJ1S4bVP9yysH6pHCeuXJAx2ohxJnPiIJFqGPadKp44tBD35hvkz3s/ghG5TM9bUawpugxiaGIhm1nYmbJkbsgwiymUhqFK5lxh4yaTNq5LVE5e1Q0qVJhPnExsQxtOhMta/06Ke2CUioqnYHazPotISiPdxMsYEBoynZLV6fXD6Ut2c+XJkGj+77d51n31oXtP9hl7zG/rqw9d4fQnUkIqP1Bl61iceC7iZz/5C1vu5TFk8zMQzXeMHeB9ywFwsejcnd0ip+sQ9nGSXMGLy1NLCGJevFphaQqK4VKNh3arfbDXOtprH3f3D+PD/bj9U6N1tP8XrKuaD7G+X9c2818FPk+m9morZ1FSlzs4rQDF7zz9dWrXwK8VwrqFvxdobnWsWDPG2C0c+8Yu+bYCgntqshKFshKxuF6uOGIXj//LeLy3fg1E782n+9yfUFea9ViuUe+WaqnozIup6Gqdsx0yIWV9eakldgpMMhLn1YT4k4zlle1GC6KVYj0ejxvoybk2N2tetnn+8vTszeXZHq8JEMi7DtfQm4ohm984PuodHj4/6jMVY4YRqlCTNBUhwlipvwF22vxEVldXD62KHKXvkXgrpjU86QEWcqkaMJTJGMHEPZhO+bS9N/lsxsPXJRl2fD+CGzQSB2xYr189B6RkPNr4RBOI4bRSbq/LGjB5Xvrb1OrT2yyar+gkCRUuoF0AwlmIrv54e8mOHNTveqMqoRgcc5rBMcTg3wZZhAc2fmwKOaphiUOmrXjy7x9Y2Y+P
+sidebar_class_name: "post api-method"
+info_path: docs/generated/api/qat
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Add Health Area"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/api/healthArea"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Add a new health area.
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={undefined}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"content":{"application/json":{"schema":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":"circular(BaseModel)","createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"}},"title":"BaseModel"},"createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"healthAreaCode":{"type":"string"},"healthAreaId":{"type":"integer","format":"int32"},"label":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":"circular(BaseModel)","createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"}},"title":"BaseModel"},"createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"labelId":{"type":"integer","format":"int32"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"}},"title":"Label"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"},"realm":{"type":"object","properties":{"code":{"type":"string"},"id":{"type":"integer","format":"int32"},"idString":{"type":"string"},"label":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":"circular(BaseModel)","createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"}},"title":"BaseModel"},"createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"labelId":{"type":"integer","format":"int32"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"}},"title":"Label"},"name":{"type":"string"}},"title":"SimpleCodeObject"},"realmCountryArray":{"type":"array","items":{"type":"string"}}},"title":"HealthArea"}}},"description":"The HealthArea to add","required":true}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"content":{"text/json":{"schema":{"type":"object","properties":{"messageCode":{"type":"string"}},"title":"ResponseCode"}}},"description":"Returns a success code"},"403":{"content":{"text/json":{"schema":{"type":"object","properties":{"messageCode":{"type":"string"}},"title":"ResponseCode"}}},"description":"User does not have rights to add this object"},"406":{"content":{"text/json":{"schema":{"type":"object","properties":{"messageCode":{"type":"string"}},"title":"ResponseCode"}}},"description":"Health area already exists"},"409":{"content":{"text/json":{"schema":{"type":"object","properties":{"messageCode":{"type":"string"}},"title":"ResponseCode"}}},"description":"The user has partial acccess to the request"},"500":{"content":{"text/json":{"schema":{"type":"object","properties":{"messageCode":{"type":"string"}},"title":"ResponseCode"}}},"description":"Internal error while adding health area"}}}
+>
+  
+</StatusCodes>
+
+
+      

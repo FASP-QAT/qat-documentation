@@ -1,0 +1,71 @@
+---
+id: get-procurement-unit-by-id
+title: "Get ProcurementUnit for a ProcurementUnitId"
+description: "API used to get the ProcurementUnit for a specific ProcurementUnitId"
+sidebar_label: "Get ProcurementUnit for a ProcurementUnitId"
+hide_title: true
+hide_table_of_contents: true
+api: eJytlE1v2kAQhv/Kai5tJRcoTS8+1VWbhEtCAjlFKJqsx3hbe3ezO4Ygy/+92oU0AZxGlXoCr+fjfdfPTAuMSw/pLVhnZOOoJs03WjEsEsjJS6csK6MhhWw6EY2nXLARS2LBJYnpfpIojBMovCWpCiUPX09ySMBYchhKTnJIYUl8EPRtE8MsOqyJyQVxLWisCdJDkTFSBXEWuYRDxUftBZfIYmMasUbNwcgrJiABRw+NcpRDyq6hBLwsqUZIW+CNDVqUZlpSCC2Mq5G3R5/H0HWLkO6t0Z58yBiPRuFnX901ceO075MACUijmTTHfvTIw58+JLVd1yVwMjp5vRyKc2Y7Y+TGDy4u53enlzcX34Uq+hpN8qePRbnIDXmhDQt6VP4tDV/6LE00k9NYCXLOuO1tW0cr0hy4KUk4YkdqhZUwxT+57hKoiUuzgyYSwiWkMESrhgdcDNsjUDpIwJNbPQHVuApSKJmtT4ehxuChQc0B20gnaqw2rKQfGLfsIytvZHgQ26KR/KtsDgms0Cm8r+KXjygoXZjoSHEVwLnaayRQ5yJ76ibmxlShCDm/bTUefBoPRkcKsunknQ8Eo5TktxRdZXMxi3J2V4kyXuVueE6z2VQwYQ3Jgf31ev2GfapRhYzz2ewu1Lk7v/q6LL38aH0dQ7oEKiVJe3rRMbMoSxJb/fstC2MG9+ggfFhrPNeoXySeEb+yW/pWyt7NtM8Q/a+VtRv4SKStUOngNtppdxTeAloVmDwiOj1eWYsESuM5ZLXtPXq6cVXXheOHhtwG0tvFM0UR1lz58D+HtMDK018cv7/era0PPaP+D9uv1/LuEPUmYl414QkS+EWb3t3cLboESsKcXLSxjcukJMsvKjxPepiWP1N+9mMOXfcbYJRTqg==
+sidebar_class_name: "get api-method"
+info_path: docs/generated/api/v2.12/quantification-and-analytics-tool
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get ProcurementUnit for a ProcurementUnitId"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/api/procurementUnit/{procurementUnitId}"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+API used to get the ProcurementUnit for a specific ProcurementUnitId
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"procurementUnitId","in":"path","description":"ProcurementUnitId that you want to the ProcurementUnit for","required":true,"schema":{"type":"integer","format":"int32"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Returns the ProcurementUnit","content":{"text/json":{}}},"404":{"description":"Returns a HttpStatus.NOT_FOUND if the ProcurementUnitId specified does not exist","content":{"text/json":{}}},"500":{"description":"Internal error that prevented the retreival of ProcurementUnit","content":{"text/json":{}}}}}
+>
+  
+</StatusCodes>
+
+
+      

@@ -1,0 +1,33 @@
+---
+id: selectedforecast
+title: "SelectedForecast"
+description: ""
+sidebar_label: "SelectedForecast"
+hide_title: true
+hide_table_of_contents: true
+schema: true
+sample: {"consumptionExtrapolationId":0,"notes":"string","totalForecast":0,"treeAndScenario":[{"scenarioId":0,"treeId":0}]}
+custom_edit_url: null
+---
+
+import Schema from "@theme/Schema";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"SelectedForecast"}
+>
+</Heading>
+
+
+
+
+
+<Schema
+  schema={{"type":"object","properties":{"consumptionExtrapolationId":{"type":"integer","format":"int32"},"notes":{"type":"string"},"totalForecast":{"type":"number","format":"double"},"treeAndScenario":{"type":"array","items":{"type":"object","properties":{"scenarioId":{"type":"integer","format":"int32"},"treeId":{"type":"integer","format":"int32"}},"title":"TreeAndScenario"}}},"title":"SelectedForecast"}}
+  schemaType={"response"}
+>
+  
+</Schema>
+            

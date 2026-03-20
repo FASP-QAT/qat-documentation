@@ -1,0 +1,71 @@
+---
+id: get-program-planning-unit-dropdown-list
+title: "Get Planning Units by Program and Tracer Category"
+description: "Retrieve a list of planning units filtered on a list of program IDs and tracer category"
+sidebar_label: "Get Planning Units by Program and Tracer Category"
+hide_title: true
+hide_table_of_contents: true
+api: eJy1Vm1v2zYQ/ivEfdoA1QoyZMWEYYDzssJFuqSx034wjICWzjJbmWSOlF3D0H8fjpIa2Y6dBmj9ST4e7+25544byNClpKxXRkMCd+hJ4RKFFIVyXpiZsIXUWulclFp5J2aq8EiYCaO7SmRykgsxuHRC6kx4kimSSKXH3NAaIjAWSbKXQQYJ5Ohv6yu3jfl7rfwlGZuZlb5WzkMEhI8lOn9usjUkG0iN9qg9f0prC5UGc/EXx5FvwKVzXEj+8muLkICZfsGU7Vhi516h49Mm1EHmOrqSSHKUyuOiK3eelM6hqqLOvWEt3NeKoM77okn71T72rh90xcrKFyz6UBZe2QKbgvZ1Ntoyczm6eeDKXpqV/qRwBRXf3sZ9NMcfxVLMDAk/x+3GCLcbzBRhBomnEisWOGu0q2t/enKyg6THb/4whIdKdgBalXV0lPaYI0EEM0ML6WvRH6cMk8qOYFjIKRYvO5tKhx9M9kpVSBWlZSHpt/NWuAXO79BB9nmV7zEOfjTdoP2A+nC6DzM6cmiPHTp7vD2vg9ZOAz4dD9XCFngTCrfXpnt9eoe+JO1C//3UAVVFcPbK5jwA9gKdkzlemAyPF+auYQZrvkjQgfZIWhYCiQL/pBeWcInaYxbKQfXolgWne7g+dQgyd5CMoR24DiYRLNDPDQ9nawKVrfRzSCCWVsVZoxjbzriOm6LGdcnjxQuDCCJwSEsk9r2BkpgPc++tS2L20nsspfZq1kx2qWWx9ip1PUM57BbkHWpeKJiJ2qZgc9WEXaQlKb8OPqYoCalfcibjSfd4yHA29Owotf/+bUn0/vNoz/cVgxFq/P7zSHjzFbVQOghq8iXiPFgRf4fDfzjz4A+Sxj5EbWdwAQIo3Gh3Tyvv6ptkZuyurHHbSpPnVlJ7+Owm6l49uGk6/FZ6Ztj9dvIft0AS/RYlMTKmgAgKlaJ2IW4tQ8Z9K9M5iuv6QHxCcnzztHcC0U4XrFarngzqDHrc2HLx9eDi6r/h1Ru+06HQxz6Ds6wNQgKnvb/ejs/O/nw7YS3u44XUnUjeoRftg0Pch3ExXYumX8NcqDtWdFp2K/vOePiFb6WmM8L4sYVUmrMJhdo0rByDtIqDa3jJdO0wE773Bu+DEAVE8CI/JxHMmfvJGDYbXlr3VFQVix9LJGbUJIKlJCWnXP7xpIpgjjJDCmT7imtI4KIu0JsRJ8HqRRlW+e6TrYraG/00Res7uk9zt+rOpdubIcM9bd6DizBhgeSK3x1yBQmEdya7CLwOsg0UUuelzFm3tsm//wFdtNvg
+sidebar_class_name: "post api-method"
+info_path: docs/generated/api/qat
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get Planning Units by Program and Tracer Category"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/api/dropdown/planningUnit/program/filter/multipleProgramAndTracerCategory"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Retrieve a list of planning units filtered on a list of program IDs and tracer category
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={undefined}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"content":{"application/json":{"schema":{"type":"object","properties":{"programIds":{"type":"array","items":{"type":"string"}},"programIdsString":{"type":"string"},"tracerCategoryIds":{"type":"array","items":{"type":"string"}},"tracerCategoryIdsString":{"type":"string"}},"title":"MultipleProgramAndTracerCategoryDTO_DropDownView"}}},"description":"The list of program IDs and tracer category for the planning unit list","required":true}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"content":{"text/json":{"schema":{"type":"array","items":{"type":"object","properties":{"id":{"type":"integer","format":"int32"},"idString":{"type":"string"},"label":{"type":"object","properties":{"baseModel":{"type":"object","properties":{"baseModel":"circular(BaseModel_DropDownView)"},"title":"BaseModel_DropDownView"},"labelId":{"type":"integer","format":"int32"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"}},"title":"Label_DropDownView"}},"title":"SimpleObject_DropDownView"}}}},"description":"Returns the list of planning units filtered on a list of program IDs and tracer category"},"500":{"content":{"text/json":{"schema":{"type":"object","properties":{"messageCode":{"type":"string"}},"title":"ResponseCode_DropDownView"}}},"description":"Internal error that prevented the retrieval of the list of planning units"}}}
+>
+  
+</StatusCodes>
+
+
+      

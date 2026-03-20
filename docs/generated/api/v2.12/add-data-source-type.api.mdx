@@ -1,0 +1,71 @@
+---
+id: add-data-source-type
+title: "Add DataSourceType"
+description: "API used to add a DataSourceType"
+sidebar_label: "Add DataSourceType"
+hide_title: true
+hide_table_of_contents: true
+api: eJztWVFv4kgM/isjv9ydlFLKbm/v8nS0ZdVK3ZYCew9XVZXJmGb2QiadmZRFKP/95EmABCrafbtF8EQmHvuz49ifMwtw+GQhvAeJDoc6NxGN5hnBQwCSbGRU5pROIYRu/0rklqRwWqCUAsVFc0cAOiODLH4lIQSUckvC0HNO1p1pOYdwsWFhFNOGTqHH3yhywsXoxFznYoapqwBAAJFOHaWONWGWJSryxo+/WVa3ABvFNEX+59h6CKU2CCAzDNUpsnw3MoSO5Nn8bdHckmHnVnIqdfREBgKYaDNFVy596EAReOEUp1QTt86o9AmKIgCnXMJLZ2hV9NWS4S0VlAt0r+yq2ZDo6MipKfGmBK37oqWaqP+HE3U8P+YJRk691OXHWieEKd9r5ue78RvCZPp2TNR79SU4puSQU/uRU/5hvhu2l36k9BXYy5s223FzYnbczF6/OUZLX7Q8pNy+pFztgUKkTJQnaH49Wy7+Bk00lWgd47UvQBxkLV9zJwAlh+X/nb4O1TRL6FxLui3jeyhu+5Vph+J2SLmftrgdUuOQGs3U2Jgli6Iox0llSELoTE5+wWY6tWWgOu329pA5IJeb1AoUwzyKyFrBfVSoiXAxidUEK2ZohS0lJnnSHDYdfXfLKdPj+Nj+sMvSpXPZ0KHLbevz7eDs6uKid7O0yFEXUpMVqXYixhcSWOJy2gsM/ADzlv3f32n/5nb02D0/7/VH3bPr3hIEz1bC5jxDkxSqxJKn6jmnNyyf7o5xzfLVzag3uOlePw57g797g8feYHA7qAAYKuOtpyQ0XwsyRpty7pdKejyYJHq28ZScFpFmHuN2Ay0CmJKLNX+XyLT1LxW6GEI4xkwdN2fLYwjAknkhwx9GFpAbTtrYucyGxyzfes4xdWpSfXDAFJO5U5FtacMvRzMYfaNlHnm0pVIx0UbcdUcQwAsahePEp2tRPATAiAfrbyS978jObVW5ZQlo11/wWmNt1CHotDsfj9qfjjp/jk5Ow9OTsPNHq/3p5B94rfa8pXq7OuzSv6wI/Hq+NsK3awO6Kq9XHHQfPF5xsHadYa3r6JpYba4xn9pcyxprjRb58werWI00axfXk8wmpdwPnw8J8oMJsocuqXSifceqeM5do7cITKXoLhuMGGnNXIRbU9ldOq2TTqu91XS6/atfPINYcomYuOWIoe9AVavEyLfKyp/P3WFfOELmGs2ON5vN3uh4NEXFOy6Hw0fW83h599dTbKOjzE69CEdJRZRaqlnsZhjFJEr8TZMTrVtjNJ4Acr+eYlrfKOX24UMjAIs1F3jPwUVFVz1pyBJUnrF6RIuKJ9wDZgo2WxgEwAclMTOK8B4WC87PryYpCl5+zsnMIbx/WDd6vioCiAklGU8u/qU5hHBeoj2qlL5gkjOgrVONIlju6EYRZa4mu2Y8TCRWbKd/O2SmMa5OXKZlhTU449MYnEEI/uCGTXjS7NcWkGD6lOMTy5Y6+fcfHFrJcA==
+sidebar_class_name: "post api-method"
+info_path: docs/generated/api/v2.12/quantification-and-analytics-tool
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Add DataSourceType"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/api/dataSourceType/"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+API used to add a DataSourceType
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={undefined}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"description":"The DataSourceType object that you want to add","content":{"application/json":{"schema":{"type":"object","properties":{"createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"},"active":{"type":"boolean"},"dataSourceTypeId":{"type":"integer","format":"int32"},"realm":{"type":"object","properties":{"id":{"type":"integer","format":"int32"},"label":{"type":"object","properties":{"createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"},"active":{"type":"boolean"},"labelId":{"type":"integer","format":"int32"},"label_en":{"type":"string"},"label_sp":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"baseModel":{"type":"object","properties":{"createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"},"active":{"type":"boolean"},"baseModel":"circular(BaseModel)"},"title":"BaseModel"}},"title":"Label"},"code":{"type":"string"},"idString":{"type":"string"}},"title":"SimpleCodeObject"},"label":{"type":"object","properties":{"createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"},"active":{"type":"boolean"},"labelId":{"type":"integer","format":"int32"},"label_en":{"type":"string"},"label_sp":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"baseModel":{"type":"object","properties":{"createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"},"active":{"type":"boolean"},"baseModel":"circular(BaseModel)"},"title":"BaseModel"}},"title":"Label"},"baseModel":{"type":"object","properties":{"createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"},"active":{"type":"boolean"},"baseModel":"circular(BaseModel)"},"title":"BaseModel"}},"title":"DataSourceType"}}},"required":true}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Returns a Success code if the operation was successful","content":{"text/json":{}}},"403":{"description":"Returns a HttpStatus.FORBIDDEN if the User does not have access to the Realm","content":{"text/json":{}}},"406":{"description":"Returns a HttpStatus.NOT_ACCEPTABLE if the data supplied is not unique","content":{"text/json":{}}},"500":{"description":"Returns a HttpStatus.INTERNAL_SERVER_ERROR if there was some other error that did not allow the operation to complete","content":{"text/json":{}}}}}
+>
+  
+</StatusCodes>
+
+
+      

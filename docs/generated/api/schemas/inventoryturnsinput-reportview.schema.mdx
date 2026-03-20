@@ -1,0 +1,33 @@
+---
+id: inventoryturnsinput-reportview
+title: "InventoryTurnsInput_ReportView"
+description: ""
+sidebar_label: "InventoryTurnsInput_ReportView"
+hide_title: true
+hide_table_of_contents: true
+schema: true
+sample: {"dt":"2024-07-29T15:51:28.071Z","includePlannedShipments":true,"productCategoryIds":["string"],"programIds":["string"],"useApprovedSupplyPlanOnly":true,"viewBy":0}
+custom_edit_url: null
+---
+
+import Schema from "@theme/Schema";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"InventoryTurnsInput_ReportView"}
+>
+</Heading>
+
+
+
+
+
+<Schema
+  schema={{"type":"object","properties":{"dt":{"type":"string","format":"date-time"},"includePlannedShipments":{"type":"boolean"},"productCategoryIds":{"type":"array","items":{"type":"string"}},"programIds":{"type":"array","items":{"type":"string"}},"useApprovedSupplyPlanOnly":{"type":"boolean"},"viewBy":{"type":"integer","format":"int32"}},"title":"InventoryTurnsInput_ReportView"}}
+  schemaType={"response"}
+>
+  
+</Schema>
+            

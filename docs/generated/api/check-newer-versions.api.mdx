@@ -1,0 +1,71 @@
+---
+id: check-newer-versions
+title: "Check for Newer Versions"
+description: "Check if newer versions are available for a list of program IDs and versions"
+sidebar_label: "Check for Newer Versions"
+hide_title: true
+hide_table_of_contents: true
+api: eJy1VVFv2zYQ/iuHe1ZtI11WTBgGuGk2pCi6NnHbB8MPZ+kssZFJ5UjFNQT99+EoOZE9F1uBzU8y+fH43Xff8VrM2Wdi6mCcxRSvSs7uwWzA8o4FHlm8cdYDCQM9kqloXTFsnABBZXwAt4FaXCG0hZs3HsjmT4cwQVezkIa+yTHFTIO/18CfnyHCDw378Nrle0xbzJwNbIN+Ul1XJovHp1+90mvRZyVvSb/CvmZMkURojwmawFs/Wnfrr5wFTLAWJREMx92Bq9J5ghobuGDBBDdOthT6pZcX2CU45PIv8V2CwYRKQR8OF81t/vkpSNcp5ljyRcn/KCUEB1G9KP1xbQYNjXCOaZCGO13wtbO+z/liNjtRNvC38H1J185VTBbPcL3l0IjSkYbVJaFkNYbwCacENlR5BqeAnfGsWv40e/lDPL5Twi17TwVfuZxHYB/E2OKoBLeDCBF5JplPngVyxx6sC1DSI4OYogxRbcoy9h5CafyhKprD5Q9q+X/ncGMDi6UKWMQJ7EpTce8UY4tzZonBqfCYLg8ehTcUCFcJbjmUThu1dj5yplBiilOqzXTQQKHTs33sWfQSTJctNlJhimUItU+nenzy0JANZjO0M1mq9sFkfuKkwNOc/mCrrwbn0McEDdet9IqsERP28Y41k7DMG6W4XI2377QIvc5j0OHf74emfftl8be7r1VPtTW8/bKA4O7ZgrFxoW/2FF7HKPBr3PxNM4/3aePEHUwO9VQBouBqj9vnd+76G21rLe/y6EGaHT03M03J2I1T5sckPx6JCfODmrBwrsIEK5Ox9dFZliKzeU1ZyfCu34ChbHAxmWFyUq3dbjehCNfiTIdYfvru5ur6/d31Cz0zMujHuYo48MYULya/vFpeXv78aqUoNdKW7IjJ1dMrFg0EIwcdJTnqsf96KA3ViY1bV2SsMo0itIPll0i16Zv2YHpMzo2vVYKl9kq6xLZdk+dPUnWdLj80LGrUVYKPJEYZRp8mWDLlLLH497zX9PpEXyyUl8KrJk620/HXJYcT8yzjOoywz49QN+7jD3/eaXXWw2zdxucGhXY6M2iHKcYZHWIuaduvtViRLRoqFNvH1N9fXH3XSA==
+sidebar_class_name: "post api-method"
+info_path: docs/generated/api/qat
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Check for Newer Versions"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/api/programData/checkNewerVersions"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Check if newer versions are available for a list of program IDs and versions
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={undefined}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"content":{"application/json":{"schema":{"type":"array","items":{"type":"object","properties":{"programId":{"type":"integer","format":"int32"},"versionId":{"type":"integer","format":"int32"}},"title":"ProgramIdAndVersionId"}}}},"description":"The list of program IDs and versions to check for newer versions","required":true}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"content":{"text/json":{"schema":{"type":"boolean"}}},"description":"Returns true if there are newer versions, false otherwise"},"403":{"content":{"text/json":{"schema":{"type":"object","properties":{"messageCode":{"type":"string"}},"title":"ResponseCode"}}},"description":"User does not have rights to access this program"},"500":{"content":{"text/json":{"schema":{"type":"object","properties":{"messageCode":{"type":"string"}},"title":"ResponseCode"}}},"description":"Internal error while checking for newer versions"}}}
+>
+  
+</StatusCodes>
+
+
+      

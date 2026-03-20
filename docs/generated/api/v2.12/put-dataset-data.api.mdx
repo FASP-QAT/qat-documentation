@@ -1,0 +1,71 @@
+---
+id: put-dataset-data
+title: "Commit Request for Datatse"
+description: "API used Part 1 of the Commit Request for Dataset."
+sidebar_label: "Commit Request for Datatse"
+hide_title: true
+hide_table_of_contents: true
+api: eJytlcFu4zYQhl+FmEtbQLUT77YHnVYbO4iBhe3Yzl4CI5hIo4itRDLkyFlD0LsvSMl1HGc3adGTLJkz/zfk/JwGGB8cxLeQ6qqSvKTHmhzDJoKMXGqlYakVxJAspqJ2lIkFWhbnQueCCxIXIUr0YSLXVoyR0REPIAJtyKJPMM0gBlNz/59/QAQGLVbEZD1AAworgtiDGLSUfSXrutAIpEcwyAW85DpZLbhAFjtdiydULFiLrjKRddqeESKw9FhLSxnEbGuKwKUFVQhxA7wzHkMqpgfyS3NtK+Tu04cRtO3GhzujlSPnI0ZnZ/5xDLYkrq1y4mhfp5mQ+R5IOuHqNCXnIIJUKybFAYC+8fAv57M0bdtG8PHsw4/zo7hiNitGrt3gcr78PB2PJzMv48/nxpEVmSYnlGZR4JYEvk/y4zslZ/P13eX8ZjbeS56eiDOUylxSdiChb9Lxmwx//guG5OJislgnn79MPMi+IbG0hNmu03NivvQdG/DEtuPzx+CJSmR6G+l89E6kxXJyMZ+Np+vpfHZ3mUy/TP7/Dfrjtb6bKiarsBRkrbadG4ylLSmmbK/v20/ne0v8VKaNoCIudO/gYFsuIIYhGjnMDoYeNieFtRCBI7vdO7y2JcRQMBsXD3384LFGxTKXabgmUGG5Y5m6gbYPJ1ZfWJ3VqX8RXdJw3Vwna4hgi1bifRn8GAwqVa5DNZJLb+frIyGBKhPJXk2stS59ko4bYhgNzkeDsxOCZDH9xfkrpfNQ2M3rZC1WAaffRkzDNva32WWyWggmrCB6Uf7T09Mb5VOF0kdcrVZ3Ps/d1fWnh8KlvxtXhSVtBKVMSTl6ppgYTAsSHf+xZK714B4t+EM12nGF6lngD+5ydvRyI5pDv/y3wdDfsaHVTIlS+VICa9O31y2gkV73aGLEp8NhE0GhHfuIprlHRze2bFv/+bEmu4P4dnNoj9CFmXT+dwZxjqWjn9T267KfEr+9Ytr3zZlXK+0/otqF1i1r/wYR/E27Vwdgu2kjKAgzsqGCbl2SpmT4WYaDc70D/nHt4mYNbfsdnP6+jg==
+sidebar_class_name: "put api-method"
+info_path: docs/generated/api/v2.12/quantification-and-analytics-tool
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Commit Request for Datatse"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"put"}
+  path={"/api/datasetData/{comparedVersionId}"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+API used Part 1 of the Commit Request for Dataset.
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"comparedVersionId","in":"path","description":"comparedVersionId that you want to commit dataset for","required":true,"schema":{"type":"integer","format":"int32"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Returns commitRequestId if commit is success","content":{"text/json":{}}},"403":{"description":"Returns a HttpStatus.FORBIDDEN if the User does not have access","content":{"text/json":{}}},"404":{"description":"Returns a HttpStatus.NOT_FOUND if the comparedVersionId specified does not exist","content":{"text/json":{}}},"406":{"description":"Returns a HttpStatus.NOT_ACCEPTABLE if Request already exists OR Compared version is not latest","content":{"text/json":{}}},"412":{"description":"Returns a HttpStatus.PRECONDITION_FAILED if the comparedVersionId specified does not exist","content":{"text/json":{}}},"500":{"description":"Internal error that prevented the commit of dataset","content":{"text/json":{}}}}}
+>
+  
+</StatusCodes>
+
+
+      

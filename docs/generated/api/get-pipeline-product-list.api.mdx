@@ -1,0 +1,71 @@
+---
+id: get-pipeline-product-list
+title: "Get Pipeline Product List"
+description: "Retrieve a list of pipeline products by pipeline ID"
+sidebar_label: "Get Pipeline Product List"
+hide_title: true
+hide_table_of_contents: true
+api: eJylVt9v4zYM/lcEPm2Aryk6dIcFw4Du1hU9FMNdr9s9BHlgZMbWVZZciUqTBf7fB8l24zRJm96ebIv8KJLmj28NOXnpVM3KGhjDLbFTtCCBQivPws5FrWrSypConc2DZC9mq83h9R+Qga3JYbRwncMYCuJPnfhTC7lRniGDGh1WxOQ8jCfrZzffldFYvJBL2thnK1zvUxK0Flvv5s5WkIGK+Bq5hAwMVhS/Ovx1Dhk4egjKUQ5jdoEy8LKkCmG8Bl7VUVsZpoIcZDC3rkJuj346g6aZRrivrfHkI+Ls9DQ+pDVMhpMNWvLom49BrHdNo3O4ij4yVX5wbmffSKakuJg9Vq35WZDWLMh51dp71cEM8pnW9pE8B6P4gVcDmAnVbBuV2zDTlGA0x6BZoiev/qUjL5tjJWWJpojZfELMrNWEplVYoNI4U1rxyjNy8AcUa3KVYqZcGWmDYbc6oBg8uZzmyhy6U5sCK1lZw6U/Mo4W4hkdH4+YIcvySPWKqmEmjGUa+ubZKVO0ilzaXOV7hVbnr8m7hnhVoW2MPSqDVjkutGhQVrh8k7o6tpyjek7es5X3b4AEyShZLShH3hPnsAWQ6R2rinagc43F/gp7OcmdtMLlm2qwhynzPbDD/7OT2315aLL0VtXWsbfByYM67dk+WahrrcgdSAYvWRljF8jW5S4UB/3kJW/mVkXogzuoWKmiXTA7E+WlTO0C31YcvOTa0ZwcGUmHO5iX7MPMs+IQb4qbaY9eVFSs49GnWneLEZqmSbP42Q4OzviXVnC89vyNm+jAxqnIeyzog833ZX/g9W23BpPmHrevDZMzqAU5Z514LJUmURCzMsVOBCm01jwWkQ5ATxlg2s/Elkok3sAljGGEtRr1hkadodF6M78ayMCTW/QEIzgNYyiZaz8eRfTJQ0DDaq5kqgk0qFespD+xLlbBdjxXZCKroVy0NkU0F/mAJxmciot2soYZoSN3EaKHk+lQ/CX+gG6rD5T6rz/7kvv49W7n7suYy8R3Pn69E2zvyQhl0kFbqmPxe7Iifk3C36BjNWluJQlk/b+MCUipVmZuowPbd33eyom46JMi7qzVkIFWkoxPxdGRq4saZUniphWIf1q6Is5OTiF7lvTHx8cTTOoxx6POlh/dXH+4/OvL5buIGdTY54uYiyf+A2cnv7yfnJ///H6aJpv1XKEZeHJFLPrCEV1PiY5tbkU56JPv5LhdMlOP1RpV2gsp2HVXoBPAWsFmocLTLIYMxoM1O82gtHFITGC9nqGnv51umnj8ECjSoMk0gwU6hZGrJaqsfHzPYTxH7emF4H647cjuj+J/MOq9wfaM1kQ+u0Ad4hdkcE+rbcbdTJsMSsKcXPK+VbiQkmoeQDfjqhn2/NXlHTTNfzXtZTU=
+sidebar_class_name: "get api-method"
+info_path: docs/generated/api/qat
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get Pipeline Product List"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/api/pipeline/product/{pipelineId}"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Retrieve a list of pipeline products by pipeline ID
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"description":"The ID of the pipeline to retrieve the product list from","in":"path","name":"pipelineId","required":true,"schema":{"type":"integer","format":"int32"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"content":{"text/json":{"schema":{"type":"array","items":{"type":"object","properties":{"buconversion":{"type":"integer","format":"int32"},"dbllowestunitqty":{"type":"number","format":"double"},"defaultcasesize":{"type":"integer","format":"int32"},"famcchanged":{"type":"boolean"},"favailabilitystatus":{"type":"boolean"},"fpermittedincountry":{"type":"boolean"},"fuserdefined":{"type":"boolean"},"lngamcmonths":{"type":"integer","format":"int32"},"lngamcstart":{"type":"integer","format":"int32"},"lngbatch":{"type":"integer","format":"int32"},"memavailabilitynotes":{"type":"string"},"methodid":{"type":"string"},"oldmethodid":{"type":"string"},"oldproductid":{"type":"string"},"oldproductname":{"type":"string"},"pipelineId":{"type":"integer","format":"int32"},"prodcmax":{"type":"integer","format":"int32"},"prodcmin":{"type":"integer","format":"int32"},"proddesstock":{"type":"integer","format":"int32"},"productactivedate":{"type":"string","format":"date-time"},"productactiveflag":{"type":"boolean"},"productid":{"type":"string"},"productmaxmonths":{"type":"integer","format":"int32"},"productminmonths":{"type":"integer","format":"int32"},"productname":{"type":"string"},"productnote":{"type":"string"},"strimportsource":{"type":"string"},"strtype":{"type":"string"},"supplierid":{"type":"string"},"txtinnovatordrugname":{"type":"string"},"txtlowestunitmeasure":{"type":"string"},"txtmigrationstatus":{"type":"integer","format":"int32"},"txtmigrationstatusdate":{"type":"string","format":"date-time"},"txtpreferencenotes":{"type":"string"},"txtsubstitutionlist":{"type":"string"}},"title":"PplProduct"}}}},"description":"Returns a list of pipeline products"},"500":{"content":{"text/json":{"schema":{"type":"object","properties":{"messageCode":{"type":"string"}},"title":"ResponseCode"}}},"description":"Internal error while getting pipeline product list"}}}
+>
+  
+</StatusCodes>
+
+
+      

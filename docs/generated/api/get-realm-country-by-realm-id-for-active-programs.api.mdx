@@ -1,0 +1,71 @@
+---
+id: get-realm-country-by-realm-id-for-active-programs
+title: "Get Realm Countries for Active Programs by Realm ID"
+description: "Retrieve a list of realm countries for active programs by their realm ID"
+sidebar_label: "Get Realm Countries for Active Programs by Realm ID"
+hide_title: true
+hide_table_of_contents: true
+api: eJztWG1v2zYQ/ivEfWoBNQ7SZsWEYYCdpJmLdGuddP1gGAUtnS22EqkcT84MQ/99OEpqldc6Q4Z1RT5J4h0f3j0kT3e3gRR9QqZk4yzEMEEmgytUWuXGs3ILRajzQiWusiLyauFI6YTNClVJbkm68Gq+VpyhoVZ5fAgRuBJJC+w4hRiWyBORHQSc9WgdvsbpK0fDAPa2xYIISk26QEbyEE83Vyw8y1CND8UwzrBdj52izvBtzF04ggiMwJWaM4jA6gIhBmqMgggIzytDmELMVGEEPsmw0BBvgNelqBrLuETBWTgqNDdDz/egrmcy3ZfOevQyY293Vx6Js4yWAwb+xYNPXhzaXIfWRHotBjIWvjfu5p8wYSGIhFw2DXyGOudsSKhPjOd/jpO4FHtansnYJdQRmHQrv0XxtJl0E0qu55h/24pmr3p6c+dy1FYg5trjG5c+IAwkhpIq1/Rk1A0+hQgSQs2YjtbfXqjySONtCRLl5qhdI6iOgA3nMjTS3iTvPZJMaU051HzDrN4aqWZ8xqbAhmvPb1xqFub7cKJvz308uYzXblr9I+zPHPOtrQraH9Hefq0+LugOYXmX0Je3CH+4E3QSAlDdBfu7lj41RZnjgUvxj8ZdEVLv//UYTR+j6f/5LjxG08do+t9G007Yrwp++5LJQl2L0rXipCLrQ+J/S3UiBr3YfX6vdPuWPSjQe70MZt/t3qTN9YPmDWYL6Sp16JV1rDItRYpZZuylbgl+bFlifSmugpMvvisnJz0X1sHRhatsKqbu37P8+bdNHVuWC5MrJHKkLjKTo1ois7HL+2+FLKyXUqm2HHQZwiyCAjlzbfUb6lrOIIaBLs2gn0wMWuRBW34ONu1LDRF4pFVXCVckP9mMufTxQGB2zitt2SxMEiptbXW+ZpP4HUdyhS/7fYxWKnJMVYOpBE6KVY9JRYbXYY05akIaVmLqdNYXn8pGNXvRV+q+XnXx4vWHs2trHwnn4eK+/nCm2H1Gq4wNA02cidUooKhfgvBXaEvukGwECUTdngsBgXhjF04MuLzWu0ucqGFHijpzLocIcpOg9eEQtWX/sNRJhuqkEag/kbzM3NvZhegK6RcXFzs6qAvHgxbLD07GB0e/nx49kzm9s/huKFysGkCIYW/n55fT/f2fXs5Eq3SeC217lhwjq/4x6o5g0yNRb3tHcPK11XLJ/95Ne8h2Tst9uLplrk3I/QI3m/ZgT0GXBq7kyeEWC2onCN2VuHudRZA5aVpMYbORTPI95XUtw+cVSpo9nUWw0mT0XPiUbpDx8p5CvNC5xzucfzJpezhP1cM1jW6koeu3WPF3pfNKviCCz7juNZXqWR1JsyZFCp400mGSYMm9eV+DY90PIcdHZ1DXfwOjkcbP
+sidebar_class_name: "get api-method"
+info_path: docs/generated/api/qat
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get Realm Countries for Active Programs by Realm ID"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/api/realmCountry/program/realmId/{realmId}"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Retrieve a list of realm countries for active programs by their realm ID
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"description":"The ID of the realm to retrieve realm countries for active programs for","in":"path","name":"realmId","required":true,"schema":{"type":"integer","format":"int32"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"content":{"text/json":{"schema":{"type":"array","items":{"type":"object","properties":{"healthAreaList":{"type":"array","items":{"type":"object","properties":{"code":{"type":"string"},"id":{"type":"integer","format":"int32"},"idString":{"type":"string"},"label":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":"circular(BaseModel)","createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"}},"title":"BaseModel"},"createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"labelId":{"type":"integer","format":"int32"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"}},"title":"Label"},"name":{"type":"string"}},"title":"SimpleCodeObject"}},"realmCountry":{"type":"object","properties":{"code":{"type":"string"},"id":{"type":"integer","format":"int32"},"idString":{"type":"string"},"label":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":"circular(BaseModel)","createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"}},"title":"BaseModel"},"createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"labelId":{"type":"integer","format":"int32"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"}},"title":"Label"},"name":{"type":"string"}},"title":"SimpleCodeObject"}},"title":"RealmCountryHealthArea"}}}},"description":"Returns the list of realm countries"},"403":{"content":{"text/json":{"schema":{"type":"object","properties":{"messageCode":{"type":"string"}},"title":"ResponseCode"}}},"description":"User does not have rights to list realm countries for active programs by realm ID"},"404":{"content":{"text/json":{"schema":{"type":"object","properties":{"messageCode":{"type":"string"}},"title":"ResponseCode"}}},"description":"Realm country not found"},"500":{"content":{"text/json":{"schema":{"type":"object","properties":{"messageCode":{"type":"string"}},"title":"ResponseCode"}}},"description":"Internal error while getting realm countries for active programs by realm ID"}}}
+>
+  
+</StatusCodes>
+
+
+      

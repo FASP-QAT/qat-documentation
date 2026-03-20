@@ -1,0 +1,71 @@
+---
+id: get-aggregate-shipment-by-product
+title: "get the ShipmentReportOutput list"
+description: "API used to get the ShipmentReportOutput list."
+sidebar_label: "get the ShipmentReportOutput list"
+hide_title: true
+hide_table_of_contents: true
+api: eJydVUtv2zgQ/ivEXPYiP+Ju0K1O6+4D9alO7PawhhGMpbHEViIZchTXMPTfi6HsRE6y7nZ9MUV88+T3zRyAsQiQrsCTs55hnUBOIfPasbYGUpjOZ6oJlCu2qiBWXJJalNrVZPg22nxs2DWsKh14CAlYRx7FeJZDCgXxtCg8Fch0Mnu/n3ubNxlDAp7uGwr83uZ7SA+QWcNkWI7oXKWz6Gn0JUguBwhZSTXKifeOIAW7+ULRj/MSlzWFiGP0/Ccy9aCBvTYFJLC1vkaGFHJkGrCuCdoEAlv3cxbO28JjLWU+mmjDVJDv22jDbyaCfyAfjm35T3hXoTHaFJ+M5lkeelboPe4hAc1Uh5cJt20C2mRVk9NcfFB+6nwfvLG2IjQvIy06L6+6Zc2VXJ0zYGZcw3fd+bOmHbSClafVnnJI2TcUL4KzJnRPNBmP5e+cbLfEjTfhMskg6dOE6Ruf+BHDXr/meGaYvMFKkffWKy6RlfP0QIaF2iUpT+xJP2Cl7PZ/xm4TqIlLK7x3NoIdcgkpjNDpUaewEV6SQyAvNIF0dYDGV5BCyexCOhIPw/sGDevtURVosNqzzsLQemHpecVHn9oa1TlVW+vVzXQJCTyg17ip4kO07ToBqeH2SYl/fcPaVfRMSTAZT34djN8OJu+WV9fp9VU6+W04fnv1D/TVcwnVU8z4TA/jV9i+OvFufYHNwqx/4+8jb8V+a+ODHel7c9ZIhSZX01M31dLaCh7Tk4qGV5Ph+EWHp/PZL0HGImYZhY60N9OlWsR2H5mCWWSKwVri/j1dzBUT1pA8e97dbveD56UatVh8WCzuxM/dh5vfizJkAxfqCGkTqHRGJlAv4tRhVpLq8j8PubV2uEEfdS10rdH0DH8465/3oze8f35pHCdNFJSrUMexFNM9HDW0AnQ6Loy4pxK4oKN1AqXoL13B4bDBQJ981bZyfd+Q30O6Wj+JQL7aBErCnHwU3lfaQwp/dNUMlpKawKsmzt7na6lNThbTLCPHPezTfBCRPc6G+ceFqHBz3Hm1zQXscSfl4Q5SiGtUQsRRGe8OUKEpGiwE2/mU33dArK+A
+sidebar_class_name: "post api-method"
+info_path: docs/generated/api/v2.12/quantification-and-analytics-tool
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"get the ShipmentReportOutput list"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/api/report/aggregateShipmentByProduct"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+API used to get the ShipmentReportOutput list.
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={undefined}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"content":{"application/json":{"schema":{"type":"object","properties":{"startDate":{"type":"string","format":"date-time"},"stopDate":{"type":"string","format":"date-time"},"programId":{"type":"integer","format":"int32"},"versionId":{"type":"integer","format":"int32"},"planningUnitIds":{"type":"array","items":{"type":"string"}},"includePlannedShipments":{"type":"boolean"},"planningUnitIdString":{"type":"string"}},"title":"ShipmentReportInput_ReportView"}}},"required":true}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Returns the ShipmentReportOutput list","content":{"text/json":{}}},"500":{"description":"Internal error that prevented the retreival of ShipmentReportOutput list","content":{"text/json":{}}}}}
+>
+  
+</StatusCodes>
+
+
+      

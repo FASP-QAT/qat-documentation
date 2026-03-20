@@ -1,0 +1,71 @@
+---
+id: get-planning-unit-by-realm-country
+title: "Get active PlanningUnit list for a realm country"
+description: "API used to get the list of active PlanningUnits for a realm country"
+sidebar_label: "Get active PlanningUnit list for a realm country"
+hide_title: true
+hide_table_of_contents: true
+api: eJytVU1v4zYQ/SvEXNoCrJ1mtxed6t1sNgaKxImdU2AEE2kksZVIZjhy1hD03wvSzkbOR9MWPUkiZua9Gb556kGwCpDdgG/QWmOra2sE1hoKCjkbL8ZZyGC2mKsuUKHEqYpESU2qMUGUKxXmYjakFqMCQZWOFSombFqVu84Kb0GD88QYS84LyKAiGSd92l7F8M/foz0ytiTEkWAPFluCDHgUNC9Ag4kEPUoNz1kfhiqpUdTWdeoB7a6FMbz6PfZTOgYNTPedYSogE+5IQ8hrahGyHmTrIwljhSqKoaXjFmV39OEYhmEd04N3NlCIGcdHR/FxyOyKpGMbEolX5pdmCxpyZ4WsJGD6JtM/Qszuh2HQ8PHow9t1UZ2J+KWgdGFyenH1aX5y8uVcmTIhXgdiVTgKyjpRNW4iiZxCeBfy4z+EPL9Y3Z5eXJ+fPEIKY078GYUqx4aCQlsoz65ibIMKnnJTGiqeWNG390fw62ujnVshttgoYna8u3TPtCErUb81KSZhMhtsonr/3dgHDS1J7fbyTSKVGjKYojfT8Q5Nx+Kb9odSHEBDIN48SrvjBjKoRXzIprHU5L5DK6Y0eVoXtNhsxeRh4rh6IfMFu6LL44faFU3bdzlbgYYNssG7JkkxadPY0qXGjDRRyZcHQOlaZo9oauVcE4sQhx3U8eSX48nRCwazxfyHEL1hJ6M05cvZSi0Tnf1EMU8T3a/x6Wy5UELYgn7W/sPDwzvtU4smZpwtl7exzu3Z5W9VHfKffWhTyKChMTnZQCPEmce8JrXjfwhZOje5Q4Z4v94FadGOEr+SvLmkbxjdwXj6J0H9X0a6t6GkTt+gsbHl1FO/V+QNoDdRn2Nf1weWCBqyZ2661lC7IDG97+8w0DU3wxCP7zviLWQ36ydNJekWJsT3ArISm0B/0/qPV3tX/Un9Z2N+te/9IdptEnzTxS/Q8CdtX/4vhvWgoSYsiBP/XdAsz8nLKP1p7+PSfN/5r19WMAx/AfeihEg=
+sidebar_class_name: "get api-method"
+info_path: docs/generated/api/v2.12/quantification-and-analytics-tool
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get active PlanningUnit list for a realm country"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/api/planningUnit/realmCountry/{realmCountryId}"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+API used to get the list of active PlanningUnits for a realm country
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"realmCountryId","in":"path","description":"realmCountryId that you want the PlanningUnit List for","required":true,"schema":{"type":"integer","format":"int32"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Returns the active PlanningUnit list","content":{"text/json":{}}},"403":{"description":"Returns a HttpStatus.FORBIDDEN if the User does not have access","content":{"text/json":{}}},"404":{"description":"Returns a HttpStatus.NOT_FOUND if the tracerCategories and programs specified does not exist","content":{"text/json":{}}},"500":{"description":"Internal error that prevented the retreival of PlanningUnit list","content":{"text/json":{}}}}}
+>
+  
+</StatusCodes>
+
+
+      

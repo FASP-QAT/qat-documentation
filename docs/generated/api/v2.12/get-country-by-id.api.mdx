@@ -1,0 +1,71 @@
+---
+id: get-country-by-id
+title: "Get Country for a CountryId"
+description: "API used to get the Country for a specific CountryId"
+sidebar_label: "Get Country for a CountryId"
+hide_title: true
+hide_table_of_contents: true
+api: eJydVE1v2zAM/SsCL9sAL8my7uLTvI+2ubRpk56KoGBtOtZmS6pEJw0M//dBstN8tFu3nWxRJN8j+cQGGJcO4ltIda3YbmARQUYutdKw1ApiSKYTUTvKBGuxJBZckPjaOYtcW4HCGUplLtOteZJBBNqQRZ9ikkEMS+L+8kt3bdBiRUzWgzegsCKItySCh/TgBrmAY0ZPMIILZLHRtVijYk/wiBxEYOmhlpYyiNnWFIFLC6oQ4gZ4YzymVExL8q65thVyZ/o4hrZd+HBntHLkfMR4NPKfQzbXxLVVbh8aIki1YlIccOiRhz+cd27ato3gZHTy+zQozpnNjJFrN7i4nN+dXt5cfBMy3weYZNumUyYyTU4ozYIepeNXsD+9VMJEMVmFpSBrte26aiytSLGfe0HCEluSKyyFzv+qyjaCirjQ/fDDxLmAGIZo5LCf87B5GngLETiyq60galtCDAWzcfHQxwwealTsZRZUhQrLDcvUDbRdPlPI1OqsTv1BdEmDUq+SOUSwQivxvgwTDSOWKtehAsmlF8TVAZBAlYlkiybmWpc+CVnXQY0HH8aD0TMGyXTyxnlFYpqS69RxlczFLNDpW4dpaF0v/tNkNhVMWEF0VP56vX6lfKpQ+ojz2ezO57k7v/q8LFz63rgquLQRlDIl5WgPMTGYFiQ6/oeQudaDe7TgB2m04wrVXuAZ8dEO2H/6B51odiL531XSP9SgMFOiVL6aQLfpVXULaGRo6laZ8W6VLCIotGPv1TT36OjGlm3rzQ812Q3Et4udKoL4Mun8fwZxjqWjP1T09rpfL+/EP22lF0vqjag2QaZl7U8QwU/aHOzGdtFGUBBmZAPd7j5JUzK8F7l7kV7lT6/x7Psc2vYXReoPag==
+sidebar_class_name: "get api-method"
+info_path: docs/generated/api/v2.12/quantification-and-analytics-tool
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get Country for a CountryId"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/api/country/{countryId}"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+API used to get the Country for a specific CountryId
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"countryId","in":"path","description":"CountryId that you want to the Country for","required":true,"schema":{"type":"integer","format":"int32"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Returns the Country","content":{"text/json":{}}},"404":{"description":"Returns a HttpStatus.NOT_FOUND if the CountryId specified does not exist","content":{"text/json":{}}},"500":{"description":"Internal error that prevented the retreival of Country","content":{"text/json":{}}}}}
+>
+  
+</StatusCodes>
+
+
+      

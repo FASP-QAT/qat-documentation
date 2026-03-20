@@ -1,0 +1,71 @@
+---
+id: get-stock-adjustment-report
+title: "get the StockAdjustmentReportOutput list"
+description: "API used to get the StockAdjustmentReportOutput list."
+sidebar_label: "get the StockAdjustmentReportOutput list"
+hide_title: true
+hide_table_of_contents: true
+api: eJylVUtz4kYQ/itTfclFPEzi2kSnVV61nBYbNodQlKuRGmm80sx4pmWWovTfUy2BEZjddRIuSK2vHzP9fd17YMwDxEvw5KxnWEWQUUi9dqytgRiS2VTVgTLFVuXEigtSc7bp5yR7rANXZPi+df1Ys6tZlTrwECKwjjxKjGkGMeTEV50gAk9PNQX+1WY7iPeQWsNkWB7RuVKnbZDRY5Bq9hDSgiqUJ945ghjs+pFSieO8pGRNQb46b3OPlSR/gWrDlJOHCDbWV8id6ccJNBE8kw+HYt+ED4yef0emHj6w1ybvwzNkGrCuqHOx7t95uBKN0Sb/ZDRPs9BzRO9xBxFopiq8Dtj0K5x3ttegU0nfgJzX8FVgEwFrLsV0tdFT42p+6J7/0rSFRlyk99pTBjH7mlpDcNaEroeT8Vj+zvl4T1x7E97EQ4j6dGL6wkcetdlvr8WfGiZvsFTkvfWKC2TlPD2TYRFBQcoTe9LPWCq7+X8lNBFUxIUVhTjbgh1yATGM0OlRJ8lR+IpwAnlhLcTLPdS+hBgKZhfikTgPn2o0rDcH/aDBcsc6DUPrhW/nZ555m9WpvKguqNpYr+6SBUTwjF7jumw70jSrCKT8+5Nm//iClSvpQnPjM0WNz/QCk/Hkp8H43WDyy+LmNr69iSc/D8fvbv6Gvka+hXqli+WRh6srvD+p7JLupy/XWd6TgTYb23bwQPK7s+tVaDKVHO9YLawt4eUG5CzDm8lw/Orek9n0hyCDFdOUQsfpu2Sh5m0TDtTBtKWOwUry/pnMZ4oJK4gumr7dbr/TdKpQi8eH+fxB4jx8uHufFyEduFC1kCaCUqdkAvUyJg7TglRX/3nKjbXDNfpW/cLfCk3P8a3b4vJaejvgP2+fw3Rq9eZK1EbO1ha/P0hsCeh0u36Ocroqs1UEhSgzXsJ+v8ZAn3zZNGJ+qsnvIF6uThqRtyaCgjAj3+ryM+0ght+68wwWUpXAy7od4pf7rYmOHkmakuMe9jQ5RIMvU2P2cS4iXR+WZ2UzAXvcyslwCzG0q1hStCO1te2hRJPXmAu2iym/fwAwdMtM
+sidebar_class_name: "post api-method"
+info_path: docs/generated/api/v2.12/quantification-and-analytics-tool
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"get the StockAdjustmentReportOutput list"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/api/report/stockAdjustmentReport"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+API used to get the StockAdjustmentReportOutput list.
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={undefined}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"content":{"application/json":{"schema":{"type":"object","properties":{"programId":{"type":"integer","format":"int32"},"versionId":{"type":"integer","format":"int32"},"startDate":{"type":"string","format":"date-time"},"stopDate":{"type":"string","format":"date-time"},"planningUnitIds":{"type":"array","items":{"type":"string"}},"startDateString":{"type":"string"},"stopDateString":{"type":"string"},"planningUnitIdString":{"type":"string"}},"title":"StockAdjustmentReportInput_ReportView"}}},"required":true}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Returns the StockAdjustmentReportOutput list","content":{"text/json":{}}},"500":{"description":"Internal error that prevented the retreival of StockAdjustmentReportOutput list","content":{"text/json":{}}}}}
+>
+  
+</StatusCodes>
+
+
+      

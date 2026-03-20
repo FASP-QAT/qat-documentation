@@ -1,0 +1,63 @@
+---
+id: get-planning-unit-list-basic
+title: "Get Planning Units (basic)"
+description: "Retrieve a list of planning units with basic information"
+sidebar_label: "Get Planning Units (basic)"
+hide_title: true
+hide_table_of_contents: true
+api: eJztVttu00AQ/ZXVPIFkkqqoICyElFZtVVQupQUeoqja2BN7i7O7zI4Tosj/jmbtICeFloonEE9x5j5nzni8hhxDRsazcRZS+IBMBheotKpMYOVmylfaWmMLVVvDQS0Nl2qqg8mUsTNHcx1dE3AeKT6f5ZBCgfy+c/xoDZ+bwIfiBAkQBu9swADpGvb39uQnc5bRsjwyfuPhTZBy1hCyEuc6ilceIQVNpFeQgGGch57cTW8wY0jAkxTCpg0/c4SZDtyVcb+DyXs2xjIWSJBA22greroPTQImv2QytuiZh1bQJFDpKVb3J5vqgG9c/kBTyAxldaXp0eFGeH1mGcnq6pPB5WOpgA1XEu7nJj9qPPvddqP1Ndpft3s9ozuU/i5l8D9R9po4j1a7DXhyeZ3xkWYsHK3+z/afmW1PfWnmvsJ3Ebj7rE62l/3E0Si/qcPWi+gWVP9J8beSoj/W35l1IyFunbuabHjwtWsSOHjg4frFmOcYgi7wyOV4NyQfuqsplrca2+1ro1dI5EgtS1OhKpBlNbZbjI23iXQRIB3DBkEVD+YkgTly6bqbLvVrLiGFofZm6HtoD6fdfQ9ICySJtYaahL8lsw/pUFwGX2tt2cxMFpHUVlcrNlkYOCpgt41TtPJNgblqYyoJ10wkRVaT4VXMMUVNSKNayhpP+upLGUK3Tj2jzb+TDelff766lftYIFRconr9+Uqx+4JWGRsFLQ9SdRijqJdR+Uo6j/kg7eJDspmnABBBFhJJAdu5LrYwUaMNKOrKuQoSqEyGNkSCWB0TjLzOSlTnrUJ9QgriuT/Yg2QH9OVyOdDRXDAedrHC8Pzs6Pjt5fET8enx7GIkWCzagJDC/uDF8/HBwbPnk3hzXeC5tr1KTpHVFmWCehSZ8HgX0t6y/Ml3Zgdp3DZfaRO3Mba87rg5Bu2NMLXHTkig5eckgdIFFqv1Wl6yH6lqGhF/rVG+IsaTBBaajJ4KHuNJk0CJOkeKZPuCK4E/y9BLzIWu6h/VxN1v+htzenwFTfMdFTr4BA==
+sidebar_class_name: "get api-method"
+info_path: docs/generated/api/qat
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get Planning Units (basic)"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/api/planningUnit/basic"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Retrieve a list of planning units with basic information
+
+<ParamsDetails
+  parameters={undefined}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"content":{"text/json":{"schema":{"type":"array","items":{"type":"object","properties":{"forecastingUnit":{"type":"object","properties":{"id":{"type":"integer","format":"int32"},"idString":{"type":"string"},"label":{"type":"object","properties":{"baseModel":{"type":"object","properties":{"baseModel":"circular(BaseModel_InternalView)"},"title":"BaseModel_InternalView"},"labelId":{"type":"integer","format":"int32"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"}},"title":"Label_InternalView"},"productCategory":{"type":"object","properties":{"id":{"type":"integer","format":"int32"},"idString":{"type":"string"},"label":{"type":"object","properties":{"baseModel":{"type":"object","properties":{"baseModel":"circular(BaseModel_InternalView)"},"title":"BaseModel_InternalView"},"labelId":{"type":"integer","format":"int32"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"}},"title":"Label_InternalView"}},"title":"SimpleObject_InternalView"}},"title":"SimpleForecastingUnitForAdjustPlanningUnit_InternalView"},"id":{"type":"integer","format":"int32"},"idString":{"type":"string"},"label":{"type":"object","properties":{"baseModel":{"type":"object","properties":{"baseModel":"circular(BaseModel_InternalView)"},"title":"BaseModel_InternalView"},"labelId":{"type":"integer","format":"int32"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"}},"title":"Label_InternalView"}},"title":"SimplePlanningUnitForAdjustPlanningUnit_InternalView"}}}},"description":"Returns a list of planning units with basic information"},"500":{"content":{"text/json":{"schema":{"type":"object","properties":{"messageCode":{"type":"string"}},"title":"ResponseCode_InternalView"}}},"description":"Internal error while getting planning unit list"}}}
+>
+  
+</StatusCodes>
+
+
+      

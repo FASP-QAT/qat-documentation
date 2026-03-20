@@ -1,0 +1,71 @@
+---
+id: get-qat-temp-program
+title: "Get QAT Temp Program"
+description: "API used to get pipeline program data from QAT temp tables"
+sidebar_label: "Get QAT Temp Program"
+hide_title: true
+hide_table_of_contents: true
+api: eJyllE1v20gMhv8KwUu7gGpn0/ai02pRtzFQpLbs7CUwAkairOlKmskMFdcQ9N+LGclf7SIFuidbA3Leh5yX7FBo6zC+R6MMV6ph3ESYs8usMqJ0gzEmizm0jnMQDVsWOESCsXprqYachKCwuoZlsgbh2oDQY8UOI9SGLfmL5jnGuGVZkqy5NoshFyM0ZKlmYesxOmyoZoyPOPMcI1Qew5CU+CPb4hgGhbawK1VWwl630PAAHGguQbXFCC0/tcpyjrHYliN0Wck1Ydyh7I0HUI3wln1ooW1NMhy9vca+3/h0Z3Tj2PmM66sr/3NJlrK0tnFAcFkx6MevnAmoAqRkOPYHduTAtVnGzhVthRFmuhFuJDDxN5l+df7iru/7CN9dvX1J8kbErISkdZOPX9K/5x8+zG4PineOLeSaHTRaoKRnBgqqv5B8/3KVZ5Lz2/UsvU0+P6xm6T+z9GGWpl/SUd7yUKiuGbT/BrZWW5CSBHKVByiqKr37oT2iIdO1qVj4RdA+wpql1KPdgsGkxBinZNT0YKvp0/Ao09Ea0+5kuB4jdGyfD45sbYUxliLGxVN/y+SppUZUobKARg1Ve1GZm2i7/dmhVudtFkoYLg1GXSZrjPCZrBoGxaNvvNELHWpSUnkTLi+EgJockoMarLX2NvGcg9T15M/rydVPBMli/sr5/g3PHPrqB3UVcMZmUhaaOU7fx2S1AOEwn5fl73a7X5TPNSmfcbNaPfh7Hm6Wf21Ll70xrg4hfYSVyrhxfKaYGMpKhoH/UrLQevJIFv3TGu2kpuYs8RNLqMa/Jpy2ykULupNf/t82G3dDsJypSDW+mEDbjTa7RzLKm+6wTiMcreYPj3jx2X7bRFhqJz636x7J8Z2t+t4fP7Vs9xjfb05WCY7MlfP/c4wLqhy/UO3rdNxzf8Bvr8r/LHo8pGYffFy1/gsj/Jf3l9u73/QRlkw528A+BCRZxkbOUk9T7OfgOMGfZmvs++9asUpg
+sidebar_class_name: "get api-method"
+info_path: docs/generated/api/v2.12/quantification-and-analytics-tool
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get QAT Temp Program"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/api/pipeline/qatTemp/program/{pipelineId}"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+API used to get pipeline program data from QAT temp tables
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"pipelineId","in":"path","description":"PipelineId for which you need to temp program data for","required":true,"schema":{"type":"integer","format":"int32"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Returns a QatTempProgram object if the operation was successful","content":{"text/json":{}}},"403":{"description":"Returns a HttpStatus.FORBIDDEN if the User does not have access","content":{"text/json":{}}},"500":{"description":"Returns a HttpStatus.INTERNAL_SERVER_ERROR if there was some other error that did not allow the operation to complete","content":{"text/json":{}}}}}
+>
+  
+</StatusCodes>
+
+
+      

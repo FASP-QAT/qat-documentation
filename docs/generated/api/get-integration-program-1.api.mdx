@@ -1,0 +1,71 @@
+---
+id: get-integration-program-1
+title: "Get Integration Program"
+description: "Retrieve an integration program by its ID."
+sidebar_label: "Get Integration Program"
+hide_title: true
+hide_table_of_contents: true
+api: eJztWl9P20gQ/yqreWolN6G0XHXWqRI0wKWicIXQPqAIbexJvK3tNbvj0Cjydz/N2ikmOJBWkZpWfoLs/P3NjGdXOzuHEG1gVEZKp+DDOZJROEUhU6FSwomRTBGZ0RMjEzGaCUVW9Hsd8EBnWJL7IfgwQerfSfxXCly/BA8yaWSChMaCfzVfsvhQph8KiiSJmc7FrUxJkBYUoahxiopVjLUBDxQryiRF4EEqEwQfVINa8MDgTa4MhuCTydEDG0SYSPDnQLPsuxyy0rE2iaRy6dUuFMWQxW2mU4uWJXZ3dvhPoFPClJwO/EbdL5ZxzR+q1qMvGBDHw3DkSJVqZEBqijW+kdYxyhQKD0bS4gcdYrwxNRAoE+SxNM8OFovPwYPAoCQMD2ZPG8otGk74GiHzHHOZke/sloxKJ1AUHpCimJcOpFXBpUXDIpUrPUkNUjUboSR8QSpBFoqlpQ86VGO1HSDq/vwIkvv6qqQVv39+ap/j0wjGKsbTZqdYfxyiOdHBsrI7lpqxtQNRk1lpusbzSeHt00CWBHpog3UU/4zTLLfC8Voi+0sICm5pMk7WgLK2T+FFabcJaCxHG+xlbUtsW+JWQPvJ/IwwXtsrx32NzQ2vJI7NI8TsMaLNVhD/uAo6cQ2oWBwTHzN9oZIsxrMS6oomutSE706a6yb1zwiw85ORt/tIu49sa5G2+0i7j/z6fcSDKRqrdHpBknLbNsy2Yf4G5d42zLZh/uqGOXACbbts2+XWF3vbLtt2uVX3FNXFBBRMfzDxy01qV03Y2IfXO69gA4OuBK2VE3ynwycQnVdTNsf5iMtS/EuUlQfpztHZ+UG/1zs8FWrswHA2RKjRilSTiCQPNYMArS0hvd5+SKdng+ujs8vT3gJSLT/9UNgMA1djdyjxm7Juz9zbzGxyY/jYc5PKWKAx2pTz3czgFFPC0GEzSAbVVMZCj5sLkc3JCc+QoYk+9CBBinQ1i3ZzZ4rAh67MVPfhLV133nRzV4AHFs10MazODe+8EVFm/S5r6tzkMiU1VuUASqYynpEKbEcb/q7vwz7GlEfkGIpSp2B1PEi2GORG0czZGKE0aPZz9vZqWCdfcJ7KVNSZFr+OFk3k/efBA9uHHHIX2vefB4L0V+SRvlsom48vDpwW8Y8jvoVqHO5OII4C3iLlHACXAZWONTtw39bHezER+4ugiIHWMXgQqwBT62qoms/vZzKIUJyUBPGpPOOJ3c4OeEtBv7297UjHzjHuVrps96T/7vD04vAFy9RK8eM+x6I6NIIPu52/31zt7f31ZuguKrWlRKY1T46RGuttKZ61j+nHXklUEXTfXxZL5Y51DuG8qtArkJmCpptk8MBvvF8eehBpSyw7n/MZ8dLERcHLNzkaLquhB1NplBxxUPjVhbL8fwj+WMYWH0H37Lx6JPFcbOJxRiP+alGmM86VjHP+BR58xdmqxxvFsPAgQhmicYBK1v0gwIxqSu76XFHvCMeHAyiK/wGcbwLk
+sidebar_class_name: "get api-method"
+info_path: docs/generated/api/qat
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get Integration Program"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/api/integrationProgram/{integrationProgramId}"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Retrieve an integration program by its ID.
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"description":"IntegrationProgramId that you want to the Integration Program for","in":"path","name":"integrationProgramId","required":true,"schema":{"type":"integer","format":"int32"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"content":{"text/json":{"schema":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":"circular(BaseModel)","createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"}},"title":"BaseModel"},"createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"integration":{"type":"object","properties":{"fileName":{"type":"string"},"folderLocation":{"type":"string"},"integrationId":{"type":"integer","format":"int32"},"integrationName":{"type":"string"},"integrationView":{"type":"object","properties":{"integrationViewDesc":{"type":"string"},"integrationViewId":{"type":"integer","format":"int32"},"integrationViewName":{"type":"string"}},"title":"IntegrationView"},"realm":{"type":"object","properties":{"id":{"type":"integer","format":"int32"},"idString":{"type":"string"},"label":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":"circular(BaseModel)","createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"}},"title":"BaseModel"},"createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"labelId":{"type":"integer","format":"int32"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"}},"title":"Label"},"name":{"type":"string"}},"title":"SimpleObject"}},"title":"Integration"},"integrationProgramId":{"type":"integer","format":"int32"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"},"program":{"type":"object","properties":{"id":{"type":"integer","format":"int32"},"idString":{"type":"string"},"label":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":"circular(BaseModel)","createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"}},"title":"BaseModel"},"createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"labelId":{"type":"integer","format":"int32"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"}},"title":"Label"},"name":{"type":"string"}},"title":"SimpleObject"},"versionStatus":{"type":"object","properties":{"id":{"type":"integer","format":"int32"},"idString":{"type":"string"},"label":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":"circular(BaseModel)","createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"}},"title":"BaseModel"},"createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"labelId":{"type":"integer","format":"int32"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"}},"title":"Label"},"name":{"type":"string"}},"title":"SimpleObject"},"versionType":{"type":"object","properties":{"id":{"type":"integer","format":"int32"},"idString":{"type":"string"},"label":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":"circular(BaseModel)","createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"}},"title":"BaseModel"},"createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"labelId":{"type":"integer","format":"int32"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"}},"title":"Label"},"name":{"type":"string"}},"title":"SimpleObject"}},"title":"IntegrationProgram"}}},"description":"Returns the Integration Program"},"403":{"content":{"text/json":{"schema":{"type":"object","properties":{"messageCode":{"type":"string"}},"title":"ResponseCode"}}},"description":"Returns a HttpStatus.FORBIDDEN if the User does not have access"},"404":{"content":{"text/json":{"schema":{"type":"object","properties":{"messageCode":{"type":"string"}},"title":"ResponseCode"}}},"description":"Returns a HttpStatus.NOT_FOUND if the IntegrationId specified does not exist"},"500":{"content":{"text/json":{"schema":{"type":"object","properties":{"messageCode":{"type":"string"}},"title":"ResponseCode"}}},"description":"Internal error that prevented the retreival of Integration Program"}}}
+>
+  
+</StatusCodes>
+
+
+      

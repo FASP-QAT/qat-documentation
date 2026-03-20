@@ -1,0 +1,33 @@
+---
+id: nodetype-internalview
+title: "NodeType_InternalView"
+description: ""
+sidebar_label: "NodeType_InternalView"
+hide_title: true
+hide_table_of_contents: true
+schema: true
+sample: {"extrapolationAllowed":true,"forecastTreeAllowed":true,"id":0,"label":{"baseModel":{},"labelId":0,"label_en":"string","label_fr":"string","label_pr":"string","label_sp":"string"},"modelingAllowed":true,"treeTemplateAllowed":true}
+custom_edit_url: null
+---
+
+import Schema from "@theme/Schema";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"NodeType_InternalView"}
+>
+</Heading>
+
+
+
+
+
+<Schema
+  schema={{"type":"object","properties":{"extrapolationAllowed":{"type":"boolean"},"forecastTreeAllowed":{"type":"boolean"},"id":{"type":"integer","format":"int32"},"label":{"type":"object","properties":{"baseModel":{"type":"object","properties":{"baseModel":"circular(BaseModel_InternalView)"},"title":"BaseModel_InternalView"},"labelId":{"type":"integer","format":"int32"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"}},"title":"Label_InternalView"},"modelingAllowed":{"type":"boolean"},"treeTemplateAllowed":{"type":"boolean"}},"title":"NodeType_InternalView"}}
+  schemaType={"response"}
+>
+  
+</Schema>
+            

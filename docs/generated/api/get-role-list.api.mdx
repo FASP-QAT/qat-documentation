@@ -1,0 +1,63 @@
+---
+id: get-role-list
+title: "Get Roles"
+description: "Get role list"
+sidebar_label: "Get Roles"
+hide_title: true
+hide_table_of_contents: true
+api: eJztVl1rGzEQ/Ctin1q42iGQhh6l4BgnJLiFJE7yYEyQ5bVPiSxdVjq7xtx/Dyvb4Xz5aB1on/Lks3Y1O5od3d4SRugV6TxoZyGFEwyCnEFhtA+QgMuRJMdOR5DCBMOFM9hdxQh97qxHD+kS9vf2+Ec5G9AGfgz4OzTvPMMuwasMpzIuL3KEFCSRXEACOuDUV9bd8A4Vo+fEtYNewQ8Lry16f1xYxXQihfejSY8/3QjNTqmgNKnCSPp0tFm8vcDcUbjWOP8MZQJBB8NgLyVwvH4MVvWJgQ+k7YTTjBzuyO3/HiPyu0X7OvnbMb0RzN8K+vyFYIVUN2ZVCVUZ1wSu59Ub4P/CRBUOSto2oQz4dA3e7cGPHu/U4wT4tfTifansa1f7U+/9VvN2bPxHt/5Bt543iaPbA+kCQ0HWi5BhZTCVCRzsOHBeacMUvZcTbLsR/oHsetpxZo10nfOpDUhWGoFEjsQ80wbFBEPQdlI/CFeQEw9pH648EgwSmGLI3HrcMl8ZMkihKXPd5I2QgEeaIfGmJRTEDspCyH3a5KTGQyFt0GOt4uCWVppF0Mo3HE2gTvUELQ94HIkVpmC4csAlVEE6LGKNIUpCahVMpD+ohi9Z5rWhK0mbf8eOpjJACmc3vWe1OyxT1OPspieCu0crtI0L47gvFUcRRXyPwR988lgP0jU+JJuOsQBRTW3Hjgls1zrf0kS0NqKInnMGEjBaofXRAlbGAq1cqgxFdxUQ10ied+439iCpiT6fzxsyprPGzTWWb3ZP251fl50vvKfipPMWazFbAUIK+41vh/2Dg6+HA87KnQ9TaStM+Jts9cqqKVhx/7MPt7Us8U7kRmrL2JH2cu2oPshcw+qmsu0yx+OsD8slv5quyJQlLz8USOyCQQIzSVoO+Qz9QZlAhnKEFA1yjwuWTCnMufhMmuKperyRZdXXJ50elOUjfTKkjA==
+sidebar_class_name: "get api-method"
+info_path: docs/generated/api/qat
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get Roles"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/api/role"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Get role list
+
+<ParamsDetails
+  parameters={undefined}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"content":{"text/json":{"schema":{"type":"array","items":{"type":"object","properties":{"businessFunctionList":{"type":"array","items":{"type":"object","properties":{"baseModel":{"type":"object","properties":{"baseModel":"circular(BaseModel_ReportView)"},"title":"BaseModel_ReportView"},"businessFunctionId":{"type":"string"},"label":{"type":"object","properties":{"baseModel":{"type":"object","properties":{"baseModel":"circular(BaseModel_ReportView)"},"title":"BaseModel_ReportView"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"}},"title":"Label_ReportView"}},"title":"BusinessFunction_ReportView"}},"businessFunctions":{"type":"array","items":{"type":"string"}},"canCreateRoleList":{"type":"array","items":{"type":"object","properties":{"label":{"type":"object","properties":{"baseModel":{"type":"object","properties":{"baseModel":"circular(BaseModel_ReportView)"},"title":"BaseModel_ReportView"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"}},"title":"Label_ReportView"},"roleId":{"type":"string"}},"title":"CanCreateRole_ReportView"}},"canCreateRoles":{"type":"array","items":{"type":"string"}},"label":{"type":"object","properties":{"baseModel":{"type":"object","properties":{"baseModel":"circular(BaseModel_ReportView)"},"title":"BaseModel_ReportView"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"}},"title":"Label_ReportView"},"roleId":{"type":"string"}},"title":"Role_ReportView"}}}},"description":"Returns the role list"},"500":{"content":{"text/json":{"schema":{"type":"object","properties":{"messageCode":{"type":"string"}},"title":"ResponseCode_ReportView"}}},"description":"Internal error while getting the role list"}}}
+>
+  
+</StatusCodes>
+
+
+      

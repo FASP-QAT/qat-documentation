@@ -1,0 +1,71 @@
+---
+id: get-organisation-1
+title: "Get Organisation"
+description: "Retrieve an organisation by its ID"
+sidebar_label: "Get Organisation"
+hide_title: true
+hide_table_of_contents: true
+api: eJztWW1v2zYQ/ivEfWoB1k6zZkWFoYDzssBFuqKJu34IjIKWzhZbiVTIkzPD0H8vjpI3yXESbzC2LvAnW7z3h8cjeVxCgj52uiBtDURwieQ0zlEoI6ybKaO9YpKYLIQmL4anIMEW6MLoMIEIZkgfWpxfXoKEQjmVI6HzEF0v12yMUhTDU2GnglLsWiErXOMBSNDMXShKQYJROUIEbe5hAhIc3pTaYQIRuRIl+DjFXEG0BFoULKEN4QwdSJhalyuqh346hKoas7gvrPHoWeLw4IB/YmsIDQUd+Af1v3p2e3lXtZ18xZg4XMeQkK7VqJj0HFt8E2szVAYqCRPl8b1NMNuZGoi1i8tMuWfHq8HnICF2qAiT48XjhkqPjmdyC8hkYK7n4k92T06bGVSVBNKU8dCx8jr+5NGxSOPKqaINUi0biSJ8QTpHFsqUp/c20VP9YwTR9ufvRNLV10xa9RTmZ7LDJN6vhf1a+CFC++drYWuvAvcXNBu8WhGn7gFi8RDRF/cQn1wGXYQC9IRik53DzYlNNhmV6yeg7cJoC40C+2Mo6W1V6+Sq9u3epNzvEvtdYr9L7HeJ/3SXeNz0lc6LDD/UoVZ8NVRZ/jgI8X2Fel9B/38r9Mnl/76C7ivov1xB+eS6VkVPbGnILQbOqTYoKnxL0IS536S6pbvdYqwpdxqXpTN+vW/JLrw6eAU7aOvl6L2a4T0H85arl01PMXBucLUdijCWxNSWJmFPj3bTgNyZp0NDnHKZQOesE7epzlDMkEib2RrMrFXNuN3bnaqxhBwptU2nOPSGKYUI+qrQ/baO/rJ7talAgkc3XzWRS8c7T0pU+KjP0r2bUhnSUx0HCWVUtiAd+551nNfdUM7RcNMaE1HrFKyOO8Ae49JpWgQbE1QO3aBkD6/HbfIVY1/D22Zaff26WkTvPo/u2D5jGEOz+93nkSD7DY3QJgzUiy8Sx0GL+CUQ30LTxw47cKCAXE0jAxDg1mZq2YGurY8dTMRgBYoYWZuBhEzHaHzIi6alPihUnKK4qAnid3SeJQ97ByDXQL+9ve2pwM4Y9xtdvn8xPDn77ersBcu00uvjgLGY1wohgsPem9fXR0c/vx4zV2E95cq0PDlHEp3kWQOytTK2e6hoIAuLqMiUDuUghLRs0vAaVKGhe0EGCdHaLXssIbWemH+55IPQJ5dVFQ/flOg4d8YS5sppNeHI+clDe/6fQDRVmccHInl22TxhPBdbv4xsDGxVVQ3X1LnKSv4CCd9wcfflpBpXElJUCbrgb800iGMsqCX+V/2p2iv5/GwEVfUdDCz+eg==
+sidebar_class_name: "get api-method"
+info_path: docs/generated/api/qat
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get Organisation"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/api/organisation/{organisationId}"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Retrieve an organisation by its ID
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"description":"The ID of the organisation to retrieve","in":"path","name":"organisationId","required":true,"schema":{"type":"integer","format":"int32"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"content":{"text/json":{"schema":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":"circular(BaseModel)","createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"}},"title":"BaseModel"},"createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"label":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":"circular(BaseModel)","createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"}},"title":"BaseModel"},"createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"labelId":{"type":"integer","format":"int32"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"}},"title":"Label"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"},"organisationCode":{"type":"string"},"organisationId":{"type":"integer","format":"int32"},"organisationType":{"type":"object","properties":{"id":{"type":"integer","format":"int32"},"idString":{"type":"string"},"label":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":"circular(BaseModel)","createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"}},"title":"BaseModel"},"createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"labelId":{"type":"integer","format":"int32"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"}},"title":"Label"},"name":{"type":"string"}},"title":"SimpleObject"},"realm":{"type":"object","properties":{"code":{"type":"string"},"id":{"type":"integer","format":"int32"},"idString":{"type":"string"},"label":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":"circular(BaseModel)","createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"}},"title":"BaseModel"},"createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"labelId":{"type":"integer","format":"int32"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"}},"title":"Label"},"name":{"type":"string"}},"title":"SimpleCodeObject"},"realmCountryArray":{"type":"array","items":{"type":"string"}}},"title":"Organisation"}}},"description":"Returns an organisation"},"404":{"content":{"text/json":{"schema":{"type":"object","properties":{"messageCode":{"type":"string"}},"title":"ResponseCode"}}},"description":"Organisation not found"},"500":{"content":{"text/json":{"schema":{"type":"object","properties":{"messageCode":{"type":"string"}},"title":"ResponseCode"}}},"description":"Internal error while getting organisation"}}}
+>
+  
+</StatusCodes>
+
+
+      

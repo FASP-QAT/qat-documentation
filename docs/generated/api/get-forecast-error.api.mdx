@@ -1,0 +1,71 @@
+---
+id: get-forecast-error
+title: "Get Forecast Error Report"
+description: "Retrieve the forecast error report"
+sidebar_label: "Get Forecast Error Report"
+hide_title: true
+hide_table_of_contents: true
+api: eJzNV21v2kgQ/ivWfLqTHCDc5dJap5PIS6tUaWiAttIhFC1mgG3sXWd3DEWI/36atR3s8BLnw52ODwh2ZnZe9pnZZ9cwQRsamZDUCgLoIRmJC/Rojt5UGwyFJQ+N0cYzmGhD4INO0Ag2uJlAADOkD7niNeuBDwafUrR0oScrCNYQakWoiH+KJIlk6IybPyy7XIMN5xgL/kWrBCEAPf6BITtKDLsiiZalE7Gy3WmfdPjYTamkP9Y6QqFg4wM+pXIhIlTh6quSxAE+q0lFOEOOb6pNLChb+q3NdonBhdSp/awVzW1tIz0zIq7txODMFa1PRqpZychmCyWVcgjCGLECHyRhbPdYbXywJAxdCcJdcSmQiSA8IRkjOBOdvM0idQU9Enym8MbQF2hsDqVaRVxIXF6sailvfCBJEStVEHqjkpTucPnQc4j+JnEJG9au9sJgtwUkW+YAlwYnEJBJ0Z2bTbSyGVDbrdYL2BP+pMN4P1SlA30gQkpFdE/lIqg0HldrMNHpOHLn5kL/giasqV/kXN9DzF1TH0gZyK8E/YdFODg8jmHt369cVorX05V120Mea9BIjDF63dlYWPysJ29UhVCaMI2E+eWiWCw12K9Q6sZ9Cs/xPaA6HPzD1BwRJseENtk/gIqgbp1WZSRshX0ZJxF2XRFeBG3TuDvtjO2VnE5rnnpm4hD8FotiiNWyKQXfcyCrjMBuSklKL7P9/6fyahK7Y7yHlBpljzCajQ9nbxzZB9ohRmvFDC/1ZM+9Wj2S7L5gzVeuoRtFaJSI8piXcxmhN0PlOJiaubyKRNiDmFkIhpBtamHkQ4w010zVEm1dzIKnNTRFIpuZZXNarusdLsEHi4bvZgiGa0gNN/icKLFBk+0aT6lQJKc5lxNKRCuSoW1ow3O/msHHLFiceNmeHm+3GbGLMDWSh+VwDWMUBk0n5diGo7K4z9XP501Jqfj3ocDLp++DHd/XXD1Xo0/fBx7pR1SeVAUYYkGBd+F28f50wr84c+ePiaWTgF8cJBfAFZlx0duS3OufgsfDPpLK/GAvLW3tks5WhVK2dgnj9mIt8cRhsTqq8EBot9q/n7TOT9rvB6dnwdlp0H7XaJ2f/g1l7ndMq8r3tr6faV7Zc4nGtbYkrcU3kppqV5nKudxX8ON1CgB5A60j8CGSISrrSqqEO4xOIsI5ereZwPuWOfTajRbHVAHocrlsCKfOeGzme9nm7c3l9V3/+oRtSs1432Hc5BlwTRrvz4dnZ3+cjxzL15ZioUqRfETyikHkuY7xesXbqJJlaaDUe1nlOHOzJ4mEdG8al9s679ohiEQ6AOQmO5078mHOfR4MYb3m+/mriTYbXn5K0XCv8XEJIwUPV241H+YoJmhcGz7iCgK4zOI+GXBArB6ljqS9fL5t/MKiE4aYUEl3O0A35Rn0pdvnao/zt2HsRiUYwSOHvwNwL0x24Trera0hEmqWihnrZnvy5x/hPhTB
+sidebar_class_name: "post api-method"
+info_path: docs/generated/api/qat
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get Forecast Error Report"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/api/report/forecastErrorNew"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Retrieve the forecast error report
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={undefined}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"content":{"application/json":{"schema":{"type":"object","properties":{"daysOfStockOut":{"type":"boolean"},"equivalencyUnitId":{"type":"integer","format":"int32"},"previousMonths":{"type":"integer","format":"int32"},"programId":{"type":"integer","format":"int32"},"regionIdString":{"type":"string"},"regionIds":{"type":"array","items":{"type":"string"}},"startDate":{"type":"string","format":"date-time"},"stopDate":{"type":"string","format":"date-time"},"unitIdString":{"type":"string"},"unitIds":{"type":"array","items":{"type":"string"}},"versionId":{"type":"integer","format":"int32"},"viewBy":{"type":"integer","format":"int32"}},"title":"ForecastErrorInputNew_ReportView"}}},"description":"The forecast error input","required":true}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"content":{"text/json":{"schema":{"type":"array","items":{"type":"object","properties":{"actualQty":{"type":"number","format":"double"},"errorPerc":{"type":"number","format":"double"},"forecastQty":{"type":"number","format":"double"},"month":{"type":"string","format":"date-time"},"regionData":{"type":"array","items":{"type":"object","properties":{"actualQty":{"type":"number","format":"double"},"daysOfStockOut":{"type":"integer","format":"int32"},"errorPerc":{"type":"number","format":"double"},"forecastQty":{"type":"number","format":"double"},"region":{"type":"object","properties":{"id":{"type":"integer","format":"int32"},"idString":{"type":"string"},"label":{"type":"object","properties":{"baseModel":{"type":"object","properties":{"baseModel":"circular(BaseModel_ReportView)"},"title":"BaseModel_ReportView"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"}},"title":"Label_ReportView"}},"title":"SimpleObject_ReportView"},"sumOfAbsDiff":{"type":"number","format":"double"},"sumOfActual":{"type":"number","format":"double"},"sumOfForecast":{"type":"number","format":"double"}},"title":"RegionForecastErrorOutput_ReportView"}},"sumOfAbsDiff":{"type":"number","format":"double"},"sumOfActual":{"type":"number","format":"double"},"sumOfForecast":{"type":"number","format":"double"}},"title":"ForecastErrorOutput_ReportView"}}}},"description":"Returns the forecast error report"},"500":{"content":{"text/json":{"schema":{"type":"object","properties":{"messageCode":{"type":"string"}},"title":"ResponseCode_ReportView"}}},"description":"Internal error while generating the report"}}}
+>
+  
+</StatusCodes>
+
+
+      

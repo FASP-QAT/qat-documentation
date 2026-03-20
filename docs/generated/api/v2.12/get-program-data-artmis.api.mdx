@@ -1,0 +1,71 @@
+---
+id: get-program-data-artmis
+title: "Get Artmis view ProgramData list for given ProgramId and VersionId"
+description: "API used to get Artmis view ProgramData list for given ProgramId and VersionId"
+sidebar_label: "Get Artmis view ProgramData list for given ProgramId and VersionId"
+hide_title: true
+hide_table_of_contents: true
+api: eJy9VcFu2zgQ/RViLu0CqpVNuxedVos0jS+JEzu9BEYwkUYWdyWSIUd2DUH/XpCyZblpmyYo9iSR4sx7M3rz2ALjykFyB8bqlcX6DBlhGUFOLrPSsNQKEkhnU9E4ygVrsSIWqeVaOrGWtBGzQ6CopGNRaCtWck1q/2maC1S5+EzWSa2mOUSgDVnkfpXAiniUpU8OERi0WBOT9QRbUFgTJHuiIY305AxyCd8yHk4JLpHFVjdig4p9AVzSEelCW4jA0mMjLeWQsG0oApeVVCMkLfDWeFypmFbkjxba1sj91vtT6LpoILce1fhjcsOp/4Pc0oc7o5Uj5yNOT07845jRDXFjlXsC738oRJBpxaQ4ANIXjv91Pqrtui6CDyfvf5wPxQWzmTNy4ybnVzf/TM/OPl4KWQSkW0dW5JqcUJpFiWsSmGXk3LOQH34R8vJqcX9+dXt5toccF+cMZbKQlB840JfnC/7rew2cKiarsBJkrbb9fzWW1qTYj01JwhJbkmushC7GNH6K1kVQE5d6NyVhKLiEBGI0Mh7NbIxhauJB93E7vHbxILi4HV47iMCRXe/Hq7EVJFAyG5fEPv3ksUHFspBZmFRUWG1ZZm6i7eqJpGdW503mF6JPGmzgOl1ABGu0Eh+qIL+gR6kKHYqVXHn1Xh8BBbNI92hioXXlk/S8IYHTyZ+nk5MnDNLZ9I3zI9RLKPT8Ol2IeaCz6zJmocu7aT1P5zPBhDVE35S/2WyeKZ9qlD7iYj6/93nuL67/XpUue2dcHY50EVQyI+VohJgazEoSPf9jyELryQNabydgtOMa1Sjw0+9w3aOGtQfZ/X5/39lSULOpUCrfjlBvu1PwHaCRXs9Hk4CD949cPhkvxg6bHBbLCErt2Odt2wd0dGurrvPbjw3ZLSR3y4MQg95z6fx7DkmBlaOfdOftzc5+/xAvvla+24jdJqptmI6q8SuI4D/aHl1w/mJ5Fc0XXzCvoHnofbfsIigJc7Khs/33NMvI8CjyYG3eAwZb+/RxAV33FVEP9Eo=
+sidebar_class_name: "get api-method"
+info_path: docs/generated/api/v2.12/quantification-and-analytics-tool
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get Artmis view ProgramData list for given ProgramId and VersionId"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/api/programData/artmis/programId/{programId}/versionId/{versionId}"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+API used to get Artmis view ProgramData list for given ProgramId and VersionId
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"programId","in":"path","description":"programId that you want to the ProgramData for","required":true,"schema":{"type":"integer","format":"int32"}},{"name":"versionId","in":"path","description":"versionId that you want to the ProgramData for","required":true,"schema":{"type":"integer","format":"int32"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Returns the ProgramData list","content":{"text/json":{}}},"403":{"description":"Returns a HttpStatus.FORBIDDEN if the User does not have access","content":{"text/json":{}}},"404":{"description":"Returns a HttpStatus.NOT_FOUND if the ProgramData specified does not exist","content":{"text/json":{}}},"500":{"description":"Internal error that prevented the retreival of ProgramData","content":{"text/json":{}}}}}
+>
+  
+</StatusCodes>
+
+
+      

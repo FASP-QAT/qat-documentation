@@ -1,0 +1,71 @@
+---
+id: get-usage-template-list-wiht-filters
+title: "Get active UsageTemplate list"
+description: "API used to get the complete UsageTemplate list. Will only return those UsageTemplates that are marked Active."
+sidebar_label: "Get active UsageTemplate list"
+hide_title: true
+hide_table_of_contents: true
+api: eJy9VE1vEzEQ/SvWXADJJKWIy55YIT4icWhpEIcqQlPvJGvw2u54NiVa7X9HdlLaTSsQQuK0a8szb968NzOA4CZBdQl9wg0tqYsOhWCloaFk2EaxwUMF9dlC9YkaJUFtSJS0pEzooiMh9fl+rHI2yUx9sc6p4N1OMUnPXkkb0tHTpKRFUcikOuTv1KjaiN3SDDSESIwZfNFABRuSSeRHm+SLbeWddUKcQENExo7KobocwGNHUIEwGuI3KLQJvFs0oMFmOhGlhWOOy5bUchKwr28XenWDXjL3dQEs9CcFgQam694yNVAJ96QhmZY6hGoA2cVcjPVCG2LQsA7coeyvXp7COK5yeIrBJ0o54vTkJH+m9X0qjUwPwUvLQYMJXshLgaQfMv+WctwwjqOGV49lXHgh9ugUMQfes41MW/KSpW4pi8dkt+hUWP8t6KihI2nDQcAikrRQwRyjnU8MN58KNR+OhRtBQyLe3urbs4MKWpGYqnnON7vu0YtdW1Ncgx7dTqxJs8CbB0qfcWh6kw9qn1StA6vzegkatsgWr1zRoQhj/ToUdlZclvF8AqTQN6q+RVPLEFxOQpz2UKezF6ezkwcV1GeLJykbCo2htNf0vF6qi1LOoa1oSlsPXn5XX5wpIexAH9G/ubn5A33q0OaIDxcXX3Oerx/OX2/aZJ7H1JUnowZnDflE9xDriKYlta9/CrkOYXaFDFnkGJJ06O8FvidRWEb5cc9MejHcWej/r5nDaBbnRofW504UqsPBrZeA0Wb+R+M+dSjoPPZHy2aloQ1Jco5huMJEn9mNY76+7ol3UF2u7vxWbN3YlP8bqNboEv2mU08/HdbNM/WPe+vRFhwu0e/KSLg+n0DDd9o9tlbH1aihJWyIC4/9s9oYinIvwd2CyIP1azm8f7uEcfwJFX9J/Q==
+sidebar_class_name: "get api-method"
+info_path: docs/generated/api/v2.12/quantification-and-analytics-tool
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get active UsageTemplate list"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/api/usageTemplate/tracerCategory/{tracerCategoryId}"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+API used to get the complete UsageTemplate list. Will only return those UsageTemplates that are marked Active.
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"tracerCategoryId","in":"path","description":"The TracerCategory that you want to filter the UsageTemplate","required":true,"schema":{"type":"integer","format":"int32"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Returns the UsageTemplate list","content":{"text/json":{}}},"500":{"description":"Internal error that prevented the retreival of UsageTemplate list","content":{"text/json":{}}}}}
+>
+  
+</StatusCodes>
+
+
+      

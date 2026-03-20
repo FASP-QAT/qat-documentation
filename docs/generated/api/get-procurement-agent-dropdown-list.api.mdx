@@ -1,0 +1,63 @@
+---
+id: get-procurement-agent-dropdown-list
+title: "Get Procurement Agents"
+description: "Retrieve a list of procurement agents"
+sidebar_label: "Get Procurement Agents"
+hide_title: true
+hide_table_of_contents: true
+api: eJyVVdtu2zAM/RWBTxvgJUWHbpgxDMi2rMjQXdu1D0FQKDYTq3UkjaKTBYH/faDsdE56WfsUhzwieY4P5Q3kGDIyno2zkMJPZDK4RKVVaQIrN1OeXFYRLtCy0nO0HCAB55G0nBnlkMIc+fs/1EBAH8n53K3siQkMCRAG72zAAOkGDg8O5CdzltGyPDL+4f5VkBE2ELICFzqG1x4hBU2k15CAYVyETtxNrzCT6p5kHjZN+czl2EEFJmPnUCdg8k7YWMY5EiQwc7TQ3IReHjbA0+bQXVVKPcXy/1NMdcAvLn8iFDJDWVVqevZ+G7wUKT+6lT03uHouE7DhUsrdDbmZcfRYuhF9ifZ+upczeiDpH0oGf0eyQ+IkonYJdNKnZuFL/OBy/BbF20cK9paFK7JBcYEPebhO4OiJPrzn9S0wBD2PMz5M9We7BIK8xWOfxsgyktWlQiJHigvNyhMu0TLmkRw1u6pLYfg/tjKGngdIx7BdzQCTBBbIhWt3WJhpLiCFvvamn7e4vt/bbUggIC2RpNwGKhLjFsw+pH052ftdactmZrJ4RWiryzWbLPQczWGf5zFauUowV01NJeXqibTIKjK8jj2mqAlpUMl040k3fSpvqd2jDmj779PW7Z8vzm71HorGUbrPF2eK3TVaZWwMNFuSqvexinobk++EeewHaVsfku0LFwGizsbOnAyw2+vHjiZqsBVFnTlXQgKlydCG6CCrY4OB11mB6qRJqHOkICcPeweQ7Im+Wq16OsJF435bK/RPRh+GX0+HL+RMx4g/BqLFsikIKRz23rweHx29ej0RlHeBF9p2JjlGVp0LXg22n4Edip1NevR3pNUu7p0vtbEyQOS2ab04Bu2NtGrd2Kzfrh8nCRQusIA3G7lNf1FZ1xL+XSGJgyYJLDUZPRX+40mdQIE6R4rmusa1yJ1l6MXbS11WN0PFy6DuLsrx8Azq+i9BkYO7
+sidebar_class_name: "get api-method"
+info_path: docs/generated/api/qat
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get Procurement Agents"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/api/dropdown/procurementAgent"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Retrieve a list of procurement agents
+
+<ParamsDetails
+  parameters={undefined}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"content":{"text/json":{"schema":{"type":"array","items":{"type":"object","properties":{"code":{"type":"string"},"id":{"type":"integer","format":"int32"},"idString":{"type":"string"},"label":{"type":"object","properties":{"baseModel":{"type":"object","properties":{"baseModel":"circular(BaseModel_DropDownView)"},"title":"BaseModel_DropDownView"},"labelId":{"type":"integer","format":"int32"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"}},"title":"Label_DropDownView"}},"title":"SimpleCodeObject_DropDownView"}}}},"description":"Returns the list of procurement agents"},"500":{"content":{"text/json":{"schema":{"type":"object","properties":{"messageCode":{"type":"string"}},"title":"ResponseCode_DropDownView"}}},"description":"Internal error that prevented the retrieval of the list of procurement agents"}}}
+>
+  
+</StatusCodes>
+
+
+      

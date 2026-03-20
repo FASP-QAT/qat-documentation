@@ -1,0 +1,33 @@
+---
+id: shipmentdetailsfundingsource-reportview
+title: "ShipmentDetailsFundingSource_ReportView"
+description: ""
+sidebar_label: "ShipmentDetailsFundingSource_ReportView"
+hide_title: true
+hide_table_of_contents: true
+schema: true
+sample: {"cost":0,"fundingSource":{"code":"string","id":0,"idString":"string","label":{"baseModel":{},"label_en":"string","label_fr":"string","label_pr":"string","label_sp":"string"}},"orderCount":0,"quantity":0}
+custom_edit_url: null
+---
+
+import Schema from "@theme/Schema";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"ShipmentDetailsFundingSource_ReportView"}
+>
+</Heading>
+
+
+
+
+
+<Schema
+  schema={{"type":"object","properties":{"cost":{"type":"number","format":"double"},"fundingSource":{"type":"object","properties":{"code":{"type":"string"},"id":{"type":"integer","format":"int32"},"idString":{"type":"string"},"label":{"type":"object","properties":{"baseModel":{"type":"object","properties":{"baseModel":"circular(BaseModel_ReportView)"},"title":"BaseModel_ReportView"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"}},"title":"Label_ReportView"}},"title":"SimpleCodeObject_ReportView"},"orderCount":{"type":"integer","format":"int32"},"quantity":{"type":"integer","format":"int64"}},"title":"ShipmentDetailsFundingSource_ReportView"}}
+  schemaType={"response"}
+>
+  
+</Schema>
+            

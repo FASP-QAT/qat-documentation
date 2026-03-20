@@ -1,0 +1,71 @@
+---
+id: post-check-access-via-query
+title: "Check access to programs via query"
+description: "Check access to programs via query"
+sidebar_label: "Check access to programs via query"
+hide_title: true
+hide_table_of_contents: true
+api: eJy1lU1P20AQhv/Kas4mQbQU1aoqBZpWQagtkMIhymFiT+IFe9fsjhOiyP+9mrUtnJRK5dCcnPV8PPPO7HgHKfnE6ZK1NRDDRUbJo8IkIe8VW1U6u3JYeLXWqJ4qcluIwJbkUBwmKcRQWs/BbRS87jRet3aOniryfG7TLcQ7SKxhMiyPWJa5TkKM4YOXzDvwSUYFyhNvS4IY0DmUMJqp8L1zz06bFdR1XUcH+NOMOmQ1+RIqSPoVLa1rubSjFGJ2FdVy4EtrPIUsJ8fHB7RMz/x3zBecQ5ob4soZrzijDqChceSrnD3UEbw/fvembHbxQAlDBKWTNrBuoAvyHld0YVN6DS0C1pxTYGpKDZavMDdNVCkZTakAnr5Rjv8NODFMzmCuyDnr1CbTOTWyarNqZW4C4spDPIMpeYZ5BAVxZruBFT7kDGIYYqmHTJ6HmORi202vJ7cmJyF2ULkcYsiYSx8PxWPwVKFhvWyHGA3mW9aJH1i3gkPkb2TkwlCqmphKwtVzSZFUTvM25FgQOnKjSqhm8/7rW9G4kbFv1P37al2BDDFc3k//yD0WucIEXt5PFdtHMkqbcLAMfrE6D1HUp/Dys1Qe8kHcxoeoa5cIELSV7t+83O7xMxaldG/WdXQegTZLK5D7PNd7uqlRJ5yaWptDBLlOyPgwIwYDxKjEJCN11bxQd+S8eJ4MjiE6aMxmsxlgMJc+DNtYfng1uRh/vx0fiU9v1K5Hote6CQgxnAw+ns1OTz+czcVKxqRA0yP5p+W4V27v3vybdyt0uGJljtoISShy1w7sDLDUYklhiveGdh5BJsMdz2C3W6CnXy6vazlu4sezeQRrdBoXoVvzOoKMMCUXJvCRtsLZEB9NBUXM8yps48OVXUedh+yMknu2Lxui7l+8nz9uRfBF+z0owi4AhxvZybiBGMLHRVKEYQ9nO8jRrCpciW0TU36/AdibVB4=
+sidebar_class_name: "post api-method"
+info_path: docs/generated/api/qat
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Check access to programs via query"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/api/test/aclTestQuery"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Check access to programs via query
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={undefined}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"content":{"application/json":{"schema":{"type":"array","items":{"type":"string"}}}},"description":"The program IDs to check access for","required":true}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"content":{"text/json":{"schema":{"type":"string"}}},"description":"Returns the access check results"},"403":{"content":{"text/json":{"schema":{"type":"object","properties":{"messageCode":{"type":"string"}},"title":"ResponseCode"}}},"description":"Access denied"},"500":{"content":{"text/json":{"schema":{"type":"object","properties":{"messageCode":{"type":"string"}},"title":"ResponseCode"}}},"description":"Internal error while checking access"}}}
+>
+  
+</StatusCodes>
+
+
+      

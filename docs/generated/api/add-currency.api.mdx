@@ -1,0 +1,71 @@
+---
+id: add-currency
+title: "Add Currency"
+description: "Create a new currency"
+sidebar_label: "Add Currency"
+hide_title: true
+hide_table_of_contents: true
+api: eJztWG1v2zYQ/ivEfdoAxVa8plmFYUCcZUOKdFsTZwVmGMOZOsdsZVIhqTiG4f8+HCXHVGL3ZWiALJs/yXfHeyPv7iGXkJOTVpVeGQ0ZHFtCTwKFprmQlbWk5QISMCVZZJnTHDLAPD/e8CxdV+R83+QLyJYgjfakPX9iWRZKhnXd944NLMHJKc2Qv/yiJMjAjN+T9JBAadmKV+TCWunVDUVyY2MKQg2rBMbo6I3JqfhqakAqK6sC7Tf9NfFbSECGdOT9xacNVY4sJ+dOTmlPV2QhgYmxM/Q16bseW2ZhjbPYL+et0lewWiXglS+Y1Een5KUjy0saV35Cv2VVZCNHT3tezYgXFej8G5OriXoaQcT+fEkkbX3NpnFSjL4h65TR5+hpYC5d7LyuZuO277mpxgVF6XwKSflHO7uuzWOTb7O1Efhsz5W7WGi5vVIKHH/FYvu/Zv/TNfuv358xFZ/tVZD+i/TWGq2ZE/sRZvkxpit3MJ/dCToLDeh5xnYHpVZMbeOxwZTuYJjwRtQntgFdylIOmbcVrZjgSqNdHXUvTe9BMU+3/osx2IycwyvaMWOiEM4b40FySxjn5CurnUDhKinJOdGo5hS+SF8+KWdbOcfCEuYLQbfKecfuHjyx3J5qz6e2EGStscJP0YvS0g1pT7nwHAwfGmW0MJP6/+bAJeDxykE23JzCUQIz8lPDQL80LniOfgoZdLFU3ehS4Mgy+oJsuITK8kSeel+6rMuCnesKtVeTBv+jxmLhlXQdY7km2jH8QprvF5SLWqdgdasRm5CVVX4RbIwJLdmjip0ZjmL2BSe9zmsstP7387oAX78bPLB9wvkLeXn9biC8+UBaKB0IdeFmoh+0iB8C80eOPNhjZBI4kKz3jxMQ0srH4XxzMTq5xVlZUIxuuG7vwaI2qzUo130sjbtUDPfiUQa9tPdiLz3c670a7B9kB/tZ7/tOerj/J2xroJ9S/bDF7da/C5OnjxVOGwdvem4Mf9MNuK0zewdnn/1ePJLbDQJKY3yzyf0G1tynlVtoDGJi2iOn5NENKD0xrLbdZd62uqE4WrdDMTCm4LiVJO1Cg2gcOCpRTkmc1QzxR11TotdJIbnXbufzeQeDOHfXbqPLdc9Oj09+vTjZ4zXRRHl7xF2wKVKOpvPqcHhw8PJwxFLc82eoY0/yXETvPa3AokG48/Go6Y1hTJYFqnCRCxEsm9EyBCxVVLU8hKY8e7IhLJdcl5e2WK2YfF2R5XEwSuAGrUK+z/M0SGBKmJMNk+IDLdif2rO9Adtn8aJiPx68Sq2S9YojKan0kexmtK/iufj7bxecwnHz5DWrm4/FOSMznEMG4c2MTYShFGhLKFBfVYx6Mqh18u9v1r+XcQ==
+sidebar_class_name: "post api-method"
+info_path: docs/generated/api/qat
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Add Currency"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/api/currency"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Create a new currency
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={undefined}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"content":{"application/json":{"schema":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":"circular(BaseModel)","createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"}},"title":"BaseModel"},"conversionRateToUsd":{"type":"number","format":"double"},"createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"currencyCode":{"type":"string"},"currencyId":{"type":"integer","format":"int32"},"isSync":{"type":"boolean"},"label":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":"circular(BaseModel)","createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"}},"title":"BaseModel"},"createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"labelId":{"type":"integer","format":"int32"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"}},"title":"Label"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"}},"title":"Currency"}}},"description":"The currency to create","required":true}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"content":{"text/json":{"schema":{"type":"object","properties":{"messageCode":{"type":"string"}},"title":"ResponseCode"}}},"description":"Returns a success message"},"406":{"content":{"text/json":{"schema":{"type":"object","properties":{"messageCode":{"type":"string"}},"title":"ResponseCode"}}},"description":"The currency already exists"},"500":{"content":{"text/json":{"schema":{"type":"object","properties":{"messageCode":{"type":"string"}},"title":"ResponseCode"}}},"description":"Internal error that prevented the creation of the currency"}}}
+>
+  
+</StatusCodes>
+
+
+      

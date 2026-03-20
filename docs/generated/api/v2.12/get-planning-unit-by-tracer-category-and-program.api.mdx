@@ -1,0 +1,71 @@
+---
+id: get-planning-unit-by-tracer-category-and-program
+title: "Get active PlanningUnit list for a TracerCategory and a Program"
+description: "API used to get the list of active PlanningUnits for a tracerCategory and a program"
+sidebar_label: "Get active PlanningUnit list for a TracerCategory and a Program"
+hide_title: true
+hide_table_of_contents: true
+api: eJy1Vktv40YM/isDXnrR2tl0e9GpzmbTGCgSJ3Z6CYKAlmhptvLMZIayYxj67wuO7FhKnGaLoj5ZFB8fHx+pLTAWAdJ7cBUao01xZzTDQwI5hcxrx9oaSGE0Gas6UK7YqoJYcUmq0oGVXSjMWK9ITToOglpYr1Cxx4z8V2QqrN8oNLlC5bwtPC4hAevIo0QY55BCQdz1cbaZ9axHJp+8WHp6qinwmc03kG5fgbXz75Sxyqxh1OJOofe4EaxHAO3gKC6R1cbWao2mTbCLRv0p2S6shwTEMRmWwOhcpbOYw/B7kOhbCFlJS5R/vHH0ggcScF4yZk0hvu1hGeehYxIBQwKaadmVB/baFNA00Zng/g9201b4Vit5i+1dXVHWXIlo156RyfudO59dP96Ss57/0rSGRmykgdpTDin7mqIgOGtCW5rTk5O3bb0lrr0JsTVHZi7OY787TM+8b0uM+uXk1/f9orpkdlNGrsPg4vr2bHx+/u1K6UWMeBfIq9xSUMayKnElIDIK4cOQX34y5NX17PHi+u7qfB+y1wRNoTuuQQVHmV5oyg+o6PnjEvx2rLRjw+QNVoq8t76lgvO0IsPC+ZKUJ/akV1gJi/5d2ZsElsSlFY47G5UdcgkpDNHpYXfxDPtzN9wlO4QEAvkVeVlVW6h9BSmUzC6kQ3EyeKrRsF7sqIgGqw3rLAysL+D1Lpt4m9eZPKjWaVxWN6MZJLBCr3FexSlsmocEJI3bw7L59oxLJ8N+lL73e1Y89Ol5XL6n1P7lP7Cuw0xtFjaG35Huppd5HJHRPn01s7aSrMiHNvfTwefTwcmbkowm41+C7PZ2pGPHb0YzNY312XUXs9hdg0uJezGaThRT3Mb9fqzX6w/6QUvUYnE5nT6Kn8fLm9+LMmSfXFhGlSaBSmdkAnUijhxmJakWfz/kwtrBHH2732zgJZqO4R/E7y6M3aGaHTtUh3PTq9b2MOv/013crdjII1ehNlKQmPF2R517QKeFSN2r/XqA4GXaIAGZvVLYl97DdjvHQHe+ahoRP9XkN5DePxzmX56aBErCnHzk3N+0gRS+tpl/mglCUa/qeHZen8Em2VuMsowcd3QP20H49bIZJtdTIeB8d9GXNhdlj2u59riGFOIHg4SIJyLKtlChKWosRLf1Kb8fTLkbHg==
+sidebar_class_name: "post api-method"
+info_path: docs/generated/api/v2.12/quantification-and-analytics-tool
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get active PlanningUnit list for a TracerCategory and a Program"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/api/planningUnit/tracerCategory/program/"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+API used to get the list of active PlanningUnits for a tracerCategory and a program
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={undefined}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"description":"object containing array of tracerCategory and program that you want the PlanningUnit List for","content":{"application/json":{"schema":{"type":"object","properties":{"tracerCategoryIds":{"type":"array","items":{"type":"string"}},"programIds":{"type":"array","items":{"type":"string"}},"programIdsString":{"type":"string"},"tracerCategoryIdsString":{"type":"string"}},"title":"ProgramAndTracerCategoryDTO_ReportView"}}},"required":true}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Returns the active PlanningUnit list","content":{"text/json":{}}},"403":{"description":"Returns a HttpStatus.FORBIDDEN if the User does not have access","content":{"text/json":{}}},"404":{"description":"Returns a HttpStatus.NOT_FOUND if the tracerCategories and programs specified does not exist","content":{"text/json":{}}},"500":{"description":"Internal error that prevented the retreival of PlanningUnit list","content":{"text/json":{}}}}}
+>
+  
+</StatusCodes>
+
+
+      

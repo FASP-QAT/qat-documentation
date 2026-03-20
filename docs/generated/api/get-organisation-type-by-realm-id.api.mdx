@@ -1,0 +1,71 @@
+---
+id: get-organisation-type-by-realm-id
+title: "Get Organisation Types by Realm"
+description: "Retrieve a list of organisation types by realm"
+sidebar_label: "Get Organisation Types by Realm"
+hide_title: true
+hide_table_of_contents: true
+api: eJztWG1v2zYQ/ivEfWoB1g7SZsWEoYDdZoGLdEEdt/0QGAMtnS22EqmQJ6eGof8+HCV38kucZOuwIPAnSbzX53gUyWcJCfrY6YK0NRDBEMlpnKNQItOehJ0K62bKaK9YQ9CiQC8mC+FQZTlIsAW6IBokEMEM6aKlPloU2F8MWXWQgIRCOZUjofMQXS03Qo9SFIN3HJFSrP0LssKtMuLRHblMneU8NLsoFKUgwagcIQL3I67D61I7TCAiV6IEH6eYK4iWwD4gAm0IZ+hAwtS6XFE99PIYqmrM5r6wxqNni+OjI37E1hAaCj7wO3W/egax3HatnFMLTpAw961xO/mKMXFRHNeQdO1exaTn2NKbWJuhMlBJmCiPH2yC2U9zA7F2cZkp96y/GnwOEmKHijDpL+4OVHp0PPX3KKUMyvXk/FD35LSZQVVJIE0ZD/WV1/Enj45NmlTeKdph1YqRKMIXpHNko0x5+mATPdWPA0Q7n4cgWffXTFr1FOZn8hOb+LAWDmvhUUD752vh3lkF7T/R7MhqJZy6PcJin9AXtwifXAedhx/QE8ImwW6cu+6dZX2SuxN5bJNdQCTo+wbSyWVtdGsHHraEw5Zw2BIOW8L/uiXcHfpS50WGb22CFzXctnDz/gtVxeKta3bpjN97y+ZcXh29fNBl85by5+i9moWM9yMbNjfdoLkjb663SCx6YSyJVM1ROD1LyfNNXcUxei8o1b6hBwKCV48KwcVmnQOSqS1NwumePPB2/1+nOzDEiyET6Jx14ibVGYoZEmkz2+6Z0E21fzVjjmUdbmjHsYQcKbUNXRNYGUohgq4qdHfzFNFtSJTusnmpQIJHN19xOKXjfTIlKnzUZRed61IZ0lMdByfKqGxBOvYd63gVrsM7Q8P0ESai9inYHVMuHuPSaVqEGBNUDl2v5DSvxm3xJc9HXfK20urr99WSf/9ltBX7lEsbWKX3X0aC7Dc0QpswUP8qItEPXsRvQfgGGuIonBeCBORqarkAofDaTC0nsB7r41pNRG9VFDGyNgMJmY7R+NArDXnVK1ScojivBeIzOs+Wx50jkBtFv7m56aigzjXuNr5893zw9vSPy9MXbNNquY89rsW8dggRHHd+fX11cvLL6zFrFdZTrkwrkzMksdVGgQMcNhzgGtbW4nk4m9hUM6y5IlM6HMgC2mXTplegCg3bx12QLb4vWr2OJaTWE5stl3yw++SyquLh6xIdd9dYwlw5rSZcG+Yktef3BKKpyjzuAfds2LCKz8W/oy53gl6xh4a5w7nKSv4CCd9w0aI2q3ElIUWVoAvZ19JeHGNBLbu//2FVe/mfnY6gqv4Cg/yQVQ==
+sidebar_class_name: "get api-method"
+info_path: docs/generated/api/qat
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get Organisation Types by Realm"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/api/organisationType/realmId/{realmId}"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Retrieve a list of organisation types by realm
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"description":"The ID of the realm to retrieve the organisation types from","in":"path","name":"realmId","required":true,"schema":{"type":"integer","format":"int32"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"content":{"text/json":{"schema":{"type":"array","items":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":"circular(BaseModel)","createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"}},"title":"BaseModel"},"createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"label":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":"circular(BaseModel)","createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"}},"title":"BaseModel"},"createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"labelId":{"type":"integer","format":"int32"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"}},"title":"Label"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"},"organisationTypeId":{"type":"integer","format":"int32"},"realm":{"type":"object","properties":{"code":{"type":"string"},"id":{"type":"integer","format":"int32"},"idString":{"type":"string"},"label":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":"circular(BaseModel)","createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"}},"title":"BaseModel"},"createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"labelId":{"type":"integer","format":"int32"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"}},"title":"Label"},"name":{"type":"string"}},"title":"SimpleCodeObject"}},"title":"OrganisationType"}}}},"description":"Returns a list of organisation types"},"403":{"content":{"text/json":{"schema":{"type":"object","properties":{"messageCode":{"type":"string"}},"title":"ResponseCode"}}},"description":"User does not have rights to access this realm"},"404":{"content":{"text/json":{"schema":{"type":"object","properties":{"messageCode":{"type":"string"}},"title":"ResponseCode"}}},"description":"Organisation type not found"},"500":{"content":{"text/json":{"schema":{"type":"object","properties":{"messageCode":{"type":"string"}},"title":"ResponseCode"}}},"description":"Internal error while getting organisation type list"}}}
+>
+  
+</StatusCodes>
+
+
+      

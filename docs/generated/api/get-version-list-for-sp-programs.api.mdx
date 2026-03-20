@@ -1,0 +1,71 @@
+---
+id: get-version-list-for-sp-programs
+title: "Get Version List for Supply Plan Programs"
+description: "Retrieve a list of versions for a list of supply plan programs"
+sidebar_label: "Get Version List for Supply Plan Programs"
+hide_title: true
+hide_table_of_contents: true
+api: eJylVVFv2zgM/isCn724KNAbThgGZG03dCi2rsltD0FwUGwm1mZLKkU3Cwz/9wNlZ3VzvYe785NNUeT3kR/pDkqMBdnA1jvQcI9MFh9RGVXbyMpv1SNStN5FtfU0Mcc2hPqgQm2cCuR3ZJoIGfiAZCTYTQkadshfh+u3NvJ7T4tw9+RL+NBi5He+PIDuoPCO0bG8mhBqW6Q4+fcoyDqIRYWNkTc+BAQNhsgcIAPL2MSJPTJZt4O+7/vshN6ywl8ERtDq5mqgxhUeuSafEaAlLEEztdiLIQbvIqZ052dnJ7AZf/I/433CdQrrHrklFxOE/1L2PoOLfwnGb75jIRwDScvYDpwajNHs8NKX+BLyDNhyjQnyUAnx/POKfLjye/fV4v4lfjeOkZypFRKlShtWgfARHWOZWNOgO1MLx5fKMCQ3uwh6BZKv9HsXYZ1Bg1x5EVvwqWnBcAUachNsXo6O+Rgm39qakfIY8olmI5Kcg1510FINGirmEHUuMWYPrXFst6McjTP1gW0RZ552cEr0AzqRP5ZqiKkkXL+WFEVLlg8pxwYNIc1bwblaT48X0qahE1On49d7T41h0PDx2/Jvua+lyKl2H78tFfsf6JR1ybBN97R6l6KoN+nwrTBP+UCP8SE7dlwKkEouArp/mtPrn6YJIoDVURTrDKzbegH5HM+XZ3VT82Ph1NL7GjKobYEuJpk5k0DMgykqVLfDgRo3hzqfnUF20pj9fj8zyV36kI+xYn57c3n9aXH9Su5M1PplLvUaRQAazme/v15dXPz2ei1eIpzGuAmSD8i/0svmSkO4GEbvTkZvssWesZ5M4P/fpWMv0iCH2lgnYFMdulHlKzDBCoZR5xOSGQxaly6HYc6HuOsMKpkUvYKu25iIf1Dd92J+aJFEoesMHg1Zs0mNXvcZVGhKpCTeH3gADZcDy1dLgSjudZtW8une7rPjjXlRYOCJ79N+6qdTfPd5Ib3ajD+FJm0iILOXfWz2oCH9ZTgtBd0Ntg5q43at2YnvEFOevwA3YGYN
+sidebar_class_name: "post api-method"
+info_path: docs/generated/api/qat
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get Version List for Supply Plan Programs"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/api/dropdown/version/filter/sp/programs"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Retrieve a list of versions for a list of supply plan programs
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={undefined}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"content":{"application/json":{"schema":{"type":"array","items":{"type":"string"}}}},"description":"The list of program IDs for the version list","required":true}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"content":{"text/json":{"schema":{"type":"string"}}},"description":"Returns the list of versions for a list of supply plan programs"},"500":{"content":{"text/json":{"schema":{"type":"object","properties":{"messageCode":{"type":"string"}},"title":"ResponseCode_DropDownView"}}},"description":"Internal error that prevented the retrieval of the list of versions"}}}
+>
+  
+</StatusCodes>
+
+
+      

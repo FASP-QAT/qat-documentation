@@ -1,0 +1,71 @@
+---
+id: get-program-lead-times
+title: "Get Program Lead Times Report"
+description: "Retrieve the program lead times report"
+sidebar_label: "Get Program Lead Times Report"
+hide_title: true
+hide_table_of_contents: true
+api: eJztWN1v2zYQ/1eIe9oANQ4yZMWEYYCTZUWKbE1tt30wjICWLjJbiWSOlF3D8P8+HCU18ne1p22In2Tyvu93Rx5XkKJLSFmvjIYYBuhJ4RyFn6GwZDKShchRpsKrAp0gtIY8RGAskmSm2xRiyNDfV8R3KNMRk0IEhE8lOn9l0iXEK0iM9qg9f0prc5UE/t5nx5pX4JIZFpK//NIixGCmnzFhXZZYm1foeNfmUmulsw9a+dt06EnprMXlqoV1tEXoWjSSSC4hAuWxcHt410FnUhIWqH0/Q31C0w5xd20cPI7lt22lPWZIEMGjoUL6aumni8Dglc+ZaDvqt9qW/mEQsvRR4QLWTL2Z49H+1CpmrbOmCFOIPZW45gVnjXZV9C/Oz7dy6fGrP5zEQ84fSK60lswc05EZzpS1mDaetVh1WUw345KacpojZ0ISqcD+O+ZqjtRZQGJK7Wl52tLEpLgXDOr7ksiERyCVyynmp62YSod/mrQjKSSKkjKX9MNVs9jCzI/QAtg+gm/2PaA+bPzDIx3ZtMc2nd1fJo1Rd4FqA+XPm0NV2ByvTYrvQiC2DTeJzO+3CrYjSEJnCSAtp4XyvjPK2q3pdOZeEPVvQNReNG13/pe+8R/P8sG+UZ+YLwn+vybYVReOkelXd4irZV9Rx76+K2NgZNfDYVfIEGVXGc3BNDL9+krVUYI3XubdIxDY/oHTga+rn0cuwu9Kv3sT3rkKD9CXpN2JaWcdwWXHa++BUivQOZkFDB4H8qC+czPliev8rfZIWuYCiQyJxUzlKDLUYT7TWfCtcYQ1yMxBPIZKqINJBAX6meExzhoXbJZ+BjH0pFW9irNnd6c7hzRHYlkrKImbx8x76+Ie8509lVJ79VgPeVLLfOlV4s4MZbDtwZvKWExFJVOwuPWEVSQlKb8MOqYoCalfsm3jSXt7yNGve1mLqPn3RwObt59GO7pvOHohRm8/jYQ3X1ALpcNCBbdYXAUp4tew+Rt7HvRBXMuHqEkkByAEmXExeJ5+b75Kbj2Hp9cGAnuG1nGzNzk2lLYE7JtFt4Q0s+Y5Hzb60bBhm2F5v5E+0W/yJ0bG5BBBrhLULnikZYhF38pkhuKu2hAfkRxzXpydQ7SFj8VicSYDOcOhV8tyvbvb65u/hjevmKdVC+/7nLZ5JRBiuDj75fX48vLn15NwLhvnC6lblrxBL+p2IBiwIiBWDJqniw1PWzX9/Y8fdbpDC7C5VJoNCT6u6uIZg7QqDNM1y04BTSKYcbnFY1it+Aj+QPl6zctPJfIAOp5EMJekJLc6RnwEM5QpUqiGL7iEGK4r21+N2CAmz8swdG8/r6yjhqOfJGh9i/a5j63breD+3ZCjPq3fborQsYDkgp2SC4ghPAKxilB4YW0FudRZKTOmrWTy728XkG6T
+sidebar_class_name: "post api-method"
+info_path: docs/generated/api/qat
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get Program Lead Times Report"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/api/report/programLeadTimes"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Retrieve the program lead times report
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={undefined}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"content":{"application/json":{"schema":{"type":"object","properties":{"planningUnitIdString":{"type":"string"},"planningUnitIds":{"type":"array","items":{"type":"string"}},"procurementAgentIdString":{"type":"string"},"procurementAgentIds":{"type":"array","items":{"type":"string"}},"programId":{"type":"integer","format":"int32"}},"title":"ProgramLeadTimesInput_ReportView"}}},"description":"The program lead times input","required":true}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"content":{"text/json":{"schema":{"type":"array","items":{"type":"object","properties":{"approvedToShippedLeadTime":{"type":"number","format":"double"},"arrivedToDeliveredLeadTime":{"type":"number","format":"double"},"country":{"type":"object","properties":{"code":{"type":"string"},"id":{"type":"integer","format":"int32"},"idString":{"type":"string"},"label":{"type":"object","properties":{"baseModel":{"type":"object","properties":{"baseModel":"circular(BaseModel_ReportView)"},"title":"BaseModel_ReportView"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"}},"title":"Label_ReportView"}},"title":"SimpleCodeObject_ReportView"},"localProcurementAgentLeadTime":{"type":"number","format":"double"},"plannedToSubmittedLeadTime":{"type":"number","format":"double"},"planningUnit":{"type":"object","properties":{"id":{"type":"integer","format":"int32"},"idString":{"type":"string"},"label":{"type":"object","properties":{"baseModel":{"type":"object","properties":{"baseModel":"circular(BaseModel_ReportView)"},"title":"BaseModel_ReportView"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"}},"title":"Label_ReportView"}},"title":"SimpleObject_ReportView"},"procurementAgent":{"type":"object","properties":{"code":{"type":"string"},"id":{"type":"integer","format":"int32"},"idString":{"type":"string"},"label":{"type":"object","properties":{"baseModel":{"type":"object","properties":{"baseModel":"circular(BaseModel_ReportView)"},"title":"BaseModel_ReportView"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"}},"title":"Label_ReportView"}},"title":"SimpleCodeObject_ReportView"},"program":{"type":"object","properties":{"code":{"type":"string"},"id":{"type":"integer","format":"int32"},"idString":{"type":"string"},"label":{"type":"object","properties":{"baseModel":{"type":"object","properties":{"baseModel":"circular(BaseModel_ReportView)"},"title":"BaseModel_ReportView"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"}},"title":"Label_ReportView"}},"title":"SimpleCodeObject_ReportView"},"shippedToArrivedByAirLeadTime":{"type":"number","format":"double"},"shippedToArrivedByRoadLeadTime":{"type":"number","format":"double"},"shippedToArrivedBySeaLeadTime":{"type":"number","format":"double"},"submittedToApprovedLeadTime":{"type":"number","format":"double"},"totalAirLeadTime":{"type":"number","format":"double"},"totalRoadLeadTime":{"type":"number","format":"double"},"totalSeaLeadTime":{"type":"number","format":"double"}},"title":"ProgramLeadTimesOutput_ReportView"}}}},"description":"Returns the program lead times report"},"500":{"content":{"text/json":{"schema":{"type":"object","properties":{"messageCode":{"type":"string"}},"title":"ResponseCode_ReportView"}}},"description":"Internal error while generating the report"}}}
+>
+  
+</StatusCodes>
+
+
+      

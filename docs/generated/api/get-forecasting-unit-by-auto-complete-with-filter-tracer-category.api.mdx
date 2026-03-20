@@ -1,0 +1,71 @@
+---
+id: get-forecasting-unit-by-auto-complete-with-filter-tracer-category
+title: "Get Forecasting Units by Tracer Category"
+description: "Retrieve a list of forecasting units filtered by tracer category (autocomplete input)"
+sidebar_label: "Get Forecasting Units by Tracer Category"
+hide_title: true
+hide_table_of_contents: true
+api: eJy1Vttu2zgQ/RVinlpAGwUpssUKiwJubnBR7KKJ0zwERjGWxhJbiVTIkR3D0L8XQ8kb2U53Uxf7ZIscHp45c+MaMvKp0zVrayCBa2KnaUEKVak9KztXc+soRc/a5Koxmr2a65LJUaZmK8UOU3IqRabcupV6hQ3b1FZ1SUxKm7rh1xCBrcmh3DHOIIGc+PIJ9dZofr8aNWzP+nN3movLcMkkwJ/16BBBjQ4rYnIekvv1DvtJQcoTurRQTI8s1BUXtOdC8A0i0HKoRi4gAoMVQQLd8Qk9yr6jh0Y7yiBh11AEPi2oQkjWwKs6WLPTJoe2jZ6jUqLJG8zpEB6bs7/OYjdC4/ND+PBWIMbZS3hpw5STgwjm1lXI3dKbE2jbqRz3tTWevJw4OT6Wn9QaJsMBgx45/urFjfU+NDqHkg6aqfKDdTv7Sqm4UDtJOdYdvM5eRCsCnd10Yu6ru5HiGdmBNZeydKMlgf8OJL6cO1uf26V581nTEtpWDPeqrXHGh1gcVG7C6vQnpfuBRBV5jzmd2ew/fLzu4yaW+z7uujg2TM5gqci5kHXIqna0IMOUBcdd13KwFO9/nJWBAuZS9iC3ZnZpPEwjqIgL23eV0CC4gARirHWc9XbxfLvbxMMmFXf6xtsZHq+fOkEbrzfl2Mbr3UpoIQJPbrFpSY0rIYGCufZJLDSOHho0rOc6DR0QDZYr1qk/si6HXb2uyEinpEx1mErgpFw8pY3TvAp3zAgduVEjrt5Ph9s3Eu4uokOjzdflJuM/3E327r6QWIUQfLibKLbfyChtNjGpkBP1PqCoP8PmO+iLXtKiw4dokzkiQAiaNnMrBLbv+rSliRptRFETa0uIoNQpGR9Sse9AoxrTgtTHbkN9Jufl5MnRMUQ7oi+XyyMM5qJx3GP5+OP47OKvm4vf5Mwgoz+NRItFBwgJnBz98fb+9PT3t1Oxqq3nCs2AyRWxGswvdRvKdLZS3bRSg3G15fSgSP+3QdurH1pAXaI24kJQZ92Xxj1grYVaXxxdHxyWB0QwBBeDQETgd+dxsjUwk8HYSvZGxjSCwnoWCuv1DD3durJtZfmhISeZPY1ggU7jTOIi4117+Z9BMsfS07/o+eq6n0av1c++Ap6VbDNnjDi5wLKRL4jgG622Xwlh6B5K88UvhAM4/hOKX2J4wOvhAK57qdJO2wgKwoxcSITObJSmVPMA4GnStcNJcHUxgbb9DtlHzko=
+sidebar_class_name: "get api-method"
+info_path: docs/generated/api/qat
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get Forecasting Units by Tracer Category"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/api/dropdown/forecastingUnit/autocomplete/filter/tracerCategory/{searchText}/{language}/{tracerCategoryId}"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Retrieve a list of forecasting units filtered by tracer category (autocomplete input)
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"description":"The search text for the forecasting unit list","in":"path","name":"searchText","required":true,"schema":{"type":"string"}},{"description":"The language for the forecasting unit list","in":"path","name":"language","required":true,"schema":{"type":"string"}},{"description":"The tracer category ID for the forecasting unit list","in":"path","name":"tracerCategoryId","required":true,"schema":{"type":"integer","format":"int32"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"content":{"text/json":{"schema":{"type":"array","items":{"type":"object","properties":{"id":{"type":"integer","format":"int32"},"idString":{"type":"string"},"name":{"type":"string"}},"title":"SimpleObject_DropDown3View"}}}},"description":"Returns the list of forecasting units filtered by tracer category"},"500":{"content":{"text/json":{"schema":{"type":"object","properties":{"messageCode":{"type":"string"}},"title":"ResponseCode_DropDown3View"}}},"description":"Internal error that prevented the retrieval of the forecasting unit list"}}}
+>
+  
+</StatusCodes>
+
+
+      

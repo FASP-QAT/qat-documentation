@@ -1,0 +1,71 @@
+---
+id: post-tes
+title: "Get Forecasting Statistics (TES)"
+description: "Optimize Triple Exponential Smoothing (TES) model parameters for given dataset. Returns the best-fit parameters and their corresponding Root Mean Square Error (RMSE)."
+sidebar_label: "Get Forecasting Statistics (TES)"
+hide_title: true
+hide_table_of_contents: true
+api: eJzVVk1v20YQ/SuLOSUALREu3KBEUUBxlcBBUjcW2xwEHUbkSNxkuUvvDiWrAv97MUvJplwHUA89VCdpd77nvbfaQ0mh8Lph7SxkcNuwrvVfpHKvG0Nq+tA4S5Y1GjWrneNK27V6lU9nr1XtSjKqQY81MfmgVs6rtd6QVSUyBuKRuiNuvQ2KK1JLCnyx0jx0QVvKnfaqcN5TaJwtJcOdc6w+EVo1u2/Rk5p677x6dfdpNn09ggRcQx6l6JsSMmhc4JwCJODpvqXAb125g2wPhbNMluUrNo3RRfQZfw3S7R5CUVGN8o13DUEGbvmVCoYEGi8ZWFOIvqaphma2rZfkIYGV8zUyZFC6dmkIugSWxOeaypgGpug97iABzVSHs0J0Caxix7bYDRy0ZVqfemjLP1xKzjXW9bn1GdqQOdPWnpnfHRA2MF86Zwit3AZGz2dF6hJgzUaMcgo3tmn51/wWOrk4xXRekdJyH2EZUSpwzKczdSgmguIAHu2phIx9S50cCCJDD4LLNH0GKaYH/j6WAntt1y9V9J+wQsZ39S9L/A7cawoB13TtSnqpn6fJ3x3mEy1faPTGMnmLRlEsdFtpQ9JokG74ZC99XFwHyObwznkqMLCYzRhZB9ZFgEUCNXHljpSXwpEryGCMjR6vDl7iEcYc9SCQ35CXoHtovYEMKuYmZGPxGN23aFmvDrKAFs1OEo2cX8PzXt6TFcmhUvUxlYTrFpKiaL3mXcyxJPTkJ61UNV8Mr2cy/H6+Q6Pjr3dHfH/4kv8j91TmGAf24Uuu2H0jq7SNBz0vMvU2RlE/x8tfpPOYT+gVbyA57lEGEKctsLh70svpA9aNoYHepUc1S49aNU8XJ5KTPgpK+igXaRSDdEh1odMjudMuAW1XThKdtvn5ZB1qctyHyp0zkIDRBdkQK7QYe5s0WFSkPvYX6k/yQTwvRykkz/a93W5HGM1lveNDrDD+eHM9/W02vRCfAbQ/T2QNmz4gZHA5+unN/OrqxzcLsRL01WgHlbwnVi/Dtn8un+90wNL/z6t7QFAUlcagjpodx7w/MHEO2Oherp+4KJ4U6VsJa7M57PdLDPSHN10nx/cteeHPIoENeo3ypgh9EqgIS/KRWt9oBxlc91O7yKUUMTdtfDufv+5dcvSYFAU1PLB90sRuqCi/385k5cvDX4c6qh943MrLgFvIAHpMOxtZHM/2YNCuW1yLbR9TPn8DiBw3Yg==
+sidebar_class_name: "post api-method"
+info_path: docs/generated/api/qat
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get Forecasting Statistics (TES)"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/api/forecastStats/tes"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Optimize Triple Exponential Smoothing (TES) model parameters for given dataset. Returns the best-fit parameters and their corresponding Root Mean Square Error (RMSE).
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={undefined}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"content":{"application/json":{"schema":{"type":"object","properties":{"alpha":{"type":"number","format":"double"},"beta":{"type":"number","format":"double"},"data":{"type":"array","items":{"type":"number","format":"double"}},"frequency":{"type":"integer","format":"int32"},"gamma":{"type":"number","format":"double"},"level":{"type":"number","format":"double"},"n":{"type":"integer","format":"int32"},"optimize":{"type":"boolean"},"start":{"type":"integer","format":"int32"}},"title":"TesInputDTO"}}},"description":"The input data for the TES optimization","required":true}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"content":{"text/json":{"schema":{"type":"string"}}},"description":"Returns the best-fit parameters and their corresponding Root Mean Square Error (RMSE)"},"500":{"content":{"text/json":{"schema":{"type":"object","properties":{"messageCode":{"type":"string"}},"title":"ResponseCode"}}},"description":"Internal error while parsing the input data"}}}
+>
+  
+</StatusCodes>
+
+
+      

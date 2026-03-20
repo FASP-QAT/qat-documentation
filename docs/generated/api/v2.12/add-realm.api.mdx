@@ -1,0 +1,71 @@
+---
+id: add-realm
+title: "Add Realm"
+description: "API used to add a Realm"
+sidebar_label: "Add Realm"
+hide_title: true
+hide_table_of_contents: true
+api: eJztWMtu6zYQ/RViNm0BxVHc+2i1qpO6TYA8HNu3iwaBMRZHNm8lUiGpOIahfy9IybEUG85j1QbJKh7Ok+TMOeIKLM4MRDegCdMMbgPgZGItciuUhAh6gzNWGOLMKoacM2RDrxiAykmj0zrjEAFyvl7QdFeQsceKLyFaPfE3nlPlganpd4ots3O0bKkKtkBp6ygQQKykJWmdA8zzVMQ+1OF347yswMRzytD9Z5c5QQSVNwgg1y4xK8i41VgTWuLHy+dVC0PalfKoJ6SlGWkIIFE6Q1uJfu5CGXhliRk11I3VQs6gLAOwwqZOdIxGxN8MaWdSp/I72h1WjRgcLR1YkZEzStHYC8VFIv4bRTTzeV0lGFtx39SfKpUSSrfm796L005xSunH0b+Po/eH+bqjn5DckfZ60eR7FhO9ZzHfvThFQxeKf1y593LlGgcKsdBxkaL+8Xgt/Ana2dSqzRzP/QBaz60TxXfV5IA0wSK1FSzuzCQT8kKZCyH/xEJzjSJ94V7WhvjwakN8eKOhkNd5OlYpaZQxvc3qpLBXSfLyVN8Q8aNbP7q13a1V/5VlWTFToYlDZHVBXmByJU21P90w3OarQ7KFloYhGxVxTMawWHFiImF2TuyRA7MFGmYqjaRI2wTW0oNdM1efx6fwy75Ip9bmI4u2MJ3Lq/Gkd3LSH4x7x+f9dViOFpkpHC8mzoRhUllWSHFX0DORP++vsRH57HLcH172ziej/vCv/nDSHw6vhnUCmqp6VUZMud+MtFa64vJccJ8PpqlaPNklq1issjwluz9R1/5k58p9WeTK+LuMdg4RHGIuDv3cPYQADOl70u77ZQWFdldkbm1uokOn1rkrUFqR1N8OKDFdWhGbjtLuKrb3YKAVL2KfZOWUJUqz694YArhHLXCa+ltSlrcBuESHm6+c/gO6mrZmyrrhwmY7NQCi1fXQDbufDsKvB91fx0efo89HUfeXTvj16G/Y1enPud7uxX3+1/3nuqLBxsMG134PhT1yzbDJJDfDaUMgn8ocb3wqy1uyFu78/zerbLObTZ1tUlPt6y4aE+4mKeFuChLuIBjbsjV9CHeQg/BdHoGQifLjscay69ZEYyg5663HGhsr5YDHDcRqpnU7R91OuDXqeoOzH4x/aakAzY3o696Yjfzcq+cyxn4u1/X80RsNmCV0zzvtObtYLJ6Zs5T5I4bT0Wji/ExOr3+bzU18kJvMq7hdEjFJQ42IvRzjObEq/3bIRKnOFLUHeQcOGcqmIeePT1StulcbvNnzqlUTEI9HeYrCcxAff1VD0A1gLqBuDwjAvZnNHUZFN7BauUv4Tadl6cR3BeklRDe3Gwxxv8oA5oSctMetf2gJEZxUuR2MXXynnhYuj623rzJYW/TimHLb0N1gqMOoR/wcXI0ciE3r57isamiNC1cDLiAC/5jnQnga5GUrSFHOCpw53cqn+/sXQUrJdw==
+sidebar_class_name: "post api-method"
+info_path: docs/generated/api/v2.12/quantification-and-analytics-tool
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Add Realm"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/api/realm/"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+API used to add a Realm
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={undefined}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"description":"The Realm object that you want to add","content":{"application/json":{"schema":{"type":"object","properties":{"createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"},"active":{"type":"boolean"},"realmId":{"type":"integer","format":"int32"},"label":{"type":"object","properties":{"createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"},"active":{"type":"boolean"},"labelId":{"type":"integer","format":"int32"},"label_en":{"type":"string"},"label_sp":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"baseModel":{"type":"object","properties":{"createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"},"active":{"type":"boolean"},"baseModel":"circular(BaseModel)"},"title":"BaseModel"}},"title":"Label"},"realmCode":{"type":"string"},"defaultRealm":{"type":"boolean"},"minMosMinGaurdrail":{"type":"integer","format":"int32"},"minMosMaxGaurdrail":{"type":"integer","format":"int32"},"maxMosMaxGaurdrail":{"type":"integer","format":"int32"},"minQplTolerance":{"type":"integer","format":"int32"},"minQplToleranceCutOff":{"type":"integer","format":"int32"},"maxQplTolerance":{"type":"integer","format":"int32"},"baseModel":{"type":"object","properties":{"createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"},"active":{"type":"boolean"},"baseModel":"circular(BaseModel)"},"title":"BaseModel"}},"title":"Realm"}}},"required":true}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Returns a Success code if the operation was successful","content":{"text/json":{}}},"406":{"description":"Returns a HttpStatus.NOT_ACCEPTABLE if the data supplied is not unique","content":{"text/json":{}}},"500":{"description":"Returns a HttpStatus.INTERNAL_SERVER_ERROR if there was some other error that did not allow the operation to complete","content":{"text/json":{}}}}}
+>
+  
+</StatusCodes>
+
+
+      

@@ -1,0 +1,71 @@
+---
+id: get-budget-report
+title: "get the BudgetReportOutput list"
+description: "API used to get the BudgetReportOutput list."
+sidebar_label: "get the BudgetReportOutput list"
+hide_title: true
+hide_table_of_contents: true
+api: eJydVU1z2zgM/SscXPYif8TbTLc6rbNtpz7Vid0e1uPJwBIssSuRDAnF9Xj03zugnER22qZdXyTRD3wg8B54AMYiQLoCT856hnUCOYXMa8faGkhhOp+pJlCu2KqCWHFJ6qrJC+KbGPGxYdewqnTgISRgHXmU0FkOKRTEfSwk4OmuocBXNt9DeoDMGibD8orOVTqLsaMvQbgPELKSapQ33juCFOzmC2Wyj/PCxJpCxDF6fotMPWhgr00BCWytr5EhhRyZBqxrgjaBwNb9XsS2Mbk2xcI2PqNZHnqR6D3uIQHNVIfnO7ZtTLjwWEtZHv/Whqkg32fUhv+cCNs9+XAs4y/hz7JbdMzfTYU1V7LUb83MuIZvu/fPmnbQClK6pT3lkLJvKC4EZ03oqj4Zj+Vxqpcb4sab8DOdQNLvO9NXfmh4JL383rYzw+QNVoq8t15xiaycp3syLNosSXliT/oeK2W3/4u5TaAmLq0I19kIdsglpDBCp0edQUabUz0H8tIpSFcHaHwFKZTMLqQjiRneNWhYb4+yRoPVnnUWhtaLzE5POPc2bzL5UN2mamu9up4uIYF79Bo3VSx7264TkKxvnqz07ivWrqIzK8BkPHk1GL8eTN4sLy7Ty4t08tdw/PriX+jL/2eo55JfPQhpfSLp8Ylgxz+U46MME9Bma2MXjmq8PqmVQpOr6UPB1NLaCh45JOnhxWQ4flbE6Xz2R5BRhVlGoVPh9XSpFrGix/ZjFttvsBbe99PFXDFhDclZB3e73QsdpBq1RHxYLG5ln9sP138XZcgGLtQR0iZQ6YxMoB7j1GFWkuryP6XcWjvcoO8mhg1co+kFvjB/z6vRG6+/O8aPQyM6xFWojZwkpno4mmIF6HQc6EcnnBhjnUApFkpXcDhsMNAnX7WtLN815PeQrtZPqpavNoGSMCcfnfQf7SGFf7rsB0tJRuBVE4ft+UXRJg8R0ywjxz3sk8XFNY/2nn9ciK02x1uotrmAPe7kQLiDFOJVJhRx0sW1A1RoigYLwXZ7yu8bdb9+mA==
+sidebar_class_name: "post api-method"
+info_path: docs/generated/api/v2.12/quantification-and-analytics-tool
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"get the BudgetReportOutput list"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/api/report/budgetReport"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+API used to get the BudgetReportOutput list.
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={undefined}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"content":{"application/json":{"schema":{"type":"object","properties":{"startDate":{"type":"string","format":"date-time"},"stopDate":{"type":"string","format":"date-time"},"fundingSourceIds":{"type":"array","items":{"type":"string"}},"programId":{"type":"integer","format":"int32"},"versionId":{"type":"integer","format":"int32"},"fundingSourceIdString":{"type":"string"}},"title":"BudgetReportInput_ReportView"}}},"required":true}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Returns the BudgetReportOutput list","content":{"text/json":{}}},"500":{"description":"Internal error that prevented the retreival of BudgetReportOutput list","content":{"text/json":{}}}}}
+>
+  
+</StatusCodes>
+
+
+      

@@ -1,0 +1,71 @@
+---
+id: get-planning-unit-by-forecasting-unit-id
+title: "Get Planning Unit by Forecasting Unit"
+description: "Retrieve a list of active planning units associated with a specific forecasting unit"
+sidebar_label: "Get Planning Unit by Forecasting Unit"
+hide_title: true
+hide_table_of_contents: true
+api: eJztWG1v2zgM/isCP22A1xS99YYzhgParis6dNutL9uHIBgUmYm12ZIr0ckFgf/7gbKzOombpvcybId8SmJSj8iHFK08c0jQK6cL0tZADJdITuMEhRSZ9iTsSEhFeoKiyKQx2oxFaTR5Ib23SkvCREw1pUIKX6DSI63EyDpU0tPCGSKwBTrJW5wnEMMY6Y8G7cZoOp69vlvBD84TiKCQTuZI6DzE/flKmNcpivNXHB2luLahICvcIpGVuEfWQQSaQQpJKURgZI4Qw6gjBoe3pXaYQEyuxAi8SjGXEM+BZgUv0oZwjIw4si6XVD/65QCqasDLfWGNR88rDvb3+UNZQ2goYOCf1PviOaH5OrR0Ts44VMLct57b4RdUzGnhmFXSNXxdpZbf0NoMpYEqgqH0+NYmmD0M03IFpZ0qM+meHC8efr7Ewjr6qHH6lIFJU8ZgXQ5sX+H0/5LFHeZK4y4hry3k3t+icyIYo0Gn1YUcPjLZ78tLxvF9RtPa15PTZnxnHLkNxmKT0RcdxlZQgZyugHaEPYYwT29tokcak+PZw3SUHt3WXczO9WzdFNax9FrdeHQbQnslqQOltWciCZ+RzpFXFs4mpaITSTi2bous9LYZ6eSq3vreKuyab9vmaxmvdF5k+D6QsBK0Q5nlDzOlbNLVZtGutD9EaU9s0l1eclKh253Un6ucnaUst7rf7Q7qD13Zew5qy+/+C++O/90FrL6A5WVGusg0ttkyZT5cjjOx5TCrb2wtMWD77HYD56dr+L8xcNpC0bIPe62JV6Uz/l/VrqoInu8/f5Ryc09lc/RejkPKm3m7bGQj9lxJeTXjd3Zd3ypNwmkEZazJC5POxA4fKUl9x8TODfHwygQ6Z52YpjpDMUYK8S+lXO8gxywTfusWEYSaQQQ5UmobzTGIipRCDD1Z6F576vRWpJrefE27qSACj26yECRLx0c0JSp83GPAvdtSGuIuCkqnNDKbkVZ+zzqelcv5nbHEEzqwxhQMx5qhR1U6TbOwxxClQ3dUctD9Qdt8xbVpJkbLafHr9WKMvfl0vbb3KXMb2uPNp2tB9isaoc1CSc0lxeI4oIiXwfg7NMpnEOSCBaJFmZmAUAJtRpYDWN7rwxIn4mhBiri2NoMIMq3Q+NA3jQ57VEiVorioDeIjOs8rD/b2IVohfTqd7sngzhz3Gizfuzg/OX13dfqM17Ta78MRczGpASGGg73fXvQPD399MQgvIespl6YVyRmSWGooMZyJ1gWobrIVdlvH6b8S0xvmw1ktMqmDOhqYmTcN3gdZaFh+sa7rkRBBvC5RDiJIrScGmc/5bXTjsqrix7cl8p+0/iCCiXRa8ts7SPPa8/cE4pHMPG4g5MllI6g/Ff9Uwe8kYSGdGxbOJzIr+RdE8BVnnQp/NagiSFEmfFXpzxu/I6WwoBbC3VSs2iPl7PQaquovAi/VFw==
+sidebar_class_name: "get api-method"
+info_path: docs/generated/api/qat
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get Planning Unit by Forecasting Unit"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/api/planningUnit/forecastingUnit/{forecastingUnitId}"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Retrieve a list of active planning units associated with a specific forecasting unit
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"description":"The ID of the forecasting unit to retrieve planning units for","in":"path","name":"forecastingUnitId","required":true,"schema":{"type":"integer","format":"int32"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"content":{"text/json":{"schema":{"type":"array","items":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":{"type":"object","properties":{"baseModel":"circular(BaseModel_ReportView)"},"title":"BaseModel_ReportView"},"forecastingUnit":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":{"type":"object","properties":{"baseModel":"circular(BaseModel_ReportView)"},"title":"BaseModel_ReportView"},"forecastingUnit":"circular(ForecastingUnit_ReportView)","forecastingUnitId":{"type":"integer","format":"int32"},"genericLabel":{"type":"object","properties":{"baseModel":{"type":"object","properties":{"baseModel":"circular(BaseModel_ReportView)"},"title":"BaseModel_ReportView"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"}},"title":"Label_ReportView"},"label":{"type":"object","properties":{"baseModel":{"type":"object","properties":{"baseModel":"circular(BaseModel_ReportView)"},"title":"BaseModel_ReportView"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"}},"title":"Label_ReportView"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser_ReportView"},"lastModifiedDate":{"type":"string","format":"date-time"},"productCategory":{"type":"object","properties":{"id":{"type":"integer","format":"int32"},"idString":{"type":"string"},"label":{"type":"object","properties":{"baseModel":{"type":"object","properties":{"baseModel":"circular(BaseModel_ReportView)"},"title":"BaseModel_ReportView"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"}},"title":"Label_ReportView"}},"title":"SimpleObject_ReportView"},"realm":{"type":"object","properties":{"code":{"type":"string"},"id":{"type":"integer","format":"int32"},"idString":{"type":"string"},"label":{"type":"object","properties":{"baseModel":{"type":"object","properties":{"baseModel":"circular(BaseModel_ReportView)"},"title":"BaseModel_ReportView"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"}},"title":"Label_ReportView"}},"title":"SimpleCodeObject_ReportView"},"tracerCategory":{"type":"object","properties":{"id":{"type":"integer","format":"int32"},"idString":{"type":"string"},"label":{"type":"object","properties":{"baseModel":{"type":"object","properties":{"baseModel":"circular(BaseModel_ReportView)"},"title":"BaseModel_ReportView"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"}},"title":"Label_ReportView"}},"title":"SimpleObject_ReportView"},"unit":{"type":"object","properties":{"code":{"type":"string"},"id":{"type":"integer","format":"int32"},"idString":{"type":"string"},"label":{"type":"object","properties":{"baseModel":{"type":"object","properties":{"baseModel":"circular(BaseModel_ReportView)"},"title":"BaseModel_ReportView"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"}},"title":"Label_ReportView"}},"title":"SimpleCodeObject_ReportView"}},"title":"ForecastingUnit_ReportView"},"label":{"type":"object","properties":{"baseModel":{"type":"object","properties":{"baseModel":"circular(BaseModel_ReportView)"},"title":"BaseModel_ReportView"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"}},"title":"Label_ReportView"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser_ReportView"},"lastModifiedDate":{"type":"string","format":"date-time"},"multiplier":{"type":"number","format":"double"},"planningUnitId":{"type":"integer","format":"int32"},"unit":{"type":"object","properties":{"code":{"type":"string"},"id":{"type":"integer","format":"int32"},"idString":{"type":"string"},"label":{"type":"object","properties":{"baseModel":{"type":"object","properties":{"baseModel":"circular(BaseModel_ReportView)"},"title":"BaseModel_ReportView"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"}},"title":"Label_ReportView"}},"title":"SimpleCodeObject_ReportView"}},"title":"PlanningUnit_ReportView"}}}},"description":"Returns a list of active planning units associated with a specific forecasting unit"},"404":{"content":{"text/json":{"schema":{"type":"object","properties":{"messageCode":{"type":"string"}},"title":"ResponseCode_ReportView"}}},"description":"No planning units found for the specified forecasting unit"},"500":{"content":{"text/json":{"schema":{"type":"object","properties":{"messageCode":{"type":"string"}},"title":"ResponseCode_ReportView"}}},"description":"Internal error while getting planning unit"}}}
+>
+  
+</StatusCodes>
+
+
+      

@@ -1,0 +1,71 @@
+---
+id: add-and-upadte-forecast-method
+title: "Save Forecast Method"
+description: "Create or update a specific forecast method by its ID"
+sidebar_label: "Save Forecast Method"
+hide_title: true
+hide_table_of_contents: true
+api: eJzNVlFv20YM/isEn1XbyJYWE4YBjuNsLrKktd32ITACWkdb18p3yh0V1zD83wee7MRxtwHty6Yn6UTyvu/jd5S2aDgWwdZivcMcB4FJGHyApjZ6RxBrLuzCFrDwgQuKAiuW0huYb8BKhNElZuhrDqQ1RgZzJGP6znyoyQhf7bP+TEmYYeCHhqNceLPBfIuFd8JO9JbqurJFKtP9HBXPFmNR8or0TjY1Y45RgnVL3O122Qn2aclQ2SjgF/ByV/Dzz1xIBClJYOMbWJMTEA9kzDPZDowWTyzbzJEBG8E1VaVhPZCSHVjRRTKGDdh/yPDSZpEz4LyD3j6r3emggw1sMJfQ8E4XYu1d5Khsz3q9E3WEv8qPyDJmaYKLQDBpioJjhMIbVuBSMjw1DtYUIbYRi6bCXYY/9376LgytyphhHbSs2JbKimOkJQ+84b8DnKFYqTghbQVIkf/K5A+ReiIkTexc3Y4vRpeXwxtlpK01Pqlf0iNDsMtS254a3d1bWkob945oWb7+/7O8uZ3e9weD4btp/+J6eGieISGIjR4bfrIdFQXXQvOKld35d/roP2E3upkOxzf96/vJcPxxOL4fjse34z3JwK0z/YrB6zNwCD60R9lY03KuKr8+8bN4KPyqrli4RUjLiPkdHkYD7CfSLMN2oGGOtY+JO0mJOXaptt3F6fyKHB45aKktNqHCHEuROuZdDe88NOREx2UCQY6qjdgidnxY4qkWv7NTsGygrQlabjfTLYomWNmkPeZMgUO/UUh3s+PXE21e25/joMPTlQ8rEszx7afpN3sPnXBIir39NAXxX3SuubSwSHk5XKQq8Gt6+ZsyT/thvq+P2cEHKkDSWG01fp7vw6+kDXh2SobWLbxCfInm/QvVoH+QDabeV5hhZQt2MVnPUYLQr6koGa7bF/CRQ9TMs04Ps5O2rNfrDqVw7UJ3Xyt2r0eD4c1k+Epzjhz8vq9qPbYFMcezzi9v7s7PX7+ZaZQ6ZEXuCMlEB82pqU7kPjqAP/yJ3Wudjm9dkXUKJzHd7g17h1RbzPDEsrMMS/V1fofb7ZwifwjVbqfLDw0HNdksw0cKNs0M9ViGJZPhkPz3hTeKusX/aqooNLxqFM03n+xddsjopzl0FPs8eHbHZ+7d7UQFn+//B1ZpxGCgtX4jaY05pv8L3SJZPa1tsSK3bGipsW1Nvf4CN0kPbg==
+sidebar_class_name: "post api-method"
+info_path: docs/generated/api/qat
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Save Forecast Method"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/api/forecastMethod"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Create or update a specific forecast method by its ID
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={undefined}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"content":{"application/json":{"schema":{"type":"string"}}},"description":"The list of ForecastMethod objects that you want to add or update. If forecastMethodId is null or 0 then it is added if forecastMethodId is not null and non 0 it is updated","required":true}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"content":{"text/json":{"schema":{"type":"string"}}},"description":"Returns a Success code if the operation was successful"},"403":{"content":{"text/json":{"schema":{"type":"object","properties":{"messageCode":{"type":"string"}},"title":"ResponseCode"}}},"description":"Returns a HttpStatus.FORBIDDEN if you do not have rights to add/update this object"},"406":{"content":{"text/json":{"schema":{"type":"object","properties":{"messageCode":{"type":"string"}},"title":"ResponseCode"}}},"description":"Returns a HttpStatus.NOT_ACCEPTABLE if the data supplied is not acceptable"},"500":{"content":{"text/json":{"schema":{"type":"object","properties":{"messageCode":{"type":"string"}},"title":"ResponseCode"}}},"description":"Returns a HttpStatus.INTERNAL_SERVER_ERROR if there was some other error that did not allow the operation to complete"}}}
+>
+  
+</StatusCodes>
+
+
+      

@@ -1,0 +1,71 @@
+---
+id: get-data-source-type-by-id
+title: "Get Data Source Type"
+description: "Retrieve a data source type by its ID"
+sidebar_label: "Get Data Source Type"
+hide_title: true
+hide_table_of_contents: true
+api: eJztWG1v2zYQ/ivEfWoBNg7SZsWEYUDSZIGLdkMTd/0QGMNZOkdsJVIhT/YMQ/99OEre5Nh5GwIsK/zJNo/38tybebeEjELqTcXGWUjgnNgbmpFClSGjCq72KSleVKQmC2U4qOEJaHAVeRSeYQYJXBGfIONFvDxaVHS8GGagoUKPJTH5AMnl8oaqUU5qeKLcVHFOm9rYKd8ZAxqMcFTIOWiwWBIkkK1pjPo8XdfGUwYJ+5o0hDSnEiFZgoiEBIxluiIPGqbOl8jt0esDaJqxsIfK2UBBOA729+UjdZbJcpRBf/LgaxDjl5ui3eQrpSygvTiHTSsGUzYz6t2bOFcQWmg0TDDQR5dR8WRiIDU+rQv0L45Xhy9BQ+oJmbLjxf2K6kBeYvoAl+l4uY3G39cDe2OvoGk0sOFCjo4xmPRzIC8snSknyFu4ejoyZHrFpiRhKjDwR5eZqXkeIPr2PAbJurwuaM3/Pz4bpfgw8wqcPGHu70poV0LPAtq/jM+EisdVzh9kt1i1Ik79HcTqLmKobiF+dxn0ITag7wibvGGwKO8HkLpsmz0azENRmeyiZbo1kXadfdfZd51919n/085+v+oLU1YFvXMZ/dbC7RPXx1pohLYxMdfehu1D7NxwHimhojTikfG50fBm//VTTJclhYBX0fi7QZ53o228uQWFDOMSKZU5Cso6VjnOSFXkSxOCcVbm8ZmhueLchA2gLaQ3zw7SwwKi5thinrraZoLl8GmG/yfDMrQsVVQo8t55xTmyqjzNyDJlEU+3K8HitoVKqw+vZBUT01q1ea1iYo81lMS567Y5cXfDOSQwwMoM1ue7wfLmvNeAhkB+tlr01F7+bnPmKiQDkbB3XaNlMzVpXBqhxWLBJg17zksxr4M9IyvLJcpUK1OJONnPBEprb3gRdUwIPfmjWqy8HPfJFxKdNgD9S6tfv6w6x/svow3dp+Lo6L/3X0aK3Teyyth40HacRB1HKeqnSPwZui1TfHZECuhVoMUB0e3GTp0YsK7r05pP1NHKKWrkXAEaCpOSDTFzupXXUYVpTupDS1C/k4+lebC3D/qG0+fz+R7G6+LjQScrDD4M353+enH6Snh6CfjpSHwxawVCAgd7P769PDz84e1YblUucIm2Z8kZsdpIohvO7NXPg/eKneditVUFmviGi8iWXUZeAlYGbu4cQEOysYUYa8hdYOFZLuUh+NkXTSPH1zV5SaOxhhl6gxNxgmwoTZDvGSRTLALdAejFebdrfKketcjcCrA7RLuQIGBRyy/Q8I0W2xadzbjRkBNm5KPV7bWjNKWKewL+aVlNv7zPTkfQNH8BYFGI1Q==
+sidebar_class_name: "get api-method"
+info_path: docs/generated/api/qat
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get Data Source Type"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/api/dataSourceType/{dataSourceTypeId}"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Retrieve a data source type by its ID
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"description":"The ID of the data source type to retrieve","in":"path","name":"dataSourceTypeId","required":true,"schema":{"type":"integer","format":"int32"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"content":{"text/json":{"schema":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":"circular(BaseModel)","createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"}},"title":"BaseModel"},"createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"dataSourceTypeId":{"type":"integer","format":"int32"},"label":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":"circular(BaseModel)","createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"}},"title":"BaseModel"},"createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"labelId":{"type":"integer","format":"int32"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"}},"title":"Label"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"},"realm":{"type":"object","properties":{"code":{"type":"string"},"id":{"type":"integer","format":"int32"},"idString":{"type":"string"},"label":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":"circular(BaseModel)","createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"}},"title":"BaseModel"},"createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"labelId":{"type":"integer","format":"int32"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"}},"title":"Label"},"name":{"type":"string"}},"title":"SimpleCodeObject"}},"title":"DataSourceType"}}},"description":"Returns the data source type with the specified ID"},"403":{"content":{"text/json":{"schema":{"type":"object","properties":{"messageCode":{"type":"string"}},"title":"ResponseCode"}}},"description":"The user does not have permission to view this data source type"},"404":{"content":{"text/json":{"schema":{"type":"object","properties":{"messageCode":{"type":"string"}},"title":"ResponseCode"}}},"description":"The data source type with the specified ID was not found"},"500":{"content":{"text/json":{"schema":{"type":"object","properties":{"messageCode":{"type":"string"}},"title":"ResponseCode"}}},"description":"Internal error that prevented the retrieval of the data source type"}}}
+>
+  
+</StatusCodes>
+
+
+      

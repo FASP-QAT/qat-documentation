@@ -1,0 +1,63 @@
+---
+id: get-procurement-agent-type
+title: "Get Procurement Agent Types"
+description: "Retrieve a list of active procurement agent types"
+sidebar_label: "Get Procurement Agent Types"
+hide_title: true
+hide_table_of_contents: true
+api: eJztWG1vGzcM/isCP23A2Q4yZMUOwwCny4IU6dY27vrBMAZZR9tqddKV4jkzjPvvA3V2d17sJikKrAj8xS/i60ORoqg1FBgN2Ypt8JDDG2SyuESllbORVZgpbdguUVUUTE1Yomel5/LJqwojZBAqJC3yVwXkMEd+9S/rUDhHqwohA8JYBR8xQr6G05MT+TLBM3qWn4x/8+B9FDfWEM0CS52WRTgHTaRXkIFlLGNnPUzfo2HIoCLxg22rvnW6wzcNwaH20GQw1RFfhgLdV1MDxpKpnabvzreL30MGhlAzFuer+w3VEUnC94nPesY5EmQwC1Rqbpd+OBXLwux12fUrMlk/h6bJgC07WTrX0Zq3EUlENq78qnmPVMdGoRl7bEsUIacjvwyFndlvA0TXn8cg2dW32bTmKezP9Csm8bEWjrXwTUD78lp4sFeJ+y/0e7zaEmf0GWL1OWKsDhCfXAZdpwPoCWFLft65uzwPxT7j+5kfDItQu/L+UJlDxu1DDdniphU6mLLHHnLsIccecuwh/2sPud/0jS0rl07jP1q4XeLeobNphOXOiFuTjw+fcJsMzh45rR7YjhJj1PND/aQD5s1mVE6cezBceZa9cgqJAqnbhXWoqJ3drZ8/ApsY1fMI+bjbzXqJpyc8PcLIPUFOwTkkmGRQIi/CZtgXkJoXkMNAV3awryVCBhFpiSRm1lCTHPEL5irmAxHqf6y1ZzuzJj0jaK/diq2J/UCSQLvQL9HLcwMWqtWpRF0zEROmJsurZGOKmpCGtTg2nnTJN7JX7XZ0mbb/fttm64t3ozu2LyTsiheoXrwbKQ4f0Cvr00Kb5bk6T1rUz4n4iyBP9qTVJQpk222XAKT4Wz8L4sCurdc7MVHDbVDUKAQHGThr0MeUR23lwLDSZoHquiWoP5GiSJ72TyD7T9Bvb2/7OrFLjAcbXXFwffX84vebi57IdNLx9VBisWwVQg6n/Z+ejc/Ofnw2SbegELnUvuPJJbLq1KNKmaBGm/eiHZydovqix6dNMFM5Vk7bdJVIYNebvByDrizsv6xJMi9CZOFar+UG8pZc08jyxxpJcmmSwVKT1VOJxHjSZLBAXSClNPuAKwm8MVhJISy1qz95kw6HplstlxcjaJp/AHXmsOk=
+sidebar_class_name: "get api-method"
+info_path: docs/generated/api/qat
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get Procurement Agent Types"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/api/procurementAgentType"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Retrieve a list of active procurement agent types
+
+<ParamsDetails
+  parameters={undefined}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"content":{"text/json":{"schema":{"type":"array","items":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":"circular(BaseModel)","createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"}},"title":"BaseModel"},"createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"label":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":"circular(BaseModel)","createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"}},"title":"BaseModel"},"createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"labelId":{"type":"integer","format":"int32"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"}},"title":"Label"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"},"procurementAgentTypeCode":{"type":"string"},"procurementAgentTypeId":{"type":"integer","format":"int32"},"realm":{"type":"object","properties":{"code":{"type":"string"},"id":{"type":"integer","format":"int32"},"idString":{"type":"string"},"label":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":"circular(BaseModel)","createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"}},"title":"BaseModel"},"createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"labelId":{"type":"integer","format":"int32"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"}},"title":"Label"},"name":{"type":"string"}},"title":"SimpleCodeObject"}},"title":"ProcurementAgentType"}}}},"description":"Returns a list of active procurement agent types"},"500":{"content":{"text/json":{"schema":{"type":"object","properties":{"messageCode":{"type":"string"}},"title":"ResponseCode"}}},"description":"Internal error while retrieving a list of active procurement agent types"}}}
+>
+  
+</StatusCodes>
+
+
+      

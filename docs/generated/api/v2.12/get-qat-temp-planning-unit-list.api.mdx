@@ -1,0 +1,71 @@
+---
+id: get-qat-temp-planning-unit-list
+title: "Get QAT Temp Planning Unit List"
+description: "API used to get planning unit list from temp tables"
+sidebar_label: "Get QAT Temp Planning Unit List"
+hide_title: true
+hide_table_of_contents: true
+api: eJydlE1v5DYMhv8KwUu7gDqTpujFp/owuxlgsTtf20swCBibHqu1JUWidzow/N8LyZ4kkwRZYE+2BJF8SL5kj0KHgNktOu240YZxr7DkUHjtRFuDGearJXSBSxALBxZwDRmjzQE6owUaHQQqb1sQbh0I3TccUKF17Cl6WJaY4YFlTbLj1q0m629Gy2cdBBU68tSysI8gPRpqGbNHoGWJCnUEcSQ1vqRbPT6Dyno41rqo4WQ7MDwiv4VrPSr0/NBpzyVm4jtWGIqaW8KsRzm5SKCN8IHj08r6lmS8+uMah2EfzYOzJnCIFtdXV/FzibZh6bwJQG8x6AqkZngsExwpQOiKgkOougYVFtYIG0lA/J/M/wnRaz8Mg8I/3493I+K2QtKF2fLLbrH5kn++2y42fy82d4vN5utmiu55jGpbBhvPwN5bD1KTQKlLMFaAmsYeX7CKhcK2rmHhd0EHhS1LbScJpF5LjRnOyen5ucPzh1Eac/dCG/P+SQQDKgzsv59V0vkGM6xFXMjm0d3soSMjutJFYiRDzUl0EWbWH16rxtuyK1Iuo9MknnW+Q4XfyetRxTGHfRRfZVNyWpqoi/VFICBTQn6OBjtrY/Mi5xjqevb79ezqFUG+Wv4SYiEptTwVeJ3vYJtwpqpSkao6TcTHfLsCYWpRvUj/eDz+IH1uSUeLm+32Lvq5u1n/dahD8ZsLbXoyKGx0wSbws4i5o6JmGPkvQ1bWzu7JY+yxs0FaMs8MP7GkbGJb4TzyEPsK09BfVKN/0tBPrptpZJP+XEPaxIQScT9p7hbJ6ajA86JTOOkuXr7eStmzBbRXWNsg0Unf31Pgb74Zhnj90LE/YXa7f9JNkmepQ/wvMauoCfxOvr9upj30AX5+l72Z/nRJ5pRU3XTxhAr/5dPlfh32g8KaqWSf4McHeVGwk2emT8Mdp+JxsD8tdjgM/wMI2y1g
+sidebar_class_name: "get api-method"
+info_path: docs/generated/api/v2.12/quantification-and-analytics-tool
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get QAT Temp Planning Unit List"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/api/pipeline/qatTemp/planningUnitList/{pipelineId}"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+API used to get planning unit list from temp tables
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"pipelineId","in":"path","description":"PipelineId for which you need to planning unit list for","required":true,"schema":{"type":"integer","format":"int32"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Returns a planning unit list if the operation was successful","content":{"text/json":{}}},"500":{"description":"Returns a HttpStatus.INTERNAL_SERVER_ERROR if there was some other error that did not allow the operation to complete","content":{"text/json":{}}}}}
+>
+  
+</StatusCodes>
+
+
+      

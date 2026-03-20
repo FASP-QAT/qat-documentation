@@ -1,0 +1,71 @@
+---
+id: add-and-upadte-usage-period
+title: "Save UsagePeriod"
+description: "Create or update UsagePeriod"
+sidebar_label: "Save UsagePeriod"
+hide_title: true
+hide_table_of_contents: true
+api: eJztWG1vGjkQ/iuWP91JG6C0aVp0OglSepcqTVogrXRRFA3rgXW72Bt7FooQ//003iXsJqTpnRop7V0+RIs9npfH9swzXkmFPnY6I22N7MhDh0AorBN5pvjrzMMU36HTVslI2gwdsOiRkh0JSnWNOstAEdblMnAwQ0LnZed8dcPGKEGRak/CTqrqhR1/wpi8oARILG0uFmBIkBWg1NajhjiaiHy77EgJ7YXJ05RlWoISNEITD4JSqITeJW6pWAJGCWONaJVLChscgmZXr3J0SxlJAzOUHVnRI9cXkXR4laOnnlVL2VnJ2BpCQ/wJWZbqOEDV/OQ57JX0cYIz4C9aZqwOnAPWrglnvjJeAMEwOgacNIZZiEnPsSI3tjZFMHIdyTF4fGsVpt9NjYy1i/MU3C+9zeCvMpJxOCCqt7zfUO7R8Tm5ltOGcIpORnJi3QyoGHraZsssXKB8Le7JaTOV63UkSVPKQz3wOj7z6HhJ6coroB2rKjZ4R/dIz5AXpeDprVV6oh9HEFV//kkkdX3lpjEo1szR0ci+tYaSijaTz8Z1t5XNxylWkHwMePzLTR1/x5P//wX6T1+gH35/xph+s1dB+hLNDq82kxP3lcnsa5M+u2PypztBxyEB/USxRbLGmb7JwYoPVTa4XvMMUyXtUMkOuRzDgM+s8QUM7VbrBoEi/EJ3M6c70JyhZ8OHVt2D0aA0HiSDf3WKOkDKnfECxDCPY/RexFYhU0lKUFyzYLEAL3whMcnDAXjWevpII/mTKBsSUO4br08HvaNXr/onHBEzbWUDJU5gjsLpacIsPPDuZtkGUKJ9SdCLKJ8//ihPTkeX3cPD/rtRt3fc32yeAgLhc+bneN0LQBxjRlDSof1Hexor0R2djPqDk+7x5bA/+NAfXPYHg9NBGaTD4mTaGQrLvwU6Z13RWSmtipjT1C5unGeyIrazLEUq8xtMuYMr7rPIigt9EckZUmK5BcysD4EDc03ZhEw381on6NHNN21g7pgWJUSZ7zRZtnGVgyE9KTslMJAuSce+YR0npjoKf6BhN1GJQqdgddyFeYxzp2kZbIwRHLpuzv6cX1Snh7xtxc5UhTa/Xm+y2ZuPo1u2+4bQBazefBwJsp+5xzRhoMiCHdELWsRvYfJ3jjzYY3oYZmS0OQEMQECXD9Rg20L2vwBDH8LYcExOljfIaX2qRlc21aRVrRWVylsjFLLdaj/bax3stV+Onux39p902i8arYMnf8ldZew+1bcLzd36d7QprYeLZLwLtp8Q0YeDr9S05Ypb7rCliDfHsh1jTAirYw8MycMauEWRWpxttJlYtlTPH+9reU50N4lOjKxNGQodo/GhTJQ+dTOIExTHxYT4gM7zynajxYZriXSxWDQgiHPebJa6fPP46LB/Muzv8ZpKtXnf5fw2LxRygI2XB+f7+88PLliKE/oMTMWTIZOC+vNeLbhKobzv+bBMgKGaZino0DKHYFZlCTmXkOk6tFxvEi4znXO5WvHFPXPpes3DxfPcrRfGqkc/xmPjTmA+4/LGm2Mk55DmLBkK3xycDpyFK10kEwSFLsBRLD0sUNgbsfbt2ltvk+tos6IbeFBFdkt81tWy/+50yIdoXD58zgLFkQ4WMgr/OzI8FrOJUHDD2EqmYKY5TFm20Ml/fwNPqKGv
+sidebar_class_name: "post api-method"
+info_path: docs/generated/api/qat
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Save UsagePeriod"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/api/usagePeriod"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Create or update UsagePeriod
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"description":"The list of UsagePeriod objects that you want to add or update. If usagePeriodId is null or 0 then it is added if usagePeriodId is not null and non 0 it is updated","in":"query","name":"usagePeriod"}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"content":{"application/json":{"schema":{"type":"array","items":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":"circular(BaseModel)","createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"}},"title":"BaseModel"},"convertToMonth":{"type":"number","format":"double"},"createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"label":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":"circular(BaseModel)","createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"}},"title":"BaseModel"},"createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"labelId":{"type":"integer","format":"int32"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"}},"title":"Label"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"},"usagePeriodId":{"type":"integer","format":"int32"}},"title":"UsagePeriod"}}}},"required":true}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"content":{"text/json":{"schema":{"type":"object","properties":{"messageCode":{"type":"string"}},"title":"ResponseCode"}}},"description":"Returns a Success code if the operation was successful"},"403":{"content":{"text/json":{"schema":{"type":"object","properties":{"messageCode":{"type":"string"}},"title":"ResponseCode"}}},"description":"Returns a HttpStatus.FORBIDDEN if you do not have rights to add/update this object"},"406":{"content":{"text/json":{"schema":{"type":"object","properties":{"messageCode":{"type":"string"}},"title":"ResponseCode"}}},"description":"Returns a HttpStatus.NOT_ACCEPTABLE if the data supplied is not acceptable"},"500":{"content":{"text/json":{"schema":{"type":"object","properties":{"messageCode":{"type":"string"}},"title":"ResponseCode"}}},"description":"Returns a HttpStatus.INTERNAL_SERVER_ERROR if there was some other error that did not allow the operation to complete"}}}
+>
+  
+</StatusCodes>
+
+
+      

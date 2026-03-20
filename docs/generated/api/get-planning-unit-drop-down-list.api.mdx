@@ -1,0 +1,63 @@
+---
+id: get-planning-unit-drop-down-list
+title: "Get All Planning Units"
+description: "Retrieve a complete list of planning units"
+sidebar_label: "Get All Planning Units"
+hide_title: true
+hide_table_of_contents: true
+api: eJyVVdtuGjEQ/RVrnlppC1GqtOqqqkQSGqVKr7k9IBSZ3YF1a2x3PAtFaP+9GrNEG3Jp8wTMHM/MOT5j1lBiLMgENt5BDj+QyeAClVaFnweLjMqayMpPVbDaOeNmqnaGI2TgA5KWg6cl5DBD/tYiLp3hY/Lh2C/dmYkMGRDG4F3ECPka9vf25KPwjtGxfGX8w/2fUWZYQywqnOsUXgWEHDSRXkEGhnEeO3E/+YmFVA8ks7DZlDdlB2Mc4wwJMph6mmvehF7vQ5OBKc+ZjJt14HETaDKweoL2380mOuJnXz4TCoWhoraaXhxugzdbxa4MLl/KBGzYSrmHIbcznv4v3YS+Qfc43ZspPZEMTyVjeCDZIXGWUHcJdNLnRtz2NQm3ixLcPZvW5KLiCv/p0yaDg2f67ZH7m2OMeoZHvsSnuf5ozS7Ie2R2uZw6RnLaKiTypLjSrALhAh1jmRjSZim1FXb/RVlm0bMI+QikfemXLsI4gzly5dtlFXqaK8ihr4Pply2uHzpLDBlEpAWSlFpDTWLdijnEvC+ner9r7dhMTZHeAe20XbEpYs/TDHaJnqCT9wJLtamppFwzlhZFTYZXqccENSENaplsNO6mz+Wa2k3qgLa/Pm79/un64l7voYictPt0faHY/0KnjEuBzZ7k6jBVUe9T8oMwT/0gb+tDtr1xESBpbNzUywB3e32/o4kabEVRF95byMCaAl1MFnI6NRgEXVSozjYJdYUU5eR+bw+yHdGXy2VPJ7ho3G9rxf7Z6dHwy/nwlZzpOPH7QLRYbApCDvu9d29HBwdv3o4FFXzkuXadSU6Q1cBatX3J1WX71t+h2Fml5/1jtAKm7QtWGydTJILr1owj0MFIv9aO4tKuIccZVD6yANdreVAvyTaNhH/XSGKhcQYLTUZPRIDRuMmgQl0iJXf9wpXoXRQYxNwLbevbgdJz0HS35GR4AU3zF0H5e4U=
+sidebar_class_name: "get api-method"
+info_path: docs/generated/api/qat
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get All Planning Units"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/api/dropdown/planningUnit"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Retrieve a complete list of planning units
+
+<ParamsDetails
+  parameters={undefined}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"content":{"text/json":{"schema":{"type":"array","items":{"type":"object","properties":{"id":{"type":"integer","format":"int32"},"idString":{"type":"string"},"label":{"type":"object","properties":{"baseModel":{"type":"object","properties":{"baseModel":"circular(BaseModel_DropDownView)"},"title":"BaseModel_DropDownView"},"labelId":{"type":"integer","format":"int32"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"}},"title":"Label_DropDownView"}},"title":"SimpleObject_DropDownView"}}}},"description":"Returns the complete list of planning units"},"500":{"content":{"text/json":{"schema":{"type":"object","properties":{"messageCode":{"type":"string"}},"title":"ResponseCode_DropDownView"}}},"description":"Internal error that prevented the retrieval of the complete list of planning units"}}}
+>
+  
+</StatusCodes>
+
+
+      

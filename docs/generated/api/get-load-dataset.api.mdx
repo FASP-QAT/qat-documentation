@@ -1,0 +1,63 @@
+---
+id: get-load-dataset
+title: "Load Dataset"
+description: "Retrieve the complete dataset, including realm and program data"
+sidebar_label: "Load Dataset"
+hide_title: true
+hide_table_of_contents: true
+api: eJy1VE1P20AQ/SurObtJhKCoVlUphRQFoUq0aTlEOUzsib1g7y6746SR5f9ezTqhCXChak+25/O957fbQk4h89qxtgZS+EbsNa1JcUkqs7WriEnlyBiIE6VNVjW5NoXyhFWt0OTKeVt4rGMRJGAdeZRp0xxSKIhvLOaX/QBIwFNw1gQKkLZwMhrJI7OGybC8Mv3i4X0QLC2ErKQaY3jrCFII7LUpoOu65CXuxpvwt7C7BE5Hp2/CYpf3lAkj54Uy655STSFgQRc2p9eAJ8CaK4qIeyFi5SuMZuUTAbXRXEZqhV6TeYI+vVQbDMpYVivbmFxonL1R0v9NY2qYvMFKkffWKy6RlfO0JsOUR06+txxWyq5iYMe6X4NFgHQOewMtEqiJS7vzluBGLiGFITo9rI6sFsivyUt7C42vIIWS2YV0KLWDxwYN65XOolnRYLVlnYWB9QU8J3FFRkxNuepnKhnXLWRF1njN27hjSejJjxvBM18cpr+L6r2wh0X7ry/W18iQwvXd7MXuiQgYdbm+mym2D2SUNjGwin2p+hynqI8x+UmYx32Q7uZDsv+BIkDUVZuVFQDHu26PNFHjvShqZm0FCVQ6IxOiIwzGBWOHWUnqpk+on+SDdJ4MRpA8E32z2QwwlovGw92sMLyZXky+fp+8k54DY92ORYt1PxBSOBl8OJ+fnb0/X0iVs4FrNAdI5JpRf37+EbGD8/APbridlvFcuQq1EUCRa7tz4xzQadHrwI+LBEobWJJtu8RAP3zVdRJ+bMiLgxYJrNFrXAr/+aJLoCTMyUdzPdBW5M4yckJvjVXzBCIe7u7waFxNZtB1vwF8OAjt
+sidebar_class_name: "get api-method"
+info_path: docs/generated/api/qat
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Load Dataset"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/api/loadDataset"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Retrieve the complete dataset, including realm and program data
+
+<ParamsDetails
+  parameters={undefined}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"content":{"text/json":{"schema":{"type":"string"}}},"description":"Returns the complete dataset, including realm and program data"},"404":{"content":{"text/json":{"schema":{"type":"object","properties":{"messageCode":{"type":"string"}},"title":"ResponseCode"}}},"description":"The dataset with the given program ID was not found"},"500":{"content":{"text/json":{"schema":{"type":"object","properties":{"messageCode":{"type":"string"}},"title":"ResponseCode"}}},"description":"Internal error that prevented the retrieval of the dataset"}}}
+>
+  
+</StatusCodes>
+
+
+      

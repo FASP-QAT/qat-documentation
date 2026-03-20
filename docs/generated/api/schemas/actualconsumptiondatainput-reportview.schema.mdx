@@ -1,0 +1,33 @@
+---
+id: actualconsumptiondatainput-reportview
+title: "ActualConsumptionDataInput_ReportView"
+description: ""
+sidebar_label: "ActualConsumptionDataInput_ReportView"
+hide_title: true
+hide_table_of_contents: true
+schema: true
+sample: {"programDataList":[{"planningUnitIdString":"string","planningUnitIds":["string"],"programId":0,"regionIdString":"string","regionIds":["string"],"versionId":0}],"startDate":"2024-07-29T15:51:28.071Z","stopDate":"2024-07-29T15:51:28.071Z"}
+custom_edit_url: null
+---
+
+import Schema from "@theme/Schema";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"ActualConsumptionDataInput_ReportView"}
+>
+</Heading>
+
+
+
+
+
+<Schema
+  schema={{"type":"object","properties":{"programDataList":{"type":"array","items":{"type":"object","properties":{"planningUnitIdString":{"type":"string"},"planningUnitIds":{"type":"array","items":{"type":"string"}},"programId":{"type":"integer","format":"int32"},"regionIdString":{"type":"string"},"regionIds":{"type":"array","items":{"type":"string"}},"versionId":{"type":"integer","format":"int32"}},"title":"ActualConsumptionData_ReportView"}},"startDate":{"type":"string","format":"date-time"},"stopDate":{"type":"string","format":"date-time"}},"title":"ActualConsumptionDataInput_ReportView"}}
+  schemaType={"response"}
+>
+  
+</Schema>
+            

@@ -1,0 +1,71 @@
+---
+id: add-issue-attachment
+title: "Add attachment in Jira issue"
+description: "API used to add attachment in the issue in Jira"
+sidebar_label: "Add attachment in Jira issue"
+hide_title: true
+hide_table_of_contents: true
+api: eJylVU1v4zYQ/SvEXNoCXDsN0ItOVVsXcVHsOrbbS2AEY3JsMSuRCknFawj674uhFH9EixTY6qSPmXnvDd+MWoi4D5A9wJPxuCL/YhT9QeEzbCRoCsqbOhpnIYN8MRdNIC2iE6i1wBhRFRXZKIwVsSBhQmiIH/4yHkGCq8kjZ881ZIBazzkgP+WBhBo9VhTJM4cWLFYEGaRCcw0SDCPXGAt4S2feg2mxc14cCqOKS0aWSAdmuiUmSykMJHh6bownDVn0DUkIqqAKIWshHmuGDtEbu4eukyc2O1PSCP6sYgAfIw6N6NsC3aZHpxB/c/rIkP+zogTlbOQ+Zi1gXZdGpW5PnwIXbMfi3PaJVGq757OJhgJ/TQJHLZCwc77CCBlsjUV/hC5dLCPUzoY++fbmZqxlSbHxNggUq0YpCkEop0mYXfLJyRfigEGEPmLXlNeKIn2Jr1IS7C/vI93FWK8ixiZM5h/Xs+XH/O/H1Wz572z5OFsuPy0HdE89qqtIOH4W5L3zIhYYhTZaWBcFlqU7vOEanVCuqkuK9C7RTkJFsXDs+dqF3uWxgAymWJspz9l0PAvTdjB9BxIC+ZfXkWh8CRkUMdYhm3KFyXODNprdcNposTxGo8LE+f3IpgvvdKMS/75oGpf7fA0SXtAb3JbpGDu2J2tYni06+4Is9+yQ03DwXO5c0m5i+nJ/xUmg1SJ/JSbWzvHZsqSe1e3k59vJzXimFvMfkuGx9wz3/z5fi1ViPjQdVWr6MJt/5quFiIQVyDedOhwO/9EpqtBwxt1q9ch1Hu/uf90XQX2oQ5VCOgmlUWQDXSDmNaqCRM//GnLn3GSLnpdHOvkK7WXiaGdezfJVK9qzv75j7w5znHxZl2gsK0lU28GKD4C1AZmWPshvr+bsdQtvJBTs4+wB2naLgf7xZdfx6+eG/BGyh83ZTMmz2gS+15DtsAz0jrgfl8NC/kl830L/ptbhJdpjsnnZ8BNI+EzHi79Lt+kkFISafGLdf/295/ZhzTXO2aP9yj+IPiNXiup4EXteCDxVp2Ww+LTisdsO279ymoM9Hvi/hIeeoktNSps1vWuhRLtvcM+xfU2+vgLO0qox
+sidebar_class_name: "post api-method"
+info_path: docs/generated/api/v2.12/quantification-and-analytics-tool
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Add attachment in Jira issue"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/api/jira/addIssueAttachment/{issueId}"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+API used to add attachment in the issue in Jira
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"issueId","in":"path","description":"Issue id for which attachment needs to be added for","required":true,"schema":{"type":"string"}},{"name":"file","description":"Attachment which needs to be added in Jira issue"}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"description":"Attachment which needs to be added in Jira issue","content":{"application/json":{"schema":{"type":"object","properties":{"file":{"type":"string","format":"binary"}}}}}}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Returns a Success code if the operation was successful","content":{"text/json":{}}},"500":{"description":"Returns a HttpStatus.INTERNAL_SERVER_ERROR if there was some other error that did not allow the operation to complete","content":{"text/json":{}}}}}
+>
+  
+</StatusCodes>
+
+
+      

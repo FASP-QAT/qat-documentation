@@ -1,0 +1,71 @@
+---
+id: get-organisation-type
+title: "Get Organisation Type"
+description: "Retrieve an organisation type by its ID"
+sidebar_label: "Get Organisation Type"
+hide_title: true
+hide_table_of_contents: true
+api: eJztWG1v2zYQ/ivEfWoB1g7SZsWEYYDTZIGLdEETd/0QGAMtnS22EqmQJ2eGof8+HCW3sq28DQYWBP6UmPf6PLwTyVtCgj52uiBtDURwieQ0zlEoI6ybKaO9YpGgRYFishCavBiegARboAuiYQIRzJAuWuqjRYEgoVBO5UjoPETXy41QoxTF8ETYqaAUO4KRFa7JBiRoNikUpSDBqBwhArsRcJiABIc3pXaYQESuRAk+TjFXEC2BnUIE2hDO0IGEqXW5onrp7SFU1ZjNfWGNR88WhwcH/Ce2htBQ8IH/UP+b5/yX267t5BvGxLgds0O6dqNi0nNs6U2szVAZqCRMlMdPNsFsZ24g1i4uM+VeHa8WX4OE2KEiTI4XDwcqPTre1EdQJoNyvR8/1D05bWZQVRJIU8ZLx8rr+ItHxyZNKieKOqxaMRJF+IZ0jmyUKU+fbKKn+nmAaOfzFCTr/ppNq17C/kx2WMT7Xtj3wrOA9t974dFZBe2/0XRktRJO3T3C4j6hL+4QvrgKOg8foBeETXZdcB6XpUOV5Q8jj23SBUSCfmwgnVzVRndW4P5I2B8J+yNhfyT8r0fCw6GvdF5k+MEmeFHDbQu3XrYVS7cezqUzvvPdzCm8O3i7i7dkjt6rWUj0fkCXzUM2aHbkyzSLxKIXxpJI1RyF07OUPL+7VRyj94JS7e9C8+5ZobnYmh4wqqktTcLpHu3mIb+zdIeGuB8ygc5ZJ25TnaGYIZE2sy7C2bWa8RBlHWkoxrGEHCm1zRgmjF0ohQj6qtD9zTtEf7l9q6hAgkc3X81pSscHZUpU+KjPXno3pTKkpzoOVsqobEE69j3ruA3XwZ2h4ckQJqL2Kdgdz1Y8xqXTtAgxJqgcukHJmV6P2+Ir3o2a8LbS6tcfq57/+HW0FfuUiQ3zpI9fR4LsdzRCm7BQfysicRy8iN+C8HdoJkThwhAkIFcbywQE7rWZWk5gPdbnNU7EYEWKGFmbgYRMx2h8qJRmYDUoVJyiOK8F4i90ni0PewcgN0i/vb3tqaDOHPcbX75/Pvxw+ufV6Ru2aRXc5wFzMa8dQgSHvV/fXx8d/fJ+zFqF9ZQr08rkDElsV9IGm62GecJcsCEvNFiRKR0uYAHcsinMa1CFhu3rLUiIOq68Ywmp9cR2yyXf5L64rKp4+aZEx9U0ljBXTqsJc8FzRu35/wSiqco83gPr1WUzLnwtnjaO7ETZLCqz4M1QWcm/QMJ3XHSPK6txJSFFlaALideKgzjGgloufn6sqnazn52OoKr+BefPfB4=
+sidebar_class_name: "get api-method"
+info_path: docs/generated/api/qat
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get Organisation Type"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/api/organisationType/{organisationTypeId}"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Retrieve an organisation type by its ID
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"description":"The ID of the organisation type to retrieve","in":"path","name":"organisationTypeId","required":true,"schema":{"type":"integer","format":"int32"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"content":{"text/json":{"schema":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":"circular(BaseModel)","createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"}},"title":"BaseModel"},"createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"label":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":"circular(BaseModel)","createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"}},"title":"BaseModel"},"createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"labelId":{"type":"integer","format":"int32"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"}},"title":"Label"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"},"organisationTypeId":{"type":"integer","format":"int32"},"realm":{"type":"object","properties":{"code":{"type":"string"},"id":{"type":"integer","format":"int32"},"idString":{"type":"string"},"label":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":"circular(BaseModel)","createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"}},"title":"BaseModel"},"createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"labelId":{"type":"integer","format":"int32"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"}},"title":"Label"},"name":{"type":"string"}},"title":"SimpleCodeObject"}},"title":"OrganisationType"}}},"description":"Returns an organisation type"},"403":{"content":{"text/json":{"schema":{"type":"object","properties":{"messageCode":{"type":"string"}},"title":"ResponseCode"}}},"description":"User does not have rights to access this organisation type"},"404":{"content":{"text/json":{"schema":{"type":"object","properties":{"messageCode":{"type":"string"}},"title":"ResponseCode"}}},"description":"Organisation type not found"},"500":{"content":{"text/json":{"schema":{"type":"object","properties":{"messageCode":{"type":"string"}},"title":"ResponseCode"}}},"description":"Internal error while getting organisation type"}}}
+>
+  
+</StatusCodes>
+
+
+      

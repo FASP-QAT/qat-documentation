@@ -1,0 +1,71 @@
+---
+id: update-user-theme
+title: "Update user theme"
+description: "Update user default theme"
+sidebar_label: "Update user theme"
+hide_title: true
+hide_table_of_contents: true
+api: eJx9VMFu2zAM/RWBpw3Q4iJDV8wYBmRFN6QotrVJ10OQA2MzsVpbUiW5WWD43wfK9ua0WE+JJfKR7z2KDeTkM6dsUEZDCrc2x0Ci9uRETlusyyBCQRWBBGPJIcfNc0ihjpG3ntyyv7fosKJAzkO6akAxnsVQgASNFUEKEWmegwRHj7VylEMaXE0SfFZQhZA2EA6WQ5UOtCMHErbGVRi6o/dTaNs1p3trtCfPGdOTE/7JjA6kQ8Sg3yG598yoaVv5jOMNhdppL1ALqmw4iAFNqC2TFX+Jij164essI++3dQmthNNXi73kYTb3lAVWxzFsUF3PFXmPOzo3OY2CfXBK74BbDiqUFJvteouR7Usycx3IaSwFOWec2BeqJBG9UXoX2RzbGLFxxxYBmwdrCRWFwrCn1vjYKpuWQoJWJTwJSUxNmt6+FiR4ck+D0bUrIYUiBOvThJMmjzXqoLYqiyqixvIQVOYnxu3gOYFvpFltykWHKRiOPfaU1U6FQ6yxIXTkZjU3tlqPrxeseCfqOGj4+jpMz+Xd8kXtCxYvinR5txTBPJAWSseDbupS8SWiiE/x8jP0k8rOdPggB/NYgCiv0lvDDRzXuj7SRMwGUcTSmBIklCoj7eM09K9lZjErSFx1F+IXOc+Z08kJyGei7/f7CcZw1jjpsXxyNT+/+L64eMc5o6G6nrEWTx0gpDCdfDxbnZ5+OFtzFE9BhXrUyXgrDNvgiN3oQby6Qnqp4pOxJSrN9SKVpp+6FaBVzM932vaJ6bA61hIKntJ0BU2zQU+3rmxbPn6syfGwrCU8oVO4YaqrBnLl+X8O6RZLT690/uam30pvxf967Q9RH1hALGv+AgkPdBjtt3bdSigIc3Kxhe52lmVkwyjv3+Zox6/w54/FEtr2D3PF7LM=
+sidebar_class_name: "post api-method"
+info_path: docs/generated/api/qat
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Update user theme"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/api/user/theme/{themeId}"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Update user default theme
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"in":"path","name":"themeId","required":true,"schema":{"type":"integer","format":"int32"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"content":{"text/json":{}},"description":"Returns an empty response if the operation was successful"},"500":{"content":{"text/json":{"schema":{"type":"object","properties":{"messageCode":{"type":"string"}},"title":"ResponseCode"}}},"description":"Internal error while updating the default theme"}}}
+>
+  
+</StatusCodes>
+
+
+      

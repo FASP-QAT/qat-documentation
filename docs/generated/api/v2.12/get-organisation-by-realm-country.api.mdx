@@ -1,0 +1,71 @@
+---
+id: get-organisation-by-realm-country
+title: "Get Organisation list for RealmCountry"
+description: "API used to get the complete Organisation list for a RealmCountry"
+sidebar_label: "Get Organisation list for RealmCountry"
+hide_title: true
+hide_table_of_contents: true
+api: eJytVU1v2zAM/SsCL9sAL0nT7eLT3KYfBoY2TdJTERSsTcfabEmV6HSB4f8+SEnXJG3XFdgpkUDyvUc90i0wLhzEN6DtApV0yFIrmEeQk8usNOEYQzJOReMoF6zFglhwSSLTtamISVxupYpKOhaFtgLFhLCqj3Wj2K4gAm3Ihpg0hxgWxNt5R6u9aIMWa2Kynl0LCmuCGOxWUJpDBNKzM8gl7FOe7IQKLpHFSjfiARV7GV7Ci8whAkv3jbSUQ8y2oQhcVlKNELfAK+N5SMW0IB9aaFsjr68Oh9B1c5/ujFaOnM8YDgb+Z58cN1a5l0lABJlWTIoDIv3i/g/n09qu6yL4Mjh8vSCKc2YzZeTG9U4vJ0fpaHRyIWQRoK4dWZFrckJpFiUuSWCWkXNvQR4M/xFyPDk5vrwYpbP08uL2NEm/n4wewfcexBnKZCEpfyJEv95W//WldqaKySqsBFmr7fqtjaUlKfaeLUlYYktyiZXQxTs73kVQE5d649rgTS4hhj4a2d+em/6uPfvt7rmDCBzZ5aOnG1tBDCWzcXHfF+vdN6hYFjIL5VBhtWKZuZ62i2f+HludN1mQsC4apu4qmUEES7QS76pgwOBIqQodpEmuvH+vdoAEqlwkj2hipnXli5B1a6hh72DYGzxjkIzTD86P0tpDoc9XyUxMA51NTzELPd3M72kyHQsmrCHak//w8PCGfKpR+ozz6fTW17k9v/q2KF322bg6hHQRVDIj5WgLMTGYlSTW/HchC617d2jBv7DRjmtUW4lnxK9str1NtdOU9slI/2VpbvZNsKSpUCqvMshoNza8ATTSr9ftBR4935Tx3s08glI79gXa9g4dXduq6/z1fUN2BfHN/MlIwa+5dP5/DnGBlaO/KP842SzQT/tT/641/KL4zSWqVTB61fgTRPCTVs8/EN28i6AkzMkGCeugJMvI8Fb608T7Yfkz7WcnM+i634QPfag=
+sidebar_class_name: "get api-method"
+info_path: docs/generated/api/v2.12/quantification-and-analytics-tool
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get Organisation list for RealmCountry"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/api/organisation/realmCountryId/{realmCountryId}"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+API used to get the complete Organisation list for a RealmCountry
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"realmCountryId","in":"path","description":"RealmCountryId that you want to the Organisation list for","required":true,"schema":{"type":"integer","format":"int32"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Returns the Organisation list","content":{"text/json":{}}},"403":{"description":"Returns a HttpStatus.FORBIDDEN if the User does not have access","content":{"text/json":{}}},"412":{"description":"Returns a HttpStatus.PRECONDITION_FAILED if the RealmCountryId specified does not exist","content":{"text/json":{}}},"500":{"description":"Internal error that prevented the retreival of Organisation list","content":{"text/json":{}}}}}
+>
+  
+</StatusCodes>
+
+
+      

@@ -1,0 +1,71 @@
+---
+id: get-realm-country
+title: "Get RealmCountry for a specific RealmCountryId"
+description: "API used to get the RealmCountry for a specific RealmCountryId"
+sidebar_label: "Get RealmCountry for a specific RealmCountryId"
+hide_title: true
+hide_table_of_contents: true
+api: eJylVE1v2zAM/SsCL9sAL8nS7eLTvPUrlzZt0lMRFIxNx+psSZXoZIHh/z5ISdc46ZoNO9mWSb5H6vE1wLhwEN+DJSyr77pWbNcwiyAjl1ppWGoFMSTjkagdZYK1WBALLkjc7mSIXFuBwhlKZS7Tzr9RBhFoQxZ9sVEGMSyIdyMgAoMWK2KynkwDCiuCuEMqlJGejEEuYJ9hF1FwgSzWuhYrVHxAFSKw9FRLSxnEbGuKwKUFVQhxA7w2HlsqpgX50FzbCnlzdDKEtp35dGe0cuR8xnAw8I99Qlxb5Q5HpeePlDJEkGrFpDhg0k/uPzqf2LRtG8HnwcmfS6K4ZDYTRq5d7/z69tvo9PTsSsg8gN05siLT5ITSLApcksA0JeeOQn7+S8ir6+nD+fXd1amHVHrvtkWua5UdAfvy2shGiskqLAVZq+3mDo2lJSn20itIWGJLcoml0Pk/T7WNoCIu9FaBQXVcQAx9NLK/q7V+01VeCxE4sstneda2hBgKZuPivs/uPdWo2Es/iBwVlmuWqetpuziQ6tjqrE79h9gUDdtzk0whgiVaifMy6CoITapch14kl16WNx0ggSoTyTOamGpd+iJk3QZq2Ps07A0OGCTj0Tvnd3kjjDDam2QqJoHOdoiYhiFuV/E8mYwFE1YQ7bW/Wq2OtE8VSp9xOZk8+DoPlzdfF4VLPxpXhZA2glKmpBztICYG04LEhn8XMte6N0cL/kqNdlyh2km8oMONf9OcOsNpXhT0/7a39ZIgRFOiVL7V0EuzFd89oJHBjzp+GO9Z3yyCQjv28U0zR0d3tmxbf/xUk11DfD97EU/QaCadf88gzrF09EaX72+3Xvhhf5OPuuir/W0PUa2DoMvaf0EEP2h96OntrI2gIMzIBtqboCRNyfBO+ssq+6X4vcYXZ1No21/PfVqK
+sidebar_class_name: "get api-method"
+info_path: docs/generated/api/v2.12/quantification-and-analytics-tool
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get RealmCountry for a specific RealmCountryId"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/api/realmCountry/{realmCountryId}"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+API used to get the RealmCountry for a specific RealmCountryId
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"realmCountryId","in":"path","description":"RealmCountryId that you want RealmCountry for","required":true,"schema":{"type":"integer","format":"int32"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Returns the RealmCountry object","content":{"text/json":{}}},"403":{"description":"Returns a HttpStatus.FORBIDDEN if the User does not have access","content":{"text/json":{}}},"404":{"description":"Returns a HttpStatus.NOT_FOUND if no RealmCountryId found","content":{"text/json":{}}},"500":{"description":"Internal error that prevented the retreival of RealmCountry object","content":{"text/json":{}}}}}
+>
+  
+</StatusCodes>
+
+
+      

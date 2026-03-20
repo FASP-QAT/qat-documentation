@@ -1,0 +1,71 @@
+---
+id: get-expired-stock
+title: "get the ExpiredStockOutput list"
+description: "API used to get the ExpiredStockOutput list."
+sidebar_label: "get the ExpiredStockOutput list"
+hide_title: true
+hide_table_of_contents: true
+api: eJydVUtz2zYQ/iuYvfRCPazUk4anqk060SmypeZQjcezIlckEhCAgaVljYb/vbOgbFPOqykvJJffPvDtt8sjMFYR8g0E8i4w3GRQUiyC9qydhRzmy4VqI5WKnaqIFdek3j14HahcsSs+f2jZt6yMjjyGDJyngOK6KCGHiniIhQwC3bUU+Q9XHiA/QuEsk2V5RO+NLpLv5FOU3EeIRU0NyhMfPEEObvuJCoYMfJBMrCnKVx9cFbCRnE9QbZkqCpDBzoUGuTe9mkGXwT2FeKrxP+EjY+C3yDTARw7aVkN4iUwj1g31Ls7/nIe2hWlLWhq0lspVrX1DluMgwNY5Q2ih6zJgzUZsQ34X1rd8e506+VHTHjpBCuUCgZxDS8kQvbOxp242ncrtvOnXxG2w8XvNhmzYPKYHfuxaSnr5tbALyxQsGkUhuKC4RlY+0D1ZFoHVpAJxIH2PRrnd/8rcZdAQ107U510Ce+Qacpig15Ne5RM6F2WkIIqAfHOENhjIoWb2MZ+Iz/iuRct6d9ImWjQH1kUcuyC9PD/hMriyLeRF9UHVzgV1NV9DBvcYNG5Nor3rbjKQqq+f5+HdAzbe0As9T8/UOj3TIsyms19H09ej2Zv1xWV+eZHPfhtPX1/8A0P9fQ/1Tc2dpKLtziWWT2q7OuNCoS3V/JEQtXbOwFO5knh8MRtPvyBpvlz8EmWfYFFQ7FV2NV+rVWLs1F4sUnstNpL3r/lqqZiwgexFh/b7/Q86RA1q8Xi/Wt1KnNv3V79XdSxGPjYJ0mVgdEE20iDj3GNRk+rrP0+5c268xZDGUDTWoB04/mBJvmRjsAN/dteetkKaAG9QWzlJKvV4Ev0G0Ou0ddNyz+BM+DcZ1DIi+QaOxy1G+juYrhPzXUvhAPnm5lm18tZlUBOWFNKkfKYD5PBnX/1oLcUI3LRS1BfbvMsePeZFQZ4H2OcRlql4Gt/lh5WMzfb0q2hcKeCAezkQ7iGH9L+RFGmTJdsRDNqqxUqwfUy5/gXTKV8d
+sidebar_class_name: "post api-method"
+info_path: docs/generated/api/v2.12/quantification-and-analytics-tool
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"get the ExpiredStockOutput list"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/api/report/expiredStock"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+API used to get the ExpiredStockOutput list.
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={undefined}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"content":{"application/json":{"schema":{"type":"object","properties":{"programId":{"type":"integer","format":"int32"},"versionId":{"type":"integer","format":"int32"},"startDate":{"type":"string","format":"date-time"},"stopDate":{"type":"string","format":"date-time"},"includePlannedShipments":{"type":"boolean"}},"title":"ExpiredStockInput_ReportView"}}},"required":true}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Returns the ExpiredStockOutput list","content":{"text/json":{}}},"500":{"description":"Internal error that prevented the retreival of ExpiredStockOutput list","content":{"text/json":{}}}}}
+>
+  
+</StatusCodes>
+
+
+      

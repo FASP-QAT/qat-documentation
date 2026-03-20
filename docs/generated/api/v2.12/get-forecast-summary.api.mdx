@@ -1,0 +1,71 @@
+---
+id: get-forecast-summary
+title: "Get Forecast summary report"
+description: "API used to get the forecast summary report."
+sidebar_label: "Get Forecast summary report"
+hide_title: true
+hide_table_of_contents: true
+api: eJydVU1z2kAM/Ss7uvTiAKXTi0+lnabhVBLSXhgmI2xhb2rvbnblEMbj/97RGkKApl8+2cuT3pP0tLTAWARIF+DJWc+wTCCnkHntWFsDKUxmU9UEyhVbVRArLkmtracMA6vQ1DX6reqDB5CAdeRRQqc5pFAQX+6w8x4KCXh6aCjwR5tvIW1P6E7gU+MaVnZ1T5lQI6utbdQGDYueV3TIOSSQWcNkWDjQuUpnUdfwPghRCyErqUZ5460jSKFngQSclypYU5BfnbeFx1rqeYZqw1SQkKytr5H7o3dj6BJ4JB929f8Vvtf8XdPmrwK6BFhzRa/06u7mkK7rur7b2lMOKfuG4kFw1oS+uPFodD6DG+LGm/C7UR+3l+mJ932NpO9/lXZqmLzBSpH31vfTdJ4eybDYqyTliT3pR6yUXf8Xc5dATVxa8Z6zIQ4TuYQUhuj0sM8wXJ9ZMpCXsUG6aKHxFaRQMruQDiVs8NCgYb3eGQgNVlvWWRhYX8Dpusy8zZtMPlSfVOpQ15NbSOARvcZVFTvfdcsERPjNYRs+P2HtZLJHphsdWWp0bJhRl4A2axt7sbPF9ZFchSZXk71mdWttBc8ZIYXx4O14MDqrYzKbvgmyY5hlFHovXE9u1TwWtRsCZnEIButox8l8ppiwhuSkiZvN5g9NpBq1RFzN53eS5+7q+kNRhuzChTpCugQqnZEJ9IJx4jArSfX6jynX1g5W6OO+iBNqNC8CvxCry1f9ddSJ9mC3f70Ld7scPeoq1EaqiDLbnS0XgE7DfqT9th9Zc5lAKT5OF9C2Kwz0zVddJ8cPDfktpIvlwVfy1SVQEubko5d/0BZS+NQXcHEregReNaLr7FLskn3EJMvI8QvsYc/Et887Nvs6F2Ovdld5bXMBe9xITbiBFOJfglDE6yaetVChKRosBNvnlOcnHKtIHQ==
+sidebar_class_name: "post api-method"
+info_path: docs/generated/api/v2.12/quantification-and-analytics-tool
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get Forecast summary report"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/api/report/forecastSummary"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+API used to get the forecast summary report.
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={undefined}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"description":"ForecastSummaryInput object that you want to forecast summary report for","content":{"application/json":{"schema":{"type":"object","properties":{"programId":{"type":"integer","format":"int32"},"versionId":{"type":"integer","format":"int32"},"reportView":{"type":"integer","format":"int32"}},"title":"ForecastSummaryInput_ReportView"}}},"required":true}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Returns the forecast summary report","content":{"text/json":{}}},"500":{"description":"Internal error that prevented the retreival of forecast summary report","content":{"text/json":{}}}}}
+>
+  
+</StatusCodes>
+
+
+      

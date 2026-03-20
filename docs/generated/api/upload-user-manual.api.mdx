@@ -1,0 +1,71 @@
+---
+id: upload-user-manual
+title: "Upload user manual"
+description: "Upload user manual"
+sidebar_label: "Upload user manual"
+hide_title: true
+hide_table_of_contents: true
+api: eJzNVk1vGkEM/Ssjn1ppC1GatOqqqkSjtEqUfoSQ9oA4mF3DTrM7M5kPCEL73yvPQNgEpKq3cIKxx37P9jyzhpJcYaXxUivI4dbUGksRHFnRoApYQwbakEV2uCghhxBdbh3Zb1sHgxYb8mQd5OP1s5CjisRM1iS8FukuZCDZch/IriADhQ1BDuwEGVi6D9JSCbm3gdpJOiHnP+tyBfkaCq08Kc9f0ZhaFhFb/4/jdGtwRUUN8je/MhxXT/9Q4RmmZSZekmNrTLfzct5KNYcMZto26CGHqVQY8f2TT9t2YY9T6EnbpnNntHIp5/HR0TMGnh78f0NvyDmc05kuDzDgpF56JgfDTfLoGeE85TIkH6wSKFwoCnJOFLokIWfCVyQe2y6W6LYes1BDm8HJ0dsXRYSbEoe21OSE0l5UuCBhyDbSOebw2K3IrTvgkc7Jy6STIMYGMKmZDqpkwKcvbJAulCersBZkrbZiWfEDSfWWar5fcg6Nc5YLuO2cTzJoyFeadcZoFwGjryCHPhrZD4+i0z+gQo7sYitBwdaQQ+W9cXmf7/buAyovZxu1QIX1ysvC9bSd7z3xr6R49KkUKabgcKxEjopgpV/FHFNCS3YQGN940jXfcPlThbtO219ftgpz+Xu0l/ucKxkLdvl7JLy+IyWkigdJmXLxOUYRH6PxEzOP+ViyogWybSe5ALHYPBjDnYyeP2BjkvwlGXzsOUvzTLPhKazrJ+UTg239xEhrLn4tC1IuRtzI+cBgUZG4Sgbxi2x8h8e9I8ie9We5XPYwunM7+ptYrn91cXb+/eb8Dd/pDOP1gMu2SAEhh+Peh/fj09N37yfsxXPToOogObjUntDrvKTD3pt6xkdmapSKM0US682EjgGNZGbdkdyb0kkGFc91Pob1eoqObm3dtnycluHe+uwiezXc7JjX4uBSPQjyjla73brAOrBLHOYFWolTruh40mZQEZZkI4J05ywlfjPisLu7ezu3zbY3BkVBxnd8d6LUdp/2zx833MHpZqE3UX7A4pLXPy4ZIP/r4BTxEcWzNdSo5gHn7Jti8ucvEUUJdg==
+sidebar_class_name: "post api-method"
+info_path: docs/generated/api/qat
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Upload user manual"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/api/userManual/uploadUserManual"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Upload user manual
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"description":"The file to upload","in":"query","name":"file","required":true}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"content":{"application/json":{"schema":{"type":"object","properties":{"file":{"type":"string","format":"binary","description":"The file to upload"}},"required":["file"]}}}}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"content":{"text/json":{"schema":{"type":"object","properties":{"messageCode":{"type":"string"}},"title":"ResponseCode"}}},"description":"Return a success code if the operation was successful"},"403":{"content":{"text/json":{"schema":{"type":"object","properties":{"messageCode":{"type":"string"}},"title":"ResponseCode"}}},"description":"The user does not have permission to upload the user manual"},"404":{"content":{"text/json":{"schema":{"type":"object","properties":{"messageCode":{"type":"string"}},"title":"ResponseCode"}}},"description":"The user manual was not found"},"500":{"content":{"text/json":{"schema":{"type":"object","properties":{"messageCode":{"type":"string"}},"title":"ResponseCode"}}},"description":"Internal error while uploading the user manual"}}}
+>
+  
+</StatusCodes>
+
+
+      

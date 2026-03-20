@@ -1,0 +1,71 @@
+---
+id: get-procurement-agent-for-realm
+title: "Get ProcurementAgent list for Realm"
+description: "API used to get the ProcurementAgent list for a Realm"
+sidebar_label: "Get ProcurementAgent list for Realm"
+hide_title: true
+hide_table_of_contents: true
+api: eJydVE1v2zAM/SsCL9sAL+nS7uLTPLRpc2nTJj0VQcHadKzNllSKThcY/u+DHGdN06+hJ8uSyPdIvccGBJce4htwbNOaqSIjyZKMwCKCjHzK2om2BmJIphNVe8qUWLUkUVKQmu5FqVJ7UbllheqKsKwgAuuIMeSYZBDDkmQ/aGx5e9chY0VCHDg1YLAiiIHD6SSDCHQg4lAK2Gd3tbmjpEBRa1urBzQSqL5IM7cMETDd15opg1i4pgh8WlCFEDcgaxeAtRFaUriaW65QNluHI2jbRQj3zhpPPkSMDg7CZ5+U1Gz8662CCFJrJPQ7oNIfGf7yIbRp2zaCo4PD15OiOhNxM0Gp/WB8cfVzcnx8cq503sFde2KVWfLKWFEFrkhhmpL370Ie/Sfk+cX8dnxxfX68hdw+gXeU6lxT9ohPf94v9vtLHZwYITZYKmK2vHldx7QiI0GJBSkmYdIrLJXNP9DkNoKKpLC9NjsNSgExDNHp4b4rhr0Uh02/aCECT7zaKrbmEmIoRJyPhyHF4L5GIzrXaecBNFiuRad+YHn5TMRTtlmdhh+1SdpZ6TKZQwQrZI13Zae2Tn7a5LYrSEsZxHr5BEihyVSyRVNza8uQhNhvoEaDb6PBwTMGyXTyyQfbbMTSdfgymatZR6fvJKZdJ3t3jpPZVAlh8O/T8h8eHt4pnyrUIeJsNrsNeW7PLn8sC59+db7qrrQRlDol42kHMXGYFqQ2/J9C5tYO7pAhvKuzXio0O4GnJG+MrO0QetKR5lE7H56A/TTplOdK1CaU1fFuerXdADodtLc/haOd4Rdvl4sICuslhDXNHXq65rJtw/Z9TbyG+GbxqJdOlpn2YZ1BnGPp6Y0aP1/1Q/GL+shIfbHUfhPNutNxWYc/iOA3rXeme7toIygIM+KO8+Y0SVNyshP36N9ggn/ePT2ZQ9v+Be7+W6g=
+sidebar_class_name: "get api-method"
+info_path: docs/generated/api/v2.12/quantification-and-analytics-tool
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get ProcurementAgent list for Realm"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/api/procurementAgent/realmId/{realmId}"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+API used to get the ProcurementAgent list for a Realm
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"realmId","in":"path","description":"RealmId that you want to the ProcurementAgent for","required":true,"schema":{"type":"integer","format":"int32"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Returns the ProcurementAgent list","content":{"text/json":{}}},"403":{"description":"Returns a HttpStatus.FORBIDDEN if the User does not have access","content":{"text/json":{}}},"404":{"description":"Returns a HttpStatus.NOT_FOUND if the RealmId specified does not exist","content":{"text/json":{}}},"500":{"description":"Internal error that prevented the retreival of ProcurementAgent list","content":{"text/json":{}}}}}
+>
+  
+</StatusCodes>
+
+
+      

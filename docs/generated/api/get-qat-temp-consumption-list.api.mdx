@@ -1,0 +1,71 @@
+---
+id: get-qat-temp-consumption-list
+title: "Get QAT Temp Consumption List"
+description: "Retrieve a list of consumption data from temp tables"
+sidebar_label: "Get QAT Temp Consumption List"
+hide_title: true
+hide_table_of_contents: true
+api: eJylVdtu20YQ/ZXFPLUAKxku3KBEEUB1HEOBm8S2kjwIehiRI3Lj5S69O5QjCPz3YpYURMkXOO2TxN25nDk7c2YLOYXM65q1s5DCDbHXtCaFyujAyq1U5mxoqmigcmRUK+8qxVTVinFpKEACriaPYjHNIYWC+Bp5RlV9vve90oEhgRo9VsTkA6Tz7VH2WUlq+k6Sckmq1jUZbUmxU36HSy6GiCJKQQQJaIlRI5eQgMWK5KuPMc0hAU/3jfaUQ8q+oQRCVlKFkG6BN7VYa8tUkIcEVs5XyN3R76fQtgtxD7WzgYJ4nJ6cyE/mLJPlGIN+8Ph7kEK2j0Oj97gRjExVGJy75XfKIjFeSGTdhceMGzTvDRYD26VzhtBCm0je8LGp/nGWy1cV0Ln0rL1DpoFXYK9tcWQjL/mzca95M3CyTbU89MldszQkTtJIt67xGR3k2SPJcfNpdcsuu/vU8CuRVI1hXRtN/pUorGMKT6avDVqrbfHFan4GoSc01blrLPvN5+fMX4LrqTjmeRe9TYA1Gzl6PEnQtmLwaHAbb8MLcyspz36ya5/pzopCwILOXf5UGw3A3/QjEy2fQD21TN6iUeS98+qh1IZUQczaFvv5P573LgUWIiHwubeCRQIVcel6BYpaI8MBY6z1+L6jcTyINd7u1aGFBAL59U6XGm8ghZK5DulYAozuG7SsVzqLOocWzYZ1FkbOF3Bc1iVZ0UPKVRdTSTiRkEBZ47VMyXwLS0JPftIIyPlieH0r79BRPTTafb3ftdKHb7NHuS+E0iiTH77NFLs7skrbeNC1YKr+jlHUX/HyLfRCGBUm3kCye1IhILKt7coJgMNc1wecqMmOFDVzzkACRmdkQ+yRXo8nNWYlqavuQn0lH8TzdHQCyRHpDw8PI4zmwvG4jxXGV9Pzi4+3F7+Jz3BOJsLFugsIKZyO/nwzPzv7480izrMLXKEdILkkVteTmZKuUIPpUv2iOqh0MDL/dUX2jMZ5qw3qKOOx4m3fqHPAWkMCfavCgbRCAulgmS0SKF1gcdpulxjoizdtK8f3DXnpr0UCa/Ra0nebVgf5n0O6QhPohQJ/uen35K/qfy7kJ2veLUQr63CNppEvSOCONocLu120CZSEuej5fNsbTLKMah647hWsHUrA5cUM2vZfEPIUog==
+sidebar_class_name: "get api-method"
+info_path: docs/generated/api/qat
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get QAT Temp Consumption List"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/api/qatTemp/consumption/{pipelineId}"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Retrieve a list of consumption data from temp tables
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"description":"The ID of the pipeline to retrieve the consumption list from","in":"path","name":"pipelineId","required":true,"schema":{"type":"integer","format":"int32"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"content":{"text/json":{"schema":{"type":"array","items":{"type":"object","properties":{"actualFlag":{"type":"boolean"},"consNumMonth":{"type":"integer","format":"int32"},"consumptionDate":{"type":"string"},"consumptionId":{"type":"integer","format":"int32"},"consumptionQty":{"type":"number","format":"double"},"dataSourceId":{"type":"string"},"dayOfStockOut":{"type":"integer","format":"int32"},"multiplier":{"type":"number","format":"double"},"notes":{"type":"string"},"planningUnitId":{"type":"string"},"realmCountryPlanningUnitId":{"type":"integer","format":"int32"},"regionId":{"type":"string"}},"title":"QatTempConsumption"}}}},"description":"Returns a list of consumption data"},"500":{"content":{"text/json":{"schema":{"type":"object","properties":{"messageCode":{"type":"string"}},"title":"ResponseCode"}}},"description":"Internal error while getting pipeline consumption list"}}}
+>
+  
+</StatusCodes>
+
+
+      

@@ -1,0 +1,71 @@
+---
+id: get-planning-unit-capacity-for-realm-id
+title: "Get PlanningUnitCapacity for a Realm and a given date range"
+description: "API used to get PlanningUnitCapacity for a Realm and a given date range"
+sidebar_label: "Get PlanningUnitCapacity for a Realm and a given date range"
+hide_title: true
+hide_table_of_contents: true
+api: eJytlk1v2zgQhv8KMZfuAqqdut2LTuut48bAwnZs5xQYwUQaS2wlUiFHdg1B/31BSv5qk8Z19mSKHzMPhzPvuALGxEJ4D0WGSkmV3CnJsAwgJhsZWbDUCkLoT0eitBQL1iIhFtOj3Z+xwEjyVqy0EShmhFkuUMUCRSLXpESMTMKgSggC0AUZdFZHMYSQED9naqiNNzOKIYACDebEZBxnBQpzghDMfl06wAI5hR+p2z2CU2Sx1aXYoGKBL9AbnUMAhp5KaSiGkE1JAdgopRwhrIC3hXMsFVNCBgJYaZMjN1Mfe1DXwZ7OMhoeINMv+fa7BKfUhGlP6Wae5YyR8WxYy0aq5Ac0XZxB1mz6bTCWWfZbYEu32RZaWbJuvXd15X5OcWbEpVH2Zd+ZtAwBRFoxKfZ+6Dt3v1p3vKrrOoBPVx9fNozihrmYM3JpO8PJ7J/RYHA9FnLlXd5ZMiLWZIXSLFJck8AoImtfdfnpTJfjyeJhOLkbD3YuX7zlgYO+n3HpD70zCaaz68+T8WC0GE3GD8P+6N9rzxKRYZRKRFrF0p23OwlwlKdAOb2G89dzjztSTEZhJsgYbZpiLQytSbETnJSEITYk15gJvbrw/esAcuJUt6LjZYVTCKGLhewei183ao12W/noVu2g7j4Sb4hUt9pXbu3GTa3UEIAls94JVWkyCCFlLmzYdW46TyUqlisZeQFEhdmWZWQ72iQ/VeDU6LiM3IdojHp5ve0vIIA1GomPmS8YX0FSrbS/tOTMVdftiSMvxv2dN7HQ2pWo42xc9Tofep2rnwj609E7/9pNrvuXuO0vxNzjtNHGyEe71ZZhfz4VTOi06fT6m83mletTjtKduJnPH5ydh5vbv5PURu8Lm/stdQCZjEhZOvLYLzBKSTT8py5XWnce0Tjxg0JbzlEdHfzypi52EqnqkHf/Y6NshdLncZGhVC4A/oZVm7v3gIV0mXzcugPY5a+X4V2TDA/DNond5HGbCveNYRlAqi07B1X1iJbuTFbXbvqpJLOF8H55yEGf6rG0bhxDuMLM0i/i88es7Qx/iku687NBaSdRbX1tZKX7ggC+0fboj4JrgRdxvrlLXwB9eJg3YL+thV9E3WZQvawDSAljMj4/muV+FFHBRwcPGu1EbK/PX64XUNf/AcJFrvE=
+sidebar_class_name: "get api-method"
+info_path: docs/generated/api/v2.12/quantification-and-analytics-tool
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get PlanningUnitCapacity for a Realm and a given date range"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/api/planningUnit/capacity/realmId/{realmId}/between/{startDate}/{stopDate}"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+API used to get PlanningUnitCapacity for a Realm and a given date range
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"realmId","in":"path","description":"realmId that you want a PlanningUnitCapacity from","required":true,"schema":{"type":"integer","format":"int32"}},{"name":"startDate","in":"path","description":"startDate the date you want the PlanningUnitCapacity data from","required":true,"schema":{"type":"string"}},{"name":"stopDate","in":"path","description":"stopDate the date you want the PlanningUnitCapacity data till","required":true,"schema":{"type":"string"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Returns the PlanningUnitCapacity list","content":{"text/json":{}}},"403":{"description":"Returns a HttpStatus.FORBIDDEN if the User does not have access","content":{"text/json":{}}},"404":{"description":"Returns a HttpStatus.NOT_FOUND if the PlanningUnitCapacity list does not exist","content":{"text/json":{}}},"412":{"description":"Returns a HttpStatus.PRECONDITION_FAILED if certain conditions to get the list does not met","content":{"text/json":{}}},"500":{"description":"Internal error that prevented the retreival of PlanningUnitCapacity list","content":{"text/json":{}}}}}
+>
+  
+</StatusCodes>
+
+
+      

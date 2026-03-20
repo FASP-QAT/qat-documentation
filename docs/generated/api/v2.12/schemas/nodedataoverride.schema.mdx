@@ -1,0 +1,33 @@
+---
+id: nodedataoverride
+title: "NodeDataOverride"
+description: ""
+sidebar_label: "NodeDataOverride"
+hide_title: true
+hide_table_of_contents: true
+schema: true
+sample: {"createdBy":{"userId":0,"username":"string"},"createdDate":"2024-07-29T15:51:28.071Z","lastModifiedBy":{"userId":0,"username":"string"},"lastModifiedDate":"2024-07-29T15:51:28.071Z","active":true,"nodeDataOverrideId":0,"month":"2024-07-29T15:51:28.071Z","monthNo":0,"manualChange":0,"seasonalityPerc":0,"baseModel":{"createdBy":{"userId":0,"username":"string"},"createdDate":"2024-07-29T15:51:28.071Z","lastModifiedBy":{"userId":0,"username":"string"},"lastModifiedDate":"2024-07-29T15:51:28.071Z","active":true}}
+custom_edit_url: null
+---
+
+import Schema from "@theme/Schema";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"NodeDataOverride"}
+>
+</Heading>
+
+
+
+
+
+<Schema
+  schema={{"type":"object","properties":{"createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"},"active":{"type":"boolean"},"nodeDataOverrideId":{"type":"integer","format":"int32"},"month":{"type":"string","format":"date-time"},"monthNo":{"type":"integer","format":"int32"},"manualChange":{"type":"number","format":"double"},"seasonalityPerc":{"type":"number","format":"double"},"baseModel":{"type":"object","properties":{"createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"},"active":{"type":"boolean"},"baseModel":"circular(BaseModel)"},"title":"BaseModel"}},"title":"NodeDataOverride"}}
+  schemaType={"response"}
+>
+  
+</Schema>
+            

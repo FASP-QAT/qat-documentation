@@ -1,0 +1,71 @@
+---
+id: get-data-source-type-list-for-realm-id
+title: "Get DataSourceType for a realmId"
+description: "API used to get the DataSourceType for a specific realmId"
+sidebar_label: "Get DataSourceType for a realmId"
+hide_title: true
+hide_table_of_contents: true
+api: eJyllFFv2jAQx7+KdS/bpAwY7V7yNCZKizS1tNCnClXX5EK8JbZrX6AoynefbEKBlq2r9gRxfPf/3+V3VwPjwkF8BykyTnVlE5qtDcE8gpRcYqVhqRXEMJiMReUoFazFglhwTmJ4ECMybQUKZyiRmUyEJSzKcQoRaEMWfZ5xCjEsiA8Df0jHI21vnu8btFgSk/XOalBYEsSwyye9IYOcw0uXbQ7BObJY60qsULG3fNwuRGDpsZKWUojZVhSBS3IqEeIa2PchBqmYFuSvZtqWyJujkz40zdyHO6OVI+cj+r2e/3lpiSur3BEHEEGiFZPiIEdP3P3pfEzdNE0Ep72TP2dDccFspoxcuc7o6ub7eDg8uxQyCzq3jqxINTmhNIsclyQwSci5bStCn97UP/1H/cur2f3o6vZyuNXffoaWBUp3ZuhJOn5D+euxPo4Vk1VYCLJW280XNpaWpNhTmZOwxJbkEguhs/e0uomgJM51C2cAkHOIoYtGdg8Ho1u3GDYQgSO73EJa2QJiyJmNi7s+sPNYoWI/CQF9VFisWSauo+3iFbcTq9Mq8Q9ikzQM0/VgBhEs0Up8KAJigTmpMh3KkFx4Qq8PhASqVAy2amKmdeGTkHUbqX7nS7/Te+VgMBl/CHhsQcnJ64tpsNP2D5PQv3YgR4PpRDChB+mw/NVq9Ub5VKL0ERfT6b3Pc39x/W2Ru+SzcWW40kRQyISUoz3FgcEkJ7HxfyiZad15QAv+axrtuES1F3hOfHxb7ZbKQTvqHS7/tfnaHRKAMwVK5esKxusWsjtAI738S17jbZZ5BLl27K/W9QM6urVF0/jjx4rsGuK7+Q6SwGIqnf+fQpxh4egvtX28adffJ/H+1Xm0uPYQ1TqgW1T+CSL4Reu9Hd7MmwhywpRscLx5O0gSMrwXtxtUz/3zkJ6fzaBpfgOHHVIh
+sidebar_class_name: "get api-method"
+info_path: docs/generated/api/v2.12/quantification-and-analytics-tool
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get DataSourceType for a realmId"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/api/dataSourceType/{realmId}"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+API used to get the DataSourceType for a specific realmId
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"realmId","in":"path","description":"RealmId that you want to the DataSourceType for","required":true,"schema":{"type":"integer","format":"int32"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Returns the DataSourceType","content":{"text/json":{}}},"403":{"description":"Returns a HttpStatus.FORBIDDEN if the User does not have access to the Realm","content":{"text/json":{}}},"404":{"description":"Returns a HttpStatus.NOT_FOUND if the RealmId specified does not exist","content":{"text/json":{}}},"500":{"description":"Internal error that prevented the retreival of DataSourceType","content":{"text/json":{}}}}}
+>
+  
+</StatusCodes>
+
+
+      

@@ -1,0 +1,63 @@
+---
+id: get-modeling-type-list
+title: "Get Modeling Types"
+description: "Retrieve a list of active Modeling Types"
+sidebar_label: "Get Modeling Types"
+hide_title: true
+hide_table_of_contents: true
+api: eJztV1Fv00AM/isnP4EU2mloICKEtI0xDQ0koMBDVSE3cZsbyV3wOR1Vlf+OfGkhZWNjiIdp2lNb22d//s5Ovq4gp5CxrcV6Bym8J2FLCzJoShvE+JnBTOyCzBufU2nd3IyWNQVIwNfEqMdOckhhTrKJ0IBTGwQSYAq1d4ECpCvY3dnRj8w7ISf6Vei7DM+CVl5ByAqqMJqXNUEKyIxLSMAKVaFn99MzyjR7zYpBbJe+w9mLm3pfEjpoE5hioAjvv6WBzHLWlMgPDjbGh5BAxoRC+cHy+kJNIFbqfsZZJzQnhgRmniuUzvR4VytrsMOqjysIWzeHtk1ArJRqOsBgs4+BWI+sobxEueRUr0aOQo/EVqSHSgx6j3Zmb0cTfTw36WQ73/rS2rtwP9P/OMT3u3C/C7eitX/fhb9GFaO/kLsE1cY54yuc9VXOUP/Beecm6DQ+gO5QbwlUPd3ylwh7IPqqB9pWXRckVcMuGCl+iSgNjgJL6+/dUBf9geCKQsA5Hfr8Gtrer0VZjLwE8IkTZb80xOzZSIFiaqYFOaE8tsEkTHaBperDS3rSYjgPkI5hSzbCJIGKpPBrxag9oBSQwhBrO+xfBCQQiBfEmmUFDet7phCpQzrU4MG3Bp3Ymc2iBkWH5VJsFgae9aa3Ozomp1qVctPlNJqunWiJrGEry1hjSsjE+40CGk/67g96BR3L/aDNr1eb6Xj9eXSh9pGyGVl7/XlkxH8lZ6yLhm6qUnMQs5jn0flCO4/19H0bPZBsblMJiPRaN/MKYLvWuy1OzP6GFDPyvoQESpuRC3E8uu2C/Rqzgsxp5zCfiIOe3B3sQPIb6efn5wOM4crxcJ0rDE9PDo/efjh6pGd6U/ZuX7lYdAkhhd3Bs6fjvb0nTycaVfsgFboekmOSi/8xttrrrchN/qesqYs7VZdoo3qJra3W0zcGrC1sPwh0VAsfRL2rlYqdj1y2rZq/NcQ6MZMEFsgWp9rveNImUBDmxHGYvtJS6c0yqnXMF1g2P1HEzW77u3B8NIK2/QF7PqYJ
+sidebar_class_name: "get api-method"
+info_path: docs/generated/api/qat
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get Modeling Types"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/api/modelingType"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Retrieve a list of active Modeling Types
+
+<ParamsDetails
+  parameters={undefined}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"content":{"text/json":{"schema":{"type":"array","items":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":"circular(BaseModel)","createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"}},"title":"BaseModel"},"createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"label":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":"circular(BaseModel)","createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"}},"title":"BaseModel"},"createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"labelId":{"type":"integer","format":"int32"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"}},"title":"Label"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"},"modelingTypeId":{"type":"integer","format":"int32"}},"title":"ModelingType"}}}},"description":"Returns the ModelingType list"},"500":{"content":{"text/json":{"schema":{"type":"object","properties":{"messageCode":{"type":"string"}},"title":"ResponseCode"}}},"description":"Internal error that prevented the retreival of ModelingType list"}}}
+>
+  
+</StatusCodes>
+
+
+      

@@ -1,0 +1,33 @@
+---
+id: simplebudgetobject-internalview
+title: "SimpleBudgetObject_InternalView"
+description: ""
+sidebar_label: "SimpleBudgetObject_InternalView"
+hide_title: true
+hide_table_of_contents: true
+schema: true
+sample: {"code":"string","currency":{"baseModel":{},"conversionRateToUsd":0,"currencyCode":"string","currencyId":0,"isSync":true,"label":{"baseModel":{},"labelId":0,"label_en":"string","label_fr":"string","label_pr":"string","label_sp":"string"}},"id":0,"idString":"string","label":{"baseModel":{},"labelId":0,"label_en":"string","label_fr":"string","label_pr":"string","label_sp":"string"}}
+custom_edit_url: null
+---
+
+import Schema from "@theme/Schema";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"SimpleBudgetObject_InternalView"}
+>
+</Heading>
+
+
+
+
+
+<Schema
+  schema={{"type":"object","properties":{"code":{"type":"string"},"currency":{"type":"object","properties":{"baseModel":{"type":"object","properties":{"baseModel":"circular(BaseModel_InternalView)"},"title":"BaseModel_InternalView"},"conversionRateToUsd":{"type":"number","format":"double"},"currencyCode":{"type":"string"},"currencyId":{"type":"integer","format":"int32"},"isSync":{"type":"boolean"},"label":{"type":"object","properties":{"baseModel":{"type":"object","properties":{"baseModel":"circular(BaseModel_InternalView)"},"title":"BaseModel_InternalView"},"labelId":{"type":"integer","format":"int32"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"}},"title":"Label_InternalView"}},"title":"Currency_InternalView"},"id":{"type":"integer","format":"int32"},"idString":{"type":"string"},"label":{"type":"object","properties":{"baseModel":{"type":"object","properties":{"baseModel":"circular(BaseModel_InternalView)"},"title":"BaseModel_InternalView"},"labelId":{"type":"integer","format":"int32"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"}},"title":"Label_InternalView"}},"title":"SimpleBudgetObject_InternalView"}}
+  schemaType={"response"}
+>
+  
+</Schema>
+            

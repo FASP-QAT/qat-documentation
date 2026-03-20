@@ -1,0 +1,71 @@
+---
+id: get-data-source-list-for-realm-id-program-id
+title: "Get DataSource for RealmId and ProgramId"
+description: "API used to get the DataSource for a specific RealmId and ProgramId"
+sidebar_label: "Get DataSource for RealmId and ProgramId"
+hide_title: true
+hide_table_of_contents: true
+api: eJy9VU1v2zAM/SsCL9sAL+na7uLTMnRdAwz9SnsqgoK1mVibLakUnS4w/N8HKU6cdu26FsNOkRSR75F+fGpAcO4hvYIcBSe25oxgmkBOPmPtRFsDKYxOx6r2lCuxak6ipCB1sLmvZpYVKu8o0zOdqXPCshrnCk2uTtnOGatxDglYR4wh4ziHFOYkfYpv2suh5S5yO8ghY0VCHEg2YLAiSIFXFyEBHfg5lAIekl7TkAJFLW2t7tBIqOB39pAA022tmXJIhWtKwGcFVQhpA7J0AVIboTmFqzPLFcrqaG8X2jbZ8HJbzJ9mtqnvP3CbhnDvrPHkQ8Tuzk74edgqqdn4B+iQQGaNkJEIRT9l+N2H+03btgns7+w9nQnVkYibCErtB4cn55/HBwdfjpWeRYxLT6xyS14ZK6rABSnMMvJ+3YL47ZTltX6epbL/l1SOTy6uD08ujw/WVPpyx/lawpT35Oin9vIM/MfHejo2QmywVMRsefWlHdOCjIRBKkgxCZNeYKns7G/b3iZQkRS2m6A4IFJACkN0etjP8LCbkGHTLdrhRpvDZrNsIQFPvFiPV80lpFCIOJ8OQ8rBbY1GwljHyUWD5VJ05geW54/pOq+zsFGrpNEZzkYXkMACWeNNGUUYVanNzMYCtZRBw2f3gKJ5jNZo6sLaMiQh9iuo3cGH3cHObwxGp+M3UURrORUU8NUk0uk6i1nsbDeyh6PJqRKKGrtf/t3d3TPlU4U6RBxNJtchz/XR2ad54bP3zlfxSptAqTMynrYQRw6zgtSK/33ImbWDG+TgKeCslwrNVuBXkoe2+5TX3mtL0wvqH1l55ztRnK5EbUKlsZSmE+QVoNOByLaue9tO++W2Z6b9ZppAYb2ETE1zg54uuWzbcHxbEy8hvZr2qorizbUP6xzSGZae/tCEt+edo75TL3slHq27O0SzjDov67CDBH7QcuupCq/Eqxi+9LV4Bce+6+20TaAgzIljT1f/j7KMnGxF9q4URnnjSF+/XEDb/gL0z9yn
+sidebar_class_name: "get api-method"
+info_path: docs/generated/api/v2.12/quantification-and-analytics-tool
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get DataSource for RealmId and ProgramId"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/api/dataSource/realmId/{realmId}/programId/{programId}"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+API used to get the DataSource for a specific RealmId and ProgramId
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"realmId","in":"path","description":"RealmId that you want to the DataSource for","required":true,"schema":{"type":"integer","format":"int32"}},{"name":"programId","in":"path","description":"ProgramId that you want to the DataSource for","required":true,"schema":{"type":"integer","format":"int32"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Returns the DataSource","content":{"text/json":{}}},"403":{"description":"Returns a HttpStatus.FORBIDDEN if the User does not have access to the Realm or Program","content":{"text/json":{}}},"404":{"description":"Returns a HttpStatus.NOT_FOUND if the DataSourceId specified does not exist","content":{"text/json":{}}},"500":{"description":"Internal error that prevented the retreival of DataSource","content":{"text/json":{}}}}}
+>
+  
+</StatusCodes>
+
+
+      

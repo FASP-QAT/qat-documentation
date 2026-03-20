@@ -1,0 +1,71 @@
+---
+id: get-planning-unit-by-auto-complete
+title: "Get Planning Units"
+description: "Retrieve a list of planning units, filtering on an autocomplete input"
+sidebar_label: "Get Planning Units"
+hide_title: true
+hide_table_of_contents: true
+api: eJytVttu2zgQ/RVinraAagdZpMUKiwWcNC1cpLfYbR8MIxhLY4utTDLkyI5h6N8XQ8kb2XGSFtg8OcPhXM6cM9QWcgqZ1461NZDCNbHXtCKFqtSBlZ0rV6Ix2ixUZTSHRM11yeTFYI1Co7Bim9mlK4lJaeMqhgSsI48Sc5hDCgviz22Ur0bz+WZQsb1o70ACnm4rCnxu8w2kW8isYTIsP9G5UmcxUv9HkBK3ELKClii/eOMIUrCzH5RJVuclL2sKclqiWVS4oI5nYCkc6gQCoc+KMd3xkeM6AdZciqlb6VCau3njrXtj1+abpjXU4rsP4bigI5ioufWKC9qHM4LcAqA95ZCyr6gWQ3DWhKaR05OTA1iY7vhxPNB73EACmmkZnsdJ5x0fbZgW5CGBufVL5Mb056lgpvNRA9AxQEucUfl8shkG+mDz33SFTPusKtH/cb4z7s3hBXRGdtzlvxqHv9pu9L4h83i7N3P/xKF76jC4p3l3Fb0OuHZ/PNJCrk8RuAeMfEDJa+LKmxD5d1zWraopj6J+qOg6gbPfZOEjU11SCLigC5sfE2anxetWAuL5rOiGhskbLBV5H4WGrJynFRmmPPbtm82GpTT/iBBjelwESCcgGXO7NgGmCSyJCyubzNmoV4dcQAp9dLqft45911lx/S6GIOvGr8hL4C1UXhhdMLuQ9iVE77ZCw3reLjo0WG5YZ6Fn/QIOO31HRlYr5aqJqSRcPZUUWeU1b2KOGaEnP6ikzMm0ezySObUC6zjt/nu7k8H77+MHuS8F5Qje++9jxfYnGaVNNDTySdV5jKL+jof/SOcxH6RtfEh2IxcAIuLCoOv7F+DyDgW2/Q2+I8j+4u6oSpu5lSv7BX/ZA1YNdsiqsbUlJFDqjEyIuQzGKgcOs4LUVXOgvpEPcvO0dwLJweTW63UPo7sMqt/GCv2r4cXlx9HlS7nT4fOXgQC6agJCCqe9v15Pzs5evZ6KlxBriaZTyTtitXs1lXAqHM6jI8b/7eFuhxOl7UrURoqLfW9b1k8AnZZSWt6LHDrMhwT2uD9NoBDRpBPYbmWlf/VlXYv5tiIvbJ0msEKvcSYwTaZ1AgVhTj4S+SdtIIWLps+XY6lO3MsqPnSHXwd1srsxyDJy3PG9X1Z1V9CfP41kLLP202MZ1xJ4XMurjGtIIX7NSIqomWjbY2YTU/7+BblbQj8=
+sidebar_class_name: "post api-method"
+info_path: docs/generated/api/qat
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get Planning Units"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/api/dropdown/planningUnit/autocomplete"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Retrieve a list of planning units, filtering on an autocomplete input
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={undefined}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"content":{"application/json":{"schema":{"type":"object","properties":{"language":{"type":"string"},"searchText":{"type":"string"}},"title":"AutoCompleteInput_DropDownView"}}},"description":"The autocomplete input for the planning unit list","required":true}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"content":{"text/json":{"schema":{"type":"array","items":{"type":"object","properties":{"id":{"type":"integer","format":"int32"},"idString":{"type":"string"},"label":{"type":"object","properties":{"baseModel":{"type":"object","properties":{"baseModel":"circular(BaseModel_DropDownView)"},"title":"BaseModel_DropDownView"},"labelId":{"type":"integer","format":"int32"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"}},"title":"Label_DropDownView"}},"title":"SimpleObject_DropDownView"}}}},"description":"Returns the list of planning units filtered on autocomplete input"},"500":{"content":{"text/json":{"schema":{"type":"object","properties":{"messageCode":{"type":"string"}},"title":"ResponseCode_DropDownView"}}},"description":"Internal error that prevented the retrieval of the planning unit list"}}}
+>
+  
+</StatusCodes>
+
+
+      

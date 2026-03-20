@@ -1,0 +1,71 @@
+---
+id: get-realm-country-by-realm-id-for-active-programs
+title: "Get RealmCountry list by specified reamId for active programs"
+description: "API used to get the RealmCountry list by specified reamId for active programs"
+sidebar_label: "Get RealmCountry list by specified reamId for active programs"
+hide_title: true
+hide_table_of_contents: true
+api: eJytVE1v00AQ/SuruQCSSUqBi08YSmkubdqkpyqqpvY4XrB3t7PjFMvyf0e7cWlaAgWJk/fD772Z2TfTg+DaQ3oFTFg3n2xrhDtYJVCQz1k70dZACtl8plpPhRKr1iRKKlIXOwhVay/qplPeUa5LTYViwmZWqNKywlz0hpRju2ZsPCRgHTEG7lkBKaxJdsk+dnE3K44tZxE6f0A6ZGxIiEPUPRhsCNJt9LMCEtAhXIdSwdMcRlIlFYrqbKvu0MieLErLkADTbauZCkiFW0rA5xU1CGkP0rkgqY3QmsKvpeUGZXv09hCGYRXg3lnjyQfE4cFB+DwNR1o2fn8pIYHcGiEjUZG+y/SrD7B+GIYE3h28/T0hqhMRtxCU1k+Ozy4+zo6OPp8qXUapS0+sCkteGSuqwg0pzHPy/lnJd38peXq2vD4+uzw9CpLGqvFtVGlbUzyj8n5fpWZGiA3Wipgtb9/PMW3ISHBkRYpJmPQGa2XLfyzmkEBDUtnRh9FhUkEKU3R6utsV09G/0zGhaT8uBkjAE2/uPdlyDSlUIs6n00AzuW3RiC51Hj2PButOdO4nlte/2HTOtmjzsFFb0thC59kSEtgga7ypo6uizbQpbUxKSx1Mef5ISKEpVHavppbW1oGE2G+lDidvDicHv0SQzWcvfOj0rTFihc+zpVrEcMZqYh6rOfbfcbaYKyFsIHmS/t3d3TPpU4M6IE4Wi+vAc31y/mFd+fy18038ZUig1jkZTzuKmcO8IrWN/7Fkae3kBhnC2zrrpUGzA/xC+5r+70fXo1r1D8767zNynDPRr65GbUIhYqb96NErQKfjrNqZ3QmMHPcXcSym98tVApX1EsB9f4OeLrkehnB82xJ3kF6tHnwW7VxoH9YFpCXWnv5QgZcX49B8pf5t2O5NdTxE00Xn123YQQLfqNuZ+MNqSKAiLIhjtNvbLM/JyQ7uoetD2/zs+C+flzAMPwDhlm/6
+sidebar_class_name: "get api-method"
+info_path: docs/generated/api/v2.12/quantification-and-analytics-tool
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get RealmCountry list by specified reamId for active programs"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/api/realmCountry/program/realmId/{realmId}"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+API used to get the RealmCountry list by specified reamId for active programs
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"realmId","in":"path","description":"RealmId that you want RealmCountry list for","required":true,"schema":{"type":"integer","format":"int32"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Returns the RealmCountry list","content":{"text/json":{}}},"403":{"description":"Returns a HttpStatus.FORBIDDEN if the User does not have access","content":{"text/json":{}}},"404":{"description":"Returns a HttpStatus.NOT_FOUND if no realmId found","content":{"text/json":{}}},"500":{"description":"Internal error that prevented the retreival of RealmCountry list","content":{"text/json":{}}}}}
+>
+  
+</StatusCodes>
+
+
+      

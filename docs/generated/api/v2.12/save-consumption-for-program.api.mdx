@@ -1,0 +1,71 @@
+---
+id: save-consumption-for-program
+title: "Save Consumption For Program"
+description: "API used to save consumption for specified program into temp table"
+sidebar_label: "Save Consumption For Program"
+hide_title: true
+hide_table_of_contents: true
+api: eJytVlFvGzcM/isCX7YB18RLtxc/zW0TJMCWOHaylyAI6Dvap/ZOUiSqrmHcfx+os3NnO3WDbX7ySRT5UeT3iWtgXAQYPoDTjiptCB4zKCjkXjvW1sAQRuMrFQMViq0K+JVUbk2IddpWc+tVcJTruaZCOW8XHmulDVvFVDvFOKsIMrCOPMqJqwKGIG4+dl4urB+3JyEDhx5rYvICaw0Ga4LhC7yrAjLQAsshl7CPdfxilpAtS52XamWjMkTFDvBtMnPrIQNPz1F7KmDIPlIGIS+pRhiugVdO4mvDtCAxnVtfI7dL78+gabIOpIsHiEbe40rZ+U7wFpdgCgJkRglLAc1jC4UCf7DFSuL/B28Z5NYwGRY/6Fyl81SC089BnK0Ps0RxLxfMVIfeup19ppylOF4KyZrSbg+ElPUNlyXpLfbNA3ttFrLpKjRGm8W90fwdk17MT8j0qg3mHLG6qHDR255ZWxGaPR+3vOrZmFjPdnEXNkoDNxkUuLqZT9nmX24ivzHZAhmnNvqcjmRzHeu/rOHyjT6NZQqvOvOEVf3RRsN+Nf7eTR5zXceKtas0+TfdSZMBa67E6Bb5jmrX4zQ0TdPsEystBGdNaFM4GwwOe3xCHL0JCtU05jmFoHJbkNJzxSWpFyFRSwwqtBbzWO12O9M33rZ5wvHb4P2xSJfMbsrIMZxc3Ew+XH36dH69jXgfyKvCUlDGsipFNDBF/UHI348n1wt5dX13Prke/fk0PZ/8fT55Op9Mbiab8J7aRG1Nysq3Iu+tV1wiq0IXCRRWlV3uXQ9bldvaVcR0FKjUnbi0ossuJpKLsg7hFJ0+3eruaY8zp+tOjRvIIJD/upXr6CsYQsnswvBUPJw8RzSs5xvtQYPVinUeTqxfHMq3t0XME/zWaVLx29EdZPAVvZbHJCTYjxlICpNOLM+/oWSbUOwJ06AvO1vCHKpNt3MgMt1WX1vat2JfTQYHWjHYV4LdSJ0ADF7o3VkcY/Vgl7MDuRZt5jaVeUvNnftXaAo12hZB3VkrzJHytRU4O/n17GRw+IqNr35Kj0vb+anVbkd3apqqtOkvzFN/bR7Di9F0rJjSm77bFcvl8gddQTVqOXE5nT6Jn6fL2z8WZcjfuVAnkyaDSudkAvUijhzmJakW/27IubUnM/RJs5wNXKPpHZwKp3vapS6sV91EsnMV645K/89ktJHZxEpXoU4vVEK/3jDxAdBp6dftiLbTc5DBsDcdPWZQ2sByar2eYaB7XzWNLD9H8isYPjx2XEpkKXSQ/wUM51gFOpLvz5ONmv+i/u2g9Wq22+nDrBLPqyhfkMEXWu2Ofs1jk0FJWEi3P6w3Bh9bgO/uxE3n4GDikUmtPTHKc3Lcs+00USj0oofje1Ge2WYUq20hth6XQktctiBtSjM9Z2ltDRWaRcSF2LYu5fcPxOv5JQ==
+sidebar_class_name: "put api-method"
+info_path: docs/generated/api/v2.12/quantification-and-analytics-tool
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Save Consumption For Program"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"put"}
+  path={"/api/pipeline/consumption/{pipelineId}"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+API used to save consumption for specified program into temp table
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"pipelineId","in":"path","description":"PipelineId for which you need consumption to save for","required":true,"schema":{"type":"integer","format":"int32"}},{"name":"ppu","description":"Array of consumption which needs to be saved"}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"description":"Array of consumption which needs to be saved","content":{"application/json":{"schema":{"type":"array","items":{"type":"object","properties":{"consumptionId":{"type":"integer","format":"int32"},"regionId":{"type":"string"},"planningUnitId":{"type":"string"},"consumptionDate":{"type":"string"},"actualFlag":{"type":"boolean"},"consumptionQty":{"type":"number","format":"double"},"dayOfStockOut":{"type":"integer","format":"int32"},"dataSourceId":{"type":"string"},"consNumMonth":{"type":"integer","format":"int32"},"notes":{"type":"string"},"realmCountryPlanningUnitId":{"type":"integer","format":"int32"},"multiplier":{"type":"number","format":"double"}},"title":"QatTempConsumption"}}}},"required":true}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Returns a Success code if the operation was successful","content":{"text/json":{}}},"403":{"description":"Returns a HttpStatus.FORBIDDEN if the User does not have access","content":{"text/json":{}}},"500":{"description":"Returns a HttpStatus.INTERNAL_SERVER_ERROR if there was some other error that did not allow the operation to complete","content":{"text/json":{}}}}}
+>
+  
+</StatusCodes>
+
+
+      

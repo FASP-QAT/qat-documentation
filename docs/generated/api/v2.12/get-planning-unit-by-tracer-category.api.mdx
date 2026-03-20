@@ -1,0 +1,71 @@
+---
+id: get-planning-unit-by-tracer-category
+title: "The procurement agent PlanningUnits list"
+description: "API used to get the procurement agent PlanningUnits list"
+sidebar_label: "The procurement agent PlanningUnits list"
+hide_title: true
+hide_table_of_contents: true
+api: eJzFVsFu4zYQ/RViLt0CqpVmtxed6m02jS+JEzunwAgm0khiK5EMOXLWEPjvBWmntmJ3nU1a9GJb1HDem+HjG/fAWDnI7sA0qJRU1a2SDIsECnK5lYalVpDBeDoRnaNCsBYVseCahLE67yy1pFhgFT6nOzmcaKRjSEAbshjSTArIoCLejfq8mlvMyf6GTJW2K0jAoMWWmGyg1YPCliAb0JsUkIAMtAxyDS+5DkMF18hipTvxhIHoq2iLUltIwNJjJy0VkLHtKAGX19QiZD3wygRWUjFVFEJLbVvk9dLHU/A+2VLfAo4D3jH6e+H/fwlMtv0m6RDwn9J0bKWqwPtFCHZGK0cuvD89OQlfQzo3xJ1V7ntkmmvFpDhC0ldO/3AhU++9T+DTycd/xkBxwWxmjNy50fnVzefJ2dmXSyHLiH7ryIpCkxNKs6hxSQLznJw7CvnplZCXV/P786vby7NnyBf611YckJQzlMtSUrElR1+Pd+KXQ92eKCarsBFkrbZrGRhLS1IcHKMmYYktySU2QpfvPxCfQEtc642fRM/gGjJI0ch0t/z0iN2kw16l/fDZp/1+63zaB7V7SMCRXT77VGcbyKBmNi5LA5HRY4eKZSnz6H6osFmxzN1I22rv/kytLro8PIh10nAvxPV4Dgks0Up8aKLco/6lKnVsi+Qm3I3rAZBAVYjxM5qYa92EJGTdGup09PPp6GSPwXg6+cEFe1/LMx7b9XguZpHO5jwwj+excYXz8WwqmDBYw7D8p6enI+VTizLsuJjN7kOe+4vrX6va5T8Z18YQn0Ajc1KOdhDHBvOaxJr/ELLUevSANtgWGO24RbWzcf56Ixi0pd/K8D0zcGNiUcemQalCeZF/v9HuHaCRQcm7Yzh5zbh8ORizAyuHJlAWTX2RQK0dBwJ9/4CObm3jfVh+7MiuILtbbBUYhV5IF34XkJXYOPpGwz7cbFz9x5ee9I5JcbCVm0VUq3hfmi48QQJ/0mr/v0OYa28r4l+dzG8pZP8c31zMeyf2G+hHwfmFT6AmLMhGOa1fjfOcDO9s2lp+cLy/7f73L3Pw/i/tbsaU
+sidebar_class_name: "get api-method"
+info_path: docs/generated/api/v2.12/quantification-and-analytics-tool
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"The procurement agent PlanningUnits list"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/api/planningUnit/getPlanningUnitByTracerCategory/planningUnitId/{planningUnitId}/{procurementAgentId}/{term}"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+API used to get the procurement agent PlanningUnits list
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"planningUnitId","in":"path","description":"planningUnitId that you want a procurement agent PlanningUnits list for","required":true,"schema":{"type":"integer","format":"int32"}},{"name":"procurementAgentId","in":"path","description":"procurementAgentId that you want a procurement agent PlanningUnits list for","required":true,"schema":{"type":"integer","format":"int32"}},{"name":"term","in":"path","description":"term that you want a procurement agent PlanningUnits list for","required":true,"schema":{"type":"string"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Returns the procurement agent PlanningUnits list","content":{"text/json":{}}},"403":{"description":"Returns a HttpStatus.FORBIDDEN if the User does not have access","content":{"text/json":{}}},"404":{"description":"Returns a HttpStatus.NOT_FOUND if the planningUnitId or procurementAgentId specified does not exist","content":{"text/json":{}}},"500":{"description":"Internal error that prevented the retreival of procurement agent PlanningUnits list","content":{"text/json":{}}}}}
+>
+  
+</StatusCodes>
+
+
+      

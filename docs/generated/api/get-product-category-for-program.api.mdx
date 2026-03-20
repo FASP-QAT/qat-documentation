@@ -1,0 +1,71 @@
+---
+id: get-product-category-for-program
+title: "Get Product Categories for Supply Plan Program"
+description: "Retrieve a list of product categories for a specific program"
+sidebar_label: "Get Product Categories for Supply Plan Program"
+hide_title: true
+hide_table_of_contents: true
+api: eJylVdtu2zgQ/RVinnYBrRWkSIsVigLebBq4KLpp4rYPhh8YaSyxlUhmOHLWEPTvi9ElVpxukCZPokjO4ZkztwYyDCkZz8ZZSOASmQxuUWlVmsDKbZQnl9Upq1Qz5o4MBrVxpLQKHlOzMancyElXEIHzSFqgFhkkkCNf9Manve3uvaOLu8tek66QkQIkq+aAyLJAtfhb3ucCFaEuK8VO0cjv56wgAiPWXnMBEVhdISTQWS8yiIDwpjaEGSRMNUYQ0gIrDUkDvPNy1VjGHAVn46jS3G+9Ooa2jR6nOIjwbJKD/YtprsU8eGcDBrE4PjqST+oso+UOA//l+HsQH5qH0JpI74QiYxUm++76O6YsYSOJMpse3mRPohVBiVssn3jXa0LLi6dCe70rnc4ekt2fPRkrOOJ/KEOa3A9MxuaSAsCGS9n65DKEtpWtBwVUkw3Pqp82gpNfjNb/RKXCEHSOp8LyUT8uh1Q5Hfw5dGdhGcnqUiGRI3VbmBJVjszG5oee7TqXe3idS1HDUP5qrH9YR1AhF25oD10X4AISiLU3sb/fLeKhcONmWLTxXZXEzd2yhQgC0nZsJDWVkEDB7EMSC+7sptaWRequN2mryx2bNMwc5XDo8Tla6WGYqR5TCZxUVcC0JsO77o1r1IQ0r4X7aj09vpIQ9VGYXhr/3o8Z9+Hb8sHbZ6J2100+fFsqdj/QKmO7jT5TE/VXh6LedofvYOgNEsoeH6Ix2iJAFwxjN04I3H/r8z1N1HwURS2dKyGC0qRoQ5c+Q4eae50WqD72B+orUhDL49kRRAei397eznR3XTSOB6wQf1ycnn26OvtDbCZZ+HkuWmx7QEjgePbnm9XJyes3666EXeBK2wmTc2R1kFpjWV3V3pc7dVFqq/aj5p7rk/J66bwbpO5q1JfaWOHbSdEMib0C7U1fn9PU7pr8OJWS/XI6BZL9zzqCwgUWuKa51gG/UNm2sn1TI0lKriPYajL6WgSVaWqCrDNINroM+IgEv10O0+Z39eyh+1MdxoFixdutLmv5gwh+4G4ylLu5+nKyvzR+n0F3H4t23UZQoO5mxKoZzudpip4nlvu+3U6b3vnZEtr2P1m5RG4=
+sidebar_class_name: "get api-method"
+info_path: docs/generated/api/qat
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get Product Categories for Supply Plan Program"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/api/productCategory/realmId/{realmId}/programId/{programId}"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Retrieve a list of product categories for a specific program
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"description":"The ID of the realm to retrieve product categories for","in":"path","name":"realmId","required":true,"schema":{"type":"integer","format":"int32"}},{"description":"The ID of the program to retrieve product categories for","in":"path","name":"programId","required":true,"schema":{"type":"integer","format":"int32"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"content":{"text/json":{"schema":{"type":"array","items":{"type":"object","properties":{"id":{"type":"integer","format":"int32"},"level":{"type":"integer","format":"int32"},"parentId":{"type":"integer","format":"int32"},"payload":{"type":"object"},"payloadId":{"type":"integer","format":"int32"},"sortOrder":{"type":"string"}},"title":"Node"}}}},"description":"Returns a list of product categories for a specific program"},"500":{"content":{"text/json":{"schema":{"type":"object","properties":{"messageCode":{"type":"string"}},"title":"ResponseCode"}}},"description":"Internal error while getting product category list"}}}
+>
+  
+</StatusCodes>
+
+
+      

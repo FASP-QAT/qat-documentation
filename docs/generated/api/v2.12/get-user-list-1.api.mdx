@@ -1,0 +1,71 @@
+---
+id: get-user-list-1
+title: "Get the User list for specified realmId"
+description: "API used to get the User list for specified realmId"
+sidebar_label: "Get the User list for specified realmId"
+hide_title: true
+hide_table_of_contents: true
+api: eJydlN9v2jAQx/8V6162SRlQ2r3kaUz9hTS1tNCnCqFrciHeEtu1LzAU5X+f7IRBW7aiPeGYu/t+z/74amBcOogfoXJkYR5BSi6x0rDUCmIYTcaicpQK1mJJLDgn8eDIikI6Fpm2whlKZCYpFZawKMcpRKANWfQVxinEsCT2Kd+l48UJRGDQYklM1uvWoLAkiGGXLb2wQc7htZv7NkZwjiw2uhJrVAc8QQSWnitpKYWYbUURuCSnEiGugTfGy0nFtCQfmmlbIrdbp0NomrlPd0YrR85nDAcD//PaCldWuZfiEEGiFZPioES/uP/D+fC6aZoIzganfy+E4prZTBm5cr3L2/tv4/Pzixshs51EqskJpVnkuCKBSULOHbyYd32cHenj5na2uLx9uDnf+nC6JKHbdaVSssVGqqVIkXFnr0RO8t47Jr4cOtWxYrIKC0HWatves7G0IsWewZyEJbYkV1h4F8c13ERQEue6YzEQyDnE0Ecj+577fgdfv+4WDUTgyK62jFa2gBhyZuPivk/rPVeoWGYyCZyjwmLDMnE9bZdvsJ1YnVaJ/xBt0fBw7kYziGCFVuJTEUgL6EmV6dCE5MKDevdCSKBKxWirJmZaF74IWddKDXsnw97gjYPRZPwhoLKFJievL6bBTnd6mITT697j5Wg6EUxYQvSq/fV6/U77VKL0GdfT6cLXWVzffV3mLvlsXBlCmggKmZBytKc4MpjkJFr/LyUzrXtPaMHfpdGOS1R7iVdHD6YXp1LvmPnPOdfNksCbKVAq31hwXneMPQIa6dtx1I6lbWq8Xc4jyLVjH1rXT+jowRZN47efK7IbiB/nO0oCjKl0fp1CnGHh6B9dfbzvxuAncfzoPNhUt4lqE5gtKv8FEfykzd7sbuZNBDlhSjY4bf8dJQkZ3svbvU8P/J+3eXUxg6b5DRn0P/Q=
+sidebar_class_name: "get api-method"
+info_path: docs/generated/api/v2.12/quantification-and-analytics-tool
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get the User list for specified realmId"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/api/user/realmId/{realmId}"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+API used to get the User list for specified realmId
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"realmId","in":"path","description":"RealmId that you want the User list for","required":true,"schema":{"type":"integer","format":"int32"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Returns the User list","content":{"text/json":{}}},"403":{"description":"Returns a HttpStatus.FORBIDDEN if the User does not have access to get the User list","content":{"text/json":{}}},"404":{"description":"Returns a HttpStatus.NOT_FOUND if the some of the underlying data does not match.","content":{"text/json":{}}},"500":{"description":"Internal error that prevented the retreival of User list","content":{"text/json":{}}}}}
+>
+  
+</StatusCodes>
+
+
+      

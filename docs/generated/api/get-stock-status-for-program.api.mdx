@@ -1,0 +1,71 @@
+---
+id: get-stock-status-for-program
+title: "Get Stock Status For Program Report"
+description: "Retrieve the stock status for program report"
+sidebar_label: "Get Stock Status For Program Report"
+hide_title: true
+hide_table_of_contents: true
+api: eJztV21P20gQ/iur+XQnmSTkjuNqnU4CBBUVLTRJW+miCE3swdli7y6764Yoyn8/zdouDiQhfDzp+BR2532emX28hJRcYqXxUiuIYUDeSvpBws9IOK+Te+E8+tKJO22FsTqzWAhLRlsPEWhDFln1MoUYMvJDVhkGjQttbyp5iMDSQ0nOn+p0AfESEq08Kc8/0ZhcJsFI97vjIJbgkhkVyL/8whDEoKffKWGHxrJLL8nxbepbMs5bqTKI4E7bAj3EkKKnAy8LglUEUiV5mdJNjkpROpxJU5DyrmVgqnVOqFi4TpSz+nktlaeMbNuBVP63Pst7iwnZM/SUabu4TIdVLC+C2yDajgCtxQVEID0VboP2KoIfZF1d7z0iY3/S5yy0sTOXypT+dhDa+VXSHFassg6J0S4kSDZQ91daSiH2tqQVHzijlav61O/1nnXd06Pf3u5tddgCAyySlpAqi+l6MVJdTvMAghxdBdEzXao3gKfAx4/a7emkkOoNwntLmhzVKTpKr9WeqGQNJVX2RUn/ehXlvmCXu+Cd45Ty151N0dFHnb5RFBJpkzJH+8tpc9gC76/QgvsmgZ/x3ZLaHvztnd1xaXZdOrN5aJugroLU2ri1BlQWJqfrUIRnQYfx2xMm6/vl/7b/Z9v+2u6+Lv3L5f1iew/Il1a5vd7zVQRHb9zUW5pXkHOY0ZlOaXdpBvUzwZKvvEOXypNVmAuyVlsxn8mcREYqMBCVhQybRNgDZg7iMVRGHUwiKMjPNBMVo12IGf0MYuiikd1Ks+u28BdHll9eiMdLKC1jcua9cXGXlTsPJSov72oagwrzhZeJ62jLT8p6Gu+riCkVlU3B5lYTdpGUVvpF8DEltGRPSg5wPGlfD7kF9Yi0hJr/Lpq5/fBt9ML3OZcwFOrDt5Hw+p6UkCocVPMei9NgRfwVLv/mzIM/pkfhBqKmm1yAUGkGx+CJ350/IiO64WfQ7/V/P+gdH/TfjQ6P4qPDuP9np3d8+A/s4GRMItZYWG87x3p6uzdQq3FzO1mjTr1ACO90CHKtRJ/XWilOml6KkdY5RJDLhJQL2SkMdTkxmMxIXFUX4mvlRfQ7PYieYWU+n3cwiDM0urUt1726PDv/NDw/YJ3WcHw+4RbWYXMlO++Ox0dHfxxPwuuunS9QtSJ5T16EVSEqBIsLbUWNYTFoOPtavq1Rfyv3r2EQ9oPJUQbiHPJd1pM1BjQykMNaZfN0TSKY8UDGY1guee1/sflqxccPJfETNubmoZXITxyPQwQzwpRsGJV7WkAMZ1UaByOOisXzMjDJ518Xq6jROEkSMr4l+7TpVu1lcXM95DZM60+XIuw0sDjnzHAOMYQPIXYRpjKcLSFHlZWYsWxlk//+BZcWrGI=
+sidebar_class_name: "post api-method"
+info_path: docs/generated/api/qat
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get Stock Status For Program Report"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/api/report/stockStatusForProgram"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Retrieve the stock status for program report
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={undefined}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"content":{"application/json":{"schema":{"type":"object","properties":{"dt":{"type":"string","format":"date-time"},"includePlannedShipments":{"type":"boolean"},"programId":{"type":"integer","format":"int32"},"tracerCategoryIdString":{"type":"string"},"tracerCategoryIds":{"type":"array","items":{"type":"string"}},"versionId":{"type":"integer","format":"int32"}},"title":"StockStatusForProgramInput_ReportView"}}},"description":"The stock status for program input","required":true}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"content":{"text/json":{"schema":{"type":"array","items":{"type":"object","properties":{"amc":{"type":"number","format":"double"},"lastStockCount":{"type":"string","format":"date-time"},"maxMos":{"type":"number","format":"double"},"minMos":{"type":"number","format":"double"},"mos":{"type":"number","format":"double"},"planBasedOn":{"type":"integer","format":"int32"},"planningUnit":{"type":"object","properties":{"id":{"type":"integer","format":"int32"},"idString":{"type":"string"},"label":{"type":"object","properties":{"baseModel":{"type":"object","properties":{"baseModel":"circular(BaseModel_ReportView)"},"title":"BaseModel_ReportView"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"}},"title":"Label_ReportView"}},"title":"SimpleObject_ReportView"},"stock":{"type":"number","format":"double"},"tracerCategory":{"type":"object","properties":{"id":{"type":"integer","format":"int32"},"idString":{"type":"string"},"label":{"type":"object","properties":{"baseModel":{"type":"object","properties":{"baseModel":"circular(BaseModel_ReportView)"},"title":"BaseModel_ReportView"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"}},"title":"Label_ReportView"}},"title":"SimpleObject_ReportView"}},"title":"StockStatusForProgramOutput_ReportView"}}}},"description":"Returns the stock status for program report"},"500":{"content":{"text/json":{"schema":{"type":"object","properties":{"messageCode":{"type":"string"}},"title":"ResponseCode_ReportView"}}},"description":"Internal error while generating the report"}}}
+>
+  
+</StatusCodes>
+
+
+      

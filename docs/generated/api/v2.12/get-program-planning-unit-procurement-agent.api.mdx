@@ -1,0 +1,71 @@
+---
+id: get-program-planning-unit-procurement-agent
+title: "Get ProcurementAgent List For Specified ProgramPlanningUnitId"
+description: "API used to get the ProcurementAgent list for specified ProgramPlanningUnitId"
+sidebar_label: "Get ProcurementAgent List For Specified ProgramPlanningUnitId"
+hide_title: true
+hide_table_of_contents: true
+api: eJytVV1vm0AQ/CunfWkrUTtN2heeSpUvS1XixPZTZEWbYw3Xwt3lbnFqIf57dYAbOyFNI/UJOO52ZofZoQbGzEN8A9aZzGEJywhS8tIpy8poiCGZTkTlKRVsREYsOCcxdUZWjkrSnGSkWRTKs1gZJ7wlqVaK0rAnFJwWqLXS2UIrnqQQgbHkMNSepBBDRjyw8Wl9iMCiw5KYXGBbg8aSIN6yfgaiAnOLnMPTdgZpCc6RxcZU4gE1bzt9sUuIwNF9pRylELOrKAIvcyoR4hp4YwMzpZkyCltXxpXI3dLRITTNMhz31mhPPpw4PDgIl32e18SV0/5luSECaTQHdQIq/eLxDx+O1k3TRPD54OjloijOme2MkSs/Or28/jY5Pj65EGrVwi08OZEa8kIbFjmuSaCU5P2rkJ//EfLicn57erm4ON5CelOSMN19pVNyxUbpTKTI+MikRJb56BUSX4bEnGgmp7EQ5Jxx3de2jtakORg7J+GIHak1FoHF2/VuIiiJc9NbuvUr5xDDGK0a9y4d2x3ThcU9kHE9aOYGIvDk1lvjV66AGHJm6+NxqD66r1CzWinZThVqLDaspB8Zlw25P61keBBd0XZor5I5RLBGp/CuaD3ZmlTplWl7VVwES1/tAQnUqUi2aGJuTBGKkPMd1OHo0+Ho4BmDZDp558OEdZZqxb9K5mLW0ulFRtmK3A/5aTKbCiYsIXrS/sPDwyvtU4kqnDifzW5Dndvzq69Z7uVH68t2SxNBoSRpTzuIiUWZk+j470OujBndoYPwya3xXKLeOXg2FBvfQ2ycGidmr4bjnlb1o+H+ewr3KdXa2BaodBCi7bTurXsDaFUwcv9jiGDXvt2LpyEdD+fxMoLceA416/oOPS1c0TRh+b4it4H4Zvlov9blqfLhPoV4hYWnvwjz/rpP4g/Dvb492gel6RdRb9pJKarwBBH8pM2Lv6Fm2USQE6bk2qa6vYmUZHmnymOUhKH7EyNnJ3Nomt/xHa7L
+sidebar_class_name: "get api-method"
+info_path: docs/generated/api/v2.12/quantification-and-analytics-tool
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get ProcurementAgent List For Specified ProgramPlanningUnitId"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/api/program/planningUnit/procurementAgent/{programPlanningUnitId}"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+API used to get the ProcurementAgent list for specified ProgramPlanningUnitId
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"programPlanningUnitId","in":"path","description":"ProgramPlanningUnitId that you want to get ProcurementAgent list for","required":true,"schema":{"type":"integer","format":"int32"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Returns the ProcurementAgent list","content":{"text/json":{}}},"403":{"description":"Returns a HttpStatus.FORBIDDEN if the User does not have access","content":{"text/json":{}}},"404":{"description":"Returns a HttpStatus.NOT_FOUND if the some of the underlying data does not match.","content":{"text/json":{}}},"500":{"description":"Internal error that prevented the retreival of ProcurementAgent list","content":{"text/json":{}}}}}
+>
+  
+</StatusCodes>
+
+
+      

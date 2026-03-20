@@ -1,0 +1,71 @@
+---
+id: get-language-json
+title: "Get Language JSON"
+description: "Retrieve localized static labels for a given language code."
+sidebar_label: "Get Language JSON"
+hide_title: true
+hide_table_of_contents: true
+api: eJylVFFr2zAQ/ivinjbQklLoyswYZCUrDaGjbbY+hDwo9sVWq0iudE6XGf/3cbJDnTQUtj0l1t19+u67T1dDhiH1uiTtLCRwi+Q1blAYlyqjf2MmAinSqTBqiSaIlfNCiVxv0AqjbF6pHEXqMhyABFeiV4x0lUECOdK0y5gEZ0FCqbxaI6EPkMzrg6tnBe4jCnLCv+bzQgQkaK4sFRUgwao1QgI7jAuXIUjw+FRpjxkk5CuUENIC1wqSGmhbcn4gr20OTbPg5FA6GzBw/PTkhH9SZwktxQr8RcMH7iWp3wBq5GtVK2+DoOJ4IzFwRFNoJJz9JQu3fMCUWGzP4yDdNrPGEHaiHKEsgTQZjFxbCWLmkV6uLKG3ygj03nnxXGiDIkcibfMX9pO779ctrMp52LBzAiwkrJEK1zkkuoIKSGCoSj2M6mAY1v0pNiAhoN/sfFN5AwkURGVIhlw2eKqUJb3SaXSfsspsSadh4HwOhw1comWXsrMjpmA4Hn7AtPKatvGOJSqPflQxtfmiH75jxVtR+0m7r2/OrxVBApP72au7xyxenPbkfibIPaIV2saDVaxLxNeIIj7H4BfoDMuTafFB7obHAkSNtV05JrB/182eJmK0E0XMnDMgwegUbYhu6F7OqFRpgWLaBsRP9IErTwcnIA9Ef35+HqiYzhoPO6wwnF5djK/vxh+4pmeqmxFrsWkBIYHTwafz+dnZx/MFZ5Uu0FrZHpNLJDHd89KBkr0H8Z87qxMzPqrSKG2ZUWy27pw5B1VqFqz1JkhI9nbMQkLhAnFiXS9VwB/eNA0fP1Xo2U4LCRvltVqyGLz4dOD/GSQrZQK+0du72259vRf/tB+PdtcdKrvloShT8RdIeMTt4f5sFo2EAlWGPjJvU0ZpiiX1il9WUtN/35fjGTTNH/CrNbs=
+sidebar_class_name: "get api-method"
+info_path: docs/generated/api/qat
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get Language JSON"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/api/locales/{languageCode}"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Retrieve localized static labels for a given language code.
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"description":"The language code to retrieve localized labels for","in":"path","name":"languageCode","required":true,"schema":{"type":"string"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"content":{"text/json":{"schema":{"type":"string"}}},"description":"Returns the localized labels for the given language code"},"500":{"content":{"text/json":{"schema":{"type":"object","properties":{"messageCode":{"type":"string"}},"title":"ResponseCode"}}},"description":"Internal error while getting language JSON"}}}
+>
+  
+</StatusCodes>
+
+
+      

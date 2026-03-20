@@ -1,0 +1,71 @@
+---
+id: get-planning-unit-capacity-for-id-1
+title: "Get Planning Unit Capacity (Between Dates)"
+description: "Retrieve a planning unit capacity for a specific planning unit between two dates"
+sidebar_label: "Get Planning Unit Capacity (Between Dates)"
+hide_title: true
+hide_table_of_contents: true
+api: eJztWW1PGzkQ/ivWfCqSSygtV93qdBJQiqjoXcvL9UMUIWd3knW7sRd7NjkU7X8/jXcDm2SBlKY62vKJrMceP/PMePA+O4UEfex0TtoaiOAEyWkco1Aiz5Qx2gxFYTSJWOUq1nQlBtYJJXyOsR7oeGFWH2mCaARNrEgUoQcJNken2P1RAhEMkT7US86Npv3a7VvrjpKLFyAhV06NkNB5iLrTBXhnKYqjN8IOBKW4sDdZ4Wr0IEHz9FxRChKMGiE/NfY9SkCCw8tCO0wgIlegBB+nOFIQTYGucl6hDeEQHUgYWDdSVA293IaylG3QPClHIfAZRKfMEJvQ2mnV6JnYdtzB6xtFuApkT06b4W0A0STfAZ7Nvxpdjyf73BqPnu3bW1v8J7aG0FBYgf9S57Nn6NNlR7b/GWPicnFcX4yQrSomPcbGvL61GSoDpYS+8vjeJpitzQ3E2sVFptyzvdngBkiIHSrCZO/q/o0Kj46PxQoVJ8PkivOWbANpynhoT3kdn3t0vKSGEtKztKqxB9fEc9Ij5EWZ8vTeJnqgH0cQTTxfE8m8vzppTErdcxp+TDHqzwNObNHPsMHhY2Dil06nnGvg98ehV41BJ6fVvssxMNr+GjvGU+P5FSr11sbzw+enj9nKqMLsCzS3H6uLgbvDmN9l9Pktxp+ugo5DAypn1627tj7VozzDv6tQF/rl7KK9crQ3t842oq8vfa3GIs8zje5+/p969I/XA366E/bUo5969P/UoxuGNlUESp6xpNAUzvgWAeShEk0p4dXWy3W8fo/QezXEfZvcw8JJ/e4fZrYEybkRiUUvjCWRqjEKp4cpedYqVByjZwK0n4+tiuTVo4rkQ3uKOKyBLUwSML/YflSYj8xYZbpWiurSLyXsrEejWSNM4sOeCXTOOjFJdYZiiERMd/vRqPyrIWuLN6kJ75M9CSOk1NYiZVAiKYUIOirXneZVqjPz1pnOS4plpz5cnen17ank39VdqQQJHt14Jm0Wjq8JKVHuow7vsnlZKEN8ZoNeqozKrkjHftM6bkLz0R+iYV0VE1H5FOyOdTWPceGCvNGdQh+VQ7dbcCTdXtN8yumqMtKcNHt6O+t47z6dLe19wMyHDvTu05kg+wWN0CYMVOUSib3gRfwRjH9CrQWG61KwgJxlngkIedFmYBnA/F4f5zgRuzNSxJm1GUjIdIzGh1KqBcndXMUpiuPKIP5B53nl9uYWyAXSJ5PJpgrTmeNO7ct3jo/2D/46PXjOaxoV+XGXuRhXDiGC7c3fX3d3dn573QvXbetppEwDySGSmKsyMevs4tle3Ye5MvzGIsWNY/Y9NPma+nB+80zpcHkN1Ezrsu+CyjUsaC4N7UxCtKSn1zuxralZR9cvCz0JqfXE3qdTviufu6wsefiyQMcV25MwVk4r1t6C/K89/04gGqjM4x0sPTupxecNsfpXglYe6kFlOMqxygp+Aglf8Gr5K0LQ2R8Kcg3fCx4QwU1uvgn8N39LeBD0upLKXikhRZXwW2Z3Wpt34xhzaiy8+QdVNvv74cEZlOV/FwFNOw==
+sidebar_class_name: "get api-method"
+info_path: docs/generated/api/qat
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get Planning Unit Capacity (Between Dates)"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/api/planningUnit/capacity/{planningUnitId}/between/{startDate}/{stopDate}"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Retrieve a planning unit capacity for a specific planning unit between two dates
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"description":"The ID of the planning unit to retrieve","in":"path","name":"planningUnitId","required":true,"schema":{"type":"integer","format":"int32"}},{"description":"The start date of the range to retrieve planning unit capacities for","in":"path","name":"startDate","required":true,"schema":{"type":"string"}},{"description":"The end date of the range to retrieve planning unit capacities for","in":"path","name":"stopDate","required":true,"schema":{"type":"string"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"content":{"text/json":{"schema":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":"circular(BaseModel)","createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"}},"title":"BaseModel"},"capacity":{"type":"number","format":"double"},"createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"},"planningUnit":{"type":"object","properties":{"id":{"type":"integer","format":"int32"},"idString":{"type":"string"},"label":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":"circular(BaseModel)","createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"}},"title":"BaseModel"},"createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"labelId":{"type":"integer","format":"int32"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"}},"title":"Label"},"name":{"type":"string"}},"title":"SimpleObject"},"planningUnitCapacityId":{"type":"integer","format":"int32"},"startDate":{"type":"string"},"stopDate":{"type":"string"},"supplier":{"type":"object","properties":{"id":{"type":"integer","format":"int32"},"idString":{"type":"string"},"label":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":"circular(BaseModel)","createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"}},"title":"BaseModel"},"createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"labelId":{"type":"integer","format":"int32"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"}},"title":"Label"},"name":{"type":"string"}},"title":"SimpleObject"}},"title":"PlanningUnitCapacity"}}},"description":"Returns the planning unit capacity for a specific planning unit between two dates"},"403":{"content":{"text/json":{"schema":{"type":"object","properties":{"messageCode":{"type":"string"}},"title":"ResponseCode"}}},"description":"User does not have rights to access this planning unit"},"404":{"content":{"text/json":{"schema":{"type":"object","properties":{"messageCode":{"type":"string"}},"title":"ResponseCode"}}},"description":"Planning unit capacity not found"},"412":{"content":{"text/json":{"schema":{"type":"object","properties":{"messageCode":{"type":"string"}},"title":"ResponseCode"}}},"description":"Invalid date format"},"500":{"content":{"text/json":{"schema":{"type":"object","properties":{"messageCode":{"type":"string"}},"title":"ResponseCode"}}},"description":"Internal error while getting planning unit capacity"}}}
+>
+  
+</StatusCodes>
+
+
+      

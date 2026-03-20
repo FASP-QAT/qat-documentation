@@ -1,0 +1,71 @@
+---
+id: get-dimension-1
+title: "Get Dimension"
+description: "Retrieve a dimension by its ID"
+sidebar_label: "Get Dimension"
+hide_title: true
+hide_table_of_contents: true
+api: eJztV99v00gQ/ldW8wTSkvQKPXQWQkpprwoqSJRwPEQRmtiTeMHZdXfHCVHk/x3N2ilOW1o45QEQT4nn1858M2N/u4GMQupNycZZSOCC2BtakkKVmQXZYJxV07UyHNTwBDS4kjyK8TCDBObEJ1uzD3+BhhI9LojJB0jGGzASs0TOQYPFBUECV2GHGWjwdFkZTxkk7CvSENKcFgjJBnhdirmxTHPyoGHm/AK5ET0+hLqeiHsonQ0UxOPw4EB+UmeZLMcY9Jn7H4NUtrkZ2k0/UsqStJeq2DRhMGWzpI7d1LmC0EKtYYqBXrmMir2FgdT4tCrQPzjeCh+ChtQTMmXH6/sPqgJ5acZ3QKajcdOIK/PA3tg51LUGNlyI6BiDSd8F8uLSpnKCfItX54wMmR6xWZA4FRj4lcvMzPwcRXTz+ZFKduO1Tat//f50t/D7Mitwusex/7M9f7bnpyjtf/ZnSsWPbc4HsrdktVXO/B3K8i5lKL+h/O0m6Dy+gH7P2q5IFNQivsHJKm+D4pw6pGxlOI+iUFIazxaCVmt4cvBkHzRoQSHgnF647B4sLloOFi1vSX90f9pqhUFZx2rmKptJEUf74XJ7K2JoWeaiUOS984pzZFV6WpJlymI9vmHOWCg3221VcxDOhRJ3Oj3RsCDOXcujI3nmHBLoY2n6V979TedbXYOGQH655deVl49gzlyGpC9+vcsKLZuZSSNJR4vFmk0aes7LGO4WdUZWyDxlqompJJzQ6kBp5Q2v4xlTQk9+UElu40lX/Va60ADdNdo+/bud+ZfvRzfOPhVAI04v348Uu09klbFR0OxKoo5jFPUsKp9DezmIZCBqQG8bKgBElI2dOUlg96w3O5iowRYUNXKuAA2FScmGOCHtJWVQYpqTOm8U6j/ycXgPewegr4G+Wq16GM0F434bK/TPhy9OX789fSQ+nUF7MxAslk1ASOCw98/T8dHR308nYlW6wAu0nUzOiNXXmbmGYmdB7r+5tVjFPSoLNJFLxVo27eSNAUsDHXIIGpIuU5xoyF1gsdxshIa980Vdi/iyIi/jMtGwRG9wKsWON5CZIP8zSGZYBLoj/wcX7VXwofpWsq0Q7VogxKKSJ9DwidbXLpb1pNaQE2bkYxqNxSBNqeSO79d3St3dxrPTEdT1F8+cLNE=
+sidebar_class_name: "get api-method"
+info_path: docs/generated/api/qat
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get Dimension"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/api/dimension/{dimensionId}"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Retrieve a dimension by its ID
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"in":"path","name":"dimensionId","required":true,"schema":{"type":"integer","format":"int32"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"content":{"text/json":{"schema":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":"circular(BaseModel)","createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"}},"title":"BaseModel"},"createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"dimensionId":{"type":"integer","format":"int32"},"label":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":"circular(BaseModel)","createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"}},"title":"BaseModel"},"createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"labelId":{"type":"integer","format":"int32"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"}},"title":"Label"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"}},"title":"Dimension"}}},"description":"Returns the dimension with the specified ID"},"404":{"content":{"text/json":{"schema":{"type":"object","properties":{"messageCode":{"type":"string"}},"title":"ResponseCode"}}},"description":"The dimension with the specified ID was not found"},"500":{"content":{"text/json":{"schema":{"type":"object","properties":{"messageCode":{"type":"string"}},"title":"ResponseCode"}}},"description":"Internal error that prevented the retrieval of the dimension"}}}
+>
+  
+</StatusCodes>
+
+
+      

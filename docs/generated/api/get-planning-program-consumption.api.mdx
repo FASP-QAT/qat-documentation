@@ -1,0 +1,71 @@
+---
+id: get-planning-program-consumption
+title: "Get Pipeline Consumption"
+description: "Retrieve consumption data by pipeline ID from adb tables"
+sidebar_label: "Get Pipeline Consumption"
+hide_title: true
+hide_table_of_contents: true
+api: eJylVm1v20YM/isHftoA1Q4yZMWEYYCXZoGLYkhTb/0QGAMt0dK1pzvljnJqGPrvA0/SLL9kSNBP9h3Jhy9HPtQOcgqZ1zVrZyGFe2KvaUMqczY0VbxWOTKq1VbVuiajLan5O7X2rlKYrxTjylCABFxNHkV/nkMKBfGdQWu1Le68KzxW13tESKBGjxUx+QDpw+4oikUZfbi14pL2btkpP8QngpMYJShIQAtGjVxCAhYrklOPMc8hAU+PjfaUQ8q+oQRCVlKFkO6At7Voa8tUkIcE1s5XyN3VT5fQtksxD7WzgYJYXF5cyE/mLJPliEHfePolSCK7U2j0HrcSI1MVRvdu9YUylsJ4KSTrDj5z9h0yjRQDe20LaBORBcy4QbM2WIxUVs4ZQvufTuWaPrRObptqdZhd7pqVocFAahlc4zPS+bOec2TKSrQFndEZQyPTG9bVHl2H2uDWuoO0jmI+cPz8c/TKa4Ps/CsyPHJ+mJltqspZLsMrQgiMnqPVa422hP6FNs7k/4x6/oX5jlr/ZW5q7/Im47Nv3ybAmo1c3dVmPNJtK8ITNmm8DQqV0YFlno9HVvxdvXKEnhmVikLAgq5dfu5pR4Hf9/MbNc9EPbdM3qJR5L3z6qnUhlRBzNoWezI6zURcYCF8Bne9FiwTqIhL11NiJD7pEZhiracD2HQENt3tH6yFBAL5zcCSjTeQQslch3QqCJPHBi3rtc4i86JFs2WdhYnzMoSHed2SFYamXHWYSuCE0AJljde8jT5WhJ78rJEoH5Zj8Sd5iK7WY6Xh9MfQSO8/L05830hNI2m//7xQ7L6SVdrGi64BU/V7RFG/RuFv0NNy5IYogWR4UylALLe2aycBHPr6eFATNRuKohbOGUjA6IxsiE3Sb4dZjVlJ6kMnUH+TD2J5ObmA5KjoT09PE4zqUuNpjxWmH+bXN39+unkjNqNe+ziTWmw6QEjhcvLL24erq5/fLuOkucAV2lEkt8RqaB51uDEPkhyNy/fs7L6gcd5qgzryb0x41zfqA2CtYc8i0FHXPqx0xC/LBEoXWKx2uxUG+subtpXrx4a89NcygQ16Lf67va+D/M8hXaMJ9D9Z/nDfb+0f1Xd+HpxNeljPVpbzBk0jJ0jgK20PPx/aZZtASZiTjxl0CrMso5pHpnsKa8cccHuzgLb9F0m+SSs=
+sidebar_class_name: "get api-method"
+info_path: docs/generated/api/qat
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get Pipeline Consumption"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/api/pipeline/consumption/{pipelineId}"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Retrieve consumption data by pipeline ID from adb tables
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"description":"The ID of the pipeline to retrieve the consumption data from","in":"path","name":"pipelineId","required":true,"schema":{"type":"integer","format":"int32"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"content":{"text/json":{"schema":{"type":"array","items":{"type":"object","properties":{"conDate":{"type":"string"},"consactualflag":{"type":"boolean"},"consamount":{"type":"number","format":"double"},"consdatasourceid":{"type":"string"},"consdatechanged":{"type":"string","format":"date-time"},"consdisplaynote":{"type":"boolean"},"consid":{"type":"integer","format":"int32"},"consiflator":{"type":"number","format":"double"},"consnote":{"type":"string"},"consnummonths":{"type":"integer","format":"int32"},"consstartmonth":{"type":"integer","format":"int32"},"consstartyear":{"type":"integer","format":"int32"},"old_consumption":{"type":"number","format":"double"},"pipelineId":{"type":"integer","format":"int32"},"productid":{"type":"string"}},"title":"PplConsumption"}}}},"description":"Returns a list of consumption data"},"500":{"content":{"text/json":{"schema":{"type":"object","properties":{"messageCode":{"type":"string"}},"title":"ResponseCode"}}},"description":"Internal error while getting pipeline consumption data"}}}
+>
+  
+</StatusCodes>
+
+
+      

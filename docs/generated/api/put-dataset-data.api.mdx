@@ -1,0 +1,71 @@
+---
+id: put-dataset-data
+title: "Request updates to Dataset Data"
+description: "Request updates to the Dataset data"
+sidebar_label: "Request updates to Dataset Data"
+hide_title: true
+hide_table_of_contents: true
+api: eJzNVlFvGzcM/isCn1ZAs4O0adHDUMBLssFFMaytsz4EfmDuaJ/aO0mReM4M4/77QOmcXOJgmB8G5Mk+iaL4fSQ/agcVxTIYz8ZZKOAL3XYUWXW+Qqao2CmuSV0gYyRWFTKCBucpoJyYV1CA73jYv8jbHgO2xBQiFNe7JzcsalLzC+VWyfGGQjTOyj2laz0GUrhGYyODBiP2HrkGDRZbggIGo+qvfG5egYZAt50JVEHBoSMNsaypRSh2wFsvh4xlWlMADSsXWuS89PoU+n4px6N3NlKUE6cnJ/JTOstkOfmgv3n6PUrsu6Nc9/qAW+6CjQn3AwOla1vDKmTiodfw5uT1UTG4m+9UCl8+SGLYZCgtxYhrOncVjYwjB2PXINGx4YZSXJmAZPlM3JKxLlJQlaOorGNV44YUliXF+wqpxhWSQLx5USCuLN40JNGujK0OQlYrF9Li2mzI3pfl/CJjefuisCxy2aRGuA/V5NQIhkZal/c7GcH7F4Xg3NlVY0oJF1n5QBuyTDktWXr27fG0rs6ObND/G8ncMgWLjaIQUgkdhUcuwrXIJJxnHRgEGJYaWuLaDQKbVJVrKGCK3kyzaEyrB9md7g6ksQcNkcJmr8NdaKCAmtnHYipuJrcdWjYrUyYxR4vNlk0ZJy6s4SnQ38mK6FOlsk8l7kQ/I5VdMLxNd9wQBgqzTkK9Xo63v0pmMvljo/3Xb3v5/PhtcXD3pZCc6Pv4baHY/SCrjE0LWXYL9Wvyon5Jmx9gmAKSwewf9D7JQkBi3tiVkwAe3/X5ESdqtidFLZxrQENjSrIxVc0wk2Yey5rUp7yhBv7V6eQE9BPS7+7uJpjMhePp4CtOP83PL//4evmznBkV3+eZcLHv4wJOJ+/fXZ+dvX23FCvvIrdoR5E8M733k3sYzY+wjtroPw7+gcLUcr5Bk8QlQdwN9XkN6A1oyBUqNz56GhSHA3ypoXaR5ehud4ORrkLT97J821GQslpq2GAwIuD5QWGi/K+gWGET6V9Q/fRleBu8Uke8O55FOSyi3UpKsOnkCzT8oO2z75J+2WuoCSsKKehsNytL8jzy8KBe/bjl/7xaQN//A0+/Vf8=
+sidebar_class_name: "put api-method"
+info_path: docs/generated/api/qat
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Request updates to Dataset Data"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"put"}
+  path={"/api/commit/datasetData/{comparedVersionId}"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Request updates to the Dataset data
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"description":"The ID of the version to compare against","in":"path","name":"comparedVersionId","required":true,"schema":{"type":"integer","format":"int32"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"content":{"text/json":{"schema":{"type":"integer","format":"int32"}}},"description":"Returns the ID of the commit request"},"403":{"content":{"text/json":{"schema":{"type":"object","properties":{"messageCode":{"type":"string"}},"title":"ResponseCode"}}},"description":"The user does not have access to the dataset data"},"404":{"content":{"text/json":{"schema":{"type":"object","properties":{"messageCode":{"type":"string"}},"title":"ResponseCode"}}},"description":"Unable to find the dataset data for the given version ID"},"406":{"content":{"text/json":{"schema":{"type":"object","properties":{"messageCode":{"type":"string"}},"title":"ResponseCode"}}},"description":"The compared version is not the latest version"},"409":{"content":{"text/json":{"schema":{"type":"object","properties":{"messageCode":{"type":"string"}},"title":"ResponseCode"}}},"description":"Conflict that prevented the update of the dataset data"},"500":{"content":{"text/json":{"schema":{"type":"object","properties":{"messageCode":{"type":"string"}},"title":"ResponseCode"}}},"description":"Internal error that prevented the update of the dataset data"}}}
+>
+  
+</StatusCodes>
+
+
+      

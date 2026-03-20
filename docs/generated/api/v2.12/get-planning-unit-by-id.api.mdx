@@ -1,0 +1,71 @@
+---
+id: get-planning-unit-by-id
+title: "Get PlanningUnit for a PlanningUnitId"
+description: "API used to get the PlanningUnit for a specific PlanningUnitId"
+sidebar_label: "Get PlanningUnit for a PlanningUnitId"
+hide_title: true
+hide_table_of_contents: true
+api: eJyllFFv2jAQx7+KdS/bpAwY617yNKatLS8tHfSpQtXhXIi7xHbtCxRF+e6TDV0JsHbSnpI4d/7/z/7dNcC49JDegS1Ra6WXt1oxzBPIyEunLCujIYXRZCxqT5lgI5bEggsSk70MkRsnUHhLUuVKdv6NM0jAWHIYNhtnkMKSeD/i2ybGWHRYEZMLhhrQWBGkHWMxTAVDFrmAQ5ddVcEFstiYWqxRc3B+yjUk4OixVo4ySNnVlICXBVUIaQO8scGC0kxLCqG5cRXydunzENp2HtK9NdqTDxnDwSA8ur5+EtdO+2N9s3ggyZCANJpJc9SkJ+4/+JDYtG2bwNng7O9borhktlNGrn3v6np2f359e/VdqPxIbJw9Xw9lIjPkhTYs6En5twx8OVXTWDM5jaUg54zbnrV1tCLNAZOChCN2pFZYCpN3nLwq1yZQERdmh0nEggtIoY9W9fdh6DddNFpIwJNbPfNTuxJSKJitT/shu/dYo+bAZyQRNZYbVtL3jFses+RMVsvwIbabRsRvRjNIYIVO4aKMNx4RUDo3sRbFZQDmpiMkUGdi9KwmZsaUYRNyfis17H0a9gZHDkaT8TsfsEUpyW/puRnNxDTa2R0iyniIu145H00nggkrSA7KX6/Xb5RPFaqQcTmd3od97i9vvi4LLz9aX8WQNoFSSdKe9hRHFmVBYuu/K5kb01ugg3Cl1niuUO8lXhCfmiBHg6NzJs0LOP8/knbNHfmzJSodKowlNDvm7gCtCgR24U0PRtI8gcJ4DvFNs0BPt65s27D8WJPbQHo3f2EmopkpH94zSHMsPb1S5fufu+H04bCZ/3W6nSxzt4h6E3Eu6/AFCfyizfHIbedtAgVhRi663waNpCTLe+kvjRxa4k8TX/yYQdv+BtXpOaA=
+sidebar_class_name: "get api-method"
+info_path: docs/generated/api/v2.12/quantification-and-analytics-tool
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get PlanningUnit for a PlanningUnitId"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/api/planningUnit/{planningUnitId}"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+API used to get the PlanningUnit for a specific PlanningUnitId
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"planningUnitId","in":"path","description":"PlanningUnitId that you want to the PlanningUnit for","required":true,"schema":{"type":"integer","format":"int32"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Returns the PlanningUnit object","content":{"text/json":{}}},"404":{"description":"Returns a HttpStatus.NOT_FOUND if the PlanningUnitId specified does not exist","content":{"text/json":{}}},"500":{"description":"Internal error that prevented the retreival of PlanningUnit","content":{"text/json":{}}}}}
+>
+  
+</StatusCodes>
+
+
+      

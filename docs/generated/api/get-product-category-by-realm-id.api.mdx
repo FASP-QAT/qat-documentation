@@ -1,0 +1,71 @@
+---
+id: get-product-category-by-realm-id
+title: "Get Product Categories by Realm"
+description: "Retrieve a list of product categories for a specific realm"
+sidebar_label: "Get Product Categories by Realm"
+hide_title: true
+hide_table_of_contents: true
+api: eJytVt9v2zYQ/leIe9oALQoyZMWEYYDrZYGLoFvdbHkI/EBLZ4stTSrHkzND0P8+HCUviu1mrtMny+Tdx4/34zs2UGDIyVRsvIMMpshkcI1KK2sCK79QFfmizlnlmnHpyWBQC09Kq1BhbhYmV4TariABXyFpAZoUkMES+c/Oddx5bt5upmI5KSCBSpNeISMFyO6bHRa3JarJb3I4l9jBK/aKtuQOU4IEjHhXmktIwOkVQgb035GED7UhLCBjqjGBkJe40pA1wJtKTI1jXKLgLDytNHdLP15A2yYvU9whtBmyPUyreh6ab0/wrkQukYSJcbmtC4xM85oIHSuLa7SH03uYcA8y7vxvxP0YynPvLWp3JENtrcpLYwtC96XYvkhvZO249/86djOxDpV3AYMYXJyfy0/uHaPj6IL/cPopCPVmH0kT6UiNcRUG637+CXOWgidpDzYdvCmOSmsCMU9H2lZaUjM5FrrSG+t1sU/2ae9orOCJ/6ACaWAfmIxbSuaBDVtZeu8LhLaVpT3dqcmFE2SnTeDyK3P1hZysMAS9xLFwfPEW075Qxv1tdi8zcYzktFVI5Ek9lsaiWiKzcct9qZALd/B6KWIIvWqqrTbALIEVcul7VY3qySVkkOrKpDtKkvaClzb9R5vKCWmzpzht2hxo6qfVQS+1kEBAWm/luiYLGZTMVchSYXH2UGvHkpY4ALTTdsMmD2eelrAbn2t0MiiwUB2mEjjpwIB5TYY38Yw5akIa1XLT+9lw+6MktMvZ0Gj77/dtdb67u907+0pyE3Xl3d2tYv8ZnTIuLnRVnam3EUX9Ejd/hV42olzEHUi2tSEBiKkzbuGFwPOzPjyLiRptg6JuvRfxtCZHF2Kx9So2qnReorrpNtTfSEE8L87OIdkJ+uPj45mO5hLjtMcK6c1kfPX+49UP4jOo2Q8jicW6A4QMLs5+fnN/efnTm1lsdx94pd2AyTWy2ilEacH5Rk37af/sroPue90boo9sbODKauOEXrx501f9PejKdM07rOco99tRnz19xvZKIDs0cLPDQy07MExmCZQ+sBzfNHMd8C+ybSvLDzWSVOwsgbUmo+cSb3nSmCDfBWQLbQO+ELDvpv2c+l6d/PI5GLftbHISnbW2tfyDBD7jZvAyipP59WT/5w10AsH9lJ1M9VWvoROoHyqsb0n+yIfS6cyHtd/O2gRK1HG83ze94SjPseIBxNPQbYcT6/rqFtr2X4uyTzE=
+sidebar_class_name: "get api-method"
+info_path: docs/generated/api/qat
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get Product Categories by Realm"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/api/productCategory/realmId/{realmId}/list/{productCategoryId}/{includeCurrentLevel}/{includeAllChildren}"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Retrieve a list of product categories for a specific realm
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"description":"The ID of the realm to retrieve product categories for","in":"path","name":"realmId","required":true,"schema":{"type":"integer","format":"int32"}},{"description":"The ID of the product category to retrieve","in":"path","name":"productCategoryId","required":true,"schema":{"type":"integer","format":"int32"}},{"description":"Whether to include the current level of product categories","in":"path","name":"includeCurrentLevel","required":true,"schema":{"type":"boolean"}},{"description":"Whether to include all children of the product category","in":"path","name":"includeAllChildren","required":true,"schema":{"type":"boolean"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"content":{"text/json":{"schema":{"type":"array","items":{"type":"object","properties":{"id":{"type":"integer","format":"int32"},"level":{"type":"integer","format":"int32"},"parentId":{"type":"integer","format":"int32"},"payload":{"type":"object"},"payloadId":{"type":"integer","format":"int32"},"sortOrder":{"type":"string"}},"title":"Node"}}}},"description":"Returns a list of product categories for a specific realm"},"500":{"content":{"text/json":{"schema":{"type":"object","properties":{"messageCode":{"type":"string"}},"title":"ResponseCode"}}},"description":"Internal error while getting product category list"}}}
+>
+  
+</StatusCodes>
+
+
+      

@@ -1,0 +1,71 @@
+---
+id: get-planning-unit-capacity-for-realm-id-1
+title: "Get PlanningUnitCapacity for a Realm"
+description: "API used to get PlanningUnitCapacity for a Realm"
+sidebar_label: "Get PlanningUnitCapacity for a Realm"
+hide_title: true
+hide_table_of_contents: true
+api: eJydVMFy2jAQ/RXNXtrOuEBIevGptAkJlwQCnDIMs7EXrNaWFGkNZTz+946EKZCQJpOTJVm77+3qva2AcekgfgCTo1JSLadKMswiSMklVhqWWkEMveFAlI5SwVosicXw4PZPNJhI3oiFtgLFPWFeQATakEUfPkghhiXxqZi+tuH+IJ2fQQQGLRbEZD2lChQWBDHY7Q2IQHouBjmD5wSbLIIzZLHRpVijYoGvELXaM7T0VEpLKcRsS4rAJRkVCHEFvDEeWCqmJVmIYKFtgbw9Ou9CXc98uDNaOXI+otvp+M9zUlxa5QRndJpILh1DBIlWTIoDMv3h9i/nw6u6riO46Jy/nhjFDbMZM3LpWv27+x+Dy8urWyEXAXLqyIpUkxNKs8hwRQKThJx7E/LinZC3d5N5/256e7mDfLXKPQ/683bR3051c6CYrMJckLXabl/aWFqRYi/MjIQltiRXmAu9+GDD6wgK4kw3mg2a5AxiaKOR7UOTtJMmabvRZ7tqFjVE4MiudjIubQ4xZMzGxW2fp/VUomK5kEkwCCrMNywT19J2+ULZQ6vTMvEbsU0afDbqTSCCFVqJj3mQYNCkVAsdqpKcewWPjoAEqlT0dmhionXuk5B1W6hu66zb6rxg0BsOPjnv/K16QqtHvYkYBzpNOzEJ7Wws2++Nh4IJvc2Oy1+v12+UTwVKH3EzHs99nvnN6Psyc8lX44pwpY4glwkpRweIPYNJRmLL/xhyoXXrES34xzXacYHqIPD6fePsqCXVXkEfGY3NeAnSMzlK5UsKnKtGbg+ARnrxHU7lCHaSC8NrNxTj3XIWQaYd++iqekRHU5vXtT9+KsluIH6Y7SUTlJlK59cpxAvMHf2nys/3zbD8Ij4yak9W3Byi2gQp56XfQQS/aXMw9etZHUFGmJINnLd/e0lChg/i9j72Pvjn4eurCdT1X9WXY+I=
+sidebar_class_name: "get api-method"
+info_path: docs/generated/api/v2.12/quantification-and-analytics-tool
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get PlanningUnitCapacity for a Realm"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/api/planningUnit/capacity/realmId/{realmId}"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+API used to get PlanningUnitCapacity for a Realm
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"realmId","in":"path","description":"RealmId that you want a PlanningUnitCapacity from","required":true,"schema":{"type":"integer","format":"int32"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Returns the PlanningUnitCapacity list","content":{"text/json":{}}},"403":{"description":"Returns a HttpStatus.FORBIDDEN if the User does not have access","content":{"text/json":{}}},"404":{"description":"Returns a HttpStatus.NOT_FOUND if the PlanningUnitCapacity list does not exist","content":{"text/json":{}}},"500":{"description":"Internal error that prevented the retreival of PlanningUnitCapacity list","content":{"text/json":{}}}}}
+>
+  
+</StatusCodes>
+
+
+      

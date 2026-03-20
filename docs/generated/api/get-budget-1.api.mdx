@@ -1,0 +1,63 @@
+---
+id: get-budget-1
+title: "Get Budgets"
+description: "Retrieve a complete list of all budgets"
+sidebar_label: "Get Budgets"
+hide_title: true
+hide_table_of_contents: true
+api: eJztWG1v2zYQ/ivEfVoBNc4yZMWEoYCTpUGKdEUTp/lgGAFNnW22FKmSJ3uG4f8+HCUncmKn1gYUGeZPcXjHe3l4L/azgAyD8rog7SykcIXkNU5RSKFcXhgkFEYHEm4kpDFiWGZjpAAJuAK95FsXGaQwRjqJorufIQGPoXA2YIB0AUeHh/xHOUtoiT8S/kWdL4EdLiCoCeYyHs8LhBSk93IOCWjCPDTO3fALKoIECs++SVfmpSI9xYbe0DmD0sIygaEM+MFlaL5vpqEKSntVGul/Olkd3l1h4Tx91jh7xYZJk2FjmxSi44hFN6eGY1vmQ/SQwMj5XBKkkLlyaPBB/9RlzUQCeW3HD2IG+l6oLeF43Zy29MvRg/pNkGx9MzC1RrZ7iKr0Hq2at4Lyx6KunJ2iD9rZK0nYczcha5nc1hdYKez8BkYOWwLwY7GK8d2h3ZhtJRz5Z4TFc8JQbBA2grqMWs2AGsLTGupHAY9Km2k7vnalV/jvxoI0xs0wu7DVyHphs2Mt0a0Fuaa1c1Wu3epF/e8lp7ZFoHd1qrPr6tLWgtn3yT/ok2vN+5kL5GMEYlPge2B3BZZvBvrgMj3SmJ3ssObKgH7nxmNlK/NNnbSOlVY3Af0zof0haYOV5laThK9J53GxFd6NvcwvdWiOuZZfsfad/hI6fUOXL/mrtjT5for/x992yxRv6L1rbu79qN+P+iej3jrCsBGoegk0hS03wH58vKQCbjE+Vk9/q2nSVQrDvgj+f0UQSHpqN0wCuaLdjTJg1oJQagJeEYdrQbP8CTNZehsETfApNbmiJZcJHLekG7fUTo4hyPG239+N6K9qrpM1H+XwOIULS7wajEDvnRc0kSQKj1O0hFlMzFf0qzScFB9UicU8K69yHCDt15jBIIEcaeJqCpazkDSBFDqy0J3qMiQQ0DMxBml/AaXndpgQFSHtsNrBt1Ja0iOtIp0rrTRz0iocOM+vvZ7COVqmfTETlU3B5pYDdqFKr2kefQxRevTdkkPpD5ria4a/7s6G0uq/d6syeX/be+L7jOGLqLy/7QlyX9EKbeNBVV6pOIlWxO9R+JYzj/6Y2YkSSFYvyQBERLUdOQ5g3denNUxEdwWK6DlnIAGjFdoQS6Pa9dAtpJqguKwE4nNFRIqjg0NIHoE+m80OZFRnjDu1rdC5vDg9+/P67DXfaVTYpy5jUTObkMLRwW9v+sfHv74ZxOXuAuXSNiI5RxIn9zz9Wl6NvmhB9deQxT4qjNSRH4spLep664MsNKx4ZS7LieNfnH1YLHgK33izXPLxtxI918gggan0umKo+4NlAhOUGfpYPl9xzoAqhQVX71Sa8t5/7ONls+7Pz3qwXP4Nes2caQ==
+sidebar_class_name: "get api-method"
+info_path: docs/generated/api/qat
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get Budgets"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/api/budget"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Retrieve a complete list of all budgets
+
+<ParamsDetails
+  parameters={undefined}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"content":{"text/json":{"schema":{"type":"array","items":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":{"type":"object","properties":{"baseModel":"circular(BaseModel_ReportView)"},"title":"BaseModel_ReportView"},"budgetAmt":{"type":"number","format":"double"},"budgetCode":{"type":"string"},"budgetId":{"type":"integer","format":"int32"},"budgetUsable":{"type":"boolean"},"budgetUsdAmt":{"type":"number","format":"double"},"currency":{"type":"object","properties":{"baseModel":{"type":"object","properties":{"baseModel":"circular(BaseModel_ReportView)"},"title":"BaseModel_ReportView"},"conversionRateToUsd":{"type":"number","format":"double"},"currencyCode":{"type":"string"},"currencyId":{"type":"integer","format":"int32"},"label":{"type":"object","properties":{"baseModel":{"type":"object","properties":{"baseModel":"circular(BaseModel_ReportView)"},"title":"BaseModel_ReportView"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"}},"title":"Label_ReportView"}},"title":"Currency_ReportView"},"fundingSource":{"type":"object","properties":{"active":{"type":"boolean"},"allowedInBudget":{"type":"boolean"},"baseModel":{"type":"object","properties":{"baseModel":"circular(BaseModel_ReportView)"},"title":"BaseModel_ReportView"},"fundingSourceCode":{"type":"string"},"fundingSourceId":{"type":"integer","format":"int32"},"fundingSourceType":{"type":"object","properties":{"code":{"type":"string"},"id":{"type":"integer","format":"int32"},"idString":{"type":"string"},"label":{"type":"object","properties":{"baseModel":{"type":"object","properties":{"baseModel":"circular(BaseModel_ReportView)"},"title":"BaseModel_ReportView"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"}},"title":"Label_ReportView"}},"title":"SimpleCodeObject_ReportView"},"label":{"type":"object","properties":{"baseModel":{"type":"object","properties":{"baseModel":"circular(BaseModel_ReportView)"},"title":"BaseModel_ReportView"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"}},"title":"Label_ReportView"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser_ReportView"},"lastModifiedDate":{"type":"string","format":"date-time"},"programList":{"type":"array","items":{"type":"object","properties":{"id":{"type":"integer","format":"int32"},"idString":{"type":"string"},"label":{"type":"object","properties":{"baseModel":{"type":"object","properties":{"baseModel":"circular(BaseModel_ReportView)"},"title":"BaseModel_ReportView"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"}},"title":"Label_ReportView"}},"title":"SimpleObject_ReportView"}},"realm":{"type":"object","properties":{"code":{"type":"string"},"id":{"type":"integer","format":"int32"},"idString":{"type":"string"},"label":{"type":"object","properties":{"baseModel":{"type":"object","properties":{"baseModel":"circular(BaseModel_ReportView)"},"title":"BaseModel_ReportView"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"}},"title":"Label_ReportView"}},"title":"SimpleCodeObject_ReportView"}},"title":"FundingSource_ReportView"},"label":{"type":"object","properties":{"baseModel":{"type":"object","properties":{"baseModel":"circular(BaseModel_ReportView)"},"title":"BaseModel_ReportView"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"}},"title":"Label_ReportView"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser_ReportView"},"lastModifiedDate":{"type":"string","format":"date-time"},"notes":{"type":"string"},"programs":{"type":"array","items":{"type":"object","properties":{"code":{"type":"string"},"id":{"type":"integer","format":"int32"},"idString":{"type":"string"},"label":{"type":"object","properties":{"baseModel":{"type":"object","properties":{"baseModel":"circular(BaseModel_ReportView)"},"title":"BaseModel_ReportView"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"}},"title":"Label_ReportView"}},"title":"SimpleCodeObject_ReportView"}},"programsWithAccess":{"type":"array","items":{"type":"object","properties":{"code":{"type":"string"},"id":{"type":"integer","format":"int32"},"idString":{"type":"string"},"label":{"type":"object","properties":{"baseModel":{"type":"object","properties":{"baseModel":"circular(BaseModel_ReportView)"},"title":"BaseModel_ReportView"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"}},"title":"Label_ReportView"}},"title":"SimpleCodeObject_ReportView"}},"startDate":{"type":"string","format":"date-time"},"stopDate":{"type":"string","format":"date-time"},"usedUsdAmt":{"type":"number","format":"double"}},"title":"Budget_ReportView"}}}},"description":"Returns the complete list of budgets"},"500":{"content":{"text/json":{"schema":{"type":"object","properties":{"messageCode":{"type":"string"}},"title":"ResponseCode_ReportView"}}},"description":"Internal error that prevented the retrieval of the budget list"}}}
+>
+  
+</StatusCodes>
+
+
+      

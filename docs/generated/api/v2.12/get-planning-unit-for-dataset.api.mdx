@@ -1,0 +1,71 @@
+---
+id: get-planning-unit-for-dataset
+title: "Get planning unit list for programId and versionId"
+description: "API used to get the planning unit list for specific programId and versionId."
+sidebar_label: "Get planning unit list for programId and versionId"
+hide_title: true
+hide_table_of_contents: true
+api: eJy9VcFS2zAQ/RXNXtrOqAkFevGp6VBKLhBIcmIyzGJvYrW2JKR1aMbjf+9IMXaAprRMp6doFWn3vfV7qxoYVx6Sa8iQ0RPDQkJGPnXKsjIaEhhNxqLylAk2YkUsOCdhC9Ra6ZWotGJRKM9iaZzwllK1VKmwzqwcluNMoM7EmpxXRo+zgQAJxpJDjjEksCKetMnmWvGpcSctEAkWHZbE5ALAGjSWBAl0uUGCCgAtcg5PUfcIOEcWG1OJe9QcSOwnABIc3VXKUQYJu4ok+DSnEiGpgTc2lFeaaUXh6NK4Enm7dXQITSM7jB3j32LsTv1HjItw3VujPflw4/DgIPw8BnZFXDnt96AACanRTJpjSfrBw28+3KubppFwfHC0PyOKM2Y7ZeTKD04vrj6PT06+nAu1jLXmnpzIDHmhDYsc1yQwTcn7F0se/2HJ84vZzenF/PzkoWSvE+N6oT4ombIeDv14mfvHX3VzrJmcxkKQc8Ztv7V1tCbNwVU5CUfsSK2xEGb5tw1vJJTEuWnNFG3DOSQwRKuGdsdbw47rsO6WzbAjPay7ZQMSPLn1g/UqV0ACObP1yTAkHtxVqDl4PVoZNRYbVqkfGLd6pvOJM1mVhkBsk8ZhcTmagYQ1OoW3RRRjVKfSSxNpKi6Cli8fFYrzZPRQTcyMKUKSLW5I4HDw4XBw8AzBaDJ+44OvtnKKTb8czcQ0wmn7i2nsb2vh09F0IpiwBPmE/v39/Qv0qUQVbpxNpzchz83Z5adV7tP31pfxSCOhUClpTzsVRxbTnMQW/+OSS2MGt+jCjAFrPJeody5+Jd43kfcM4qcNqnuB/fN5386kKFtboNKBfaRXt1K9BrQqCHdHrCHcGfTJbrBLI+mDhYTceA756voWPc1d0TRh+64it4HketHrLco6Uz6sM0iWWHj6TVPeXrUz95147cvyyz60m6g30QtFFSKQ8J02j5668La8Cu1r35hXoO2/RLNoJOSEGbnY5+3/ozQlyzs3+0kWjN9Nsa9fZtA0PwFLqPyJ
+sidebar_class_name: "get api-method"
+info_path: docs/generated/api/v2.12/quantification-and-analytics-tool
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get planning unit list for programId and versionId"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/api/planningUnit/programId/{programId}/versionId/{versionId}"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+API used to get the planning unit list for specific programId and versionId. 
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"programId","in":"path","description":"programId that you want to the planning unit list for","required":true,"schema":{"type":"integer","format":"int32"}},{"name":"versionId","in":"path","description":"versionId that you want to the planning unit list for","required":true,"schema":{"type":"integer","format":"int32"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Returns the planning unit list","content":{"text/json":{}}},"403":{"description":"Returns a HttpStatus.FORBIDDEN if the User does not have access","content":{"text/json":{}}},"404":{"description":"Returns a HttpStatus.NOT_FOUND if the programId or versionId specified does not exist","content":{"text/json":{}}},"500":{"description":"Internal error that prevented the retreival of planning unit list","content":{"text/json":{}}}}}
+>
+  
+</StatusCodes>
+
+
+      

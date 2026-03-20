@@ -1,0 +1,71 @@
+---
+id: get-user-list-for-program
+title: "Get user list by programId"
+description: "API used to get user list by providing programId"
+sidebar_label: "Get user list by programId"
+hide_title: true
+hide_table_of_contents: true
+api: eJydVN9v4zYM/lcEvmwDvKTr3V78tBx6vQYY2rRpn4qgYG0m1mZLKkWnCwz/7wPl/Nx1d91eLEom+X2kPrEDwVWE/BHaSAyLDEqKBdsg1jvIYTKbmjZSacSbFYnabGobxTxvTGC/tqV1K7VWjM20hAx8IEYNn5aQw4rkIRL/bqNcep4NfpBBQMaGhFjBO3DYEORwnMcqfkCp4J+k9l5GKhSz8a15RSfKUSo64rj0DBkwvbSWqYRcuKUMYlFRg5B3IJugqNYJrUhdl54blOHowzn0/ULDY/AuUtSI87MzXU753JG07OIpOGRQeCfkJCHRXzL+I6p71/d9Bh/PPvx7IjRXImEuKG0cXd7cfZpeXHy+NnaZILSfpvQUjfNiKlyTwaKgGHeXtHd6F4+P7+RxfXP/dHnzcH2x4xF9Q8YPdutK4nqjWihR8ECvQSmq0XdI/PpWV6dOiB3Whpg9D1cdmNbkRPVYkWESJrvGWlm8r/F9Bg1J5bfSTEKUCnIYY7BjzTF89hIbd3uzhwwi8Xqn2ZZryKESCTEfa/zopUUndmmLpH90WG/EFnHkefWViGfsy7bQjRmSqlrN7eQeMlgjW3yuk+SSBq1b+lSNlVoVe3sCZNCVZrJDM/fe15qEOA5Q56NfzkdnXzGYzKY/JM3s1FOR4pt5orNtIxapjdv3eTmZz4xQesGn5b++vn6nfGrQasTVfP6keZ6ubn9bVbH4OcQmufQZ1LYgF+kIcRKwqMgM/E8hl96PnpFBLzX4KA26o8Avb0yr/Ww5aUR30Mv/mXfbIZKEFmq0TgtJTLutuB4Bg1X6MbV1uxznyA+bRQaVj6JRXfeMkR647ns9fmmJN5A/Lg4CSTosbVS7hHyJdaRvVPfj3XYU/mT+4wx9s8jtIbpN0mzd6g4y+JM2J7O8X/QZVIQlcSI8/J8UBQU5ijw8VZX8/pl++XwPff83tG1LrA==
+sidebar_class_name: "get api-method"
+info_path: docs/generated/api/v2.12/quantification-and-analytics-tool
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get user list by programId"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/api/user/user/programId/{programId}"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+API used to get user list by providing programId
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"programId","in":"path","description":"programId that you want to the user list for","required":true,"schema":{"type":"integer","format":"int32"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Returns the user list","content":{"text/json":{}}},"403":{"description":"Returns a HttpStatus.FORBIDDEN if the User does not have access to get the User list","content":{"text/json":{}}},"404":{"description":"Returns a HttpStatus.NOT_FOUND if the some of the underlying data does not match.","content":{"text/json":{}}},"500":{"description":"Internal error that prevented the retreival of user list","content":{"text/json":{}}}}}
+>
+  
+</StatusCodes>
+
+
+      

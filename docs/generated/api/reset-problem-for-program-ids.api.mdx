@@ -1,0 +1,71 @@
+---
+id: reset-problem-for-program-ids
+title: "Reset Problem Reports for Programs"
+description: "Reset the problem reports for a list of program IDs"
+sidebar_label: "Reset Problem Reports for Programs"
+hide_title: true
+hide_table_of_contents: true
+api: eJzNVVFv00AM/isnP4e2GgxEhJDKGKgIobF18FD1wU3c5CC5y3zOSlXlvyNfUghlvPC0PqV3vs/+7M/2AXIKGdtGrHeQwjUFEiMlmYb9pqLaMDWeJZitZ4OmskGM3+ptwVibxdsACfiGGBVhkUMKrBhX/fN3nq9600Wulkx3LQV54/M9pAfIvBNyop/YNJXNIsr0W9BgDhCykmrUL9k3BCkgM+4hAStUh9G5dUIFMSSw9Vyj9EdPz6Drui454bgs6SEeRrzhv+hHw63nIXbLlEMq3FKnB6HxLlCM5Gw2O2Ek9EP+TcVvvlEmkEDDmj6xPUxNIWBBFz6nkXEQtq4A5SJWKuorFZ1HywdYxkqGB7n8o45dAs9mTx8VidtAbHJPwTgvpsR7MmyLUmKxMMsoKEMbjjx6Ds8eFYdB/5HB1rcu1yDPH5laFk6IHVaGmD2bXWkr6rtBrCt+yWSspB4fiwDp6hfJtygI6wRqktLrMGjaGDVKCSlMsbHTAesLcdBeH08LSCAQ3xMr5gFariCFUqQJ6VTfTu5adGK3w5xAh9VebBYmngs4pfSenE4lyk2PaRSuW6uLrGUr++hjQ8jE81bjW63H1zdagz7NY6Pjv3fHQfPh6/Iv35eazth7H74ujfjv5Ix18aAfUKl5E1HMq3j5WplHf5AO+JAcy6kJiMlWdVz/HqCXP7ButLqr2ToB67Zeo/szkM9/JMzMjxkzS+8rSKCyGbkQxeMwep83mJVkPvYXZiiTOZvMIDmpyG63m2A01wJMB6ww/bi4uPx0c/lE34w0+HmuibrvASGFs8nLF6vz8+cv1mrV+CA1ulEk/S4apGGuR3toUFs4zfuoof5zkw0pj83YVGidhhZZHwYRrwAb2zfiSMZxPYyEvE6g9EHU/HDYYKBbrrpOj+9aYpXeOoF7ZIubWMF1l0BJmBNHVX6nPaRw0ZN5stSg1Lxq4xI83ZRdcnwxzzJqZGT7e6p04668utVSbIYtXMfxAYw7pYE7SCEudfUQ9R/PDlChK1os1LaH1N9Ps8rffg==
+sidebar_class_name: "put api-method"
+info_path: docs/generated/api/qat
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Reset Problem Reports for Programs"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"put"}
+  path={"/api/programVersion/resetProblem"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Reset the problem reports for a list of program IDs
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={undefined}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"content":{"application/json":{"schema":{"type":"array","items":{"type":"integer","format":"int32"}}}},"description":"The list of program IDs to reset the problem list for","required":true}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"content":{"text/json":{"schema":{"type":"object","properties":{"messageCode":{"type":"string"}},"title":"ResponseCode"}}},"description":"Resets the problem list for a list of program IDs"},"403":{"content":{"text/json":{"schema":{"type":"object","properties":{"messageCode":{"type":"string"}},"title":"ResponseCode"}}},"description":"User does not have rights to access this program"},"404":{"content":{"text/json":{"schema":{"type":"object","properties":{"messageCode":{"type":"string"}},"title":"ResponseCode"}}},"description":"Program not found"},"500":{"content":{"text/json":{"schema":{"type":"object","properties":{"messageCode":{"type":"string"}},"title":"ResponseCode"}}},"description":"Internal error while resetting program problem list"}}}
+>
+  
+</StatusCodes>
+
+
+      

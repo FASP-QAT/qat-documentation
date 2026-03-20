@@ -1,0 +1,63 @@
+---
+id: get-realm
+title: "Get Realms"
+description: "Retrieve a list of realms"
+sidebar_label: "Get Realms"
+hide_title: true
+hide_table_of_contents: true
+api: eJztWFFv20YM/isHPm2AGgfpsqLGMCBJkyBFszapuz4EwUBLtHWtdKfyKCeGof8+8CSvcppkjtMBXdEn20d+5EceeXf0AjIKKdtKrHcwhHMStjQjg6awQYyfGCYsygAJ+IoYVe8kgyFMSc5VAgkwhcq7QAGGC9jZ3taP1DshJ/pV6FoGH4LaX0BIcyoxLs8rgiEgM84hAStUht66H3+gVCCBitWx2NY8pmJn1NMbe18QOmgSldVYHHgX6jIGdOqd5OHEvcEgPYh1QlNiSGDiuURpl57uqI0xBjr1GRWPo9IzA6nltC6Qf9pfLv4MCaRMKJTtz//dUR2INedrBaDKDss+ryBs3RSaJgGxUujSPgabvgvECumovEC5BdXzkaHQE7ElKajAIKc+sxP7bQTR5/OQSFbtdZvW/P/3J6MJ1kXXo7fW6MQzpRjkcQ1j3YyceJ5vgC1w/BUb7Ue//ujXbyK0DfdnTMXarKL2X+RuYbUUTvgeYXWfMFR3CL+7CnoVD6DvKLYESrw+9eEUr4+x5ozRFmuyLPH6rCpGviBGl9K6KOsOfO3kyLO24vqoDUm2QOs2AL4hTr+k6epyvIrJfD0uqANtlpI+6qCW15PJmljnX0+WF+lRLTXTked9L+LLFxjysUdet+puNTXy1WPs6N3+VQh1hjagE8eRg9U9/HxGRemajdnrvfaV1DRNfDjdGIhqdsFITjcnoiaBX7afPmjYueM0KSkEnNIdUa3wbCetqHkLWz0+TOYpGOfF5Dgjw3aaSzDiW/qfue8+cFD7r7mfONFjsjDE7Nlc5bYgMyUR66Yt7RhBaxOnAYYX3b5dJlCS5L4bS5UiSg5DGGBlB9xNqYF4RqywBdSsD71cpArDgWptfarRiZ3YNE646LCYi03Dlmc9aleZHpPTSZgy09o0aq65VBdpzVbm0ceYkIn3amVycdkXv9XUttnrKy1/HS3r9OX70Re+DzVLsRpfvh8Z8R/JGeviQlvfQ7MfrZjfovB3jTz60wdvlECy3CVNQMyndROvBFZ9na3kxOwtk2JG3heQQGFTciFue3u9wV6FaU7mVSswfxIHRe5sbUNyI+lXV1dbGNU1x4POVhi8Ojk4/OPt4RPF9KrnbE9zMWsNwhB2tp4/u9jd/fXZpWpVPkiJrsfkmMScL/+5WAmrV/L3/t3R5Sg2RVWgjXNCjGHR1dcFYGWhO3S0CnOvo88FLBY6T7zjoml0+VNNrDVxmcAM2aLeLloSCeSEGXEsl4801wSmKVVawTMs6n/cx55s+mV+fDiCpvkbpDYWRA==
+sidebar_class_name: "get api-method"
+info_path: docs/generated/api/qat
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get Realms"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/api/realm"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Retrieve a list of realms
+
+<ParamsDetails
+  parameters={undefined}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"content":{"text/json":{"schema":{"type":"array","items":{"type":"object","properties":{"active":{"type":"boolean"},"actualConsumptionMonthsInPast":{"type":"integer","format":"int32"},"baseModel":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":"circular(BaseModel)","createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"}},"title":"BaseModel"},"createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"defaultRealm":{"type":"boolean"},"forecastConsumptionMonthsInPast":{"type":"integer","format":"int32"},"inventoryMonthsInPast":{"type":"integer","format":"int32"},"label":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":"circular(BaseModel)","createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"}},"title":"BaseModel"},"createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"labelId":{"type":"integer","format":"int32"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"}},"title":"Label"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"},"maxMosMaxGaurdrail":{"type":"integer","format":"int32"},"maxQplTolerance":{"type":"integer","format":"int32"},"minCountForMode":{"type":"integer","format":"int32"},"minMosMaxGaurdrail":{"type":"integer","format":"int32"},"minMosMinGaurdrail":{"type":"integer","format":"int32"},"minPercForMode":{"type":"number","format":"double"},"minQplTolerance":{"type":"integer","format":"int32"},"minQplToleranceCutOff":{"type":"integer","format":"int32"},"noOfMonthsInFutureForBottomDashboard":{"type":"integer","format":"int32"},"noOfMonthsInFutureForTopDashboard":{"type":"integer","format":"int32"},"noOfMonthsInPastForBottomDashboard":{"type":"integer","format":"int32"},"noOfMonthsInPastForTopDashboard":{"type":"integer","format":"int32"},"realmCode":{"type":"string"},"realmId":{"type":"integer","format":"int32"}},"title":"Realm"}}}},"description":"Returns the list of realms"},"403":{"content":{"text/json":{"schema":{"type":"object","properties":{"messageCode":{"type":"string"}},"title":"ResponseCode"}}},"description":"User does not have rights to list realms"},"500":{"content":{"text/json":{"schema":{"type":"object","properties":{"messageCode":{"type":"string"}},"title":"ResponseCode"}}},"description":"Internal error while getting realm list"}}}
+>
+  
+</StatusCodes>
+
+
+      

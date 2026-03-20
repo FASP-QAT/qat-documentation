@@ -1,0 +1,71 @@
+---
+id: get-dataset-data
+title: "Get dataset list for programId and versionId"
+description: "API used to get the dataset list for specific programId and versionId."
+sidebar_label: "Get dataset list for programId and versionId"
+hide_title: true
+hide_table_of_contents: true
+api: eJy9Vctu2zAQ/BViL20B1k6T9KJTXeTlS152ToERbKS1xVYiGXLl1BD07wVpW7LzTlD0JJLm7syuZ4c1MM48JNeQIaMnhomEjHzqlGVlNCQwOB+KylMm2IgZseCcxOqyKJRnMTVOeEupmqpUWGdmDsthJlBnYk7OK6OHWU+ABGPJIcc9JDAjPlimCR+QYNFhSUwu8KlBY0mQQJsQJKjAxyLn8JBkB8s5sliYStyj5sD5Kb4gwdFdpRxlkLCrSIJPcyoRkhp4YQOw0kwzClenxpXIy6O9XWga2bJrC3yRXXvrv7CbhHBvjfbkQ8Tuzk74bFO6JK6c9o/wQUJqNJPmCEZ/uP/Lh4i6aRoJ+zt7z+dCccJsR4xc+d7R2eXP4cHB4alQ04hy5cmJzJAX2rDIcU4C05S8fxVy/42Qp2fjm6Ozq9ODNWSnCuM6La7FSllHh/68Xvv3p/o41ExOYyHIOeOW/691NCfNYWRyEo7YkZpjIcz07a1uJJTEuVlNShwPziGBPlrVz7rB6bdF9ut22fTbavt1u2xAgic3X09Y5QpIIGe2PumHvL27CjWHOY5jihqLBavU94ybPRL1uTNZlYaNWCaNRnAxGIOEOTqFt0XUXxSk0lMTq1RcBPlebAFFrxis0cTYmCIkWfKGBHZ733Z7O48YDM6Hn3wYoqWOYrcvBmMxinRW7cU0tnc1r0eD0blgwhLkg/Lv7+9fKZ9KVCHiZDS6CXluTi5+zHKffrW+jFcaCYVKSXvaQBxYTHMSS/7bkFNjerfogqGANZ5L1BuBx8SPffYZe33YmrpT1j/075X1RKXaApUOFceS6pU6rwGtCmS2jX3DwpPNzSb/pNtMJOTGc0hX17fo6coVTROO7ypyC0iuJ53EopIz5cM6g2SKhacXuvH5cuWsX8T734wnG7A6RL2Iwi+qsAMJv2mx9XyFV+NDPN//enyAZ9f9ZtJIyAkzcrG3y98HaUqWNyI7vwrz3XrV8eEYmuYvQXbh/g==
+sidebar_class_name: "get api-method"
+info_path: docs/generated/api/v2.12/quantification-and-analytics-tool
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get dataset list for programId and versionId"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/api/datasetData/programId/{programId}/versionId/{versionId}"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+API used to get the dataset list for specific programId and versionId. 
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"programId","in":"path","description":"programId that you want to the dataset list for","required":true,"schema":{"type":"integer","format":"int32"}},{"name":"versionId","in":"path","description":"versionId that you want to the dataset list for","required":true,"schema":{"type":"integer","format":"int32"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Returns the dataset list","content":{"text/json":{}}},"403":{"description":"Returns a HttpStatus.FORBIDDEN if the User does not have access","content":{"text/json":{}}},"404":{"description":"Returns a HttpStatus.NOT_FOUND if the programId or versionId specified does not exist","content":{"text/json":{}}},"500":{"description":"Internal error that prevented the retreival of dataset list","content":{"text/json":{}}}}}
+>
+  
+</StatusCodes>
+
+
+      

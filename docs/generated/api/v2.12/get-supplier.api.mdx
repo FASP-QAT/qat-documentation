@@ -1,0 +1,71 @@
+---
+id: get-supplier
+title: "Get Supplier for a SupplierId"
+description: "API used to get the Supplier for a specific SupplierId"
+sidebar_label: "Get Supplier for a SupplierId"
+hide_title: true
+hide_table_of_contents: true
+api: eJydlE1v2zAMhv+KwMs2wEuytLv4NA/9yqVNmvRUBAVr07E2W1IlOllg+L8PUpzmo93a7WRbFvm+pB6xAcaFg/geXG1MKcnCPIKMXGqlYakVxJCMR6J2lAnWYkEsuCAx7XaLXFuBwhlKZS7T5/VRBhFoQxZ9klEGMSyIt38hAoMWK2KyXrwBhRVB/GwihEsvbpALOHa0UxFcIIu1rsUKFXuHx+4gAktPtbSUQcy2pghcWlCFEDfAa+NlpWJaBFu5thXyZulkCG079+HOaOXI+YjhYOAfh35uiWur3IE2RJBqxaQ4CNEv7v9wfnfTtm0Ep4OTP+dBccVspoxcu97Fze330dnZ+bWQeVC4c2RFpskJpVkUuCSBaUrOvSl5+k7J65vZw8XN3fXZVnKv4d1RU7azQL+k4zfEv77Wt5FisgpLQdZquzlLY2lJij1uBQlLbEkusRQ6f19r2wgq4kJ3yAXUuIAY+mhkfwtYv9mh1kIEjuxyy2JtS4ihYDYu7vuo3lONij3fgWZUWK5Zpq6n7eIFm2Orszr1H2KTNFyRSTKDCJZoJT6WgaSAllS5DjVILj2IkwMhgSoTyVZNzLQufRKybiM17H0Z9gYvHCTj0Qfnr8KGitDHSTIT02Cnax6moXndvbtIpmPBhBVER+WvVqs3yqcKpY+4mk4ffJ6Hq8m3ReHSz8ZVYUsbQSlTUo72FBODaUFi4/9QMte694gW/FEa7bhCtRd4SXw8fQ6GzkEvmh0o/z/GuiERODMlSuUrCpabjq17QCM9RTtA471RNo+g0I79vqZ5REd3tmxbv/xUk11DfD/fsREQzKTz7xnEOZaO/lLVx9tuuH0S/zgVXy2rW0S1DriWtf+CCH7S+nA8t/M2goIwIxscbzYkaUqG90J3l9Pj/nwxL89n0La/AY23PVY=
+sidebar_class_name: "get api-method"
+info_path: docs/generated/api/v2.12/quantification-and-analytics-tool
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get Supplier for a SupplierId"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/api/supplier/{supplierId}"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+API used to get the Supplier for a specific SupplierId
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"supplierId","in":"path","description":"SupplierId that you want to the Supplier for","required":true,"schema":{"type":"integer","format":"int32"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Returns the Supplier","content":{"text/json":{}}},"403":{"description":"Returns a HttpStatus.FORBIDDEN if the User does not have access","content":{"text/json":{}}},"404":{"description":"Returns a HttpStatus.NOT_FOUND if the SupplierId specified does not exist","content":{"text/json":{}}},"500":{"description":"Internal error that prevented the retreival of Supplier","content":{"text/json":{}}}}}
+>
+  
+</StatusCodes>
+
+
+      

@@ -1,0 +1,71 @@
+---
+id: get-health-area-by-realm-country
+title: "Get HealthArea list for RealmCountry"
+description: "API used to get the complete HealthArea list for a RealmCountry"
+sidebar_label: "Get HealthArea list for RealmCountry"
+hide_title: true
+hide_table_of_contents: true
+api: eJytVU1v2zAM/SsCL9sAL2nT7eLT3G8DQ5sm6akICtamY222pEp0usDwfx+kpM1Hs3UFdkokkHzvUY90C4wzB/EdlIQVl4klhGkEObnMSsNSK4ghGaaicZQL1mJGLLgkkenaVMQkLl8SRSUdi0JbgWJEWNUnulFsFxCBNmTRV0tziGFGvM46XuzEGrRYE5P1vFpQWBPEYDeC0hwikJ6ZQS5hl+5oK1RwiSwWuhFPqNhL8PT3sIYILD020lIOMduGInBZSTVC3AIvjGchFdOMfGihbY28vDoaQNdNfbozWjlyPmNwcOB/dqlxY5XbRwEiyLRiUhzw6Bf3fzif1HZdF8GXg6M/l0NxyWzGjNy43vn16Dg9PT27ErIIQLeOrMg1OaE0ixLnJDDLyLm3IA8H/wg5HJ2dXF+dppP0+ur+PEm/n50+g+88hjOUyUJSviZEv95W/3VfM1PFZBVWgqzVdvnOxtKcFHuvliQssSU5x0ro4l397iKoiUu9cmtwJZcQQx+N7K9npb9ty367fe4gAkd2/uzlxlYQQ8lsXNz3pXqPDSqWhczCdKDCasEycz1tZ698PbQ6bzJ/EMuiYdZukglEMEcr8aEK1gtelKrQQZjkyjv3ZgtIoMpF8owmJlpXvghZt4Qa9A4HvYNXDJJh+sH5EVr6J/T4JpmIcaCz6ihmoaOruT1PxkPBhDVEO/Kfnp7ekE81Sp9xOR7f+zr3lzffZqXLPhtXh5AugkpmpBxtICYGs5LEkv82ZKF17wEt+Pc12nGNaiPxgnjvNtvZT1stadcm+g9rcrVlghlNhVJ5hUFCuzLgHaCREG2u6+j1box3bqYRlNqxT2/bB3R0a6uu89ePDdkFxHfTtYWCU3Pp/P8c4gIrR39R/XG0Wpqfdmf9HYt3r/DVJapFMHjV+BNE8JMWrz8I3bQLXcnJBgHLoCTLyPBG+nrO/ZC8zPjF2QS67jetUnFT
+sidebar_class_name: "get api-method"
+info_path: docs/generated/api/v2.12/quantification-and-analytics-tool
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get HealthArea list for RealmCountry"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/api/healthArea/realmCountryId/{realmCountryId}"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+API used to get the complete HealthArea list for a RealmCountry
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"realmCountryId","in":"path","description":"RealmCountryId that you want to the HealthArea list for","required":true,"schema":{"type":"integer","format":"int32"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Returns the HealthArea list","content":{"text/json":{}}},"403":{"description":"Returns a HttpStatus.FORBIDDEN if the User does not have access","content":{"text/json":{}}},"412":{"description":"Returns a HttpStatus.PRECONDITION_FAILED if the RealmCountryId specified does not exist","content":{"text/json":{}}},"500":{"description":"Internal error that prevented the retreival of HealthArea list","content":{"text/json":{}}}}}
+>
+  
+</StatusCodes>
+
+
+      

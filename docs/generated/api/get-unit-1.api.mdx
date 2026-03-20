@@ -1,0 +1,71 @@
+---
+id: get-unit-1
+title: "Get Unit"
+description: "Get a Unit by ID"
+sidebar_label: "Get Unit"
+hide_title: true
+hide_table_of_contents: true
+api: eJztWF9v20YM/yoHPrXA1c6yZsWEYYDTZoWLtEMTZ30IjICWaPta6U65o5IZhr77wJO8yInjZYMfssJPtkge+eOfo0QuIaOQelOycRYSeE+sUF1Yw2qyUMN3oMGV5FHYwwwSmBEL9+oH0FCix4KYfIDkcnlP02hOqhI9UYkRUok8Bw0WC4IEhDnMQIOn68p4yiBhX5GGkM6pQEiWwItSJI1lmpEHDVPnC+SG9OMh1PVYjofS2UBBThweHMhP6iyT5aiD/uT+1yCYlg9Vu8lXSll88eInm0YNpmxuqCM3cS4ntFBrmGCgjy6jfGdqIDU+rXL0L45XxJegIfWETNnx4p8NVYG8pOcJIdNRuMnB3+KBvbEzqGsNbDgX0jEGk14E8nKkhfIOecOpjo0MmV6xKUgO5Rj4o8vM1DwPJ7p4/o0n6/rapNX///xkpiAbTHMztuM3T8VusvPG6EPskoDJDm/N/vLtL9+zcO0/5mdC+ZNRRekrso9fq6up38IstzFD+Qjzu6ug09iA6tUnyDbT56Yoc/q9cXXfu/a9a9+79r3rWfSu78U3HSfAty7bZEyvxsMnTYF3yGQ2hVoo69PoGXHlbVDcTqVi4fXB613MigWFgDN6xJEOtrN2UI2SGzDGqds6VlNX2UwQHu1mmt0ZwqFlKY9ckffOq9u5yUnNiNnYWSe0ohFnshRo8jHWUBDPXbs/iJsDnkMCfSxNX870l026a9AQyN+sVgqVl7fcnLkMSV+ke9cVWjZTk8aVBFrMF2zS0HNe6uz+MsPK6oIy1ehUok5WBoHSyhteRBsTQk9+UAmiy3GXfS7xbULYFVo9/bYqww9fRg9sn0ioYkw+fBkpdt/IKmMjoSnfRB1HLeqXyPwV2sVHfNtHDuhVqiQAMazGTp0AWLf1eS0marAKiho5l4OG3KRkQ8x9u3sZlJjOSZ02DPUHeZkD1WHvAPS9oN/e3vYwikuM+62u0D8dvj35dH7ySs50SujzQGJx0yiEBA57P7+5PDr66c1YpEoXuEDbQSILp1gk9wLYqfpNS6k2MPE6lDma+GUUgS/b4roELA00fQQ0JG0/GWuYu8DCXy7lU+rC53Ut5OuKvFTEWMMNeoMT8UfWWibI/wySKeaBtuB8cdZusl6q9e3XRrQtEe1CAoZ5JU+g4Rst7rZj9bjWMCfMyEcwDXOQplRy59hdW6i7l+39yQjq+i8Dj8ad
+sidebar_class_name: "get api-method"
+info_path: docs/generated/api/qat
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get Unit"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/api/unit/{unitId}"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Get a Unit by ID
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"description":"The unit ID","in":"path","name":"unitId","required":true,"schema":{"type":"integer","format":"int32"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"content":{"text/json":{"schema":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":"circular(BaseModel)","createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"}},"title":"BaseModel"},"createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"dimension":{"type":"object","properties":{"id":{"type":"integer","format":"int32"},"idString":{"type":"string"},"label":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":"circular(BaseModel)","createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"}},"title":"BaseModel"},"createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"labelId":{"type":"integer","format":"int32"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"}},"title":"Label"},"name":{"type":"string"}},"title":"SimpleObject"},"label":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":"circular(BaseModel)","createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"}},"title":"BaseModel"},"createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"labelId":{"type":"integer","format":"int32"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"}},"title":"Label"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"},"unitCode":{"type":"string"},"unitId":{"type":"integer","format":"int32"}},"title":"Unit"}}},"description":"Returns the unit"},"404":{"content":{"text/json":{"schema":{"type":"object","properties":{"messageCode":{"type":"string"}},"title":"ResponseCode"}}},"description":"Unit not found"},"500":{"content":{"text/json":{"schema":{"type":"object","properties":{"messageCode":{"type":"string"}},"title":"ResponseCode"}}},"description":"Internal error while getting the unit"}}}
+>
+  
+</StatusCodes>
+
+
+      

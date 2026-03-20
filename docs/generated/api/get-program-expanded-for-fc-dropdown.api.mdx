@@ -1,0 +1,71 @@
+---
+id: get-program-expanded-for-fc-dropdown
+title: "Get Forecast Programs for Realm (expanded)"
+description: "Retrieve a list of forecast programs for a realm with additional details"
+sidebar_label: "Get Forecast Programs for Realm (expanded)"
+hide_title: true
+hide_table_of_contents: true
+api: eJztWN9v2zYQ/leIe0oALQ4yZMWEYYDzw4GLdE0Tr30wjOAsnS22MqkcT3YNw/97QUpaFcfOnG0vxfJki3c83n08kvfdClJyCetCtDUQwy0Ja5qTQpVrJ8pO1MQyJehEFWynjDPnRxQqJsxnaqElU5im2hvAXKUkqHMHEdiCGP1oP4UYpiQ31fzLrwWalNKe5V5ywbZI7cJABAUyzkiIHcTD1YZfg4zqBfsXYX3J6LtDYhXXjkME2k8oUDKIwOCMIIYwtZ9CBEwPpWZKIRYuKQKXZDRDiFcgy8KraiM0JYYIJpZnKNXQzyewXo/8dFdY48j5GSfHx/4nsUbISLBBX6Xz2XmXV09NIzMuvYNCM9cat+PPlIiHgD1ooivzmIieU0tvbG1OaGAdQWLTtsQJazMNgpKZjHwkdjX0e0QWQUaYS9Zlwn56rZ3s4fUzQLXt7WltBwY749T7RqbTu2rSNis5jin/ey/G6OidTV+oConmpMyRD86awXuf7xd2YU4+alocehdES+7t7dD5y8u9tzJo35PZHfD9hJ8RFs8JXbFF2IriOmhtRNCS3+lZkdO5Tel9wG+L6uvO/jg7G4Gx7yfvrJHM9U2vlJKpZ/nMitjZBbpsbJH3Da9t6gad/GNDlqdotMPq7Xi9Yv4HifiCKybA6euGwbKgvUMOFcS5LY3w8jWnXnNqM9imwtw3m6bamn9XGr2m0g+cSjuqnyd6NWd6qriOnjK3ko0LxKihbtsYm4/k9IXEZcdOz8g5nIZj8TwmtzVr8prbYn4cSd8IseeSxByYHnruSXMyQmmIryZ7mPsg20ywWhWnnkJCwy0djCKYkWS2JqKBbEoGMXSw0J201uvUVjqTpEM1Se0EzDqr+nivIQJHPG9Iask+yzORwsUdb+zooUQjeqKTUH2gwXwpOnFHlqewGegVGU+RKVWVTeXNeZbpKClZyzKsMSZk4m7pHR6O2uI7v0/1oWspNV+95mC8/TR4svalBzlg9/bTQIn9QkZpEwaqAxWrs2BF/RaEv0PNlQMRDRKImi33AFS1u5lY78DjtT48wkR1G1DUwNocIsh1QsaFHKr5erfAJCN1XQlUzWbVydExRBugLxaLIwzqHuNObct1rvvnl3/cXf7k57RS8UPXYzGvDEIMJ0e/vhmenv7yZhQqA+tkhqblyRWJ6jUdkJv2eboN7YiDJlMONyFuna//sq1SQx4ObJGjDu2AAMmqzuohYKG9N63eSrWGvy0TiKDxGep3CyKImwdsFEFm/bs0hNXK3+V/cr5e++GHknztMxxFMEfWOPaA+k6Ndv5/CvEEc0fPwHBwW3dfDtVLGjpbQ24eTeOfzDnmpf+CCL7QstXwWY+qZkRKHHytpN0koUJa875ff+v2XXF1OYD1+hstDpob
+sidebar_class_name: "get api-method"
+info_path: docs/generated/api/qat
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get Forecast Programs for Realm (expanded)"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/api/dropdown/program/fc/expanded/realm/{realmId}"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Retrieve a list of forecast programs for a realm with additional details
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"description":"The realm ID for the programs to retrieve","in":"path","name":"realmId","required":true,"schema":{"type":"integer","format":"int32"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"content":{"text/json":{"schema":{"type":"array","items":{"type":"object","properties":{"active":{"type":"boolean"},"code":{"type":"string"},"currentVersionId":{"type":"integer","format":"int32"},"healthAreaIdList":{"type":"array","items":{"type":"integer","format":"int32"}},"healthAreaList":{"type":"array","items":{"type":"object","properties":{"code":{"type":"string"},"id":{"type":"integer","format":"int32"},"idString":{"type":"string"},"label":{"type":"object","properties":{"baseModel":{"type":"object","properties":{"baseModel":"circular(BaseModel_DropDown2View)"},"title":"BaseModel_DropDown2View"},"labelId":{"type":"integer","format":"int32"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"}},"title":"Label_DropDown2View"}},"title":"SimpleCodeObject_DropDown2View"}},"id":{"type":"integer","format":"int32"},"idString":{"type":"string"},"label":{"type":"object","properties":{"baseModel":{"type":"object","properties":{"baseModel":"circular(BaseModel_DropDown2View)"},"title":"BaseModel_DropDown2View"},"labelId":{"type":"integer","format":"int32"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"}},"title":"Label_DropDown2View"},"noOfMonthsInFutureForBottomDashboard":{"type":"integer","format":"int32"},"noOfMonthsInPastForBottomDashboard":{"type":"integer","format":"int32"},"organisation":{"type":"object","properties":{"code":{"type":"string"},"id":{"type":"integer","format":"int32"},"idString":{"type":"string"},"label":{"type":"object","properties":{"baseModel":{"type":"object","properties":{"baseModel":"circular(BaseModel_DropDown2View)"},"title":"BaseModel_DropDown2View"},"labelId":{"type":"integer","format":"int32"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"}},"title":"Label_DropDown2View"}},"title":"SimpleCodeObject_DropDown2View"},"programTypeId":{"type":"integer","format":"int32"},"realmCountry":{"type":"object","properties":{"code":{"type":"string"},"id":{"type":"integer","format":"int32"},"idString":{"type":"string"},"label":{"type":"object","properties":{"baseModel":{"type":"object","properties":{"baseModel":"circular(BaseModel_DropDown2View)"},"title":"BaseModel_DropDown2View"},"labelId":{"type":"integer","format":"int32"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"}},"title":"Label_DropDown2View"}},"title":"SimpleCodeObject_DropDown2View"},"realmId":{"type":"integer","format":"int32"},"regionList":{"type":"array","items":{"type":"object","properties":{"id":{"type":"integer","format":"int32"},"idString":{"type":"string"},"label":{"type":"object","properties":{"baseModel":{"type":"object","properties":{"baseModel":"circular(BaseModel_DropDown2View)"},"title":"BaseModel_DropDown2View"},"labelId":{"type":"integer","format":"int32"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"}},"title":"Label_DropDown2View"}},"title":"SimpleObject_DropDown2View"}}},"title":"SimpleProgram_DropDown2View"}}}},"description":"Returns the list of programs for a realm"},"500":{"content":{"text/json":{"schema":{"type":"object","properties":{"messageCode":{"type":"string"}},"title":"ResponseCode_DropDown2View"}}},"description":"Internal error that prevented the retrieval of the programs"}}}
+>
+  
+</StatusCodes>
+
+
+      

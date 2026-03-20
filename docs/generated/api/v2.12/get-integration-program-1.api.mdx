@@ -1,0 +1,71 @@
+---
+id: get-integration-program-1
+title: "Get Integration Programs for an IntegrationProgramId"
+description: "API used to get the Integration Programs for a specific IntegrationProgramId"
+sidebar_label: "Get Integration Programs for an IntegrationProgramId"
+hide_title: true
+hide_table_of_contents: true
+api: eJytVU1v2kAQ/SurubSVXCAkvfhUqnxxSSCQU4TQxB7wtvbuZncMRZb/e7WLCVAgaaSejEfz8d74zaMCxrmD+AmkYppbZKnVwOq5xQImEaTkEiuNj0IMvUFflI5SwVrMiQVnJPrbOtEUOjHTVqBwhhI5k8luTpPSTyECbWgd7KcQw5z4MG96BhEYtFgQk/VAK1BYEMRHAIem0gM1yBn8jf4YCsEZsljpUixRsed1gpOnBBFYeimlpRRitiVF4JKMCoS4Al6ZV1TkU2faFsjr0HkX6nriy53RypHzFd1Oxz/2QT4Ql1a5UzAggkQrJsVhJv3m9k/nC6u6riO46JyfboniltmMGLl0rev7hx/9y8urOyFnYdijIytSTU4ozSLDBQlMEnLu3ZEX/zjy7n48vb5/vLvcjNzh1083aqF0i4J+S8fvzP92bIu+s1WYC7JW2/VHNpYWpNirNyNhiS3JBeZCzz686DqCgjjTjWyDRDmDGNpoZPtQmO3qmFhriMCRXWx0XdocYsiYjYvbvlPrpUTF/oJCISrMVywT19J2fqDugdVpmQQK66bhCIe9MUSwQCvxOQ+yCzqUaqYDL8m5V+1wb5BAlYreZpoYa537JmTdelS3ddZtdQ4Q9Ab9T86f0Fo3Yc3D3liMApxmoZiEhTY3fN0bDQRTWPc+/eVy+Q59KlD6itvRaOr7TG+H3+eZS74aV4SUOoJcJqQc7UzsGUwyEmv8+yNnWree0YL/vEY7LlDtFN4Qv+F16pTH7a2o2mrqf3tpYz9BqCZHqTz9wK9qxPkEaGQwyAOjjyA+6qaTCDLt2NdW1TM6erR5XfvwS0l2BfHTZCuuoOFUOv87hXiGuaM3+H9+aKz0y1FKHzXmo/ybIKpVOIK89G8QwS9anfoDqSd1BBlhSjYQWqf2koQM7zTZGoI/p1czuLkaQ13/Aaxrkl0=
+sidebar_class_name: "get api-method"
+info_path: docs/generated/api/v2.12/quantification-and-analytics-tool
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get Integration Programs for an IntegrationProgramId"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/api/integrationProgram/{integrationProgramId}"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+API used to get the Integration Programs for a specific IntegrationProgramId
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"integrationProgramId","in":"path","description":"IntegrationProgramId that you want to the Integration Program for","required":true,"schema":{"type":"integer","format":"int32"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Returns the Integration Program","content":{"text/json":{}}},"403":{"description":"Returns a HttpStatus.FORBIDDEN if the User does not have access","content":{"text/json":{}}},"404":{"description":"Returns a HttpStatus.NOT_FOUND if the IntegrationId specified does not exist","content":{"text/json":{}}},"500":{"description":"Internal error that prevented the retreival of Integration Program","content":{"text/json":{}}}}}
+>
+  
+</StatusCodes>
+
+
+      

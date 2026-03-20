@@ -1,0 +1,71 @@
+---
+id: get-procurement-agent-display-name
+title: "Get Procurement Agent Display Name"
+description: "Retrieve a procurement agent display name by their realm and name"
+sidebar_label: "Get Procurement Agent Display Name"
+hide_title: true
+hide_table_of_contents: true
+api: eJytVdtu1DAQ/RVrnkAym6qoICKEtJRSLUKIywIP1T54k9nEkNjpeNKyivLvaJysmm0rCqUvudjjM8fHZ8Yd5Bgysg1b7yCFz8hk8QKVUQ35rCWs0bEyhTxzG5rKbJUzNar1VnGJlhShqWplXB7HQYNvkIzgLXJIoUD+eIU0F6A3A86HIbwxZGpkpADpWXeNz7JEtXij/EaSjanYK9rRvIPkxhNosILUGC5BQ+SYQkRa5KCB8Ly1hDmkTC1qCFmJtYG0A942EmodY4GCs/FUGx6Gnh5C3+vb6MbEI+Gb9Kbk/47qqOqdPAOTdQX0/UqCQ+NdwCDzhwcH8sq8Y3QcV+AvTn4Eodz9AajXN93Rkgv3N0ev4egf2fj1D8xYfEJiLLbDpmoMwRR47HO8jboGtlxh5DxIESNv2dPCMZIzlUIiT+qytBWqApmtK+7Y5pDHFGJcmJhcRZfDSkONXPqxCqLVuYQUEtPYpLlWFEmB08JIRocm3fjRJ5Iy6eTZg4aAdLGrmZYqSKFkbkKaCPrsvDWO7cZmsRCNM9WWbRZmngq4rsApOilYzNWAqQROXBQwa8nyNuZYoyGkeSs7OFtNp7/IkQ2nMg3a/b3dVc2778sbuU9E/Vgq774vFfuf6JR1cWCotlS9jijqZZx8BaPz5WgHfNC70xcB4plYt/FCYD/Xpz1N1Hwnilp6X4GGymboQrTTWHrzxmQlqvfDhPqGFGTl4ewA9DXRLy8vZyaGi8bJiBWS94vjkw9fTp7ImokrP81Fi4sBEFI4nL14fnZ09Oz5SqIaH7g2bsLkFFndcJga/aLGTrq33UmJPUhXHzWOxdpUxjohGjXoRl+fgWnsUKh7zgYN+96O3WzXf9OrzzFTGt8rDaUPLLBdtzYBv1LV9zJ83iKJJ1caLgxZsxZF5eawQb5zSDemCvgHPR59HpvpY/UgF8yt2oyDxm3lpE3Vyh9o+InbyQUU75D7Ev+vq+YepIemt+o1lGhypCj7MDXPMmx4suiqq/fTRnh6soS+/w21SvD+
+sidebar_class_name: "get api-method"
+info_path: docs/generated/api/qat
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get Procurement Agent Display Name"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/api/procurementAgent/getDisplayName/realmId/{realmId}/name/{name}"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Retrieve a procurement agent display name by their realm and name
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"description":"The ID of the realm to retrieve procurement agent display name for","in":"path","name":"realmId","required":true,"schema":{"type":"integer","format":"int32"}},{"description":"The name of the procurement agent to retrieve display name for","in":"path","name":"name","required":true,"schema":{"type":"string"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"content":{"text/json":{"schema":{"type":"string"}}},"description":"Returns a procurement agent display name by their realm and name"},"500":{"content":{"text/json":{"schema":{"type":"object","properties":{"messageCode":{"type":"string"}},"title":"ResponseCode"}}},"description":"Internal error while getting procurement agent display name"}}}
+>
+  
+</StatusCodes>
+
+
+      

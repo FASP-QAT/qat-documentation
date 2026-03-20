@@ -1,0 +1,71 @@
+---
+id: send-notification
+title: "send notification for commit"
+description: "API used to send notification once commit is success."
+sidebar_label: "send notification for commit"
+hide_title: true
+hide_table_of_contents: true
+api: eJydVMGO2jAQ/RVrLm0lF7ZUveTUHNoulwqW7WmFVoMzEG8T29gTKIry75UddoGw2ko9AWbezJt5b6YFxk2A7AGUrWvNd7RtKDAsJRQUlNeOtTWQQT6biiZQIdiKQKYQxrJea4Xxf2GNItFnEDqI0ChFIYxAgnXkU8y0gAwi8ucZECQ49FgTk48sWjBYE2SXbKYFSNCRhUMuYUhtECu4RBYH24g9Gj7na1/4rq0HCZ62jfZUQMa+IQlBlVQjZC3wwUUW2jBtKIaura+R+6fPE+i6ZYQHZ02gEBGTm5v4ccnsjrjxJjxPxvcURaUDgwRlDZPhVI/+8PgpRFDbdZ2EL6+lmxomb7AS5L31fZ/O044MR2FKEp7Yk95hJex6WNWunki9XbeTUBOXNkq1IU7qcAkZjNHp8VC8cTuYfAcSAvnds5aNryCDktmFbBxTjLYNmlMCNFgdWKswsn5zJevM26JRSa4+aVRNzPN7kLBDr3FVpdEnLbRZ29SQ5ioqN78oJNAUIn+uJu6trWIS8qEvNRl9moxurhjks+m7EA2Eyc5pwvP8XiwSneMkUaVJHn37PV/MBBPWIAft7/f7f7RPNeqIuF0sHmOex9v5100Z1EcX6hTSSai0IhPorGLuUJUkev6XJdfWjlboIerqbOAazRnweovjfHtJh6NoT6b570tw3KlkOVehNrGfRLg92uwB0OnkoasrkQ0PwlJCaQNHUNuuMNAvX3VdfN425A+QPSxPNkluLHSI3wvI1lgFeqPD93fHw/BB/PdtebXb4yOaQ/Jw1cRfIOE3HV65ed2yk1ASFuRTA31UrhQ5PsOfdjguwsv+/vh2D133F4kUDMQ=
+sidebar_class_name: "get api-method"
+info_path: docs/generated/api/v2.12/quantification-and-analytics-tool
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"send notification for commit"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/api/sendNotification/{commitRequestId}"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+API used to send notification once commit is success.
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"commitRequestId","in":"path","description":"commitRequestId that you want to send notofication for","required":true,"schema":{"type":"integer","format":"int32"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Returns commit request list","content":{"text/json":{}}},"500":{"description":"Internal error that prevented the retreival of commit request object","content":{"text/json":{}}}}}
+>
+  
+</StatusCodes>
+
+
+      

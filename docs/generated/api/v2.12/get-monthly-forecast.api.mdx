@@ -1,0 +1,71 @@
+---
+id: get-monthly-forecast
+title: "Get MOnthly Forecast report"
+description: "API used to get the monthly forecast report."
+sidebar_label: "Get MOnthly Forecast report"
+hide_title: true
+hide_table_of_contents: true
+api: eJydlU2P2zYQhv8KMZde5I91u0irU5222/gQxLt2C7SGsRhLY4mpRHLJ0TqCof9ejOS1ZXuTJvXJpN7hzJDPS+6BMQsQr8CTs55hHUFKIfHasbYGYpjOZ6oKlCq2KiNWnJMqreG8qNXWekowsOqChxCBdeRRQmcpxJARv++0dwcpRODpqaLAb21aQ7y/SHchnxlXsbKbj5RIamRV20rt0LDU85k6ZAwRJNYwGZYc6Fyhk7au0ccgifYQkpxKlH9cO4IYuiwQgfPSBWsK8tV5m3kspZ+jVBumjCTJ1voSuZv6fgJNBM/kw6H/r9IHRs+/IlNPH9hrk/XlKTINWJfUhVj3bRHdxvypafeVVWGWecqQ6W39F6HvRW2sLQiNiCqjeZaG3kf0HmuIQDOV4bq85hi06CZeVbDmgj7DwuPDqZOmaTqatKcUYvYVtRPBWRO6w5uMx9eMPRBX3oQvoXyOD9MnfuGmTXr72rIzw+QNFoq8t76j1Xl6JsNin5yUJ/akn7FQdvu/MjcRlMS5FW8527rJIecQwwidHnUrjMorywXygiXEqz1UvoAYcmYX4pGEDZ8qNKy3B4OgwaJmnYSh9QLUeZNzb9MqkYHqFpX61f10CRE8o9e4Kdqdb5p1BFL4w8ntv33C0hV0YarxmWXGZ4aAyXjyw2D8ZjD5aXlzG9/exJMfh+M3N39D3wRfUvXBH7+CtUDTA3n1wuH6EtQjoBFos7Xt4Rw4vT/bP4UmVdOXTVRLaws4tijFDm8mw/HVxk7ns++CXGqYJBQ6OO+nS7Vod/lABSYtFQZLyXs3XcwVE5YQXZzqbrf7j1OlErVEvFssHmWdx3f3P2d5SAYulK2kiaDQCZlAvYxTh0lOqqv/POXW2uEGfWtgQbNE0wv8nVi9/9ABf3cF/NlO7E/8f+vjc7hKWtO4AnV3SUmZ+4NPVoBOH7GACC69so4gF2PFK9jvNxjoD180jUw/VeRriFfrE+gyaiLICVPyrbn+oRpi+KVrYLCUekReVO3lePkKNdFLxDRJyHFPezK+GOlo+vmHhThtc3g7S5uK2ONOesIdxNC+wZKivf/auT0UaLIKM9F2a8rvX/7hv3k=
+sidebar_class_name: "post api-method"
+info_path: docs/generated/api/v2.12/quantification-and-analytics-tool
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get MOnthly Forecast report"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/api/report/monthlyForecast"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+API used to get the monthly forecast report.
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={undefined}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"description":"MonthlyForecastInput object that you want to monthly forecast report for","content":{"application/json":{"schema":{"type":"object","properties":{"programId":{"type":"integer","format":"int32"},"versionId":{"type":"integer","format":"int32"},"startDate":{"type":"string","format":"date-time"},"stopDate":{"type":"string","format":"date-time"},"reportView":{"type":"integer","format":"int32"},"aggregateByYear":{"type":"boolean"},"unitIds":{"type":"array","items":{"type":"string"}},"unitIdString":{"type":"string"}},"title":"MonthlyForecastInput_ReportView"}}},"required":true}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Returns the monthly forecast report","content":{"text/json":{}}},"500":{"description":"Internal error that prevented the retreival of monthly forecast report","content":{"text/json":{}}}}}
+>
+  
+</StatusCodes>
+
+
+      

@@ -1,0 +1,63 @@
+---
+id: get-user-dropdown-list
+title: "Get Users"
+description: "Retrieve a list of users for a dropdown"
+sidebar_label: "Get Users"
+hide_title: true
+hide_table_of_contents: true
+api: eJyVVGFPGkEQ/Sub+XwFQ2NNL00TVGo0pokW9QMhzXA3cKvH7jk7ByXk/nsze2BPbNP4CZidffPe2zdsIaeQsa3Eegcp3JKwpRUZNKUNYvzc1IE4mLlngyZnX+V+7SABXxGj3rrMIYUFyV0gPt+dX9sgkABTqLwLFCDdwuDoSD8y74Sc6FehX9J/DDp4CyEraImxvKkIUkBm3EACVmgZOnU/e6RM0StWDmJbeKWpVF76rBNaEEMCc89LlLb0cQBNEpsdLqnTHoStW0DTJCBWSi2dYrCZyvqpus792t1bWkPTaNMb32p2wUhBr43TacfvVP4PhUsKARd05vP/8L7d2a6db6gfMr90ol6Uhpg9GylQTMW0IieURz3cZgJLFfUXgToZFwHSCezfP8A0gSVJ4XfhUDEoBaTQx8r29znqKwQkEIhXipVOtlBzCSkUIlVI+9rde67RiZ3bLOYNHZYbsVnoeV7AoZwLcppLyk2LaRSumeqIrGYrmzhjRsjEw1oZTabd4x/6GK3f3ab9r2/7KF09jN/MHqmV0aGrh7ER/0TOWBcLbQRTcxpRzJd4+FWVx3mQ7vAh2b+rGhC9tW7ulcDrWTevPDHDvSlm7H0JCZQ2IxdiUNqgw7DCrCBz3R6Ye+KgNwe9I0gOTF+v1z2M7epxf4cV+teXZ6PvP0Yf9E4nbzdD9WLVAkIKg97nk8nx8aeTqXZVPsgSXYfJBYm5i9k5cLCzI+/4J9oZFneqKtG6uOEqaLsL3QSwsjrsz6UYvGkChQ+iDdvtDAPdcdk0Wn6uiTUq0wRWyBZnKnQybRIoCHPimKIn2qivWUaVBnyFZf1CJC53092Ci9EYmuY3qRjhfQ==
+sidebar_class_name: "get api-method"
+info_path: docs/generated/api/qat
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get Users"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/api/dropdown/user"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Retrieve a list of users for a dropdown
+
+<ParamsDetails
+  parameters={undefined}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"content":{"text/json":{"schema":{"type":"array","items":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser_DropDownView"}}}},"description":"Returns the list of users"},"500":{"content":{"text/json":{"schema":{"type":"object","properties":{"messageCode":{"type":"string"}},"title":"ResponseCode_DropDownView"}}},"description":"Internal error that prevented the retrieval of the list of users"}}}
+>
+  
+</StatusCodes>
+
+
+      

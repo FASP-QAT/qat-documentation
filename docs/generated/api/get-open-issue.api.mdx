@@ -1,0 +1,63 @@
+---
+id: get-open-issue
+title: "Get Open Issues"
+description: "Retrieve a summary of open Jira Service Desk tickets for the current user."
+sidebar_label: "Get Open Issues"
+hide_title: true
+hide_table_of_contents: true
+api: eJytlMFu2zAMhl9F4FlLigxdMWMYkLVZkaJY0TZbD0EOis3YamzJpeh0QeB3HygnhdNuhwI7xaGon9THX9pBhiElW7P1DhK4QyaLG1RGhaaqDG2VXylfo1NXloy6R9rYFNUFhrVim66Rg1p5UlygShsidKyagDQADb5GMiI8zSCBHPmmRjcNoUHQQBhq7wIGSHYwOjmRn9Q7Rsfyyfibh49BmtpBSAusTAxva4QEDJHZggbLWIVe3C8fMWXQUJMUZ9vJmywjDAGzWLy/wTrGHAk0rDxVhrvQxxG0sX33jg2tBrZcSpKg2pMSUJ3IxewG2lbS3iBvyIVIsLSBX4Dbrnar4fSdeP6BocIQTI7nPsNecmCyLj/q/24/m5j5l5anjpGcKRUSeVLPhS1R5chsXX7cu4iaPEAyhzf+gYWGCrnwe3dIv4YLSGBoajvs3DXsTUFDQNogidwOGiohgYK5DslQdgyeGuPYrmwaTWecKbds0zDwlMPrI1yiE3NipjpNJXLtQkqkDVnexhpLNIQ0bqSr+aK/fC/MO6z9pMO/7wdzXD3M3tSeCL4476uHmWK/FmAuBjpTJepbVFFf4uJXOXmsB8leH/RhfAIgcrZu5aWB41q3R0zU+ABFzbwvQUNpU3Qh+sGZWGBcm7RAdd0tqF9IQXaOBiegX0F/fn4emJgujId7rTC8np5PftxPPsienq1ux8Ji0wlCAqPB57P56emns4Vk1T5wZVyvk0tkJU+Gepn/0dl6F+L/vlt7svGO1aWxTtqLJ9/tHToHU1vJjEpw9FYsNBQ+sCTtdksT8CeVbSvhpwZJfLXQsDFkzVKozBethgJNhhQtt8atDCFNsRbhjSmbl2bihW/71+ZyMoO2/QO8Ef52
+sidebar_class_name: "get api-method"
+info_path: docs/generated/api/qat
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get Open Issues"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/api/ticket/openIssues"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Retrieve a summary of open Jira Service Desk tickets for the current user.
+
+<ParamsDetails
+  parameters={undefined}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"content":{"text/json":{"schema":{"type":"array","items":{"type":"object","properties":{"addressedIssues":{"type":"integer","format":"int32"},"openIssues":{"type":"integer","format":"int32"}},"title":"JiraServiceDeskIssuesDTO"}}}},"description":"Returns the list of open issues"},"500":{"content":{"text/json":{"schema":{"type":"object","properties":{"messageCode":{"type":"string"}},"title":"ResponseCode"}}},"description":"Internal error while getting open issues"}}}
+>
+  
+</StatusCodes>
+
+
+      

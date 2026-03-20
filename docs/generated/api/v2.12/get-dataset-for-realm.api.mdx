@@ -1,0 +1,71 @@
+---
+id: get-dataset-for-realm
+title: "Get dataset list for realm"
+description: "API used to get the dataset list for specific realm."
+sidebar_label: "Get dataset list for realm"
+hide_title: true
+hide_table_of_contents: true
+api: eJydVMFy2jAQ/RXNXtrOuEBJevGpdAgJlwQCOWWYzMZesFpbUqQ1hPH43zuSTYGQNmlPyGJ339vV21cB48pBfA8pMjpiWESQkkusNCy1ghgGk7EoHaWCtVgRC85ItMEil47FUlvhDCVyKRNhCfOiIyACbciirzFOIYYV8bBJGml764MgAoMWC2KynkEFCguCGEKJcQoRSI9vkDN4SaqNEZwhi60uxQYVe4YvmUEElp5KaSmFmG1JEbgkowIhroC3xgNKxbQiH7rUtkBurs76UNcLn+6MVo6cz+j3ev7nmMwtcWmVO5kMRJBoxaQ4gNEzd384n1HVdR3Bee/sz7VQXDGbGSOXrjO6uf0+Hg4vroVcBpQ7R1akmpxQmkWGaxKYJOTcm5Dn74S8vpk/jG7uroc7yN3E25emdI9Pz283+/W1wY0Vk1WYC7JW2+YxjaU1KfZ6C6hsSa4xF3r5/tnWERTEmW6FF5TGGcTQRSO7bZlu21G3ag81RODIrndyLG0OMWTMxsVdn9l5KlGxl3nQNSrMtywT19F2daLQidVpmfgP0RQNezIdzCGCNVqJj3mQVNCYVEsd+pCce0VOj4AEqlQMdmhirnXui5B1DVS/86Xf6Z0wGEzGH5zfiUYaYZ7TwVzMAp12gJiEAbarNxrMJoIJ/XIet7/ZbN5onwqUPuNqNnvwdR6upt9WmUs+G1eEkDqCXCakHB0gDgwmGYmG/zHkUuvOI1rwz2m04wLVQeIl8akN2dZYjgZR7ZXy32bWOkXQmclRKt9NoFu12roHNNJDtz4aHfhYvDsuIsi0Yx9dVY/o6M7mde2vn0qyW4jvF3t1BBGm0vlzCvESc0d/ae3jbetzn8S/uOOrnbWXqLZBrXnpvyCCn7Q9MOh6UUeQEaZkA9fm30GSkOGDvP1yeqn/XszLiznU9S8j1juF
+sidebar_class_name: "get api-method"
+info_path: docs/generated/api/v2.12/quantification-and-analytics-tool
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get dataset list for realm"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/api/dataset/realmId/{realmId}"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+API used to get the dataset list for specific realm. 
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"realmId","in":"path","description":"realmId that you want to dataset list for","required":true,"schema":{"type":"integer","format":"int32"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Returns the dataset list","content":{"text/json":{}}},"403":{"description":"Returns a HttpStatus.FORBIDDEN if the User does not have access","content":{"text/json":{}}},"404":{"description":"Returns a HttpStatus.NOT_FOUND if the realmId specified does not exist","content":{"text/json":{}}},"500":{"description":"Internal error that prevented the retreival of dataset list","content":{"text/json":{}}}}}
+>
+  
+</StatusCodes>
+
+
+      

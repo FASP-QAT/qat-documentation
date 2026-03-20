@@ -1,0 +1,71 @@
+---
+id: get-equivalency-unit-mapping-for-forecasting-unit
+title: "Get list of EquivalencyUnitMapping"
+description: "API used to get the list of Equivalency Units Mapping based on a Program and a Forecasting Unit"
+sidebar_label: "Get list of EquivalencyUnitMapping"
+hide_title: true
+hide_table_of_contents: true
+api: eJy9VcFy20YM/RUMLm1nWMl12gtPVSZ2rENa2ZJPHk0GJkFyW3J3vQvK1XD475ld0ZIssUmTdnoSF1oAD28fgA6FSo/pA/JTqzZUs86291rJB7JW6TKBEzuuE8zZZ05ZUUZjirPFHFrPOYiBkgWkYqiVFzAFXB2cIXh7GOLCIwUXo4Fg4UzpqAHSORBcG8cZeQmXYsIEjWVHIds8xxRLlqtRrNfGHTkPvpYcNSzsQpEdamoYUyxe35vnmKAKxViSCk8rXFV8BgvmOUhFAlvTwjPpk7rvP0BhHCboAn+Oc0zFtZygzypuCNMOZWsDFKWFSw5XC+Makp3pzSX2fbLHa3cU/QOcL2SOwrNOGadk+x9gWwd3b4327IPH5cVF+HkN6I6lddrH3ONvFhnDBDOjhbXE3PyXTP/wIUDX932CP1+8+fvQBDcidikkrZ9c/373dv7u3dVvoIpYeW5AG4GKNgxOlZX4oFI54mlPUiCDvXD+BTS/jBU618JOUw3snHG7oNbxhrWExqgYHIvjQMBJW3wVF32CDUtlhjaI8pYKU5ySVdOTTp2eiXzanZn66V5a027/2WOCnt3mpWtaV2OKlYj16TTkmjy1pEUVKot9SZrqrajMT4wrz2S5cCZvs3CAXdAgP7idrTDBDTlFj3XUUBSV0oWJlSupgwRvXyWKM2L2kg1WxtQhCDu/S3U5+elycnGGYLaYfxdfnrKM/U6Pt7MVLCOcgXLKIuVDx13PlgsQpgaTk/Kfn5+/UD43pILHzXL5McT5eHP7a1n57Efrm3ilT7BWGWvPRxlnlrKKYYf/dcrCmMkjuTAS0BovDekjx/csYwP3SFmnhHQHjf0P43sYJlHLtialQ/2xwG7Q7wOSVYG4k12TjA7qdMx4PCHTw2GdYGW8hBRdF0Dfu7rvg/mpZbfF9GF9EGHUeq58+M4xLaj2/Bnmvr8b5ucP8G82xCg9g5H0NjZJ3YYTJvgnb0fXV9gV34z8a3bGN6A9vEa/7hOsmHJ2kevd/7MsYytHnoepFybCfuK9v1ph338Cbk8ILw==
+sidebar_class_name: "get api-method"
+info_path: docs/generated/api/v2.12/quantification-and-analytics-tool
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get list of EquivalencyUnitMapping"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/api/equivalencyUnit/forecastingUnitId/{forecastingUnitId}/programId/{programId}"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+API used to get the list of Equivalency Units Mapping based on a Program and a Forecasting Unit
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"forecastingUnitId","in":"path","description":"The Forecasting Unit Id that you want the list of EUM for","required":true,"schema":{"type":"integer","format":"int32"}},{"name":"programId","in":"path","description":"The Program Id that you want the priority for","required":true,"schema":{"type":"integer","format":"int32"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Returns the EquivalencyUnitMapping list","content":{"text/json":{}}},"403":{"description":"Returns a HttpStatus.FORBIDDEN if you do not have rights to the Program that you requested","content":{"text/json":{}}},"500":{"description":"Internal error that prevented the retreival of EquivalencyUnitMapping list","content":{"text/json":{}}}}}
+>
+  
+</StatusCodes>
+
+
+      

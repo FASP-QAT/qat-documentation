@@ -1,0 +1,71 @@
+---
+id: get-planning-program-consumption
+title: "Get Consumtion Data"
+description: "API used to get consumption data from adb tables"
+sidebar_label: "Get Consumtion Data"
+hide_title: true
+hide_table_of_contents: true
+api: eJydlE1v2zgQhv/KYC7dAqqdptiLThW23sbAonVst5fACMbUyGJXIhlyVK8h6L8XpJzYSRYpkJMkaj6emXk5PQrtAuY36LTjRhvGTYYlB+W1E20N5lgs5tAFLkEs7FhAWRO6Nv2FkoSg8rYFKrcgtG04YIbWsadoMC8xxx3LoiFjtNktvN15av86hcAMHXlqWdhHkB4NtYz5A9C8xAx1BHEkNT6lWzyYQWU97GutajjYDgyPyM9xrccMPd912nOJufiOMwyq5pYw71EOLubXRnjH0bSyviUZjz5c4jBsontw1gQO0ePy4iI+HoMtWTpvAhAsXHNWMNjtD1YCugKpGR5aBXsKEDqlOISqazBDZY2wkcTE/8n0R4iB+2EYMvzz5ZRXIm4lJF2YzL+sZ8svxT+3q9ny+2x5O1suvy6P2T2PWW3LYOM3sPfWg9QkUOoSjBWgprH7J6ypr61rWPhF0CHDlqW2RxmkYUuNOU7J6en9iKdnM5r2p8EPmGFg//NeGZ1vMMdaxIV8GiNM7joyoiutEhYZag6iVZhYv3uuFG/LTiX8MWgSzHWxxgx/ktejeCP2JgqusqkeLU1Uw/WjRECmhOI+G6ytjfOKnGOqy8n7y8nFM4JiMX8TYu8oTTn19LpYwyrhHBtJKjXyeAv+LlYLEKYWsyfl7/f735TPLenocbVa3cY4t1fXH3d1UO9caJPJkGGjFZvAZxkLR6pmGPkfp6ysnWzJYxyrs0FaMmeOn1lg1Hlq0ScSetqB/iSV16yV481MGnMNaRMrSIj9UVc3SE5Hld1vs9TTs12Tn62VTYa1DRK9+n5Lgb/5Zhji8V3H/oD5zeakjCTAUof4XmJeURP4her+WB73y1t47Yb632qPh2QOSbVNF78ww3/58HhnDpshw5qpZJ/QR4NCKXZy5nq6r1H1D3f182yNw/ALUfsfAw==
+sidebar_class_name: "get api-method"
+info_path: docs/generated/api/v2.12/quantification-and-analytics-tool
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get Consumtion Data"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/api/pipeline/consumption/{pipelineId}"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+API used to get consumption data from adb tables
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"pipelineId","in":"path","description":"PipelineId for which you need to consumption data for","required":true,"schema":{"type":"integer","format":"int32"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Returns a PplConsumption object if the operation was successful","content":{"text/json":{}}},"500":{"description":"Returns a HttpStatus.INTERNAL_SERVER_ERROR if there was some other error that did not allow the operation to complete","content":{"text/json":{}}}}}
+>
+  
+</StatusCodes>
+
+
+      

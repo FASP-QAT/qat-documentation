@@ -1,0 +1,71 @@
+---
+id: get-realm-1
+title: "Get a Realm"
+description: "Retrieve a realm by its ID"
+sidebar_label: "Get a Realm"
+hide_title: true
+hide_table_of_contents: true
+api: eJztWG1v2zgM/isCP22A1/S69YYLDgf0HRnWbe2y24ciGBibjrXZkivRaYPA//1A2bk6bdbl0n7oDfuUWHzRQ4qU/XAOCfnY6ZK1NdCHc2KnaUoKlSPMCzWeKc1eDQ4hAluSQ1EcJNCHCfG5qHz5DSIo0WFBTM5D/2J+y+kwIzU4VDZVnFHrl61y7V4QgRa1EjmDCAwWBH0IaoMEInB0WWlHCfTZVRSBjzMqEPpz4FkpqtowTchBBKl1BXKz9HIH6nok5r60xpMXi53tbfmJrWEyHHzQNfe+egE6v+vajr9SzBKgk+hZN24wZj2ljt7Y2pzQQB2JrML8wBpfFSEDp9Zw5gfmA3peC3UEY/R0ahPKHwal4wZi7eIqR/dsf7H4HCKIHSFTsj/78UaVJycHv1YAotwc5L/qnp02E6jrCFhzLkv76HX8yZMTkxbKIfIKq84eCTK9YF2QGOXo+dQmOtVPI4gunv8SybK/9tDq///5JJRilTcXxeoaTa2jGD0/rGG0mZJh62Yb2OY4fsRG+9Wvv/r1SYS24fmMKV8bVdD+QmYFqoUwdfcIy/uEvvyO8KeroLfhAvqJYougwOtT60/x+gQrlzjU+ZooC7w+K/OhzcmhiWldK20ObGX42DppxfWtNgTZGGqzgeEHcvFdmKYqxss2ia3GObVGm6Wka3VQ8fs0XdPW2Pfp4kV6XHHl6Ni6fctsi0P02diiW7fqVroa2vIhfuTd/iiAWkcbwAns5GD5DG/uqAV3WYui3PRe85VU1+G76RYrq5zxN/RJNnm1/fIxqExB3uOEvhPLErqGRwXNFSDl0lCJJa+MZZXhlJTTk4y9cL0J8YJSNthfPSnsIfMBd2orkwjE3cdhio8GcWBY7u9ckXPWqatM5yRpZW0mi8SKO5wIBW9raRRBQZzZlq8Hos4Z9KGHpe4Fq968rdYaIvDkpgsOXzn5DM2YS9/vif7WZYWGdarjMARAg/mMdey3rJMXwTLcEzIyLKBENT6VuBM67imunOZZ2GNM6MjtVYLpYtQVf5T8NinsKi2ejhdd9Obz8M7eR5Kq0CxvPg8V229klDZhoem+vtoPXtSfQfgXtEOF8DkeJBAtjkoSEDKrTWoFwPJeZ0s5UXuLpKihtTlEkOuYjA9n3w429kqMM1JvG4H6m5wXy52tbYhuJf3q6moLg7rkuNf68r23g4Ojdx+PXohNp4TO9iQX08Yh9GFn64/XF7u7v78eiVZpPRdoOkhOQlM2lXIrh53Cv38m1GYp9EaZow48JkQxb2vtArDU0F6KEEF/cTuOIsissLQLmM+F+nxyeV3L8mVFTgpkFMEUnUZ5EYaxkvbyP4F+irmnezA/O2+HRs/Vj6dPK2NoF9HMJKeYV/IEEXyjWWc6VY/qCDLChFxA2Ej34phK7tjdXB11tyVPjoZQ1/8APFaugQ==
+sidebar_class_name: "get api-method"
+info_path: docs/generated/api/qat
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get a Realm"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/api/realm/{realmId}"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Retrieve a realm by its ID
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"description":"The ID of the realm to retrieve","in":"path","name":"realmId","required":true,"schema":{"type":"integer","format":"int32"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"content":{"text/json":{"schema":{"type":"object","properties":{"active":{"type":"boolean"},"actualConsumptionMonthsInPast":{"type":"integer","format":"int32"},"baseModel":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":"circular(BaseModel)","createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"}},"title":"BaseModel"},"createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"defaultRealm":{"type":"boolean"},"forecastConsumptionMonthsInPast":{"type":"integer","format":"int32"},"inventoryMonthsInPast":{"type":"integer","format":"int32"},"label":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":"circular(BaseModel)","createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"}},"title":"BaseModel"},"createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"labelId":{"type":"integer","format":"int32"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"}},"title":"Label"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"},"maxMosMaxGaurdrail":{"type":"integer","format":"int32"},"maxQplTolerance":{"type":"integer","format":"int32"},"minCountForMode":{"type":"integer","format":"int32"},"minMosMaxGaurdrail":{"type":"integer","format":"int32"},"minMosMinGaurdrail":{"type":"integer","format":"int32"},"minPercForMode":{"type":"number","format":"double"},"minQplTolerance":{"type":"integer","format":"int32"},"minQplToleranceCutOff":{"type":"integer","format":"int32"},"noOfMonthsInFutureForBottomDashboard":{"type":"integer","format":"int32"},"noOfMonthsInFutureForTopDashboard":{"type":"integer","format":"int32"},"noOfMonthsInPastForBottomDashboard":{"type":"integer","format":"int32"},"noOfMonthsInPastForTopDashboard":{"type":"integer","format":"int32"},"realmCode":{"type":"string"},"realmId":{"type":"integer","format":"int32"}},"title":"Realm"}}},"description":"Returns the realm"},"403":{"content":{"text/json":{"schema":{"type":"object","properties":{"messageCode":{"type":"string"}},"title":"ResponseCode"}}},"description":"User does not have rights to get a realm"},"404":{"content":{"text/json":{"schema":{"type":"object","properties":{"messageCode":{"type":"string"}},"title":"ResponseCode"}}},"description":"Realm not found"},"500":{"content":{"text/json":{"schema":{"type":"object","properties":{"messageCode":{"type":"string"}},"title":"ResponseCode"}}},"description":"Internal error while getting realm"}}}
+>
+  
+</StatusCodes>
+
+
+      

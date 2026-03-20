@@ -1,0 +1,71 @@
+---
+id: save-data-source-for-program
+title: "Save QAT Temp Data Source"
+description: "API used to save data source for specified program into temp table"
+sidebar_label: "Save QAT Temp Data Source"
+hide_title: true
+hide_table_of_contents: true
+api: eJytVl1v4kYU/Suj+9Kt5AWabV/8VLYhClKVJUD6EqHoYl/j2dqeycx1WIT836s7xgGHNBttyxMe349zP84Z74Fx4yG+B6stFboiWEWQkk+ctqxNBTGMZ1NVe0oVG+XxiVSKjMqb2iWkMuOUt5ToTFOqrDMbh6XSFRvFVFrFuC4IIjCWHErAaQoxSJhLZFyEIFfGzVpHiMCiw5KYnKDaQ4UlQfyMbppCBFpQWeQcXkKdPZsFYNtcJ7namVpVRGkPd1dLZhxE4Oix1o5SiNnVFIFPcioR4j3wzkp+XTFtSEwz40rk9ujTBTRNdARp6zNEY+dwp0zWS97iEkxegKwpYEmhWbVQyPNnk+4k/3+IFkFiKqaKJQ5aW+gkTGD41Uuw/XmVKOGlwUylPzk366+UsAzHyRxZU3ibPk9QhvqOXkUnLsudfb9bN/7LnvuJs2enq83rpu8064HpDJsIWHMhR7fISyrtSdymkff93QkH3prKtz26GI3Oxzgnrl3lFapFnSTkvUpMSkpninNSz1RRW/TKtxZZXfQHyvSNu0kGHL+OPr2V6ZrZLhi59oOrL/PP08vLyU2X8c6TU6khryrDKhdeYMj6nZS/vV3cScrpzXIyvxn/+bCYzP+azB8m8/mX+SG9o7ZQU5Iy8qzIOeMU58gq1WkAhUVhti/aw0YlprQFMb0JtImgJM6NKI+twx6LeMQwRKuH3SYMZTdbSg33R71pIAJP7qkTpNoVEEPObH08lACDxxor1tmBXVhhsWOd+IFxm3OBciatk4C+DRp06na8hAie0GlRSx9QryKQCuZHOZh8Qyk2oOhTb/QasUb/TptuvV9ny1tvW/U+kGMlUpyZ0PGOJL1eKKxSNe4aopbGyBJLK9tuXAx+uRiMzjVzNv0pSFm7hGHqt+OlWoSOHUaNSRj1QXqvxouZYgo3SH9C2+32OxOiErV4XC8WDxLn4fr2903uk4/Wl8GkiaDQCVWeTjKOLSY5qRZ/P2VmzGCNLqiHNZ5LrE4cF0IvKUfURElr1aHzL/qwP670/3MHH7QtsMMWqCupLEDfHxhxD2j1yeChXSzf4YtP7uFVBLnxLE77/Ro93bmiaeT4sSa3g/h+ddzpdmm1l/8pxBkWnt4o98P8IKo/qx+90l8ttrvnql3gW1HLE0TwN+36HxnNqokgJ0zJBeitwR8twI+BRccAZ3erfBO0HuMkIcsntkdpEvo8y9LsThRgfbj0S5OKrcOtfJvgtgVpQqPCrRLO9lBgtalxI7ZtSPn9A3EZaIo=
+sidebar_class_name: "put api-method"
+info_path: docs/generated/api/v2.12/quantification-and-analytics-tool
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Save QAT Temp Data Source"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"put"}
+  path={"/api/pipeline/datasource/{pipelineId}"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+API used to save data source for specified program into temp table
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"pipelineId","in":"path","description":"PipelineId for which you need data source to save for","required":true,"schema":{"type":"integer","format":"int32"}},{"name":"ppu","description":"Array of data source which needs to be saved"}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"description":"Array of data source which needs to be saved","content":{"application/json":{"schema":{"type":"array","items":{"type":"object","properties":{"dataSourceId":{"type":"integer","format":"int32"},"dataSourceTypeId":{"type":"integer","format":"int32"},"pipelineDataSourceType":{"type":"string"},"pipelineDataSource":{"type":"string"},"pipelineDataSourceId":{"type":"string"}},"title":"QatTempDataSource"}}}},"required":true}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Returns a Success code if the operation was successful","content":{"text/json":{}}},"403":{"description":"Returns a HttpStatus.FORBIDDEN if the User does not have access","content":{"text/json":{}}},"500":{"description":"Returns a HttpStatus.INTERNAL_SERVER_ERROR if there was some other error that did not allow the operation to complete","content":{"text/json":{}}}}}
+>
+  
+</StatusCodes>
+
+
+      

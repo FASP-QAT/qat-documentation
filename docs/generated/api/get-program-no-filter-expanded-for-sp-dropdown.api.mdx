@@ -1,0 +1,71 @@
+---
+id: get-program-no-filter-expanded-for-sp-dropdown
+title: "Get Supply Plan Programs for Realm (expanded) without ACL Filter"
+description: "Retrieve a list of supply plan programs for a realm with additional details without ACL Filter"
+sidebar_label: "Get Supply Plan Programs for Realm (expanded) without ACL Filter"
+hide_title: true
+hide_table_of_contents: true
+api: eJztWN9v2zYQ/leIe0oALQoyZMWEYYDzEy7SNo299sEwgrN0tthKJEOe7BqG//eBlLQqsZ05G/ZQLE+Jecfj3Xd3Ir9bQUYutdKw1AoSuCO2kuYkUBTSsdBT4SpjiqUwBSphrJ5ZLJ2YaitQWMKiFAvJucAsk94GFiIjRlm4sK4rFr3zG3ElCyYLEWhDFr1iP4MEZsS3tcn3ula5/GZQZZRdaTswF1abTC8URGDQYklM1kEyWj3xephT40v/IrjGOX33lbWwTVgQgfQbDHIOESgsCRIIW/sZRGDpoZKWMkjYVhSBS3MqEZIV8NJ4VamYZiGQqbYlcr308wms12O/3RmtHDm/4+T42P9JtWJSHGzQN46/OO/yatM0WotL7yBT6TrrevKFUvYQWA8ey9o8pizn1NGbaF0QKlhHkOqsK3FspZoFQWUtKf5E1jUp2COyCHLCgvOeJexnN9LxHl4/A1TX3p7WdmCwM065b2QyG9SbtlkpcELF33sxQUfvdPZCVUilTasC7cFZu3jv6/1CL9TJJ0mLQ+8CSy68vR06f3m5dyqD9j2p3QHfT+0zQvOc0Jktwk4UN0HrSQQd+UCWpqBzndGHgN8W1dfM/jiZjUDpD9N3WnHu+uqq4srSlbZnmlmXF+jyiUa7b3hdU7fo+B8b0naGSjqs747XT8z/oBBf8IkJcPp3w3BpaO+QwwviXFeK7fK1pl5r6mmw7Qtz32qaSa3+3dPotZR+4FLa8frZ0Gu406biOtrkdZVVLhCjlthtI3M+ktMXEpcdmS7JOZyFtngek7uGNXnNbTE/jqSvmKynmWRtYHrIwliak2LKQnwN2cPCB9llgvWpOPMUElpu6WAcQUmc64aQBrLJOSQQo5Fx1ujFjZXYmVjpaSCrMTVsNQ7gxaumz9cQgSM7b9lqZX2558zGJbG3evRQoWI5lWl4hqDCYskydUfazuBpxNekPGemTNQ2hTfn6aajtLKSl+GMCaEl26u856NxVzzwCWu6r6PU/rpqO+Tt5+HG2Zce7QDi289DwforKSFVWKg7KxFnwYr4LQh/h4Y0B0YaJBC1ufcA1I94NdXegcdnfXyEiei1oIih1gVEUMiUlAvF1BD3nsE0J3FTC0RDa8XJ0TFET0BfLBZHGNQ9xnFjy8U3/fPL94PLn/yeTk1+7Hks5rVBSODk6Nc3o9PTX96MwxNBOy5RdTy5JhaDelBy6wclt93eugujiYO2WA63T0YegdFpv/9+JtOkJ3S5KVCGGUKAb9W0wgjQSO9jZyBTH+vzbfwopWkJiKCNE5p7DyJI2gtwHEGu/b02gtXK3wV/2GK99ssPFfm302gcwRytxInPg5/0SOf/zyCZYuHoGZwO7prpzaF4yUBoa/Ttpav8lTvHovK/IIKvtOwMjNbjepiRkQ2+1tJempLhzr7vn89191tzfTmE9fpP+Nu8Mg==
+sidebar_class_name: "get api-method"
+info_path: docs/generated/api/qat
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get Supply Plan Programs for Realm (expanded) without ACL Filter"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/api/dropdown/program/sp/nofilter/expanded/realm/{realmId}"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Retrieve a list of supply plan programs for a realm with additional details without ACL Filter
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"description":"The realm ID for the programs to retrieve","in":"path","name":"realmId","required":true,"schema":{"type":"integer","format":"int32"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"content":{"text/json":{"schema":{"type":"array","items":{"type":"object","properties":{"active":{"type":"boolean"},"code":{"type":"string"},"currentVersionId":{"type":"integer","format":"int32"},"healthAreaIdList":{"type":"array","items":{"type":"integer","format":"int32"}},"healthAreaList":{"type":"array","items":{"type":"object","properties":{"code":{"type":"string"},"id":{"type":"integer","format":"int32"},"idString":{"type":"string"},"label":{"type":"object","properties":{"baseModel":{"type":"object","properties":{"baseModel":"circular(BaseModel_DropDown2View)"},"title":"BaseModel_DropDown2View"},"labelId":{"type":"integer","format":"int32"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"}},"title":"Label_DropDown2View"}},"title":"SimpleCodeObject_DropDown2View"}},"id":{"type":"integer","format":"int32"},"idString":{"type":"string"},"label":{"type":"object","properties":{"baseModel":{"type":"object","properties":{"baseModel":"circular(BaseModel_DropDown2View)"},"title":"BaseModel_DropDown2View"},"labelId":{"type":"integer","format":"int32"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"}},"title":"Label_DropDown2View"},"noOfMonthsInFutureForBottomDashboard":{"type":"integer","format":"int32"},"noOfMonthsInPastForBottomDashboard":{"type":"integer","format":"int32"},"organisation":{"type":"object","properties":{"code":{"type":"string"},"id":{"type":"integer","format":"int32"},"idString":{"type":"string"},"label":{"type":"object","properties":{"baseModel":{"type":"object","properties":{"baseModel":"circular(BaseModel_DropDown2View)"},"title":"BaseModel_DropDown2View"},"labelId":{"type":"integer","format":"int32"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"}},"title":"Label_DropDown2View"}},"title":"SimpleCodeObject_DropDown2View"},"programTypeId":{"type":"integer","format":"int32"},"realmCountry":{"type":"object","properties":{"code":{"type":"string"},"id":{"type":"integer","format":"int32"},"idString":{"type":"string"},"label":{"type":"object","properties":{"baseModel":{"type":"object","properties":{"baseModel":"circular(BaseModel_DropDown2View)"},"title":"BaseModel_DropDown2View"},"labelId":{"type":"integer","format":"int32"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"}},"title":"Label_DropDown2View"}},"title":"SimpleCodeObject_DropDown2View"},"realmId":{"type":"integer","format":"int32"},"regionList":{"type":"array","items":{"type":"object","properties":{"id":{"type":"integer","format":"int32"},"idString":{"type":"string"},"label":{"type":"object","properties":{"baseModel":{"type":"object","properties":{"baseModel":"circular(BaseModel_DropDown2View)"},"title":"BaseModel_DropDown2View"},"labelId":{"type":"integer","format":"int32"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"}},"title":"Label_DropDown2View"}},"title":"SimpleObject_DropDown2View"}}},"title":"SimpleProgram_DropDown2View"}}}},"description":"Returns the list of programs for a realm"},"500":{"content":{"text/json":{"schema":{"type":"object","properties":{"messageCode":{"type":"string"}},"title":"ResponseCode_DropDown2View"}}},"description":"Internal error that prevented the retrieval of the programs"}}}
+>
+  
+</StatusCodes>
+
+
+      

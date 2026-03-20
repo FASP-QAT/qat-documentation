@@ -1,0 +1,71 @@
+---
+id: get-planning-unit-for-program-list-1
+title: "Get Planning Units mapped to Supply Plan Programs"
+description: "Retrieve a list of planning units for a list of supply plan programs"
+sidebar_label: "Get Planning Units mapped to Supply Plan Programs"
+hide_title: true
+hide_table_of_contents: true
+api: eJzdV21v20YM/isHftoAJc7SZcWEYUCSpkWKdE3jZP1gGAEt0dK10t3ljrJrGPrvA0/yIqdJkwAdMNSfbJLHl4fk3eM15BQyrx1rayCFC2KvaUEKVaUDKztXrkJjtClUYzQHNbd+oAyNc9Uq2ijnbeGxDpCAdeRRXJ7mkEJBfN47uTKaX1t/3pme6cDXv0ACnm4aCnxk8xWka8isYTIsX9G5SmfR1+hTkBzXELKSapRvvHIEKaD3uIIENFMdBnJtmArykMDc+hq5E73Yh7Zt2+RO6Zcl3dbc5adOXwXFVvkNKl9j0SevPeWQsm+oFUFw1gSKqezv7d0piekLP78WO/tEGUMCzgu6rDv3On9SvQnofMxem2JgHjpBm0CFM6oeD4YZ6wUN7GbWVoRGXMww0Dubf0c3kGmfNRX6n442wp8hgcwTMuVHq8cDNYH86VMBEmODNd0DUJsAa65EdIRBZ1eBvBzpU3mFfM+pQYwcmXZY19RhHfidzfVc/z+KGObznEq2/fVNa3+E/syoenJW0fqazMNrdT3331C6bymDe0D5w03QWbyA2gQeDz3WtavofVfqfRf5BXHjTXjqE/bvs9Um8Ovei2dd1g8AXlMIWNCxzR+p5aJ/KaLlPaUIwiq3FJSxrEpckPK6KDm+SphlFILikgJtVXHwzCfnv67i1LDMVKXIe+vVstQVqYKYpSVbvYlN6XxjESCdQM8UYJpATVxa4RPOhpgtcgkpjNDpkRvwi9GAiATyC/LiaQ2Nl0elZHYhHcmp3ZsGDet5zy/QYLVinYVd62Vkt4t4Q0Y4DeWq86nEXTuVEFnjNa9ijBmhJ3/YSGaT6VA9FtQ7YIdGm1+vN/vx9uPlV7FPBEBptHr78VKx/UxGaRMF3V6l6ih6UX9E5Z9SeYwnj2vUQLJpoAAQIZZ5uLglXidfUBYL0sneNAFt5lay207kwxZg6nCDmLq0toIEKp2RCXFcukWGQ4dZSeqsU6i/yQc5ub+7B8mdjiyXy12M5tKAUe8rjM5Oj0/+Gp/syJnB1H04FKAWnUNIYX/395eTg4PfXk7FSmakRjPI5A2x2tBQdRUvghqdo1x2adzxWNGr89vx2ap+sFHfiyf3LYnr6SrUkQJFVNb9eE8AnZZhHwx4t6mdj2kCpaxDOoH1WsjTla/aVsQ3DXkZymkCC/QaZ7G30zaBkjAnH+f1M60gheOurp1LSUfMqyZS0bvcu002Jw6zjBwPbG9vmHa4qufvx9KlWU/s63iXgMel8GZcQgrx34KEiKsRZWuo0BQNFmLb+ZTPP9NXYGU=
+sidebar_class_name: "post api-method"
+info_path: docs/generated/api/qat
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get Planning Units mapped to Supply Plan Programs"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/api/planningUnit/programs"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Retrieve a list of planning units for a list of supply plan programs
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={undefined}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"content":{"application/json":{"schema":{"type":"array","items":{"type":"integer","format":"int32"}}}},"description":"The list of program IDs to retrieve planning units for","required":true}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"content":{"text/json":{"schema":{"type":"array","items":{"type":"object","properties":{"id":{"type":"integer","format":"int32"},"idString":{"type":"string"},"label":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":"circular(BaseModel)","createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"}},"title":"BaseModel"},"createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"labelId":{"type":"integer","format":"int32"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"}},"title":"Label"},"name":{"type":"string"}},"title":"SimpleObject"}}}},"description":"Returns a list of planning units for a list of programs"},"403":{"content":{"text/json":{"schema":{"type":"object","properties":{"messageCode":{"type":"string"}},"title":"ResponseCode"}}},"description":"User does not have rights to access these programs"},"500":{"content":{"text/json":{"schema":{"type":"object","properties":{"messageCode":{"type":"string"}},"title":"ResponseCode"}}},"description":"Internal error while getting planning unit list"}}}
+>
+  
+</StatusCodes>
+
+
+      

@@ -1,0 +1,71 @@
+---
+id: add-integration
+title: "Add Integration"
+description: "API used to add an Integration"
+sidebar_label: "Add Integration"
+hide_title: true
+hide_table_of_contents: true
+api: eJztV91z4jYQ/1c0+9J2xiGEu9y1fiok3ISZXEKAu4dmMpnFWkBX23IkORzD+H/vrMyHTQjk+tR2yhNe7cdvJe1vV0twOLUQ3oNKHU0NOqVTeAhAko2MyvxnCO1+T+SWpHBaoJQCU9Gr6AegMyr/9ySEgFLWlw095WRdR8sFhMsd56MZVb0JPf5GkRNuhk4sdC7mmLpVYAgg0qmj1LEbzLJYRd7o9JtlX0uw0YwS5H9ukRGEUHqDADLDIJ0iy6uVdBnyRt3LyUAAE20SdKXoXQuKoGpzgwlVrKwzKp2yjiGMkzeEf2vMGMcUH/cXGUJHsrM4rppbMm9OmZXT/bkWATjlYhZ10KroiyXDJisol+j2WFViSHR04lRCZZrWfdZSTdQ/I4kqnh/LBCOnnqv6Y61jwnRzmG+G7bUfKd17z8pFmx1YnJgDi9n+xTFa+qzl/1fuv3LlKgcKkTJRHqP5ubMW/gJ1NCvVKsZrT0DMfnJYwjiY0lAlWUy35RYWjDiWZK51SdN779xExfQqn1Y496ui+Q8ROxv8HXJnu0uy0VsAvQK8siO9nQxeWYOiKMpGqQxJCJ3JyQtsplNb5tZqNl+2zwG53KRWoBjmUUTWikhLEmoi3IzEpjGLOVphS41JHtc7qaPvbt1CPY73zXeHIl05lw0dutw2Pt0OOr3Ly+7NOiLfZyE1WZFqJ2b4TAJ91KMhP7wx5M3t6LF9cdHtj9qd6+46rkSHwuY8E5AUqgyfp+oppyORzw9vayVy72bUHdy0rx+H3cHX7uCxOxjcDlYADJVbrBMSmr8FGaNNOcdIJT0ejGM93zkYp0WkuWrcYaBFAAm5meYJK9PWX310MwjhFDN1WrmYpxCAJfNMhke7JeSGy3/mXGbDU1ZuPOWYOjVZTU+YYrxwKrINbZhm6jvRN1rmkYdaOhUTbcRdewQBPKNROI799SyKhwAY7mA77XW/I2e2Z+Jq7pmntkS3GaNUqboZg2pdZ03JzSrhVmq11heg1Wy9P2l+PGn9Njo7D8/PwtavjebHsz9gXy845volWx/yv2ZoLurKGNCsNvlt8tvevivjlr4ry2qyWgP/929WUWs81aax01cqPXLTTrayPV1kT59ovtIFXvVTD+OxphPtS3dF8He1OhOYStFeF5sYac08zGVa5tBqnLUazRcF2O73frL+BVTyO9PHXXskhr4aV5yBkeeM1d5/ag/7whEmEOxU/3w+P1L9lKBii6vh8JH9PF7d/T6d2egks4lX4RNVEaWWKhHbGUYzEiX+esiJ1o0xGr9BTFwJplVDKXcek7Xsl1tGPP4MXXVhT5xZjMqPQB7McsWV94CZqp8kBMAv3hlTangPyyXX0BcTFwWLn3IyCwjvH7Zkx19FADNCScYT7J+0gBAuSqAnI0bB6nHOaF48U4tgbdGOIspcRXdL+UymG7rv3w6Zbcer93OiJSsbnDNV4hxC8G9wDuEHBS9bQozpNMcp65Y++fcXtXpv3w==
+sidebar_class_name: "post api-method"
+info_path: docs/generated/api/v2.12/quantification-and-analytics-tool
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Add Integration"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/api/integration/"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+API used to add an Integration
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={undefined}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"description":"The Integration object that you want to add","content":{"application/json":{"schema":{"type":"object","properties":{"integrationId":{"type":"integer","format":"int32"},"integrationName":{"type":"string"},"realm":{"type":"object","properties":{"id":{"type":"integer","format":"int32"},"label":{"type":"object","properties":{"createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"},"active":{"type":"boolean"},"labelId":{"type":"integer","format":"int32"},"label_en":{"type":"string"},"label_sp":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"baseModel":{"type":"object","properties":{"createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"},"active":{"type":"boolean"},"baseModel":"circular(BaseModel)"},"title":"BaseModel"}},"title":"Label"},"idString":{"type":"string"}},"title":"SimpleObject"},"folderLocation":{"type":"string"},"fileName":{"type":"string"},"integrationView":{"type":"object","properties":{"integrationViewId":{"type":"integer","format":"int32"},"integrationViewDesc":{"type":"string"},"integrationViewName":{"type":"string"}},"title":"IntegrationView"}},"title":"Integration"}}},"required":true}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Returns a Success code if the operation was successful","content":{"text/json":{}}},"403":{"description":"Returns a HttpStatus.FORBIDDEN if the User does not have access","content":{"text/json":{}}},"406":{"description":"Returns a HttpStatus.NOT_ACCEPTABLE if the data supplied is not unique","content":{"text/json":{}}},"500":{"description":"Returns a HttpStatus.INTERNAL_SERVER_ERROR if there was some other error that did not allow the operation to complete","content":{"text/json":{}}}}}
+>
+  
+</StatusCodes>
+
+
+      

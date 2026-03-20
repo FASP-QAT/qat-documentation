@@ -1,0 +1,71 @@
+---
+id: get-qat-temp-funding-source-list
+title: "Get List of Funding Source"
+description: "API used to get list of funding source from temp tables"
+sidebar_label: "Get List of Funding Source"
+hide_title: true
+hide_table_of_contents: true
+api: eJyllE1v2zAMhv+KwMs2QEu6Drv4NB/SNkDRNR/bpQgKVqZjbbakSvSywPB/HyS7bdqu3aEnW4JIPiRfsgPGbYDsCpx2VGtDsJFQUFBeO9bWQAb55Vy0gQrBVmyJRa0DC1uKsjWFNlsRbOsVidLbRjA1TjDe1BRAgnXkMXqZF5DBlniBvKbGnQyWq2R4rgODBIceG2LykaYDgw1Bdk81L0CCjjQOuYKniJf3z0RpvdhVWlVib1thKHJX9CK09SDB022rPRWQsW9JQlAVNQhZB7x3EUMbpi3Fp6X1DfJw9fkY+n4TzYOzJlCIFsdHR/HzmG9J3HoTBL7EoctEeV8wscMgQqsUhVC2NUhQ1jAZTlD0h6c/Q/Tc9X0v4cvrMc+Y3YqR2zCZX6xny4v8/Ho1W/6YLa9ny+W35Rjd0xDVNiRsPAvy3nrBFbIodCGMZYF1bXdPWNkKZRtXE9OroL2EhriyoxhS07mCDKbo9PSu1dPbQSTTsURDhabdgxR6kBDI/77TSutryKBidiGbRl+T2xYN61KrBIgG6z1rFSbWb59rx9uiVSmRwWmS0CJfg4Tf6PUg5pjAJkqwtCkzzXUUxuJRIIGmEPldNLG2NnYucg6hjiefjidHzwjyy/m7EKuIqd+puot8LVYJZywpqlTScS5O8tWlYMIG5JP0d7vdf9KnBnW0OFutrqOf67PF120V1EcXmvSkl1BrRSbQQcTcoapIDPyPQ5bWTm7QQ2yws4EbNAeGp8TifFT9OPhimPynhegetPOGpTOObNKeq1GbmE8C7ka9XQE6HdV3t/IkjJqLA36oOpCQHaygjYTKBo4euu4GA333dd/H69uW/B6yq82DZpI0Cx3ifwFZiXWgVxJ+vxyX0Afxxm32zwKMl2j2SdZ1G08g4RftH6/ZftNLqAgL8imD4UGuFDk+MH0Y7TgW92N9OltD3/8Fewsxsw==
+sidebar_class_name: "get api-method"
+info_path: docs/generated/api/v2.12/quantification-and-analytics-tool
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get List of Funding Source"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/api/pipeline/qatTemp/fundingsource/{pipelineId}"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+API used to get list of funding source from temp tables
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"pipelineId","in":"path","description":"PipelineId for which you need the list of funding source for","required":true,"schema":{"type":"integer","format":"int32"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Returns a list of funding source if the operation was successful","content":{"text/json":{}}},"500":{"description":"Returns a HttpStatus.INTERNAL_SERVER_ERROR if there was some other error that did not allow the operation to complete","content":{"text/json":{}}}}}
+>
+  
+</StatusCodes>
+
+
+      

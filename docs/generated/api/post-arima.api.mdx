@@ -1,0 +1,71 @@
+---
+id: post-arima
+title: "Get Forecasting Statistics (ARIMA)"
+description: "Optimize ARIMA model parameters for given dataset. Returns the best-fit parameters and their corresponding RMSE."
+sidebar_label: "Get Forecasting Statistics (ARIMA)"
+hide_title: true
+hide_table_of_contents: true
+api: eJzFVt+P2kYQ/ldW89RIPrAuuka1qkjkQiKipJcATR4QD4M94E3sXd/uGEKR//dq1iZnKJGo+lCewPN75vs+c4CMfOp0xdoaSOChYl3qv0iNppMPI1XajApVocOSmJxXa+vURm/JqAwZPfFATYlrZ7zinNSKPN+sNfdD0GRi006l1jnylTWZNhs1/TAbDyACW5FDKT/JIIHKeh45XSJE4OixJs+vbLaH5ACpNUyG5StWVaHTEDX86qXzA/g0pxLlG+8rggTs6iulDBFUTmqwJi/WrOdi6nJFDiJYW1ciQwKZrVcFQROBDNhzRedwDxFoptJflaKJYB1GMOm+F6AN0+Y0Qht+fis1C9pScWV/5sqctjtpz31lbUFoxFpdWe3xSj9P6K3BQvP+ckHP6Piq1psIWHMhTgERE1PV/Hr+AI2YTnE7z0lpsQdcBpgKHlsUdxsIcOlgpR1lkLCrqZEHAkrfwuM2js/AxvSdf44yz06bzaWe/gsxZFN3/7KTn+C9JO9xQ/c2o0ttPy152q0heF6YZ2KYnMFCkXPWqV2uC5J5vDTNJwdo8+LGQ7KAN9ZRip7FbcbI2rNOPSwjKIlze2S9NI6cQwJDrPRw3UVJhB9iJwme3JacpD1A7QpIIGeufDKUmMFjjYb1ulMGNFjspdTAug2cT/OWjOgOZarNqSRds5QSae0CfBcHWBE6cqNa+los++aZrL/dcN/p+OvNEczvvsz/UXssmwwre/dlrth+I6O0CQ9aEiTqVciifg/GlzJ5qCdcChaIjpeUBYR9CzCmT5I5/o5lVVAnefFR0Bbx8kSX4h+qEwdNifuKIQQJGhEHBYjP+N2aO0bHTQTarG0oeDLup5OzqNHxLmpubQERFDol40OnBsOMowrTnNT71qA+k/MSeTuIITq7+263G2BwlzMPu1x++H5yP/5jNr6RmB7IP43kHNs2ISRwO/jtxeLu7tcXy6CG1nOJptfJW2J1GcDql6Auz86v22Ps//E67VARpKIqUAfRDSs7dPxaAFa61dsnhkEELceWEeTCxmQBh8MKPf3piqaRx481OWHFMoItOo2i+EKKCHLCjFwgzDfaQwL37QZu5tKMuBd1eIeev7ab6BgxSlOquOf7pHVNXyk+PszkgKvuP0EZVA0c7kTYcQcJQAtgawI3w7MDFGg2NW7Et80pn78BdUYWRw==
+sidebar_class_name: "post api-method"
+info_path: docs/generated/api/qat
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get Forecasting Statistics (ARIMA)"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/api/forecastStats/arima"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Optimize ARIMA model parameters for given dataset. Returns the best-fit parameters and their corresponding RMSE.
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={undefined}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"content":{"application/json":{"schema":{"type":"object","properties":{"d":{"type":"number","format":"double"},"data":{"type":"array","items":{"type":"number","format":"double"}},"frequency":{"type":"integer","format":"int32"},"level":{"type":"number","format":"double"},"n":{"type":"integer","format":"int32"},"optimize":{"type":"boolean"},"p":{"type":"number","format":"double"},"q":{"type":"number","format":"double"},"seasonality":{"type":"boolean"},"start":{"type":"integer","format":"int32"}},"title":"ArimaInputDTO"}}},"description":"The input data for the ARIMA optimization","required":true}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"content":{"text/json":{"schema":{"type":"string"}}},"description":"Returns the best-fit parameters and their corresponding RMSE"},"500":{"content":{"text/json":{"schema":{"type":"object","properties":{"messageCode":{"type":"string"}},"title":"ResponseCode"}}},"description":"Internal error while parsing the input data"}}}
+>
+  
+</StatusCodes>
+
+
+      

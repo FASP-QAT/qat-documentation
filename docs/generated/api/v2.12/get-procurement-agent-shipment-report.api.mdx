@@ -1,0 +1,71 @@
+---
+id: get-procurement-agent-shipment-report
+title: "get the ProcurementAgentShipmentReportOutput list"
+description: "API used to get the ProcurementAgentShipmentReportOutput list."
+sidebar_label: "get the ProcurementAgentShipmentReportOutput list"
+hide_title: true
+hide_table_of_contents: true
+api: eJytVk1zIjcQ/SuqvuQyYEzi2mROIV+1nBYbNodQlKuZaWa0mZFkqccsRc1/T7UG7AFsb1wJFyTxulutfq+bPTAWAdIleHLWM6wSyClkXjvW1kAKk9lUNYFyxVYVxIpLUjNvs8ZTTYYnBRmel9rJ5i76+NSwa1hVOvAQErCOPIqzaQ4pFMRvW0MCnh4aCvyLzXeQ7iGzhsmwLNG5SmfR29WXIPfbQ8hKqlFWvHMEKdj1F8rEj/MSmzWFiGP0/Bsy9aCBvTYFJLCxvkaGFHJkGrCuCdoEAlv3PgvnbeGxllSfTLRhKsj3bbTh78eCfyQfDk/zr/CuQmO0KT4bzdM89KzQe9xBApqpDpcXbtsEtMmqJqeZ+KD8+Ox98NraitAcMjmp0rujXTqYdz9eos/zehXYJsCaKzl6m0VT4xq+79Z/atpCK7ZCLO0ph5R9Q/EgOGtCR5DxaCRfp/S/I268Ce+jPSR90jJ95SNb4zVuXgo0NUzeYKXIe+sVl8jKeXokwyK+kpQn9qQfsVJ28z/dpU2gJi6tKNPZCHbIJaRwhU5fdT3h6rySF4IN5IXIkC730PgKUiiZXUivxMvwoUHDenPQLRqsdqyzMLRedHT6CjNv8yaTjeqcqo316naygAQe0WtcV7FYbbtKQPK4e+4Vv3/F2lV0pnUYj8Y/DEYfBuOfFtc36c11Ov5xOPpw/Rf09f0Wqqfp0YliRy/ocXnk6uoNvQn7XlFY3/51BT23oZeF01OWNhsbK3/Qze1JNRSaXE2OJVELayt4ylGeZXg9Ho4uyjSZTb8LMhEwyyh06ridLNQ81uxAOcwi5QzWEvePyXymmLCG5Iwj2+32GxyhGrVYfJzP78XP/cfbn4syZAMX6ghpE6h0RiZQL+LEYVaS6u5/GnJj7XCNvutTNnCNpmf47jF3/j69mfXf5+ehBUblugp17M4xnf1BrEtAp+PcPOjxG4JdJVCK2NMl7PdrDPTZV20rxw8N+R2ky9Wz2mTXJlAS5uSjwv+mHaTwa5fhYCHXE3jVxMFwPqHb5GgxyTJy3MM+NyNR81Mjmn2ai9zXh/Ff21zAHreSIm4hhfivQkLEvh3P9lChKRosBNv5lM8/0h4c7A==
+sidebar_class_name: "post api-method"
+info_path: docs/generated/api/v2.12/quantification-and-analytics-tool
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"get the ProcurementAgentShipmentReportOutput list"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/api/report/procurementAgentShipmentReport"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+API used to get the ProcurementAgentShipmentReportOutput list.
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={undefined}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"content":{"application/json":{"schema":{"type":"object","properties":{"startDate":{"type":"string","format":"date-time"},"stopDate":{"type":"string","format":"date-time"},"programId":{"type":"integer","format":"int32"},"versionId":{"type":"integer","format":"int32"},"planningUnitIds":{"type":"array","items":{"type":"string"}},"includePlannedShipments":{"type":"boolean"},"procurementAgentIds":{"type":"array","items":{"type":"string"}},"procurementAgentIdString":{"type":"string"},"planningUnitIdString":{"type":"string"}},"title":"ProcurementAgentShipmentReportInput_ReportView"}}},"required":true}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Returns the ProcurementAgentShipmentReportOutput list","content":{"text/json":{}}},"500":{"description":"Internal error that prevented the retreival of ProcurementAgentShipmentReportOutput list","content":{"text/json":{}}}}}
+>
+  
+</StatusCodes>
+
+
+      

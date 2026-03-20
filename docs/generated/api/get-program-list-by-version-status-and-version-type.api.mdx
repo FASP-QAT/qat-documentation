@@ -1,0 +1,71 @@
+---
+id: get-program-list-by-version-status-and-version-type
+title: "Get Programs by Version Status and Version Type"
+description: "Retrieve a list of programs filtered on version status and version type"
+sidebar_label: "Get Programs by Version Status and Version Type"
+hide_title: true
+hide_table_of_contents: true
+api: eJytVu9v2zYQ/VeI+9QCmhVkyIoJwwCnyQIX3tbGXvshMAJaOltsJZI5UvYMQ//7cJTkyD+Stlk/2SIfj+8eee+4hQxdSsp6ZTQkcIueFK5QSFEo54VZCEtmSbJ0YqEKj4SZMFqskJwyWjgvfeWE1NluyG8sQgTGIkmOOsoggSX6902csXL+cvOxAU/C8qHO2u9ps9ZKkiV6JAfJ3faA4jTHHbcDGqMrJxaGhM+xox2gEIHipVb6HCLQskRIYNXnMMrGDZDwoVKEGSSeKozApTmWEpIthMQScJ6UXkJdR9/CjBe9jBdr8QJWMwY7a7RDx/PnZ2f8kxrtUfuwAv/18WfHlLfHgSSR3DAxj6XrjZv5Z0yZiiU+Wq+a8KnJ8ASNCFTWG1ba4xIJIlgYKqVvhn4+b4CTZtGpKIWcY/F1FnPp8E+TfScUUkVpVUh6ddkN3l+RsVdmrT8qXL9mBl75gsOdhuw4jr413YC+R/10uvcLembSPjfp7MmLuktiHFD7CfSmJ6q0Bb41Gf4dxDtEMvbILyrSLtzs/2UYdQQX33lTnzjgEp2Ty5DF82LctmXCyKNMDxMdaY+kZSGQKFSy9MISrlB7zEL61FinLFiDU3o0m8slmxrwfplZawezCEr0uWltMtifzyGBWFoVZy0ubqPEe64Vb0+YWB33HGSHeLSTGiJwSKvOXiviWsi9ty6JedPBQyW1VwuVBgOXWhYbr1I3MLSEQ2FuULPRYyaamILDsQs5TCtSfhP2mKMkpGHFid3N+tMTPta2NHug7uuProDefZoe7X3NhxK0fvdpKrz5glooHQaawkvEZYgifguTv0PrnHz8TXyIuhvCAoQjUnphmMD+Xh/2NBHDThQxNaaACAqVonbhyrU+PrQyzVGMmwnRtjhxPjiD6ED09Xo9kAHOGsdtLBePR2+v/5pc/8Rrejf3w5C1aA8WEjgf/Prm7uLilzczRlnjfCl1j8kNevG+q8r5Zkdl8liM3VDbgfdy79XkD3wgtLKHGreFVJq5B1m2bQXcgbSKybQ10JQ67/WYfZMCRJCcbuervYdFctxbZxHkxnnebbvl5vAPFXXNww8VEt/eWQQrSUrOWXt+jijH/zNIFrJw+IxYr27btv1avOzVclKjrlFrbtMrWVT8BRF8wc0Tr5rwVPlRrL/2onk5596p1LM6ghxlhhQ0b3DDNEXrexEeG0Tdt9Gb6ynU9X9k6c9m
+sidebar_class_name: "get api-method"
+info_path: docs/generated/api/qat
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get Programs by Version Status and Version Type"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/api/dropdown/program/versionStatus/{versionStatusIdList}/versionType/{versionTypeIdList}"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Retrieve a list of programs filtered on version status and version type
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"description":"The list of version status IDs for the program list","in":"path","name":"versionStatusIdList","required":true,"schema":{"type":"string"}},{"description":"The list of version type IDs for the program list","in":"path","name":"versionTypeIdList","required":true,"schema":{"type":"string"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"content":{"text/json":{"schema":{"type":"array","items":{"type":"object","properties":{"code":{"type":"string"},"id":{"type":"integer","format":"int32"},"idString":{"type":"string"},"label":{"type":"object","properties":{"baseModel":{"type":"object","properties":{"baseModel":"circular(BaseModel_DropDownView)"},"title":"BaseModel_DropDownView"},"labelId":{"type":"integer","format":"int32"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"}},"title":"Label_DropDownView"}},"title":"SimpleCodeObject_DropDownView"}}}},"description":"Returns the list of programs filtered on version status and version type"},"500":{"content":{"text/json":{"schema":{"type":"object","properties":{"messageCode":{"type":"string"}},"title":"ResponseCode_DropDownView"}}},"description":"Internal error that prevented the retrieval of the list of programs"}}}
+>
+  
+</StatusCodes>
+
+
+      

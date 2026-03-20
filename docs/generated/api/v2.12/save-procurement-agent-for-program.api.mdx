@@ -1,0 +1,71 @@
+---
+id: save-procurement-agent-for-program
+title: "Save QAT Temp Procurement Agent"
+description: "API used to save procurement agent for specified program into temp table"
+sidebar_label: "Save QAT Temp Procurement Agent"
+hide_title: true
+hide_table_of_contents: true
+api: eJytVk1v4zYQ/SvEXNoCWjvNthed6u06iIEi69hOL4ERjKWRxa1EMuQoXsPQfy+G8rcDb4GtD4ZFD2fem4832gDjMkD6DE47qrQhmCeQU8i8dqytgRQG45FqAuWKrQr4Rsp5mzWeajKscCnfhfUqOMp0oSmX/5cea6UNW8VUO8W4qAgSsI48ittRDimIs/HB10Bc3Vk/7q5DAg491sTkBeEGDNYE6R7pKIcEtCB0yCWcwx7vzSK8VamzUq1towx1GM847NgV1kMCnl4b7SmHlH1DCYSspBoh3QCvnaDQhmlJYlpYXyN3Rx9voW2TA1TXXOAaeI9rZYt3IHQYBV8QOAuKiHJo5x0gCvzJ5mtB8cM+E8isYTIs3tC5SmexMv2vQVxuLhmjBJGUM9Xh6NwuvlLGUi4v9WVN8V93Vlkp+X/IXrKv73lrHF0P7LVZXjM+ibYzbxNgzZUcPSLPqHYXMdpWrE6rHw+CsyZ0zG5vbi5LMCFuvAkK1bTJMgpBZTYnpQvFJal946sVBhU6i6KpTsvA9I13+Y84frv5eC3SPbObMnITendfJp9Gnz8PH3YRnwJ5lVsKylhWpXQ2xqjfCfn7dXJHIUcPs+HkYfDXy3Q4+Xs4eRlOJl8m2/CeOqK2JmXlWZH31isukVWu8wgKq8quztLDVmW2dhUxXQXaJlATl1Z0xDWx+0QEUuij0/1dV/SPmjCOQ39zUI8WEgjk33by0vgKUiiZXUj74qb32qBhXWwnAw1Wa9ZZ6Fm/vJQbb/Mmixw6p1F1HgczSOANvRYFDBH7PAHhMTkM9PAbCuWI4r2xubk2FLvuvj4L+xmYi2YWNqZ0NwsnNBWaXA12XNXMWulSyVJH9Lb3623v5lLWxqOfosJ0XRbL+jiYqWlMxraWmMVabtXxbjAdK6Yo9afJX61W30k+1ajlxv10+iJ+Xu4f/1iWIfvgQh1N2gQqnZEJdBRx4DArSXX4T0MW1vYW6KNIOBu4RnN0cSrzI3RENNRRglVXhbNsbA6d+3+uz62cxVFwFWojLCONzbb9nwGdPmqFTpVPRgASSI9W6DyB0gaWq5vNAgM9+apt5fi1Ib+G9Hl+aODYobkO8juHtMAq0BXqP0+2OvqL+rFt/C7x3Voy6zhiVSNPkMA/tD59S2jnbQIlYU4+EugM/uxgfpiJm4ODi1Uo67y7Mcgycnxke9AkGau9Ho2fZOgX201d21xsPa7ktQJXHUgb0xXXSTzbQIVm2eBSbDuX8vkXcbde0Q==
+sidebar_class_name: "put api-method"
+info_path: docs/generated/api/v2.12/quantification-and-analytics-tool
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Save QAT Temp Procurement Agent"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"put"}
+  path={"/api/pipeline/procurementagent/{pipelineId}"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+API used to save procurement agent for specified program into temp table
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"pipelineId","in":"path","description":"PipelineId for which you need procurement agent to save for","required":true,"schema":{"type":"integer","format":"int32"}},{"name":"ppu","description":"Array of procurement agent which needs to be saved"}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"description":"Array of procurement agent which needs to be saved","content":{"application/json":{"schema":{"type":"array","items":{"type":"object","properties":{"procurementAgentId":{"type":"integer","format":"int32"},"pipelineProcurementAgent":{"type":"string"},"pipelineProcurementAgentId":{"type":"string"}},"title":"QatTempProcurementAgent"}}}},"required":true}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Returns a Success code if the operation was successful","content":{"text/json":{}}},"403":{"description":"Returns a HttpStatus.FORBIDDEN if the User does not have access","content":{"text/json":{}}},"500":{"description":"Returns a HttpStatus.INTERNAL_SERVER_ERROR if there was some other error that did not allow the operation to complete","content":{"text/json":{}}}}}
+>
+  
+</StatusCodes>
+
+
+      

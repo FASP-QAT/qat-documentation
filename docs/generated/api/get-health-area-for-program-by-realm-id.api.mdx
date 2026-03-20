@@ -1,0 +1,71 @@
+---
+id: get-health-area-for-program-by-realm-id
+title: "Get Health Areas for Program by Realm"
+description: "Retrieve a complete list of health areas that are associated with the given realm, identified by its ID."
+sidebar_label: "Get Health Areas for Program by Realm"
+hide_title: true
+hide_table_of_contents: true
+api: eJztWOtv2zYQ/1eI+9QCqh2kzYoJwwDn0dRF2q1Jun4IjOEsnS22EqmQJ2eGof99OEpKlHdSdFtW+JNpkvd+iPdbQUo+cbpkbQ3EcEjsNC1IoUpsUebEpHLtWdmZyghzzhQ6Qq84Q5alQu9topEpVWeaM8UZqblekFGOMC8ipVMyrGeaUjVdKs1ejXcHEIEtyaGIHacQw5z4beA/coRvrPvd2bnDYnt5KFzGKURQosOCmJyH+GR1RfHjjNR4V9QUBYJoxVa5zp5Lys+sgwi00JXIGURgsCCIwZ0Lc3RaaUcpxOwqisAnGRUI8Qp4WcpVbZjmJHxm1hXIzdbLTajriZD70hpPXig2NzbkJ7GGyXDgQX/x8IsXzVfXWaNzuBQFmQrf27fTL5SweMKJ81g37DFhvaDevam1OaGBOoIpenpvU8q/GxtItEuqHN2z7W7zOUSQOJIc2F7eL6jy5CTmD3BlFC43wTm/7tlpM4e6joA157K1jV4nnzw5IWlV2UW+gaonI0WmF6wLEqIcPb+3acjTp2BEX5/HWHKZXxu0+v8fn+y8OezY9CZp/SsP1j7H6XcsjXWFrSvsSZj2jfGZUv64yvmTzI2V2BzO3B2H5V2Hvrzl8IfLoIPQgH4g26LmDXW/AcltbVw/1CqdHjVEtybSurOvO/u6s687+3/a2e8XfaRl0pZ37W+NuV0X3bGVYbcchXnw/vnwnHWP98VQLft1dH3er5zxYWju5vwLEi+avNp4+ajp9ZaQFeQ9zumW13tP48N2dA43b1BZYqRSS14ZyyrDBSmn5xl7mfcxSciLOdo3IEBjwasnZcHbCywi2DCzlUlF0a1HAgX/tKJjw1I6uSLnrFNnmc5JzYlZm3kfUQmp03DGuaAznYkh7yYRFMSZbWGegORwBjEMsdTDi6ltWDaYz7BFYYardlFDBJ7cokN+Kiff0oy59PFQmAxOKwwYUxIAJTSYL1knfmCdVOplo/bJCPBEqWp4KmEnmI2npHKal0HGlNCRG1Wi6Mmkf3wkUWgc3b/U/XvTtYV3n4+vyd4Th4Zie/f5WLH9SkZpEzaadhKr7cBF/RIOf4UWeQpvinACURdQcUBwujYzKwpclvXxkk/UqHOKOrY2hwhynZDxIUNa9GtUYpKROmgO1B/kvFBuDjYguuL0s7OzAYbr4uNhy8sPD8Y7ex+O9l4ITS/RPo7EF4uGIcSwOfj59cnW1k+vJ3KrtJ4LND1N9olVL4UCYqdaSFBQxAAKXvVur3D+TRyzjUao1DJHHR59wVurNtFPAEsNfYCiKVmxBqIe6Bh3y0kEmfUspKuVPCA/ubyuZfu0IicZOolggU7jVPwraKj2sk4hnmHu6Q7XPDtsoc3n6htA0xut7b5LRr5KC8wr+QcRfKVlD1StJw1Ik5ILKjenoyShknt0Fy2v7neO/b1jqOu/Abwnxe8=
+sidebar_class_name: "get api-method"
+info_path: docs/generated/api/qat
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get Health Areas for Program by Realm"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/api/healthArea/program/realmId/{realmId}"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Retrieve a complete list of health areas that are associated with the given realm, identified by its ID.
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"description":"The ID of the realm to retrieve health areas for","in":"path","name":"realmId","required":true,"schema":{"type":"integer","format":"int32"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"content":{"text/json":{"schema":{"type":"array","items":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":"circular(BaseModel)","createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"}},"title":"BaseModel"},"createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"healthAreaCode":{"type":"string"},"healthAreaId":{"type":"integer","format":"int32"},"label":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":"circular(BaseModel)","createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"}},"title":"BaseModel"},"createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"labelId":{"type":"integer","format":"int32"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"}},"title":"Label"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"},"realm":{"type":"object","properties":{"code":{"type":"string"},"id":{"type":"integer","format":"int32"},"idString":{"type":"string"},"label":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":"circular(BaseModel)","createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"}},"title":"BaseModel"},"createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"labelId":{"type":"integer","format":"int32"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"}},"title":"Label"},"name":{"type":"string"}},"title":"SimpleCodeObject"},"realmCountryArray":{"type":"array","items":{"type":"string"}}},"title":"HealthArea"}}}},"description":"Returns the list of HealthAreas"},"403":{"content":{"text/json":{"schema":{"type":"object","properties":{"messageCode":{"type":"string"}},"title":"ResponseCode"}}},"description":"User does not have rights to access this realm"},"404":{"content":{"text/json":{"schema":{"type":"object","properties":{"messageCode":{"type":"string"}},"title":"ResponseCode"}}},"description":"Health area not found"},"500":{"content":{"text/json":{"schema":{"type":"object","properties":{"messageCode":{"type":"string"}},"title":"ResponseCode"}}},"description":"Internal error while getting health area list"}}}
+>
+  
+</StatusCodes>
+
+
+      

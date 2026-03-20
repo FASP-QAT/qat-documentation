@@ -1,0 +1,71 @@
+---
+id: get-product-category
+title: "Get Product Categories"
+description: "Retrieve a list of product categories for a specific realm"
+sidebar_label: "Get Product Categories"
+hide_title: true
+hide_table_of_contents: true
+api: eJztWG1v2zYQ/ivEfWoBNg7SZcWEYUCSZoGLdF0Td/1gGANNnS22EqmQJ6eGof8+HCW1iuO8rsOKwJ8k8Xgvz91RJJ8VpBi0NyUZZyGBMyRvcIFCidwEEm4mSu/SSpPQinDuvMEgZs4LJUKJ2syMFh5VXoAEV6JXbGiYQgJzpD8b1aNGcwkSSuVVgYQ+QDJerTkfZSiGr9knZdhYFeSE72LaHAlIMKxdKspAglUFQgJRe5iCBI8XlfGYQkK+QglBZ1goSFZAy5KnGks4R7Yzc75Q1Ay93IO6nrB6KJ0NGFhjb3eXH9pZQkvRBn6hwafA8a+um1beK4ZtCIvQG3fTT6iJ8+E5aWQa80qTWWBv3tS5HJWFWsJUBXzrUsy/mxnQxusqV/7ZYTf4HCRoj4owPVze7agK6LnW90iljJOb4nydHsgbO4e6lkCGch46VMHoDwE9q7ShvFa0QavnI1WEL8gUyEq5CvTWpWZmfgwQ/XgeguSqvbZo9VOoz/Q7NvF2LWzXwg8B7fFr4d5Rxdl/o90QVSec+VuE5W3CUN4gfHIddBp/QE8IW4yzf9C6d5DNye1O4Nqlm3BIMPd1ZNLzRunGBtzuCNsdYbsjbHeE/3VHuNv1uSnKHI9ciu8auLWE4Dy98yluSmZPdf02XNcsvXb/rrwNj7h+1xJ+2n35oNvpDQUrMAQ1jxhvB3TWXo3jzA1guEIidRiEdSQytUDhzTyjwLd6pTWGICgz4RuC/Qfer/9rBENL3I+5QO+dF5eZyVHMkcjY+XpllrFkjXk1Z36jq7j4WvKJhAIpcy0/EgkRyiCBgSrNYG0XH7QcxmDVvtQgIaBfdOxJ5XmfyojKkAzYws5FpSxxU0QaRlmVL8nosOM8r4Kr2E7QMl2DqWhsCjbHjEdAXXlDy+hjisqjP6g4yvGkLz7nYjT57k/qvn7vltybj6Nrvo85r5HlefNxJMh9RiuMjQPNUk3EYbQifo3C36DlbeJ+HSUgu7pyAmLajZ05DuCqr/dXciIOuqSIkXM5SMiNRhtio7Tc0UGpdIbitBGIv9AH1tzb2QW5lvTLy8sdFadzjgetrTA4HR4d/3F+/IJ1ev32/oBzsWgMQgJ7O7+8Gu/v//xqEk9xLlChbC+SEySx1kTc4mvp7C2Yf0fgtQmNa67MlYlnogh41TbqGFRp4NqBE2SPcEu614mEzAVirdWKj1YffF7XPHxRoef+mkhYKG/UlLPDfKAJ/J5CMlN5wFtwPjtrab3n4tG04Ua4HXNnGdRC5RV/gYTPuOzRivWklpChij/98aqVHmiNJfX0vv296v7SPzkeQV3/A2aPX8E=
+sidebar_class_name: "get api-method"
+info_path: docs/generated/api/qat
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get Product Categories"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/api/productCategory/realmId/{realmId}"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Retrieve a list of product categories for a specific realm
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"description":"The ID of the realm to retrieve product categories for","in":"path","name":"realmId","required":true,"schema":{"type":"integer","format":"int32"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"content":{"text/json":{"schema":{"type":"array","items":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":"circular(BaseModel)","createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"}},"title":"BaseModel"},"createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"label":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":"circular(BaseModel)","createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"}},"title":"BaseModel"},"createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"labelId":{"type":"integer","format":"int32"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"}},"title":"Label"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"},"productCategoryId":{"type":"integer","format":"int32"},"realm":{"type":"object","properties":{"code":{"type":"string"},"id":{"type":"integer","format":"int32"},"idString":{"type":"string"},"label":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":"circular(BaseModel)","createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"}},"title":"BaseModel"},"createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"labelId":{"type":"integer","format":"int32"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"}},"title":"Label"},"name":{"type":"string"}},"title":"SimpleCodeObject"},"sortOrder":{"type":"string"}},"title":"ProductCategory"}}}},"description":"Returns a list of product categories for a specific realm"},"403":{"content":{"text/json":{"schema":{"type":"object","properties":{"messageCode":{"type":"string"}},"title":"ResponseCode"}}},"description":"User does not have rights to access this realm"},"500":{"content":{"text/json":{"schema":{"type":"object","properties":{"messageCode":{"type":"string"}},"title":"ResponseCode"}}},"description":"Internal error while getting product category list"}}}
+>
+  
+</StatusCodes>
+
+
+      

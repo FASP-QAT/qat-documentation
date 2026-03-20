@@ -1,0 +1,71 @@
+---
+id: rebuild-supply-plans
+title: "Rebuild Supply Plan"
+description: "Rebuild the supply plan for a list of program IDs and version IDs"
+sidebar_label: "Rebuild Supply Plan"
+hide_title: true
+hide_table_of_contents: true
+api: eJytVFFP2zAQ/ivWPYe26sTQrGlSYd0EQhvQbjxUeXCTa2JwbWM7lCrKf5/OSSFtmbSH5cmxP999/u67qyFHnzlpgzQaONzhspIqZ6FE5itr1ZZZJTRbGccEU9IHZlbMOlM4sWaXXz0TOmfP6Lw0mv4hAWPRCYp3mQMH10acxWA3SmiCOHyq0Idzk2+B15AZHVAHWgprlczi9eGDJ041+KzEtaBV2FoEDmb5gFmABKyjZEGip9OOFqV9hUodsEAHCayMW4vQbn0YQ5NAR/sf8U0CQQZFoJtdoonOf78GaQiyL+fkXyRjwbBOpb7mnkTvtJIOc+DBVdjQhrdG+/bN49HoQMGAL+Hv0vngpC7e43qHoXLaH5W+JaZM0UogCg98AbM3BKQJrDGUhsptjY+FEaEEDkNh5fBdB3h0JAHwRQ2VU8ChDMF6PqQrg6dK6CBXnRGEFmobZOYHxhVwyPs7avIb5qyNyShck1KKrHIybGOOJQqHblIRrUXaP56RRK2YfdDu79vOBlf386PcUx3QRcWu7ucsmEfUTOq40dqHs/MYhX2Oh1/o5TEf8C4+JLvSkABRYyre3VuHTF/E2pLv9hw+2vPvqElA6pUh0D7F2z0p2WSnJZsboyABJTPUPkbXIvKaWJGVyK7bA9YZnI0HI0gOarXZbAYiwqk0wy6WH15fXkx/zKYndKfXN7cTkrCjDRzGg09ni9PTj2cpocg6a6F7THbTqDMbeeewBD3r/5fh1dUiNpFVQmpiFh9dd6ZegLAy9uWRrdMESvI/X0BdL4XHX041DW0/VejIiGkCz8JJsSQ9FmmTQIkiRxc9+ohb4HDRvudkTkwIripidDQYm2R3Y5JlaEMP+zYCmn5v3vyckf7LbuquTU5gJzb0GrEBDnF6U4rYDnGvBiV0UYmCsG1M+v4ALb8m6w==
+sidebar_class_name: "post api-method"
+info_path: docs/generated/api/qat
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Rebuild Supply Plan"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/api/rebuildSupplyPlans"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Rebuild the supply plan for a list of program IDs and version IDs
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={undefined}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"content":{"application/json":{"schema":{"type":"object","properties":{"programId":{"type":"integer","format":"int32"},"versionId":{"type":"integer","format":"int32"}},"title":"ProgramIdAndVersionId"}}},"description":"A list of program IDs and version IDs to rebuild supply plans for","required":true}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"content":{"text/json":{"schema":{"type":"string"}}},"description":"Returns the supply plan build log"}}}
+>
+  
+</StatusCodes>
+
+
+      

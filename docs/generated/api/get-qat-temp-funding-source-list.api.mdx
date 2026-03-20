@@ -1,0 +1,71 @@
+---
+id: get-qat-temp-funding-source-list
+title: "Get QAT Temp Funding Source List"
+description: "Retrieve a list of funding source from temp tables"
+sidebar_label: "Get QAT Temp Funding Source List"
+hide_title: true
+hide_table_of_contents: true
+api: eJylVe9P2zAQ/Ves+7RJXouY2LRomtQxQEVoGtCND6gfTHJtDIkdzpeyqsr/Pp2TQlrKtB+fWtt3z++e311WkGFIyVZsvYMELpDJ4gKVUYUNrPxMzWqXWTdXwdeUopqRLxVjWSk2NwUG0OArJCMA4wwSmCOfG55gWR23mZcx8cwGBg2VIVMiIwVIrldbt09yVOMvcinnqCpbYWEdKvaK1rzkYItRJCq0QIMVmMpwDhqcKVFWHcw4Aw2E97UlzCBhqlFDSHMsDSQr4GUl0dYxzpFAw8xTabjdersPTTOV9FB5FzBIxv7envyk3jE6jhj4k4e3QWpZPYc2RGYpHBnL0Nv3N7eYRm1IlGTbws/66omyf8BRP1a7oX0vNzBZN38xcuOedWyjgS0XsrXrZaFpJOSZkWpy4UUfCYODvxTwBaFKDMHM8dBnuwrtkb/oXi9G7uA8dozkTKGQyJN6yG2Bao7MQvvRjTvc195i5uJp+NYFwlRDiZz7rimi+TmHBIamssP7VslhB9eiDVdPbm1AQ0BarFulpgISyJmrkAwFYnBfG8d2ZtPYfMaZYsk2DQNPc9iu7QSdNClmqsVUAieWDpjWZHkZ77hBQ0ijWmheT/vHl/IYrd79oPXqeG3E06vJs7uPRNfYuadXE8X+Dp2yrm3lmJeozxFFfYyHn6BrTHm0Fh/0+l1FgKi3dTMvBDbvOt/QRI3WoqiJ9wVoKGyKLkSjdPNhVJk0R3XWHqgfSEEy9wd7oLdEf3h4GJgYLhoPO6wwPBsfHn29PHojOf1mGYkWixYQEtgffHh/fXDw7v009p8PXBrXY3KCrM5HEyW+UF2LqbbHVDc+N4rttc6/De5O0th1VWGsE16x5FXn1WswlQUNnVtl5PT9ChqS3nydash9YElbrW5MwO9UNI1s39dIYrGphoUhKwTa+W+D/M8gmZki4G8KfHXRje7X6v8/EzsLX49pJ0N6YYpaVqDhDpebn5Fm2mjI0WRIsYg2YJSmWHEv9WmYNf1RcHI0gab5BfL7mHY=
+sidebar_class_name: "get api-method"
+info_path: docs/generated/api/qat
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get QAT Temp Funding Source List"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/api/qatTemp/fundingsource/{pipelineId}"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Retrieve a list of funding source from temp tables
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"description":"The ID of the pipeline to retrieve the funding source list from","in":"path","name":"pipelineId","required":true,"schema":{"type":"integer","format":"int32"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"content":{"text/json":{"schema":{"type":"array","items":{"type":"object","properties":{"fundingSourceId":{"type":"integer","format":"int32"},"pipelineFundingSource":{"type":"string"},"pipelineFundingSourceId":{"type":"string"}},"title":"QatTempFundingSource"}}}},"description":"Returns a list of funding source"},"500":{"content":{"text/json":{"schema":{"type":"object","properties":{"messageCode":{"type":"string"}},"title":"ResponseCode"}}},"description":"Internal error while getting pipeline funding source list"}}}
+>
+  
+</StatusCodes>
+
+
+      

@@ -1,0 +1,71 @@
+---
+id: get-supplier-1
+title: "Get Supplier"
+description: "Retrieve a supplier by their ID"
+sidebar_label: "Get Supplier"
+hide_title: true
+hide_table_of_contents: true
+api: eJztWFFvGzcM/isCn1pAtbO0WbFDUcBpssBFuqGxuz4ERiHf0T61Z+ki8ewZxv33gbq7+Jy4iTcYWBD4ybZEUh8/kbTIFSToY6dz0tZABFdITuMchRK+yPNMoxPjpaAUtRP9M5Bgc3SKpfsJRDBFGtRy334BCblyaoaEzkN0vbpjfJii6J8JO2F7a/tkhauPBQmaJXNFKUgwaoYQQSPZT0CCw5tCO0wgIlegBB+nOFMQrYCWOUtrQzhFBxIm1s0UVUuvj6EsR6zuc2s8etY4Pjrij9gaQkPBBv5N3e+e4a7um7bj7xgTu+mYBtKVGRWTnmNLbmxthspAKWGsPH6yCWZ7MwOxdnGRKffitFl8CRJih4owOV0+flDhA5e7UCaDcHUPt+KenDZTKEsJpCnjpVPldfzFo2OVGsqZoi1arTMSRfiK9AxZKVOePtlET/TTcKKN5994smmvvrTyOdzPeI9BfMiFQy48Cdf+ey7sjCpIf0OzBVWzOXEPbOYPbfr8J5vPLoIuQwF6Rr7xY0Rls8cdiG2yDY8EvatXOhlUSj8NpENlP1T2Q2U/VPb/tbI/fvRAz/IMP9gE/6zcLWW7PdypC2xZqzWh5NV7nXDhjN9sVRea0molxzi4zE1xKeHN0et9dJIz9F5Ng38P83BVt7FBcgt6vh2RWPTCWBKp4o4+jtF77rYp1f7Wpwr9myeFvrmXAH5iC5MwypP9dOt7Q9k3xNmSCXTOOrFIdYbNJEOb6UbkVIbVlMci67AbSZghpbaepIT5CaUQQVflutvodlfrCC9Bgkc3bwYsheP/ypQo91GXtTo3hTKkJzoOQxplVLYkHfuOdZyJmx5coOFhDiaisinYHE9JPMaF07QMZ4xROXS9gpFdj9rbA6a8YrUt1Pz6vcm8j1+H984+Z/YCRx+/DgXZH2iENmGhythInAYr4l3YfA/1rCe8GcIOyOb2mIBAsTYTywA2z/q8wYnoNaSIobUZSMh0jMaHcKhHTr1cxSmKy2pD/IXOs+Zx5wjkHdIXi0VHBXHmuFvb8t3L/ofzPwbnr1inFVWfe8zFvDIIERx3fnt7fXLy69sRS+XW00yZFpILJHEbMHdIbCXDDpO7mquQNHmmdHhyBV9Wddxdg8o1rCsqSIha1XUkIbWeWG614rfaF5eVJS/fFOg4WEYS5sppNWZXef6nPX9PIJqozOMD8F9c1XO9l2KnMeFWZ+pFZZZMscoK/gUSfuByc4xYjkoJKaoEXcBZCfTiGHNqqa7rS9lO1YvzIZTlP/GpRds=
+sidebar_class_name: "get api-method"
+info_path: docs/generated/api/qat
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get Supplier"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/api/supplier/{supplierId}"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Retrieve a supplier by their ID
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"description":"The ID of the supplier to retrieve","in":"path","name":"supplierId","required":true,"schema":{"type":"integer","format":"int32"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"content":{"text/json":{"schema":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":"circular(BaseModel)","createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"}},"title":"BaseModel"},"createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"label":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":"circular(BaseModel)","createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"}},"title":"BaseModel"},"createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"labelId":{"type":"integer","format":"int32"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"}},"title":"Label"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"},"realm":{"type":"object","properties":{"code":{"type":"string"},"id":{"type":"integer","format":"int32"},"idString":{"type":"string"},"label":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":"circular(BaseModel)","createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"}},"title":"BaseModel"},"createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"labelId":{"type":"integer","format":"int32"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"}},"title":"Label"},"name":{"type":"string"}},"title":"SimpleCodeObject"},"supplierId":{"type":"integer","format":"int32"}},"title":"Supplier"}}},"description":"Returns the supplier with the specified ID"},"403":{"content":{"text/json":{"schema":{"type":"object","properties":{"messageCode":{"type":"string"}},"title":"ResponseCode"}}},"description":"User does not have access to this supplier"},"404":{"content":{"text/json":{"schema":{"type":"object","properties":{"messageCode":{"type":"string"}},"title":"ResponseCode"}}},"description":"Supplier not found"},"500":{"content":{"text/json":{"schema":{"type":"object","properties":{"messageCode":{"type":"string"}},"title":"ResponseCode"}}},"description":"Internal error while retrieving the supplier"}}}
+>
+  
+</StatusCodes>
+
+
+      

@@ -1,0 +1,71 @@
+---
+id: get-stock-status-over-time
+title: "Get Stock Status Over Time Report"
+description: "Retrieve a stock status over time report"
+sidebar_label: "Get Stock Status Over Time Report"
+hide_title: true
+hide_table_of_contents: true
+api: eJztV91v4kYQ/1dW89RKDhDaND2rqpSkuVNOueYC3J1UhKLBnsBe7F1ndxwOIf73atYmMQkQ8tSX8mR2ZnY+fvO1C0jJJ04XrK2BGHrETtMDKVSebXKnPCOXXtkHcop1TspRYR1DBLYghyJ2kUIME+K+CPQD/9UDuYHOCSJwdF+S51ObziFeQGINk2H5xKLIdBKuaH/3on4BPplSjvLF84IgBjv+TomoK5woZE1eqEWGxmgz+WI0X6R9dtpMGlK+OlhGzxh9gwedwzlEoJlyv0F2GXROHObi4CNZG6YJOYjg1rocuTr6pSvKPKPjv5Dp5XUN9hSZDiSWlYgt3ibxQM7XUd/DqGUErDkTpg34XJii5JtegPSrphksRWA9JQZT2pYLWsRrjLWjFGJ2JS3lwBfW+AqrbqfzDHmmH7wd8m3AbEkFTLjE7MwaX+a1zY8iY2szQiNhwzxpEEyZj9fjldpynFHN+ckanp7Zsjb3deSTJ/XXPN9TUcobUza3fs8Lcuvfl1w62tPK3PrP6Pf1qVk6r8Og9y0SvatcMxxT9rqyMXr6ZNM3skKiXVJm6H46XR02cv9naNTKJoZH+27IbDf+5tbtIBa7iL7Y3IZWRl0GrrVqbVS3zouMrkIQnhldt7HXY5XYdEMjCpj9D+5/D+6ZTTcDHNrzXj1j9zi4KvnlPHgxEHrEpTNe8fbBUC8JywiO3tj8twCdk/c4CRHYHcZePXmE85XBdmGYnMFMkXPWqdlUZ6QmZMJaYybBv5UjogEnHuIhVJd6GEWQE0+tbD+F9cFm5CnE0MZCtyvJtt+4FHlyMsYhHi6gdJK9U+bCx20Rbd2XaFjf1rsRGszmrBPfsk62gnUnPlT2UqqqO5VctxyJiqR0WmbRcAFjQkfupBTzhqMmuS8A1MXUYFr9e79KoI/fBi90n0sAQ5g+fhsotndklDbhoEq8WJ2GW9QfgfineB70yWgOFIhWWEoAQpwlNXpPS+P5D5Tc3770Pe1LL3a94Yo2WtvlOmubGnQ73V8POscH3XeDw6P46DDu/t7qHB/+A83tbBdXYyPrSA80t1bMXQ/W9Rqo6mSFqhpYm0EEmU7I+OCnwRChkwKTKanLiqC+VlpUt9WB6FnWzGazFgZ2SZJ2fZdvX16cnf/dPz8QmUaRXJ8MnswW31rvjodHR78dj8K4sJ5zNA1LPhCr0C5UlclKUllJLqve6jmw5m2j4N/ypKhTIXSIIkMdFrfg6aKurSFgocPGWYtsqq9RBFMpyHgIi4WMiC8uWy7l+L4kJxUxiuABnUbpiVIQEUwJU3KhWO5oDjGcVQ4cDMQmYc/KsJw+f7Qso5XESZJQwQ3ep063bDaLz1d9Cf+4fhHloaeBw5n4hTOIIbyuREWoy3C2gAzNpMSJ8FZ3yu9f+2HAyw==
+sidebar_class_name: "post api-method"
+info_path: docs/generated/api/qat
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get Stock Status Over Time Report"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/api/report/stockStatusOverTime"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Retrieve a stock status over time report
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={undefined}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"content":{"application/json":{"schema":{"type":"object","properties":{"planningUnitIdString":{"type":"string"},"planningUnitIds":{"type":"array","items":{"type":"string"}},"programId":{"type":"integer","format":"int32"},"startDate":{"type":"string","format":"date-time"},"stopDate":{"type":"string","format":"date-time"},"versionId":{"type":"integer","format":"int32"}},"title":"StockStatusOverTimeInput_ReportView"}}},"description":"The stock status over time input","required":true}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"content":{"text/json":{"schema":{"type":"array","items":{"type":"object","properties":{"actualConsumption":{"type":"boolean"},"amc":{"type":"number","format":"double"},"amcMonthCount":{"type":"integer","format":"int32"},"consumptionQty":{"type":"number","format":"double"},"dt":{"type":"string"},"mos":{"type":"number","format":"double"},"mosFuture":{"type":"integer","format":"int32"},"mosPast":{"type":"integer","format":"int32"},"planningUnit":{"type":"object","properties":{"id":{"type":"integer","format":"int32"},"idString":{"type":"string"},"label":{"type":"object","properties":{"baseModel":{"type":"object","properties":{"baseModel":"circular(BaseModel_ReportView)"},"title":"BaseModel_ReportView"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"}},"title":"Label_ReportView"}},"title":"SimpleObject_ReportView"},"program":{"type":"object","properties":{"code":{"type":"string"},"id":{"type":"integer","format":"int32"},"idString":{"type":"string"},"label":{"type":"object","properties":{"baseModel":{"type":"object","properties":{"baseModel":"circular(BaseModel_ReportView)"},"title":"BaseModel_ReportView"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"}},"title":"Label_ReportView"}},"title":"SimpleCodeObject_ReportView"},"stock":{"type":"number","format":"double"}},"title":"StockStatusOverTimeOutput_ReportView"}}}},"description":"Returns the stock status over time report"},"500":{"content":{"text/json":{"schema":{"type":"object","properties":{"messageCode":{"type":"string"}},"title":"ResponseCode_ReportView"}}},"description":"Internal error while generating the report"}}}
+>
+  
+</StatusCodes>
+
+
+      

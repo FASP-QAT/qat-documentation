@@ -1,0 +1,33 @@
+---
+id: pplinventory
+title: "PplInventory"
+description: ""
+sidebar_label: "PplInventory"
+hide_title: true
+hide_table_of_contents: true
+schema: true
+sample: {"productid":"string","period":"2024-07-29T15:51:28.071Z","invamount":0,"invtransferflag":true,"invnote":"string","invdatechanged":"2024-07-29T15:51:28.071Z","ctrindex":0,"invdisplaynote":true,"invdatasourceid":"string","fimported":true,"old_inventory":0,"pipelineId":0,"inventoryDate":"string"}
+custom_edit_url: null
+---
+
+import Schema from "@theme/Schema";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"PplInventory"}
+>
+</Heading>
+
+
+
+
+
+<Schema
+  schema={{"type":"object","properties":{"productid":{"type":"string"},"period":{"type":"string","format":"date-time"},"invamount":{"type":"number","format":"double"},"invtransferflag":{"type":"boolean"},"invnote":{"type":"string"},"invdatechanged":{"type":"string","format":"date-time"},"ctrindex":{"type":"integer","format":"int32"},"invdisplaynote":{"type":"boolean"},"invdatasourceid":{"type":"string"},"fimported":{"type":"boolean"},"old_inventory":{"type":"number","format":"double"},"pipelineId":{"type":"integer","format":"int32"},"inventoryDate":{"type":"string"}},"title":"PplInventory"}}
+  schemaType={"response"}
+>
+  
+</Schema>
+            

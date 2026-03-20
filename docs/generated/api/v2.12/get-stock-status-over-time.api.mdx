@@ -1,0 +1,71 @@
+---
+id: get-stock-status-over-time
+title: "get the StockStatusOverTimeOutput list"
+description: "API used to get the StockStatusOverTimeOutput list."
+sidebar_label: "get the StockStatusOverTimeOutput list"
+hide_title: true
+hide_table_of_contents: true
+api: eJylVU1z4kYQ/SuqvuQiQCZxbaJTyMfWcjI2bA6hKFcjNdLsSjPjmRYsRem/b/UI28KwG5JwQRq9/pju97oPwFh4SJfgyBrHsIohJ585ZVkZDSlMZtOo8ZRHbKKCOOKSojmb7POckRt/tyW3UDXdNWwbjirleQgxGEsOxcM0hxQK4gsmEIOjp4Y8/2byPaQHyIxm0iyPaG2lsuBi9MlLJgfwWUk1yhPvLUEKZv2JMoYYrJOArMjLV+tM4bCW0C9QpZkKchDDxrgauTv6cQxtDFty/pjqVfja+Bl6vh79vuHG0ZV4z+j4D+Q+3rNTuujDc2QasFQxmBj77yxshVorXXzUiqe57xmic7iHGBRT7c8dtmfG8+7DRSQrruToQven2jb8+BBY95eiHbRiIIRQjnJI2TUUDrw12neNHSeJ/J0S9IG4cdpfQUyI+wxj+sLP1Aqxby95n2omp7GKyDnjIi6RI+toS5pFEyVFjtiR2mIVmc3/SUCoQlwaEYw1AWyRS0hhhFaNOn2O/EUdeXJCYkiXB2hcBSmUzNanIzEdPjWoWW2OckKN1Z5V5ofGCUFO7ztzJm8yeYk6p9HGuOh+soAYtugUrqvQi7ZdxSDJP7xK+M8vWNuK3kgwORFY0pNPciKO5IT6ME7GPw2Sd4PxL4ub2/T2Jh3/PEze3fwNfbp/D3VG8eUzM1ffovALdWNQemNCk44Mvj+pYYQ6jybPhYwWxlTwck1Ja3gzHiZnxZ3Mpj94GaSYZeQ7yt5PFtE8VPrIDswCOzTWEvf9ZD6LmLCG+E1nd7vdP3SWalRi8WE+fxQ/jx/ufy1Knw2srwOkjaFSGWlPvYgTi1lJUZf/aciNMcM1um4IGM816p7hddvhbVF6U/8/7prj2AlyshUqLfcKiR+OCloCWhXWTdhxgUFnKlrFUIrs0iUcDmv09NFVbSvHTw25PaTL1asE5K2NoSTMyQXZfaY9pPB7d5fBQnISeNWEofp2m7Xxs8Uky8hyD/s6FkRiLyNhdjcXDa6Pq7I2uYAd7uReuIMUwtqVEGFWhrMDVKiLBgvBdj7l9xUlX75M
+sidebar_class_name: "post api-method"
+info_path: docs/generated/api/v2.12/quantification-and-analytics-tool
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"get the StockStatusOverTimeOutput list"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/api/report/stockStatusOverTime"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+API used to get the StockStatusOverTimeOutput list.
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={undefined}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"content":{"application/json":{"schema":{"type":"object","properties":{"programId":{"type":"integer","format":"int32"},"versionId":{"type":"integer","format":"int32"},"mosPast":{"type":"integer","format":"int32"},"mosFuture":{"type":"integer","format":"int32"},"startDate":{"type":"string","format":"date-time"},"stopDate":{"type":"string","format":"date-time"},"planningUnitIds":{"type":"array","items":{"type":"string"}},"planningUnitIdString":{"type":"string"}},"title":"StockStatusOverTimeInput_ReportView"}}},"required":true}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Returns the StockStatusOverTimeOutput list","content":{"text/json":{}}},"500":{"description":"Internal error that prevented the retreival of StockStatusOverTimeOutput list","content":{"text/json":{}}}}}
+>
+  
+</StatusCodes>
+
+
+      

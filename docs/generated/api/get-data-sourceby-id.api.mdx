@@ -1,0 +1,71 @@
+---
+id: get-data-sourceby-id
+title: "Get Data Source"
+description: "Retrieve a data source by its ID"
+sidebar_label: "Get Data Source"
+hide_title: true
+hide_table_of_contents: true
+api: eJztWW1P20gQ/iur+dRKLkG0XHXW6SQoHEpF71RIrx9QVE3sSbytvWt2x8lFkf/7adZOcYBC7oRUQP6UZHfennlj0bOClHzidMnaGojhjNhpmpNClSKj8rZyCanJUmn2angEEdiSHIr4MIUYZsRHyHge5CbLYQoRlOiwICbnIb5YXfMwykgNj5SdKs5owwlb5Vr3EIEW4RI5gwgMFgQxpN8dBTeOLivtKIWYXUUR+CSjAiFeAS9LkdeGaUYOIphaVyA3R6/3oK7Hou5Lazx50djb3ZWPxBomw8EG/cODr15iXt00bSdfKWHB6iQfrBszmLCeU0duYm1OaKCOYIKePtiU8gczA4l2SZWje3G4PnwJESSOkCk9XN7vqPLkpIxbpCwKwk0lvot7dtrMoK4jYM25HB2i18knT05U2lCOkG/R6vhIkekV64JEKUfPH2yqp/pxgOjG81+QbNpri1Y//fpsjOF2oV2pjILwfbj1toZ1et4EexOzFG7ygNPWD20/tI8C2v+sz4TyraMK0l/I/HisvkzdHZflXZe+/MHls+ug07CA6vUD5i7X57ooc/qrgdrvrn539bur312PYnc9F2whzpnD4n4IiU1viyjq36VPcHc8j+7td3u/23/eu/SdTTtvU0eY91u036JPegb6Ldpv0Z+4RTuXV/wJ1HJ+g5GpnPE32JKF5iwc+pKSAEPomTqCN7uv4QGojIK8x1mI+W5sZy2PEiRvASCEjxRIpZa8MpZVhnNSJblCe6+tEeIHk4S8gNS+i7LB8+bR4bm3EGqBDdaprUwqMPYfhmF6MBhDwzI0uSLnrFOcIavS0ZwMUxrwtGQc5reQdY0rnAnDFxpYtR08jqAgzmzLDQY2kDOIYYClHlzxAINVl0aoIQJPbr6mDCsnf0sz5tLHA9HcuazQsJ7qJFCPaDBfsk78jnUyqZvQTsgIRUmpamwqMSeUn6ekcpqXwceE0JE7qCS6i3H3+lxq0aS7K7T+9cd6Lbz/PLrh+1jSGrL1/vNIsf1GRmkTDpp1EqvDYEX9Fi5/h5a4DG+KcAPRuqySgJBpbaZWAtj09XEjJ+pgnRQ1sjaHCHKdkPGhT1oG9aDEJCN12lyov8mFAdzb2YXoWtIXi8UOBnHJ8aC15Qenw3fHf54fvxKdTrt9PJBczBuDEMPezq9vL/b3f3k7Dv95W88Fmk4kJ8Sq2zfX8tgZlG046TZfYaLKHHV4lgU8q7b/LgBLDV0mCiKIN6iscQSZ9Syyq5W86T65vK7l+LIiJ00zjmCOTuNEIAuzrb18TyGeYu7pDgwvzlqy+qXalgC/FVN7iGYp2ca8kl8QwTdaXifI63EdQUaYkgvBNiIHSUIld5SvtlDdnd2T4xHU9b+R6fqj
+sidebar_class_name: "get api-method"
+info_path: docs/generated/api/qat
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get Data Source"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/api/dataSource/{dataSourceId}"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Retrieve a data source by its ID
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"description":"The ID of the data source to retrieve","in":"path","name":"dataSourceId","required":true,"schema":{"type":"integer","format":"int32"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"content":{"text/json":{"schema":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":"circular(BaseModel)","createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"}},"title":"BaseModel"},"createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"dataSourceId":{"type":"integer","format":"int32"},"dataSourceType":{"type":"object","properties":{"id":{"type":"integer","format":"int32"},"idString":{"type":"string"},"label":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":"circular(BaseModel)","createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"}},"title":"BaseModel"},"createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"labelId":{"type":"integer","format":"int32"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"}},"title":"Label"},"name":{"type":"string"}},"title":"SimpleObject"},"label":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":"circular(BaseModel)","createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"}},"title":"BaseModel"},"createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"labelId":{"type":"integer","format":"int32"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"}},"title":"Label"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"},"program":{"type":"object","properties":{"code":{"type":"string"},"id":{"type":"integer","format":"int32"},"idString":{"type":"string"},"label":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":"circular(BaseModel)","createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"}},"title":"BaseModel"},"createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"labelId":{"type":"integer","format":"int32"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"}},"title":"Label"},"name":{"type":"string"}},"title":"SimpleCodeObject"},"realm":{"type":"object","properties":{"code":{"type":"string"},"id":{"type":"integer","format":"int32"},"idString":{"type":"string"},"label":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":"circular(BaseModel)","createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"}},"title":"BaseModel"},"createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"labelId":{"type":"integer","format":"int32"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"}},"title":"Label"},"name":{"type":"string"}},"title":"SimpleCodeObject"}},"title":"DataSource"}}},"description":"Returns the data source with the specified ID"},"403":{"content":{"text/json":{"schema":{"type":"object","properties":{"messageCode":{"type":"string"}},"title":"ResponseCode"}}},"description":"The user does not have permission to access this data source"},"404":{"content":{"text/json":{"schema":{"type":"object","properties":{"messageCode":{"type":"string"}},"title":"ResponseCode"}}},"description":"The data source with the specified ID was not found"},"500":{"content":{"text/json":{"schema":{"type":"object","properties":{"messageCode":{"type":"string"}},"title":"ResponseCode"}}},"description":"Internal error that prevented the retrieval of the data source"}}}
+>
+  
+</StatusCodes>
+
+
+      

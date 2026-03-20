@@ -1,0 +1,71 @@
+---
+id: get-planning-unit-for-program
+title: "Get Planning Unit List For Specified ProgramId"
+description: "API used to get the Planning unit list for specified programId"
+sidebar_label: "Get Planning Unit List For Specified ProgramId"
+hide_title: true
+hide_table_of_contents: true
+api: eJyllE1P20AQhv/Kai5tJTeh0F58aioIRKogkHBCERrsSbytvbvMjkMjy/+92o0TkgKlH6fYG8+878w+Mw0ILjykN+DYLhgrmCWQk89YO9HWQAqD8UjVnnIlVi1IlBSkxiUao81C1UaLKrUXNbesvKNMzzXlqss2yiEB64gxJBvlkMKCZBN9bbQMLY875QQcMlYkxMFRAwYrghR2c+ngyKEU8KvN7VdKChS1srV6QCMb1887hgSY7mvNlEMqXFMCPiuoQkgbkJUL8toILSh8OrdcoayPjg6hbWch3DtrPPkQcXhwEH72jV2R1Gz8C32DBDJrhIxESfoh/W8+xDVt2ybw8eDo5YyozkTcRFBq3xteXH0ZHR+fnCs9j1rXnljllrwyVlSBS1KYZeT9q5If/1Dy/GJ6O7y4Pj/eSHpbkbLr59rkxOUqFJuj4KOTCiUreq+Y+PRcJ0dGiA2Wipgtr+/ZMS3JSMCzIMUkTHqJZXDxl81uE6hICttBGnGUAlLoo9P9Dq9+s+Ws7bsdjiEBT7zcoFtzCSkUIs6n/ZCgd1+jET3XWRwFNFiuRGe+Z3nxhOUx27zOwotaJ43TdTmYQgJLZI13ZQQuEqjN3MZytJSB18s9IYUmV4ONmppaW4YkxH4tddj7cNg7eOJgMB698WF21sjE5l4OpmoS7XR9xCz2sRvT4WAyVkJxkPfLf3h4eKV8qlCHiLPJ5DbkuT27/LwofPbe+Sp+0iZQ6oyMpx3FgcOsILX2vy85t7Z3hwzhVp31UqHZCTzdXQjh9tTXsBCGltVku8LGO2tnrznNI0T/vxy7JRNZdCVqE0qNtTQdfzeATgcat2sy3U2wB+EsgcJ6CUFNc4eerrls23B8XxOvIL2ZPRIUQc21D885pHMsPf2m1LdX3aZ8p/511z5bbHeIZhXpLuvwBgl8p9Xe8m9nbQIFYU4cna//H2QZOdmJfJzqMBzbiT49mULb/gSIcGZn
+sidebar_class_name: "get api-method"
+info_path: docs/generated/api/v2.12/quantification-and-analytics-tool
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get Planning Unit List For Specified ProgramId"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/api/program/{programId}/planningUnit"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+API used to get the Planning unit list for specified programId
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"programId","in":"path","description":"programId that you want to get Planning unit list for","required":true,"schema":{"type":"integer","format":"int32"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Returns the Planning unit list","content":{"text/json":{}}},"403":{"description":"Returns a HttpStatus.FORBIDDEN if the User does not have access","content":{"text/json":{}}},"404":{"description":"Returns a HttpStatus.NOT_FOUND if the some of the underlying data does not match.","content":{"text/json":{}}},"500":{"description":"Internal error that prevented the retreival of Planning unit list","content":{"text/json":{}}}}}
+>
+  
+</StatusCodes>
+
+
+      

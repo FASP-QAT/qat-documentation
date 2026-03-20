@@ -1,0 +1,71 @@
+---
+id: put-funding-source-type
+title: "Update Funding Source Type"
+description: "Update an existing funding source type."
+sidebar_label: "Update Funding Source Type"
+hide_title: true
+hide_table_of_contents: true
+api: eJztWW1v2zYQ/ivEfdoAxXbcpmmFYUCcJUOKtFsTZwUWGANNnS22MqmQlB3D0H8vjpJr+q1pihTzOudLEt77kbx7jppBglYYmTupFcRwkyfcIeOK4b20TqohGxQqod9WF0Ygc9McGxCBztFwkrpIIIa8cOcV37Vn605zhAgM3hVoXUcnU4hnILRyqBz9yfM8k8IraH6wZHsGVqQ44vQXGYEYdP8DCgcR5IbMOYnWywonxxjw9bXOkCsoI+hzi290gtmTqQEhjSgybn7qzBd/hgiEQe4w6UwfNlRYNJSlz3xSORyigQgG2oy4q5aetckyMSs+Cv2yzkg1hLKMwEmX0VKHWyluLBoSqV35jbsNUoEN2toDJ0dIQhm37o1O5EDuRhChP4+JZFlfvWnlf39/BqvX6VQnm4xu4PzqWDLef8KLsr9v+/u2E6F94/70MXvczfkH1cYLWREH5gvE/EtEm28h/nAn6NIXoB8oNoI8PBs9HIDYVs3l10Ylk+tKaOtB2lf2fWXfV/Z9Zf9XK/vDpq/lKM88vP2jCjckrk+VJZGXp9ZuimyNkTnNCj/O1oOoNJhA7EyBvkzbXCtb5bPdaq2Mpw7v3aPn0hFay4fbgHoQ1FVt3HNuiOcKXWGUZZzZQgi0ltWqKaHPW892ylk6NCzRaJnSjqV8jMzIYersYgOYS6VltSM+hBc7FcL5+hMH45lBnkyrdxBLXh/t2Cm5UI5udsbQGG3YJJUZVgnf8mxTaedDC/Ht55irCwO9CEboUl0/5pDX3KUQQ5Pnsrk2YkIEFs0YDemaQWGovafO5TZukkTjruDKyUH9xMMVz6ZOCtvQhorHciC/o6K3JExYpZORurJHJkRhpJt6G33kBs1JQV7d9kLyNWW+Sm7INP/vfF6pXr/vrtk+oyQylyJ7/b7LnP6IiknlF6oKF7OO18J+8cRfKXJvj2COp0A030RKgE8ynYmrxdvX2T2nEhdCJSpDKxhrmbTUdecFvxWW86CBLPVFaLfazw9axwftV93Do/joMG6/bLSOD/+GTZ3mIdXrvWC7/lWw8GRub3kMCbrRpjeQVoCD93n/Nrdr6NQKgdEi7Qs8tLqWb1gj9BOufeeUfF8DwaQnVg6jrEwsBrSVROzP4//yPK7I0wivBpoMLbekd0utk53Meyfrap2Ro1Kgsr6b1CpPci5SZJcVgf2FxpJku9GCaKU3TyaTBvfs1IqbtS7bvLw4PXt7fXZAMgEGeXdCLXNcKaT4Gq+Ob4+OXhz3iCvX1o24Cjypvx8tgwtWI4alMAMg9YivTnWj9cArz7j0Tww+wlkNWG6B53JTRyCIk2rriGU2oxt3Y7KypOW7Ag2BjF4EY24k71Pst70yghR5gsbjj484hRhOK6cP6pDGPCvIobXPWWU0lzgRAnMX8C5QYxmirj9vKNX9+lPZqKophk+o0vAJxOA/upEFj3T82gwyroYFTQYxVCrp5xOC0WWQ
+sidebar_class_name: "put api-method"
+info_path: docs/generated/api/qat
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Update Funding Source Type"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"put"}
+  path={"/api/fundingSourceType"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Update an existing funding source type.
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={undefined}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"content":{"application/json":{"schema":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":"circular(BaseModel)","createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"}},"title":"BaseModel"},"createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"fundingSourceTypeCode":{"type":"string"},"fundingSourceTypeId":{"type":"integer","format":"int32"},"label":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":"circular(BaseModel)","createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"}},"title":"BaseModel"},"createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"labelId":{"type":"integer","format":"int32"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"}},"title":"Label"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"},"realm":{"type":"object","properties":{"code":{"type":"string"},"id":{"type":"integer","format":"int32"},"idString":{"type":"string"},"label":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":"circular(BaseModel)","createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"}},"title":"BaseModel"},"createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"labelId":{"type":"integer","format":"int32"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"}},"title":"Label"},"name":{"type":"string"}},"title":"SimpleCodeObject"}},"title":"FundingSourceType"}}},"description":"The FundingSourceType to update","required":true}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"content":{"text/json":{"schema":{"type":"object","properties":{"messageCode":{"type":"string"}},"title":"ResponseCode"}}},"description":"Returns a success message"},"403":{"content":{"text/json":{"schema":{"type":"object","properties":{"messageCode":{"type":"string"}},"title":"ResponseCode"}}},"description":"User does not have rights to update this object"},"406":{"content":{"text/json":{"schema":{"type":"object","properties":{"messageCode":{"type":"string"}},"title":"ResponseCode"}}},"description":"Funding source type already exists"},"500":{"content":{"text/json":{"schema":{"type":"object","properties":{"messageCode":{"type":"string"}},"title":"ResponseCode"}}},"description":"Internal error while updating funding source type"}}}
+>
+  
+</StatusCodes>
+
+
+      

@@ -1,0 +1,71 @@
+---
+id: add-and-upadte-equivalency-unit
+title: "Add or Update EquivalencyUnit"
+description: "API used to add or update EquivalencyUnit"
+sidebar_label: "Add or Update EquivalencyUnit"
+hide_title: true
+hide_table_of_contents: true
+api: eJztWktz2zYQ/isYXNrO0LKsJE2rU2lHmWjG9UOSe6jH41kRKxEpSdDA0opGw//eWVAPSnJkp6fGoU7SYoF9cLn48AkLSTB1snsr8aHQj5BgFs1vMk3yLpAKXWR1TtpksivDq74oHCpBRoBSwlhR5AoIRW9naiBNjhZ4Xl/JrgSlwkzd5KAI93UtPhTo6NSouewudoyOYhSJdiTMZNeMMOPPGJETFAOJuSnEDDLa864l+hOxE1xfCe1EViQJ67UFxZgJTSwEpVAJ/bUphqppkCmRmUy0l9MqW0oGMjIZYUYcCuR5oiOfh+PPjuNZSBfFmAJ/o3mOnBxrYS4DqQlTV5NX0clA5pazSRr9aGSRDZ3On1ctHFrO/1pPZ4RTtDKQE2NToEr0piPLwCtnkGJN3ZHV2VSWZSBJU8KiU3A6unFoecrSlQ9AT8yq2eDMHJFOkScl4OhPo/RE/z+CqPvzbZFARPqxrj82JkHIeGyveF4YgEVI0ueTol+6XgJjTJqieh1F5R/mi9322veYPeH2atDlBwYn9sBg/vTgGBz+aVRTcq+l5GoPVEbaRkUC9ufTlfAXue3NUrXu47lvQJxko54KJ5BaDavvB2Md6jRP8MwovKzyWwYyRkgoDi3CuXb037fUppv+iKXddNOm5JpuuuqmTXd7XaXWdLem5L7b7taURlMa26WxyxqWZVlWzKG2qGSXbIFe4HKTuSpVnXZb7vGJA6TCZk6AGBZRhM4J3kqZ76MYxZq2FDNwwlUakyLZpvUIv9CKz/N+vG2/OWTpE1E+JKDCtT5eDk77Hz70LtgiU5bKeE4xhkcUVk9jpjM9gXm85FYp1k6si+GwF7++0IuLy9F9eHbWuxqFp+e9VfAKCIQrmLPENdkJUYQ5wTjBZ6y/O5ztmvX+xag3uAjP74e9wV+9wX1vMLgcLJ2wWGXepCgM/xZorbEVxau0qnxKEjPbeV5kRGQY1NBhR8tApkixYVo6N86/YECx7MpjyPXxLgkeSIf2ES0z5AtZWC7gmCh33WPWbz0UkJGeLEleyCCZk45cy1h+UbaTcWWNKiLvbbWomBgrrsORDOQjWM1Jdt7Lu0Cyx4MNMd77Ahyc92Kr5a36Qbv+ttd22a2mJDvtztuj9vujzu+jk3fddyfdzm+t9vuTv+VTjei5pfdbxaH1V+2B39Qn+dF2jf3U1e81In0NIa8RWbuOtzZddQOzdmWMrnZl+ZZsa8P8/pNVrk84mxA3B5uaiV0G6LYpnaZ0XlI6d02F/MgV8upCugukzibGA54lZL7egib+D+twhU/EyBgGtYxsKnDSaZ10Wu09zBJe9X+qEGkFlhl0XYcjMfQAZom0IPJIaxnQx3B4JQghlcEOYJrNZs8AJkxB84xPw+E9r3P/6fqPaeyio9ylXoXTpCPMHNYshjlEMYrK/22TE2NaY7D+LMFwL4WsPrG6J3DztVsMW7lYbFDlN12FWJ6GPA7NE9D+QOS9XCyh562EXMs9UMQ3MGLjtzW5WHDJ3tikLFn8UKCdy+7t3QY58q9qR1Ro/U74D85lV55VTh+N2A1WTwr/F8nu1YQyWM0IPeSv6W4gNNfZGj5fXQ4Zuo6X9zbSqutamPGdDpjJrvQXQdiEP4952UImkE0LmLJutSZ//gVB7pqu
+sidebar_class_name: "post api-method"
+info_path: docs/generated/api/v2.12/quantification-and-analytics-tool
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Add or Update EquivalencyUnit"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/api/equivalencyUnit"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+API used to add or update EquivalencyUnit
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={undefined}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"description":"The list of EquivalencyUnit objects that you want to add or update. If equivalencyUnitId is null or 0 then it is added if equivalencyUnitId is not null and non 0 it is updated","content":{"application/json":{"schema":{"type":"array","items":{"type":"object","properties":{"createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"},"active":{"type":"boolean"},"equivalencyUnitId":{"type":"integer","format":"int32"},"realm":{"type":"object","properties":{"id":{"type":"integer","format":"int32"},"label":{"type":"object","properties":{"createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"},"active":{"type":"boolean"},"labelId":{"type":"integer","format":"int32"},"label_en":{"type":"string"},"label_sp":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"baseModel":{"type":"object","properties":{"createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"},"active":{"type":"boolean"},"baseModel":"circular(BaseModel)"},"title":"BaseModel"}},"title":"Label"},"code":{"type":"string"},"idString":{"type":"string"}},"title":"SimpleCodeObject"},"healthAreaList":{"type":"array","items":{"type":"object","properties":{"id":{"type":"integer","format":"int32"},"label":{"type":"object","properties":{"createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"},"active":{"type":"boolean"},"labelId":{"type":"integer","format":"int32"},"label_en":{"type":"string"},"label_sp":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"baseModel":{"type":"object","properties":{"createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"},"active":{"type":"boolean"},"baseModel":"circular(BaseModel)"},"title":"BaseModel"}},"title":"Label"},"code":{"type":"string"},"idString":{"type":"string"}},"title":"SimpleCodeObject"}},"label":{"type":"object","properties":{"createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"},"active":{"type":"boolean"},"labelId":{"type":"integer","format":"int32"},"label_en":{"type":"string"},"label_sp":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"baseModel":{"type":"object","properties":{"createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"},"active":{"type":"boolean"},"baseModel":"circular(BaseModel)"},"title":"BaseModel"}},"title":"Label"},"baseModel":{"type":"object","properties":{"createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"},"active":{"type":"boolean"},"baseModel":"circular(BaseModel)"},"title":"BaseModel"}},"title":"EquivalencyUnit"}}}},"required":true}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Returns a Success code if the operation was successful","content":{"text/json":{}}},"403":{"description":"Returns a HttpStatus.FORBIDDEN if you do not have rights to add/update this object","content":{"text/json":{}}},"406":{"description":"Returns a HttpStatus.NOT_ACCEPTABLE if the data supplied is not acceptable","content":{"text/json":{}}},"500":{"description":"Returns a HttpStatus.INTERNAL_SERVER_ERROR if there was some other error that did not allow the operation to complete","content":{"text/json":{}}}}}
+>
+  
+</StatusCodes>
+
+
+      

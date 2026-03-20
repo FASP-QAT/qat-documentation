@@ -1,0 +1,71 @@
+---
+id: get-funding-source-shipment-report
+title: "get the FundingSourceShipmentReportOutput list"
+description: "API used to get the FundingSourceShipmentReportOutput list."
+sidebar_label: "get the FundingSourceShipmentReportOutput list"
+hide_title: true
+hide_table_of_contents: true
+api: eJytlk1z2zYQhv8KZi+9UB9W60nLU9UknegU2VJ6qEbjWZErEikJwMDSikbD/55ZSLIp2VHiaXQRCe0HFvs+C+2AsQiQLsCTs55hmUBOIfPasbYGUhhPJ6oJlCu2qiBWXJL6uzG5NsXMNj6jWaldTYZvY4CPDbuGVaUD9yEB68ijRJrkkEJBfMEVEvB031Dgv2y+hXQHmTVMhuURnat0FkMNPgfZ2Q5CVlKN8sRbR5CCXX2mTOI4L4lZU4h2jJ7fIVPHNLDXpoAE1tbXyJBCjkw91jVBm0Bg617n4bwtPNZS56OLNkwF+a6PNvzrSOwfyIfDufyQvavQGG2KT0bzJA8dL/Qet5CAZqrD8w23bQLaZFWT01RiUH489q7xytqK0EimdbdFr0515j3b//Lc9Lyibxq2CbDmSpYuiGdiXMN3++d/NG2gFUfRk/aUQ8q+obgQnDVhr4vRcChfp3q/JW68Ca/QOSRdoTJ94aNC4x6uX8oyMUzeYKXIe+sVl8jKeXogw4JaScoTe9IPWCm7/hkbaROoiUsrHDobjR1yCSkM0OnBHv/B+iKegbzIFtLFDhpfQQolswvpQEL07xs0rNcHStFgtWWdhb71Qs1p/VNv8yaTF7UPqtbWq5vxHBJ4QK9xVcUete0yASni9mkyvP+CtavojGwYDUe/9YZveqM/5lfX6fVVOvq9P3xz9S90ab5k1SF4eMLn8AX6Fkd9Li/QJaJ7iaeu8zd4eRo3L2PS4UibtY0NP1Byc9IHhSZX42Mz1NzaCh6rkwPpX436w2cNGk8nvwSZ+ZhlFPY43Iznaha7dVAaZlFpButI53g2VUxYQ3Kmjs1m8x11UI1aPD7MZncS5+7DzZ9FGbKeC3U0aROodEYmUCfj2GFWktrv/zTl2tr+Cn0cHyL3Gk3H8XUX2fnhdC6m/3k9HkZdRNVVqOP8jYXsDnQuAJ2ON+OBwUuELhMoBe10AbvdCgN98lXbyvJ9Q34L6WL5hJe8tQmUhDn5iPR/tIUU3u5r681lb2JeNXH0n1/AbXL0GGcZOe7YPo0ewfdx7Ew/zoTv1eF2r20uxh43Uh9uIIX4j0FSxPkc13ZQoSkaLMR2H1M+XwEFcAxR
+sidebar_class_name: "post api-method"
+info_path: docs/generated/api/v2.12/quantification-and-analytics-tool
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"get the FundingSourceShipmentReportOutput list"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/api/report/fundingSourceShipmentReport"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+API used to get the FundingSourceShipmentReportOutput list.
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={undefined}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"content":{"application/json":{"schema":{"type":"object","properties":{"startDate":{"type":"string","format":"date-time"},"stopDate":{"type":"string","format":"date-time"},"programId":{"type":"integer","format":"int32"},"versionId":{"type":"integer","format":"int32"},"planningUnitIds":{"type":"array","items":{"type":"string"}},"includePlannedShipments":{"type":"boolean"},"fundingSourceIds":{"type":"array","items":{"type":"string"}},"fundingSourceIdString":{"type":"string"},"planningUnitIdString":{"type":"string"}},"title":"FundingSourceShipmentReportInput_ReportView"}}},"required":true}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Returns the FundingSourceShipmentReportOutput list","content":{"text/json":{}}},"500":{"description":"Internal error that prevented the retreival of FundingSourceShipmentReportOutput list","content":{"text/json":{}}}}}
+>
+  
+</StatusCodes>
+
+
+      

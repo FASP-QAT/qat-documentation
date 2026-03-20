@@ -1,0 +1,71 @@
+---
+id: get-procurement-agent-display-name
+title: "Get ProcurementAgent by display name"
+description: "API used to get the ProcurementAgent by providing the display name of the ProcurementAgent and the Realm"
+sidebar_label: "Get ProcurementAgent by display name"
+hide_title: true
+hide_table_of_contents: true
+api: eJy9VEtv4zYQ/ivEXNoFVCubohedKiBt4kvhPPYUGMFEGkvsSiRDjpwaAv/7Yigldhy3iwZFLxJf8/rmm28ExiZAcQ/O22rw1JPhsiHDsM6gplB57VhbAwWUq6UaAtWKrWqIFbekVkdW6nGnnLdbXWvTpBe1Dq7DnTLYk7Kb01Zo6nRxQ9j1kIF15FHCLmsooCE+triYvP6BPUEGDj32xOSlkhEkFBTgxdmyhgy0pO+QWziu6WZ6o7hFVjs7qGc0LAWeTHNjPWTg6WnQnmoo2A+UQaha6hGKEXjnJLA2TA3J0431PfJ09PM5xJi9Zmem1P8+tYtD4P7T/AJ7bRqIcS2Pg7MmUJD787Mz+R1DxIM34WREyKCyhmUl7ukvzv8MYjXGGDP45ZS/pWHyBjtF3ls/VeY8bckwTSzwxJ70Fjvhy78KGTPoiVs7syZRg1soIEen82OK5w0dEimfCZOP8yLmgn0+yjdCBoH89oVjg++ggJbZhSIX74unAQ3rja4ScdFgt2NdhYX1zbverryth0o2anIqrVPX5R1ksEWv8bFLHUkt0mZjU62aO2nf9ZtAaXbKl2jqztpOnJAPU6jzxefzxdm7DMrV8ocgRMKqojB197q8U7cpnRlkrBLIM2N/L29XigllQN+W//z8/J3yqUctFle3tw/i5+Hq+temDdVPLvTpScyg0xWZQAcRS4dVS2rK/23IjbWLR/QyUuBs4B7NgeEl8UlpOhSjY0jGPa/+T6mbZzIR2XWojUCRah1n8t4DOi1Ufj8JbwmcZv9F84r9cq62SP91Bq0NLG7H8REDffFdjHL8NJDfQXG/3nMwUb3WQdY1FBvsAv0DbD/ezNLzSX1EWE9CMR+i2aXZ6AbZQQZfaXeg8SKsH8rzwyr7gWQT/nEdM2gJa/IJ3emqrCpyfGC0FzaRgFdRu/ztDmL8BtvHrkw=
+sidebar_class_name: "get api-method"
+info_path: docs/generated/api/v2.12/quantification-and-analytics-tool
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get ProcurementAgent by display name"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/api/procurementAgent/getDisplayName/realmId/{realmId}/name/{name}"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+API used to get the ProcurementAgent by providing the display name of the ProcurementAgent and the Realm
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"realmId","in":"path","description":"RealmId that you want to the ProcurementAgent for","required":true,"schema":{"type":"integer","format":"int32"}},{"name":"name","in":"path","description":"Display name that you want to the ProcurementAgent for","required":true,"schema":{"type":"string"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Returns the ProcurementAgent","content":{"text/json":{}}},"500":{"description":"Internal error that prevented the retreival of ProcurementAgent","content":{"text/json":{}}}}}
+>
+  
+</StatusCodes>
+
+
+      

@@ -1,0 +1,71 @@
+---
+id: get-qat-temp-planning-unit-list
+title: "Get QAT Temp Planning Unit List"
+description: "Retrieve a planning unit list by pipeline ID from temp tables"
+sidebar_label: "Get QAT Temp Planning Unit List"
+hide_title: true
+hide_table_of_contents: true
+api: eJzdV1FP4zgQ/ivWPO1KWYo4caurTicVFlBXZbdAuX1A1cpNpo0Xxw7jSdmqyn8/2UmOhBYo4h5O+9TGnhl/83lsf7OGBF1MKmdlDfThEpkULlFIkWtpjDILURjFQivHYrYSucpRK4Ni+EnMyWaCMcsFy5lGBxHYHEn6WMME+rBAvpA8wSwf18GujeKRcgwR5JJkhozkoH+zfoRjkoYV7Fxwig+LshXUIAwTmxg9KIhA+Si55BQiMDJD/1VHGSYQAeFdoQgT6DMVGIGLU8wk9NfAq9xbK8O4QIII5pYyydXQbwdQllPv7nJrHDrvcbC/739iaxgNhxj4k3s/nE9lvRlaEsmVx8iYuda4nf3AOFBDnkdWVXgZs1piy25mrUZpoIwgliy1XYxJxW0LU2SzLvbEFjON3kXbWOox2bigDA2PUCYTle3qnSlzbg2n7uv8im18uxNjEWTBZ2hOCy4ITy0NsviVrmPp+HWOhWaVa4W0Y25NgYzJJkXMx5JxYWn1RXbYcUzKLLbYP23XKn5/LraZdJfsWD2XY052QTJ7uYjUrhFVclWh2gZTyxnqt1XsTDo8t8l/GAZiRXGhJb07agbfQwQxoWRMjlYvL1Q4pJ0p98Zm+1aXEbBi7YeOpFPxtUMKp7SC8knyFq92KUrGD+wPY+Da8blN1Fz9P5Jo43lNJt149aaVv8L+zFDvjCpYf0fz9LH6PqdnJvPnJl3+xOQvV0GjcAGVzZv+3NJXKss1fq1Sfbgqxy9fxoSWEqRTrxHQxKth/eTtyIxLUc9Hao472bcQN1ppEyiUpTfc0GoFGSdkJXzsvCuHnMdy+Epp8kRlZOicXOCxTV4g/bLWRcFyC+ahYV82WiCRJXGfKo1igcwe9b8yb1PWVYvIhdeKMK7tYBpBhpzaWmsGUckp9KEnc9W7q+js5Y+0Z2/9oARLiMAhLRsVWpB/UFLm3PV7PsreXSENq7mKg6yVRuoVq9jtWfLl2s3uDI2Xv5iIKqbw4bxcdBgXpHgV1pihJKRB4ZHeTNvTV347KsbbRs3XaVM6n79NNtY+8cwGUfz520SwvUUjlAkDVcn1xVGIIv4Mk39BLXrDwxpmIGp21hMQKFdmbj2A7loXHU7EoCFFTKzVEIFWMRoXSqXW3oNcximKUTUh/kZy3vNgbx+iR6Tf39/vyWDuOe7VsVxvNDw++XJ18sH7tA/NwHOxrAJCHw72/vh4c3j4+8dpOPTWcSZNC8kZsrgYTIQvDdGcMeFrQ9SNSSfX1tl5c3NUkxtOYK6lCkImJL+uC/cGZK4ggrp0oasda3z9ViMzjSC1jr3neu010TXpsvTDdwWSr7dpBEtJymOo+izl/P8E+nOpHT6T7rvLukd6L97cjm1NvWmHjG+GllIX/gsiuMVVt10rp2UEKcrES/mbdW0wiGPMueX6cLWV7Zvh7GQCZfkP2eIk3w==
+sidebar_class_name: "get api-method"
+info_path: docs/generated/api/qat
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get QAT Temp Planning Unit List"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/api/qatTemp/planningUnitList/{pipelineId}"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Retrieve a planning unit list by pipeline ID from temp tables
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"description":"The ID of the pipeline to retrieve the planning unit list from","in":"path","name":"pipelineId","required":true,"schema":{"type":"integer","format":"int32"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"content":{"text/json":{"schema":{"type":"array","items":{"type":"object","properties":{"active":{"type":"boolean"},"catalogPrice":{"type":"number","format":"double"},"localProcurmentLeadTime":{"type":"number","format":"double"},"minMonthsOfStock":{"type":"integer","format":"int32"},"monthsInFutureForAmc":{"type":"integer","format":"int32"},"monthsInPastForAmc":{"type":"integer","format":"int32"},"multiplier":{"type":"number","format":"double"},"pipelineProductCategoryName":{"type":"string"},"pipelineProductName":{"type":"string"},"planningUnitId":{"type":"string"},"productCategoryId":{"type":"integer","format":"int32"},"program":{"type":"object","properties":{"id":{"type":"integer","format":"int32"},"idString":{"type":"string"},"label":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":"circular(BaseModel)","createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"}},"title":"BaseModel"},"createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"labelId":{"type":"integer","format":"int32"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"}},"title":"Label"},"name":{"type":"string"}},"title":"SimpleObject"},"programPlanningUnitId":{"type":"string"},"reorderFrequencyInMonths":{"type":"integer","format":"int32"},"shelfLife":{"type":"integer","format":"int32"}},"title":"QatTempProgramPlanningUnit"}}}},"description":"Returns a list of planning units"},"500":{"content":{"text/json":{"schema":{"type":"object","properties":{"messageCode":{"type":"string"}},"title":"ResponseCode"}}},"description":"Internal error while getting pipeline planning unit list"}}}
+>
+  
+</StatusCodes>
+
+
+      

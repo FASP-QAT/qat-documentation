@@ -1,0 +1,71 @@
+---
+id: get-planning-unit-for-tracer-category
+title: "Get Planning Units by Tracer Category"
+description: "Retrieve a list of active planning units for a specific tracer category"
+sidebar_label: "Get Planning Units by Tracer Category"
+hide_title: true
+hide_table_of_contents: true
+api: eJzdV21v2zgM/isCP22AlxTdesMZhwPSrisydLtbm94+FMHAyEyszZFciU4vCPzfD5QdzHnpG7YDhn1KLJEPyUeU9GgFGQXtTcnGWUjhgtgbWpBCVZjAyk0VajYLUmWB1ho7U5U1HNTUeYUqlKTN1GjFHjV5pZFp5vwSEnAleRTUYQYpzIj/bgGurOG3zo+ix8k3hxI9zonJB0ivV1t5jXJSwzeSDue0HU2xU36d+G6ekIARjBI5hwQszglS4I34wwwS8HRTGU8ZpOwrSiDonOYI6Qp4WYqPsUwzEsCp83PkZujlIdT1WNxD6WygIB6HBwfyo51lshwx6F/ufwlSzmoXGr1HYcEwzUNn3E2+kGahxwujbBp4kz0qrQRMdsne2FnHPDQDdQIFTqh4OFjTAR27iXMFoRWICQZ677IfCAPaeF0V6J8drwefQwLaEzJlx8uHA1WB/PCxBIlx0xI7BNUJsOFCho4xGH0VyItLm8ob5D1enRgZMr1gM6eG68DvXWam5ucoopvPUyrZxGsXrf4V1mdCxaOzitafyd69rT5P/T2T5X2Tobxj8pfroPN4ANXrQ/m+0JdmXhb0V1NqXcvUztVVeRu+9+aqE3h18PJJZ/cd/M8pBJzRicseKO2ivTii5Z7KhHCVOQrKOlY5Lkh5M8s5yMWHWlMIinMT9tfy6qeq5YPbXY/KZnFV5Gpv14WyfcUcPfFS/b+LGVqWXVMo8t55dZubgtSMmKW6jTIbWJyJtoG1ElIihWCcwJw4d61MikqIc0ihj6Xplx3V1N/ULP3VtoapIYFAfrHWUJWX+zRnLkPaF7jeTYWWpe+jNEOLxZKNDj3nZbduVndGViQcZarBVAInQieQrrzhZYwxIfTkB5WkfD3uTl/KcjSMd43WX2/XR8O7T6Od2KfCbGyId59Git1XssrYONAcKak6jijqjzj5J7RyLeqKOAPJemWFgLgAxk6dJLAZ6+MGJ2qwJkWNnCsggcJosiG2SqsdByXqnNR5M6H+IR/E87B3AMkW6be3tz2M5sJxv8UK/fPhyemHy9MX4tPpuI8D4WLRAEIKh73fX18fHf32eixWpQs8R9vJ5IxYbbRTUJOlarS16ojrjYo7O+gHCv6W7LgjywJN1HWRjFXb0deApZH+7vS0OG6/BNIdbT5OIHeBBWK1Eq145Yu6luGbirw04jiBBXqDE6FRng8myP8M0ikWge5h4NlFK/ufq+98ZexlYK3vrVS2wKKSL0jgKy33vULqcZ1ATpiRj3U0ZgOtqeQOwLdzr+6eH2enI6jr/wA5Zsps
+sidebar_class_name: "get api-method"
+info_path: docs/generated/api/qat
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get Planning Units by Tracer Category"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/api/planningUnit/tracerCategory/{tracerCategoryId}"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Retrieve a list of active planning units for a specific tracer category
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"description":"The ID of the tracer category to retrieve planning units for","in":"path","name":"tracerCategoryId","required":true,"schema":{"type":"integer","format":"int32"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"content":{"text/json":{"schema":{"type":"array","items":{"type":"object","properties":{"id":{"type":"integer","format":"int32"},"idString":{"type":"string"},"label":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":"circular(BaseModel)","createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"}},"title":"BaseModel"},"createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"labelId":{"type":"integer","format":"int32"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"}},"title":"Label"},"name":{"type":"string"}},"title":"SimpleObject"}}}},"description":"Returns a list of active planning units for a specific tracer category"},"403":{"content":{"text/json":{"schema":{"type":"object","properties":{"messageCode":{"type":"string"}},"title":"ResponseCode"}}},"description":"User does not have rights to access this tracer category"},"404":{"content":{"text/json":{"schema":{"type":"object","properties":{"messageCode":{"type":"string"}},"title":"ResponseCode"}}},"description":"No planning units found for the specified tracer category"},"500":{"content":{"text/json":{"schema":{"type":"object","properties":{"messageCode":{"type":"string"}},"title":"ResponseCode"}}},"description":"Internal error while getting planning unit"}}}
+>
+  
+</StatusCodes>
+
+
+      

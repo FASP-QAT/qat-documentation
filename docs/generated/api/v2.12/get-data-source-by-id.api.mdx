@@ -1,0 +1,71 @@
+---
+id: get-data-source-by-id
+title: "Get DataSource for a DataSourceId"
+description: "API used to get the DataSource for a specific DataSourceId"
+sidebar_label: "Get DataSource for a DataSourceId"
+hide_title: true
+hide_table_of_contents: true
+api: eJyllE1v2kAQhv/Kai5tJRcoSS8+lYh8cElIIKcIRRN7jLe1dze7Ywiy/N+rXSAYSJuoPYHXM/u+M35mamCcO4gfIEXGia5sQjCLICWXWGlYagUxDMYjUTlKBWsxJxackxi+xotMW4HCGUpkJpPWm1EKEWhDFv1FoxRimBPv3p+tQoRBiyUxWW+kBoUlQdwyFIKkN2KQczh019YTnCOLla7EEhV7v8deIQJLz5W0lELMtqIIXJJTiRDXwCvjxaVimpMPzbQtkddHJ31omplPd0YrR85n9Hs9/7Pv6Y64ssodqEMEiVZMioMUvXD3p/PxddM0EZz2Tv58E4orZjNh5Mp1Lm7uzkbD4fm1kFnQuHdkRarJCaVZ5LgggUlCzm1bcEdYlEJbMbZ6brF818rpB61c30wfL27ur4dbK3ufYwMFpTtz9CIdvyP//a2ejhSTVVgIslbb9Zc2lhak2KOZk7DEluQCC6Gzj7a9iaAkzvUGzoAj5xBDF43s7iDs1m0gG4jAkV1sma1sATHkzMbFXZ/Zea5QsZ+HwD4qLFYsE9fRdn5E8NjqtEr8g1hfGkbqdjCFCBZoJT4VgbUAn1SZDnVILjyqt3tCAlUqBls1MdW68JeQdWupfudbv9M7cjAYjz4FVrbU5OT1xSTY2TQQk9DAzXxeDCZjwRRQ2i9/uVy+Uz6VKH3G1WTy6O95vLr9Mc9d8tW4MoQ0ERQyIeWopTgwmOQk1v73JTOtO09owX9Oox2XqFqJl8TH++pgTe31o94B83/Lb7NOAnOmQKl8ZcF6veHsAdBIr9/GNd5bfrMIcu3Yx9b1Ezq6t0XT+OPniuwK4ofZjpOAYyqd/59CnGHh6C/Vfb7brMIv4h/26JvlbQ5RrQK+ReWfIIJftDpc682siSAnTMkG3+uQQZKQ4VbybmT9ALyO6+X5FJrmN0UMU48=
+sidebar_class_name: "get api-method"
+info_path: docs/generated/api/v2.12/quantification-and-analytics-tool
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get DataSource for a DataSourceId"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/api/dataSource/{dataSourceId}"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+API used to get the DataSource for a specific DataSourceId
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"dataSourceId","in":"path","description":"DataSourceId that you want to the DataSource for","required":true,"schema":{"type":"integer","format":"int32"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Returns the DataSource","content":{"text/json":{}}},"403":{"description":"Returns a HttpStatus.FORBIDDEN if the User does not have access to the Realm or Program","content":{"text/json":{}}},"404":{"description":"Returns a HttpStatus.NOT_FOUND if the DataSourceId specified does not exist","content":{"text/json":{}}},"500":{"description":"Internal error that prevented the retreival of DataSource","content":{"text/json":{}}}}}
+>
+  
+</StatusCodes>
+
+
+      

@@ -1,0 +1,71 @@
+---
+id: get-forecasting-unit-for-realm
+title: "Get ForecastingUnit for a RealmId"
+description: "API used to get all the ForecastingUnits for a specific RealmId"
+sidebar_label: "Get ForecastingUnit for a RealmId"
+hide_title: true
+hide_table_of_contents: true
+api: eJytVE1v2zAM/SsCL9sAL8nS7uLTMrRpc2nTJjkVQcHadKzNllSJThYY/u+DFKf5aNYOw06WZJHvkXqPNTAuHMQPkGlLCTqWajFTkmEeQUousdKw1ApiGIxHonKUCtZiQSywKATnJIaHgU5k2goUzlAiM5mIe8KiHKUQgTZk0WcbpRDDgvgodKhtuAwRGLRYEpP13GpQWBLEYF9SSc/IIOdwTLOFE5wji7WuxAoVe84nuHqqEIGl50paSiFmW1EELsmpRIhr4LXxuFIxLchfzbQtkTdHZ31omrkPd0YrR85H9Hs9/znmxJVV7nS7CukYIki0YlIcUOkXd384H1o3TRPBee/sz0lRXDObCSNXrjO8vf8+uri4vBEyC3AzR1akmpxQmkWOSxKYJOTcu5Dnfwl5czt9HN7Obi62kNsXaBVA6Q6ffr1f7NdTHRwpJquwEGSttpvHNZaWpNgrMidhiS3JJRZCZ8dNfhOxiaAkznWrySA+ziGGLhrZPbJFt5Vgt24XDUTgyC63Sq1sATHkzMbFXZ+h81yhYu+EIH1UWKxZJq6j7eKVeMdWp1XiN2KTNJjpbjCFCJZoJT4VQWZBd1JlOtQjufAqvTsAEqhSMdiiianWhU9C1m2g+p0v/U7vFYPBePTBebtsVBJaezeYikmg0zYSk9DI1pXDwWQsmND79rD81Wr1TvlUovQR15PJo8/zeH33bZG75LNxZbjSRFDIhJSjPcSBwSQnseF/CJlp3XlCC/5ZjXZcotoLvCI+NQME7k2pg37UO+H8hwHYjpMgQFOgVL68wL9uRfcAaORmzhwJeDf74u1yHkGuHfuoun5CRzNbNI0/fq7IriF+mO9kE9SZSufXKcQZFo7eKPbjfTsUP4l/mKgnC20PUa2DmovK7yCCn7Tem+3NvIkgJ0zJBsqbv4MkIcN7cTsTeyu8GPjqcgpN8xt4C1zd
+sidebar_class_name: "get api-method"
+info_path: docs/generated/api/v2.12/quantification-and-analytics-tool
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get ForecastingUnit for a RealmId"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/api/forecastingUnit/realmId/{realmId}"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+API used to get all the ForecastingUnits for a specific RealmId
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"realmId","in":"path","description":"RealmId that you want to the ForecastingUnit for","required":true,"schema":{"type":"integer","format":"int32"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Returns the ForecastingUnits list","content":{"text/json":{}}},"403":{"description":"Returns a HttpStatus.FORBIDDEN if the User does not have access","content":{"text/json":{}}},"404":{"description":"Returns a HttpStatus.NOT_FOUND if the RealmId specified does not exist","content":{"text/json":{}}},"500":{"description":"Internal error that prevented the retreival of ForecastingUnit","content":{"text/json":{}}}}}
+>
+  
+</StatusCodes>
+
+
+      

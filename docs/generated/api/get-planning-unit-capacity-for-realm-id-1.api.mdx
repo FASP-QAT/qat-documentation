@@ -1,0 +1,71 @@
+---
+id: get-planning-unit-capacity-for-realm-id-1
+title: "Get Planning Unit Capacity for Realm (Between Dates)"
+description: "Retrieve a list of planning unit capacities for a specific realm between two dates"
+sidebar_label: "Get Planning Unit Capacity for Realm (Between Dates)"
+hide_title: true
+hide_table_of_contents: true
+api: eJztWW1P20gQ/iur+VQkl1BarjrrdBJQiqho78rL9UMUoY09ibe1d83uOLnI8n8/zdoGJyS8FXS05VMcz+7MMy87Hj8uIUYXWZWTMhpCOEKyCicopEiVI2FGIk+l1kqPRaEViUjmMlKk0ImRsUIKl2OkRioSFmWaiSHSFFELmhoRS0IHAZgcrWQDBzGEMEb6u1F5qhXt1gpn7409Yg0H8dkrCCCXVmZIaB2E/XIB5UmC4uAdg6MEG8NkhG3Bz0H2QCEAxTtzSQkEoGWGEIKtDUIAFs8LZTGGkGyBAbgowUxCWALNcl6qNOEYWc/I2ExSfev1JlRVsAyeI2nJR+ACptRjXA1zIbLLAXut7yThbSA7skqPVwM0+SPgM/md4Q14scuNduhYvrmxwT+R0YSa/A78l3pfHWMvryqS1soZ4yHMXOe+GX7FiLiWLFcgI2epjEhNsLNuaEyKUkMVwFA6/GhiTB9MDUTKRkUq7Yud9uYaBBBZlITxzuxmQ4VDywfnFqUY+MV1LpaUAZCilG/tSKeiU4eWtzRQfNqu7OrY4Fp5SSpD3pRKRx9NrEbqaTjRxXMXT+b1NUnjoDRdqaNHF9lwHnBsimGKnRg+hUj80ukMIO88Wm72Q93WBxUf13av+sBohw/YMZ4bz69QqSsbzw+fnyGmt0blV5+hXn2szkb2GmF+ndDlK4Q/XQUd+gZUtWPYdaaPVZan+Fft6kK/bEfxW3t7OY4uC/TFMLhUWOR5qtDeHP/nHv3j9YCf7oQ99+jnHv0/9eiOYBlvAlXFS67QOIXV7gFZnCqANxuv7/ReviJXGTonx7hr4hvCcNSQAn7lEic5OSI26IQ2JBI5QWHVOCHHJIaMInROUKJc7VPtwZsn5cEnc11eCh377DA50+QH48UEzckuU/Vq80k5eqAnMlU1QNEclCqArTsyPY8Pk7g1pAKtNVZME5WiGCMRJ2hppma1fjlmmvLifAr/9jkIIENKTEN6elKTEgihJ3PV6w5evVZbr2Eke2VzUfWaTPfKi2Gr4ut6tKogAId20tKkheWpIiHKXdhjM+vnhdTEJ9sTsFLLdEYqcuvGcs+ad38fNRO1GItap2B1TM85jArr2ZB+CUOUFu12wa70B13xMeerTkl3UfvvfdsgP3w5uWJ7j0Pvy/nDlxNB5htqoer6ruslFDtei/jDC/+EhlL005WXQNCmngPgE6P0yDCAeVuf52IittugiBNjUgggVRFq52up4TW3cxklKA5rgfgHreOdm+sbECwEfTqdrku/nGPca3S53uHB7t6n472XvKdTkp+3ORaTWiGEsLn++9v+1tZvbwd+OjeOMqk7SPaRxFyZifZB4HuFp9DFi52mPXCNuLXFYHdO3OMQ/k0a/GHOU6n83OvDVDZnoA8yV7BA13Rot6DDzYeXl40xvtmlwsOLV41BAIlxxAbKkiftU5tWFd8+L9ByAQ8CmEirJDN3/suCcnwdQziSqcNrQvXiqKG018S9PkAsjUrLYWv2eSLTgv9BAN9w1vlA4Sn8+wJ9gE8R94B+mZ/vBP+9nynuhb0pp2pQBZCgjPlFtV824u0owpw6Gy+fWlW36e/vnUBV/QcR92+W
+sidebar_class_name: "get api-method"
+info_path: docs/generated/api/qat
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get Planning Unit Capacity for Realm (Between Dates)"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/api/planningUnit/capacity/realmId/{realmId}/between/{startDate}/{stopDate}"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Retrieve a list of planning unit capacities for a specific realm between two dates
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"description":"The ID of the realm to retrieve planning units for","in":"path","name":"realmId","required":true,"schema":{"type":"integer","format":"int32"}},{"description":"The start date of the range to retrieve planning unit capacities for","in":"path","name":"startDate","required":true,"schema":{"type":"string"}},{"description":"The stop date of the range to retrieve planning unit capacities for","in":"path","name":"stopDate","required":true,"schema":{"type":"string"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"content":{"text/json":{"schema":{"type":"array","items":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":"circular(BaseModel)","createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"}},"title":"BaseModel"},"capacity":{"type":"number","format":"double"},"createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"},"planningUnit":{"type":"object","properties":{"id":{"type":"integer","format":"int32"},"idString":{"type":"string"},"label":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":"circular(BaseModel)","createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"}},"title":"BaseModel"},"createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"labelId":{"type":"integer","format":"int32"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"}},"title":"Label"},"name":{"type":"string"}},"title":"SimpleObject"},"planningUnitCapacityId":{"type":"integer","format":"int32"},"startDate":{"type":"string"},"stopDate":{"type":"string"},"supplier":{"type":"object","properties":{"id":{"type":"integer","format":"int32"},"idString":{"type":"string"},"label":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":"circular(BaseModel)","createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"}},"title":"BaseModel"},"createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"labelId":{"type":"integer","format":"int32"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"}},"title":"Label"},"name":{"type":"string"}},"title":"SimpleObject"}},"title":"PlanningUnitCapacity"}}}},"description":"Returns a list of planning unit capacities for a specific realm between two dates"},"403":{"content":{"text/json":{"schema":{"type":"object","properties":{"messageCode":{"type":"string"}},"title":"ResponseCode"}}},"description":"User does not have rights to access this realm"},"404":{"content":{"text/json":{"schema":{"type":"object","properties":{"messageCode":{"type":"string"}},"title":"ResponseCode"}}},"description":"No planning unit capacities found for the specified realm between the specified dates"},"412":{"content":{"text/json":{"schema":{"type":"object","properties":{"messageCode":{"type":"string"}},"title":"ResponseCode"}}},"description":"Invalid date format"},"500":{"content":{"text/json":{"schema":{"type":"object","properties":{"messageCode":{"type":"string"}},"title":"ResponseCode"}}},"description":"Internal error while getting planning unit capacity"}}}
+>
+  
+</StatusCodes>
+
+
+      

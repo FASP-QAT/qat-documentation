@@ -1,0 +1,71 @@
+---
+id: get-product-category
+title: "Get ProductCategory list for Realm"
+description: "API used to get the complete ProductCategory list for a Realm"
+sidebar_label: "Get ProductCategory list for Realm"
+hide_title: true
+hide_table_of_contents: true
+api: eJyllE2P0zAQhv+KNRdACm3pwiUnAvvVC/RrT6tqNZtMG0Nie+1JSxXlvyM7Kf3YLQg41XX8zrxjPzM1MK4cxPdgrM6qlD8j00rbLSwiyMilVhqWWkEMyXgkKkeZYC1WxIJzEqkuTUFMYnysFoV0LJbaChRTwqKECLQhiz7WKIMYVsQnGojAoMWSmKx3VIPCkiAG6wOMMohAeh8GOYdTc9P2jOAcWWx1JTaoWovnnEEElp4qaSmDmG1FEbg0pxIhroG3xmeWimlF/uhS2xK53boYQtMsvNwZrRw5rxgOBv7n1BVXVrmzPiCCVCsmxSEp/eD+N+eVddM0EbwfXJyPieKW2cwYuXK966/TT6PLy6svQi5DtjtHVmSanFCaRY5rEpim5NwfUn54qYyRYrIKC0HWatvesbG0JsUeh5yEJbYk11gIvfz7SpsISuJcd1wEEDiHGPpoZP8EzH6HQ7/uFg1E4Miud9RUtoAYcmbj4r6P0HuqULFcyjTghwqLLcvU9bRdPQOpMy+1Em3QQPEkmUMEa7QSH4vw4IEAqZY61CO58LxMjhIJVJlIdtnEXOvCByHr2lTD3rthb/DMQTIevXK+ydoHC/c7SeZiFux0F4lpuMiuQ66T2VgwoW+z4/I3m80fyqcSpVfczmYPPs7D7eTjKnfpW+PKcKSJoJApKUcHGRODaU6i9X+ccql17xEt+Gc12nGJ6kB4Q3x+WOxGxdGF1Hty/nsGdX0d+DMFSuWrC/brjrl7QCM9gc+G034MxbvlIoJcO/aqun5ER3e2aBq//VSR3UJ8v9hTE+DMpPPrDOIlFo5+U+rraTed3oh/Gm4vltptotoGnIvK/4MIvtP2YNA2iyaCnDAjG0y3X5M0JcMHun0X+1741cE3V3Nomp/r3zJy
+sidebar_class_name: "get api-method"
+info_path: docs/generated/api/v2.12/quantification-and-analytics-tool
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get ProductCategory list for Realm"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/api/productCategory/realmId/{realmId}"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+API used to get the complete ProductCategory list for a Realm
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"realmId","in":"path","description":"RealmId that you want the ProductCategory list for","required":true,"schema":{"type":"integer","format":"int32"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Returns the ProductCategory list","content":{"text/json":{}}},"403":{"description":"Returns a HttpStatus.FORBIDDEN if the User does not have access","content":{"text/json":{}}},"500":{"description":"Internal error that prevented the retreival of ProductCategory list","content":{"text/json":{}}}}}
+>
+  
+</StatusCodes>
+
+
+      

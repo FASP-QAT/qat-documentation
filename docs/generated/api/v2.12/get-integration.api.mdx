@@ -1,0 +1,71 @@
+---
+id: get-integration
+title: "Get Integration for an IntegrationId"
+description: "API used to get the Integration for a specific IntegrationId"
+sidebar_label: "Get Integration for an IntegrationId"
+hide_title: true
+hide_table_of_contents: true
+api: eJylVE1v2zAM/SsCL9sAL8nS7uLTMvQrlzZt0lMRFKxNx9psSZXoZIHh/z5IcRu76dZiOyWS+fgeqUfWwLhyEN+BVEwriyy1gmUEKbnEShOOMUxmU1E5SgVrsSIWnJOY7gEi01agcIYSmcmk+2maQgTa0PMphhVxJwAiMGixJCbrhdSgsCSIu4JCEumFGOQcXqrr0QnOkcVWV2KDir3gV8RCBJYeK2kphZhtRRG4JKcSIa6Bt+aZn3xopm2JvLs6GkPTLD3cGa0cOY8Yj0b+p6/qhriyyr2khwgSrZgUBy76xcMfzgPqpmkiOB4d/TkVigtmM2fkyg3Orm6+T09OTi+FzALJrSMrUk1OKM0ixzUJTBJy7k3K43dSXl4t7s+ubi9Pnij7nW/fn9K9CvolHb/B//W17vnMVmEhyFptd49qLK1JsbdhTsISW5JrLITO3t3gJoKSONetD4P5OIcYhmjksGO5Yd3zXwMROLLrJ49WtoAYcmbj4qHHDh4rVOzdHxCosNiyTNxA29WBYWdWp1USzLhLGgboerKACNZoJT4UwVjBaVJlOlQiufC+vO4RCVSpmDyxiYXWhU9C1u2oxoMv48HoQMFkNv3g/HDsHBIaej1ZiHmQ07YQk9DCdh7PJvOZYMISohflbzabN8qnEqVHXMzn9z7P/cX1t1Xuks/GlSGkiaCQCSlHHcaJwSQnsdPfp8y0HjygBf+gRjsuUXWA58SH60kdrKVeS+q9a/533bULJFjPFCiVLy/or1u73QEaGXZa17Zxf+UtI8i1Yx9d1w/o6NYWTeOvHyuyW4jvlnu7BFem0vn/KcQZFo7+UuHHm3b9fRL/tD1fLbG9RLUNPi4qf4IIftL2YJ83yyaCnDAlG6TvYiZJQoY76P34+lF4Ht3z0wU0zW+ej1a0
+sidebar_class_name: "get api-method"
+info_path: docs/generated/api/v2.12/quantification-and-analytics-tool
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get Integration for an IntegrationId"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/api/integration/{integrationId}"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+API used to get the Integration for a specific IntegrationId
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"integrationId","in":"path","description":"IntegrationId that you want to the Integration for","required":true,"schema":{"type":"integer","format":"int32"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Returns the Integration","content":{"text/json":{}}},"403":{"description":"Returns a HttpStatus.FORBIDDEN if the User does not have access","content":{"text/json":{}}},"404":{"description":"Returns a HttpStatus.NOT_FOUND if the IntegrationId specified does not exist","content":{"text/json":{}}},"500":{"description":"Internal error that prevented the retreival of Integration","content":{"text/json":{}}}}}
+>
+  
+</StatusCodes>
+
+
+      

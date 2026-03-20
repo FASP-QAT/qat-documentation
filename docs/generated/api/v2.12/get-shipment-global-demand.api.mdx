@@ -1,0 +1,71 @@
+---
+id: get-shipment-global-demand
+title: "get the ShipmentGlobalDemandOutput object"
+description: "API used to get the ShipmentGlobalDemandOutput object."
+sidebar_label: "get the ShipmentGlobalDemandOutput object"
+hide_title: true
+hide_table_of_contents: true
+api: eJylVk2T2kYQ/SuqvuQiPpZky4lOxnYSc1p2wTmEorYaqZHGGc3M9rTAFKX/nhoJvGLBa5xwQRr110y/93r2IJh7SBbA5CwLLGPIyKesnChrIIHxdBJVnrJIbJSTRFJQNCuUK8nIn9quUH+gEk12V4mrJLKrz5RKH2KwjhhDkEkGCeQkl7wgBqaniry8s9kOkj2k1ggZCY/onFZpE2Pw2Ydq9uDTgkoMT7JzBAm0CSEGxyGjKPLhKxPqMmT+aqiMUE4MMawtlyjt0s8jqGPwgiwfUKhj74WVybvmGQr1RJXUulj3Yx5NSe9tZYR3k8x3HJEZdxCDEir9ecC6jsFpNEaZ/JNRcvW22p7+pWh7pcO6Mpky+cxWnNKUbVoxhZaNczLywzVXnsbOsd1QNquc07upRnNn9K5jvrJWE5qQXJlUVxkFI0PZES3+svGLw5y1Wc/L+P6evulaxyBKdFi6BN2JcZU8PjwfcV3XLZoVUwaJcEXNgnfW+BaVo+Ew/J0y7IGkYuOvYxbEXYYIfZEjNZr0t5cSTIwQG9QRMVuOpECJHNOGjAReFxQxCZPaoI7s+n/WUMdQkhQ2kN5Z3zATpYAEBujUoIXkwF/WAk+8IQ56tIeKNSRQiDifDIJv/6lCI2p9kAQ0qHeiUt+3HEh3uucp26xKw0vUBo3WlqP78Rxi2CArXOmmJXW9jCFU//AsQ79/wdJpOpGR4YlIwGg4+qU3fNMb/Ta/uU1ub5LRr/3hm5u/oSsMr1mdicHiiLvlOdmHp1QeXkPUbrxXiBhQ+gr12s/fIFtH8K7kWIeWyqxtA58Dxe5PmhuhyaLxscPR3FodGkfs2/aO+jej/vCs6+Pp5CcfJhWmKfmWUvfjeTRrIHDALaYNbg2WIe8f49k0EsIS4heQ226334EclaiCx8fZ7DHEefx4/zYvfNpzvmxM6hi0Ssl46mQcO0wLitr6T1Oure2vkFvFt15KNB3Hq8fvy3PpTNX/Ps8P6tjQ3WlUjQw35e8PDF8AOgVHrAYqXGL5MoYi6EKygP1+hZ4+sa7rsPxUEe8gWSyfKRre6hgKwoy4kYV/aAcJvG/305uHooK5rpqh9PLGUMdHj3GakpOO7bNuBQn4qlnTu1nQiNXhOlLaLBgzbsPGcAsJNHebkKK9aGAzXDWavMI82LYxw+9f3ntFkQ==
+sidebar_class_name: "post api-method"
+info_path: docs/generated/api/v2.12/quantification-and-analytics-tool
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"get the ShipmentGlobalDemandOutput object"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/api/report/shipmentGlobalDemand"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+API used to get the ShipmentGlobalDemandOutput object.
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={undefined}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"content":{"application/json":{"schema":{"type":"object","properties":{"realmId":{"type":"integer","format":"int32"},"startDate":{"type":"string","format":"date-time"},"stopDate":{"type":"string","format":"date-time"},"realmCountryIds":{"type":"array","items":{"type":"string"}},"planningUnitId":{"type":"integer","format":"int32"},"reportView":{"type":"integer","format":"int32"},"fundingSourceProcurementAgentIds":{"type":"array","items":{"type":"string"}},"useApprovedSupplyPlanOnly":{"type":"boolean"},"includePlannedShipments":{"type":"boolean"},"realmCountryIdsString":{"type":"string"},"fundingSourceProcurementAgentIdsString":{"type":"string"}},"title":"ShipmentGlobalDemandInput_ReportView"}}},"required":true}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Returns the ShipmentGlobalDemandOutput object","content":{"text/json":{}}},"500":{"description":"Internal error that prevented the retreival of ShipmentGlobalDemandOutput object","content":{"text/json":{}}}}}
+>
+  
+</StatusCodes>
+
+
+      

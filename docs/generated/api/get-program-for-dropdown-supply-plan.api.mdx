@@ -1,0 +1,71 @@
+---
+id: get-program-for-dropdown-supply-plan
+title: "Get Supply Plan Programs for Realm"
+description: "Retrieve a list of supply plans programs for a realm"
+sidebar_label: "Get Supply Plan Programs for Realm"
+hide_title: true
+hide_table_of_contents: true
+api: eJydVlFv2zYQ/ivEPbWAZgcZsmLCMMBt0sBFNqSJ1z4ERkBLZ4stRTJHyq5h6L8PR1Gt4riZsydbvOPxvo9333EHJfqClAvKGsjhBgMpXKOQQisfhF0K3zint8JpabxwZFckay+WloQUhFLXkIF1SJJDTEvIYYXhuvN7b+mcrCvtxtzGMNdaGsjASZI1BiQP+d1uL4dZhV1gMT2P54QKfxwcrKCUJGSgeIOToYIMjKwRcohbpyVkQPjQKMIS8kANZuCLCmsJ+Q7C1rGrMgFXSJDB0lItQ7f06ym07Zy3e2eNR887Tk9O+KewJqAJMQZ+C+MvnlPePQ0tieSWEwxY+8G6XXzBIjAFxKQF1YWXRVBrHPgtrNUoDbQZFLYcWnwgZVbR0BChCZ+QfKL+CGQZVCh1qCaEclpeKR+OyPoZojJQxx6sytsu90NgtFyg/m+iFtLjX7Z8oSsUiopGS3r1tl+858I8txvzSeHmNWcQVNAc7rDL9xyP5jl636P5Odz7JT1jdM8ZvTtgHIC4il77AFIXzbYOj4bR99OR1dAncKtqpzHpwF4iLTs+EZ6GjI+9frzytBmcvbAxf1IsNXovV/jucK8NcN0kVWDPJ7D2UU1NQDJSCySKQiaDcIRrNAHLiDVpmdQMeCh03aFyxQoJvYh6mGdQY6hs0tmopaGCHMbSqXGZ/Mb+u9qOU8BxZGy8S9fZQgYead1LcEPcJlUIzudjjjV6aKQJaqmKKOzSSL0NqvAjSyvYx3mJhgcAlqKLKTgca6jHoiEVtvGMBUpCmjSc7918aL7lW0pdO3Dqv973Zfbh8+zJ2RfMcaTuw+eZCPYrGqFMXOjKMxdvYxTxRzT+CWkSRJmNFsj6C2cCOlEzS8sJPD7r4yNOxKQnRcys1ZCBVgUaHysoTaOJk0WF4qoziKTV4nR0Atke6ZvNZiSjO3M8TrH8+Gr67uLv24tfeM+gED9OmIt1FxByOB39/ubu7Oy3N/PY6daHWppBJpcYRDeEBdeFuB421E0a5I/gDrrq/z4MEq2xJZ2WKg60CHuXCvcOpFN8cipdvp1HT4UuMCQhggzyXpHmGVSW59cd7Has9v+QbltefmiQuObmGawlKblgxvihoTz/LyFfSu3xGbyvbtLj4bV4yXvkIN5+uBoerWupG/6CDL7idvBeaefdbC6RYq6ddVIU6MJg3w91a4dacHkxg7b9F7eLYyk=
+sidebar_class_name: "get api-method"
+info_path: docs/generated/api/qat
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get Supply Plan Programs for Realm"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/api/dropdown/supplyPlan/program/realm/{realmId}"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Retrieve a list of supply plans programs for a realm
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"description":"The realm ID for the programs to retrieve","in":"path","name":"realmId","required":true,"schema":{"type":"integer","format":"int32"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"content":{"text/json":{"schema":{"type":"array","items":{"type":"object","properties":{"active":{"type":"boolean"},"code":{"type":"string"},"currentVersionId":{"type":"integer","format":"int32"},"healthAreaIdList":{"type":"array","items":{"type":"integer","format":"int32"}},"id":{"type":"integer","format":"int32"},"idString":{"type":"string"},"label":{"type":"object","properties":{"baseModel":{"type":"object","properties":{"baseModel":"circular(BaseModel_DropDownView)"},"title":"BaseModel_DropDownView"},"labelId":{"type":"integer","format":"int32"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"}},"title":"Label_DropDownView"},"programTypeId":{"type":"integer","format":"int32"},"realmId":{"type":"integer","format":"int32"}},"title":"SimpleProgram_DropDownView"}}}},"description":"Returns the list of supply plans programs for a realm"},"500":{"content":{"text/json":{"schema":{"type":"object","properties":{"messageCode":{"type":"string"}},"title":"ResponseCode_DropDownView"}}},"description":"Internal error that prevented the retrieval of the programs"}}}
+>
+  
+</StatusCodes>
+
+
+      

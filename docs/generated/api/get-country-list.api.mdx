@@ -1,0 +1,63 @@
+---
+id: get-country-list
+title: "Get Active Countries"
+description: "Retrieve a complete list of active countries"
+sidebar_label: "Get Active Countries"
+hide_title: true
+hide_table_of_contents: true
+api: eJztWN9v20YM/lcOfNoA1Q48ZMWEYYCTZUGKdEObdH0wjII+0fa18p3Ko5wZhv73gSc5kNckTYA+tJ2fbPPnx+/Is6gtFBQtu0pc8JDDaxJ2tCaDxoZVVZKQKV0UE+YGrbg1GRtqr0YRMggVMarrRQE5LEhOk3Jz6aJABkyxCj5ShHwLo6Mj/bDBC3nRr0L/yPB91MRbiHZJK0ziTUWQAzLjBjJwQqvYk4fZe7IavWJNL64N36Lr2c1CKAk9NBnMMNLLUFD5xcKAdWzrEvmHk53wR8jAMqFQcbL5fKI6Eitrt3bOCy2IIYN54BVKK/pppJnV2OOqjysKO7+ApslAnJQqOsHo7JtIrC4dlN9R7vDq5ShQ6Jm4FalTiVFehsLN3ddRRB/PUyrZj9cdmpLStudpKO5CsacfPWTw6Jq/9YawNTN5+wj47rHQXXHV5ryL3xJnX3BKD8P+vx72b/58ZlQ+GlWyfkf+/rF6N+cHlNVDyljdo/zuOugyXUBNBp9PfeX0AemvttTD3XW4uw531+Hu+iruru+wtm6xhKZR6SdLa80+Glk+sKw2GRw/cQO9h60VxYgLumeJ6GF+3a2/yfIO3BdelMrSEHNgI0sUUzGtyQsVqRpu13EstSQVdPtHKrPNhYsI+eSWn2kGK5Jl6PZxBY+yhByGWLlh5w4ZROI1sbpuoWb9o1iKVDEfqt3gY41e3NzZtNyjx3IjzsZBYD2q/SrOyetLACpMG9NouGaqKWzNTjYpx4yQice1YplM++orpb1ltm+0+/XHri9evL3+JPeZMpiIefH22kj4QN44nwRtP+XmJEUxvyblb1p5yqd/mEkD2e4ElYDEqfPzoAD2c73a48SMd6SY6xBKyKB0lnxMLdGOB4wrtEsyl63C/E0c1XM0OILsP6Tf3NwMMJkrx8MuVhxeXpye/Xl19kx9ep31aqxcrNuAkMNo8MvzyfHxz8+nalWFKCv0PSTnJGbcTsRp7/XNXoG9wXjqa6COwDRNVYkuPYSkArdd+00AKwe3+7O26TJEUcV2q48rb7hsGhV/rIm1ZaYZrJEdzrTgybTJYElYEKdu+kAb5ddaqrTF11jWtwDSODf9OTg/u4am+Rdul3vQ
+sidebar_class_name: "get api-method"
+info_path: docs/generated/api/qat
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get Active Countries"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/api/country"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Retrieve a complete list of active countries
+
+<ParamsDetails
+  parameters={undefined}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"content":{"text/json":{"schema":{"type":"array","items":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":"circular(BaseModel)","createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"}},"title":"BaseModel"},"countryCode":{"type":"string"},"countryCode2":{"type":"string"},"countryId":{"type":"integer","format":"int32"},"createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"currency":{"type":"object","properties":{"id":{"type":"integer","format":"int32"},"idString":{"type":"string"},"label":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":"circular(BaseModel)","createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"}},"title":"BaseModel"},"createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"labelId":{"type":"integer","format":"int32"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"}},"title":"Label"},"name":{"type":"string"}},"title":"SimpleObject"},"label":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":"circular(BaseModel)","createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"}},"title":"BaseModel"},"createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"labelId":{"type":"integer","format":"int32"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"}},"title":"Label"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"}},"title":"Country"}}}},"description":"Returns the list of active countries"},"500":{"content":{"text/json":{"schema":{"type":"object","properties":{"messageCode":{"type":"string"}},"title":"ResponseCode"}}},"description":"Internal error that prevented the retrieval of the country list"}}}
+>
+  
+</StatusCodes>
+
+
+      

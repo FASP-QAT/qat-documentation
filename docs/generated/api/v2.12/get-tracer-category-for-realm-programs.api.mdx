@@ -1,0 +1,71 @@
+---
+id: get-tracer-category-for-realm-programs
+title: "Get TracerCategory list for Realm and active ProgramPlanningUnits"
+description: "API used to get the TracerCategory list for a Realm. Only returns those Tracer Categories that are from Planning Units in active Programs"
+sidebar_label: "Get TracerCategory list for Realm and active ProgramPlanningUnits"
+hide_title: true
+hide_table_of_contents: true
+api: eJzNVU1z2zYQ/SuYvbSdYSTXSS88VYnjWhdLluSTR+NZk0sSLQnAwFIyR8P/ngFIVpTsxG1P1UUkuB9vH/btHoAxdxA/AFtMyH5BplzbBrYRpOQSKw1LrSCG2XIuakepYC1yYsEFic2JjyilY5FpK1CsCMtqIhaqbIQlrq1yggvtBh/RO0ny58gCLYnM6kosS1RKqlzcK8lOSCUwYbkjsbQ6t1g5iEAbsuhxzVOIISc+BXKtbcg/8jBosSIm62s9gMKKIAbrreYpRCB9iQa5gPO6V51Nh7LRtdij+mH1EIGl51paSiFmW1MELimoQogPwI3xiaViysmbZtpWyN3Rx0to223nTo4/67TxPolWTIr9IxpTyiSUPv3TeXyH18HRWmx8TUyVG507tlLl0LZtew4xHDijlaPgcXlx4f/OmRju8c3aIRojZXrhAWJI+Oni4/dDorhhNmtGrt3kerH6PL+6+norZBaS3TuyItXkhNIsCtyRwCQh595N+ekfprxdbB6vF/e3V0PK4dadoURmktJjfnp5v9jf3uJvrpiswlKQtdp2DWUs7Uixl1VBXimW5A5LobN/TXEbQUVcaC8Jo4NxaOgYpmjk9FTf0771p4f+oZ2aTi3z1NPqyO4GsdS2hBgKZuPiqY81ea5Rscz6TkSFZcMycRNt81f6WVqd1ol/EV3QMCHuZhuIYIdW4lMZei50vq9mdez+ry9YmZL8eOqbd+ulmulQvmT/Ce5OwAhUqZgNiMRG69InIus6OJeTXy8nF69Qzpbzn5wfbV1jhdu4m23EOkDuecck8N4Pj+vZeimYsILojKL9fv8ORVSh9B436/Wjj/N4c/d7Xrjkg3FVMGkjKGVCytEo48xgUpDo8J+mzLSePKEF3wX+8itUI8c/iL87q0OnB9ZO5+wwh8MYPudrNJT+V4uhn3RBGaZEqTyRgalDL4YHQCO95em6i0a7ID4+jjSxjaDwqoof4HB4Qkf3tmxbf/xck20gftgeGzroJpXOP6cQZ1g6+gGFP6/6afyL+C/r5s2qh2WgmiC0svZvEMFf1Iw2X7ttIygIU7IBc/f1S4fsw8bHOHq/2j5tNHjMkoQMj2yPw8nr+u/BtFysvfCf+tVW6TTsYdz7G8B9B1EHisIiCmcHKFHlNebetovpf98Ab54Kyw==
+sidebar_class_name: "post api-method"
+info_path: docs/generated/api/v2.12/quantification-and-analytics-tool
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get TracerCategory list for Realm and active ProgramPlanningUnits"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/api/tracerCategory/realmId/{realmId}/programIds"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+API used to get the TracerCategory list for a Realm. Only returns those Tracer Categories that are from Planning Units in active Programs
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"realmId","in":"path","description":"RealmId that you want the TracerCategory list for","required":true,"schema":{"type":"integer","format":"int32"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"content":{"application/json":{"schema":{"type":"array","items":{"type":"string"}}}},"required":true}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Returns the TracerCategory list","content":{"text/json":{}}},"403":{"description":"Returns a HttpStatus.FORBIDDEN if the User does not have access","content":{"text/json":{}}},"404":{"description":"Returns a HttpStatus.NOT_FOUND if the RealmId specified does not exist","content":{"text/json":{}}},"500":{"description":"Internal error that prevented the retreival of TracerCategory list","content":{"text/json":{}}}}}
+>
+  
+</StatusCodes>
+
+
+      

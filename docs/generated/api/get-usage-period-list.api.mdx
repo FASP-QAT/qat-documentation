@@ -1,0 +1,63 @@
+---
+id: get-usage-period-list
+title: "Get Usage Periods"
+description: "Get active UsagePeriod list"
+sidebar_label: "Get Usage Periods"
+hide_title: true
+hide_table_of_contents: true
+api: eJztV1FvE0kM/isjP91JS1IVFXQRQmpLQUXt6YAUHqro5Ow62Sm7M4vHm14U7X8/eTapJiVQOPHQKzwlsT32528+Z70rKCjkbBux3sEIXpEYzMUuyFwEnNNfxNYXprJBIAPfEKNGnhYwgjlJEnPWhzCFxrtAAUYr2N/b04/cOyEn+lXoHxleBa21gpCXVGM0LxuCESAzLiEDK1SHxO6nV5Rr9oYVgtg+fQ80iZt6XxE66DKYYqBzX1D1w9JAbjlvK+TfjjbG3yGDnAmFiqPl3YXaQKzM3cRZJzQnhgxmnmuU3vR4XytrsMM6xRWErZtD12UgVio1HWGw+UUg1iNrKC9QdpxKahQo9EhsTXqowiDnvrAzez+aSPF8Tyfb+daXpqR4tyCWsT/3Tsokm2vr6TbswrfTihIm7wMf//FSpz9Q+b8G6KceoP/9/Uyp+mZUMfpvcjtQbZwz/oqz+ZozNF9wPjgFncU/oAfUmxa72XW+EWCCIVmUoOvUs713vSVp2QUj5Y7Fq8vg4Ds3qS+wW1PQ5Me+uIOzt+s1LkbuwHvqRKmvDDF7NlKimIZpQU6oiF0wCZNdYGX8bEdLWgvnAUaXPTem6cmZZFCTlH69YGoHqI9tGGJjh8kdQAaBeEGsOVbQsj5hSpEmjIYaO/jUohM7s3ncWNFhtRSbh4FnvePba6/TzZYK0+c0mq6baIm8ZSvLWGNKyMSHreK5nKTud8p/T3EatPn1ciOM1x/Gn9U+USojZa8/jI34j+SMddHQC2pkjmIW8yw6n2vnsZ4+aaMHss1VKgGRXOtmXgFs13qzxYk53JBixt5XkEFlc3IhaqOfKzhsMC/JnPUO85446Mn9wR5kt0i/vr4eYAxXjofrXGF4dnp88ue7k0d6JpHYm0PlYtEnhBHsD/54enlw8OTpRKMaH6RGlyDRV5NeKr0Awm0mk/G44z1mTVYcoaZCGzeV2MxqLbdLwMbC1tCrNEsfRJ2rle41F1x1nZo/tcQqkUkGC2SLukWqQjIoCQviqJ6PtFQ+85waxbDAqr0BEee4S7X/6mQMXfcv07CrAw==
+sidebar_class_name: "get api-method"
+info_path: docs/generated/api/qat
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get Usage Periods"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/api/usagePeriod"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Get active UsagePeriod list
+
+<ParamsDetails
+  parameters={undefined}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"content":{"text/json":{"schema":{"type":"array","items":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":"circular(BaseModel)","createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"}},"title":"BaseModel"},"convertToMonth":{"type":"number","format":"double"},"createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"label":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":"circular(BaseModel)","createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"}},"title":"BaseModel"},"createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"labelId":{"type":"integer","format":"int32"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"}},"title":"Label"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"},"usagePeriodId":{"type":"integer","format":"int32"}},"title":"UsagePeriod"}}}},"description":"Returns the UsagePeriod list"},"500":{"content":{"text/json":{"schema":{"type":"object","properties":{"messageCode":{"type":"string"}},"title":"ResponseCode"}}},"description":"Internal error that prevented the retreival of UsagePeriod list"}}}
+>
+  
+</StatusCodes>
+
+
+      

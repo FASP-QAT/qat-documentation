@@ -1,0 +1,71 @@
+---
+id: post-procurement-agent
+title: "Add Procurement Agent"
+description: "Create a new procurement agent"
+sidebar_label: "Add Procurement Agent"
+hide_title: true
+hide_table_of_contents: true
+api: eJztGmtv2zbwrxD3aQOU2HGTZRWGAU6abSnSV+yuwAJjoKWzxUYiFZKyaxj678NR8iz5ESfbsiap8skh783jPXiaQ4gm0CK1Qknw4VQjt8g4kzhlqVZBpjFBaRkfo7TggUpRcwI+D8GHVBn7fgnVLYE03mRo7IkKZ+DPIVDS0oY/B56msQgcgdZnQyznYIIIE06/7CxF8EENP2NAdFJN7KxA43ADKyZYgRsqFSOXkHtEV6sJhn3Vi0SaYniBPOyLpAous2SIGjwYKZ1wCz6EKhvGSPhDbvCNCjH+d2JUyEAgdJDFXH93slj8HjwInIHDk9luRplBTVb+G05Ii+O6BkLaFx3iTMCS1/Q1Vgs5hjz3wAob09IJNyL4aFATSinKK243YFWtxC3uWbJl7kHMjX2jQjESj0OJqjz30aROrzw0MoqKlf7NJvGpCjfJUYF4xfX1dqgnf87D//AyNHfqm75TT/58hhjfWSoH/SfKjWGh2BzpWzbT2zZNumXz2XnQhQtAz0g3J2etUtqaPFYB76zOKmLfoeyyWLBNDnFXviLsFUhbPbdJJU0qaVJJk0q+airZzbonkjRGCszvCnWLoDrWPLkQxlaQudZ8Bh4Ii4nZbaYmlD69q/rsLkITSptQ+j+H0kUYzelVkMdJU402IfQpX4AmhDYh9KtWoyYbJsJaGnV0y6HHvWYdFfJrk5ucdusDoX6ETMg0s6ywOKNhDhdSyPH6fIiFaLmITTkCEhpD8K3O0EV/kyppimPqtNtQHwxZ/GLvPRFK0Bg+xi3vKBVNL0vmDnKDlpdoMy0N48xkQYDGMJeFcg8O2y8elaTkiCxUaJhUlkV8gkyLcWQNs4oFi+nd+uTOqXL4qFR5qzZ40EhlMiRpjx6Zi5xLS9EiZqi10mwaiRgLg9NV2Ghyos7HBvyr6lVjxV0beJCgjdRijEqScxuBDy2eitbqSx54YFBPUBO5OWSaqobI2tT4LULYv8m4tGJUDle55PHMisDsK00xqa7LryhpioshK2gyIpcPiEWQaWFnjscQuUbdzUioq0F1u0fGL+xbBVr898si5rz+1F/jfUZ2ZDZC9vpTn1l1jZIJ6RaKWOWzE0eF/eQ2fybNHT+qntwOeItzJAM4O5NbXC6nzmdfOEXOagVGYejWOXF7pbCrI9ZS/SLLtKs5ZH34VyQI6LQ7h3vt473Oy/7BkX904Hd+3G8fH/wBm9LbLtLrCWg7/fVx5jJJbZhiVjYfSNnhJss+Q6M/nPlKSstSbHloywpsdS3dsEb1VnXtgU3ysAy2jVaWCm6aqLS3z0uCFXRRgC8byxVzNl79TXr1Gn7tqfhq3vhN4zd38JtB5W2siTyNB/2TyHPrs0CbHkXlSJEg9Wr8Q61rYN1F28D6SsWkiAhQGpcTS5bdlAcRsotig/2O2hBmZ78N3kpbMp1O97kDpy6kVdIyrYvz07O3vbM9wql0YB+61C1MCoKk//7L46ujox+OBy60KmMTLquShCFb76tW+o1KB7n749ayq3CNZhpz4Z5pnU7zsjm7Ap6KDfUEtXORclEf5nO6gh91nOe0fJOhpoZq4MGEa8HpFYb6KQ8i5CFqlyiucUYCFqLuuTKEwOOM5Fn7aDb3FhjdIMDUVmCXTXJe7TDfv+uRcYflF7lJEWU0n9JTDZ+CD+7bXmLh2jq3NoeYy3HGxwRb0KS/vwBG0eHt
+sidebar_class_name: "post api-method"
+info_path: docs/generated/api/qat
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Add Procurement Agent"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/api/procurementAgent"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Create a new procurement agent
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={undefined}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"content":{"application/json":{"schema":{"type":"object","properties":{"active":{"type":"boolean"},"approvedToShippedLeadTime":{"type":"number","format":"double"},"baseModel":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":"circular(BaseModel)","createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"}},"title":"BaseModel"},"colorHtmlCode":{"type":"string"},"colorHtmlDarkCode":{"type":"string"},"createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"label":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":"circular(BaseModel)","createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"}},"title":"BaseModel"},"createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"labelId":{"type":"integer","format":"int32"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"}},"title":"Label"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"},"procurementAgentCode":{"type":"string"},"procurementAgentId":{"type":"integer","format":"int32"},"procurementAgentType":{"type":"object","properties":{"code":{"type":"string"},"id":{"type":"integer","format":"int32"},"idString":{"type":"string"},"label":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":"circular(BaseModel)","createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"}},"title":"BaseModel"},"createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"labelId":{"type":"integer","format":"int32"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"}},"title":"Label"},"name":{"type":"string"}},"title":"SimpleCodeObject"},"programList":{"type":"array","items":{"type":"object","properties":{"id":{"type":"integer","format":"int32"},"idString":{"type":"string"},"label":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":"circular(BaseModel)","createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"}},"title":"BaseModel"},"createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"labelId":{"type":"integer","format":"int32"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"}},"title":"Label"},"name":{"type":"string"}},"title":"SimpleObject"}},"realm":{"type":"object","properties":{"code":{"type":"string"},"id":{"type":"integer","format":"int32"},"idString":{"type":"string"},"label":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":"circular(BaseModel)","createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"}},"title":"BaseModel"},"createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"labelId":{"type":"integer","format":"int32"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"}},"title":"Label"},"name":{"type":"string"}},"title":"SimpleCodeObject"},"submittedToApprovedLeadTime":{"type":"number","format":"double"}},"title":"ProcurementAgent"}}},"description":"The input object containing procurement agent details","required":true}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"content":{"text/json":{"schema":{"type":"object","properties":{"messageCode":{"type":"string"}},"title":"ResponseCode"}}},"description":"Returns a success code"},"403":{"content":{"text/json":{"schema":{"type":"object","properties":{"messageCode":{"type":"string"}},"title":"ResponseCode"}}},"description":"User does not have rights to create a procurement agent"},"404":{"content":{"text/json":{"schema":{"type":"object","properties":{"messageCode":{"type":"string"}},"title":"ResponseCode"}}},"description":"No procurement agent found"},"500":{"content":{"text/json":{"schema":{"type":"object","properties":{"messageCode":{"type":"string"}},"title":"ResponseCode"}}},"description":"Internal error while creating a procurement agent"}}}
+>
+  
+</StatusCodes>
+
+
+      

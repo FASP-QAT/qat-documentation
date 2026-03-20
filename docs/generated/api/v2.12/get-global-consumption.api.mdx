@@ -1,0 +1,71 @@
+---
+id: get-global-consumption
+title: "get the GlobalConsumptionOutput list"
+description: "API used to get the GlobalConsumptionOutput list."
+sidebar_label: "get the GlobalConsumptionOutput list"
+hide_title: true
+hide_table_of_contents: true
+api: eJydllFz2zYMx78KDy97URzHW66bnuam2+qnOLG7h+V8OViCJXYUyYCQXZ9P371HyYnlOE2b+sUSCRAk8f8B2oFgESC9AybvWGCRQE4hY+1FOwspjKcTVQfKlThVkCgpSf1j3BLNlbOhrlq761p8LcroIANIwHlijOOTHFIoSE4cIAGmh5qCvHf5FtIdZM4KWYmP6L3RWbvA+ecQd7GDkJVUYXySrSdIwS0/UyaQgOcYTjSFOMuEpophnwy1FSqIIYGV4wqlG/p1BE3SWV+52gpvJ3noeSEzbiEBLVT1x4OwtgU0TRu4YKze7mfQWm2LT1bLm52DIMsHFDqd7h0wR6Ez0RVB6+L82zw6LfyrafOD91gHGnvPbk35rPbebKcG7bU1257/0jlDaOHkBmbdZk6P27viV2yOc/hNwyYB0WLi0IkaJ9bXcn97OHXTNJ1ANVMOqXBN7UDwzoZOaKPhMP4dw3JLUrMN34UEkr7ehb7Io9DbyJcvrT2xQmzRKGJ2rKREUZ5pTVYinSUpJmHSazTKrX4+fJNARVK6iK53rbFHKSGFc/T6vNPGefEC0YF4TRyryQ5qNpBCKeJDeh4dBw81WtGrPdho0WxFZ2HgOArx+KxTdnmdxRfVLapWjtXNeA4JrJE1Lk2bhaZZJBC3fnsoJn99wcobOioGwxdQv3uUxuIY5aPx56j2J3sowmg4+u1s+O5s9Mf84jK9vEhHvw+G7y7+gz5+r1n1kRu+ClQU47cQOoB9Qs5h6mVgekRpu3KtMPa83BxlTqHN1fgxfWrunIlZIQ5d7kaDi9FgeJLS8XTyS4hNBLOMQofIzXiuZm1+94rErFWkxSrG/Xs8myohrCB5pqfNZvMdPVGFOnp8nM3u4zr3H2/+LMqQnflQtSZNAkZnZAP1Io49ZiWpbv/HIVfODZbIXQV3QSq0Pccf6YzPr6TX836qy+4LXIuvN6jb0tpuercn9g7Q6ydxQQKn1C4SKCPk6R3sdksM9IlN08Thh5p4C+nd4oBcfGsSKAlz4hbz/2kLKVx15zibxx1Fc1O37ex5H2+SR49xlpGXnu2hCEWknwrQ9HoWmV/uPxIql0djxk08FW4ghfZzI4bo2j+2LcugLWosom23Zvx9BQVPGXg=
+sidebar_class_name: "post api-method"
+info_path: docs/generated/api/v2.12/quantification-and-analytics-tool
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"get the GlobalConsumptionOutput list"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/api/report/globalConsumption"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+API used to get the GlobalConsumptionOutput list.
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={undefined}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"content":{"application/json":{"schema":{"type":"object","properties":{"realmId":{"type":"integer","format":"int32"},"realmCountryIds":{"type":"array","items":{"type":"string"}},"programIds":{"type":"array","items":{"type":"string"}},"planningUnitIds":{"type":"array","items":{"type":"string"}},"startDate":{"type":"string","format":"date-time"},"stopDate":{"type":"string","format":"date-time"},"reportView":{"type":"integer","format":"int32"},"useApprovedSupplyPlanOnly":{"type":"boolean"},"planningUnitIdString":{"type":"string"},"programIdString":{"type":"string"},"realmCountryIdString":{"type":"string"}},"title":"GlobalConsumptionInput_ReportView"}}},"required":true}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Returns the GlobalConsumptionOutput list","content":{"text/json":{}}},"500":{"description":"Internal error that prevented the retreival of GlobalConsumptionOutput list","content":{"text/json":{}}}}}
+>
+  
+</StatusCodes>
+
+
+      

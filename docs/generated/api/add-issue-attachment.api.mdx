@@ -1,0 +1,71 @@
+---
+id: add-issue-attachment
+title: "Add Issue Attachment"
+description: "Add a file attachment to an existing Jira Service Desk ticket."
+sidebar_label: "Add Issue Attachment"
+hide_title: true
+hide_table_of_contents: true
+api: eJylVVFv2zYQ/ivEPW0AawcBsqJCMcBts8FBsa6Juz4YfjiLZ4uNRCokZccQ9N+LI6Vajo0Nxfwkk3ffffz43bEFRT53ug7aGshgppRAsdElCQwB86IiE0SwAo2gZ+2DNltxpx2KB3I7nZP4QP5RBJ0/UpiABFuTQwabK8gAlZp739DsBxZIqNFhRYGch2zZviCwKEjMPwi7EaEgoTk5lo8AcS2SCxYkaE6oMRQgwWBFkEFMmCuQ4Oip0Y4UZME1JMHnBVUIWQvhUHOoD06bLXSdvMShryKaurSohmJPDbnDsRoHQbdKxciHd1YduEJuTeCzZi1gXZc6j4pMv3mGb8+p2PU3yqM0jvULmjzvRvgzwhI21lUYIIO1Nhj5/Cf/rhsrskzQq65L6762xqea11dXL04Q6DkM1Dn8tNY9hcYZL1D4Js/Je5FbRdBJuPlJpLkJ5AyWgpyzTuyLaEKl2HHJB0dHxvME3LKD4MyOsJJQUSgsW7C2PpkuFJDBFGs9TW6dnptz2vb+6UCCJ7cbPNq4EjIoQqh9NmWMyVODJuhNf7VosDwEnfuJdduz+/iTDDcFKZEwBcOxbTzljdPhEGusCR25WcM8l6vx9gP7JV3POGj498dgh7uvi7Pat6xq7Ju7rwsR7CMZoU1qpJiXiXcRRbyNm79D3yrsuIQPcnAgCxCl50u8P3r+9hmrOnk1efZHc3HfbCxvnNL6fCKfmA36iYW1JUgodU7GR8S+12Y15gWJj2lD/EPOc+b15Arki/vZ7/cTjOF8HdMey08/zt/f/vVw+4pz2D86RK6fZyzbLgFCBteTN6+XNze/vV5xFPunQjNmopSIxhEnY+3kgCPf//+Z2qsf26cuURvmFY/c9r5eAtaaI2MOyMuDNxum40pCwW2RLaFt1+jpiyu7jpfTgDsby+PjXJyOFyk+0mEYkhJ2WDYcEo2/Q6dxzepzJe35W0G2wdLTvyj5y30/wn4VP/NOXCTXL6I5jMkNpAelulUnoSBU5CLXtPs+MXq1YIxj9tms56clZczynOowij3Owm48rf7+9MBmXPcPScWzNAOHe37RcJ8o2ihNnAdxrYUSzbbBLccmTP59B/7tswE=
+sidebar_class_name: "post api-method"
+info_path: docs/generated/api/qat
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Add Issue Attachment"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/api/ticket/addIssueAttachment/{issueId}"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Add a file attachment to an existing Jira Service Desk ticket.
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"description":"The ID of the issue to attach the file to","in":"path","name":"issueId","required":true,"schema":{"type":"string"}},{"description":"The file to upload","in":"query","name":"file"}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"content":{"application/json":{"schema":{"type":"object","properties":{"file":{"type":"string","format":"binary","description":"The file to upload"}},"required":["file"]}}}}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"content":{"text/json":{}},"description":"Returns a success code"},"500":{"content":{"text/json":{}},"description":"Internal error while adding issue attachment"}}}
+>
+  
+</StatusCodes>
+
+
+      

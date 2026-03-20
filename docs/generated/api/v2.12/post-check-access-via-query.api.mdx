@@ -1,0 +1,71 @@
+---
+id: post-check-access-via-query
+title: "Check for user access to specified programIds using query"
+description: "API used to check for user access to specified programIds using query"
+sidebar_label: "Check for user access to specified programIds using query"
+hide_title: true
+hide_table_of_contents: true
+api: eJytlVFv0zAQx7+KdS+8hG4MeMkTBYpWCW1dWniZqunmXBNDEnv2ZaWK8t3ROenaDmk8QKVWjXv+3+/Of187YCwCpLfQBvKwTiCnoL1xbGwDKUwXc9UGyhVbpUvSP9XGelnxCrWmEOSH4EibjaFcOW8Lj/U8D6oNpinUQ0t+BwlYRx5Fc55DCs4G/iRq06jx3eDNGOfpoaXAH22+g7R7DuM97pTdHKd54hpxBA8S0LZhalg00LnK6Jj87EcQoQ6CLqlG+cY7R5ACijQkYJjqcLQe2JumgL7v+wHOeMohZd9SXAjONoHijovz8z+RM+LWN0Gh+moCH7ErsxnaWGIY2U+xmX7xnjdmf3f+9iX9S2a3ZOQ2TL5cZx/nnz/PriQJl6S+SaLcUlCNZVXiIx2dXkEcg0awv1C8f7nKI4r51WqWXU2/3i1n2fdZdjfLsutsJPKkthhUsDUpK8+KvLdecYmscpNHTqwqu41oT+6Jx21rVxHTi6B9AjVxafdugwQccgkpnKEzZ6grea8o8N55gfwjebkKHbS+ghRKZhfSM9kweWixYbMZfYQNVjs2OkysL+D5nVl4m7c64g6i0ZQ30xUk8Ije4H0VHdP36wQEOTuYfvYLpTq5kKP11gmYZmNjjYblJ7g5gVHY5Gq6J1IraytJRD4MOBeTNxeT8z8op4v5q3j+eyeUJIxqGZHH5qKOzW2wlrxfpsuFYooeOW3Rdrv9S4uoRiM7LpfLO9G5u7z5UJRBv3ahjiF9ApXR1AQ6yjh1qEtSA/9pyo21k3v0IEctJ1xjc7Tx0z/MqpM+dQeT/bdhOM6WaFlXoWmk+FhdN7r0FtAZSAB1NXwenLpOoBRDp7fQdfcY6Juv+l6WB/n0dn2wmTz1CZSEOflo7Z+0k/YMNb1eCYmEV22cgs9HZZ/sd8ikdnwUe7hwYuOny7a4XorP78cBXttcgj1uZbjjFlKI/waSIk7NuNZBhU3RYiGxg6a8fgMWMkqz
+sidebar_class_name: "post api-method"
+info_path: docs/generated/api/v2.12/quantification-and-analytics-tool
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Check for user access to specified programIds using query"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/api/acl/aclTestQuery"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+API used to check for user access to specified programIds using query
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={undefined}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"description":"Array of programIds to check access for ","content":{"application/json":{"schema":{"type":"array","items":{"type":"string"}}}},"required":true}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Returns a List of program if user has access","content":{"text/json":{}}},"403":{"description":"Returns a HttpStatus.FORBIDDEN if the User does not have access to get the program","content":{"text/json":{}}},"500":{"description":"Returns a HttpStatus.INTERNAL_SERVER_ERROR if there was some other error that did not allow the operation to complete","content":{"text/json":{}}}}}
+>
+  
+</StatusCodes>
+
+
+      

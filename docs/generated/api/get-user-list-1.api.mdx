@@ -1,0 +1,71 @@
+---
+id: get-user-list-1
+title: "Get User List for Realm"
+description: "Get user list for realm"
+sidebar_label: "Get User List for Realm"
+hide_title: true
+hide_table_of_contents: true
+api: eJztGmtv00jwr6zmE0im6RV66KLTSekDVFSQKCl8qKJqa0/ihfWuuztuLor830+zdsB5FUdcQ0H5FMc779fOemcKCfrYqZyUNdCF10ii8OiEVp7E0DrhUOoMIrA5OslQZwl0YYR06dGdK0/Xf0AEuXQyQ0LnoXs1XSDaT7EiI85OIALF73JJKURgZIbQhbB6lkAEDm8L5TCBLrkCI/BxipmE7hRokjOoMoQjdBDB0LpMUvXq+QGU5YDRfW6NR88YB/v7/BNbQ2go0MB/qfPZs1TTZdLSOTlhAQkz33hvbz5jTKylYyuQqsjLmNQdNuBurNUoDZQR3EiPb22C+vtkGqAQKxcXWronR7OX1zMzf1Q4fsqkSZFmcqtBAvPCK4PevypMzC7gtRZqenLKjKAsI4gdSsLkaPJ98TlaOCRaOCgKwJXLV3FtaKZiVmpJs1quE0krSDQYJpLwGakMGSnBoSw0vbVJobG1qDVWP8WsPRImiuSNXhMUmEml52jNlI9gKJVOekSY5eRbctPSjAo5wo1ibPvhGNvCkJsc22SV31mNmw0F274OQcbWYRCgr9GsV/d66O5ZzO9b9Pn92XMeoJYVqGLlHi9UAC2VnGNYYa7g6encjpTZLF8Z7a1N1FA9wgrUFG4ztawb9UxyXCXDShfk0vuxdasLRLUPP+4sqWvmxYKojRK4y/Ut5HoIlbWJPuu1Nszy4NRlVlZjy/Zijf92EbGNiLALnc8KzAurF0t4jelbeLdB0Kd2fIKxyqT2q6sAF+FerH8scOq24t18Md+FzwOET4pSU9pzKFtr8Q1l56BtdHc/0JVIo/zXk30rCzSRdu59ePfmzo6cXL+l1+utVazhd67bmuv6k7z9V4S6fwvbW3skq/EEfbxz6E9qpb62NRudRf/ng+tlJcJyH1fL1qaV2/VbPzvGdv3WI3fQrt/6rd2767d+ddft+q3fxaG/cL/1ALwWGZXhq3vzsv0CqXDGC0px5U1+GcGL/eewyb34mmDN0Pv1N0pzn46rS3mGXFJgUX5eF4lFL4wlkco7FDKO0XtBVlCqfFOPF49cj2B71mNoC5OwzIcbziRsVeYzQxyIWqBz1olxqjSKERIpM5oPqIqHHPG4R1AVBhFkSKmtp0PCTAil0IWOzFWHETv1zUNnWj+UEIFHdzebGikc172UKPfdDqPt3RbSkBqqOLQ+0kg9IRX7Peu4w1ocXTE8oYKJqGgKJsczIR7jwimaBB43KB26XsGiXQ2ayx/Y9HUZbgDN/r2aZe2bT/0l3qdsuGChN5/6guwXNEKZ8KLK9q44ClTE32HxH6gnW9hFFX2IZl5kAwT7KjO0LMA8r/dzNhG9mVFE31oNEWgVo/EhLOrpml4u4xTFebUgPqLzjHmwtw/RgtHH4/GeDOBs405Ny3fOz45P3304fcY4jeh632Nb3FUEoQsHe3+9vDo8/PPlIOzF1lMmTUMSHi8KiXE+K0oX9XjRnI6N/LhnIqk2V8ifXEtVXS24sM1WsXcFMldQ1VeIGlNG3dnjIILU8i3EFUynvPteOl2W/Pq2QL6mvRpEcCedqqY6eLRJeX5OoDuU2uM9kj+5qGeZnoqFCaiVks9O5YbP5HdSF/wPIviCk8aEVDmoDnsJuiBOtdqLY8ypgfetqJTNxHx92oey/A9mTRzr
+sidebar_class_name: "get api-method"
+info_path: docs/generated/api/qat
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get User List for Realm"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/api/user/realmId/{realmId}"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Get user list for realm
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"description":"The realm ID","in":"path","name":"realmId","required":true,"schema":{"type":"integer","format":"int32"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"content":{"text/json":{"schema":{"type":"array","items":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":{"type":"object","properties":{"baseModel":"circular(BaseModel_UserListView)"},"title":"BaseModel_UserListView"},"businessFunctionList":{"type":"array","items":{"type":"string"}},"createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser_UserListView"},"createdDate":{"type":"string","format":"date-time"},"defaultModuleId":{"type":"integer","format":"int32"},"defaultThemeId":{"type":"integer","format":"int32"},"editable":{"type":"boolean"},"emailId":{"type":"string"},"faildAttempts":{"type":"integer","format":"int32"},"language":{"type":"object","properties":{"baseModel":{"type":"object","properties":{"baseModel":"circular(BaseModel_UserListView)"},"title":"BaseModel_UserListView"},"countryCode":{"type":"string"},"label":{"type":"object","properties":{"baseModel":{"type":"object","properties":{"baseModel":"circular(BaseModel_UserListView)"},"title":"BaseModel_UserListView"},"labelId":{"type":"integer","format":"int32"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"}},"title":"Label_UserListView"},"languageCode":{"type":"string"},"languageId":{"type":"integer","format":"int32"}},"title":"Language_UserListView"},"lastLoginDate":{"type":"string","format":"date-time"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser_UserListView"},"lastModifiedDate":{"type":"string","format":"date-time"},"orgAndCountry":{"type":"string"},"password":{"type":"string"},"realm":{"type":"object","properties":{"baseModel":{"type":"object","properties":{"baseModel":"circular(BaseModel_UserListView)"},"title":"BaseModel_UserListView"},"defaultRealm":{"type":"boolean"},"label":{"type":"object","properties":{"baseModel":{"type":"object","properties":{"baseModel":"circular(BaseModel_UserListView)"},"title":"BaseModel_UserListView"},"labelId":{"type":"integer","format":"int32"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"}},"title":"Label_UserListView"},"realmCode":{"type":"string"},"realmId":{"type":"integer","format":"int32"}},"title":"Realm_UserListView"},"roleList":{"type":"array","items":{"type":"object","properties":{"label":{"type":"object","properties":{"baseModel":{"type":"object","properties":{"baseModel":"circular(BaseModel_UserListView)"},"title":"BaseModel_UserListView"},"labelId":{"type":"integer","format":"int32"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"}},"title":"Label_UserListView"},"roleId":{"type":"string"}},"title":"Role_UserListView"}},"roles":{"type":"array","items":{"type":"string"}},"showDecimals":{"type":"boolean"},"userAclList":{"type":"array","items":{"type":"object","properties":{"countryName":{"type":"object","properties":{"baseModel":{"type":"object","properties":{"baseModel":"circular(BaseModel_UserListView)"},"title":"BaseModel_UserListView"},"labelId":{"type":"integer","format":"int32"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"}},"title":"Label_UserListView"},"healthAreaId":{"type":"integer","format":"int32"},"healthAreaName":{"type":"object","properties":{"baseModel":{"type":"object","properties":{"baseModel":"circular(BaseModel_UserListView)"},"title":"BaseModel_UserListView"},"labelId":{"type":"integer","format":"int32"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"}},"title":"Label_UserListView"},"lastModifiedDate":{"type":"string","format":"date-time"},"organisationId":{"type":"integer","format":"int32"},"organisationName":{"type":"object","properties":{"baseModel":{"type":"object","properties":{"baseModel":"circular(BaseModel_UserListView)"},"title":"BaseModel_UserListView"},"labelId":{"type":"integer","format":"int32"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"}},"title":"Label_UserListView"},"programCode":{"type":"string"},"programId":{"type":"integer","format":"int32"},"programName":{"type":"object","properties":{"baseModel":{"type":"object","properties":{"baseModel":"circular(BaseModel_UserListView)"},"title":"BaseModel_UserListView"},"labelId":{"type":"integer","format":"int32"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"}},"title":"Label_UserListView"},"programTypeId":{"type":"integer","format":"int32"},"realmCountryId":{"type":"integer","format":"int32"},"roleDesc":{"type":"object","properties":{"baseModel":{"type":"object","properties":{"baseModel":"circular(BaseModel_UserListView)"},"title":"BaseModel_UserListView"},"labelId":{"type":"integer","format":"int32"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"}},"title":"Label_UserListView"},"roleId":{"type":"string"},"userAclId":{"type":"integer","format":"int32"},"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"UserAcl_UserListView"}},"userAcls":{"type":"array","items":{"type":"object","properties":{"countryName":{"type":"object","properties":{"baseModel":{"type":"object","properties":{"baseModel":"circular(BaseModel_UserListView)"},"title":"BaseModel_UserListView"},"labelId":{"type":"integer","format":"int32"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"}},"title":"Label_UserListView"},"healthAreaId":{"type":"integer","format":"int32"},"healthAreaName":{"type":"object","properties":{"baseModel":{"type":"object","properties":{"baseModel":"circular(BaseModel_UserListView)"},"title":"BaseModel_UserListView"},"labelId":{"type":"integer","format":"int32"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"}},"title":"Label_UserListView"},"lastModifiedDate":{"type":"string","format":"date-time"},"organisationId":{"type":"integer","format":"int32"},"organisationName":{"type":"object","properties":{"baseModel":{"type":"object","properties":{"baseModel":"circular(BaseModel_UserListView)"},"title":"BaseModel_UserListView"},"labelId":{"type":"integer","format":"int32"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"}},"title":"Label_UserListView"},"programCode":{"type":"string"},"programId":{"type":"integer","format":"int32"},"programName":{"type":"object","properties":{"baseModel":{"type":"object","properties":{"baseModel":"circular(BaseModel_UserListView)"},"title":"BaseModel_UserListView"},"labelId":{"type":"integer","format":"int32"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"}},"title":"Label_UserListView"},"programTypeId":{"type":"integer","format":"int32"},"realmCountryId":{"type":"integer","format":"int32"},"roleDesc":{"type":"object","properties":{"baseModel":{"type":"object","properties":{"baseModel":"circular(BaseModel_UserListView)"},"title":"BaseModel_UserListView"},"labelId":{"type":"integer","format":"int32"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"}},"title":"Label_UserListView"},"roleId":{"type":"string"},"userAclId":{"type":"integer","format":"int32"},"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"UserAcl_UserListView"}},"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"User_UserListView"}}}},"description":"Returns the user list for realm"},"403":{"content":{"text/json":{"schema":{"type":"object","properties":{"messageCode":{"type":"string"}},"title":"ResponseCode_UserListView"}}},"description":"User does not have access to this realm"},"404":{"content":{"text/json":{"schema":{"type":"object","properties":{"messageCode":{"type":"string"}},"title":"ResponseCode_UserListView"}}},"description":"User list not found"},"500":{"content":{"text/json":{"schema":{"type":"object","properties":{"messageCode":{"type":"string"}},"title":"ResponseCode_UserListView"}}},"description":"Internal error while getting the user list"}}}
+>
+  
+</StatusCodes>
+
+
+      

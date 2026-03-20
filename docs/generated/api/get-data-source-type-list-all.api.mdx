@@ -1,0 +1,63 @@
+---
+id: get-data-source-type-list-all
+title: "Get All Data Source Types"
+description: "Retrieve a complete list of all data source types (active and disabled)"
+sidebar_label: "Get All Data Source Types"
+hide_title: true
+hide_table_of_contents: true
+api: eJztWG1rG0cQ/ivLfErgIhkXN/QoATlxjYPTkkhpPhhRRnsj3SZ7u5fdOblC3H8vsyeFk+KXuBiaBn2SNO/zzItubg0FRR1MzcY7yOEdcTC0JIVK+6q2xKSsiaz8XKG1qkBGFX0TNCle1RTVE9RsRMEVqjARZ5aKp5CBrymgWL0oIIcF8StkHCfNyaqmSxN5ZC1kECjW3kWKkK/h+OhIPrR3TI7lK9PfPPwYJbo1RF1ShYm8qglywBBwBRkYpir26H72kTRDBnWQQNh05rtYe3Iz7y2hgzaDGUZ64wuyj2YGtAm6sRienG6JgowOhEzF6ep+R02kIPh9kTOOaUEBMpj7UCF3pJ+OxbMIO6z6cUUOxi2gbTNgw1ZIpxiNfh8piMomlFfIN2j1fBTI9IxNRaJkMfIbX5i5+T6S6MfzkEx27W2K1v7/61PsDNo3h2dx9oi9fxihwwh9F6n9y/rMyD5scv4id0NUW+Y83MGs72LG+hbmD9dBl2kB/UC5ybMN2ur+BLQvboonA/OtWZli3Cnd2kiHzX7Y7IfNftjs/+lmv9/12MjV+dIX9EeXbp+5e0JC2wrzqwO2CS4qLu85XCWckwdem7dUoKIYcZGCvju5d5tTN0neEPyFYymPVRSCD4pLZFUHWpJjKlJKobvP0UpeQtjPKyXdOcVFhPwqgaY61FSCbZpBRVz6zV0u6SCXkMMQazPcvR6GmG70SGFJQcytoQmyvUvmOuZDURl8btCxmRud7n10aFdsdBz4IL2xm+I5OXkvQIXqbCox107FhW6C4VXyMSMMFEaNhHU17bPHUpMO9r7Q9tdv20Z8/WHyle8zgTeh9vrDRLH/RE4ZlwhdA+fqNFlRvybmC8k8+ZN/scSBbFteASDhbNzcSwC7vt7uYKJGW1DUxHtB1BpNLqZ+6YYCRjXqktRlx1B/UoiieTw4gmwP9Ovr6wEmccF4uLEVh5cXL89+H589E51e270dCRbLziDkcDz45fnVycnPz6ciVfvIFbpeJOfEamSt2u+cuI9ob3Qe8c3RBuA0irVFk54cEgDrTadeAdYG9i9dyEC6dZpB6SOL1HotDxzvg21bIX9uKEh/TTNYYjDiMLVXBiVhQSG13idaSTG0plpGY4m2+RJNWgxtf37OzybQtv8Ar+6ZjA==
+sidebar_class_name: "get api-method"
+info_path: docs/generated/api/qat
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get All Data Source Types"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/api/dataSourceType/all"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Retrieve a complete list of all data source types (active and disabled)
+
+<ParamsDetails
+  parameters={undefined}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"content":{"text/json":{"schema":{"type":"array","items":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":"circular(BaseModel)","createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"}},"title":"BaseModel"},"createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"dataSourceTypeId":{"type":"integer","format":"int32"},"label":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":"circular(BaseModel)","createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"}},"title":"BaseModel"},"createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"labelId":{"type":"integer","format":"int32"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"}},"title":"Label"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"},"realm":{"type":"object","properties":{"code":{"type":"string"},"id":{"type":"integer","format":"int32"},"idString":{"type":"string"},"label":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":"circular(BaseModel)","createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"}},"title":"BaseModel"},"createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"labelId":{"type":"integer","format":"int32"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"}},"title":"Label"},"name":{"type":"string"}},"title":"SimpleCodeObject"}},"title":"DataSourceType"}}}},"description":"Returns the list of all data source types"},"500":{"content":{"text/json":{"schema":{"type":"object","properties":{"messageCode":{"type":"string"}},"title":"ResponseCode"}}},"description":"Internal error that prevented the retrieval of the data source type list"}}}
+>
+  
+</StatusCodes>
+
+
+      

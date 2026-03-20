@@ -1,0 +1,71 @@
+---
+id: put-realm
+title: "Update a Realm"
+description: "Update an existing realm in the system"
+sidebar_label: "Update a Realm"
+hide_title: true
+hide_table_of_contents: true
+api: eJztWW1P3DgQ/iuWP91JAcK2lGt0Ogm2UFGVFuhylQ6h02wyu3Hr2KlfgNVq//tpnKSbsKFsaStxVfm02PPyeGzPPOPMeYY2NaJ0Qiue8PMyA4cMFMMbYZ1QU2YQZMGEYi5HZmfWYcEjrks0QEpHGU946d0ZifGIG/zk0bp9nc14MuepVg6Vo59QllKkQWnrgyV3c27THAugX25WIk+4Hn/A1PGIl4ZcOIE26KZOXGFLbqy1RFB8EdGcBznUyvoirONYK5fbI3UC1rVUhHI4RcMjPtGmAFcNPRmQjTFYPNYZym+D0jLDU2FSL8H8tt8M/s4jnhoEh9n+7H5H3qKh6K61ABJWULRxWWeEmvLFIuJOOElD+2BFem7RkEoN5QW4Hq2WDzoRG04USEoSrDvWmZiIx7GINp6vWUnXXr1pi////mQ4AS/r29h7RifaYArWfduFEeoKldNm9gBdCePveNF+3ddf9/VRLO2B+zNGuTaqIP0vqh5UzeTEfGGy/NKkLe+Y/OlO0OuQgH6itUW8gJtjbY/h5iV4kxkQck2UBdyclnKkJRpQKa6rJdRQe+UOtaGruL7WA0FWikI9QPEETboKU/li3NXJtB9LrJUeFpK21tC7t5PJmrpKv500hfTQO2/wUJt97ZwuXoDNxxrMuqeu19RIl99ih2r7dwFUG3oAnNCFDLt7uMxRYXbNi9m6exVLWiwCb2q3QaMc677HaeZDT1S3NsJgxhNnPAa3ttTKVrlhEMe3Gh6HN+6rO50CrYUp3rHUDvjKeZDsWcMZOm+UZcCsT1O0lqVBMuJP4yePCillP5ZptExpx3K4QmbENHd2GX0G1X5U8J89KvjhFDGQBiGbVX2zJZw7j+xAHClHBUkyNEYbdp0LiVV4P7f5lT2YWp5c1LfjMuIFulzXbT7BA5fzhG9BKbZM3fVbNFdoSG3OvSE6nTtX2mSLpDY/eVBOTOrmHxTImROp3dSGCloX5UtU9LKAGatsMjK3uCQXqTfCzYKPMYJBs+cJycVle/odhbWKXFuo+e+wyQav3o9WfB9QhMI7x6v3I+b0R1TNw0eVRRK2H6ywP8PkX7Ty4I/aijDDo2aHKAAhnrThZ8tXkYMbKEqJ7daE0sm97xjxra6nq9zhwQ1NidskpJUuO0yVD+LB0414d2PwfLS9k+xsJ4M/NuPd7X94Hz+6z/Qqg7nb/m36/t1gd5vgKkD3tr3xnU1t3GpZu1H/tSHrwq67nLjdwyw57bJ1uT1W9oxRo9Ie+8Eh+bEO+ql73EPM4x7aHfeT6rifMserhDjuoburYw2ZjdelqncJdplfvB7N7BdbMdWiiMvT8ZkZxuHRaqJp/7pZ/7RTndheU57YSGtJB0ykqGxI2PVO75WQ5sheVxPsbzSWNAebMY9ulb/r6+tNCOJU7bZqW3br9dHw4M27gw3SadXw0z2qSleVQTo2m893L3Z2nu1eklSprStAtZA07/WseX7vLK1FPtZ/2a/LV+AqpQQRHsrCouZ16b/gUIomtkQQck1p8oLP55QQz41cLGj4k0dD5foy4ldgBFB7RdU64jlChiZU8o844wkfVjg3RuScxKUnECufDBZRo7GXpli6luySXC3anOXknCI6rj9HFNXxMHBN+OGaJzx8zCAPgTOEsTmXoKYepiRbmaS//wD2NZFj
+sidebar_class_name: "put api-method"
+info_path: docs/generated/api/qat
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Update a Realm"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"put"}
+  path={"/api/realm"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Update an existing realm in the system
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={undefined}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"content":{"application/json":{"schema":{"type":"object","properties":{"active":{"type":"boolean"},"actualConsumptionMonthsInPast":{"type":"integer","format":"int32"},"baseModel":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":"circular(BaseModel)","createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"}},"title":"BaseModel"},"createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"defaultRealm":{"type":"boolean"},"forecastConsumptionMonthsInPast":{"type":"integer","format":"int32"},"inventoryMonthsInPast":{"type":"integer","format":"int32"},"label":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":"circular(BaseModel)","createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"}},"title":"BaseModel"},"createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"labelId":{"type":"integer","format":"int32"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"}},"title":"Label"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"},"maxMosMaxGaurdrail":{"type":"integer","format":"int32"},"maxQplTolerance":{"type":"integer","format":"int32"},"minCountForMode":{"type":"integer","format":"int32"},"minMosMaxGaurdrail":{"type":"integer","format":"int32"},"minMosMinGaurdrail":{"type":"integer","format":"int32"},"minPercForMode":{"type":"number","format":"double"},"minQplTolerance":{"type":"integer","format":"int32"},"minQplToleranceCutOff":{"type":"integer","format":"int32"},"noOfMonthsInFutureForBottomDashboard":{"type":"integer","format":"int32"},"noOfMonthsInFutureForTopDashboard":{"type":"integer","format":"int32"},"noOfMonthsInPastForBottomDashboard":{"type":"integer","format":"int32"},"noOfMonthsInPastForTopDashboard":{"type":"integer","format":"int32"},"realmCode":{"type":"string"},"realmId":{"type":"integer","format":"int32"}},"title":"Realm"}}},"description":"The realm to update","required":true}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"content":{"text/json":{"schema":{"type":"object","properties":{"messageCode":{"type":"string"}},"title":"ResponseCode"}}},"description":"Returns a success code"},"403":{"content":{"text/json":{"schema":{"type":"object","properties":{"messageCode":{"type":"string"}},"title":"ResponseCode"}}},"description":"User does not have rights to update a realm"},"406":{"content":{"text/json":{"schema":{"type":"object","properties":{"messageCode":{"type":"string"}},"title":"ResponseCode"}}},"description":"Realm already exists"},"500":{"content":{"text/json":{"schema":{"type":"object","properties":{"messageCode":{"type":"string"}},"title":"ResponseCode"}}},"description":"Internal error while updating realm"}}}
+>
+  
+</StatusCodes>
+
+
+      

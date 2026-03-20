@@ -1,0 +1,71 @@
+---
+id: add-supplier
+title: "Add Supplier"
+description: "API used to add a Supplier"
+sidebar_label: "Add Supplier"
+hide_title: true
+hide_table_of_contents: true
+api: eJztWd9v2zYQ/leIe9kGKI7jNuimpzmNiwRoE8d297AgCM7i2WIniQpJxTUM/e/FUZItx5mzvq2p/SSTx/tBHvl9R67A4dxCeAu2yPNEkYG7ACTZyKjcKZ1BCP3hpSgsSeG0QCkFinEjG4DOySALXkoIAaVs9Rl6KMi6My2XEK6eaJ3EtNYj9PQLRU64GJ1Y6kIsMHO1OQgg0pmjzLEO5AGRN3j8xbKiFdgophT5yy1zghAqbRBAbtg9p8hyb2QIHcmz5cuihSXDAa3lVOZo7oOaaZOiq5re9KAMvHCGKbXErTMqm0NZBuCUS7jpDK2KPlsyPKR25RzdM6NaNiQ6OnIqJR6UoHWftFQz9f8Iou3P90WCkVOPbfmp1glhxn1NHv5nzxOcUnJY/dex+n4xv2/p7yl7xu2m0+Z7OmdmT2f+fOcULX3S8pByryXlWgsKkTJRkaD59axp/A22valF2z5+9AdQyXiHSfryNKnDyfYTptnhZDuk3A97skVaPhdOAEqOq++9sY5Vmif0Xku6rub3kG2HbNvJtnXlWJZlVTwqQxJCZwryDTbXma2mqNft7paUI3KFyawvUKOIrBWct0LNhItJrCtVsUArbCUxK5LtAtPRV9dUlt6Pt903+yxdOJePHbrCdj5cj84uz88HV41Fnm8hNVmRaSdifCSB3uoLJk/3B9cyeXk1GYyu+h/vx4PRX4PR/WA0uh7V5g1VgeqUhOb/gozRpiqypZLeKUwSvXgyPU6LSPOGdbTX0TKAlFysufDPtfV5jC6GEI4xV8dNIXcMAVgyj2T4nmEFheEMiZ3LbXjMkp2HAjOnZnVdjxkmS6ci29GGM3F7GoZGyyLyflZKxUwbcdOfQACPaBROE58hZXkXAPs62lxCDL4ih7VzpDT7rdveTa1DbmvTQ6/be3vUfXfU+2NychqenoS93zvddyd/w3Mb/SXVu1txn/5m+/GO2K6Uuy22+BpiW7OlbpsLbY6nDQV62sbM52lbvtW2hTw//mSV7cpDHXLhZ8+FiqttQtxQtH/j+q8jbpXNtEepmk7cbKGKwEyKfgMtYqI1Az+DUoUrvc5Jr9PdgZv+8PIX62+iK0LBSHnTn4ixx54aHjHy8FjH86E/HgpHmELwBOsWi8ULWEcpKh5xMR7fs577i5s/57GNjnKbehGeJRVRZqllsZ9jFJOo/N82OdO6M0XjeRZjdIpZe6CU7bv8rdBXG+Tf/wJQM0FPDvIElSeD3otVzQduAXMFG8CCAPiVIWbOEN7CasXZ+NkkZcnNDwWZJYS3dxtA539lADGhJONJxD+0hBDeVx4eTdgFFk8KdmXnkaAMmhH9KKLctWQ3nIYJw5rPDK/HzCim9dNFWu0pgwt+1sAFhODfPtiE56O+bQUJZvMC5yxb6eTfNxdPgnc=
+sidebar_class_name: "post api-method"
+info_path: docs/generated/api/v2.12/quantification-and-analytics-tool
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Add Supplier"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/api/supplier/"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+API used to add a Supplier
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={undefined}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"description":"The Supplier object that you want to add","content":{"application/json":{"schema":{"type":"object","properties":{"createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"},"active":{"type":"boolean"},"supplierId":{"type":"integer","format":"int32"},"label":{"type":"object","properties":{"createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"},"active":{"type":"boolean"},"labelId":{"type":"integer","format":"int32"},"label_en":{"type":"string"},"label_sp":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"baseModel":{"type":"object","properties":{"createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"},"active":{"type":"boolean"},"baseModel":"circular(BaseModel)"},"title":"BaseModel"}},"title":"Label"},"realm":{"type":"object","properties":{"id":{"type":"integer","format":"int32"},"label":{"type":"object","properties":{"createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"},"active":{"type":"boolean"},"labelId":{"type":"integer","format":"int32"},"label_en":{"type":"string"},"label_sp":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"baseModel":{"type":"object","properties":{"createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"},"active":{"type":"boolean"},"baseModel":"circular(BaseModel)"},"title":"BaseModel"}},"title":"Label"},"code":{"type":"string"},"idString":{"type":"string"}},"title":"SimpleCodeObject"},"baseModel":{"type":"object","properties":{"createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"},"active":{"type":"boolean"},"baseModel":"circular(BaseModel)"},"title":"BaseModel"}},"title":"Supplier"}}},"required":true}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Returns a Success code if the operation was successful","content":{"text/json":{}}},"403":{"description":"Returns a HttpStatus.FORBIDDEN if the User does not have access","content":{"text/json":{}}},"500":{"description":"Returns a HttpStatus.INTERNAL_SERVER_ERROR if there was some other error that did not allow the operation to complete","content":{"text/json":{}}}}}
+>
+  
+</StatusCodes>
+
+
+      

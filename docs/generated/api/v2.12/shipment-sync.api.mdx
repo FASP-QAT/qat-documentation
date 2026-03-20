@@ -1,0 +1,71 @@
+---
+id: shipment-sync
+title: "Get list of Shipment data for given programId and versionId which are modified after given date"
+description: "API used to get list of Shipment data for given programId and versionId which are modified after given date"
+sidebar_label: "Get list of Shipment data for given programId and versionId which are modified after given date"
+hide_title: true
+hide_table_of_contents: true
+api: eJy9VlFv4zYM/isCX7YBXtzLthc/LVh71wDDXdpkT0VQsDYda2dLrkQnCwz990Gy6zhN73oNtnuypIjiR/Ijv7TAuLGQ3EFt9MZgdYmMsI4gI5saWbPUChKYLeaisZQJ1mJDLEppWehcLAtZV6RYZMgocm3ERm5Jif6xeSZQZWJLxkqt5pnYFTItBBoSlc5kLikTmDM9mWXIBBHomgxysIAEbO9juVcpRFCjwYqYjEfdgsKKIIHBIUQgPeIauYDnYRxgcYEsdqhYcEGnYUAEhh4baSiDhE1DEdi0oAohaYH3tXcpFdOG/NVcmwq5O/plCs5FA64h9K/iOiToe+FqLJlXQHVXhCJf9kJa8YDpZyGVMGRrrSz9Z2BKtKG6l135vwxpfLFL1V43XbrwWbI8Q78FoGUj1QacW/vLXWDW/z69uPCfYwC3xI1R9oXi9P5SrZgUBwf0D8d/W2/XOuci+PXd9MsvorhmrpeM3NjJ4vbqj08fL+er+aeP9+9n8z+vLoXMRUqGUSqRapVJb2+f+vFlPCLTZIXSLCp6DdxvL4U7V0xGYSnIGG26jNeGtqQ4kIKEITYkt1ieToNXM+IiqIgL7Zt8EwCGoicQYy3j0TyKxyMgHpo4boeli4cWitth6eKOw3HbfV08JlDcjncOIrBktk9zpTElJFAw1zaJPaDJY4OKZS7TMJpQYblnmdqJNpsToi6MzprUb0T3aJiNN7MVRLBFI/GhDCwLtJMq1yE9kktPyZsjR2GCzp68iZXWpX+kixESmE7eTScXJwhmi/kPgR6YpmQ7xt7MVmIZ4PR1wTTUpW/D97PlQjBhBdGz8He73SvhU4XSW1wvl/f+nfvrm983hU1/rm0VrrgISpmSHxsHj7Ma04JEh//YZa715AGNnxNQa8sVqpHhh/9dg46y2R5Y/J2lsJ9SoXPqEqXyiQyZavtuuQOspe+dkX5HJ6I5ksdkvBnrUzLeDAKRDKtnYzo52q8jKLRlj6dtH9DSX6Z0zh8/NmT2kNytD9QPHZZJ69cZJDmWlr6S8h9v+yn+k3iLgr+Yu/4Q1T60Ytn4HUTwmfZHfyO8PJ2F8C1afgbCQ43ORvgtwn4Gsp4nZ8N6u7ifAfKIs27tIigIMzKBkd2VWZpSzSPjg2z5aT1I1oerFTj3L73D5hY=
+sidebar_class_name: "get api-method"
+info_path: docs/generated/api/v2.12/quantification-and-analytics-tool
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get list of Shipment data for given programId and versionId which are modified after given date"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/api/programData/shipmentSync/programId/{programId}/versionId/{versionId}/userId/{userId}/lastSyncDate/{lastSyncDate}"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+API used to get list of Shipment data for given programId and versionId which are modified after given date
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"programId","in":"path","description":"programId that want the Shipment data for","required":true,"schema":{"type":"integer","format":"int32"}},{"name":"versionId","in":"path","description":"versionId that want the Shipment data for","required":true,"schema":{"type":"integer","format":"int32"}},{"name":"userId","in":"path","description":"userId need this back in response","required":true,"schema":{"type":"integer","format":"int32"}},{"name":"lastSyncDate","in":"path","description":"lastSyncDate that you want a Shipment data list","required":true,"schema":{"type":"string"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Returns the Shipment data list","content":{"text/json":{}}},"412":{"description":"Returns a HttpStatus.PRECONDITION_FAILED if certain conditions to get the Shipment data list does not met","content":{"text/json":{}}},"500":{"description":"Internal error that prevented the retreival of Shipment data list","content":{"text/json":{}}}}}
+>
+  
+</StatusCodes>
+
+
+      

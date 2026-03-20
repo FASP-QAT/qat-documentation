@@ -1,0 +1,71 @@
+---
+id: get-load-program-1
+title: "Get Version List for Supply Plan Program (load)"
+description: "Retrieve a list of versions for a specific supply plan program"
+sidebar_label: "Get Version List for Supply Plan Program (load)"
+hide_title: true
+hide_table_of_contents: true
+api: eJztWdtu20YQ/ZXFPCUAY7lO06BCUcBO3ECB21zkJA+GYIzJkbgJucvMDu0Igv69mCVlUZaqyEn6UFQvosiZnZ3L2dvZGWQUUraVWO+gD29J2NI1GTSFDWL82FwTB+tdMGPPBk2oKLVjm5pQV1UxNVWBzlTsJ4wlJOArYlRjgwz6MCE585i9bsSXP0ECFTKWJMQB+hezO92f52QGz7VXyWlh1Yg3vPCr/Ra9gQSstqpQckjAYUn61mgMMkiA6XNtmTLoC9eUQEhzKhH6M5BppcrWCU1ILY09lyjNp8dHMJ8nm5yrcELG1eUV8X3dwgl9p0cjbR4q7wIFbXF0eKiP1DshJ9EGfZHex6DuztZN+6uPlIrWgLVMYhszac1MTl6rg7v4kUBOWEh+zNS1jsw4hQRu2Aq9csV0EaIVKsMObvis238Qtm6ivdlsR7dsNmwabbJS4BUVX/fiCgP96bN7qkJqOa0L5Acni4+XAyfEDov3lm4eqgdipVBzm1VufRzsGm7UviT3z+FejnmLsNomDNUGYSeIs6i1GkBHPLRlVdAzn9GrmLx1zSWGBtmZDbIBSXeBs22wduztaG0Pwz0MEyjxi058u8EsAc8TdDZgsyTssbTH0jLUxSZoD4s9LDqhMmFRPvO1E57usbHHRjfU9mz1nTsWJhTKTnZAVx2Id86sKjeHl20pOMFg03eBeC241q/nKBtMdDrMUOiR2JK00dgzpRhkKMjyrU19db+WzsvKDmAJg7ZAKzlbkw4Fpd6hUPsh/F8dwtuH73k0vq/+/6r6XSMes/cNFO4q3dFaEGHrWms0XM0udFi4LsFkCo+Zxvjz4eMfQQCVFAJO4jq1PVtvW/ZJNb8ag64JJvMUjPNicrwmw3aSS1DiDNOUQjCS23BLHs4TePJjGK1/J6CF3BCzZ3OT24LMhESsm8SSLCPRLnCiDCe0JYdRAiVJ7ltaNDKhkkMfeljZXrEER++WwOzNbv/Oe8of9mb6O4cEAvH1gkKtWYduLlKFfk+tHXyu0YmStPGcig6Lqdg0HHjWNXA1qhfklLGlzDQ2jZpTqjFQWrOVaezjipCJj2v1+GLUFQ+1Ju1M0lFavP2xGO8vP5yv9X2qGY1U78sP50b8J3LGuvihmSf65iRaMb9F4e/QEqZau8Y+JIvyagJi5q0be3Vgta83Kzkxx4ukmHPvC0igsCm5EPHSMrbHFaY5mbNGYNoRbo4ODiG5k/Sbm5sDjOqa415rK/TOBs9O/xqePtI2Hdi9OdZctKsH9OHo4NenF0+e/PJ0FM+RPkiJruPJC5Lb7nWvGCeBYcO/v1b+vYWOeaA4eng3z50B9f0Ef5vtOC6rAq2LW0WOC02D6AvAympGl5iGZIWW73dfWmK8H5+jBHKvm+ELmM10ZXrHxXyunz/XpOeni1EC18gWrzSTeoFgg/7PoD/GItCW0B+8bbn3h+be9wwbo15s151u1q+xqPUNEvhE05V7iHiV8K1u7njj8C0OasLno4Y7zYhjOhvRcZpSJZ1Gy2l43p3IXpyew3z+Ny6KFv8=
+sidebar_class_name: "get api-method"
+info_path: docs/generated/api/qat
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get Version List for Supply Plan Program (load)"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/api/loadProgram/programId/{programId}/page/{page}"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Retrieve a list of versions for a specific supply plan program
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"description":"The ID of the program to retrieve programs for","in":"path","name":"programId","required":true,"schema":{"type":"integer","format":"int32"}},{"description":"The page number to retrieve programs for","in":"path","name":"page","required":true,"schema":{"type":"integer","format":"int32"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"content":{"text/json":{"schema":{"type":"object","properties":{"currentPage":{"type":"integer","format":"int32"},"healthArea":{"type":"array","writeOnly":true,"items":{"type":"object","properties":{"code":{"type":"string"},"id":{"type":"integer","format":"int32"},"idString":{"type":"string"},"label":{"type":"object","properties":{"baseModel":{"type":"object","properties":{"baseModel":"circular(BaseModel_InternalView)"},"title":"BaseModel_InternalView"},"labelId":{"type":"integer","format":"int32"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"}},"title":"Label_InternalView"}},"title":"SimpleCodeObject_InternalView"}},"healthAreaIdList":{"type":"array","items":{"type":"integer","format":"int32"}},"healthAreaList":{"type":"array","items":{"type":"object","properties":{"code":{"type":"string"},"id":{"type":"integer","format":"int32"},"idString":{"type":"string"},"label":{"type":"object","properties":{"baseModel":{"type":"object","properties":{"baseModel":"circular(BaseModel_InternalView)"},"title":"BaseModel_InternalView"},"labelId":{"type":"integer","format":"int32"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"}},"title":"Label_InternalView"}},"title":"SimpleCodeObject_InternalView"}},"maxPages":{"type":"integer","format":"int32"},"organisation":{"type":"object","properties":{"code":{"type":"string"},"id":{"type":"integer","format":"int32"},"idString":{"type":"string"},"label":{"type":"object","properties":{"baseModel":{"type":"object","properties":{"baseModel":"circular(BaseModel_InternalView)"},"title":"BaseModel_InternalView"},"labelId":{"type":"integer","format":"int32"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"}},"title":"Label_InternalView"}},"title":"SimpleCodeObject_InternalView"},"program":{"type":"object","properties":{"code":{"type":"string"},"id":{"type":"integer","format":"int32"},"idString":{"type":"string"},"label":{"type":"object","properties":{"baseModel":{"type":"object","properties":{"baseModel":"circular(BaseModel_InternalView)"},"title":"BaseModel_InternalView"},"labelId":{"type":"integer","format":"int32"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"}},"title":"Label_InternalView"}},"title":"SimpleCodeObject_InternalView"},"realmCountry":{"type":"object","properties":{"code":{"type":"string"},"id":{"type":"integer","format":"int32"},"idString":{"type":"string"},"label":{"type":"object","properties":{"baseModel":{"type":"object","properties":{"baseModel":"circular(BaseModel_InternalView)"},"title":"BaseModel_InternalView"},"labelId":{"type":"integer","format":"int32"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"}},"title":"Label_InternalView"}},"title":"SimpleCodeObject_InternalView"},"versionList":{"type":"array","items":{"type":"object","properties":{"createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser_InternalView"},"createdDate":{"type":"string","format":"date-time"},"forecastStartDate":{"type":"string","format":"date-time"},"forecastStopDate":{"type":"string","format":"date-time"},"notes":{"type":"string"},"versionId":{"type":"string"},"versionStatus":{"type":"object","properties":{"id":{"type":"integer","format":"int32"},"idString":{"type":"string"},"label":{"type":"object","properties":{"baseModel":{"type":"object","properties":{"baseModel":"circular(BaseModel_InternalView)"},"title":"BaseModel_InternalView"},"labelId":{"type":"integer","format":"int32"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"}},"title":"Label_InternalView"}},"title":"SimpleObject_InternalView"},"versionType":{"type":"object","properties":{"id":{"type":"integer","format":"int32"},"idString":{"type":"string"},"label":{"type":"object","properties":{"baseModel":{"type":"object","properties":{"baseModel":"circular(BaseModel_InternalView)"},"title":"BaseModel_InternalView"},"labelId":{"type":"integer","format":"int32"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"}},"title":"Label_InternalView"}},"title":"SimpleObject_InternalView"}},"title":"LoadVersion_InternalView"}}},"title":"LoadProgram_InternalView"}}},"description":"Returns a list of programs for load"},"403":{"content":{"text/json":{"schema":{"type":"object","properties":{"messageCode":{"type":"string"}},"title":"ResponseCode_InternalView"}}},"description":"User does not have rights to access this program"},"500":{"content":{"text/json":{"schema":{"type":"object","properties":{"messageCode":{"type":"string"}},"title":"ResponseCode_InternalView"}}},"description":"Internal error while getting load program"}}}
+>
+  
+</StatusCodes>
+
+
+      

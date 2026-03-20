@@ -1,0 +1,71 @@
+---
+id: get-update-program-info-list
+title: "API used to get the list of Programs that feeds the UpdateProgramInfo page"
+description: "API used to get the list of Programs that feeds the UpdateProgramInfo page"
+sidebar_label: "API used to get the list of Programs that feeds the UpdateProgramInfo page"
+hide_title: true
+hide_table_of_contents: true
+api: eJztWG1v2zYQ/ivEfWoBNgoyZMWEYYCTZYWL9C1x2g+GEdDS2WIrkQp5cmYI+u/DUXIrv8RJsa5YgHySyDvene45UnyuhhR94nRJ2hqIYfB+KCqPqSAr5kiCMhS59iTsTLx3du5U4QVlisQMMfVBflWmirCTDs3MilLNESTYEp1iw8MUYpgjbWmea08goVROFUjoPMTjGjRHUirKQIJRBfKoXTNaljhMQYLDm0o7TCEmV6EEn2RYKIhroGXJC7QhnKMDCTPrCkXt1C9H0DRypweHKi9ObWXILf8jFyohvcB/aXrCy31pjUfPK44OD/mRWENoKNjAvyn67BnPetu0ck4tQYImLHxv3k4/YxLAcIwb6dZ8F/M3vam1OSoDjYQMVU7ZwKF6gCGdPuj7JOj0kpw28566bycaCbmaYn6/s6ny+Mam36kKiXZJlSv37GQ1eX2BpXX0UePtc/ZPmnI2tkvha3zXaO4O/nrm9gjLfUJf7hD2gjoPWv2AesJLXZQ5vgtJ2Arad1szPVnen7HKoxs+FE1Wbst/X+QnyuvkyqO7O7I/Fe0w0nPJWi9IF8gLrZsro71qj7Wn2ny0tdkd/PfnKrHpriKTT+D+L8A9telegN8ooxiYXUF0Km8tod+pEP7dT9v8cVTCziro376egHzUQM61NU/3wceLYU9ni6+9q6isNtR5wTqJvECqnGnJoQuqHPPxdxKVO/Ap0Hs1D/+T/V9/0bEk1tyIeDPgoSG+peYCnbOu5belwwUaYiocPoMc6oXKe0Q4EOPWpZozc4XWi4eJhAIpsx3tDQyXMoghUqWO2pRE1WZyozWSG9VrwyZaJ6hRvT5uopapRXX7bECCR7dYcerKcUFnRKWPIw7j4KZShvRMJ+GSrIzKl6QTf2AdX6vXE/QKDVN5TEVrU7A5pqIek8ppWgYfU1QO3aDiTx1P+uJLBrfbXz2l1eiv1aZ//Wm05fuMwQkgvP40EmS/oBHahIn2sIjFSbAifg/CP6Aj1IGtBgnIVZ1wAgJk2swsB7Du68NaTsRglRQxsjYHCblO0PhQeB2nH5QqyVCctwLxEZ3nlUcHhyA3kn57e3uggjrnOOps+eh8eHr29vLsBa/p1e+HAedi0RqEGI4Ofns5Pj7+9eUk3Imsp0KZfiQ/snWzlpbepv2xXjpQwjlQ5kqHrkJIWt3tmDGoUoeOSThGJGztGpBbzaF4u1u00duJt2a+9mbi7m0iIbOeOIS65p/ClcubhqdvKuRLyngiYaGcVlOGa1xDqj2/pxDPVO5xTxKfXXQNoOfiriysujWGezULlVc8AglfcLnVDuN20090vpG7n+y9g6eZtA2olDnDuO6EgyTBknrLvv1imv6h/OpsBE3zDwdsSJU=
+sidebar_class_name: "get api-method"
+info_path: docs/generated/api/qat
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"API used to get the list of Programs that feeds the UpdateProgramInfo page"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/api/report/updateProgramInfo/programTypeId/{programTypeId}/realmCountryId/{realmCountryId}/active/{active}"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+API used to get the list of Programs that feeds the UpdateProgramInfo page
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"in":"path","name":"programTypeId","required":true,"schema":{"type":"integer","format":"int32"}},{"in":"path","name":"realmCountryId","required":true,"schema":{"type":"integer","format":"int32"}},{"in":"path","name":"active","required":true,"schema":{"type":"integer","format":"int32"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"content":{"text/json":{"schema":{"type":"array","items":{"type":"object","properties":{"active":{"type":"boolean"},"healthAreas":{"type":"object","properties":{"id":{"type":"integer","format":"int32"},"idString":{"type":"string"},"label":{"type":"object","properties":{"baseModel":{"type":"object","properties":{"baseModel":"circular(BaseModel_ReportView)"},"title":"BaseModel_ReportView"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"}},"title":"Label_ReportView"}},"title":"SimpleObject_ReportView"},"lastUpdatedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser_ReportView"},"lastUpdatedDate":{"type":"string","format":"date-time"},"organisation":{"type":"object","properties":{"id":{"type":"integer","format":"int32"},"idString":{"type":"string"},"label":{"type":"object","properties":{"baseModel":{"type":"object","properties":{"baseModel":"circular(BaseModel_ReportView)"},"title":"BaseModel_ReportView"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"}},"title":"Label_ReportView"}},"title":"SimpleObject_ReportView"},"program":{"type":"object","properties":{"code":{"type":"string"},"id":{"type":"integer","format":"int32"},"idString":{"type":"string"},"label":{"type":"object","properties":{"baseModel":{"type":"object","properties":{"baseModel":"circular(BaseModel_ReportView)"},"title":"BaseModel_ReportView"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"}},"title":"Label_ReportView"}},"title":"SimpleCodeObject_ReportView"},"programManager":{"type":"string"},"programNotes":{"type":"string"},"realm":{"type":"object","properties":{"id":{"type":"integer","format":"int32"},"idString":{"type":"string"},"label":{"type":"object","properties":{"baseModel":{"type":"object","properties":{"baseModel":"circular(BaseModel_ReportView)"},"title":"BaseModel_ReportView"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"}},"title":"Label_ReportView"}},"title":"SimpleObject_ReportView"},"realmCountry":{"type":"object","properties":{"id":{"type":"integer","format":"int32"},"idString":{"type":"string"},"label":{"type":"object","properties":{"baseModel":{"type":"object","properties":{"baseModel":"circular(BaseModel_ReportView)"},"title":"BaseModel_ReportView"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"}},"title":"Label_ReportView"}},"title":"SimpleObject_ReportView"},"regions":{"type":"object","properties":{"id":{"type":"integer","format":"int32"},"idString":{"type":"string"},"label":{"type":"object","properties":{"baseModel":{"type":"object","properties":{"baseModel":"circular(BaseModel_ReportView)"},"title":"BaseModel_ReportView"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"}},"title":"Label_ReportView"}},"title":"SimpleObject_ReportView"}},"title":"UpdateProgramInfoOutput_ReportView"}}}},"description":"Returns the report"},"500":{"content":{"text/json":{"schema":{"type":"object","properties":{"messageCode":{"type":"string"}},"title":"ResponseCode_ReportView"}}},"description":"Internal error that prevented the retreival of Program list"}}}
+>
+  
+</StatusCodes>
+
+
+      

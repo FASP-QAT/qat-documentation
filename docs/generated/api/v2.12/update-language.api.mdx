@@ -1,0 +1,71 @@
+---
+id: update-language
+title: "Update Language"
+description: "API used to update a Language"
+sidebar_label: "Update Language"
+hide_title: true
+hide_table_of_contents: true
+api: eJztWN9v4kYQ/ldW89JWcgjhLr3WTzUJp0TKJQRIHxpFaLAHvFfb6+yuwyHk/72atR0MpOHurY3CE8zOzq+d/eZj12BxYcC/hwSzRYELggcPIjKhlrmVKgMfguGlKAxFwipR5BFaEiiuGnUPVE4aWfcyAh8qjdaypseCjO2raAX+esf2JKZnU0LNvlJohY3RipUqxBIzu3EKHoQqs5RZNoN5nsjQuT3+atjWGkwYU4r8za5yAh8qg+BBrjlIK8nwaqgJLUX91WHVwpDmtJ71ZGZpQRo8mCudoq1EH3pQek45w5Ra6sZqmS2gLD2w0iYs6qOR4Z0hzVvqUM45v71dLR9cgCMrU+JNCRr7RUVyLv8bSbTj+bFMMLTyqa0/UyohzCqrVVt8d+QJzih5P/23cvozSn7s6KeUvRB2s2jyVxbn+pXF/OXFGRr6oqL3lnsrLdc6UAilDosE9c/9RvgLbEdTq7ZjvHIA1IKuMxW9lBYPsiKzevWv6++99d5bu71VE6qSpcyppKYIfKsLcgKTq8xUJep1u/tMa0S20JkRKMZFGJIxIlQRCTkXNibxzOHEEo0wlca8SLZJl6VvtmFbLo6P3Q+vebqwNh9btIXpfL4Z9S/PzwfXjUeut4gUGZEpK2J8IoHO60GXv36ny+ubyTQ4OxsMJ0H/atD4jdCiMAXTR4qErNwXmXws6IDn09fL2vJ8eT0ZjK6Dq+l4MPpzMJoORqObUR2ApqrEKiWh+LcgrZWuWG8kIxcPJola7hyMVSJUaZ7QLhXeCbT0ICUbKybjeeEuENoYfDjGXB430HQMHhjST6SZ/a+h0NyasbW58Y9Zs/NYYGblvCbZmGGysjI0HaX5CmxXYahVVIQuzMqomCstboMJePCEWuIsca1Zlg8ecKijzZ+CwTfkrPawrLno3fY1bmNoG22g1+19POp+Our9Pjk59U9P/N5vne6nk7/gJYQ5ZHofA16z39x7vorbtLXbIqVvI7ealHXblGuDixumtStjgrUry7dkWyPv/1+sco8GbFLdmv5vugIymysHUfUUu93CFIFZJIIGWMREKZ43DEkVqvQ6J71Odw9sguHlT4bhsJoXDiZvg4kYO+SpsRFDh411Pp+D8VBYwhS8HaRbLpcHkI5SlLzjYjyesp3pxe0fi9iER7lJnQpXSYaUGWp5DHIMYxJV/Nsu50p1ZqjdeM+VsSlmrY131QtL6wFlK/v1BvkPPszUNMTNhzxB6ZiIi2Vdz4R7wFzCplPBA37/iZWxvLhec0/e6aQsWfxYkF6Bf/+wAXX+VXoQE0ak3SD5m1bgw1kV5NGEQ2D1pOBQ9l5tSq/ZEYQh5baluxlrPDSeR9rwjofKrH5NSqs7pHHJL024BB/cixR7cFzIydabBH2oTPLnHw3iZDI=
+sidebar_class_name: "put api-method"
+info_path: docs/generated/api/v2.12/quantification-and-analytics-tool
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Update Language"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"put"}
+  path={"/api/language/"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+API used to update a Language
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={undefined}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"description":"The Language object that you want to update","content":{"application/json":{"schema":{"type":"object","properties":{"createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"},"active":{"type":"boolean"},"languageId":{"type":"integer","format":"int32"},"label":{"type":"object","properties":{"createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"},"active":{"type":"boolean"},"labelId":{"type":"integer","format":"int32"},"label_en":{"type":"string"},"label_sp":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"baseModel":{"type":"object","properties":{"createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"},"active":{"type":"boolean"},"baseModel":"circular(BaseModel)"},"title":"BaseModel"}},"title":"Label"},"languageCode":{"type":"string"},"countryCode":{"type":"string"},"baseModel":{"type":"object","properties":{"createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"},"active":{"type":"boolean"},"baseModel":"circular(BaseModel)"},"title":"BaseModel"}},"title":"Language"}}},"required":true}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Returns a Success code if the operation was successful","content":{"text/json":{}}},"403":{"description":"Returns a HttpStatus.FORBIDDEN if the User does not have access","content":{"text/json":{}}},"406":{"description":"Returns a HttpStatus.NOT_ACCEPTABLE if the data supplied is not unique","content":{"text/json":{}}},"500":{"description":"Returns a HttpStatus.INTERNAL_SERVER_ERROR if there was some other error that did not allow the operation to complete","content":{"text/json":{}}}}}
+>
+  
+</StatusCodes>
+
+
+      

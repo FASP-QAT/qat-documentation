@@ -1,0 +1,71 @@
+---
+id: get-language-list-for-sync
+title: "Get Languages"
+description: "Get language list for synchronization"
+sidebar_label: "Get Languages"
+hide_title: true
+hide_table_of_contents: true
+api: eJztV1Fv2zYQ/ivEPbUAa2fusmLCMMBp0yKFW6CJuz4ExkBLZ4utTCrHkzPP0H8fjpI22XHSBuiANtuTJd53x+N3R/m7LWQYUrIlW+8ggVfIqjBuWZklqsIGVgtPKmxcmpN39k8TcRp8iRSfzzJIYIk8aZ0mNvBLTxcbl4KG0pBZISMFSC63e3tNc1SFCbwfXmWGETRYAZWGc9DgzAohAYFL6BcNgvCqsoQZJEwVaghpjisDyRZ4Uwo+MFm3hLqeCTiU3gUMYh8dHclP6h2j4+iBf/DwY5DMtjcDGSKzkZwYV6G37ucfMWU5KQklbJvwJmW7xh5u7n2BxkGtYW4CvvEZFl8tDKSW0qow9OikW3wMGlJCw5idbD6/URWQpJJ/46xjXCKBhoWnleFm6elIdhZwU4+bPGtgy4UsnZhg0/cBSVzaVGLZbnj19pDKP2G7QnGSYr/xmV3Yb+MQ/Xzuc5LdeG3RhBRfOabNc58dyuIh1G/+FZv8/7vyn74r33195lh8cVYR/Tu6g5+FxrigO4zlXcZQ3mJ8cB00iR+gGKsRJ7d+ajvAPSr0ANlqOIC6luVdrXaOXJELiqNm6+lD2fzHH0b3ElO3cLTCEG4vUi/T81bJReSBZM/c2hQ2UztqsdZwfE/R9+/nyVLoQiGRJ3Wd2wIVIZPFtXXLQ2RLdLMUNQ1RYs80rJBz36rwKLk5hwSGprRDEdbDLsJw2+ejBg0Bad1J84rkzzFnLkMyFOfBVWUc24VNoyg3zhQbtmkYeJJm2h8bnMwDmKkmppJwIroDphVZ3sQ95mgIaVxJgpezvvlCqG/Y7YO6t5dd577+ML2x96mwGLl6/WGq2H9Cp6yLC03HJ+okRlG/ROOv0A4KUSREC+iuikJAZNm6hZcEdvd6t8OJGnekqKn3BWgobIouxLZoJ5ZxadIc1aQxqN+QgniOBkeg90i/vr4emAgXjodtrDCcnD0/fXtx+kR8et31bixcrJuAkMBo8POzy+Pjn57NBFX6wCvjepnIaNfd8bDPYu9WfPEM2FIW71BZGBulVjzStu3CSzClFbqbabALChqSnbs505D7wOKw3YpYe09FXcvyVYUkzTPTsDZkzVyOLpOkDfKcQbIwRcA7TvPovB0SH6vPDZwHD9QNgE7Gv7UpKnkDDZ9wsz+Q1rNaQ44mQ4pJNpBxmmLJPed/Pjp1//q+Op1CXf8FbS5Z8Q==
+sidebar_class_name: "get api-method"
+info_path: docs/generated/api/qat
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get Languages"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/api/sync/language/{lastSyncDate}"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Get language list for synchronization
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"description":"The last synchronization date","in":"path","name":"lastSyncDate","required":true,"schema":{"type":"string"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"content":{"text/json":{"schema":{"type":"array","items":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":"circular(BaseModel)","createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"}},"title":"BaseModel"},"countryCode":{"type":"string"},"createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"label":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":"circular(BaseModel)","createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"}},"title":"BaseModel"},"createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"labelId":{"type":"integer","format":"int32"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"}},"title":"Label"},"languageCode":{"type":"string"},"languageId":{"type":"integer","format":"int32"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"}},"title":"Language"}}}},"description":"Returns the language list"},"412":{"content":{"text/json":{"schema":{"type":"object","properties":{"messageCode":{"type":"string"}},"title":"ResponseCode"}}},"description":"Invalid lastSyncDate"},"500":{"content":{"text/json":{"schema":{"type":"object","properties":{"messageCode":{"type":"string"}},"title":"ResponseCode"}}},"description":"Internal error while retrieving the language list"}}}
+>
+  
+</StatusCodes>
+
+
+      

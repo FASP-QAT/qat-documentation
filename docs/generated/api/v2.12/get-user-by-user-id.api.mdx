@@ -1,0 +1,71 @@
+---
+id: get-user-by-user-id
+title: "Get the User object for specified userId"
+description: "API used to get the User object for specified userId"
+sidebar_label: "Get the User object for specified userId"
+hide_title: true
+hide_table_of_contents: true
+api: eJydlE1v2zAMhv+KwMs2wEu6brv4tAxd21z6lfRUBAUrM7E6W1IpOl1g+L8PkpOm6cda7GRbEvm+pB+xBcFFgPwKmkAMswwKCpqNF+Ms5DA6G6smUKHEqQWJkpLUZSBW7uaWtKi5YxU8aTM3VMSTPC4gA+eJMaYYF5DDgiTG/FxdbvY9MtYkxFG6BYs1QQ4P4SZKe5QSMmC6awxTAblwQxkEXVKNkLcgKx+jjBVaEEMGc8c1Sr/0dR+6LntIzYRVnXLv1tc7UlKiqJVr1D3aF4uEbhatBO9soBDV9/f24mM33QVJwzY8zQAZaGeFrCTf9EeGtyEGtF3XZfBt7+vrqVAdi/iJoDRhcHh68XN8cPDrRJn5VqRwFJR1okpckkKtKYRnP6wy4W0f397p4+R0en14enlysPERXE3K9e+NLYirlbELVaDg1l6NosvBGya+v9TXsRVii5UiZsf97/JMS7IS2SxJMQmTWWIVXby39V0GNUnp1pAmMKWEHIbozTDiOGx7KDvIIBAvN8Q2XEEOpYgP+TCeHtw1aMXMjU7co8VqJUaHgePFM+rO2BWNjh+qT5ru0floChkskQ3eVAmyLlJn7Nwl70aqiPL5jpBCW6jRRk1NnatiEuLQS+0PvuwP9p45GJ2NPyRGNrSUFPXVJNlZNw11atr6Ch2OJmdKCGvInpR/f3//RvlUo4kRx5PJdcxzfXz+Y1EG/dmHOh3pMqiMJhvokeLIoy5J9f53JefODW6Q4x0H74LUaB8FHr1/Uu20pd2y8r+Tbz2UEmi+QmNjacl7u4brCtCbWFBIjc7XobMMShck7rftDQa65Krr4vJdQ7yC/Gq2hSMxWJgQ3wvI51gF+kctHy/WQ/STes3iehHtKjFYNfELMvhNq+1k7mZdBiVhQZwc9JsjrcnLo7DtLYv8Ptywo19T6Lq/hUk0og==
+sidebar_class_name: "get api-method"
+info_path: docs/generated/api/v2.12/quantification-and-analytics-tool
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get the User object for specified userId"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/api/user/{userId}"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+API used to get the User object for specified userId
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"userId","in":"path","required":true,"schema":{"type":"integer","format":"int32"}},{"name":"realmId","description":"UserId that you want the User object for"}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Returns the User object","content":{"text/json":{}}},"403":{"description":"Returns a HttpStatus.FORBIDDEN if the User does not have access to get the User list","content":{"text/json":{}}},"404":{"description":"Returns a HttpStatus.NOT_FOUND if the some of the underlying data does not match.","content":{"text/json":{}}},"500":{"description":"Internal error that prevented the retreival of User object","content":{"text/json":{}}}}}
+>
+  
+</StatusCodes>
+
+
+      

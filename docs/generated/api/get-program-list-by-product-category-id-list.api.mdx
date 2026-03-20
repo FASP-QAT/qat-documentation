@@ -1,0 +1,71 @@
+---
+id: get-program-list-by-product-category-id-list
+title: "Get Programs by Product Categories"
+description: "Retrieve a simple list of programs by product category IDs"
+sidebar_label: "Get Programs by Product Categories"
+hide_title: true
+hide_table_of_contents: true
+api: eJzdV21v2zYQ/ivEfdoAJQ7SZcWEYUCcZoWLdE2TdP0QGMWZOktsJVIhT3YNQ/99OEpe5cR5wzZgaD4px3t7nrsjz2vIKGhvajbOQgoXxN7QghSqYKq6JFWawMrNVe1d7rEKaraS76zRrDQy5c6v1ORVgARcTR7F0SSDFHLi887mzAQer847o5PeZpKJGBLwdNNQ4LHLVpCuQTvLZFk+sa5Lo6PH0ecg+a0h6IIqlC9e1QQpoPe4ggQMUxUG8sDe2Bzatm2TWyCvii1Yd6AodspviPgb99z5PlvjKYOUfUOtCELtbKAY+/Dg4BYGpq/8/OTd7DNpIaf2Qiqbzr12Ge2AmIDJBmJjmXKSZOfOV8id6MVhp3jZGe3yUuKMysezQM1mMcxj5lxJaMXFDAO9ddm/6Aa08bop0f8w3gh/hAS0J2TKxqvHAzWB/OSpBImyxWoXzW0CbLgU0RiD0R8CeTHpU3mFvMNqECNDpj02FXVcB37rMjM3/w8Qw3yeg2TbX1+09nuoz4zKJ2cVtT+RvX+sPs39A4f1Q4ehvufwu+ugs3gBtQk8Hvoyvk4nLqN3HdxdF/0FceNtUPj0V6xN4KeDF8+6xO/hu6IQMI8pPgzlon9BouYOFEKwyhwFZR2rAhekvMkLju8Uak0hKC5MuANIwBw980X6r8FMLEtnlYq8d14tC1OSyonZ2HxTna5a91ZIomEeIL2GfsGAaQIVceFk76hdXCtq5AJSGGFtRr3fUb29gvQLSCC/IC/+1tB4eXIK5jqkI7Hdv2nQspn3ewhaLFdsdNh3Xhp6G9xrsrIBUaY6n0rctVMJoRtveBVjzAg9+eNG8rueDo8vpRod4UOlzX+/b6bnzcerO7FPhVjFBak3H68Uuy9klbFR0E1dqsbRi/o1Hv4myGM8eXrjCSSbwgoBkWjpk4tvC9rpV5SxE+r72k8TMHbuJMntfN5v8aaON8SpK+dKSKA0mmyI3dRNOxzXqAtSZ92B+pN8EMvD/QNIbhVmuVzuY1SXOox6X2F0Njk5/ePydE9sBk35/lj4WnQOIYXD/V9eXh8d/fxyKlrSMBXaQSavidX54KboV1fVN47MxC36BxP2z3bovgBxSOsSTVyHIvh139LXgLXpBjT2fvy609bTBAoZhPQa1mtZpz74sm1FfNOQl0acJrBAb3AW6zltEygIM/KxR7/QClI46TDtXUlSol42cWu9vZe3ycbiWGuqeaD77bZph0N6/u5SSjLrl/4q3ivgcSkrNi4hhfh7QkLEcYiyNZRo8wZz0e18yt9fkf9qwQ==
+sidebar_class_name: "post api-method"
+info_path: docs/generated/api/qat
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get Programs by Product Categories"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/api/program/productCategoryList"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Retrieve a simple list of programs by product category IDs
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={undefined}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"content":{"application/json":{"schema":{"type":"array","items":{"type":"string"}}}},"description":"The list of product category IDs to retrieve programs for","required":true}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"content":{"text/json":{"schema":{"type":"array","items":{"type":"object","properties":{"code":{"type":"string"},"id":{"type":"integer","format":"int32"},"idString":{"type":"string"},"label":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":"circular(BaseModel)","createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"}},"title":"BaseModel"},"createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"labelId":{"type":"integer","format":"int32"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"}},"title":"Label"},"name":{"type":"string"}},"title":"SimpleCodeObject"}}}},"description":"Returns a list of programs by product category IDs"},"403":{"content":{"text/json":{"schema":{"type":"object","properties":{"messageCode":{"type":"string"}},"title":"ResponseCode"}}},"description":"User does not have rights to access this product category"},"500":{"content":{"text/json":{"schema":{"type":"object","properties":{"messageCode":{"type":"string"}},"title":"ResponseCode"}}},"description":"Internal error while getting program list by product category IDs"}}}
+>
+  
+</StatusCodes>
+
+
+      

@@ -1,0 +1,71 @@
+---
+id: post-check-access-to-program
+title: "Check access to programs"
+description: "Check access to programs"
+sidebar_label: "Check access to programs"
+hide_title: true
+hide_table_of_contents: true
+api: eJy1VcFu20gM/ZUBz1PbSJstVigWcNPsIkWx2ybe9mD4QEuMNI00o3CouIahfy84slDFTQv0UJ9k6g35+Pg4OkBBMWfXigseMrioKL8zmOcUo5FgWg4lYxPBQmiJUWFXBWTQhigJvEzYVXg/IMEC031HUV6HYg/ZAfLghbzoI7Zt7fKUZP45asEDxLyiBvVJ9i1BBsiMe7DghJo4iTsvVBKDhdvADcoQen4Gfd/39qSPVUUjd3P1JrWST1u7DXxk6pgKyIQ76jUQ2+Ajpbpni8UJf6Ev8mPiUdj5Ep5gc03SsY9GKhoJDGyYYldLhN7Ci8XzX6oWtp8pF7DQsk5G3EC6oRixpItQ0FPULIiTmhKnodWEfILzMFdTkHdUKMHzX5TjdxO88kLssTbEHNjsKlfTIKvz5VHmISGWEbI1rCgKbCw0JFUYPaz8UCrIYI6tmwtFmWNeJ6yFSPxArKcP0HENGVQibczmCp7dd+jF3R4djR7rvbg8zgKXcMr2H/K6PlSYIafRdP1GS+QdO9mnGltCJl52Smi9mb6+UXkHBaeg8d/f40q8/bT6rvalKpXM9/bTyki4I2+cT4FhlTLzOmUxr9LLv7TzVA+yY36w46RUgCSrDv7626pffsGm1cGtFxsLzt8GZfeYyIdHgpnlqJhZhVCDhdrl5GPyhcdUfdliXpF5N7wwH4mjnjybLcCeTGS3280wwXUA82OuOH93dXH5783lMz0zsdeHpQr1MCSEDM5mf75cn5//8XKjKLVGg37C5Cc346MmJxvyszNHNdMKtTU6r1VTQ4ejIdeArVPkYMXRlBsLlfo2W8PhsMVI/3Pd9xq+74jVRhsLD8gOt2kam95CRVgQJ4fd0V6JDRSfrZSFwusuXb2n93NvxxN6HbQywX5b/n66U+//u1Fdt8fLv0lrDow7vW5xBxmkT4mWSGZOsQPU6MsOS8UOOfX3FUztSAg=
+sidebar_class_name: "post api-method"
+info_path: docs/generated/api/qat
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Check access to programs"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/api/test/aclTest"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Check access to programs
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={undefined}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"content":{"application/json":{"schema":{"type":"array","items":{"type":"integer","format":"int32"}}}},"description":"The program IDs to check access for","required":true}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"content":{"text/json":{"schema":{"type":"string"}}},"description":"Returns the access check results"},"403":{"content":{"text/json":{"schema":{"type":"object","properties":{"messageCode":{"type":"string"}},"title":"ResponseCode"}}},"description":"Access denied"},"500":{"content":{"text/json":{"schema":{"type":"object","properties":{"messageCode":{"type":"string"}},"title":"ResponseCode"}}},"description":"Internal error while checking access"}}}
+>
+  
+</StatusCodes>
+
+
+      

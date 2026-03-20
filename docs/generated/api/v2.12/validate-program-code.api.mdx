@@ -1,0 +1,71 @@
+---
+id: validate-program-code
+title: "Validate Program for specified realmId,programId and programCode"
+description: "API used to validate Program for specified realmId,programId and programCode"
+sidebar_label: "Validate Program for specified realmId,programId and programCode"
+hide_title: true
+hide_table_of_contents: true
+api: eJzFVVFv2zYQ/ivEvWwFNCtNtxc9TVvdxcCQOrbbl8AILtLJYieRDHmKZwj67wMpWbbTwUHSAn0yjz7d993xu7sWGDcOklswVm8s1rCOICeXWWlYagUJpPOZaBzlgrV4xErmyCTmvbcotBXOUCYLSbmwhFU9y6Mh1iwXqHIxWH/qnCACbciiDz3LIYF9wPmJj0GLNTFZz6wFhTVBAkN0iEB6Xga5hKdkBx/BJbLY6UZsUfEJc3NgDhFYemikpRwStg1F4LKSaoSkBd4ZDyoV04a8a6FtjdxfvbuErotGZmO+Z7kdqvJD2A21fZaf9/t+DB1bqTbQdWvv7IxWjpz///Liwv+cUlgQN1Y5gcKHiwusHAlZCC5JjMIRW3TCNVlGzhVNBRFkWjEpDrD0L8dfnI/Wdl0Xwa8X787hXDGbJSM3bvLh4+KP2fv30+s94idHVuSanFCaRYmPJDCgPgP52/nUjiBn16vp4jr9+245XXyeLu6mi8XHxQBvqU9U1yS0twVZq23/NLnMAymsKr19Uh7WItO1qYjpLNEugpq41L4PN8Sh77iEBGI0Mh7eOd4/fDy0VtwOhy4eBR2343G89TIa773RQQSO7OO+qxtbQQIls3FJ7CEnDw0qloXMQh6osNqxzNxE281XYp1bnTdZyLcPGkbRTbqCCB7RSryvgs6C8KQqdCiA5MqL8uYEKAypdI8mVlp7TXmePdTl5O3l5OIrBul89pPzxe41ER7hJl2JZaAzVB6zUPmhEz+ky7lgwhqiJ+lvt9tn0qcapf/iarm883Hurm5+35Qu+8W4Orh0EVQyI+XoCDE1mJUkev6nkIXWk3u0flSA0Y5rVEcffv72SX9SrvYgxO+9UYZJE9RtKpTKlyLk2g6KvgU00ut72HHRuHfCCNuvleRwPJ7oybFxCp0cm+sISu3Yw7XtPTr6ZKuu89cPDdkdJLfrgzZDC+TS+XMOSZh0Z0r282IYtG/ES1fc/5ZnuES164vReAsi+Id2R5vWL5FXcXz5qnsFy8OzfCvPF6281zMNKunWXQQlYU42aKD3SLOMDB99e5jVfoCNc/qv6Qq67j8/NV5n
+sidebar_class_name: "get api-method"
+info_path: docs/generated/api/v2.12/quantification-and-analytics-tool
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Validate Program for specified realmId,programId and programCode"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/api/program/validate/realmId/{realmId}/programId/{programId}/programCode/{programCode}"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+API used to validate Program for specified realmId,programId and programCode
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"realmId","in":"path","description":"realmId that you want to validate program for","required":true,"schema":{"type":"integer","format":"int32"}},{"name":"programId","in":"path","description":"programId that you want to validate program for","required":true,"schema":{"type":"integer","format":"int32"}},{"name":"programCode","in":"path","description":"programCode that you want to validate program for","required":true,"schema":{"type":"string"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Returns a true/false if the operation was successful","content":{"text/json":{}}},"403":{"description":"Returns a HttpStatus.FORBIDDEN if the User does not have access","content":{"text/json":{}}},"500":{"description":"Returns a HttpStatus.INTERNAL_SERVER_ERROR if there was some other error that did not allow the operation to complete","content":{"text/json":{}}}}}
+>
+  
+</StatusCodes>
+
+
+      

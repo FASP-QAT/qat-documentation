@@ -1,0 +1,71 @@
+---
+id: get-manual-json-report
+title: "API used to get the report for Manual Json push"
+description: "API used to get the report for Manual Json push"
+sidebar_label: "API used to get the report for Manual Json push"
+hide_title: true
+hide_table_of_contents: true
+api: eJydV21v2kgQ/iur+XQnOUC4y6W1qpNILnciSts0SVupCEWLPeBN7d3N7jgUIf77adYmGAg0NJ+c2XmfZ16YQ4o+ccqSMhpi6F33RekxFWTEBElQhsKhNY7E2DjxXupS5uLSGy1s6TOIwFh0kqX7KcQwQap4mOUmCEIEDh9L9HRm0hnEc0iMJtTEn9LaXCVBvv3g2YU5+CTDQvIXzSxCDGb0gAnrsY6tkULPr9aZiZNFP/UNXumcnEEEirBo0j05pSewWEQNuduKuM3FLsu8ODelJjc72MKG8B4znqSjfyTh9msEY+MKSRBDKgmPSBW4JrJXrbGHaq0kdipdRECKciatKnxd+qyqcl/bku6r7y8Kp7CoEvFYKocpxORKDARvjfZVAbudzgYcCH/QbhzsyvwOfCSmsDkSpodlInEoCdOz2c8tlB4dw/6ZT2nCCbqmbqXpjy7rZWYtixc8aeb2THqVfPbo1nL57NVhoQR3Vt35KjcbMh9e9jaCIgCg/wva6957TfHSl22rVweS7mmQXI4w/7kXI+nxvUkPZIVEuaTMpfvtbElsVPN3WC/3FsOzf/eodzt/P3Z7Hu2+R2/3Y/AqcK318urxVnFXnZsUP4ZEbDj+hM6/HhBbQ6WBqY1hsog2VtUNUum0b6wotn9y4EzZUc0CvZeTEOb+XN3UA405t8bfusMcm9MyF+iccYIyScI6fEJNvHBDGORQPclcmLFopEJc120TLMuJh3gAlTEPwwgKpMzw+rXGh1gkZRBDW1rVrlLTLp5nNkTg0XGdIB7MoXSM2IzI+rjNEq3HUmpS43otSy3zGanEt4zjSbMe03+oef1jKiqdgtUthmwiKZ2iWbAxQunQ9Ur2ajBsPt9yPeoGajAt//t3iZfLr3dbti84nyFvl1/vBJnvqIXSgVDhLBZnQYt4Fx7/5siDPYhr/RAtS8sJCOl9CIfL871y8UMy3jfvjcESC8OX7onVXN46I5qCO86ElXTjOoBup/vnUef0qPv27vgkPjmOu29andPjb/DCRdDUsDwE9itYX/7NcavHhoNfT/2nNYiI3hIj4s6YHCLIVYLah6xVKw96ViYZiqvqQXypxoTotjoQbWBwOp22ZGBnyLVrXb591T+/+HB7ccQyjQ781GNo1HOH42y9PR2cnPx1OgwLx3gqpG56cvCJuxZ7Y7b8gqoabWEm2VwqHS4DF/ZL1bUDkFYF5NTHc6NzhxFk3OHxAOZzXjifXb5YMPmxRMe9NozgSTolR5yawXARQYYyRRfa8DvOIIbzyv2jO3aF2fMyHFebl/giWkr0kgQtNXhXI3XRnD7XH2+5FKP6zC/C8AQnpxyOnEIM4fcCmwgdH2hzyKWelHLCvJVO/vsfOsNbEQ==
+sidebar_class_name: "post api-method"
+info_path: docs/generated/api/qat
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"API used to get the report for Manual Json push"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/api/report/manualJson"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+API used to get the report for Manual Json push
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={undefined}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"content":{"application/json":{"schema":{"type":"object","properties":{"programIds":{"type":"array","items":{"type":"string"}},"programIdsString":{"type":"string"},"realmCountryIds":{"type":"array","items":{"type":"string"}},"realmCountryIdsString":{"type":"string"},"startDate":{"type":"string","format":"date-time"},"startDateString":{"type":"string"},"stopDate":{"type":"string","format":"date-time"},"stopDateString":{"type":"string"}},"title":"ManualJsonPushReportInput_ReportView"}}},"required":true}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"content":{"text/json":{"schema":{"type":"array","items":{"type":"object","properties":{"completedDate":{"type":"string","format":"date-time"},"createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser_ReportView"},"createdDate":{"type":"string","format":"date-time"},"integrationId":{"type":"integer","format":"int32"},"integrationName":{"type":"string"},"manualIntegrationId":{"type":"integer","format":"int32"},"program":{"type":"object","properties":{"code":{"type":"string"},"id":{"type":"integer","format":"int32"},"idString":{"type":"string"},"label":{"type":"object","properties":{"baseModel":{"type":"object","properties":{"baseModel":"circular(BaseModel_ReportView)"},"title":"BaseModel_ReportView"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"}},"title":"Label_ReportView"}},"title":"SimpleCodeObject_ReportView"},"versionId":{"type":"integer","format":"int32"}},"title":"ManualIntegration_ReportView"}}}},"description":"Returns the report"},"500":{"content":{"text/json":{"schema":{"type":"object","properties":{"messageCode":{"type":"string"}},"title":"ResponseCode_ReportView"}}},"description":"Internal error that prevented the retreival of Integration Program"}}}
+>
+  
+</StatusCodes>
+
+
+      

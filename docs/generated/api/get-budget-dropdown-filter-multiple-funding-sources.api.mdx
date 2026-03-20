@@ -1,0 +1,71 @@
+---
+id: get-budget-dropdown-filter-multiple-funding-sources
+title: "Get Budgets by Funding Sources"
+description: "Retrieve a list of budgets filtered on a list of funding sources"
+sidebar_label: "Get Budgets by Funding Sources"
+hide_title: true
+hide_table_of_contents: true
+api: eJytVm1v2zgM/isCP90BXlL00A1nDAckXTt06N6a3PYhCArFZmxtsqRScrIg8H8fKDurmya96+HyyaGoh3zIh7S3kKPPSLmgrIEUbjCQwhUKKbTyQdilWNR5gcGLpdIBCXNhTe90WZtcmUJ4W1OGHhKwDkky3FUOKRQYxhHgDVmX27W5jDDvax2U03jZXp/8uk14V6MPY5tvIN1CZk1AE/hROqdVFpGH3zxnuwWflVhJfgobh5CCJJIbSEAFrHzP7gMpU0DTNE2yR3la4jE2YmlJhBK7GkS3LkdFmEMaqMaGDd5Z4zFGPD052cs84I/w/JTt4htmHM4RlzSoFj6zOR4gloDKe2ZlAhZIkMDSUiVDa/rjtHWctJcOoWi5QP3PWSykx/c2f6YrZIqyWkv6bbwz3rIu3ti1+aJw/TtnEFTQDHfY5VeOV/+WbvS+RXOc7u2Snjh0Tx16d0hk9ySuo9dDAr3jiaqcxnOb48dYvH3Px2q9wVCT8VGV/21CmwTOninRI52t0HtZxPSfrsJNNx/s+YjiPsMrE5CM1AKJ4vjJIBzhCk3APPKmdklJzfQOFKKNLQsP6Qx2e8fDPIEKQ2l5LTkbJ9nJUEIKQ+nUMO8chy3KsK3msDq2qTzSColjbKEmVncZgvPpkNEGd7U0QS27hSWN1JugMj+wVMA+47doeGViLlpMwXDNnENkNamwiTEWKAlpVHPGs3n/eML96oat57T7d7kbiXdfp49iX3C1YxHffZ2KYL+jEcpEQztKqRhHFPE6Hv7FzGM8SDt8SHat5wLE4rOSbu43+cUPyTrndnTqmCegzNJykg/z+fygbmK0K5yYWqshAa0yND7qzciYxMjJrERx3R6IL0ieb54OTiDZa8x6vR7I6M59GHZYfnh9dX7xYXLxgu/0ZPt5xPVatYCQwungz1ezs7OXr+bsxRKqpOll8haDGHezuNiITjHiXjIPqPbm7/947XYtiIPstFSGc4z0t53MZyCd4iw6oUMCbRBemzEKJHBE7vMESh6ZdAbbLW/0v0k3DZvvaiQW6DyBlSQlF7HP8yaBEmWOFLX7HTeQwnnL98WUU2V3XccX4P6LvUl2N0ZZhi70fO/3VNMf508fJ9yqRffVUMWNBCTX/LaWa0ghfphwiDgm0bYFLU1Ry4J9W0z+/QQB+SsR
+sidebar_class_name: "post api-method"
+info_path: docs/generated/api/qat
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get Budgets by Funding Sources"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/api/dropdown/budget/filter/multipleFundingSources"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Retrieve a list of budgets filtered on a list of funding sources
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={undefined}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"content":{"application/json":{"schema":{"type":"array","items":{"type":"string"}}}},"description":"The list of funding sources for the budget list","required":true}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"content":{"text/json":{"schema":{"type":"array","items":{"type":"object","properties":{"code":{"type":"string"},"id":{"type":"integer","format":"int32"},"idString":{"type":"string"},"label":{"type":"object","properties":{"baseModel":{"type":"object","properties":{"baseModel":"circular(BaseModel_DropDownView)"},"title":"BaseModel_DropDownView"},"labelId":{"type":"integer","format":"int32"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"}},"title":"Label_DropDownView"}},"title":"SimpleCodeObject_DropDownView"}}}},"description":"Returns the list of budgets filtered on a list of funding sources"},"500":{"content":{"text/json":{"schema":{"type":"object","properties":{"messageCode":{"type":"string"}},"title":"ResponseCode_DropDownView"}}},"description":"Internal error that prevented the retrieval of the list of budgets"}}}
+>
+  
+</StatusCodes>
+
+
+      

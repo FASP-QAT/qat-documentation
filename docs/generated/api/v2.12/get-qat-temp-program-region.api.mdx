@@ -1,0 +1,71 @@
+---
+id: get-qat-temp-program-region
+title: "Get Program Region"
+description: "API used to get program region from temp table"
+sidebar_label: "Get Program Region"
+hide_title: true
+hide_table_of_contents: true
+api: eJydlMFu4zYQhl9lMJe2AGunKXrRqTq4GwPF1pbdXgIjmEgji1uJZMjRuoagdy9IKU6cLVLsnmwRHP7fzPwzAwodA2b36LTjVhvGg8KKQ+m1E20NZphv1tAHrkAsHFnAeXv01IHno7YGam87EO4cCD22jAqtY08xeF1hhkeWLcmeO7eZAosUhwodeepY2EeAAQ11jNkFZF2hQh0BHEmDb6k2l2tQWw+nRpcNnG0PhifUt5jWo0LPT732XGEmvmeFoWy4I8wGlLOL6toIHzlera3vSKajn29xHA8xPDhrAocYcXtzE3+usQqW3psABFOaYB8/cSmga5CG4VIaOFGA0Jclh1D3LSosrRE2klj4H1l+CvHBYRxHhb+8L3Un4nZC0ofF+uN+VXzMf3/YrYq/VsXDqij+KGZ1z5Oq7Rhs/Ab23nqQhgQqXYGxAtS29vSGVSyUtnMtC78LOirsWBo7tz21WBrMcElOL58bu3ya7LCcOhOWw0vLR1QY2H9+9kTvW8ywEXEhW8ZXFk89GdG1LhMaGWrPosuwsP74pUe8rfoypTA9mqyyzfeo8DN5Hf0aEvohWq22KSctbXTC9koIyFSQP6vB3trYs8g5Sd0ufrpd3HxBkG/W34VYP0qdTnXd5nvYJZy5mFSmYs7+/y3fbUCYOlRv0j+dTv+TPnekY8TdbvcQ33m42/56bEL5owtdujIqbHXJJvArxdxR2TBM/NeStbWLR/IYW+tskI7Mq8APLDAPNVym+qoAw4tbvn6PzCOZTOZa0ibiJ75hNtY9ktPRZs/LS+FsrjTryV6oMHu1Uw4KGxskxg7DIwX+07fjGI+fevZnzO4PL+ZIHqx0iP8rzGpqA7+T4ffFvF5+gG9bT/+Z8XxI5pxs2/bxCxX+zefrdTkeRoUNU8U+gU8X8rJkJ69CX4Y22v4ysB9WexzHfwGT4hgE
+sidebar_class_name: "get api-method"
+info_path: docs/generated/api/v2.12/quantification-and-analytics-tool
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get Program Region"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/api/pipeline/qatTemp/regions/{pipelineId}"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+API used to get program region from temp table
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"pipelineId","in":"path","description":"PipelineId for which you need to program region for","required":true,"schema":{"type":"integer","format":"int32"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Returns a Region object if the operation was successful","content":{"text/json":{}}},"500":{"description":"Returns a HttpStatus.INTERNAL_SERVER_ERROR if there was some other error that did not allow the operation to complete","content":{"text/json":{}}}}}
+>
+  
+</StatusCodes>
+
+
+      

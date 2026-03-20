@@ -1,0 +1,71 @@
+---
+id: get-organisation-no-filter-dropdown-list
+title: "Get Organisations without ACL Filter"
+description: "Retrieve a list of organisations for a specific realm without ACL Filter"
+sidebar_label: "Get Organisations without ACL Filter"
+hide_title: true
+hide_table_of_contents: true
+api: eJytVW1v2zYQ/ivEfWoBLQoyZMWEYYCbpIELr0ETr/0QGAEtnS22EskcT/Y8Q/99OEreZMfNUmyfbPGee3j38F62UGDIyXg2zkIGt8hkcIVKq8oEVm6hHC21NUELIqiFI6VV8JibhckVoa5qtTZcuobV6GKi3pmKkSAB55Gi07iADJbINwOiD67DXZLzhVvbiQkMCXhNukZGCpDdbw9im5bY3ze+jHFwiX10f0bSGDIkYATtNZeQgNU1QgbRb1xAAoSPjSEsIGNqMIGQl1hryLbAGy9QYxmXMYOFo1pzd/TjGbTtTNyDdzZgEI+z01P5yZ1ltBw58A9OvwSJd/uUWhPpjQTIWIfBuZt/wTzmT6Iam44+dwUOUIHJ2CW0CZjiRfEK8K5zOsZS6TlW/x7FXAf8zRXfCYXcUN5Uml693R0+yGNfurX9ZHD9WiJgw5XQHYf8HeP4pelG9APab6f7sKBnjP45Y/BHjIMkJhG1n8DAfGdqX+GFK/AmineIFOyTXmzIhljm/60Z2wTOv7NUv/HCNYaglzGN59W47ftEkE9SPcx0bBnJ6kohUexrzcoTrtAyFjF/6uaSrkSEI4J0d+ulzA3YDZUAswRq5NL1EyhOGC4hg1R7kxY9Lh2qmlq3iKqlUc5024+OFhIISKvdbGpIqrxk9iFLhe7ksdGW5SEij7a62rDJw4mjJRxmfI1WpiMWquNUQifzJWDekOFNvGOOmpBGjYR8Pxua7+S9+qYbgHZf73at8f7z9MndV6J2FPH956li9xWtMjYedC2VqbeRRf0Sjb9CPyXlXTt+SHZPLwJE8Y1dOAlg/66Pe5qo0U4UNXWuggQqk6MNsZb6ST3yOi9RTTqD+oQUxPPs5BSSA9HX6/WJjnDROO25QjoZX1x9uLv6QXwGJflxJFqsOkLI4Ozk5zf35+c/vZkJyrvAtbaDSK6R1c1evx3dc3sJDzrs/9ylvdixZX2ljZWIoxjbvqLvQXsj0fQ1LQt4cJlswr6u4w7UVQ0JZLu1OEugdIGFZruVKf47VW0rx48NkhTjLIGVJqPnIqWsZhPkfwHZQlcBn5Hh1W2/cV+rF2/wo/nulqiVFbrSVSNfkMBX3Aw2fDtrEyhRF0gx0M46ynP0PPD7Z/q1wyFxfTWFtv0LjIgnJw==
+sidebar_class_name: "get api-method"
+info_path: docs/generated/api/qat
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get Organisations without ACL Filter"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/api/dropdown/organisation/nofilter/realm/{realmId}"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Retrieve a list of organisations for a specific realm without ACL Filter
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"description":"The realm ID for the organization list","in":"path","name":"realmId","required":true,"schema":{"type":"integer","format":"int32"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"content":{"text/json":{"schema":{"type":"array","items":{"type":"object","properties":{"code":{"type":"string"},"id":{"type":"integer","format":"int32"},"idString":{"type":"string"},"label":{"type":"object","properties":{"baseModel":{"type":"object","properties":{"baseModel":"circular(BaseModel_DropDownView)"},"title":"BaseModel_DropDownView"},"labelId":{"type":"integer","format":"int32"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"}},"title":"Label_DropDownView"}},"title":"SimpleCodeObject_DropDownView"}}}},"description":"Returns the list of organisations for a specific realm without ACL Filter"},"500":{"content":{"text/json":{"schema":{"type":"object","properties":{"messageCode":{"type":"string"}},"title":"ResponseCode_DropDownView"}}},"description":"Internal error that prevented the retrieval of the list of organis"}}}
+>
+  
+</StatusCodes>
+
+
+      

@@ -1,0 +1,71 @@
+---
+id: get-qat-temp-data-source-list
+title: "Get QAT Temp Data Source List"
+description: "Retrieve a list of data source from temp tables"
+sidebar_label: "Get QAT Temp Data Source List"
+hide_title: true
+hide_table_of_contents: true
+api: eJylVVFv0zAQ/ivWPYFk2mloICKEVGBMRRNiLMDD1AcvuTaGxPbOl46qyn9H56QsXacJwVMb+77v7r58d9lCibEgG9h6Bxl8QSaLa1RG1Tay8ktVGjYq+pYKVEvyjWJsgmJzXWMEDT4gGUHPS8hghXxhOMcmvDdsLhPq3EYGDcGQaZCRImRX23t58wrV/L2k4wpVsAFr61CxV7SrSC7GtaT6pCDQYIUjGK5AgzMNytPAMS9BA+FNawlLyJha1BCLChsD2RZ4EyTaOsYVEmhYemoM90fPj6HrFgKPwbuIURDHR0fyU3jH6Dhx4C+e/ojSyPaQ2hCZjdTI2MTRub/+gUUShkRDtj19+Uc3EfQvCtQjSL4Jfw/bKXT3pkbAyGTd6uGwvQyPBeYp5CC008CWazk6MAt0ndwfuLIlFx82paQ+efSdHBLOHSM5Uysk8qRuK1ujWiGzdas79913W1+5WYmB4fMQBQsNDXLlB/snp3MFGUxNsNObvsGpcPVU0+2dNTvQEJHWu6FoqYYMKuYQs6ngJzetcWyXtkgzZpypN2yLOPG0gvtdnaGTWcRS9ZxK6MS/EYuWLG9Sjms0hDRrpcarxfj6Uqzbu3ActHv6sHPQx+/5Qe5TUTTN6MfvuWL/E52yLh30zsvU28SiXqfLNzBMobig5we9M4oIkMS2bunTUOzlutjTRM12oqjc+xo01LZAF5PzhmUwC6aoUJ33F+obUhTk8eQI9D3Rb29vJyaFi8bTgStOz+fvTj9dnj4TzNjAM9Fi3RNCBseTVy+vTk5evFykkfCRG+NGlZwhq4tZrsQUSmyvet+rYUvudTpy9D9s5kHMNAmhNtZJRanZ7WDRKzDBgobBpNCvkmGsNGSjHbrQUPnIgtlur03Er1R3nRzftEjirIWGtSEr2fsFb6P8LyFbmjriI609+TKs56fqP78DD7a828NOtvDa1K08gYafuNn/TnSLTkOFpkRKHfQBs6LAwCPo3WrpxrN/dppD1/0GTGCGoQ==
+sidebar_class_name: "get api-method"
+info_path: docs/generated/api/qat
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get QAT Temp Data Source List"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/api/qatTemp/datasource/{pipelineId}"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Retrieve a list of data source from temp tables
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"description":"The ID of the pipeline to retrieve the data source list from","in":"path","name":"pipelineId","required":true,"schema":{"type":"integer","format":"int32"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"content":{"text/json":{"schema":{"type":"array","items":{"type":"object","properties":{"dataSourceId":{"type":"integer","format":"int32"},"dataSourceTypeId":{"type":"integer","format":"int32"},"pipelineDataSource":{"type":"string"},"pipelineDataSourceId":{"type":"string"},"pipelineDataSourceType":{"type":"string"}},"title":"QatTempDataSource"}}}},"description":"Returns a list of data source"},"500":{"content":{"text/json":{}},"description":"Internal error while getting pipeline data source list"}}}
+>
+  
+</StatusCodes>
+
+
+      

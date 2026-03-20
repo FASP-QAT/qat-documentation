@@ -1,0 +1,71 @@
+---
+id: get-inventory-turns
+title: "get the InventoryTurnsOutput list"
+description: "API used to get the InventoryTurnsOutput list."
+sidebar_label: "get the InventoryTurnsOutput list"
+hide_title: true
+hide_table_of_contents: true
+api: eJydVU1v20gM/SsDXnqRP+Jt0K5OdYtd1Kc4sdvDGkFAS7Q0rTQz4VBxDUP/veDYSey0aHfXF0vjx3kk3yO9B8EqQr4CpuBZ4DaDkmLBNoj1DnKYzmemi1Qa8aYiMVKTmbkHcuJ5t+zYxatOQiemsVGGkIEPxKjBsxJyqEjO0ZAB031HUd77cgf5HgrvhJzoI4bQ2CJFj75E5d9DLGpqUZ9kFwhy8OsvVAhkEFi5xFLUXwP7irFV1ieodUIVMWSw8dyiHI7+mECfwQNxPGb5r/ClnACjsHXVKa5EoYHYlhRrXdF0Jc0bdI7KRW1DS07iyQVr7xtCB32fgVhp9OyDj3K1eWrXzIVO7m6SLp8tbaFXsDbPMpWQC3eUDmLwLh6aMBmP9etcwhsS7fyvpYPsVAihb/KoQKK9/NnFMyfEDhtDzJ6N1CgmMCmDGqYmwyRM9gEb4zf/k7vPoCWpvbop+AQOKDXkMMJgRwffjuxLk0ViVRjy1R46biCHWiTEfKRRw/sOndjN0WvosNmJLeLQs4p6XuWcfdkV+mIOl5qNZ3M9XUIGD8gW101qft/fZqB53zz7+69v2AYV98yf4zP3jQ/egsl48nowfjOY/Lm8uMwvL/LJ2+H4zcU/8As/HT1g3can1h2ddH1WnkFXmuljjWbpfQNPGSjx8GIyHP9Q93Q+exV17LEoKB7scz1dmkVqwlEzLJJmDlvl/Xu6mBshbCF70fTtdvubplOLViM+LhZ3es/dx+t3VR2LQYhtgvQZNLYgF+mEcRqwqMkc8j+n3Hg/XCOnEVPjtOhOAn+7y17242RR/feleJz6ZO3QoHVaTUp3f3TzCjDYtBzTHlZNzxx9m0Gt7s9XsN+vMdInbvpej+874h3kq9tnO+pbn0FNWBKnEfhKu7RhUgWDpaaj8KbTtH5Yu332GDEtCgpygn2eTrX702TOrxY6D+vjTm99qWDGrZaEW8gh/TUoRVpU6WwPDbqqw0qxhzv18x2wX0ku
+sidebar_class_name: "post api-method"
+info_path: docs/generated/api/v2.12/quantification-and-analytics-tool
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"get the InventoryTurnsOutput list"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/api/report/inventoryTurns"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+API used to get the InventoryTurnsOutput list.
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={undefined}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"content":{"application/json":{"schema":{"type":"object","properties":{"programId":{"type":"integer","format":"int32"},"versionId":{"type":"integer","format":"int32"},"dt":{"type":"string","format":"date-time"},"includePlannedShipments":{"type":"boolean"}},"title":"CostOfInventoryInput_ReportView"}}},"required":true}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Returns the InventoryTurnsOutput list","content":{"text/json":{}}},"500":{"description":"Internal error that prevented the retreival of InventoryTurnsOutput list","content":{"text/json":{}}}}}
+>
+  
+</StatusCodes>
+
+
+      

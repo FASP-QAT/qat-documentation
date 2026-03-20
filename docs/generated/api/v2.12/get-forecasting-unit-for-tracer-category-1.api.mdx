@@ -1,0 +1,71 @@
+---
+id: get-forecasting-unit-for-tracer-category-1
+title: "Get ForecastingUnit for a tracer category"
+description: "API used to get forecastingUnits for a specific tracer category"
+sidebar_label: "Get ForecastingUnit for a tracer category"
+hide_title: true
+hide_table_of_contents: true
+api: eJytVU1v2zAM/SsCL9sALenXLj4tW5s2l34lORVBwcpMrM2WVIlOGxj+74OUdG3crB2wnRIRIt8j9fjcAOMiQHYDc+tJYWBtFlOjGWYScgrKa8faGshgcDkSdaBcsBULYtFJCDEgUARHSs+1EuxRkRcKmRbWr0CCdeQxVhvlkMGCeLhdYmj9JCV93+Tc7oMEhx4rYvKRZgMGK4IMeOviKAcJOrJ0yAV0qU86lwUXyGJla/GAhmNDXJDosIn9gARP97X2lEPGviYJQRVUIWQN8MpFJtowLShenVtfIa9DhwfQtrOYHpw1gULMONjbiz/b5K6Ja2/CLgpBlDowSFDWMBlOqPTI/R8hpjZt20o42jv8c1EUZ8xuzMh16A0vrr+Njo9PzoWeJ7hpIC9yS0EYy6LAJQlUikJ4F/LoLyHPLya3w4vp+fETZPfdnvRC+TMReny/6y+7RjkyTN5gKch769ev7DwtyXDUbUHCE3vSSyyFnXen/SZiK6EiLuxGuUmXXEAGfXS639mFV+ftrvtNdwotSAjkl08ir30JGRTMLmT9iNC7r9Fw3Ku0QGiwXLFWoWf94pXcL73NaxUPYl00rebVYAISlug13pVJj0mg2sxt6ldzGeV8tQUk0ORi8IQmJtaWsQj5sIY66O0f9PZeMRhcjj6EuFdrOaXRXw0mYpzobAaNKg16s9DDwfhSMGEFstP+w8PDO+1ThTpmnI3Ht7HO7dnV10UR1GcXqnSllVBqRSbQC8SBQ1WQWPPfhpxb27tDD/HZnQ1coXmReEq8yywE7vC8rbk0zwL7D3a68Z8kVFeiNrHN1EezEecNoNNrY+oI/XVkW5Igo991LHYmobCBY92mucNAU1+2bQzf1+RXkN3MngWWdJzrEP/nkM2xDPTGOD5eb3z2k/gXt945k00QzSotQFnHE0j4SatdX5J21kooCHPyqYn1tYFS5PhFgWeDiGv02xxOTybQtr8As0qS9w==
+sidebar_class_name: "get api-method"
+info_path: docs/generated/api/v2.12/quantification-and-analytics-tool
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get ForecastingUnit for a tracer category"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/api/forecastingUnit/forecastingUnit/tracerCategory/{tracerCategoryId}"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+API used to get forecastingUnits for a specific tracer category
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"tracerCategoryId","in":"path","description":"TracerCategoryId that you want to the ForecastingUnit for","required":true,"schema":{"type":"integer","format":"int32"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Returns the ForecastingUnits list","content":{"text/json":{}}},"403":{"description":"Returns a HttpStatus.FORBIDDEN if the User does not have access","content":{"text/json":{}}},"404":{"description":"Returns a HttpStatus.NOT_FOUND if the tracerCategoryId specified does not exist","content":{"text/json":{}}},"500":{"description":"Internal error that prevented the retreival of ForecastingUnit","content":{"text/json":{}}}}}
+>
+  
+</StatusCodes>
+
+
+      

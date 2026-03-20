@@ -1,0 +1,63 @@
+---
+id: get-language-list-all
+title: "Get Languages All"
+description: "Retrieve a complete list of all languages (active and disabled)."
+sidebar_label: "Get Languages All"
+hide_title: true
+hide_table_of_contents: true
+api: eJztV1Fv00AM/isnP4EU2mloICKE1MGYhgoSY8DDVCH34jYHl7tw53RUVf478qUdKazApD3A4Kmp7bM/f7YvzgoKijqYmo13kMMpcTC0IIVK+6q2xKSsiaz8TKG1yqKbNzinqO6gZiOGrlCFiTi1VNwdQAa+poDi7qSAHObE4/WZsYk8shYyCBRr7yJFyFewv7cnP9o7JsfyyPSFhx+jAFpB1CVVmMTLmiAHDAGXkIFhqmJP7qcfSTNkUAeBwKZz38Hs2U29t4QO2gymGOmlL8jemBvQJujGYrhzuBHehQx0IGQqDpe/DtRECsLcpZ1xTHMKkMHMhwq5E93fl8hi7LDq44ocjJtD22bAhq2IDjEa/TZSkCNrKM+QrzjVi1Eg0z02Fckhi5Ff+sLMzJ+RRB/PdTLZ9rcumpDiG8dh+dQXV6G4DfWb3mCT/5+Vf3pW/vr6TMn+Nqpk/YHclddCp5yFnyjrnyljvUN56zponC6g5KtbBnZetRuDa1ToFrLVcQBtK+IfVrQmuKi43LGaCYiDay5VO7iqKMbdxeohPl1vdMnyCtAnjoVIqygEH9RFaSypOTEbN79EntLp3OI8Qn7+jYhJBhVx6dcrpQBFLiGHIdZmuHEwxLReRgoLCuJgBU2QN03JXMd8KMaDzw06NjOj05KKDu2SjY4DH6Qy27CPyckyS4XqfCpx104khG6C4WWKMSUMFEaNADqf9NVvhOeOyr7R5t/zTRu8eH/2Q+wjoSxV+cX7M8X+EzllXBJ07ZOrw+RFPU7KJ5J5iidv3KSBbFMyISAxa9zMC4DtWK+3OFGjDSnqzHth1BpNLqYe6KYBRjXqktS4U6h3FKKc3B/sQfYd6RcXFwNM5sLxcO0rDscnT49evTm6J2d6rfR6JFwsOoeQw/7g0cPzg4MHDydiVfvIFboekmNiNb78LOk+MLay643BTXzfrBlN81RbNGmtSRmv1k15Dlgb+HaVQQbSmJMMSh9Z9KuV7EFvg21bEX9uKEgrTTJYYDASK3VSBiVhQSF12SdaCu9aUy39v0DbXOJIc932h+T46Aza9iulV7/H
+sidebar_class_name: "get api-method"
+info_path: docs/generated/api/qat
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get Languages All"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/api/language/all"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Retrieve a complete list of all languages (active and disabled).
+
+<ParamsDetails
+  parameters={undefined}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"content":{"text/json":{"schema":{"type":"array","items":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":"circular(BaseModel)","createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"}},"title":"BaseModel"},"countryCode":{"type":"string"},"createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"label":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":"circular(BaseModel)","createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"}},"title":"BaseModel"},"createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"labelId":{"type":"integer","format":"int32"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"}},"title":"Label"},"languageCode":{"type":"string"},"languageId":{"type":"integer","format":"int32"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"}},"title":"Language"}}}},"description":"Returns the list of all languages"},"500":{"content":{"text/json":{"schema":{"type":"object","properties":{"messageCode":{"type":"string"}},"title":"ResponseCode"}}},"description":"Internal error while getting language list"}}}
+>
+  
+</StatusCodes>
+
+
+      

@@ -1,0 +1,63 @@
+---
+id: get-planning-unit-list-basic-1
+title: "Get Planning Units with Forecasting Units"
+description: "Retrieve a simple list of active planning units with forecasting units"
+sidebar_label: "Get Planning Units with Forecasting Units"
+hide_title: true
+hide_table_of_contents: true
+api: eJztVt9vGzcM/lcEPm2AamcpsmKHYYCTJkGKbF2bpH0wjEC+o31Kz5JK8ewZxv3vA3Xn9OI0PwrsZUWffCapj+RHUtQGCow52cDWO8jgPTJZXKIyKtpFqFBVNrLyM2VytktUoTLOWTdXtbMc1cpyqWaeMDeRb8WgwQckI6BnBWQwR/67O3jlLJ/byIcm2vz6F9BAGIN3ESNkG9jf25Of3DtGx/LJ+A8Pb6KEt4GYl7gwSbwOCBkYIrMGDZZxEXtyP73BnEFDIAmFbQvfC1UCefqALXo21jHOkUALzsJwK3q5D40GW1wwWTfvmcdW0GiozBSrp51NTcQ/ffGNppBbyuvK0E+HW+H1mWMkZ6oPFlc/SwRsuRK4r5vcxnj23HST9TW6h9O9ntEjyvCYMoavKHtJnCer3QQC+aLO+cgwzj2tf9T2u6ltT32RbqW3ibinrE7uDvuJp1FxU8c7V9E9qn40xf+1KfplfU6tG4G4t/5qclFx+WXxPW/jNRoOvnF1PVDoBcZo5njkC3yclPfd3hTLe6ntZrbVKyTypLg0rALhEh1jkfKldvWbSpJ+mIA2BDOPkI3hNflQ+JWLMNGwQC59t+0lK8MlZDA0wQ6Lzm4YeuUYTuUJABoi0hJJADdQkzR4yRxiNpSzg8+1cWxnNk/PCeNMtWabx4GnOexmeYpOnh1YqBZTCVwzERd5TZbXyccUDSGNaolvPOmrL6RG3bz1jLb/TrZT8ebj5T3fx8JwIu7Nx0vF/hM6ZV0StNOUqcOEon5Pyj8k8+QPsg4f9LbcQkBi2rqZlwDu+np3hxM12pKiLr2vQENlc3Qx9Y8zycEomLxEdd4q1AekKCf3B3ugd0hfrVYDk8yF42GHFYfnZ0fHf10cv5AzvTZ8NxIuli0gZLA/+O3V+ODg11eTtJR95IVxvUhOkdV2KtXVl5nq3dateJfh3mj9d+/Uju80qaEy1knQiY9N18FjMMFKLF0PS2v3uhg0tH080VD6yHJgs5Hb+oqqphHx5xrlOTKeaFgasmYqvI0njYYSTYGUmvITrqVMeY5BMJemqm8DS1dI0x+x0+NLaJp/AR8BGmI=
+sidebar_class_name: "get api-method"
+info_path: docs/generated/api/qat
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get Planning Units with Forecasting Units"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/api/dropdown/planningUnit/basic"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Retrieve a simple list of active planning units with forecasting units
+
+<ParamsDetails
+  parameters={undefined}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"content":{"text/json":{"schema":{"type":"array","items":{"type":"object","properties":{"forecastingUnit":{"type":"object","properties":{"id":{"type":"integer","format":"int32"},"idString":{"type":"string"},"label":{"type":"object","properties":{"baseModel":{"type":"object","properties":{"baseModel":"circular(BaseModel_InternalView)"},"title":"BaseModel_InternalView"},"labelId":{"type":"integer","format":"int32"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"}},"title":"Label_InternalView"},"productCategory":{"type":"object","properties":{"id":{"type":"integer","format":"int32"},"idString":{"type":"string"},"label":{"type":"object","properties":{"baseModel":{"type":"object","properties":{"baseModel":"circular(BaseModel_InternalView)"},"title":"BaseModel_InternalView"},"labelId":{"type":"integer","format":"int32"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"}},"title":"Label_InternalView"}},"title":"SimpleObject_InternalView"}},"title":"SimpleForecastingUnitForAdjustPlanningUnit_InternalView"},"id":{"type":"integer","format":"int32"},"idString":{"type":"string"},"label":{"type":"object","properties":{"baseModel":{"type":"object","properties":{"baseModel":"circular(BaseModel_InternalView)"},"title":"BaseModel_InternalView"},"labelId":{"type":"integer","format":"int32"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"}},"title":"Label_InternalView"}},"title":"SimplePlanningUnitForAdjustPlanningUnit_InternalView"}}}},"description":"Returns the list of planning units with forecasting units"},"500":{"content":{"text/json":{"schema":{"type":"object","properties":{"messageCode":{"type":"string"}},"title":"ResponseCode_InternalView"}}},"description":"Internal error that prevented the retrieval of the list of planning units"}}}
+>
+  
+</StatusCodes>
+
+
+      

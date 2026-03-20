@@ -1,0 +1,71 @@
+---
+id: get-funding-source-display-name
+title: "Get Funding Source Display Name"
+description: "Retrieve the display name for a funding source by its realm ID and name."
+sidebar_label: "Get Funding Source Display Name"
+hide_title: true
+hide_table_of_contents: true
+api: eJy9VF1r20AQ/CvHPrVwtYJLGipKwU2c4BAC+WjzYPxwltbSJdKdcreya4T+e9mTTOQkTSmUvtjS3e7s7uxoGkjRJ05XpK2BGK6RnMY1CspRpNpXhdoKo0oUK+uEEqvapNpkwtvaJSiWW6HJC4eqKMXsRCiThugRSLAVOsWwsxRiyJBOu9ybkHrSYV+qEkFCpZwqkdB5iOcNaG6lUpSDBIaDGEKJWQoSHD7W2mEKMbkaJfgkx1JB3ABtKw7VhjBDBxJW1pWKuqOPY2hb+Sq26Zr4I7Anp00GbbvgYF9Z49Hz/fjggP8SawgNhQz8SdG9Z06bN4Ba+ZL/2hn/Ov18uL8AaCUc/mVxu7zHhJh0xysi3c1Qovcqw2Ob4mudSiBNBYYWu8lD5CsjzAyhM6oQ6Jx1YpPrAkWGRNz2M/0MR+yKqIwlAL1WRCcWWEgokXLbKykohnKIIVKVjlZDYUUZ0kBcUS+cqOkf2oiLRQ3/tiDBo1vvdFe7AmLIiSofRww9eqyVIb3SSVCyMqrYkk78yLoMng9+hoYVj6noMAXDsVY8JrXTtA01lqgcuknN7c8Xw+sb3lS3jGHQ7u10J+bzu9sXtadMehDI+d2tIPuARmjTKSbkxeJbQBFfwuVX6PXNG+3wQe6WzgSEbWizstzAfq2rPU7EZEeKuLW2AAmFTtD4oKL+A5tUKslRXHQX4gc6z5nj0QHIZ6RvNpuRCuHMcdRj+ehidjy9vJl+4JyBGK8mzMW6A4QYxqPPR/PDw09HC46qrKdSmUEnZ0hiX1uiF4vorWhv1sFn9S+tsec5fKdVobThZgMPTS/sOahKs4MNpQ0S9sUdTGvni/HTY29ocfhfSMitJ8ZsmqXy+N0VbcvHjzU6FuVCwlo5rZZM6byBVHt+TiFeqcLjG5y8u+4987343Vj9oTJbXpQqan4DCQ+4Hdg6O/N/LNv5zaKVkKNK0YWxu6tJkmBFg6QnN22HNnQ2vYW2/QVxfXzz
+sidebar_class_name: "get api-method"
+info_path: docs/generated/api/qat
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get Funding Source Display Name"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/api/fundingSource/getDisplayName/realmId/{realmId}/name/{name}"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Retrieve the display name for a funding source by its realm ID and name.
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"in":"path","name":"realmId","required":true,"schema":{"type":"integer","format":"int32"}},{"in":"path","name":"name","required":true,"schema":{"type":"string"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"content":{"text/json":{"schema":{"type":"string"}}},"description":"Returns the display name for the funding source"},"500":{"content":{"text/json":{"schema":{"type":"object","properties":{"messageCode":{"type":"string"}},"title":"ResponseCode"}}},"description":"Internal error while getting funding source display name"}}}
+>
+  
+</StatusCodes>
+
+
+      

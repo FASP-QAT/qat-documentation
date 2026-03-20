@@ -1,0 +1,71 @@
+---
+id: get-stock-status-for-program
+title: "get the StockStatusForProgramOutput list"
+description: "API used to get the StockStatusForProgramOutput list."
+sidebar_label: "get the StockStatusForProgramOutput list"
+hide_title: true
+hide_table_of_contents: true
+api: eJylVU1v20YQ/SuLufRCfVitkZanqkGD6BTZcnuoIBgjckRuQu6uZ4dWBIH/vZiVbEuJkhgtT+Ryvt97s3sQrCLkS2AKngVWGZQUC7ZBrHeQw3Q+M12k0og3FYmRmsxCfPFpIShdfOd5zr5ibD90EjoxjY0yhAx8IEaNMSshh4rkohNkwPTQUZQ/fLmDfA+Fd0JO9BVDaGyRgow+Rq1mD7GoqUV9k10gyMGvP1IhkEFgTSmWov4t5cQmCltXQQYbzy0K5FCi0EBsS9AnT61FC312sU6oIj71sU5+nqj9I3E8NvYqe2EsiN+iUOV5NyvjiR8y4w4ysEJt/Lrkvs/AuqLpSpo36ByVi9qGlpycGq+9bwjdpVyLQ5yLgcVKo0cXkZm50Mn9bWLF35a20KuLgmWZSsiFO0oHMXgXD0OfjMdp9mcEuiXp2MVXEQeyU/yFPssT8Cn79aX4MyfEDhtDzJ6N1CgmMD2SE2VtTYZJmOwjNsZv/l8JfQYtSe2V0sEn44BSQw4jDHZ00NAofoPpkVipA/lyDx03kEMtEmI+UufhQ4dO7OZIeHTY7MQWcehZmXve85x92RX6YQ5BzcazuZneQQaPyBbXTUKk71cZaPm3LyL78zO2QXE/iAQm48kvg/GbweS3u6vr/Poqn/w6HL+5+gfOhDE+o/34IqmXT+RafYe0yptv0/SZnhph4xMER5benM3HoCvN9GlI5s77Bp5L1K6GV5Ph+KvBTeezn6KuMiwKigdS3kzvzCJN8Yg9Fgl7h63mfTddzI1QQvActe12+wPUqEWrHu8Xi3uNc//+5veqjsUgxDaZ9Bk0tiAX6STjNGBRkznUf55y4/1wjZzkqwRs0Z04vnY/fzmWk637n/f9cb0kwYQGbdpGqfj9USNLwGDTwk83TQaXdbLKoFZp5UvY79cY6S9u+l6PHzriHeTL1QvJ9avPoCYsiZOwPtEOcnh76Gdwp1WpedOlbfvljdJnTx7ToqAgJ7Yv0lcRPct+/mGhKlsfr6vWl2rMuNXOcAs5pMtPU6SdmM720KCrOqzU9hBTn38BdEydqA==
+sidebar_class_name: "post api-method"
+info_path: docs/generated/api/v2.12/quantification-and-analytics-tool
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"get the StockStatusForProgramOutput list"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/api/report/stockStatusForProgram"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+API used to get the StockStatusForProgramOutput list.
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={undefined}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"content":{"application/json":{"schema":{"type":"object","properties":{"dt":{"type":"string","format":"date-time"},"programId":{"type":"integer","format":"int32"},"versionId":{"type":"integer","format":"int32"},"tracerCategoryIds":{"type":"array","items":{"type":"string"}},"includePlannedShipments":{"type":"boolean"},"tracerCategoryIdString":{"type":"string"}},"title":"StockStatusForProgramInput_ReportView"}}},"required":true}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Returns the StockStatusForProgramOutput list","content":{"text/json":{}}},"500":{"description":"Internal error that prevented the retreival of StockStatusForProgramOutput list","content":{"text/json":{}}}}}
+>
+  
+</StatusCodes>
+
+
+      

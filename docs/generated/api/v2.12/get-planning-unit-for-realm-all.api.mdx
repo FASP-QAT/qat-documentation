@@ -1,0 +1,71 @@
+---
+id: get-planning-unit-for-realm-all
+title: "Get PlanningUnit list for Realm"
+description: "API used to get the complete PlanningUnit list for a Realm"
+sidebar_label: "Get PlanningUnit list for Realm"
+hide_title: true
+hide_table_of_contents: true
+api: eJyllE1v2zAMhv+KwMs2wEu6trv4NA9d11zatElPRVCwNh1rkyVVotMFhv/7INlZ3I+tG3ayLIt6X9IP2QLj2kN6A1ah1lKvr7VkWCVQkM+dtCyNhhSy+Uw0ngrBRqyJBVckclNbRUxiPgoVSnoWpXECxRWhqiEBY8lhuGhWQApr4nHAqXHxXKYUJGDRYU1MLnhqQWNNkIILB2YFJCCDGYtcwVOHV/0ZwRWy2JpGPKDufb5oDxJwdN9IRwWk7BpKwOcV1QhpC7y1QVZqpjWFo6VxNXK/dXQIXbcK4d4a7cmHiMODg/B4aokbp/3LJiCB3GgmzVGRfvD0mw9hbdd1CRwfHP3+QhRnzHbByI2fnF5cfZ6dnHw5F7KMUteenCgMeaENiwo3JDDPyftXJY//UvL8Ynl7enF9frKT3BXfW8plKanY69OP15P9+FL1ZprJaVSCnDOu/6/W0YY0Bw4rEo7YkdygEqb8xwJ3CdTElRmAjORxBSlM0crpuBemA3zTdlh0U4yoenKbHaeNU5BCxWx9Og1XTO4b1CxLmUfwUaPassz9xLj1M3TnzhRNHl5Ef2nsn8tsCQls0Em8U5GyiJ3UpYkJSVYB0stHQgJ1IbKdmlgaE6wGn73U4eTD4eTgmYNsPnvjQ2/3oMTqXmZLsYh2hkpiHis59ORptpgLJgwN/jj9h4eHV9KnGmWIOFssbsM9t2eXn9aVz99bX8cjXQJK5qQ9jRQzi3lFovf/WLI0ZnKHDsJ/tcZzjXoU+JX4NzNqN6EeVaPdc/N/c28YIxE9q1DqkFc03g643QBaGeAbD99kNO/S/TJQt0qgMp5DYNveoadrp7oubN835LaQ3qz2yEQyC+nDuoC0ROXpD6m+vRrm4Tvx77P0xVSHTdTbCLJqwhsk8J22o6HerboEKsKCXHTcf83ynCyP4vYNHLrgV/N+/bKErvsJCuxWEg==
+sidebar_class_name: "get api-method"
+info_path: docs/generated/api/v2.12/quantification-and-analytics-tool
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get PlanningUnit list for Realm"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/api/planningUnit/realmId/{realmId}/all"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+API used to get the complete PlanningUnit list for a Realm
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"realmId","in":"path","description":"RealmId that you want the PlanningUnit list for","required":true,"schema":{"type":"integer","format":"int32"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Returns the PlanningUnit list","content":{"text/json":{}}},"403":{"description":"Returns a HttpStatus.FORBIDDEN if the User does not have access","content":{"text/json":{}}},"404":{"description":"Returns a HttpStatus.NOT_FOUND if the RealmId specified does not exist","content":{"text/json":{}}},"500":{"description":"Internal error that prevented the retreival of PlanningUnit list","content":{"text/json":{}}}}}
+>
+  
+</StatusCodes>
+
+
+      

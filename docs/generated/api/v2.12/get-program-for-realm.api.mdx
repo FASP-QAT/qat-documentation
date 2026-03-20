@@ -1,0 +1,71 @@
+---
+id: get-program-for-realm
+title: "Get Program List For Specified Realm"
+description: "API used to get the Program list for specified realm"
+sidebar_label: "Get Program List For Specified Realm"
+hide_title: true
+hide_table_of_contents: true
+api: eJydVE1v2zAM/SsCL9sAL+nS7eLTMrRpAwxb2qSnIihYm4612ZJK0ekCw/99kOK0Sdt9nizJJN8j+cgWBFce0mtwbFeMNSwTyMlnrJ1oayCF8WyqGk+5EqtWJEpKUrOtsaq0F1VYVt5RpgtNuWLCqoYErCPGEGKaQworkt5nYvmyN3HIWJMQBwItGKwJUogBpjkkoAO8QynhKafeRkmJoja2UfdoZEfwKTlIgOmu0Uw5pMINJeCzkmqEtAXZuACqjdCKgmlhuUbZPh2PoOuWwd07azz54DE6OgqfQ0KXJA0b/6w4kEBmjZCRCEY/ZPjNB4+267oE3h8d/zoWqnMRNxeUxg8mXy8/TU9OTr8oXUSUK0+sckteGSuqxDUpzDLy/g+QH16iPzVCbLBSxGx5W1bHtCYjofElKSZh0muslC3+PsMugZqktL0EYs+lhBSG6PSwl9yw7+aw7Q8dJOCJ1zthNFxBCqWI8+kweA7uGjSiC51FhaHBaiM68wPLq2dambHNmyxc1DZoFOzFeAEJrJE13laxsbHT2hQ25qGlCrq4OABSaHI13qGphbVVCELst1CjwbvR4OgZg/Fs+soHdW4bFOt5MV6oeaTTFxCzWMB+CCbj+UwJYRiTw/Tv7+//kD7VqIPH+Xx+E+LcnF98XJU+e+t8HU26BCqdkfG0hzh2mJWktvwPIQtrB7fIENrprJcazZ7j2d7IfQ4jN7Gs5g/7YDfsByVpHzXzv/ulH9woOFehNiGtyLvtRXYN6HSQXL/Zkr3Vku6OywRK6yVYt+0terriquvC811DvIH0evkok6jGXPtwziEtsPL0m8xeX/Zr543614X1Ynb9I5pNlG7VhBsk8J02e3uzW3YJlIQ5ceS7/TvOMnKy5/c4qUH3D1N6drqArvsJZRgXEQ==
+sidebar_class_name: "get api-method"
+info_path: docs/generated/api/v2.12/quantification-and-analytics-tool
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get Program List For Specified Realm"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/api/program/realmId/{realmId}"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+API used to get the Program list for specified realm
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"realmId","in":"path","description":"realmId that you want to get Program list for","required":true,"schema":{"type":"integer","format":"int32"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Returns the Program list","content":{"text/json":{}}},"403":{"description":"Returns a HttpStatus.FORBIDDEN if the User does not have access","content":{"text/json":{}}},"500":{"description":"Internal error that prevented the retreival of Program list","content":{"text/json":{}}}}}
+>
+  
+</StatusCodes>
+
+
+      

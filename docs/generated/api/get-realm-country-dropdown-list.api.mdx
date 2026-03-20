@@ -1,0 +1,71 @@
+---
+id: get-realm-country-dropdown-list
+title: "Get Realm Countries"
+description: "Retrieve a list of countries for a specific realm"
+sidebar_label: "Get Realm Countries"
+hide_title: true
+hide_table_of_contents: true
+api: eJydVW1v2zYQ/ivEfWoBzg4yZMWEYYCbZIGLbEMTr/0QGMFZOltsZZI5UnYNQ/99OEpqFcfN0n2yxXvueM/De9lDQSFn46NxFjK4ociGNqRQVSZE5ZYqd7WVw6CWjhWq4Ck3S5MrJqzWoMF5YhT/aQEZrCjeiOE8ue0u2PnCbe21CRE0eGRcUyQOkN3tDy6fldQGVdOLdFksqbt+l9IBDUaAHmMJGiyuCTJILtMCNDA91IapgCxyTRpCXtIaIdtD3HmBGhtpRQwalo7XGNujn0+haebiHryzgYJ4nJ6cyE/ubCQbUwz6EsefgqS6fxoamXEnCUZah8G5W3yiPFFnESqaNnzuChqgQmRjV9BoMMWL8hXgbet0LEqFC6r+O4sFBvrTFT8IhdxwXlfIr972h/fyzhduaz8Y2r6WDKKJlYQ7Dvma4/SldBP6nuz36d4v+Rmjf84Y/BHjgMR1Qj0mMDDfmrWv6NwV9HcS7xAp2Cd9VrMNqcJf2GiNhrMfrMnvPOWaQsBVyvd52jddQwjyCadDSlMbiS1WiphT72JUnmlDNlKRiHI7XLAStkeZt7fjSqYD9KMjwFzDmmLpuvmS5kgsIYMxejMuOtyYB3On/Rjvu+HQgIZAvOkHT81Sx2WMPmRjiTJ6qNFGkTuNMrRY7aLJw8jxCg6pXpGVkUeFamMqCScTJFBes4m7dMeCkIkntWR6Nx+ab+WhurYagPqvP/rif/dx9uTuS5E5qffu40xF95msMjYdtE2TqbcpivotGX+Hbg7Kg7bxQfdvLgIkzY1dOkng8V3vH2miJr0oauZcBRoqk5MNqYi6WTzxmJekrluD+kAcxPN0dAL6QPTtdjvCBBeNx12sML6enl/+dXv5k/gMavH9RLTYtAEhg9PRr2/uzs5+eTMXlHchrtEOMrmiqNIiUudfq+tAy0En/a/F14mYetBXaKxkkkjuuwK9A/RGru1KNO2ob0Xaf4KGrN9icw2lC1F893sZuv9w1TRy/FATS2XNNWyQDS5EF1miJsj/ArIlVoGeIfnqpluQr9VLdu1Rfv26s5L9BqtavkDDZ9oNdnEzbzSUhAVxyrG1TvKcfBz4fRtfzbDHry5n0DT/ApBe+jE=
+sidebar_class_name: "get api-method"
+info_path: docs/generated/api/qat
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get Realm Countries"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/api/dropdown/realmCountry/realm/{realmId}"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Retrieve a list of countries for a specific realm
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"description":"The realm ID for the country list","in":"path","name":"realmId","required":true,"schema":{"type":"integer","format":"int32"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"content":{"text/json":{"schema":{"type":"array","items":{"type":"object","properties":{"code":{"type":"string"},"id":{"type":"integer","format":"int32"},"idString":{"type":"string"},"label":{"type":"object","properties":{"baseModel":{"type":"object","properties":{"baseModel":"circular(BaseModel_DropDownView)"},"title":"BaseModel_DropDownView"},"labelId":{"type":"integer","format":"int32"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"}},"title":"Label_DropDownView"}},"title":"SimpleCodeObject_DropDownView"}}}},"description":"Returns the list of countries for a specific realm"},"500":{"content":{"text/json":{"schema":{"type":"object","properties":{"messageCode":{"type":"string"}},"title":"ResponseCode_DropDownView"}}},"description":"Internal error that prevented the retrieval of the list of countries"}}}
+>
+  
+</StatusCodes>
+
+
+      

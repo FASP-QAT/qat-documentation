@@ -1,0 +1,71 @@
+---
+id: get-procurement-agent-dropdown-list-for-filter-multiple-programs
+title: "Get Procurement Agents by Programs"
+description: "Retrieve a list of procurement agents filtered on a list of program IDs"
+sidebar_label: "Get Procurement Agents by Programs"
+hide_title: true
+hide_table_of_contents: true
+api: eJytVttu2zgQ/RVinnYB1Q5SpMUKiwLOrXCRtmnsbR8MI6ClscyWIpkhZdcw9O/FUHIjX5rdYOsneXh05nZmqA3k6DNSLihrIIU7DKRwiUIKrXwQdi4c2awiLNEEIQs0wYu50gEJc2HNLrAgWYrhpYcErEOSzDrMIYUCw+0jz4BpLsm63K7MjfLh2tJ15Hxf6aCcxtuGi4kIHyr04dzma0g3kFkT0AR+lM5plUUn/a+e49+AzxZYSn4Ka4eQgiSSa0hABSx9x+4DKVNAXdd1sleE8QKPJSXmlkRY4GFFIroNVRHmkAaqsGaDd9Z4jI5PT072Egj4PTw/cjv7ihm7c8RFDqqhz2yOR/JLQOUdszIBCyRIYG6plKExvTxtgKPmpWMsWs5Q/3sUM+nxvc2fCYVMUVZpSX+cb433rI9LuzKfFa7+5AiCCprpjkN+xjj8r+lG9D2aX6d7P6cnDt1Th94d09pjEjcRtZtA53ikSqfxwub4MRZvH3ko2jsMFRkfBfq/RrdO4OyZSv1Fg0v0XhYxi6eLcdeOCSMPMt1PdGgCkpFaIFEcSBmEI1yiCZjH9KlZYlJzak/XowlDFh7SCWw3kodpAiWGheXV5WycbSfDAlLoS6f6eQvsu72d1m/K2y8P15hHWiKxnw1UxJpfhOB82mfG3kMlTVDzdptJI/U6qMz3LBWwX4C3aHi1Yi4aTsF09ZRdZBWpsI4+ZigJaVBx1JNp93jE7WtHsAPa/rveDsq7L+MD31dc/FjTd1/GIthvaIQy0dAMWCrOI4v4Ox6+4cyjP0hbfki2SuACxAawsO4e1/zVd8nq55a0YpkmoMzccpC78XzaqZsYbAsnxtZqSECrDI2P8jMyBjFwMluguGkOxGckz2+e9k4g2WvMarXqyQjnPvRbLt+/GV5cfRhdveB3Oir+NOB6LRtCSOG099frydnZq9dTRrGMSmk6kbzFIDqXohg0Ezpbi45sdtLtjORvvKnbbsQRd1oqw+HGSmxa1U9AOsXBtLpvJn1H+bxhoy9I4ED90wQWPEXpBDYbXvv/kK5rNj9USKzXaQJLSUrOYtundQILlDlSlPI3XEMKF03qL8YcLsN1FW/J/Y+AOtm+McgydKGDfdxidXfCbz+OuHOz9gujjPsKSK74SpcrSCF+z7CLODXRtgEtTVHJgrENJ/9+ACgnQxA=
+sidebar_class_name: "post api-method"
+info_path: docs/generated/api/qat
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get Procurement Agents by Programs"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/api/dropdown/procurementAgent/filter/multiplePrograms"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Retrieve a list of procurement agents filtered on a list of program IDs
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={undefined}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"content":{"application/json":{"schema":{"type":"array","items":{"type":"string"}}}},"description":"The list of program IDs for the procurement agent list","required":true}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"content":{"text/json":{"schema":{"type":"array","items":{"type":"object","properties":{"code":{"type":"string"},"id":{"type":"integer","format":"int32"},"idString":{"type":"string"},"label":{"type":"object","properties":{"baseModel":{"type":"object","properties":{"baseModel":"circular(BaseModel_DropDownView)"},"title":"BaseModel_DropDownView"},"labelId":{"type":"integer","format":"int32"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"}},"title":"Label_DropDownView"}},"title":"SimpleCodeObject_DropDownView"}}}},"description":"Returns the list of procurement agents filtered on a list of program IDs"},"500":{"content":{"text/json":{"schema":{"type":"object","properties":{"messageCode":{"type":"string"}},"title":"ResponseCode_DropDownView"}}},"description":"Internal error that prevented the retrieval of the list of procurement agents"}}}
+>
+  
+</StatusCodes>
+
+
+      

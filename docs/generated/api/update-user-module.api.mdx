@@ -1,0 +1,71 @@
+---
+id: update-user-module
+title: "Update user module"
+description: "Update user default module"
+sidebar_label: "Update user module"
+hide_title: true
+hide_table_of_contents: true
+api: eJx9VNtu2zAM/RWBTxugxUWGrpgxDMiKbkjRXdqk60OQB8ZmYrW25OrSLDD87wPlOHNTrE+JJfKQ5xyKDeTkMqtqr4yGFG7rHD2J4MiKnNYYSi8qk4eSQIKpySIHTnNIIcTQW0f2ex9Qo8WKPFkH6aIBxYg1+gIkaKwIUuiwpjlIsPQYlKUcUm8DSXBZQRVC2oDf1RyrtKcNWZCwNrZC3x29H0PbLjnd1UY7cpwxPjnhn8xoT9pHDPrjk3vHpJq2lUc0b8gHq51ALaiq/U70aEKthS9IHKiKLTrhQpaRc+tQQivh9NViL3mY1T1lnuWxDOtV13NFzuGGzk1Og2DnrdIb4Ja98iXFZrveYmT7ksxUe7IaS0HWGiu2hSpJRHeU3kQ2R05GcNywScD+wVJCRb4wbGttXOyVbUshwVolPA1Jl5s0vYMtSHBkn3qzgy0hhcL72qUJp40eA2qv1iqLQqLGcudV5kbGbuCYwzfSLDjlosMUDMc2O8qCVX4Xa6wILdlJ4NYWy+H1jEXvdB0G9V9f+wG6vJu/qH3B+kWdLu/mwpsH0kLpeNANXiq+RBTxKV5+hv2wsjkdPsjePxYgCqz02nADz2tdP9NETHpRxNyYEiSUKiPt4kDsX8ykxqwgcdVdiN9kHWeORycgj0TfbrcjjOGscbLHcsnV9Pzix+ziHecM5up6wlo8dYCQwnj08WxxevrhbMlRPAcV6kEnw91w2AnP6A0exeubZC9WfDd1iUpzxUim2U/eArBWzNBFdQ+Z6WGDLCUUPKvpAppmhY5ubdm2fPwYyPLALCU8oVW4YrqLBnLl+H8O6RpLR680/+Zmv5zeiv91uz9EvWMRsQz8BRIeaDfcc+2ylVAQ5mRjD931JMuo9oPEfxukHT7GXz9nc2jbvymU8aQ=
+sidebar_class_name: "post api-method"
+info_path: docs/generated/api/qat
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Update user module"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/api/user/module/{moduleId}"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Update user default module
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"in":"path","name":"moduleId","required":true,"schema":{"type":"integer","format":"int32"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"content":{"text/json":{}},"description":"Returns an empty response if the operation was successful"},"500":{"content":{"text/json":{"schema":{"type":"object","properties":{"messageCode":{"type":"string"}},"title":"ResponseCode"}}},"description":"Internal error while updating the default module"}}}
+>
+  
+</StatusCodes>
+
+
+      

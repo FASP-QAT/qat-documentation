@@ -1,0 +1,33 @@
+---
+id: nodedataoverride
+title: "NodeDataOverride"
+description: ""
+sidebar_label: "NodeDataOverride"
+hide_title: true
+hide_table_of_contents: true
+schema: true
+sample: {"active":true,"baseModel":{"active":true,"createdBy":{"userId":0,"username":"string"},"createdDate":"2024-07-29T15:51:28.071Z","lastModifiedBy":{"userId":0,"username":"string"},"lastModifiedDate":"2024-07-29T15:51:28.071Z"},"createdBy":{"userId":0,"username":"string"},"createdDate":"2024-07-29T15:51:28.071Z","lastModifiedBy":{"userId":0,"username":"string"},"lastModifiedDate":"2024-07-29T15:51:28.071Z","manualChange":0,"month":"2024-07-29T15:51:28.071Z","monthNo":0,"nodeDataOverrideId":0,"seasonalityPerc":0}
+custom_edit_url: null
+---
+
+import Schema from "@theme/Schema";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"NodeDataOverride"}
+>
+</Heading>
+
+
+
+
+
+<Schema
+  schema={{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":"circular(BaseModel)","createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"}},"title":"BaseModel"},"createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"},"manualChange":{"type":"number","format":"double"},"month":{"type":"string","format":"date-time"},"monthNo":{"type":"integer","format":"int32"},"nodeDataOverrideId":{"type":"integer","format":"int32"},"seasonalityPerc":{"type":"number","format":"double"}},"title":"NodeDataOverride"}}
+  schemaType={"response"}
+>
+  
+</Schema>
+            

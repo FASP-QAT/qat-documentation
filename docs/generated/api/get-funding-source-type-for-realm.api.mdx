@@ -1,0 +1,71 @@
+---
+id: get-funding-source-type-for-realm
+title: "Get Funding Source Types for Realm"
+description: "Retrieve a list of funding source types for a given realm, identified by its ID."
+sidebar_label: "Get Funding Source Types for Realm"
+hide_title: true
+hide_table_of_contents: true
+api: eJztWG1v2zYQ/ivEfWoB1g6yZsWEoYDTvMBFuqGx234IjIGWzhZbiVTIkzPD0H8fjpIyObbzsrVYV/iTZR7v4b3xpHtWkKCPnS5IWwMRXCI5jQsUSmTak7AzMStNos1ceFu6GAUtC/RiZp1QYq4XaIRDleVS6AQN6ZnGREyXQpMXw5MeSLAFOsXwwwQimCOd1YCjgDdeFnhm3SVjgIRCOZUjofMQXa3uGDdOUQxP2CZKsT5WkBWutXmXpSBBs36hKAUJRuUIEQT9YQISHF6X2mECEbkSJfg4xVxBtAKGgAi0IZwj48ysyxXVSz8dQlVNWN0X1nj0rHF4cMA/sTWEhgIG/kn9z549WG1CK+fUkg0kzH1n3U4/Y0wcEccBJF3Dq5j0Ajv7ptZmqAxUEqbK4zubYPbVYCDWLi4z5Z4dt4vPQULsUBEmx8uHDyo9Os77I0Ipw+Y6ObfbPTlt5lBVEkhTxkvHyuv4g0fHKo0pJ4q2aHXOSBThC9I5slKmPL2zSajV78GJrj1P8WQdr0la9f/Pz+xug3hjk22Hbtn5aF8yNf2KF2V/3/b37btw7R/mZ4rZ027OH2i2XshaOHP3CIv7hL7YIfzhKugiNKAfyDdZf1E97EC8q5vrx3qlk1GttLOQ9p1939n3nX3f2f/Tzv7w0SOdF1n4vP29drcr3JiToapYvjGxl874MBJvaNRDPA/rLO6M62zey4OXTxpVd2QkR+/VfNc3esefy2ZODju3eHK2Ob4LY9n80iRs8NETZ+tvbfDQENdXJtA568RNqjMUcyRiL7aQETW4mjO3cettnSyYSMiRUttwJIEKoRQi6KtC9zfmnH7DXvRXzUMFEjy6RcuclI7fOilR4aM+Y/SuSxX4mTiQMcqobEk69j3ruKbXPTtHw6QNJqLGFAzHXIfHuHSaluGMKSqHblCynVeTrnjEqaij3d3U/jtrL9DbT+ONs085qqFe334aC7Jf0AhtwkJ98SJxHFDEr0H4GhrGJrx9gwRkm1UOQAi7NjPLBqyf9X4tJmLQBkWMrc1AQqZjND6UScMaDQoVpyguaoH4iM6z5mHvAOSdoN/c3PRU2M4x7jdYvn8xfHP62+j0Bet0qu39gGOxqAEhgsPeL6+ujo5+fjXhXYX1lCvTseQcSawXkRjfcnMtn7bmbufqfAuirwl5uJNFpnT4BgohWTXFfAWq0LBlbAfZoeOi9nEiIbWeWG+14o+pDy6rKl6+LtFxDU4kLJTTasoRZL5Qe35OIJqpzOM9/j+7bEi/5+Jf0IpbXW6ZPcO83kJlJf8DCV9w2aEdq0klIUWVoAum19JBHGNBHb2/O1zVbRHnp2Ooqr8A7852eg==
+sidebar_class_name: "get api-method"
+info_path: docs/generated/api/qat
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get Funding Source Types for Realm"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/api/fundingSourceType/realmId/{realmId}"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Retrieve a list of funding source types for a given realm, identified by its ID.
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"description":"The ID of the realm to retrieve funding source types for","in":"path","name":"realmId","required":true,"schema":{"type":"integer","format":"int32"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"content":{"text/json":{"schema":{"type":"array","items":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":"circular(BaseModel)","createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"}},"title":"BaseModel"},"createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"fundingSourceTypeCode":{"type":"string"},"fundingSourceTypeId":{"type":"integer","format":"int32"},"label":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":"circular(BaseModel)","createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"}},"title":"BaseModel"},"createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"labelId":{"type":"integer","format":"int32"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"}},"title":"Label"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"},"realm":{"type":"object","properties":{"code":{"type":"string"},"id":{"type":"integer","format":"int32"},"idString":{"type":"string"},"label":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":"circular(BaseModel)","createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"}},"title":"BaseModel"},"createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"labelId":{"type":"integer","format":"int32"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"}},"title":"Label"},"name":{"type":"string"}},"title":"SimpleCodeObject"}},"title":"FundingSourceType"}}}},"description":"Returns the FundingSourceType list for the given realm"},"404":{"content":{"text/json":{"schema":{"type":"object","properties":{"messageCode":{"type":"string"}},"title":"ResponseCode"}}},"description":"Funding source type not found"},"500":{"content":{"text/json":{"schema":{"type":"object","properties":{"messageCode":{"type":"string"}},"title":"ResponseCode"}}},"description":"Internal error while getting funding source type"}}}
+>
+  
+</StatusCodes>
+
+
+      

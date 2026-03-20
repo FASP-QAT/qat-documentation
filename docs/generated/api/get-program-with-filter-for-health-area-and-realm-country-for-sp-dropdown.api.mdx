@@ -1,0 +1,71 @@
+---
+id: get-program-with-filter-for-health-area-and-realm-country-for-sp-dropdown
+title: "Get Supply Plan Programs for Realm and HealthArea and RealmCountry"
+description: "Retrieve a list of supply plan programs for a realm and health area and realm country"
+sidebar_label: "Get Supply Plan Programs for Realm and HealthArea and RealmCountry"
+hide_title: true
+hide_table_of_contents: true
+api: eJy1VttuGzcQ/RVinhJgYxku3KCLooB8Sx24jSOp8YMgGKPdkZbJiqSHXCmCoH8vhruy15IvcoHqScsZzuXM5XAFOfmMtQvaGkihR4E1zUmhKrUPyk6Ur5wrl8qVaJRjO2WceTWxrFAxYTlTaHJVEJahUMiE8buWZLYygZeQgHXEKD4uc0hhSuG6tnSjQ3Ghy0B8YfnPaKTLhF2T98TCaW3gwnLfnbF1uV0YSMAh44wCsYd0uAItkTsMBSRgcEaQQvR/mUMCTHeVZsohDVxRAj4raIaQriAsnahqE2hKDAlMLM8w1Ee/HMF6Paqvkw8nNl/KncyaQCbIX3Su1FlMqvPdC3qrXeN2/J2yICGzQBA0eZEW95kKHnuEktQZNXjseWmdQNChFKVnoT0bfLkVZM/swnzTtIC1XHvcFIOCXi5wbIdQ0EN/BKu4aaWdGsRkvLPG12AcHR5uQRvoZ3geU2RG6SkdaOZfxxqzoOfU0htbWxIaATWzeVviA2szjYKKmUz4Ruybpt2rSO26Xmkf9oj6xfLpfR3rvF/H/lQyJY6pfB2oMXr6y+ZvVIVMc1aVyO9ONoePGuo9tNrwaZX7GPfGOWrfknk+3dsJvyB0Lwm9e0LYSuIqam0n0LT+YOnobTP99mHu65krqdmgO9O7M749ChUbHwd0s9T/4yJfJ3D8xml9poNm5D1O6fTpAWwl22tWhWi+uqkuTSA2WCpijisJg3JMczKB8ghAs5WwFBTaK6t2ilOhFNhwjYdRAjMKhRXactbHRIRpUuig0528Uew0ZjredSaRzzrFcyu3EzHtrJrqryEBTzzfsFnFMlVFCM6nHXFycFehCXrSkA0aLJdBZ/7A8hS2EfhERpiWclXbVGJOiMxTVrEOy+hjTMjE3UoSGY7a4r7UrxnyltLm62LTlZ9vBju+zwX9COrnm4EK9gcZpU08qLs5VSfRivo9Cv+Aho7jVo4SSDatIADEmkhn9R5Y+PwnSvfvsujhLkceymY0EyvKj0P9+ghS1d1gqgbWlpBAqTMyPnppXhRdh1lB6qoWqIYZ1NHBISRbNVssFgcY1aVEncaW71xdnp7/3T//IHdaHf61K1DOa4OQwtHBbx+Hx8e/fhzFvWJ9mKFpRfKJgurXj7JreZRdt2e5dz/JD5QfP9sduF251jj/by/ApqxxWbgSdeTfiNuqmaghoNMSWuuhV3uTPnGyE+NkQZtnt2YLmiaABNLNdh0lUMjkpkNYrYS5/uFyvZbju4pYBmKUwBxZ41jqMVxBrr38zyGdYOnpBbTe9ZqnzXv1XI4b/jcS3BzLSr4ggR+0bD1U16P6+ZATxxBq6Wnt6IOwSuv2ztNznWxudLOMXGjpPmzndXuXXX/pS9eNm3ftLO5hYFwIgrioQ7Qx47gM4tkKSjTTCqeiW9uU379t3EIl
+sidebar_class_name: "post api-method"
+info_path: docs/generated/api/qat
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get Supply Plan Programs for Realm and HealthArea and RealmCountry"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/api/dropdown/program/sp/filter/healthAreaAndRealmCountry/realm/{realmId}"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Retrieve a list of supply plan programs for a realm and health area and realm country
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"in":"path","name":"realmId","required":true,"schema":{"type":"integer","format":"int32"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"content":{"application/json":{"schema":{"type":"object","properties":{"healthAreaId":{"type":"integer","format":"int32"},"realmCountryId":{"type":"integer","format":"int32"}},"title":"HealthAreaAndRealmCountryDTO_DropDownView"}}},"description":"The health area and realm country for the programs to retrieve","required":true}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"content":{"text/json":{"schema":{"type":"array","items":{"type":"object","properties":{"active":{"type":"boolean"},"code":{"type":"string"},"currentVersionId":{"type":"integer","format":"int32"},"healthAreaIdList":{"type":"array","items":{"type":"integer","format":"int32"}},"id":{"type":"integer","format":"int32"},"idString":{"type":"string"},"label":{"type":"object","properties":{"baseModel":{"type":"object","properties":{"baseModel":"circular(BaseModel_DropDownView)"},"title":"BaseModel_DropDownView"},"labelId":{"type":"integer","format":"int32"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"}},"title":"Label_DropDownView"},"programTypeId":{"type":"integer","format":"int32"},"realmId":{"type":"integer","format":"int32"}},"title":"SimpleProgram_DropDownView"}}}},"description":"Returns the list of programs for a realm and health area and realm country"},"500":{"content":{"text/json":{"schema":{"type":"object","properties":{"messageCode":{"type":"string"}},"title":"ResponseCode_DropDownView"}}},"description":"Internal error that prevented the retrieval of the programs"}}}
+>
+  
+</StatusCodes>
+
+
+      

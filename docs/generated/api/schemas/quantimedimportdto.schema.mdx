@@ -1,0 +1,33 @@
+---
+id: quantimedimportdto
+title: "QuantimedImportDTO"
+description: ""
+sidebar_label: "QuantimedImportDTO"
+hide_title: true
+hide_table_of_contents: true
+schema: true
+sample: {"dblDataInterval":"string","dtmDataExported":"string","dtmEnd":"string","dtmStart":"string","fileType":"string","products":[{"innovatorName":"string","lowestUnitMeasure":"string","lowestUnitQuantity":"string","multiplier":0,"productGroup":"string","productId":"string","productName":"string","programPlanningUnitId":"string","quantificationFactor":"string","source":"string","userDefined":"string"}],"programId":"string","records":[{"dtmPeriod":"string","ingAdjustments":0,"ingConsumption":0,"product":{"innovatorName":"string","lowestUnitMeasure":"string","lowestUnitQuantity":"string","multiplier":0,"productGroup":"string","productId":"string","productName":"string","programPlanningUnitId":"string","quantificationFactor":"string","source":"string","userDefined":"string"},"productId":"string"}],"sourceName":"string"}
+custom_edit_url: null
+---
+
+import Schema from "@theme/Schema";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"QuantimedImportDTO"}
+>
+</Heading>
+
+
+
+
+
+<Schema
+  schema={{"type":"object","properties":{"dblDataInterval":{"type":"string"},"dtmDataExported":{"type":"string"},"dtmEnd":{"type":"string"},"dtmStart":{"type":"string"},"fileType":{"type":"string"},"products":{"type":"array","items":{"type":"object","properties":{"innovatorName":{"type":"string"},"lowestUnitMeasure":{"type":"string"},"lowestUnitQuantity":{"type":"string"},"multiplier":{"type":"integer","format":"int32"},"productGroup":{"type":"string"},"productId":{"type":"string"},"productName":{"type":"string"},"programPlanningUnitId":{"type":"string"},"quantificationFactor":{"type":"string"},"source":{"type":"string"},"userDefined":{"type":"string"}},"title":"QuantimedImportProductDTO"}},"programId":{"type":"string"},"records":{"type":"array","items":{"type":"object","properties":{"dtmPeriod":{"type":"string"},"ingAdjustments":{"type":"integer","format":"int32"},"ingConsumption":{"type":"integer","format":"int32"},"product":{"type":"object","properties":{"innovatorName":{"type":"string"},"lowestUnitMeasure":{"type":"string"},"lowestUnitQuantity":{"type":"string"},"multiplier":{"type":"integer","format":"int32"},"productGroup":{"type":"string"},"productId":{"type":"string"},"productName":{"type":"string"},"programPlanningUnitId":{"type":"string"},"quantificationFactor":{"type":"string"},"source":{"type":"string"},"userDefined":{"type":"string"}},"title":"QuantimedImportProductDTO"},"productId":{"type":"string"}},"title":"QuantimedImportRecordDTO"}},"sourceName":{"type":"string"}},"title":"QuantimedImportDTO"}}
+  schemaType={"response"}
+>
+  
+</Schema>
+            

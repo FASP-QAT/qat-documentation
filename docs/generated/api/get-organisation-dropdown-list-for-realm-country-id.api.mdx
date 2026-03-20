@@ -1,0 +1,71 @@
+---
+id: get-organisation-dropdown-list-for-realm-country-id
+title: "Get Organisations by Country"
+description: "Retrieve a list of organisations for a specific realm country"
+sidebar_label: "Get Organisations by Country"
+hide_title: true
+hide_table_of_contents: true
+api: eJylVW1v2zYQ/ivEfWoBzQ5SpMWEooCbpIGLbEETt/0QGMFZOltsJZI5UvY8Q/+9OEruZDvJmu2TLfK5u+ce3ssGcvIZaxe0NZDCNQXWtCSFqtQ+KDtXlhdotEdBeDW3rFB5R5me60wxYVmpzNYm8BoSsI44Isc5pLCgcNWzPmPrcrsyl9qHD5avxfa0NR3nkIBDxooCsYf0drPHbFLQbjQ1PotsQkEdx79jlEgcEtBi5TAUkIDBiiAF3o/IdF9rphzSwDUl4LOCKoR0A2HtxEKbQAtiSGBuucLQHr06hqaZirl31njyYnF8dCQ/mTWBTIg+6K8w/OaF/ubQNTKjSKYDVb53bmffKJMEHIuaQbfuM5tTD+UDa7OAJgGd/xJfAd60Rg95KXFG5b+zmKGnP2z+TChkmrO6RH7xfnt4J8VwZlfmi6bVS2EQdCjF3cOQnxzHv5puRN+ReTzduzk/cemeuvTugcteEpcRtZtA7/pGV66kU5vTVRRvHynYg8as2fhY7f+hM5sETp5Zn488a0Xe4yJyf1qC6645BHmQ3356YxOIDZaKmGNPY1COaUkmUB6T5nYyYSmZP6pCywAXMkFgO288TBOoKBS2G0px1oQCUhii08O8ww37roa7w2K42f1uIAFPvNwOq5qlzosQnE+H4nVwX6MJ8hTRHRos10FnfmB5AfvpX5CRuUm5an0qcScTxlNWsw7rGGNGyMSjWpjfTvvXN/J4Xdv1QNuvD9vm+Ph1chD7XKSPin78OlHBfiejtIkHbVOl6n30ot7Gy3fQzUl55NY/JNs6EAHiG2gzt0JgN9anHU3UaCuKmlhbQgKlzsj4WFjdyB45zApSl+2F+kLsxfJ4cATJnuir1WqAES4aDztffng5Pj3/8+b8N7Hp1eenkWixbB1CCseD39/cnpy8fjMVlLM+VGh6TC4oqKudjput1enPzbeTaK/N/vdK7ZSNzepK1Eboxcw3XRXfAjotFLo6lj3cixD33N7iS/dOpgkU1gfxtdnI5P7MZdPI8X1NLOU3TWCJrHEm4sl21l7+55DOsfT0hAAvrrst+1I9e4k/mPx2gRqRZ4llLV+QwHdaHy75ZtokUBDmxJF3CxplGbnQM/9nFjb9YXFxPoGm+QE9cTJj
+sidebar_class_name: "get api-method"
+info_path: docs/generated/api/qat
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get Organisations by Country"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/api/dropdown/organisation/realmCountryId/{realmCountryId}"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Retrieve a list of organisations for a specific realm country
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"description":"The realm country ID for the organization list","in":"path","name":"realmCountryId","required":true,"schema":{"type":"integer","format":"int32"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"content":{"text/json":{"schema":{"type":"array","items":{"type":"object","properties":{"code":{"type":"string"},"id":{"type":"integer","format":"int32"},"idString":{"type":"string"},"label":{"type":"object","properties":{"baseModel":{"type":"object","properties":{"baseModel":"circular(BaseModel_DropDownView)"},"title":"BaseModel_DropDownView"},"labelId":{"type":"integer","format":"int32"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"}},"title":"Label_DropDownView"}},"title":"SimpleCodeObject_DropDownView"}}}},"description":"Returns the list of organisations for a specific realm country"},"500":{"content":{"text/json":{"schema":{"type":"object","properties":{"messageCode":{"type":"string"}},"title":"ResponseCode_DropDownView"}}},"description":"Internal error that prevented the retrieval of the list of organisations"}}}
+>
+  
+</StatusCodes>
+
+
+      

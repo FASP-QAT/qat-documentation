@@ -1,0 +1,71 @@
+---
+id: get-procurement-unit-for-realm-all
+title: "Get ProcurementUnit for a RealmId"
+description: "API used to get all the ProcurementUnits for a specific RealmId."
+sidebar_label: "Get ProcurementUnit for a RealmId"
+hide_title: true
+hide_table_of_contents: true
+api: eJytlFFP2zAQx7+KdS/bpKztgL3kaZmg0BcotH1CFTqSa+PNsY19KVRRvvtkN12hdDBNe6rj+vz/3/l31wDj0kN6C9aZvHZUkeaZlgzzBAryuZOWpdGQQjYeidpTIdiIJbFApQSXJMYvA71YGCdQeEu5XMhc3BCqalT0IAFjyWG4blRACkvivdihcfF0phQkYNFhRUwu+GtAY0WQgttcBwnI4Moil7BvtZMUXCKLtanFI2oOvg/4DXYhAUcPtXRUQMqupgR8XlKFkDbAaxt0pWZaUji6MK5C3mwdH0HbzkO4t0Z78iHiaDAIP/ueuHbaHy6Zkp4hgdxoJs1RlZ64/8OH0KZt2wROBsd/vhTFBbOdMHLte8Orm++j09OzSyEXUW7myYnCkBfasChxRQLznLx/V/LkLyUvr6Z3w6vZ5elWcvsCHQVU7PTp6f1kvx6q4EgzOY1KkHPGbR7XOlqR5kBlScIRO5IrVMIs9ov8pmKbQEVcmg7LCB+XkEIfrezvtUa/Q7DfdIu2jxFYT261pbV2ClIoma1P++GW3kONmkNHxA5AjWrNMvc945avAB47U9R5+BCbS2NTXWdTSGCFTuK9iqhF9qRemJiTZBVIvX4hJFAXItuqiakxwWrwuZE66n056g1eOcjGow8+tMyGlFje62wqJtFOV0zMYzG7zhxmk7FgwgqSvfQfHx/fSZ8qlCHiYjK5C/fcXVx/W5Y+/2x9FY+0CSiZk/b0TDGzmJckNv5fSi6M6d2jg/C01niuUD8LPCc+NAcEbsHdr0ezg+d/DMJupkQKrUKpQ34xgaYj7xbQysDhK4p3AzDdLQOA8wRK4znENs09epo51bZh+6Emt4b0dr6jJ0JaSB/WBaQLVJ7eyPnjTTcfP4l/GK4H0+02Ua8j1KoOX5DAT1o/G/PtvE2gJCzIRcubf7M8J8vP4nb9HDridy+fn02hbX8BSaliuA==
+sidebar_class_name: "get api-method"
+info_path: docs/generated/api/v2.12/quantification-and-analytics-tool
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get ProcurementUnit for a RealmId"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/api/procurementUnit/realmId/{realmId}/all"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+API used to get all the ProcurementUnits for a specific RealmId.
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"realmId","in":"path","description":"RealmId that you want to the ProcurementUnit for","required":true,"schema":{"type":"integer","format":"int32"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Returns the ProcurementUnits list","content":{"text/json":{}}},"403":{"description":"Returns a HttpStatus.FORBIDDEN if the User does not have access","content":{"text/json":{}}},"404":{"description":"Returns a HttpStatus.NOT_FOUND if the RealmId specified does not exist","content":{"text/json":{}}},"500":{"description":"Internal error that prevented the retreival of ProcurementUnit","content":{"text/json":{}}}}}
+>
+  
+</StatusCodes>
+
+
+      

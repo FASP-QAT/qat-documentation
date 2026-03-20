@@ -1,0 +1,63 @@
+---
+id: get-equivalency-unit-dropdown-list
+title: "Get Equivalency Units"
+description: "Retrieve a list of equivalency units"
+sidebar_label: "Get Equivalency Units"
+hide_title: true
+hide_table_of_contents: true
+api: eJyVVdtu2zAM/RWBTxvgJUWHbpgxDOglK1p0G3p/CIJCsZlYrSOpFJ0sCPzvAxWnc9L7UxLyiOQ5OlQWkGPIyHg2zkIKZ8hkcIpKq9IEVm6k8L4yU12izeaqsoYDJOA8kpYjRzmkMEbu/QddWsMH5HzuZvbEBIYECIN3NmCAdAHbW1vykTnLaFm+Mv7l7m2QARYQsgInOobnHiEFTaTnkIBhnIRW3A1vMZPqnmQcNsvyJm9hjGUcI0ECI0cTzcvQ522oEzD5OZOx4xY8LAN1AqUeYvl6s6EO+Mvl74RCZiirSk0f9lbBG1HswM3slcHZR5mADZdS7mnIw4xHb6Ub0Tdon6d7M6IXkv6lZPBPJFskTiJqnUArfW4mvsQ/UbhNlOAeebQiGxQX+IJJ6wR23um0Z25ugiHoMe67HF9medbYXJCPaGyyOLKMZHWpkMiR4kKz8oRTtIx55EbLXdSlEHyFrEyhxwHSPqx2L8AggQly4ZodFWKaC0ihq73p5g2ui+u7CwkEpCmSVFtAReLYgtmHtCsHO/eVtmxGJosvgLa6nLPJQsfRGDZZHqKVlwJztayppFw9kBZZRYbnsccQNSHtVjJcf9BOn8sdNQvUAq1+/VzZ/Pj64lHvnigchTu+vlDs7tAqY2NguR6p2otV1PeY/CHMYz9Im/qQrK5bBIgyGztyMsB6r9M1TdTuShR14VwJCZQmQxuif6yODXa9zgpUJ8uEukIKcnK7swXJhuiz2ayjI1w07ja1QvfkaL/3+7z3Sc60bHi6K1pMlwUhhe3Ot6/9nZ0vXweC8i7wRNvWJIfIqvV+q8vmkV9j2Fqjt/5JNMrFnfOlNlbaR2aLxoh90N5Ip8aKkMCmGQcJFC6wYBcLeUMvqaxrCd9XSGKfQQJTTUYPhXx/UCdQoM6RorPucC5aZxl6MfZUl9XDTPEdqNtLcti7gLr+B1+PdwA=
+sidebar_class_name: "get api-method"
+info_path: docs/generated/api/qat
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get Equivalency Units"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/api/dropdown/equivalencyUnit"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Retrieve a list of equivalency units
+
+<ParamsDetails
+  parameters={undefined}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"content":{"text/json":{"schema":{"type":"array","items":{"type":"object","properties":{"id":{"type":"integer","format":"int32"},"idString":{"type":"string"},"label":{"type":"object","properties":{"baseModel":{"type":"object","properties":{"baseModel":"circular(BaseModel_DropDownView)"},"title":"BaseModel_DropDownView"},"labelId":{"type":"integer","format":"int32"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"}},"title":"Label_DropDownView"}},"title":"SimpleObject_DropDownView"}}}},"description":"Returns the list of equivalency units"},"500":{"content":{"text/json":{"schema":{"type":"object","properties":{"messageCode":{"type":"string"}},"title":"ResponseCode_DropDownView"}}},"description":"Internal error that prevented the retrieval of the list of equivalency units"}}}
+>
+  
+</StatusCodes>
+
+
+      

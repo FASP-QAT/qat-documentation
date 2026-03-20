@@ -1,0 +1,71 @@
+---
+id: get-realm-country-no-filter-dropdown-list
+title: "Get Realm Countries without ACL Filter"
+description: "Retrieve a list of countries for a specific realm without ACL Filter"
+sidebar_label: "Get Realm Countries without ACL Filter"
+hide_title: true
+hide_table_of_contents: true
+api: eJytVV1v20YQ/CuHfUoAVjRcuEGJooAiO4YCNUVsJXkwBONErsRLyDt6bylFEPjfiz2SCS0rqlP0ydbt3HB2bj/2kKFPyVRsnIUEbpDJ4AaVVoXxrNxKpa62cujVypHSyleYmpVJFaEuSrU1nLua1XgyU29MwUgQgauQtFBOM0hgjXwj2Elg2r1zLe6SXJW5rZ0ZzxBBpUmXyEgekrv9ga55jt33ppdBB+fYKdsFpRCBEWClOYcIrC4REghXphlEQPhQG8IMEqYaI/BpjqWGZA+8qwRqLOM6iF85KjW3R7+eQ9Ms5LqvnPXo5cb52Zn8SZ1ltBw48CvHn71I3T+l1kR6JwIZSz84d8vPmIbUSQxj09KnLsMByjMZu4YmApM9S68Ab9tLx1gKvcTi31Ustce/XPaTUEgNpXWh6cXr/vBe3vnSbe1Hg9uXooANF0J3HPJN4/S56Qb0Pdofp3u/ohPB6lTQV0eCgyRmAfU4gUH41pRVgROX4d/BvEOkYJ+0YE3Whwr/7z3YRHDxk2X6g9ct0Xu9DimcduKm6xFBPknzMMupZSSrC4VEoZ01q4pwg5YxC7lTO4p0IQYcN+NY3iJIr2WGQD9gPCwiKJFz102jMG04hwRiXZk463AxDaZUbN0qULan8b6bJQ1E4JE2/ZyqSco+Z658Egvd6KHWluV1wgTUVhc7NqkfOVrDoQ3XaGVSYqZaTiV0MnA8pjUZ3oVvLFET0rgWyXeLYfhWHrHrwgGo//Wm75W3n+ZPvn0lTxCcfftprth9QauMDQdtjyXqdWBRf4Tgn9CNTXnslh+ivh7EgGC+sSsnAh5/6/0jT9S4N0XNnSsggsKkaH0osG50jyud5qhmbUB9RPJy83x0BtGB6dvtdqQDXDyOOy4fz6aTq3e3V7/InUGdvh+LF5uWEBI4H/3+6u7i4rdXC0FVznOp7UDJNbIK+0tNTlXegb2Dxvu/tmpndejiqtDGit5gxb6r5zvQlRElXUWHxfe9pmUxdlXdRyCCpN+Siwhy51lo9nsZ6h+oaBo5fqiRpBQXEWw0Gb0UI2VJGy//Z5CsdOHxhAUvbroF/FI9Z5cfTbVfp1YS2eiill8QwRfcDXZ9s2giyFFnSEFjGx2nKVY8uPd9FjbD6XB9NYem+QeaGCYa
+sidebar_class_name: "get api-method"
+info_path: docs/generated/api/qat
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get Realm Countries without ACL Filter"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/api/dropdown/realmCountry/nofilter/realm/{realmId}"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Retrieve a list of countries for a specific realm without ACL Filter
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"description":"The realm ID for the country list","in":"path","name":"realmId","required":true,"schema":{"type":"integer","format":"int32"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"content":{"text/json":{"schema":{"type":"array","items":{"type":"object","properties":{"code":{"type":"string"},"id":{"type":"integer","format":"int32"},"idString":{"type":"string"},"label":{"type":"object","properties":{"baseModel":{"type":"object","properties":{"baseModel":"circular(BaseModel_DropDownView)"},"title":"BaseModel_DropDownView"},"labelId":{"type":"integer","format":"int32"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"}},"title":"Label_DropDownView"}},"title":"SimpleCodeObject_DropDownView"}}}},"description":"Returns the list of countries for a specific realm without ACL Filter"},"500":{"content":{"text/json":{"schema":{"type":"object","properties":{"messageCode":{"type":"string"}},"title":"ResponseCode_DropDownView"}}},"description":"Internal error that prevented the retrieval of the list of countries without ACL Filter"}}}
+>
+  
+</StatusCodes>
+
+
+      

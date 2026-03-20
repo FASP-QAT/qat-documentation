@@ -1,0 +1,63 @@
+---
+id: get-tracer-category-simple
+title: "Get Tracer Categories (simplified)"
+description: "Get all tracer categories in a simplified format"
+sidebar_label: "Get Tracer Categories (simplified)"
+hide_title: true
+hide_table_of_contents: true
+api: eJztVt9v00gQ/ldW8wSSL6l66qGzTkih6lVFhRM0Bw9RVE3sib2w2TWzk4Yoyv+OZu2AE0ppkbiHE09x5vf3zczubqCkWLBtxAYPOZyTGHTOCGNBbAoUqgJbisZ6gybaRePs3FJp5oEXKJBBaIhR3S9KyKEiGSff09Z1faUuBBkwxSb4SBHyDRwfHelPEbyQF/0U+ijDd1Gr2EAsalpgEq8bghyQGdeQgRVaxJ48zN5RoVU0rHWIbcPPMNKLUJJ7kCkUloulQ370bCe8vvBC7NG9sbR6DNsMxIrTcLebqEVN6KQeMeH3sxehpJ5VFLa+0iC27ImtF6qIIYOO9ST6/bg1vGqdbovicPZADv57ulKNF/eFm6yvyX8b7vWc71A2dyljc4uyB+IyWe0D6KnbUT8NJf2TyLsd6q92/Mx26DmDbvFr8/7/rX7I5snenXRPzL0E+3faYSFquX+PviZZso9GajLORjFhfv87dZvByQPvx2/MzIJixCoRcze/r7vLWS2/QncIbqc3xBzYrGrryFQkYn2VEO8jXScG2nRYRcgnHZ2fDWCawYKkDt0LQnGg1JDDEBs73G/eMO5eFJH4hlgDbmDJuhe1SBPzoXoNPizRi53bIj1O0KNbiy3iIHAFh4jOyesjhkrTxjQabjvVFMWSraxTjhkhE4+WWtlk2ldfaT+6Ne0Z7f79vRus52/HX+U+UzYTbc/fjo2E9+R1MFTQzkNunqUo5q+kfKrIUz7Iu/iQ7VqrBCSmrZ8HLWA/16s9TsxoR4oZh+AgA2cL8jHNiseUYNRgUZO5bBXmDXFUz+PBEWQHpK9WqwEmc+V42MWKw8uL07OXV2e/qU9v5F6NlIubNiDkcDz488nk5OSPJ1O1akKUBfpeJfo07ebm9MsKPfqyPo8Pqe3tz488bDtK0+I1Dq3XuhLkTTeeE8DGwuHpov1pR3SaQR2iqOFmo+f3v+y2WxV/WBLrUE0zuEG2OFNKJtP29VgSp3l7T2vtQFFQo/XcoFt+LiidBNv+3pyfjWG7/QSA1Bqb
+sidebar_class_name: "get api-method"
+info_path: docs/generated/api/qat
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get Tracer Categories (simplified)"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/api/tracerCategory/simple"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Get all tracer categories in a simplified format
+
+<ParamsDetails
+  parameters={undefined}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"content":{"text/json":{"schema":{"type":"array","items":{"type":"object","properties":{"baseModel":{"type":"object","properties":{"baseModel":"circular(BaseModel_InternalView)"},"title":"BaseModel_InternalView"},"healthArea":{"type":"object","properties":{"code":{"type":"string"},"id":{"type":"integer","format":"int32"},"idString":{"type":"string"},"label":{"type":"object","properties":{"baseModel":{"type":"object","properties":{"baseModel":"circular(BaseModel_InternalView)"},"title":"BaseModel_InternalView"},"labelId":{"type":"integer","format":"int32"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"}},"title":"Label_InternalView"}},"title":"SimpleCodeObject_InternalView"},"label":{"type":"object","properties":{"baseModel":{"type":"object","properties":{"baseModel":"circular(BaseModel_InternalView)"},"title":"BaseModel_InternalView"},"labelId":{"type":"integer","format":"int32"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"}},"title":"Label_InternalView"},"realm":{"type":"object","properties":{"code":{"type":"string"},"id":{"type":"integer","format":"int32"},"idString":{"type":"string"},"label":{"type":"object","properties":{"baseModel":{"type":"object","properties":{"baseModel":"circular(BaseModel_InternalView)"},"title":"BaseModel_InternalView"},"labelId":{"type":"integer","format":"int32"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"}},"title":"Label_InternalView"}},"title":"SimpleCodeObject_InternalView"},"tracerCategoryId":{"type":"integer","format":"int32"}},"title":"TracerCategory_InternalView"}}}},"description":"Returns the list of tracer categories in a simplified format"},"500":{"content":{"text/json":{"schema":{"type":"object","properties":{"messageCode":{"type":"string"}},"title":"ResponseCode_InternalView"}}},"description":"Internal error while getting the tracer category list"}}}
+>
+  
+</StatusCodes>
+
+
+      

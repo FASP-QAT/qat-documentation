@@ -1,0 +1,71 @@
+---
+id: get-forecasting-unit-by-id
+title: "Get ForecastingUnit for a ForecastingUnitId"
+description: "API used to get the ForecastingUnit for a specific ForecastingUnitId"
+sidebar_label: "Get ForecastingUnit for a ForecastingUnitId"
+hide_title: true
+hide_table_of_contents: true
+api: eJytVU1v2zAM/SsCL9sAL8nS7uLTUrRpc2nTJjkVQcHadKzNllSJThoY/u+D5HRpPrquwE62FZLvPeqRqYFx4SC+h0xbStCxVIuZkgzzCFJyiZWGpVYQw2A8EpWjVLAWC2LBOYnhbpLItBUonKFEZjLZ/3mUQgTakEVfcpRCDAvivaCzdQgzaLEkJuvJ1aCwJIj3SYZI6ckZ5Bz2GR/AC86RxVpXYoWKvZA3REAElp4qaSmFmG1FEbgkpxIhroHXxnORimlBPjTTtkRuj0760DRzn+6MVo6cz+j3ev6xy+6OuLLKHaMAESRaMSkOePTM3Z/OJ9VN00Rw2jt5uxyKK2YzYeTKdYY3d2ej8/OLayGzADRzZEWqyQmlWeS4JIFJQs69C3n6j5DXN9OH4c3s+vwF8vAWNv6gdMuEnqV7T/b3Y10cKSarsBBkrbbtBRtLS1LsrZqTsMSW5BILobMPNbqJoCTO9canwZScQwxdNLK7Z8VufeDNBiJwZJcvHq5sATHkzMbFXV+j81ShYj8pYSBQYbFmmbiOtosDM4+tTqvEf4i2aBi228EUIliilfhYBLMF90mV6aBIcuG9ersDJFClYvCCJqZaF74IWddC9Tvf+p3eAYPBePTJ+aFpHROaezuYikmgs2klJqGVm3kdDiZjwYQlRHvyV6vVO/KpROkzriaTB1/n4er2xyJ3yVfjyhDSRFDIhJSjV4gDg0lOouW/C5lp3XlEC/5ijXZconqVeEn8xjo7tsV2OlNvTfS/tuRmxwRHmgKl8mqDnHrjwntAI9vls+fo+HBLziPItWOfVdeP6Ghmi6bxx08V2TXE9/Oti4JZU+n8ewpxhoWjvyj+fLfZlF+OjPoHFu5RyZtDVOtg86LyXxDBL1of/Tto5k0EOWFKNsho4wZJQoZfVdhOup+WP1N+eTGFpvkNx8R4kw==
+sidebar_class_name: "get api-method"
+info_path: docs/generated/api/v2.12/quantification-and-analytics-tool
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get ForecastingUnit for a ForecastingUnitId"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/api/forecastingUnit/{forecastingUnitId}"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+API used to get the ForecastingUnit for a specific ForecastingUnitId
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"forecastingUnitId","in":"path","description":"ForecastingUnitId that you want to the ForecastingUnit for","required":true,"schema":{"type":"integer","format":"int32"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Returns the ForecastingUnit","content":{"text/json":{}}},"403":{"description":"Returns a HttpStatus.FORBIDDEN if the User does not have access","content":{"text/json":{}}},"404":{"description":"Returns a HttpStatus.NOT_FOUND if the ForecastingUnitId specified does not exist","content":{"text/json":{}}},"500":{"description":"Internal error that prevented the retreival of ForecastingUnit","content":{"text/json":{}}}}}
+>
+  
+</StatusCodes>
+
+
+      

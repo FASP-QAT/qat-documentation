@@ -1,0 +1,71 @@
+---
+id: final-save-program-data
+title: "Save Final Program Data"
+description: "API used to save final program data into QAT tables from temp table for specified pipelineId"
+sidebar_label: "Save Final Program Data"
+hide_title: true
+hide_table_of_contents: true
+api: eJy1lE1v40YMhv8KwUtbQLXT9OOgU9WtFzGwSBzL7SUwDEairGmlmckMFdcQ9N8XM5ITO1tkgQI92Rpw+L7kPGSPQnuP6QNaZblRmnGbYMm+cMqKMhpTzFZL6DyXIAY8PTNUSlMD1pm9oxZKEgKlxcB9tgGhx4Y9VM60INza8QAq48BbLlSluIST1rLEBI1lR0FqWWKKMXdOz7wa0/9OQpigJUctC7vgtUdNLWOKF3lU8GpJanxbwOolLPo41Kqo4Wg60BzMnNfxUqJxmKDjp045LjEV13GCvqi5JUx7lKMNBpQW3nMIrYxrScajH69xGLbhurdGe/bhxvXVVfi5dLZm6Zz2QJB3RcHeQ2FKBlWB1AwvnYEDefBjRNU1mGBhtLCWaIX/kflfPuTrh2FI8KerX95TuhGxuZB0fnZ7t9llHz4sVpvst0+Lk+zUefCdtU14LuVBG4FOq6eOvyL+8/tlnokvbzeL9W32aZcv1n8u1rvFen23njw4Hks2LYMJ38DOGQdSk0CpyuiHmsYc3jRKDBSmtQ3L+0aHBFuW2gTkrPESEZMaU5yTVfMTWPMJjsDGvH/FbcAEPbvnE4+dazDFWsT6dB4yzJ460qIqVURfpKk5iir8zLj9l3w6U3ZF9D8mjZjeZxtM8JmciiMVfW8D5pWJBSlpAoL3F0JAuoTspAYbYwItwecodT374Xp29YWDbLX8xofm0UhhaGqY5jzamTpJRezkNHsfs3wFwtRi8qb8w+HwlfK5JRVu3OT5LuTZ3dz/uq998b31bQwZEmxUwdrzmWJmqagZRv+XkpUxs0dyGN41PGdL+uxiWCfwMS6tE9vTWrnoQv/Ky/+986b1EaG0DSkdKo4l9ROHD0hWBSpPaznBMxYxwfQs4TbBOkCcPmDfP5LnP1wzDOH4qWN3xPRh+0pSBLZUPvwvMa2o8fxOJ75dT0vwO/jPe/Rfy50OSR8j5k0XvjDBv/l4udqH7ZBgzVSyi97HgKwo2MrZ1dcJD2PyMt2ru3yDw/AZeiRjww==
+sidebar_class_name: "post api-method"
+info_path: docs/generated/api/v2.12/quantification-and-analytics-tool
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Save Final Program Data"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/api/pipeline/programdata/{pipelineId}"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+API used to save final program data into QAT tables from temp table for specified pipelineId
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"pipelineId","in":"path","description":"PipelineId for which you need program data to save for","required":true,"schema":{"type":"integer","format":"int32"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Returns a Success code if the operation was successful","content":{"text/json":{}}},"406":{"description":"Returns a HttpStatus.NOT_ACCEPTABLE if the Program supplied is not unique","content":{"text/json":{}}},"500":{"description":"Returns a HttpStatus.INTERNAL_SERVER_ERROR if there was some other error that did not allow the operation to complete","content":{"text/json":{}}}}}
+>
+  
+</StatusCodes>
+
+
+      

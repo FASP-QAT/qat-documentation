@@ -1,0 +1,71 @@
+---
+id: get-dataset-version-list
+title: "Get Dataset Programs"
+description: "Retrieve a list of dataset programs for a specific program, version type, start date and stop date"
+sidebar_label: "Get Dataset Programs"
+hide_title: true
+hide_table_of_contents: true
+api: eJztWG1vEzkQ/ivWfLqTlqYqB+hWp5Pa0uOKygFNgQ9RVU12J1nDrm3s2YQoyn8/jXe33aQvNHxAgJpPiT3v83hiP0vIKWReO9bWQAqnxF7TjBSqUgdWdqJyZAzEynk79VgFNbFeoQqOMj3RWbeeqBn5oK1RvHCUqMDoWZRJoclVYOviL0jAOvIoDo9zSGFK/Lxx8b4xcKIDQwKePtcU+MDmC0iXkFnDZFi+onOlzqKFwccgcS8hZAVVKN/EPaRgxx8pEzusuZSF606Ojav54pSc9fxe0xxWq1WyUZCzgpQWuZg2F3RZjy7d8ipc7SmHlH1NK1kIzppAQYLa293dSILpC98ePXqPC0hAM1XhpqyclyqybsxnnpApP1h8XbQO5KXul3LaME3JQwIT6yvkZunxHqySKGywop54YK/NFKRSXWUPMOjsXSC/Vsuki+q5dP2agZ47gcUj1hWJUo6LcGxeWcPFPYOcWE8ZBh4K4rZzdqVq3bdpnhWeQmHL/F89Ld6Qz3omTF2N12PObT0ub9Y/sfNt1D3pacFbaBSEJRf7njCer2+Hms1vgkMC+r6g0vmwUbrJSoljKr8exRgDvbL5lqKQaZ/VJfrfDrrFHmR/h3VMXxO4jO+CzO3BX0z8HZvurs3g7j5oJ1FqbWBdbQ515Uo6tDm9joXYlCsx8Cub64n+4QZFP7TtjqGxTOHGilo/RaMDNnP8AdW/IqpjUeTy8dDgX7zB7a3t3vPIE5bVoa0N+3uMugdw/JzgmG2JilZ+yMj1Pa46D93/Ebp/V+fPouGHPv6kfezJvFmb8xuP8muv8lPi2psQ3+ObPEULjXD5YG+ZCso7qkLS+mP38VYP8ltaWFEIOI0T6u4CnbZsgEjeg3KQ+7TKLQVlLKsCZ6Qc+UqHhmGxCrOMghRAhy7zJq2nP3JaXY/mmovYm6meken6oo6fKyw9Yb5Q9EUHDpLSky2pk++Y0rFhefaUiryPYEOhyWhGhimP+fmGT8NSENpjjxqPOA2QjjpmCs4TqIgLK6yYs5FVcig0CAzQ6UGrOugADgkE8vIL0tESai9zpGB2IR2Iws7nGg0LRxcfQWiwXLDOwo718qBaT+UFGSHlKFeNTSXmVufiIqu95kX0MSb05PdrCWp03t8eShvasdYT6n79083alx/Orvk+kjLG6rz8cKbYfiKjtIkLzYxO1UG0ov6Km39L5tEfpK194fmajkoBYnUFIKdXHOLRF5QpBOlSBr2ZWAluPY63a/VS+13B1Jm1JSRQ6oxMiPBp3rqw7zArSJ00G6qdXmpvZxeSjYbM5/MdjOJS/0FrKwxOjg+P/hsePRKdHgrf7kud2lZDCns7fz4bPXny9Nl5vBXbwBWaXiQviFWLI9XO0rBZ6N4h+j5Eb9uSeF5didpEqsDHv8YG2SNApyXO9ghcphzkNBRyCNIRLJfyV/nOl6uVLH+uSW71o/MEZug1CsMlcIwkV04+QvUTLSCFwybhR/GiIOJlHTmvTQZ5lXQa+1lGjnuyV9Nm1T+gb14PpUPjlp6u4lwBj3PhgnEOKUSmm2Mu6bJZW0KJZlrjVGQbm/L5HxT/M90=
+sidebar_class_name: "post api-method"
+info_path: docs/generated/api/qat
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get Dataset Programs"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/api/dataset/versions"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Retrieve a list of dataset programs for a specific program, version type, start date and stop date
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={undefined}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"content":{"application/json":{"schema":{"type":"object","title":"DatasetVersionListInput_ReportView"}}},"description":"The input for the dataset version list","required":true}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"content":{"text/json":{"schema":{"type":"array","items":{"type":"object","properties":{"createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser_ReportView"},"createdDate":{"type":"string","format":"date-time"},"daysInMonth":{"type":"integer","format":"int32"},"forecastStartDate":{"type":"string","format":"date-time"},"forecastStopDate":{"type":"string","format":"date-time"},"forecastThresholdHighPerc":{"type":"number","format":"double"},"forecastThresholdLowPerc":{"type":"number","format":"double"},"freightPerc":{"type":"number","format":"double"},"healthAreaList":{"type":"array","items":{"type":"object","properties":{"code":{"type":"string"},"id":{"type":"integer","format":"int32"},"idString":{"type":"string"},"label":{"type":"object","properties":{"baseModel":{"type":"object","properties":{"baseModel":"circular(BaseModel_ReportView)"},"title":"BaseModel_ReportView"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"}},"title":"Label_ReportView"}},"title":"SimpleCodeObject_ReportView"}},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser_ReportView"},"lastModifiedDate":{"type":"string","format":"date-time"},"notes":{"type":"string"},"organisation":{"type":"object","properties":{"code":{"type":"string"},"id":{"type":"integer","format":"int32"},"idString":{"type":"string"},"label":{"type":"object","properties":{"baseModel":{"type":"object","properties":{"baseModel":"circular(BaseModel_ReportView)"},"title":"BaseModel_ReportView"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"}},"title":"Label_ReportView"}},"title":"SimpleCodeObject_ReportView"},"program":{"type":"object","properties":{"code":{"type":"string"},"id":{"type":"integer","format":"int32"},"idString":{"type":"string"},"label":{"type":"object","properties":{"baseModel":{"type":"object","properties":{"baseModel":"circular(BaseModel_ReportView)"},"title":"BaseModel_ReportView"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"}},"title":"Label_ReportView"}},"title":"SimpleCodeObject_ReportView"},"programVersionId":{"type":"integer","format":"int32"},"realmCountry":{"type":"object","properties":{"code":{"type":"string"},"id":{"type":"integer","format":"int32"},"idString":{"type":"string"},"label":{"type":"object","properties":{"baseModel":{"type":"object","properties":{"baseModel":"circular(BaseModel_ReportView)"},"title":"BaseModel_ReportView"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"}},"title":"Label_ReportView"}},"title":"SimpleCodeObject_ReportView"},"versionId":{"type":"integer","format":"int32"},"versionStatus":{"type":"object","properties":{"id":{"type":"integer","format":"int32"},"idString":{"type":"string"},"label":{"type":"object","properties":{"baseModel":{"type":"object","properties":{"baseModel":"circular(BaseModel_ReportView)"},"title":"BaseModel_ReportView"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"}},"title":"Label_ReportView"}},"title":"SimpleObject_ReportView"},"versionType":{"type":"object","properties":{"id":{"type":"integer","format":"int32"},"idString":{"type":"string"},"label":{"type":"object","properties":{"baseModel":{"type":"object","properties":{"baseModel":"circular(BaseModel_ReportView)"},"title":"BaseModel_ReportView"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"}},"title":"Label_ReportView"}},"title":"SimpleObject_ReportView"}},"title":"ProgramVersion_ReportView"}}}},"description":"Returns the list of dataset versions for the specified program"},"403":{"content":{"text/json":{"schema":{"type":"object","properties":{"messageCode":{"type":"string"}},"title":"ResponseCode_ReportView"}}},"description":"The user does not have permission to access this dataset"},"406":{"content":{"text/json":{"schema":{"type":"object","properties":{"messageCode":{"type":"string"}},"title":"ResponseCode_ReportView"}}},"description":"The dataset with the given program ID already exists"},"500":{"content":{"text/json":{"schema":{"type":"object","properties":{"messageCode":{"type":"string"}},"title":"ResponseCode_ReportView"}}},"description":"Internal error that prevented the retrieval of the dataset"}}}
+>
+  
+</StatusCodes>
+
+
+      

@@ -1,0 +1,71 @@
+---
+id: get-procurement-agent-type-1
+title: "Get Procurement Agent Type by Id"
+description: "Retrieve a procurement agent type by its ID"
+sidebar_label: "Get Procurement Agent Type by Id"
+hide_title: true
+hide_table_of_contents: true
+api: eJztWFtv2zYU/ivEeWoB2s7SZsWEYYDTZIGL9Ja460NgFLR0bLGVSIU8cmYY+u/DoeRVbuQkLQy0CPwSRzz3C3nIbwUJ+tjpgrQ1EMEFktO4QKFE4WxcOszRkFBz/kvLAsV0KTR5MToBCbZAp1hylEAEc6R3X2WGLDJeFvjpN5BQKKdyJHQeoqvVN0bHKYrRibAzQSlus0tWuMY5kKBZrlCUggSjcuSvDtujBCQ4vC61wwQiciVK8HGKuYJoBawYItCGcI4OJMysyxXVS88OoaomLO4Lazx6ljg8OOCf2BpCQ0EH/kuDz54DWd1WbaefMSZOgONkka7VqJj0Alt8U2szVAYqCVPl8bVNMNuZGoi1i8tMuSfH68WnICF2qAiT4+X9hkqPjmv8gJTJwFzX5H92T06bOVSVBNKU8dKx8jr+4NGxSOPKiaIOqZaNRBH2SOfIQpny9NomeqZ/jSDa/nxPJJv6mqJVj6E+0x028X4v7PfCLxHaj++FB3sVuD+h6fBqTZy5O4jFXURfbCE+ug46DwfQI4pNdl5yXtqky3g384PDcqiy/P5UxduM64ca0sllLbS1ZfczZD9D9jNkP0N+6gy53/SlzossnMZv63DbxK6XMVTMcesBXjrjt76/2ZXnB8938QjN0Xs13zY+Wr5fNC/gwNnh87vuF7uxJGa2NAn7fLSbh/POfB4Z4nbKBDpnnbhJdYZijkTazO9IPltQcwYx2tO1F1h6zNJz6KnHYTqbZehgIiFHSm2DkAQshFKIYKAKPega0YNV9+CuQIJHt1iDKKXjWZQSFT4asLb+dakM6ZmOAyijjMqWpGPft447fTMBZ2gYvMFE1DoFq2O8w2NcOk3LYGOKyqEbluzx1aRNvuSK1UVpM62//l5vq1cfx7dsn3LyA9jz6uNYkP2CRmgTFurtGInjoEX8GYh/QYPahJkcKCDXxecEhMJoM7PswKat9xs5EcN1UsTY2gwkZDpG40M3NUDSsFBxiuK8Joh/0HmWPOwfgPwm6Tc3N30V2DnHg0aXH5yPXp6+uTztsUyrKd8POReLWiFEcNj/48XV0dHvLybhumY95cq0PDlDEu3NFZpBjBsYLoBbG8G29td3InlNLsOeLDKlw5UnxLpq+vUKVKGh+1IJEqItl82JhNR6YvnViu9QH1xWVbx8XaLjJptIWCin1ZRTxNig9vx/AtFMZR7vCPHJRYPsPRU/ACF2htwsKrPkQqms5C+Q8AWX2yHGalJJSFEl6EIENfMwjrGglpqvB17VPhTOTsdQVf8BiMJqsQ==
+sidebar_class_name: "get api-method"
+info_path: docs/generated/api/qat
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get Procurement Agent Type by Id"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/api/procurementAgentType/{procurementAgentTypeId}"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Retrieve a procurement agent type by its ID
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"description":"The ID of the procurement agent type to retrieve","in":"path","name":"procurementAgentTypeId","required":true,"schema":{"type":"integer","format":"int32"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"content":{"text/json":{"schema":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":"circular(BaseModel)","createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"}},"title":"BaseModel"},"createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"label":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":"circular(BaseModel)","createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"}},"title":"BaseModel"},"createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"labelId":{"type":"integer","format":"int32"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"}},"title":"Label"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"},"procurementAgentTypeCode":{"type":"string"},"procurementAgentTypeId":{"type":"integer","format":"int32"},"realm":{"type":"object","properties":{"code":{"type":"string"},"id":{"type":"integer","format":"int32"},"idString":{"type":"string"},"label":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":"circular(BaseModel)","createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"}},"title":"BaseModel"},"createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"labelId":{"type":"integer","format":"int32"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"}},"title":"Label"},"name":{"type":"string"}},"title":"SimpleCodeObject"}},"title":"ProcurementAgentType"}}},"description":"Returns a procurement agent type"},"404":{"content":{"text/json":{"schema":{"type":"object","properties":{"messageCode":{"type":"string"}},"title":"ResponseCode"}}},"description":"Procurement agent type not found"},"500":{"content":{"text/json":{"schema":{"type":"object","properties":{"messageCode":{"type":"string"}},"title":"ResponseCode"}}},"description":"Internal error while getting a procurement agent type"}}}
+>
+  
+</StatusCodes>
+
+
+      

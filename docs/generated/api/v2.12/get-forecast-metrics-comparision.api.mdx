@@ -1,0 +1,71 @@
+---
+id: get-forecast-metrics-comparision
+title: "get the ForecastMetricsComparisionOutput list"
+description: "API used to get the ForecastMetricsComparisionOutput list."
+sidebar_label: "get the ForecastMetricsComparisionOutput list"
+hide_title: true
+hide_table_of_contents: true
+api: eJytVUtv4zYQ/ivCXHqRH3EbbKtT3bTF+rCIE3t7qGEEY2kscUuRzHBkr2HovxeknI2cx3bTVhdJw3nz+2aOIFh6yFbA5CwLrFMoyOesnChrIIPpfJY0nopEbFKSJFJR8rtlytHLBxJWub+ytUNWXllz3YhrJNHKyxBSsI4Yg6NZARmUJK9bQgpM9w15+cUWB8iOkFsjZCR8onNa5dHT6JMPeR3B5xXVGL7k4AgysJtPlAuk4DjEFUU+nDKhrkP8L4rKCJXEkMLWco3Sib6fQJt22le2McKHWeF7VsiMB0hBCdV9uRdWpoS2jYFLxvrtdhqNUab8aJS82VgYc+IrFCrtv8jZC7L8ikLPj3v9KVBoIKomiGXSTtnGf7BGKv+NjW08TZ1ju6Ni0TinD3ON5troQ89+Y60mNF1ZSnSQvY6YmXGN3N1G3P6haA9t23YgUkwFZMINRYF31vgODJPxOLzOIX5L0rDx3w5tSPvgFPosD6iMKVy+FGRmhNigTojZciIVShIaSUYCuSpKmIRJ7VAndvs/5NGmUJNUNjDP2ajsUCrIYIROjTq+j7ZfI6Qn3hGH8XCEhjVkUIk4n42Ch+F9g0bU9sRLNKgPonI/tBygc179nG3R5OEn6ZwmW8vJzXQJKeyQFW50vKC2XacQarh9nAW/fcbaaTrj8vgFpq4ecLs+Z+KZ/CnT+ocvMKl/3GMKTMaTHwbjd4PJT8uLy+zyIpv8OBy/u/gTnrNj/FXsn0CqzNbGOzyh/uastwmaIpk+NDhZWqtD34h9193J8GIyHD9r+nQ++86HuY15Tr7D9810mSziDZzAg3kEj8E6sm26mCdCWEP65Mb3+/0/3DjVqILF+8XiLvi5e3/zc1n5fOB8HVXaFLTKyXjqRZw6zCtKuvzPQ26tHW6QuxFpvdRoeoZvWkZPe9PbLv9tw50mV+Se06hMnHWhjOOJbitAp+J2iws2zsbXKLdOoQpUzVZwPG7Q00fWbRvE9w3xAbLV+pEv4a9NoSIsiCNH/6IDZHDVVTZYhtSCum7iLni6Q9v0wWKa5+Skp/s4SgIfv4yR+fUiEHZzWtC1LYIy4z6Uh3vIIO78EKJbvUF2BI2mbLAMup3P8PwNJWn4/A==
+sidebar_class_name: "post api-method"
+info_path: docs/generated/api/v2.12/quantification-and-analytics-tool
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"get the ForecastMetricsComparisionOutput list"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/api/report/forecastMetricsComparision"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+API used to get the ForecastMetricsComparisionOutput list.
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={undefined}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"content":{"application/json":{"schema":{"type":"object","properties":{"realmId":{"type":"integer","format":"int32"},"realmCountryIds":{"type":"array","items":{"type":"string"}},"programIds":{"type":"array","items":{"type":"string"}},"planningUnitIds":{"type":"array","items":{"type":"string"}},"tracerCategoryIds":{"type":"array","items":{"type":"string"}},"startDate":{"type":"string","format":"date-time"},"previousMonths":{"type":"integer","format":"int32"},"useApprovedSupplyPlanOnly":{"type":"boolean"}},"title":"ForecastMetricsComparisionInput_ReportView"}}},"required":true}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Returns the ForecastMetricsComparisionOutput list","content":{"text/json":{}}},"500":{"description":"Internal error that prevented the retreival of ForecastMetricsComparisionOutput list","content":{"text/json":{}}}}}
+>
+  
+</StatusCodes>
+
+
+      

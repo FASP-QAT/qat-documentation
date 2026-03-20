@@ -1,0 +1,71 @@
+---
+id: get-health-area-display-name
+title: "Get Health Area by Display Name"
+description: "Retrieve the health area based on the given display name and realm, identified by its ID."
+sidebar_label: "Get Health Area by Display Name"
+hide_title: true
+hide_table_of_contents: true
+api: eJy1Vdtu00AQ/ZXRPIG0xFVRQVgIKdBSghASEOChysPGntgL9q67O06JLP87mrVDnRKBqMSLL3s5e+bMmdkOcwqZNw0bZzHFj8Te0JaAS4KSdMUlaE8a1jpQDs7GicJsyUJuQlPpHVhdE2ibgydd1QpMTpbNxlAO6x0YDrA4n6FC15DXcs4ixxQL4jcRf+5Jnw9Q73VNqLDRXtfE5AOmV90dhsuSYHEObhOZxCOBHfg98QnpABvnUaGRfY3mEhUKWUwx7lvkqNDTdWs85Ziyb0lhyEqqNaYd8q6RpcYyFSQ4G+drzcPQ41Pse3WM3IEsI82pkhOyx7nZQYW/EgvsjS2w71eyODTOBgoyf3pyIq/MWSbLcQf94ORbEI7dH4B69bsdWm9DjOE2WyLrX32AvcKzfyTi1t8oY3GAF7OwGeKpKQRd0CuX0zHWCtlwRZHuoEJceSSchWXyVldA3jsPN6WpCApiNraY5mgA1YX4D4e4QQLHlcKauHSjgaNXucQUE92YpPylUFIQTzydjHZLuvGjT0SspJNnjwoD+e3e7q2vMMWSuQlpIriz61bHgspi9Wirqx2bLMycL/BuiJdkpcoohwETBE4cEihrveFdPGNN2pOft8L9ajWd/iQ5GWSfLtr/vd6XwNuvy9/OvhB5ozHefl0Cu+9kwQwdYyidFF5GFHgeJ1/g6GrJ3YCPap9eESDmwdiNEwKHZ3040ATme1Fg6VyFCiuTkQ3RL2NZzRudlQTvhgn4Qj7IztPZCao7ot/c3Mx0XC4aJyNWSN4tXl28/3TxSPZMbPdhLlpsB0BM8XT27OnV2dmTpytZ1bjAtbYTJpfEMHGVdMnRLDB2wINYJwX0X/vzKHws0abSxgr7KEw32vwKdWNQ4a3RUeGh1WPj2vfW9PZzbGppfK8Uli6wAHadMP/sq76X4euWvFh0pXCrvdFrEVjuABPkO8d0o6tAf1Dowcexbz6Ee1wVRzUYB7XdSZp11cofKvxOu8lVEm+D+9L8t0vjHiyj7v2qj8nLyUdVh6l5llHDk023TbqfNrzLiyX2/U+qu8/5
+sidebar_class_name: "get api-method"
+info_path: docs/generated/api/qat
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get Health Area by Display Name"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/api/healthArea/getDisplayName/realmId/{realmId}/name/{name}"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Retrieve the health area based on the given display name and realm, identified by its ID.
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"description":"The ID of the realm to retrieve health areas for","in":"path","name":"realmId","required":true,"schema":{"type":"integer","format":"int32"}},{"description":"The display name of the health area to retrieve","in":"path","name":"name","required":true,"schema":{"type":"string"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"content":{"text/json":{"schema":{"type":"string"}}},"description":"Returns the HealthArea for the given display name and realm"},"500":{"content":{"text/json":{"schema":{"type":"object","properties":{"messageCode":{"type":"string"}},"title":"ResponseCode"}}},"description":"Internal error while getting health area"}}}
+>
+  
+</StatusCodes>
+
+
+      

@@ -1,0 +1,71 @@
+---
+id: quantimed-import
+title: "Quantimed Import"
+description: "Import forecast data from Quantimed for a given program."
+sidebar_label: "Quantimed Import"
+hide_title: true
+hide_table_of_contents: true
+api: eJztV99v2zYQ/leIe9oAJg4yZMWEYYCbpIWLrs0Pd30w/EBLZ5upRKrHk1PD0P9eHCXHciIn2LqnYW8y7/jx7vgd7/MGMgwp2ZKtd5DAqCg9sZp7wtQEVplho+bkC3VdGce2wEyMyqiFXaFTJfkFmeIYNPgSyQjMKIMEvm7dG0TQUBoyBTJSgGSyeXTueIlqdKH8XPESt6iKvbK9AXkCDVY2loaXoMGZAuVXs3GUgQbCr5UlzCBhqlBDSJdYGEg2wOtSnAOTdQuo62njjIFf+2wtHql3jI7ls6hytqUhHsw9FUdyviwfQtMgboYhgZl1htZQ17XuyXZuc9wl+CTeWhZC6V3AIKecnpw8CozxGw/uggD2hONnd5jGspNcDNsGJpvlF4bNyDHSyuQ91dCQcSE+l98kMImn3+fSHTTdsiHuNUrW47jYYyzJZ1XKoWM0RGYtd81YhJfTs875lWFPHyIfes7I/T0G/uQs/4kmVPSSV0N7Xve6NdzILVLHbB3jAqnLBOv4l9NOhm/JV+VzJRj1l7a1Hkyupf9VbpyzbiHxH0Bq2nNu09ixb0zKnnodg68o7T+tCkgXOLeulyO1Bracy9L1/ltw1WRxMf4YvXY923cIYeop+wFKZFxcIVnfD2/dYpjdVYELdHvEe+4WrVucexeqou3nv3P1/3P4P8fh5zM+jHETqb1tgybIA2U5DNJsfzJhbpArciFO06c7VEu9WsPZvzNXCgzBLPDcZy+Ef9MOtejZE3icTM7kCok8qfuljMlmRlq32NcBDbBZiKDY1UW1imOqoUBeSuND6UMjQXgJCQxMaQcPAmXwSKoMNg8vUg0aAtJqq1kqyiGBJXMZkoGgHO9z0DiTr9mm4diTSIH91N6iE4WEmWowlcCJ+AiYVhT7c7KBGRpCGlYS6WTaNd/KXTTl7jptf73Zduq7z+MnZ19KWSMb3n0eK/Zf0Cnr4kLT4Yl6HVHU79H4B7SCSe6swQe9vVYpQKy9dXMf39i9s673aqKG26Kosfc5aMhtii5EnrSybViadInqfWNQfyEF2Xl6fAL6UdHv7++PTXSXGg9arDB4Pzq//HB7eSR7ut0ylFqsGkBI4PT4t1eTs7NfX01j3/rAhXGdSJ6w6FEhO53yI1q5LWRstTI31sW3iKIea0g6AVNa0Dsd3f1+iC3ZDc+phqWwPJnAZjMzAT9RXtey/LVCEm5NNawMWTOTyogCt0G+M0jmJg/4TKY/3bTa9Gf1T4R6b7bbae5klq9MXskv0PAF13tCvp7WGpZoMhlQk01rP29iO4pacre/T6zXertpmKZYcsd999TV3dfi6uOtsGbW/hko4qMWJ2EE1LtP6dC6/g5zNqRn
+sidebar_class_name: "post api-method"
+info_path: docs/generated/api/qat
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Quantimed Import"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/api/quantimed/quantimedImport/{programId}"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Import forecast data from Quantimed for a given program.
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"description":"The ID of the program to import forecast data for","in":"path","name":"programId","required":true,"schema":{"type":"string"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"content":{"multipart/form-data":{"schema":{"type":"string","format":"binary"}}},"description":"The file to import","required":true}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"content":{"text/json":{"schema":{"type":"object","properties":{"dblDataInterval":{"type":"string"},"dtmDataExported":{"type":"string"},"dtmEnd":{"type":"string"},"dtmStart":{"type":"string"},"fileType":{"type":"string"},"products":{"type":"array","items":{"type":"object","properties":{"innovatorName":{"type":"string"},"lowestUnitMeasure":{"type":"string"},"lowestUnitQuantity":{"type":"string"},"multiplier":{"type":"integer","format":"int32"},"productGroup":{"type":"string"},"productId":{"type":"string"},"productName":{"type":"string"},"programPlanningUnitId":{"type":"string"},"quantificationFactor":{"type":"string"},"source":{"type":"string"},"userDefined":{"type":"string"}},"title":"QuantimedImportProductDTO"}},"programId":{"type":"string"},"records":{"type":"array","items":{"type":"object","properties":{"dtmPeriod":{"type":"string"},"ingAdjustments":{"type":"integer","format":"int32"},"ingConsumption":{"type":"integer","format":"int32"},"product":{"type":"object","properties":{"innovatorName":{"type":"string"},"lowestUnitMeasure":{"type":"string"},"lowestUnitQuantity":{"type":"string"},"multiplier":{"type":"integer","format":"int32"},"productGroup":{"type":"string"},"productId":{"type":"string"},"productName":{"type":"string"},"programPlanningUnitId":{"type":"string"},"quantificationFactor":{"type":"string"},"source":{"type":"string"},"userDefined":{"type":"string"}},"title":"QuantimedImportProductDTO"},"productId":{"type":"string"}},"title":"QuantimedImportRecordDTO"}},"sourceName":{"type":"string"}},"title":"QuantimedImportDTO"}}},"description":"Returns the QuantimedImportDTO object"},"500":{"content":{"text/json":{"schema":{"type":"object","properties":{"messageCode":{"type":"string"}},"title":"ResponseCode"}}},"description":"Internal error while importing forecast data"}}}
+>
+  
+</StatusCodes>
+
+
+      

@@ -1,0 +1,71 @@
+---
+id: get-integration-1
+title: "Get Integration"
+description: "Retrieve an integration by its ID."
+sidebar_label: "Get Integration"
+hide_title: true
+hide_table_of_contents: true
+api: eJzdV11P20oQ/SureWolN+HScqtrVZVCA9xUFFQI7QOK0MSe4G2dXbM7Do0i//erWTvF5jO34qHqE2Tn85wd755dQUo+cbpgbQ3EcELsNC1IoVHaMF06FIuaLpVmr0bDHkRgC6qXRynEcEk8uvG8+AsiKNDhnJich/h8datEy3mUKs6Q1dKW6hoNK7aKM1ItFzWzDiLQElkgZxCBwTlBDLqdByJwdFVqRynE7EqKwCcZzRHiFfCy+BlAkm1m3Ry5Xnq9DVU1kXBfWOPJS8T21pb8SaxhMhxy0A/uf/OCYHU3tZ1+o4QFuRNyWNdpZjqno9DtT0/PTptLqKSJPCV3aBOsibnHpQtxEySdmAdLt3y+aLp+GsitgCH5ZJPEv9K0xD3QeBUBa86pO0QBQSUbiPl8Aygb95Se1nXvA5rjlPKni2HCetGGMrU2JzSSYoqePtn0GdNAol1S5uhe7K4XX0IEiSNkSneXTxcqPbmNN02czZM7tYteJ2eenIQ0rQyR74lq1UiR6RXrOdVce/5kUz3TvweIdj//B0k3X7Np1Z+wP1PKN+4qeF/Q/QdebZy5R4zFY0ZfPGD84yboMBxA1fo2fKz0qZ4XOR3XUB84RKESwx0tUDrjb9/IUvTN1uvnuB/n5D1e0gebPgHhpLmcg+cjraL6l7k4ZeTS9/aPT3ZHw+HekdKzAELoV6klr4xllaHInCQh72tIb35/SEfH44v947Oj4RpSV0z5gpIwVDco6Yf2LPh2nkfSPBs+6dwZzBU5Z12tAwtHCzJMacDmiB3pBebKzroDKGXwUsRlZ4YnEcyJM9uo0iBEOYMY+ljofktj9FcdZVVBBJ7cYq1XSyeXacZc+Lgvsb2rEg3rma61GhrMl6wT37NOPtUusAMyIo8pVXVOJelEYXpKSqd5GWpMCR25QSn9nU/a5lPZiZrsttP61/76XPj4dXyn9p6QGsj7+HWs2H4nkfFhoT5PYrUbsqh3wfgeGp0cREWwQLTeVCEgcK3NzEoD3VqfO5yowZoUNbY2hwhynZDxYUoaxT4oMMlIHdYG9YWcl8jt3hZEt0i/vr7uYXAXjvtNLt8/HH3YOzrdeyUxrWH7PBAuFnVCiGG798/b852dv99OxKuwnudoWp0cEHcm6haPrc9ksxdRw1j4ooocdTgkA6JVM4PngIWGjtKFCOKuwp9EkFnP4r1aibA7c3lVyfJVSU4GZxLBAp3GqcCWp5X28n8K8QxzT4/geHHSvI9eql96gd0LsVlEsxT6MS/lF0TwnZZ3XmjVpIogI0zJhdZrn0GSUMGt6JtTqWp/zwd7Y6iq/wCUaBJl
+sidebar_class_name: "get api-method"
+info_path: docs/generated/api/qat
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get Integration"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/api/integration/{integrationId}"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Retrieve an integration by its ID.
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"description":"IntegrationId that you want to the Integration for","in":"path","name":"integrationId","required":true,"schema":{"type":"integer","format":"int32"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"content":{"text/json":{"schema":{"type":"object","properties":{"fileName":{"type":"string"},"folderLocation":{"type":"string"},"integrationId":{"type":"integer","format":"int32"},"integrationName":{"type":"string"},"integrationView":{"type":"object","properties":{"integrationViewDesc":{"type":"string"},"integrationViewId":{"type":"integer","format":"int32"},"integrationViewName":{"type":"string"}},"title":"IntegrationView"},"realm":{"type":"object","properties":{"id":{"type":"integer","format":"int32"},"idString":{"type":"string"},"label":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":"circular(BaseModel)","createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"}},"title":"BaseModel"},"createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"labelId":{"type":"integer","format":"int32"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"}},"title":"Label"},"name":{"type":"string"}},"title":"SimpleObject"}},"title":"Integration"}}},"description":"Returns the Integration"},"403":{"content":{"text/json":{"schema":{"type":"object","properties":{"messageCode":{"type":"string"}},"title":"ResponseCode"}}},"description":"Returns a HttpStatus.FORBIDDEN if the User does not have access"},"404":{"content":{"text/json":{"schema":{"type":"object","properties":{"messageCode":{"type":"string"}},"title":"ResponseCode"}}},"description":"Returns a HttpStatus.NOT_FOUND if the IntegrationId specified does not exist"},"500":{"content":{"text/json":{"schema":{"type":"object","properties":{"messageCode":{"type":"string"}},"title":"ResponseCode"}}},"description":"Internal error that prevented the retreival of Integration"}}}
+>
+  
+</StatusCodes>
+
+
+      

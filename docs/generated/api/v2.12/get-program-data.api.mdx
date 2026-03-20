@@ -1,0 +1,71 @@
+---
+id: get-program-data
+title: "Get ProgramData for a ProgramId and VersionId"
+description: "API used to get ProgramData for ProgramId and VersionId"
+sidebar_label: "Get ProgramData for a ProgramId and VersionId"
+hide_title: true
+hide_table_of_contents: true
+api: eJy9Vctu2zAQ/BViL20B1U6d9KJTXeTlS2LHTi+BEWyklcVWIhly5cQQ9O8F6Zecd1KgJ5MUd2d2PTusgXHmIL4CY/XMYnmIjDCNICWXWGlYagUx9IcDUTlKBWsxIxbD7WWRabveD1KBKhW/yDqp1SCFCLQhi7zcxTAjboVCBAYtlsRkPYcaFJYE8ZpLSCA9vkHO4SGpzS3BObJY6ErcoWLPkXN6yBEisHRbSUspxGwrisAlOZUIcQ28MB5XKqYZ+auZtiXy8mi/B00TbcjNW9U9T25z63+Qm/pwZ7Ry5HxEb2/P/+wyuiCurHIP4SGCRCsmxQGL7rn72/mAummaCA729p9PheKU2YwZuXKd4/OLn4PDw6MzIbMAcunIilSTE0qzyHFOApOEnHsV8uCNkGfnk+vj88uzwzVku63OUCIzSemWA91Lx6+gf3+qdwPFZBUWgqzVdvmXGktzUuyHIidhiS3JORZCZ29ubxNBSZzr1WiEeeAcYuiikd3WRHY3Wu/Wm2XT3YisW2+WDUTgyM7XI1XZAmLImY2Luz5v57ZCxTKTSZhLVFgsWCauo+3skYyHVqdV4jdimTSM+6g/gQjmaCXeFEFyQYNSZTpUKbnwih3tAAVr6K/RxETrwidZ8oYYep1vvc7eIwb94eCT82Oz1E5o9qg/EeNAZ9VeTEJ7VxN63B8PBROWED0o/+7u7pXyqUTpI07H42uf5/p09GOWu+SrcWW40kRQyISUoxZi32CSk1jy34XMtO7coPUWAkY7LlG1Ak+eMFN8wU53elNvpfUPDr2ylyBNU6BUvsRQQ72S4xWgkV6cu9bdMum4vWkbZLzdTCPItWOfrq5v0NGlLZrGH99WZBcQX023mgrSTaXz6xTiDAtHL1T/+WLlnl/Eu1+FJ+tfHaJaBKEXld9BBH9osfM++XfhQzTf/T58gOa29820iSAnTMmGzi6/95OEDLcit/bkx3ljTSdHE2iav6Dn0UA=
+sidebar_class_name: "get api-method"
+info_path: docs/generated/api/v2.12/quantification-and-analytics-tool
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get ProgramData for a ProgramId and VersionId"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/api/programData/programId/{programId}/versionId/{versionId}"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+API used to get ProgramData for ProgramId and VersionId
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"programId","in":"path","description":"programId that you want to the ProgramData for","required":true,"schema":{"type":"integer","format":"int32"}},{"name":"versionId","in":"path","description":"versionId that you want to the ProgramData for","required":true,"schema":{"type":"integer","format":"int32"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Returns the ProgramData","content":{"text/json":{}}},"403":{"description":"Returns a HttpStatus.FORBIDDEN if the User does not have access","content":{"text/json":{}}},"404":{"description":"Returns a HttpStatus.NOT_FOUND if the ProgramData specified does not exist","content":{"text/json":{}}},"500":{"description":"Internal error that prevented the retreival of ProgramData","content":{"text/json":{}}}}}
+>
+  
+</StatusCodes>
+
+
+      

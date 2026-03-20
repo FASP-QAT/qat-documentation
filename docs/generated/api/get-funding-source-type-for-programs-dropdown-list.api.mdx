@@ -1,0 +1,71 @@
+---
+id: get-funding-source-type-for-programs-dropdown-list
+title: "Get Funding Source Types by Programs"
+description: "Retrieve a list of funding source types filtered on a list of program IDs"
+sidebar_label: "Get Funding Source Types by Programs"
+hide_title: true
+hide_table_of_contents: true
+api: eJytVu9vGjkQ/Ves+XSVthClSqtbnU4ivyqqtE0D135AKBp2h8XtYjtjLxSh/d9P412aDaFpozs+gf38PPPmzZgt5OQz1i5oayCFGwqsaUUKVal9UHau5pXJtSmUtxVnpMLGkVdzXQZiypU1HahjWzAu1fDcQwLWEaPwDnNIoaBw2TCNItF44+jS8nVzxJ+zdbldmyvtAyTAdFeRD6c230C6hcyaQCbIV3Su1Fnk7X/1EvQWfLagJco3iQ5SQGbcQAI60NJ31rUJVBBDAnPLSwzN0qtjqOu6Tva0GC/oUGZqblmFBR0SJuLb8DVTDmngimpZ8M4aTzGY46OjvaQCfQ/Pz8bOvlIm1zkWrYNu6DObUwflA2tTQJ2Azn9LCgGOmkOHWEqcUfnrKGbo6b3NnwmFTHNWlch/nO4Wb8Ua53ZtPmtav5AIgg6l0B2G/Ihx+LvpRvQtmZ+nezvnJzbdU5veHdjsJHEVUQ8T6GyP9NKVdGZz+hjF20c+tu0NhYqNjxb9jz1cJ3DyTK/+pMRL8h6LmMfTcty0jSLIR7nupzo0gdhgqYg5NiUG5ZhWZALlUQBu5hmWktqvFGkCwcJDOoHdQPIwTWBJYWFlijkb+9thWEAKfXS6n7fA/nx/vPVbLWUYeuIVsTBvoWJx+iIE59O+cPTuKjRBz9u5hgbLTdCZ71kuYD/pt2RkrlKuGk4ldPVUrsgq1mET75gRMvGgkjgn0+72SErWNl4HtPt1uWuPd1/Gj+6+EMGjju++jFWw38gobZppGM+l6jSyqL/i5t+SebwP0pYfkl31RYAouZjp5n7gX3xH8Tykk6NpAtrMrUT3MJBPDwRTg51iamxtCQmUOiPjo9cMxtsHDrMFqatmQ30m9nLyuHcEyV5F1ut1DyNcCtBvuXz/anh28WF08VLOdCz7aSBCrRpCSOG49+ebycnJ6zdTQYljlmg6kbyloNqnUDVmUePYkLONur53zIOEOx34v77RbSliT7sStZGQoxrb1uQTQKclnNbmMkH3jd60exP4NIGFNEk6ge1WJvs/XNa1LN9VxGLOaQIrZI2zWONpncCCMCeOvv1GG0jhrEn2ZUu+wrKKD+H+218nuxODLCMXOtj7MVV3G/j640iqNWv/WCzjQALGtbzauIYU4j8XuSK2SFzbQommqLAQbMMpn38BY9k4gQ==
+sidebar_class_name: "post api-method"
+info_path: docs/generated/api/qat
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get Funding Source Types by Programs"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/api/dropdown/fundingSourceType/programs"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Retrieve a list of funding source types filtered on a list of program IDs
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={undefined}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"content":{"application/json":{"schema":{"type":"array","items":{"type":"integer","format":"int32"}}}},"description":"The list of program IDs for the funding source type list","required":true}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"content":{"text/json":{"schema":{"type":"array","items":{"type":"object","properties":{"code":{"type":"string"},"id":{"type":"integer","format":"int32"},"idString":{"type":"string"},"label":{"type":"object","properties":{"baseModel":{"type":"object","properties":{"baseModel":"circular(BaseModel_DropDownView)"},"title":"BaseModel_DropDownView"},"labelId":{"type":"integer","format":"int32"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"}},"title":"Label_DropDownView"}},"title":"SimpleCodeObject_DropDownView"}}}},"description":"Returns the list of funding source types filtered on a list of program IDs"},"500":{"content":{"text/json":{"schema":{"type":"object","properties":{"messageCode":{"type":"string"}},"title":"ResponseCode_DropDownView"}}},"description":"Internal error that prevented the retrieval of the list of funding source types"}}}
+>
+  
+</StatusCodes>
+
+
+      

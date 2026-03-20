@@ -1,0 +1,71 @@
+---
+id: get-procurement-unit-for-planning-unit-all
+title: "Get ProcurementUnit for a PlanningUnitId"
+description: "API used to get all the ProcurementUnits for a specific PlanningUnitId."
+sidebar_label: "Get ProcurementUnit for a PlanningUnitId"
+hide_title: true
+hide_table_of_contents: true
+api: eJytlVFv2jAQx7+KdS/bpAxY273kaZlaWl5aWuCpQtU1OYg3x3btCy2K8t0nG7qWwNpN2hPE5O7/v/PvjgYYlx7SW7DO5LWjijTPtGSYJ1CQz520LI2GFLLxSNSeCsFGLIkFKiW4JDHeDfRiYZxA4S3lciFzMVaotdTL8OOo6EECxpLDkHVUQApL4k6KoXGvgzKlIAGLDiticsFtAxorghTsTnJIQAarFrmErv9dH4JLZLE2tXhEzaGmA7WEUiABRw+1dFRAyq6mBHxeUoWQNsBrG1xIzbSk8OrCuAp5c3R8BG07D+HeGu3Jh4ijwSB87Fq7Ia6d9ofbqaRnSCA3mklzVKUn7v/wIbRp2zaBk8Hxn5OiuGC2E0aufW94dfN9dHp6dinkIsrNPDlRGPJCGxYlrkhgnpP370qe/KXk5dX0bng1uzx9luxcxBYUKl5s0NP7NX891MiRZnIalSDnjNvcsXW0Is0B3JKEI3YkV6iEWXR7/aZim0BFXJotspFILiGFPlrZ70xPf5fLfrP73PYxMu3JrZ6Brp2CFEpm69N+yNl7qFFzGKE4K6hRrVnmvmfcch9uZ4o6Dw9ikzRO4XU2hQRW6CTeq8hfBFLqhYkVSlYB3+sdIYG6ENmzmpgaE6wGnxupo96Xo95gz0E2Hn3wYY42+MRmX2dTMYl2tq3FPLZ2O7zDbDIWTFhB0in/8fHxnfKpQhkiLiaTu5Dn7uL627L0+Wfrq/hKm4CSOWlPrxQzi3lJYuN/V3JhTO8eHYSLtsZzhfpV4DnxoeUgsENzty3NC1H/cYFu104k1CqUOlQby2m2VN4CWhkY3SN8b2OmeycBznkCpfEcMjXNPXqaOdW24fihJreG9Hb+QlYEuJA+fC8gXaDy9EYjPt5sF+qn7i74h6V8sAfbQ9TryL2qwxMk8JPW+38W7bxNoCQsyMUCNi9leU6WX4W/7IEwO793wPnZFNr2F8hqiGY=
+sidebar_class_name: "get api-method"
+info_path: docs/generated/api/v2.12/quantification-and-analytics-tool
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get ProcurementUnit for a PlanningUnitId"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/api/procurementUnit/planningUnitId/{planningUnitId}/all"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+API used to get all the ProcurementUnits for a specific PlanningUnitId.
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"planningUnitId","in":"path","description":"PlanningUnitId that you want to the ProcurementUnit for","required":true,"schema":{"type":"integer","format":"int32"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Returns the ProcurementUnits list","content":{"text/json":{}}},"403":{"description":"Returns a HttpStatus.FORBIDDEN if the User does not have access","content":{"text/json":{}}},"404":{"description":"Returns a HttpStatus.NOT_FOUND if the PlanningUnitId specified does not exist","content":{"text/json":{}}},"500":{"description":"Internal error that prevented the retreival of ProcurementUnit","content":{"text/json":{}}}}}
+>
+  
+</StatusCodes>
+
+
+      

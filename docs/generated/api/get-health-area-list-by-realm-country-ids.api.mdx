@@ -1,0 +1,71 @@
+---
+id: get-health-area-list-by-realm-country-ids
+title: "Get Health Areas by Realm Countries"
+description: "Retrieve a list of health areas filtered on a list of realm country IDs"
+sidebar_label: "Get Health Areas by Realm Countries"
+hide_title: true
+hide_table_of_contents: true
+api: eJytVttu20YQ/ZXFPDUAIxku3KBEUUC+NFXgNo2lJA+CYIzIkbgJtUvPDq0IAv+9mCUV0/KldVE9SbuzZ8+ZOTOrHeQUMraVWO8ghSsStnRLBk1pgxi/NAVhKYVBJgxmaUshptx41wthwnJtMl874a0ZnwdIwFfEqKjjHFJYkfwecUZMeGmDnG6v9NBZe2ac6xGmm5qCnPp8C+kOMu+EnOhXrKrSZhFu+CUo0x2ErKA16jfZVgQpIDNuIQErtA699SBs3QqapmmSA7nTgp4VoYwsUw6pcE2NLoTKu0AR//jo6ICn0Dd5OUG/+EKZQAIVa9bEtvCZz+kRGQnYvLdsndCKGBJYel6jtEs/HreBk/bQYyglLqj8ZxYLDPSHz18YCpnlrC6RfzjdL16fs6/O/cZ9srR5pQzESqlwj4d85zj+t3Jj9DW5p+VeL/mZzeq5zVA9Zqk7EZcx6r6A3vbErquSznxO72PyDiMfevOKpGYXjPQ8+p96sUng5IVOfaLAawoBV1HF88m46tpEIx8oPRQ6dkLssDTE7NlIgWIqpltyQnmUz+1UwlIFPpWPlgCuAqQz0Dtzv3EB5gmsSQqvU6jyIYpCKSCFIVZ2mHeBw+L7eBryg8kUiG+JFXkHNau/C5EqpEPFGNzU6MQuuwGFDsut2CwMPK/gUOxbcjoXKTctplG4Zq5XZDVb2cY7FoRMPKqV52ze355oqbp26wXtf/22b4p3n6cP7r7QRMf8vfs8NeK/kjPWxYW2mVJzGlHML3HzV1Ue74O0w4dkX3VNQEy5mujqbnJffEN1uhahM8Y8AeuWXkne5/PhXt7MaJ84M/W+hARKm5EL0WoOI4lRhVlB5rLdMJ+Ig548HhxBclCYzWYzwBiudRh2WGF4OT67+HNy8VrP9Bz7YaT5um0BIYXjwc9vZicnP72Za5QaZ42ux+QtiWlfNDOK3bjYmviimdY42jEH+e/13//4znbliP1clWid8o2p2HVGnwFWVsl0VocE7sweH7n7dp8nUGijpDPY7XSmf+SyaXT5piZWg84TuEW2uIh1njcRMCeO3v1KW0jhrJX6eqr0NLys4xN4+JA3yf7EKMuokl7s3Yhq+k381/uJlmrR/UtYx2EEjBuVghtIIf770Ctim8S1HZToVjWuNLbF1M/fG2of/w==
+sidebar_class_name: "post api-method"
+info_path: docs/generated/api/qat
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get Health Areas by Realm Countries"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/api/dropdown/healthArea/realmCountryIds"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Retrieve a list of health areas filtered on a list of realm country IDs
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={undefined}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"content":{"application/json":{"schema":{"type":"array","items":{"type":"string"}}}},"description":"The list of realm country IDs","required":true}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"content":{"text/json":{"schema":{"type":"array","items":{"type":"object","properties":{"code":{"type":"string"},"id":{"type":"integer","format":"int32"},"idString":{"type":"string"},"label":{"type":"object","properties":{"baseModel":{"type":"object","properties":{"baseModel":"circular(BaseModel_DropDownView)"},"title":"BaseModel_DropDownView"},"labelId":{"type":"integer","format":"int32"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"}},"title":"Label_DropDownView"}},"title":"SimpleCodeObject_DropDownView"}}}},"description":"Returns the list of health areas filtered on a list of realm country IDs"},"500":{"content":{"text/json":{"schema":{"type":"object","properties":{"messageCode":{"type":"string"}},"title":"ResponseCode_DropDownView"}}},"description":"Internal error that prevented the retrieval of the list of health areas"}}}
+>
+  
+</StatusCodes>
+
+
+      

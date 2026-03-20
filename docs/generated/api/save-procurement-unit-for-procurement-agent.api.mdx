@@ -1,0 +1,71 @@
+---
+id: save-procurement-unit-for-procurement-agent
+title: "Save Procurement Unit for Procurement Agent"
+description: "Save a list of procurement units for a procurement agent"
+sidebar_label: "Save Procurement Unit for Procurement Agent"
+hide_title: true
+hide_table_of_contents: true
+api: eJztWW1v2zYQ/ivEfdoAJVbcZlmFYYCTpUOKdGtjZwUWGAMtnS02MsmSlF3D0H8fjpJjyVYSd+22tHA+OeS9k7x77rSEBG1shHZCSYigz2fIOMuEdUyNmTYqzg1OUTqWS+EsGyvDeGOdT1A6CEBpNJzEXCQQgeUzfLOmupbCvVSmttKr2Ax+yNG6U5UsIFpCrKSjjWgJXOtMxF5k570l85Zg4xSnnH65hUaIQI3eY0xytCEDnEDreWMnZlijGymVIZdQBCTXqBkmA9VPhdaYXCJPBmJaJ5f5dIQGAhgrM+UOIkhUPsqQ+Efc4muVYPZ5ZtTEQCxMnGfcfHe6WvweAogNcofJ6eJxRblFQ3G/oxPS4aTpgZDuWZc0E7HkDX+tM0JOoCgCcMJltHTKrYivLRpiqUz5hbsWrnqUuMMDR7EsAsi4da9VIsbiaThRt+dTPGnKqw6t+PrPZ+KEbNHx7Ryct7OZcB71Rezqh0j6pe72CI6+YH7Yp5l9mnkSrv3D8xlhtrNVnvovvC8x0ebYPLCpH9q0+pvOdzV5lz4BFQE8rrovpjrD30tXW3LmBozb2XHd5Nun3n3q/Qoezj717lPv/5Z67W1+ppI2pgBmKBPqoEW8W6NaU7PZdm9kdCiIuDkIGKTIhNS5Y+VBMGrMuZBCTra7/605AUvQcZHZqr8XBhOInMmxoAWrlbTlcXbDcKPrd/jRfXK7P0Vr+QTviV0tEleVck/Z4vYVutxIyzizeRyjtSz2lAE8D589KUvpwrJEoWVSOZbS3MaISeosc4rlmq5m66CmCOD4iQX9Qjp6pxlDY5Rh81RkWLpAt63VCZLOJxaim/rlZmWPNwxgii5VNIfSuTecuxQi6HAtOpvwprOJUwKwaGZoSPoSckPlO3VO26hDAg4/5Fw6Ma5GU1zybOFEbA+VoeTQdO1XlDQVw4SVMhmJK4akIs6NcAuvY4TcoOnlZOTNsL7dp7Mow10nWv33cvXoX70bbOk+p7AylyJ79W7AnLpFyYT0C2WyiNipl8J+8ps/k+deH8EYvwPB6lgpAD7sdEuu1jO784+cUlgdCtE7f3DKFm4grCZjo+au0n1YT+a1pNioitANu88PwpOD7ovB0XF0fBR1fzwMT47+hLY685jo7Upwv/xNqPDFzC5HNOvS8++60T4vEaX0NeiumzNqO8L96e5qdgXPwjr42givx1yba7pljRDWf3VT7tBNjX+HvjFs7Qr3F2x/wXa5YHfoeG1EAxSHNBqQY0W2NEvh20bJZr1VzWYDpTLyRcQora9ildae5nGK7LLcYH+gscTZPQwh2MAE8/n8kHtyggCdSpbtXF6cnf/WPz8gnhoaetsbeMO9QArB4YuTm+PjH06G/hEp66Zc1izxn+TqIIeejf8Ot418NiBADeN9zpe9CgJ4kKgzLvxww8dgWSGrG+BatJWP7fc+DCBV1hHPcknv+NpkRUHLH3I0hIeGAcy4EZy6GIJDAaTIEzQeKt3iAiI4K906GJBlRJ7lZOHWF8MiWHH04hi1q9GuIW9Rx4tvrul0RtXXyGl53QyfUyfD5xCB/9JJGjwo82tLyLic5HxCtKVI+vsb/ITz9g==
+sidebar_class_name: "put api-method"
+info_path: docs/generated/api/qat
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Save Procurement Unit for Procurement Agent"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"put"}
+  path={"/api/procurementAgent/procurementUnit"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Save a list of procurement units for a procurement agent
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={undefined}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"content":{"application/json":{"schema":{"type":"object","properties":{"active":{"type":"boolean"},"approvedToShippedLeadTime":{"type":"number","format":"double"},"baseModel":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":"circular(BaseModel)","createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"}},"title":"BaseModel"},"createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"gtin":{"type":"string"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"},"procurementAgent":{"type":"object","properties":{"id":{"type":"integer","format":"int32"},"idString":{"type":"string"},"label":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":"circular(BaseModel)","createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"}},"title":"BaseModel"},"createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"labelId":{"type":"integer","format":"int32"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"}},"title":"Label"},"name":{"type":"string"}},"title":"SimpleObject"},"procurementAgentProcurementUnitId":{"type":"integer","format":"int32"},"procurementUnit":{"type":"object","properties":{"id":{"type":"integer","format":"int32"},"idString":{"type":"string"},"label":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":"circular(BaseModel)","createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"}},"title":"BaseModel"},"createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"labelId":{"type":"integer","format":"int32"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"}},"title":"Label"},"name":{"type":"string"}},"title":"SimpleObject"},"skuCode":{"type":"string"},"vendorPrice":{"type":"number","format":"double"}},"title":"ProcurementAgentProcurementUnit"}}},"description":"The input object containing procurement agent procurement unit details","required":true}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"content":{"text/json":{"schema":{"type":"object","properties":{"messageCode":{"type":"string"}},"title":"ResponseCode"}}},"description":"Returns a success code"},"403":{"content":{"text/json":{"schema":{"type":"object","properties":{"messageCode":{"type":"string"}},"title":"ResponseCode"}}},"description":"User does not have rights to update a procurement agent"},"500":{"content":{"text/json":{"schema":{"type":"object","properties":{"messageCode":{"type":"string"}},"title":"ResponseCode"}}},"description":"Internal error while updating a procurement agent"}}}
+>
+  
+</StatusCodes>
+
+
+      

@@ -1,0 +1,71 @@
+---
+id: get-supply-plan-reviewer-list-for-program
+title: "Get supply plan reviewer list for specified program"
+description: "API used to get supply plan reviewer list for specified program"
+sidebar_label: "Get supply plan reviewer list for specified program"
+hide_title: true
+hide_table_of_contents: true
+api: eJytlEtv2zAMx7+KwMs2wEu6drv4tAx9BRi2tElPRVCwNh1rsyWVopMFhr/7IMVNmvUxoNvJ1oPkn9SPbEFw4SG9Bsd2wVjDPIGcfMbaibYGUhhNxqrxlCuxakGifONctVauQqOYlppWxKrSXlRhWXlHmS405ereYQLWEWPwNs4hhQXJNLqYVGguewdftZdTy5OtjUPGmoQ4iGvBYE2Q3osc55CADuIcSgl/Kt7eUlKiqLVt1AqNhAReFA8JMN01mimHVLihBHxWUo2QtiBrFxRoI7SgcLWwXKNsto4Ooevmwdw7azz5YHF4cBA++9ouSRo2XklJz4uBBDJrhIzEyPRLhj98MG+7rkvg48HR845RnYu4qaA0fnD6/fLL+Pj45JvSRQx55YlVbskrY0WVuCSFWUbe/yXkp6dyGRshNlgpYra8KbZjWpKRgEtJikmY9BIrZYtXptslUJOUtkcnoiElpDBEp4f9Uw/9I6KGWwqG7fa3gwQ88fIeq4YrSKEUcT4dBoeDuwaN6EJnEVg0WK1FZ35gefGIswnbvMnCQm2cxg64GM0ggSWyxtsqkhDR0KawMT0tVQDpYi+QQpOr0X00NbO2Ck6I/SbU4eDD4eDgkYLRZPzGB643jxhrfjGaqWmU09cVs1jXvoVOR9OJEopNtp/+arX6S/pUow4W59PpTfBzc37xeVH67L3zdbzSJVDpjIynBxFHDrOS1Eb/fsjC2sEtMoRXdtZLjeaB4dmrps1ehdodWf9hkPUzIBLqKtQmJBwzansqrwGdDoxubR6TuTuOcyzdLeYJlNZLcNO2t+jpiquuC9t3DfEa0uv5jqwIcK59+M8hLbDy9EL2by/70fZO/cN8fLIC/SaadQS/asIKEvhJ672Z3c27BErCnDiK35yPsoycPLDcDYDQN9vmPzuZQdf9BlzoVsg=
+sidebar_class_name: "get api-method"
+info_path: docs/generated/api/v2.12/quantification-and-analytics-tool
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get supply plan reviewer list for specified program"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/api/program/supplyPlanReviewer/programId/{programId}"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+API used to get supply plan reviewer list for specified program
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"programId","in":"path","description":"programId that you want to supply plan reviewer list for","required":true,"schema":{"type":"integer","format":"int32"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Returns the supply plan reviewer list","content":{"text/json":{}}},"403":{"description":"Returns a HttpStatus.FORBIDDEN if the User does not have access","content":{"text/json":{}}},"500":{"description":"Internal error that prevented the retreival of supply plan reviewer list","content":{"text/json":{}}}}}
+>
+  
+</StatusCodes>
+
+
+      

@@ -1,0 +1,71 @@
+---
+id: get-stock-status-vertical
+title: "get the StockStatusVerticalOutput list"
+description: "API used to get the StockStatusVerticalOutput list."
+sidebar_label: "get the StockStatusVerticalOutput list"
+hide_title: true
+hide_table_of_contents: true
+api: eJylVU1z4zYM/SscXHqRbcVtZlud6n7N+rRO7N1DPZkMLMESdymSIaF4PR799w5oZyMnnjZtfZEEP3wQeA88AGMdoVhDIO8Cw10GFcUyaM/aWShgtpirLlKl2KmaWHFDasmu/LJk5C5+osC6RPOhY9+xMjryGDJwngJKhHkFBdTEF1wgg0APHUX+xVV7KA5QOstkWV7Re6PLFGLyOUolB4hlQy3KG+89QQFu85lKhgx8kISsKcq/Prg6YCupv0G1ZaopQAZbF1rko+n7KfQZPFKIp1LfhI+MgX9DpgE+ctC2HsIrZBqxbuno4vy/8/AGrdW2/mg1v7kyNGYx8IsDt41zhtBC32fAmo3YLgxlbn3H97eJDJ807aAXB5mTDlRBwaGjZIje2Xjs9zTP5XHOm1viLtj4Br5ANhw801d+mnjKfX0p+twyBYtGUQguKG6QlQ/0SJaFqg2pQBxIP6JRbvt/CugzaIkbJzz2LoE9cgMFTNDryVE2k3iR3pGCcAuK9QG6YKCAhtnHYiKu44cOLevtieVo0exZl3HsgrDi/LyL4KqulA91DKq2Lqib2QoyeMSgcWPSLPr+LgMp/vZZWb9/xdYbeqGM/Iz3+RmrYZpPfxjl70bTn1ZX18X1VTH9cZy/u/oThkz+O9RL9uaXuHnikrZblxp/YuXNWV8U2krNnpqjVs5JZ0+lSxHjq+k4f9Ww2WL+XZSdhWVJ8UjDm9lKLVP3ThPHMk3cYit5/5gtF4oJW8heTGu32/3DtKhFLR7vl8t7iXP//ubnuonlyMc2QfoMjC7JRhpknHksG1LH+s9Tbp0bbzAkuQrtWrQDx7ct4pdNGSzY/7jWT7skScQb1FbOlQo/nFSxBvQ6bfZ0nSS+vFLGXQaNSKlYw+GwwUgfg+l7MT90FPZQrO+eaS1ffQYNYUUhSekL7aGAX49nGa2kJoGbTmp7dXH02ZPHrCzJ8wD7LHWRzTeZLz4sRVeb063UukrAAXdyLtxBAemGkxRp/yXbAQzausNasMeY8vsLGnSMEw==
+sidebar_class_name: "post api-method"
+info_path: docs/generated/api/v2.12/quantification-and-analytics-tool
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"get the StockStatusVerticalOutput list"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/api/report/stockStatusVertical"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+API used to get the StockStatusVerticalOutput list.
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={undefined}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"content":{"application/json":{"schema":{"type":"object","properties":{"programId":{"type":"integer","format":"int32"},"versionId":{"type":"integer","format":"int32"},"startDate":{"type":"string","format":"date-time"},"stopDate":{"type":"string","format":"date-time"},"planningUnitId":{"type":"integer","format":"int32"},"allPlanningUnits":{"type":"boolean"}},"title":"StockStatusVerticalInput_ReportView"}}},"required":true}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Returns the StockStatusVerticalOutput list","content":{"text/json":{}}},"500":{"description":"Internal error that prevented the retreival of StockStatusVerticalOutput list","content":{"text/json":{}}}}}
+>
+  
+</StatusCodes>
+
+
+      

@@ -1,0 +1,71 @@
+---
+id: get-funding-source-for-programs-dropdown-list
+title: "Get Funding Sources by Programs"
+description: "Retrieve a list of funding sources filtered on a list of program IDs"
+sidebar_label: "Get Funding Sources by Programs"
+hide_title: true
+hide_table_of_contents: true
+api: eJztVm1v2zYQ/ivEfdoA1Q4yZMWEYYDzVrjI1jT22g+GEZyls8xWJpkjZdcw9N+Ho+RFdtysKfZlwPxJJh8+vHvuhbeFnHzG2gVtDaRwR4E1rUihKrUPys7VvDK5NoXytuKMvJrrMhBTrqzpoBzbgnGphpceErCOGIVymEMKBYXrhmQUOa4t3zZwf8nW5XZtbrQPkADTQ0U+nNt8A+kWMmsCmSCf6Fyps8jZ/+TF1i34bEFLlK+wcQQpIDNuIAEdaOk769oEKoghgbnlJYZm6adTqOu6Tg4kGC/omFdqblmFBR3oEaGt5ZophzRwRbUseGeNp2jH6cnJgT+BvoSXO2JnnyiT6xyLxEE39JnNqYPygbUpoE5g3pV9HHe/m0vn36SoAEfNoWMsJc6o/GcrZujpd5u/EAqZ5qwqkX843y3eS4Zd2rX5oGn9o1gQdCiF7jjkbxuH3+puRN+T+bq793N+ZtM9t+ndkc2OEzcRte9AZ3ukl66kC5vTuyjeE1f/D+p/Nah7HfVodI/0tjsKFRsf+9j39/c6gbMXNrSvhHlJ3mMRE/R5Se7abirIJ24eejk0gdhgqYg5Nm0MyjGtyATKo+/cPHNYimvPiNHYgIWHdAK7t8rDNIElhYWVx83Z2P8dhgWk0Een+3kL7O+1334robyPnnhFLKxbqFiSfBGC82lfzvceKjRBz9vnDg2Wm6Az37NcwKGvb8jIU0u5ajiV0NVTuSKrWIdNvGNGyMSDSmycTLvbI4lUW3Md0O7f9a4y3n4cP7n7SnSO8r39OFbBfiajtGkeyXguVeeRRf0aN38Tz+N9kLb8kOyCLgJEuSWH7h7ngKsvKOkO6eRkmoA2cyvW7Rvyfk8wNdgppsbWlpBAqTMyPqaYwXj7wGG2IHXTbKgPxF5OnvZOIDmIyHq97mGESwD6LZfv3wwvrv4YXb2SM51MfT8QoVYNIaRw2vvl9eTs7OfXU0FJtizRdCx5Q0G1taxGbQnONur2MVn2fO3U3L81rLUBiAXsStRGDI0abNu0ngA6LZa0iQ0Hk0VT14290wQWUhLpBLZbaeN/clnXsvxQEUs6ThNYIWucxahO6wQWhDlxzNTPtIEULhofX8WRReBlFceiwyGwTnYnBllGLnSwj/2o7pbr7buRxGfWTpjL2HmAcS0zHK4hhTi+yhWxKOLaFko0RYWFYBtO+f0FnOro4w==
+sidebar_class_name: "post api-method"
+info_path: docs/generated/api/qat
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get Funding Sources by Programs"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/api/dropdown/fundingSource/programs"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Retrieve a list of funding sources filtered on a list of program IDs
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={undefined}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"content":{"application/json":{"schema":{"type":"array","items":{"type":"integer","format":"int32"}}}},"description":"The list of program IDs for the funding source list","required":true}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"content":{"text/json":{"schema":{"type":"array","items":{"type":"object","properties":{"code":{"type":"string"},"fundingSourceType":{"type":"object","properties":{"code":{"type":"string"},"id":{"type":"integer","format":"int32"},"idString":{"type":"string"},"label":{"type":"object","properties":{"baseModel":{"type":"object","properties":{"baseModel":"circular(BaseModel_DropDownView)"},"title":"BaseModel_DropDownView"},"labelId":{"type":"integer","format":"int32"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"}},"title":"Label_DropDownView"}},"title":"SimpleCodeObject_DropDownView"},"id":{"type":"integer","format":"int32"},"idString":{"type":"string"},"label":{"type":"object","properties":{"baseModel":{"type":"object","properties":{"baseModel":"circular(BaseModel_DropDownView)"},"title":"BaseModel_DropDownView"},"labelId":{"type":"integer","format":"int32"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"}},"title":"Label_DropDownView"}},"title":"SimpleFundingSourceObject_DropDownView"}}}},"description":"Returns the list of funding sources filtered on a list of program IDs"},"500":{"content":{"text/json":{"schema":{"type":"object","properties":{"messageCode":{"type":"string"}},"title":"ResponseCode_DropDownView"}}},"description":"Internal error that prevented the retrieval of the list of funding sources"}}}
+>
+  
+</StatusCodes>
+
+
+      

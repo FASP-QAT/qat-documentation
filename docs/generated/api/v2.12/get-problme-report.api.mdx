@@ -1,0 +1,71 @@
+---
+id: get-problme-report
+title: "Get active Problem Report list for a program and version"
+description: "API used to get the list of active problem report list for a programId and versionId"
+sidebar_label: "Get active Problem Report list for a program and version"
+hide_title: true
+hide_table_of_contents: true
+api: eJy9VU1v2zgQ/SvEXLYLcO006V50WhdpEl8Sx3ZOgRFMpJHFrUQy5MipIei/L0gpspPUTRugexI/NPPeDN/MNMC49pDcgnXmvqQKVhIy8qlTlpXRkMBkNhW1p0ywEWtiwQWJUnkWJheYstqQ6G2FI2scd7e5cQLDzdphNc0E6kxsyHll9DQDCcaSQ+52CayJZ8FJRfPoAyRYdFgRkwv0GtBYESQwOAQJKtCzyAW85LyD5QJZbE0tHlF33A+QBQmOHmrlKIOEXU0SfFpQhZA0wFsbwJVmWlP4NTeuQu6OTo6hbeXAcD/IwwyHv/43hqtg7q3RnnywOD46Cp/ntObEtdM+0ugfd/aaDUhIjWbSHKHpG4//9cG+adtWwqejk8OeUVww2wUj1350djX/PD09/XIpVB4xbzw5kRnyQhsWBW4CjZS8fxPy009CXl4t786ubi5PnyAPSFR4S6nKFWU7PvTt7eD//l5ap5rJaSwFOWdc9+TW0YY0h8IqSDhiR2qDZSirX015K6EiLkxfSbF4uIAExmjVuJfT07crsPEQ9rgZlu14CH/cDMsWJHhym6dKrF0JCRTM1ifjgDB6qFGzylUaCxo1lltWqR8Zt34l/JkzWZ2Gjeicxk5xPVmChA06hfdl1GcUrNK5ifEqLoO8r58BxQebPKGJpTFlcNLxhgSORx+PR0evGExm0z986GadsmL6rydLsYh0+kRjGhPd1/TZZDETTFiBfBH+4+PjG+FThSpYXCwWd8HP3cX1P+vCp39ZX8VfWgmlSkl72kOcWEwLEh3/55C5MaN7dKHpgDWeK9R7hufELyt3fqgt7yv+ZZqand5+1wjoe1YUsy1R6ZCKGGvTC/gW0Kog5344DavdlNibB8n+Zh8o2W1WEgrjObhumnv0dOPKtg3HDzW5LSS3q50Oo9wz5cM6gyTH0tMP0vRh3rfnP8X7BtB3E9Ifot7GCinrsAMJX2n7bB6GEfQuru8bRe/gunuFdtVKKAgzcjHH3f0kTcnynuWuzYVmMLS48y9LaNv/AFV2CVg=
+sidebar_class_name: "get api-method"
+info_path: docs/generated/api/v2.12/quantification-and-analytics-tool
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get active Problem Report list for a program and version"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/api/problem/problemReport/programId/{programId}/versionId/{versionId}"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+API used to get the list of active problem report list for a programId and versionId
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"programId","in":"path","description":"programId that you want the problem report list for","required":true,"schema":{"type":"integer","format":"int32"}},{"name":"versionId","in":"path","description":"versionId that you want the problem report list for","required":true,"schema":{"type":"integer","format":"int32"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Returns the active Problem report list","content":{"text/json":{}}},"403":{"description":"Returns a HttpStatus.FORBIDDEN if the User does not have access","content":{"text/json":{}}},"404":{"description":"Returns a HttpStatus.NOT_FOUND if the programId and versionId specified does not exist","content":{"text/json":{}}},"500":{"description":"Internal error that prevented the retreival of Problem report list","content":{"text/json":{}}}}}
+>
+  
+</StatusCodes>
+
+
+      

@@ -1,0 +1,71 @@
+---
+id: build-new-supply-plan
+title: "To rebuild supply plan based on rebuild true or false "
+description: "API is to rebuild supply plan based on rebuild true or false"
+sidebar_label: "To rebuild supply plan based on rebuild true or false "
+hide_title: true
+hide_table_of_contents: true
+api: eJy9VsFu4zYQ/RViLm0B1cp624tOVZukMVAkTuw9BUYwlkYWW4pkSMquIejfC1KKLGedZOGiPZmkhjNvhm/euAGHGwvJI9haa7GfC5SwiiAnmxmuHVcSEkjnM8Ytc4oZWtdc5KyzZlqgZGu0lDMlh4/O1MSUYQUKSwwiUJoMel+zHBIIRre0WxwiRqDRYEWOjAfTgMSKIAFt1MZgNcshAu6RaHQlvIY3WDFXomN7VbMdSvcW3kIZiMDQc80N5ZB4uBHYrKQKIWnA7bWPzaWjDXnTQpkKXXf0eQptGw0At2Rsl9d7AAer/x9g7/9deEfvVihzElQ0nHbP6u1yxaRyp8y/Bf9aKUEooW1X3tpqJS1ZbzC9uPA/xygfyNVGWuZKYrbOMrKWVWQtbgLZFrzSghec8gOvmODWQQSZko6kC7Hpbxf/ab3Hpm3bCH66+Px2LGQ3zumFQ1fbyfXdw6+zy8urW8aLgOKLJV8DsqEKJW6JYcD1UchP028MOX+4+u3u9nK2nN3dPl2nsz+uLn3wjIxDLlmmZM79/Td7c0BX0UeF+PlU0WfSkZEoGBmjTEdfbWhL0lEeimDIGeJbFEwVbz8CO82qdyG1EVTkSuU1YxPgB/YmEKPm8UGvYjnWknhQg7gZlm08tGDcDMs27iHFTb9oIQJLZvsiQ7URkEDpnLZJ7MNOnmuUjhc8C3qGEsXe8cxOlNl81Vdzo/I68xvWOQ1Nc58uIYItGo5rEfgeGoDLQoUicCd8d9wfBWIoc5a+RGNLpYR30mUCCUwnn6aTi68QpPPZd4EbHS/Dg92nS7YIcPrqYxaq3wvGdbqYM0dYQfQq/d1u90H6VCH3N24Wiyfv5+nm/pdNabMfta2CSRuB4BlJS6OIqcasJNbhPw5ZKDVZo/GKBlpZV6EcXVyeO4+OitQcKPivB12vbIHIWiCXPuOQUtOT9xFQc8+y8fCTr4fhaOwl48143CTjzUHmk5flKoJSWedDNo2H/sWItvXHzzWZPSSPqwMNA9tzbv06hyQk9E6dvn/oxf0HdtbwPVmn/hDlPvSHqP0OIviL9kd/Bfx0OwvqWWP4DKiHhzkb6n8zks/I5YVN7aqNoCTMyQSudF/TLCPtRvcOEu41bZDv36+W0Lb/AK1eodc=
+sidebar_class_name: "get api-method"
+info_path: docs/generated/api/v2.12/quantification-and-analytics-tool
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"To rebuild supply plan based on rebuild true or false "}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/api/supplyPlan/newSupplyPlan/programId/{programId}/versionId/{versionId}/rebuild/{rebuild}"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+API is to rebuild supply plan based on rebuild true or false 
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"programId","in":"path","description":"programId that you want to rebuild supply plan for","required":true,"schema":{"type":"integer","format":"int32"}},{"name":"versionId","in":"path","description":"versionId that you want to rebuild supply plan for","required":true,"schema":{"type":"integer","format":"int32"}},{"name":"rebuild","in":"path","description":"rebuild true for rebuild supply plan , rebuild false for do not rebuild supply plan","required":true,"schema":{"type":"boolean"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Returns the success message or SimplifiedSupplyPlan list","content":{"text/json":{}}},"403":{"description":"Returns a HttpStatus.FORBIDDEN if the User does not have access","content":{"text/json":{}}},"412":{"description":"Returns a HttpStatus.PRECONDITION_FAILED if certain conditions to rebuild supply plan does not met","content":{"text/json":{}}},"500":{"description":"Internal error that prevented the retreival of SimplifiedSupplyPlan list or rebuild supply plan","content":{"text/json":{}}}}}
+>
+  
+</StatusCodes>
+
+
+      

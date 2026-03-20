@@ -1,0 +1,33 @@
+---
+id: staticlabeldto
+title: "StaticLabelDTO"
+description: ""
+sidebar_label: "StaticLabelDTO"
+hide_title: true
+hide_table_of_contents: true
+schema: true
+sample: {"labelCode":"string","staticLabelId":0,"staticLabelLanguages":[{"labelText":"string","languageId":0,"staticLabelId":0,"staticLabelLanguageId":0}]}
+custom_edit_url: null
+---
+
+import Schema from "@theme/Schema";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"StaticLabelDTO"}
+>
+</Heading>
+
+
+
+
+
+<Schema
+  schema={{"type":"object","properties":{"labelCode":{"type":"string"},"staticLabelId":{"type":"integer","format":"int32"},"staticLabelLanguages":{"type":"array","items":{"type":"object","properties":{"labelText":{"type":"string"},"languageId":{"type":"integer","format":"int32"},"staticLabelId":{"type":"integer","format":"int32"},"staticLabelLanguageId":{"type":"integer","format":"int32"}},"title":"StaticLabelLanguagesDTO"}}},"title":"StaticLabelDTO"}}
+  schemaType={"response"}
+>
+  
+</Schema>
+            

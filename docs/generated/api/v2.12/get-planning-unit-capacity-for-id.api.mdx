@@ -1,0 +1,71 @@
+---
+id: get-planning-unit-capacity-for-id
+title: "Get PlanningUnitCapacity list for a PlanningUnitId and a given date range"
+description: "API used to get PlanningUnitCapacity list for a PlanningUnitId and a given date range"
+sidebar_label: "Get PlanningUnitCapacity list for a PlanningUnitId and a given date range"
+hide_title: true
+hide_table_of_contents: true
+api: eJy1llFv4jgQx7+KNS+3J+Wgy+695Om4pWwjnYAW+lShapoMie8SO7UndFGU776yA5SUdsu2e08kztjzm/HMf6iBMbUQ3kCZo1JSpddKMiwDSMjGRpYstYIQhrNIVJYSwVqkxGJ2YP0FS4wlb0QuLYuVNgI736NEoEoEilSuSYkEmYRBlRIEoEsy6HxECYSQEj938FibKIEASjRYEJNxwDUoLAjCDrg3kw64RM7gaRRdU8EZstjoSjyg4ifQR0FBAIbuK2kogZBNRQHYOKMCIayBN6VDkYopJWe60qZAbpc+DaBpgj2vZTQ8QqYfou6tBGfU5mxP6laeZU2QUayMLk6BtWykSp+g6fIEstbop8FY5vlPgS2dsS21smTd98HZmfvp4lwRV0bZl327C4QAYq2YFHs/9I37/1q3vW6aJoDPZ59ePhjFBXM5Z+TK9sbTq7+j0eh8IuTKu7y2ZESiyQqlWWS4JoFxTNa+6vLziS4n08XteHo9Ge1cvlymew76dkLQHwcnEsyuzr9MJ6NoEU0nt+Nh9M+5Z4nJMEolYq0S6fbbnTo4yi5QQa/h/Pnc5UaKySjMBRmjTduwpaE1KXZalJEwxIbkGnOhV2+8/yaAgjjTWwXyQsMZhNDHUvYPNaMfbw/t110pafp3xA9Eql/vG7dxz22rNBCAJbPeKVdlcgghYy5t2HdeevcVKpYrGXsxRIX5hmVse9qkRw04MzqpYvci2kO95l4OFxDAGo3Eu9z3i28gqVbaxyw5d8112XHkhXm48yYWWrsOdZytq0Hv46B3dkQwnEW/+ctuS91fxOVwIeYeZ5tsjH2yt9IyHs5nggmdNHXDf3h4eCV8KlC6HRfz+a075/bi8q80s/EfpS28SRNALmNSlg48DkuMMxItf9flSuveHRqnfVBqywWqg41ff+F86+StfizC/22gbjXUl3iZo1QuOT76elvWN4CldEV+OPAD2JU2BBAejdRtdbtvh+Mr3A+MZQCZtuxOr+s7tHRt8qZxy/cVmQ2EN8vH4vQ9kEjrnhMIV5hb+kGqPlxtJ8bv4p0D/NnkbBdRbXz/5JV7gwD+o83xvws3LN9E/u55/gb2x6t6B/b7hv2bqLc11SybADLChIyvmPbzMI6p5IONj2ru9G6v5F/PF9A03wFWq8t0
+sidebar_class_name: "get api-method"
+info_path: docs/generated/api/v2.12/quantification-and-analytics-tool
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get PlanningUnitCapacity list for a PlanningUnitId and a given date range"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/api/planningUnit/capacity/{planningUnitId}/between/{startDate}/{stopDate}"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+API used to get PlanningUnitCapacity list for a PlanningUnitId and a given date range
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"planningUnitId","in":"path","description":"planningUnitId that you want a PlanningUnitCapacity list for","required":true,"schema":{"type":"integer","format":"int32"}},{"name":"startDate","in":"path","description":"startDate the date you want the PlanningUnitCapacity data from","required":true,"schema":{"type":"string"}},{"name":"stopDate","in":"path","description":"stopDate the date you want the PlanningUnitCapacity data till","required":true,"schema":{"type":"string"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Returns the PlanningUnitCapacity list","content":{"text/json":{}}},"403":{"description":"Returns a HttpStatus.FORBIDDEN if the User does not have access","content":{"text/json":{}}},"404":{"description":"Returns a HttpStatus.NOT_FOUND if the PlanningUnitCapacity list does not exist","content":{"text/json":{}}},"412":{"description":"Returns a HttpStatus.PRECONDITION_FAILED if certain conditions to get the list does not met","content":{"text/json":{}}},"500":{"description":"Internal error that prevented the retreival of PlanningUnitCapacity list","content":{"text/json":{}}}}}
+>
+  
+</StatusCodes>
+
+
+      

@@ -1,0 +1,71 @@
+---
+id: get-program-with-filter-for-multiple-realm-country-for-fc-dropdown
+title: "Get Forecast Programs for Multiple RealmCountry"
+description: "Retrieve a list of forecast programs for multiple realm countries"
+sidebar_label: "Get Forecast Programs for Multiple RealmCountry"
+hide_title: true
+hide_table_of_contents: true
+api: eJytVm1v2zYQ/ivEfVoBNQ4yZMWEoYCTxkWKdEuTrPlgGAEtnS22FKkcT3YNQ/+9OEquFcfpXGD+YNjkvTzP8e4h15BjyMhUbLyDFG6QyeAClVbWBFZ+pmaeMNOBVUV+TroMsqLK2rKpLCpCbUuV+dqJZ4AEfIWkJd5lDinMka9bx3vDxchYRhp5+tj534j7efRejTyNsnfkq9wvHSRA+Fhj4DOfryBdQ+Ydo2P5qavKmiwmGXwJgnwNISuw1PKLVxVCCoHJuDk0TZPssLwrnuGOpLjALUv2irpqdFgMYQ4pU42NLITKu4BBMp4cH+8gZPzGL0PTRHoFCRjGMvTW/fQLZgwJVCRVZNOG1xmbBfbspt5b1A6aBDKf4x7SCWQ1ETr+jBS6s/hhZBzjHAkSmHkqNbdLv5+IW4HacjEk1Jf5lQl8AOqXwzUJmEMTm/y2xb6PjNVTtP9dqKkO+NHnv2gKmaGstpp+O9ssPkgbvvNL99ng8pUgYMNWwu03+YHx4DpH6wd0L9N9mNFPNqufbYZq3xxsSVxFq10CXevfrSo8mEYcowOtewBuTVlZ7IRhB8iegb1BrsmFOKAbXTpMjpoETn9xOF9omBJD0HM83z9vPW43nTKI5TNqu8wuHSM5bRUSRQXSIrS4QMeYR76dCGkrpPsK1SbV8wDpGDayGWCSQIlceBHfyodIRHMBKQx0ZQZ5Zzjowgxm2WAWVXlQ7tFkSCAgLZAkyxpqknkpmKuQDiTe0WOtHZtZp8baabtik4UjT3PYJfsenVwNmKs2ppJwzURSZDUZXsUcU9SENKwF83jS376Vo+rGt2e0+Tfa9NuH+7tnuS+k0LF+H+7vFPuv6JRxcaHt01SdxSjqr7j5VpjHfKK3cQeSzalLAWL5pYluttfUxTctfb3tiwSMm3mB+BTNpydVU8NN2dSd9xYSsCZDF2KjOR0hDCudFaiu2g3Vybo6OTqGZOdYlsvlkY7mcgqDLlYYXF2eX/x9e/FafHr9+mko1Vq0ASGFk6M/34xPT/94M4mi4AOX2vWQvEdWo82j4Lo/hZtLXe100BPuvUn8X54b3ZHEma6sNvFWjAVZd40/Bl0ZgbF9WnTBRaQy+YoDAAnsHYFJAoUMUjqG9VrujX/JNo0sP9ZI0rSTBBaajJ5KQceT9hrNkWI/f8UVpHDekn4t6irl1raOd+ruS6ZJNh7DLMOKe7Zb2Wr6Q379z60c4LR7JpVRoID0Up4tegkpxEeZpIijE9fWYLWb13outm1M+XwHhx+Dsw==
+sidebar_class_name: "post api-method"
+info_path: docs/generated/api/qat
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get Forecast Programs for Multiple RealmCountry"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/api/dropdown/program/fc/filter/multipleRealmCountry"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Retrieve a list of forecast programs for multiple realm countries
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={undefined}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"content":{"application/json":{"schema":{"type":"string"}}},"description":"The realm countries for the programs to retrieve","required":true}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"content":{"text/json":{"schema":{"type":"array","items":{"type":"object","properties":{"active":{"type":"boolean"},"code":{"type":"string"},"currentVersionId":{"type":"integer","format":"int32"},"healthAreaIdList":{"type":"array","items":{"type":"integer","format":"int32"}},"id":{"type":"integer","format":"int32"},"idString":{"type":"string"},"label":{"type":"object","properties":{"baseModel":{"type":"object","properties":{"baseModel":"circular(BaseModel_DropDownView)"},"title":"BaseModel_DropDownView"},"labelId":{"type":"integer","format":"int32"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"}},"title":"Label_DropDownView"},"programTypeId":{"type":"integer","format":"int32"},"realmId":{"type":"integer","format":"int32"}},"title":"SimpleProgram_DropDownView"}}}},"description":"Returns the list of programs for multiple realm countries"},"500":{"content":{"text/json":{"schema":{"type":"object","properties":{"messageCode":{"type":"string"}},"title":"ResponseCode_DropDownView"}}},"description":"Internal error that prevented the retrieval of the programs"}}}
+>
+  
+</StatusCodes>
+
+
+      

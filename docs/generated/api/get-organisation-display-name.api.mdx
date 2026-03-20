@@ -1,0 +1,71 @@
+---
+id: get-organisation-display-name
+title: "Get Organisation Display Name"
+description: "Retrieve an organisation's funding source suggested display name"
+sidebar_label: "Get Organisation Display Name"
+hide_title: true
+hide_table_of_contents: true
+api: eJytVdtu1DAQ/RVrXgDJbKqigogQ0gKl2qoCtV3godoHN5lNDImdjictqyj/jsbJimxZcal4ycWey/GZM+MOcgwZ2Yatd5DCBTJZvEVlnPJUGGeDka1HQa1bl1tXqOBbylCFtigwMOYqt6GpzEY5UyNo8A1S9FnkkEKB/HES591g+2EwbQyZGhkpQHrV3YOyLFEt3im/VlyiIjRVrdgr2iKU1SlEtSZfgwYrzo3hEjRESClE50UOGghvWkuYQ8rUooaQlVgbSDvgTSOm1jEWSKBh7ak2PCw9O4S+1/sQSoYtxh00E6j7QY10/RFRYLKugL5fiXFovAsYZP/w4EBemXeMjqMHfufkaxBw3W8C9frXqrfkwoOL3ms4+kcw/vorZiwaIBEM2+FMNYZgCnzrc9yHXANbrjBCHpiIlnuOtHCM5EylkMiTuitthapAZjnNTqF2TyIpTCF6hKluYaWhRi79qOkoXi4hhcQ0NpkGTArkicyTUXxJN370iWRKOnn2oCEg3W47oKUKUiiZm5AmEnl20xrHdm2zGNs4U23YZmHmqYD7Zz5BJ62HuRpiKgknsgmYtWR5E3NcoyGkeSvor1bT7Usp0lCHqdH27/22IU6/LH/JfSx8xy44/bJU7L+hU9bFhaGRUvUmRlGv4uZrGKUuxRzig97WWwiIpbBu7QXAbq7zHU7UfEuKWnpfgYbKZuhCFNDYa/PGZCWqs2FDfUYK4nk4OwB9j/S7u7uZiebCcTLGCsnZ4u3xh8vjp+Iz0eH5XLi4HQJCCoezly+ujo6ev1iJVeMD18ZNkJwgq6mw1CgVNY7EnZNO+ul/TOaR3diYTWWsE4jx9N2o5iswjZUZPpW+hl1Fx6G1Hajpz88xSxrfKw2lDywhu+7aBPxEVd/L8k2LJEpcabg1ZM218CjT3wb5ziFdmyrgb6h4fDHOzCfqoZfEXirGReM2UlJTtfIHGr7hZnKJxHvgoVj/8rp4ALxhfK16DSWaHClyOmzNswwbnjj9HM39dK6dHC+h738AJ0bOOA==
+sidebar_class_name: "get api-method"
+info_path: docs/generated/api/qat
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get Organisation Display Name"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/api/organisation/getDisplayName/realmId/{realmId}/name/{name}"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Retrieve an organisation's funding source suggested display name
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"description":"The ID of the realm to retrieve the organisation from","in":"path","name":"realmId","required":true,"schema":{"type":"integer","format":"int32"}},{"description":"The name of the organisation to retrieve","in":"path","name":"name","required":true,"schema":{"type":"string"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"content":{"text/json":{"schema":{"type":"string"}}},"description":"Returns an organisation's funding source suggested display name"},"500":{"content":{"text/json":{"schema":{"type":"object","properties":{"messageCode":{"type":"string"}},"title":"ResponseCode"}}},"description":"Internal error while getting organisation display name"}}}
+>
+  
+</StatusCodes>
+
+
+      

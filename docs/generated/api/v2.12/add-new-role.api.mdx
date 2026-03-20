@@ -1,0 +1,71 @@
+---
+id: add-new-role
+title: "Add Role"
+description: "API used to add a Role"
+sidebar_label: "Add Role"
+hide_title: true
+hide_table_of_contents: true
+api: eJztWt1z4jYQ/1c0+9J2xiGE3kfrp5KUm2QmlxDg+lAmwyz2ArraliPJ4RjG/3tnZQM2IaQ3fWlS8wTSaj+sn3Z/WrMGi3MD/hgyQxruPQjJBFqmVqoEfOj2r0RmKBRWCQxDgWKgIgIPVEoaWegqBB8wDG9oWU5pesjI2HMVrsBf7ynUKiKhpl8psMIu0IqVysQSE1taAA8ClVhKLK/FNI1k4OycfjWsYA0mWFCM/M2uUgIfCm3gQarZKyvJ8CxbYue2csZqmcwh9yDCKUUvawg0oaXwfPWyKD+9mjGZWJqTBg9mSsdoi6GfO2yehROM6YBvuQdW2oiHztHI4AvvSu5tXPkd7YFVFRshWjqxMqYiTGM/q1DO5H8jiKo/3xcJBlY+VuWnSkWEyXYz/7HbTnpCyfO4mJj0yORMH5lMD09O0dBnFTaQeyuQq2woBFIHWYT6x/PN4E9Q96YUrfp47RIQa8qMTMiYT1kScJa7lsZWbKLWuAIPpKXYNOh5I+jZ2/OmSL39PW+KVAO511ukGmg00Kj7uFfC3OR+XasSlueITCX+AJMLt2V8jfx3PKi5+v0/cNxU1QZyry11llW1MnJRTXxPU+F3pdGK2lJbXjTkpKYQfKszcgMmVYkpVHfabXjSphuQzXRiBIphFgRkjAhUSELOhF2Q2Db/xBKNMIXELIvqzTtL3+yma+f8eNf+cMzSpbXp0KLNTOvmdjTpXlz0+qPu+XVvY3ZQ6R2ajFuDFAppRKKsyBL5kNELDrw/HmrFgaubUW9w072eDHuDP3qDSW8wuB2UfmgqwlYxCcW/BWmtdNHODGXo/MEoUsu9h2WVCFScRmSPO5p7EJNdKO6spsq4o4N2AT6cYipP+Syc6qLXakg/kuYG7hoyzaBcWJsa/5QlWw8ZJlbOyg4qJhitrAxMS2kGf/0x9LUKM1e3RaFUzJQWd90RePCIWuK0gGKe33vAvg52bd7eN+SwqqV3d8a2FbeW4Danv10925XEWUtB0Gl33p20P550fh2dvfffn/mdX1rtj2d/wqG085Lqp4nhmP5NMuCjU6k47Wo92QvWlZH9Ma4e+2NpbaxWK17/wzpECQtaN34L4R3u4zSwb2D/BkO6P3i7G2+03x+8vY2batAcix2G8n2U1BCUeyCTmXJsqCSwdzX2IjAJRXdDYcRIKaabTH4K/tJpnXVa7Se0ptu/+sG4d8sFjWVGdtcdiaHjOCUNw8DRsDLcT91hX1jCGLw9TrVcLl/gVBSj5BWXw+GE9Uwu736bL0xwkprYifBDlAElhioWuykGCxKF/3WTM6VaU9TuWsBcMMakujAMNy/ka2Gvd+zy+Vf45d3Bkc80QunuN876uuSbY8BUQoEFfrHP6+49WCh3vGG9ZpB+0VGe8/BDRnoF/vh+Rxj5V+7BgjAk7TLCX7TiK0/h3cmIXWDxKHPXm/3X/bm3WdENAkptRXbHmRlYW77cvx0yY52Wfz6IVcjCGpfsPy7BB/fnhW1/yo2tIcJknuGcZQud/Pkbh9Id2w==
+sidebar_class_name: "post api-method"
+info_path: docs/generated/api/v2.12/quantification-and-analytics-tool
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Add Role"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/api/user/role"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+API used to add a Role
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={undefined}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"description":"role object that you want to add","content":{"application/json":{"schema":{"type":"object","properties":{"roleId":{"type":"string"},"label":{"type":"object","properties":{"createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"},"active":{"type":"boolean"},"labelId":{"type":"integer","format":"int32"},"label_en":{"type":"string"},"label_sp":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"baseModel":{"type":"object","properties":{"createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"},"active":{"type":"boolean"},"baseModel":"circular(BaseModel)"},"title":"BaseModel"}},"title":"Label"},"businessFunctionList":{"type":"array","items":{"type":"object","properties":{"createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"},"active":{"type":"boolean"},"businessFunctionId":{"type":"string"},"label":{"type":"object","properties":{"createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"},"active":{"type":"boolean"},"labelId":{"type":"integer","format":"int32"},"label_en":{"type":"string"},"label_sp":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"baseModel":{"type":"object","properties":{"createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"},"active":{"type":"boolean"},"baseModel":"circular(BaseModel)"},"title":"BaseModel"}},"title":"Label"},"baseModel":{"type":"object","properties":{"createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"},"active":{"type":"boolean"},"baseModel":"circular(BaseModel)"},"title":"BaseModel"}},"title":"BusinessFunction"}},"businessFunctions":{"type":"array","items":{"type":"string"}},"canCreateRoleList":{"type":"array","items":{"type":"object","properties":{"roleId":{"type":"string"},"label":{"type":"object","properties":{"createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"},"active":{"type":"boolean"},"labelId":{"type":"integer","format":"int32"},"label_en":{"type":"string"},"label_sp":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"baseModel":{"type":"object","properties":{"createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"},"active":{"type":"boolean"},"baseModel":"circular(BaseModel)"},"title":"BaseModel"}},"title":"Label"}},"title":"CanCreateRole"}},"canCreateRoles":{"type":"array","items":{"type":"string"}}},"title":"Role"}}},"required":true}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Returns a Success code if the operation was successful","content":{"text/json":{}}},"406":{"description":"Returns a HttpStatus.NOT_ACCEPTABLE if the Role object supplied is not unique","content":{"text/json":{}}},"500":{"description":"Returns a HttpStatus.INTERNAL_SERVER_ERROR if there was some other error that did not allow the operation to complete","content":{"text/json":{}}}}}
+>
+  
+</StatusCodes>
+
+
+      

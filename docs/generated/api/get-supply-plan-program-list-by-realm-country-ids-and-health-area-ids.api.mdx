@@ -1,0 +1,71 @@
+---
+id: get-supply-plan-program-list-by-realm-country-ids-and-health-area-ids
+title: "Get Supply Plan Programs by Realm Countries and Health Areas"
+description: "Retrieve a list of supply plan programs filtered on a list of realm country IDs and health area IDs"
+sidebar_label: "Get Supply Plan Programs by Realm Countries and Health Areas"
+hide_title: true
+hide_table_of_contents: true
+api: eJy9Vm1vGzcM/isCP23ANQ4yZMUOwwDnZZ2LbE3jrP1gGAF9R/vUypJC6ewahv97Qd15OTtOsgDD/OlMUXx5yIfUGkoKBWsftbOQww1F1rQghcroEJWbqlB7b1bKG7TKs5sxzoOaahOJqVTOdlSZ0MxV4WobeaUGF0GhLVVFaGKlkAlFBhk4T4zicVBCDjOKw+Tj2qC9bjxc6RDPVjdi77wxNyhD35Z/JFt9JhyUYonpvqYQz1y5gnwNhbORbJRP9N7oInnpfQmS3BpCUdEc5SuuPEEObvKFiggZeJaYoqYgp9WOlwd1ZMYVZKAjzbvyEFnbGWw2EtBOyK+5vMkg6mgoleHZxO8u2PkLt7SfNC2bm7tlvK3o1UURKDVTCXnkmlIqwTsbGkhOjo/3AI70LT6N7FPZPoF44Uo6gEkGuuyItY00I4YMpo7nGBvRTyeN4rC5dMiKwQmZl6OYYKA/XflKVSg0F7VB/uFsK9wp0I/QqexhlX9iHPzbdJP2Hdmn072b8jOH/rnD4A839zaJq6S114QPx0M994bOXUkfEniP2vVRv95QrNkGFTt9+5/PnU0Gp6/s4ieKP6cQcJYyfB6om5ZCovkiaQc2Els0ipgdq1hhVJ5pQTZSmaDhZjqjkaRfwqoJBGcB8hGI79ItbYBxBnOKlZPJ611IyWGsIIceet0rW8Vea6a3N9B61d4EDsQLYnGyhpqFDlWMPuQ9MXd0X6ONetoOYrRoVlEX4cjxDPbzf0dW1gKVqrGpxNxmLC6KmnVcJR8TQibu1xLyaNw9Hkr1WnZ2lLb/ft9y6P3n20e+LwX7BOn7z7cquq9klbZJ0HAvV2fJivo1Hf4mmSd/kLf2Ids2ggCQ0Je+unnYUJffUIhxYMOMts0zPrBBHg5lzNmpEwO74X/cgVn1tzirW+cMZGB0QTYkzxZTzH2PRUXqqjlQn4iD3Dw5OoZsr47L5fIIk7qUrdfaCr2rwfnlX8PLN3Kn0/Mf+wLvojEIOZwc/fJ2dHr689uxaEnLzdF2InlHUTX7X8kDQF1vuT5ZqbQHVQOGpobWzSZUgl3Yr2OH2v/TU6YteRoj3qC2kmTCb93yagTotQTaMquZJuIbHhc72+uMcQaVkDQfwXotO+dvNpuNiO9rYmHEOIMFssaJgD+SFqkIS+JElq+0ghzOG0ze3Eqsom7qtKL3X0ibbHujXxTkY0f3YUxuugPk+sNQij1pn1/zNBCBcSmp4RJySK89cZF4mWRrMGhnNc5Et7Epv++4/q9w
+sidebar_class_name: "post api-method"
+info_path: docs/generated/api/qat
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get Supply Plan Programs by Realm Countries and Health Areas"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/api/dropdown/program/realmCountryIds/healthAreaIds"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Retrieve a list of supply plan programs filtered on a list of realm country IDs and health area IDs
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={undefined}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"content":{"application/json":{"schema":{"type":"object","properties":{"healthAreaIds":{"type":"array","items":{"type":"string"}},"realmCountryIds":{"type":"array","items":{"type":"string"}}},"title":"RealmCountryIdsAndHealthAreaIds_DropDownView"}}},"description":"The list of realm country IDs and health area IDs","required":true}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"content":{"text/json":{"schema":{"type":"array","items":{"type":"object","properties":{"code":{"type":"string"},"id":{"type":"integer","format":"int32"},"idString":{"type":"string"},"label":{"type":"object","properties":{"baseModel":{"type":"object","properties":{"baseModel":"circular(BaseModel_DropDownView)"},"title":"BaseModel_DropDownView"},"labelId":{"type":"integer","format":"int32"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"}},"title":"Label_DropDownView"}},"title":"SimpleCodeObject_DropDownView"}}}},"description":"Returns the list of supply plan programs filtered on a list of realm country IDs and health area IDs"},"500":{"content":{"text/json":{"schema":{"type":"object","properties":{"messageCode":{"type":"string"}},"title":"ResponseCode_DropDownView"}}},"description":"Internal error that prevented the retrieval of the list of supply plan programs"}}}
+>
+  
+</StatusCodes>
+
+
+      

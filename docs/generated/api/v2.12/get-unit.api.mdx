@@ -1,0 +1,71 @@
+---
+id: get-unit
+title: "Get Unit for a UnitId"
+description: "API used to get the Unit for a specific UnitId"
+sidebar_label: "Get Unit for a UnitId"
+hide_title: true
+hide_table_of_contents: true
+api: eJyVVE1v2zAM/SsCL9sAL8my7eLTDGxtc2mTJj0VQcHKTKzNllSJThoY/u+DZDcfbbdup8SSyPfI98gGGNce0luotWJYJpCTl05ZVkZDCtl0ImpPuWAj1sSCCxI3WrFYGSdQeEtSrZSMZ5McEjCWHIbgSQ4prInDDSRg0WFFTC6ANaCxIkgjaAxTAcwiF/CcQZdZcIEsdqYWW9Qc2BwzgQQcPdTKUQ4pu5oS8LKgCiFtgHc2QCnNtKbwdGVchdwdfR5D2y5DuLdGe/IhYjwahZ9THtfEtdN+jwsJSKOZNEcQeuThTx9eNm3bJvBl9OXPOVBcMNs5I9d+cHm1uDu7urn8LtRqn32SP/WWcpEb8kIbFvSo/FvAX18jP9FMTmMpyDnjumZaRxvSHLQtSDhiR2qDpTCrt+trE6iIC9NrHPXlAlIYolXDoOqw6bRtIQFPbvMkfO1KSKFgtj4dhteDhxo1BxNF26DGcsdK+oFx6xdmmDqT1zJ8iC5p9OEsW0ACG3QK78soYdRU6ZWJ3BWXwQGzEyCBOhfZE5pYGFOGJOR8BzUefBoPRi8YZNPJOx/8h1KS7+wwyxZiHun0TUMZm9ab/CybTwUTVpA8K3+73b5RPlWoQsTFfH4X8txdzL6tCy8/Wl/FJ20CpZKkPR0hZhZlQaLjfwq5MmZwjw6ChNZ4rlAfBZ4TH4/3fqpPetAcjPH/+6GfxugnW6LSoYJIsek9dAtoVeDdmTDtd8QygcJ4DvdNc4+eblzZtuH4oSa3g/R2efBAtFqufPifQ7rC0tNfqnh/3W+PD+If182rZfSHqHfRjmUdviCBX7Q77Lp22SZQEObkIsvuMpOSLB+FHQYuWHk/bOc/FtC2vwF7Z/IP
+sidebar_class_name: "get api-method"
+info_path: docs/generated/api/v2.12/quantification-and-analytics-tool
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get Unit for a UnitId"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/api/unit/{unitId}"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+API used to get the Unit for a specific UnitId
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"unitId","in":"path","description":"UnitId that you want to the Unit for","required":true,"schema":{"type":"integer","format":"int32"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Returns the Unit","content":{"text/json":{}}},"404":{"description":"Returns a HttpStatus.NOT_FOUND if the UnitId specified does not exist","content":{"text/json":{}}},"500":{"description":"Internal error that prevented the retreival of Unit","content":{"text/json":{}}}}}
+>
+  
+</StatusCodes>
+
+
+      

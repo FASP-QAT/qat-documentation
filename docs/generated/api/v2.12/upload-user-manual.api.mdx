@@ -1,0 +1,71 @@
+---
+id: upload-user-manual
+title: "Upload UserManual"
+description: "API used to upload UserManual"
+sidebar_label: "Upload UserManual"
+hide_title: true
+hide_table_of_contents: true
+api: eJyNlU1v4zgMhv+KwMte3KTbmb34tOk2RQPsJqmTzqUoAkZmYnVtSZXkZgLD/31AORkn7aAdn/zxUnxIvZQbCLj1kD5C7cn9h7rGEp4SyMlLp2xQRkMKo/lE1J5yEYyobWkwFw+9PAFjySFrJzmk0CnOBI5eavLh2uR7SJs3q7NSVFEqNqqkPgskII0OpANHobWlkjHP8NlzaANeFlQh34W9JUjBrJ9JBkjAOqYKijx/5XVPVD44pbeQwMa4CgOksFYa3R7aeDGwt0b7Lvjq8vI9dUahdtoLFItaSvJeSJOTUBsRChI/OyJ26IXvFJu6PK8o0PdwLCWm/Xr55aNMdyHYRcBQ+8HtLLue3NyMp8eMsYu5IS+0CaLAVxLYcfWbxrq67/anMF9/E2Y6W65uZw/TmyOMNxUJ093XOidX7pXeihwD9owVBlkMPoH46+Pen0BMpstxNh39u1qMs2/jbDXOsll2AHLU7UPE4mdBzhknQoFB5CqPPFiWZvdm94IR0lS2pEAfgrYJVBQKw/63xkcDYigghSFaNeyHa/iL6fDkXsnxFDZQuxJSKEKwPh1y7OClRh3U5uB81Fjug5J+YBwb+Lwxc2fyWkbyblGxMU7cj5aQwCs6hesyWrptnxJg+qwfzPF35EL7aTlOSZuA0hsTq1Yhfrk/YxKoczE6gomlMVwVl9RRXQ3+vBpcvoMdzSd/RHcefVoQo4pFJD+0G2Vst8aK896OFnMRCCtI3nRqt9t90imqUHHE3WKx4nVWd/d/bwsvL6yvoqRNoFSStKeTjCOLsiDR8Z+n3BgzWKMD3nze8wr1SeDDL87Js/qb3k6fHrCHYyuazpaoNMNGmubgs0dAqxjxNOyd154SKNid6SM0zRo9Pbiybfn1S01uD+njU28UfmoTKAhzctGc/9MeUvinw75YMhTLy5rh3h3PbXKMGElJNpxo++lhI/6cnPlswU5dH34TlclZ7HDHvxDcQQrxZ8Mp4sEc3zVQot7WuGVttyZfPwAkY19/
+sidebar_class_name: "post api-method"
+info_path: docs/generated/api/v2.12/quantification-and-analytics-tool
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Upload UserManual"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/api/userManual/uploadUserManual"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+API used to upload UserManual
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={undefined}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"description":"User manual file to upload","content":{"application/json":{"schema":{"type":"object","properties":{"file":{"type":"string","format":"binary"}}}}}}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Returns a Success code if the operation was successful","content":{"text/json":{}}},"403":{"description":"Returns a HttpStatus.FORBIDDEN if the User does not have access to upload the user manual","content":{"text/json":{}}},"404":{"description":"Returns a HttpStatus.NOT_FOUND if the some of the underlying data does not match.","content":{"text/json":{}}},"500":{"description":"Returns a HttpStatus.INTERNAL_SERVER_ERROR if there was some other error that did not allow the operation to complete","content":{"text/json":{}}}}}
+>
+  
+</StatusCodes>
+
+
+      

@@ -1,0 +1,71 @@
+---
+id: get-budget-for-realm
+title: "Get Budgets by Realm"
+description: "Retrieve a list of budgets for a given realm"
+sidebar_label: "Get Budgets by Realm"
+hide_title: true
+hide_table_of_contents: true
+api: eJztWV9v2zYQ/yrEPbWAGgdps2LGMCBOk8BFuqGO0zwERkFLZ4utRKrkyZlh6LsPR0kIndiptQFBhvnJNu8P7453R/p3K0jQxVYVpIyGPoyQrMIFCiky5UiYmZiWyRzJiZmxQoq5WqAWFmWWQwSmQCtZdJhAH+ZIA898buyo4SiklTkSWgf929WD3cYpiuEH3oRSrJUKMsK2RgRbQwSKRQpJKUSgZY7QBy8yTCACiz9KZTGBPtkSI3BxirmE/gpoWTCr0oRzZD0zY3NJ9dLbI6iqCYu7wmiHjiWODg/5IzaaUJPXgX9R75tjo1ePVUtr5ZINJMxdsG6m3zAmDoLlQJGq1cuY1AIDvqkxGUoNVQRT6fCTSTD7uZqAFWJl4zKT9tWgXfw6wsJY+qLw7jUrJkUZK9vE4Df2oT7JKdhYl/l0PWKJKacZ3vOfmiR0xJFVen5P5qzY4QBa9msnWfvmwDQcye4mxqW1qONlp1A+b9RjoxdonTJ6JAnH5tolHZ3begItw85nkMlpxwA8b6y8fV9Rb/S2Js7sE8TiKaIrNhADoy49V2hQQDxtQv3A4FmpE6XnV6a0Mf67tiCzzNxhMtR1f31hvWPN0a0Juca1c1auSY09/8+ci7dZoHbdVCVXtdDWhNnXyT+okyuVF5lPkD99IDYZvg/sroFlSUefTKJmCpPBDtdc6dDuXHjMXL+ynjJrIJ2Krx3aJ0z7IGmDlvBWk4RvSOX+YiusmVuZXyoXtrmOT6x9pb+ESt9Q5VVUv9n3Xfw/frZbunjAdx7e3PtWv2/1j1q9NoRuY6CaSyAkdrwB9u3jJSVwh/bRHv2NovQkjtHtk+D/lwSOpKVuzcSRKbpJlA6TDoBSGHD/L3zdaKY/wlJLq53HNjeBqbwewqlVBO8O30IX5HFLGuXonJxv+yseODJqYE/mfODOQ28Yq+WLQiQGndCGRCoZJ/Ylyqgtu1O7V3u71cV3L9XFa834I/syUzrZ1aHjjmjxMzo01MQ3eybQWm+8JFFYXKAmTBrM3UPtMmtB+MDhelc5Z+S+SXmYRJAjpaaB+z3ATyn0oScL1auFew0q31s1XyqIwKFdtEOA0nJ/S4kK1++x4MGPUmpSMxX7YYLUMluSit2BsVy+605doOahAyai1ilYHWP4DuPSKlr6PaYoLdqTko27nYTkKz6Qpt0GTO2v87buP96MH+19xgH1cfp4MxZkvqMWSvuFul/0xcBrEb954u/QTCI8VOcpELVnywHwMVZ6ZtiA9b0+r8VEnLRBEWNjMoggUzFq55OlmYacFDJOUVzWBPGlRpbF0cEhRA+Cfnd3dyA9O8e41+hyvcvh6dkfV2dvWCbIuc8nHIsGqoY+HB38+v72+PiX9xP/WjOOcqkDSy6QxKBpddOlaIdBaw4GJdN17NQE0NdZkUnl4U/v4KrJx1uQhYJ2bABRMCnqt18nEaSGUYZbWK345r22WVXx8o8SLafRJIKFtKqeSvD0SvkJRQL9mcwcPuHQq1Ezj3otug25NrrWvn40v30WMiv5F0TwHZfBEKyaVBGkKBO03tqaym+oggK5++5UhdV8cTaGqvobcCC+xA==
+sidebar_class_name: "get api-method"
+info_path: docs/generated/api/qat
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get Budgets by Realm"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/api/budget/realmId/{realmId}"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Retrieve a list of budgets for a given realm
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"description":"The ID of the realm to retrieve budgets for","in":"path","name":"realmId","required":true,"schema":{"type":"integer","format":"int32"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"content":{"text/json":{"schema":{"type":"array","items":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":{"type":"object","properties":{"baseModel":"circular(BaseModel_ReportView)"},"title":"BaseModel_ReportView"},"budgetAmt":{"type":"number","format":"double"},"budgetCode":{"type":"string"},"budgetId":{"type":"integer","format":"int32"},"budgetUsable":{"type":"boolean"},"budgetUsdAmt":{"type":"number","format":"double"},"currency":{"type":"object","properties":{"baseModel":{"type":"object","properties":{"baseModel":"circular(BaseModel_ReportView)"},"title":"BaseModel_ReportView"},"conversionRateToUsd":{"type":"number","format":"double"},"currencyCode":{"type":"string"},"currencyId":{"type":"integer","format":"int32"},"label":{"type":"object","properties":{"baseModel":{"type":"object","properties":{"baseModel":"circular(BaseModel_ReportView)"},"title":"BaseModel_ReportView"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"}},"title":"Label_ReportView"}},"title":"Currency_ReportView"},"fundingSource":{"type":"object","properties":{"active":{"type":"boolean"},"allowedInBudget":{"type":"boolean"},"baseModel":{"type":"object","properties":{"baseModel":"circular(BaseModel_ReportView)"},"title":"BaseModel_ReportView"},"fundingSourceCode":{"type":"string"},"fundingSourceId":{"type":"integer","format":"int32"},"fundingSourceType":{"type":"object","properties":{"code":{"type":"string"},"id":{"type":"integer","format":"int32"},"idString":{"type":"string"},"label":{"type":"object","properties":{"baseModel":{"type":"object","properties":{"baseModel":"circular(BaseModel_ReportView)"},"title":"BaseModel_ReportView"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"}},"title":"Label_ReportView"}},"title":"SimpleCodeObject_ReportView"},"label":{"type":"object","properties":{"baseModel":{"type":"object","properties":{"baseModel":"circular(BaseModel_ReportView)"},"title":"BaseModel_ReportView"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"}},"title":"Label_ReportView"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser_ReportView"},"lastModifiedDate":{"type":"string","format":"date-time"},"programList":{"type":"array","items":{"type":"object","properties":{"id":{"type":"integer","format":"int32"},"idString":{"type":"string"},"label":{"type":"object","properties":{"baseModel":{"type":"object","properties":{"baseModel":"circular(BaseModel_ReportView)"},"title":"BaseModel_ReportView"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"}},"title":"Label_ReportView"}},"title":"SimpleObject_ReportView"}},"realm":{"type":"object","properties":{"code":{"type":"string"},"id":{"type":"integer","format":"int32"},"idString":{"type":"string"},"label":{"type":"object","properties":{"baseModel":{"type":"object","properties":{"baseModel":"circular(BaseModel_ReportView)"},"title":"BaseModel_ReportView"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"}},"title":"Label_ReportView"}},"title":"SimpleCodeObject_ReportView"}},"title":"FundingSource_ReportView"},"label":{"type":"object","properties":{"baseModel":{"type":"object","properties":{"baseModel":"circular(BaseModel_ReportView)"},"title":"BaseModel_ReportView"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"}},"title":"Label_ReportView"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser_ReportView"},"lastModifiedDate":{"type":"string","format":"date-time"},"notes":{"type":"string"},"programs":{"type":"array","items":{"type":"object","properties":{"code":{"type":"string"},"id":{"type":"integer","format":"int32"},"idString":{"type":"string"},"label":{"type":"object","properties":{"baseModel":{"type":"object","properties":{"baseModel":"circular(BaseModel_ReportView)"},"title":"BaseModel_ReportView"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"}},"title":"Label_ReportView"}},"title":"SimpleCodeObject_ReportView"}},"programsWithAccess":{"type":"array","items":{"type":"object","properties":{"code":{"type":"string"},"id":{"type":"integer","format":"int32"},"idString":{"type":"string"},"label":{"type":"object","properties":{"baseModel":{"type":"object","properties":{"baseModel":"circular(BaseModel_ReportView)"},"title":"BaseModel_ReportView"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"}},"title":"Label_ReportView"}},"title":"SimpleCodeObject_ReportView"}},"startDate":{"type":"string","format":"date-time"},"stopDate":{"type":"string","format":"date-time"},"usedUsdAmt":{"type":"number","format":"double"}},"title":"Budget_ReportView"}}}},"description":"Returns the list of budgets for the given realm"},"403":{"content":{"text/json":{"schema":{"type":"object","properties":{"messageCode":{"type":"string"}},"title":"ResponseCode_ReportView"}}},"description":"The user does not have access to the budget list for the given realm"},"404":{"content":{"text/json":{"schema":{"type":"object","properties":{"messageCode":{"type":"string"}},"title":"ResponseCode_ReportView"}}},"description":"Unable to find the budget list for the given realm"},"500":{"content":{"text/json":{"schema":{"type":"object","properties":{"messageCode":{"type":"string"}},"title":"ResponseCode_ReportView"}}},"description":"Internal error that prevented the retrieval of the budget list"}}}
+>
+  
+</StatusCodes>
+
+
+      

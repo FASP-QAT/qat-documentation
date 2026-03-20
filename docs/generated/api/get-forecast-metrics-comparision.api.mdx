@@ -1,0 +1,71 @@
+---
+id: get-forecast-metrics-comparision
+title: "Get Forecast Metrics Comparision"
+description: "Retrieve the forecast metrics comparision report"
+sidebar_label: "Get Forecast Metrics Comparision"
+hide_title: true
+hide_table_of_contents: true
+api: eJztV21v2zYQ/ivCfdoAxXa8ZVmFYYDjpUWKZGljtwVmGAEtnS22FMmQJ7uG4f8+HCU3cmzn7duA5ZPDez/ec3y0ggx96qQlaTQkcIPkJM4xohyjqXGYCk9Rwaepj1JTWOGkl0ZHDq1xBDEYi06w+UUGCcyQ3tZmV5VV/94IYnB4V6KnM5MtIVlBajShJv4prFUyDZ7aXz1nswKf5lgI/kVLi5CAmXzFlKNax3FJomepVUJrqWeftKSLzDcMhHNiCTFIwqJ57slJPYP1ml3hXJrSXxlNeVNHasIZOohhalwhqDr6pQvByMycKF4czKFQRd+Umtzydcbc5mel6Ek4+ksQ7jprqGeC8IhkgWxCTqTo+oJwZl6RX+mxZ60zc8wGpbVq+UEJfa3VsqE+MUah0EGfJCk+OzwxF9qWdHsTZu2zxAWs2W57ZodPjapkJ/XsSYcZJORKDP301mhfzVC303kwkYTf6fAoHurHgREVKZVC7WtEXMv6RvuyqKv6oabLYrJ9wZkpJwr32g0NbcV4zDiT0+krTTfdPnfOuNfYDHOHPjcqe6ExZi9vUoHei9keELCMIR/Q+FzYNxbN03cunwtVmQ2qnPYlqcQE1dPBJsLjlcleqAqpdGmphPvpbHPYgNvP0EDpPoUf+d2iPpz87dQ9IrSPCb3dv2o2SV0Gra0FcS8cyMIqvA5NeJB0vb//v8P/7B0+6/24Lmn3Adl5QW6QSqf9k6SHSzp54TNx4PrqrdQ32b7N1Kjtpn6jWPOJh/BCEzotVIS8Y6NFLhVGM9SBn+lZKK+mbSGCmHlIRlA59TDmXUm5YRpnjQ85C8ohgbawsl1ZtqePsTuPbo6Ova6gdDyaOZH1SZs9tO5KoUlOa5IntFBLkqlvGceMZLuWd1XamEWVz4jdrcccIi2dpGWIMUHh0PVKznI0booHfA81UhpKm//ebuD7/stwJ/Y59zF06/2XYUTmGzKH2ExHISiJzoKX6I8g/JMrD/H4WQ8SiDdXyg0I7eYJublnv+ffBQ/2XvY62gzCeJeddra5Z1N1h1vuCJk7draYIXQ73V+POqdH3TfD45Pk5Djp/t7qnB7/A3vZYNPjI2yv5ldSTw0XuN3ej1tjEPU2cxANjVEQg5Ipah86o0Xoac+KNMfoshJEn9EFXtdtdSB+MGeLxaIlgjqPVbv25duXF/3zvwfnR2zTQNfHHl//vHLI3Wi9OR2dnPx2Og6PhPFUCN3I5B1StNk2UQ2BaBsDW8U2FsVrvq3qGQobxiohwwYKBa9qbI5AWBm4bW3yCD7HMeSM62QEqxW/H5+cWq/5+K5Ex4gaxzAXTgqmTgyoGHIUGboAtm+4hAT6VT1HQ06N1VUZ2PDDr7d1vLHopSlaaujeL8x1c+d8uB7wZUzqT8MirEZwYsHliQUkEL42OUTAdThbgRJ6VgaCB5VP/vsXcpIy4Q==
+sidebar_class_name: "post api-method"
+info_path: docs/generated/api/qat
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get Forecast Metrics Comparision"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/api/report/forecastMetricsComparision"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Retrieve the forecast metrics comparision report
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={undefined}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"content":{"application/json":{"schema":{"type":"object","properties":{"planningUnitIds":{"type":"array","items":{"type":"string"}},"previousMonths":{"type":"integer","format":"int32"},"programIds":{"type":"array","items":{"type":"string"}},"realmCountryIds":{"type":"array","items":{"type":"string"}},"realmId":{"type":"integer","format":"int32"},"startDate":{"type":"string","format":"date-time"},"tracerCategoryIds":{"type":"array","items":{"type":"string"}},"useApprovedSupplyPlanOnly":{"type":"boolean"}},"title":"ForecastMetricsComparisionInput_ReportView"}}},"description":"The forecast metrics comparision input","required":true}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"content":{"text/json":{"schema":{"type":"array","items":{"type":"object","properties":{"actual":{"type":"boolean"},"actualConsumption":{"type":"number","format":"double"},"actualConsumptionTotal":{"type":"number","format":"double"},"diffConsumptionTotal":{"type":"number","format":"double"},"forecastError":{"type":"number","format":"double"},"forecastErrorThreshold":{"type":"number","format":"double"},"forecastedConsumption":{"type":"number","format":"double"},"message":{"type":"string"},"monthCount":{"type":"integer","format":"int32"},"planningUnit":{"type":"object","properties":{"id":{"type":"integer","format":"int32"},"idString":{"type":"string"},"label":{"type":"object","properties":{"baseModel":{"type":"object","properties":{"baseModel":"circular(BaseModel_ReportView)"},"title":"BaseModel_ReportView"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"}},"title":"Label_ReportView"}},"title":"SimpleObject_ReportView"},"program":{"type":"object","properties":{"id":{"type":"integer","format":"int32"},"idString":{"type":"string"},"label":{"type":"object","properties":{"baseModel":{"type":"object","properties":{"baseModel":"circular(BaseModel_ReportView)"},"title":"BaseModel_ReportView"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"}},"title":"Label_ReportView"}},"title":"SimpleObject_ReportView"}},"title":"ForecastMetricsComparisionOutput_ReportView"}}}},"description":"Returns the forecast metrics comparision"},"500":{"content":{"text/json":{"schema":{"type":"object","properties":{"messageCode":{"type":"string"}},"title":"ResponseCode_ReportView"}}},"description":"Internal error while generating the report"}}}
+>
+  
+</StatusCodes>
+
+
+      

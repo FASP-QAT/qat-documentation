@@ -1,0 +1,71 @@
+---
+id: get-health-area-dropdown-list
+title: "Get Health Areas"
+description: "Retrieve a list of health areas for a specific realm"
+sidebar_label: "Get Health Areas"
+hide_title: true
+hide_table_of_contents: true
+api: eJydVW1v2zYQ/ivEfWoB1QoyZEWFYYDbZJmLtEMTr/0QGMFZOltsJZI5UvYMQ/99OEpqFedl6T7Z4t09vOfhveyhIJ+zdkFbAxlcUmBNG1KoKu2DsitVElahVMiEXq0sK1TeUa5XOldMWNWQgHXEKBCzAjJYU/gzBk2Z8JStK+zWXGgfIAGHjDUFYg/Z9f7g9nlJHaSancarQknj+2NOkIAWZ4ehhAQM1gQZxLBZAQkw3TaaqYAscEMJ+LykGiHbQ9g5cdUm0JoYElhZrjF0R78cQ9suJNw7azx5iTg+OpKf3JpAJkQM+iekX72ku78Pjcy4kwQD1X50bpdfKY/0WaQKuoPPbUEjLx9YmzW0CejiWfmK41UX9BBKhUuq/juLJXr6YIufdIVcc95UyC/eDoc38tandms+a9q+lAyCDpXAPezyPcfZc+lG7xsyj9O9WfETRveU0bsHjCMSF9HrLoGR+UrXrqJ3tqC/oniHnuJ7r9kaNj5W+fO7rU3g5CfL8pHXrMl7XMeUn2Z+2feEeN6jdchqZgKxwUoRc2xhDMoxbcgEKiJX7oYMVkL4MfJdAriWOQHDEPGwSKCmUNp+zsSJEkrIIEWn06L3S8vv8yeNqqX7fkC0kIAn3gwDqGGp5TIE57NUMCa3DZogeseBhgarXdC5n1hewyHXczIy+KhQHaYSOJkinvKGddjFO5aETDxtJM/rxdh8JS/Vt9bIafj6Y2iA91/m9+4+E52jfO+/zFWw38gobeJB1ziZehtR1G/R+Dv0s1BetMOHZHh0ESAqrs3KSgJ37/p0RxM1HURRc2srSKDSORkfq6ifx1OHeUnqojOoz8ReIo8nR5AciL7dbicY3UXjtMfy6cXs3dnHq7NXEjMqxk9T0WLTAUIGx5M3r69PTn59vRAvZ32o0YwyOaegunWkprGwDoQc9dH/XX+9iLEJXYXaSCaR5L4vz2tAp+XmvkAhgR8lGpdWh5QNe2yRQGl9kMj9Xsbu31y1rRzfNsRSV4sENsgal6KKrFLt5X8B2QorT0+wfHHZr8iX6rkb90GGw9IzsvI2WDXyBQl8o91oI7eLNpItiGOenXWa5+TCKO7HBGvHPX5+Noe2/Rc4aPrS
+sidebar_class_name: "get api-method"
+info_path: docs/generated/api/qat
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get Health Areas"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/api/dropdown/healthArea/realm/{realmId}"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Retrieve a list of health areas for a specific realm
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"description":"The realm ID for the health area list","in":"path","name":"realmId","required":true,"schema":{"type":"integer","format":"int32"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"content":{"text/json":{"schema":{"type":"array","items":{"type":"object","properties":{"code":{"type":"string"},"id":{"type":"integer","format":"int32"},"idString":{"type":"string"},"label":{"type":"object","properties":{"baseModel":{"type":"object","properties":{"baseModel":"circular(BaseModel_DropDownView)"},"title":"BaseModel_DropDownView"},"labelId":{"type":"integer","format":"int32"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"}},"title":"Label_DropDownView"}},"title":"SimpleCodeObject_DropDownView"}}}},"description":"Returns the list of health areas for a specific realm"},"500":{"content":{"text/json":{"schema":{"type":"object","properties":{"messageCode":{"type":"string"}},"title":"ResponseCode_DropDownView"}}},"description":"Internal error that prevented the retrieval of the list of health areas"}}}
+>
+  
+</StatusCodes>
+
+
+      

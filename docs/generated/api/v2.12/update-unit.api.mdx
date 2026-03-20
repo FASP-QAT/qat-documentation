@@ -1,0 +1,71 @@
+---
+id: update-unit
+title: "Update Unit"
+description: "API used to update a Unit"
+sidebar_label: "Update Unit"
+hide_title: true
+hide_table_of_contents: true
+api: eJztWV9z4jYQ/yqafel1xiGEXu56fipJ6SQzuYQA6UMzGWaxF9DVlhxJDscw/u6dlU2wISW9t14OnvBqtX+k1e5vpRU4nFkI7yFX0sFDADHZyMjMSa0ghG7/UuSWYuG0yLMYHQkUd8wagM7IIPNdxhBCOVoNGXrMybozHS8hXG3JHM3JixB68oUiJ9wcnVjqXCxQuY0iCCDSypFyLAKzLJGRV3f8xbKcFdhoTinyP7fMCEIoBUIAmWHjnCTLo5EhdBSfLV9nzS0ZdueZTypHMzIQwFSbFF1J+qUDReCZFaZUY7fOSDWDogjASZcw6QytjO4sGZ5SmfI7+7czq6aDF+DIyZR4UoLWfdaxnMr/hxN1e77NE4ycfKrzT7ROCJU3REn3n61OcELJYeffxs77zfy2rR+TesHs9aDN9gxOzZ7B7OXBCVr6rONDyL2VkKttKETSRHmC5t3ZmvgzNK2pWOs2XvkEVKWtcx2/5FIAsUxJWanV6+soD6nvB4zDQ+o7hNx3m/pkPCzN2OvSUKZZQjflEh4C6hBQOwHlm8aCKdw3SkMxhM7k5Ak208qWy9Npt3e7yQG53CgrUAzzKCJrRaRjEnIq3JzEc48qFmiFLTmmedJsLh19deuu0tvxvv1hn6YL57KhQ5fb1vXNaNw9P+/1R92zq95abYwOhc25Z6VYSCuUdiJX8jGnVzSf7vexpvnyetQbXHevxsPe4M/eYNwbDG4GlQGGSn91SkLztyBjtClb7VjG3h5MEr3YWiWnRaT5vG7331uGFgGk5OaaO/8s95GMbg4hHGMmjxkTHUMAlswTGb5eWEFuOD7mzmU2PGau1mOOyslp1dWjwmTpZGRb2nAcNlegb3ScR97EUqiYaiNuuyMI4AmNxEniY6QoHgJgMwebG4jeV2SPdhLK+rS162epVvkaRx467c77o/bHo86n0clpeHoSdn5ttT+e/AUvHfPXRO8exH3y14ePz8SmT27XoOBb8OsZCrXrQGeTmDb4ZpvGsGabljVojZrz/S9W0eg7Nm422g15iJEfPUY2AO3fAP0b8VNNtS9SFaC4bVQWgSoW3XV5ESOtufxzYSprS6d10mm1d0pOt3/5k+WCiCWs4EJ52x2Joa8/VXXEyFfHyp8/usO+cIQpBFv1brFYvFLvKEXJMy6GwzHLGV/c/jab2+gos6ln4VWSESlLNY3dDKM5idL+psqp1q0JGo+0Mm1diqo28a68zK/u6xuerzZ1f+/9f4UEPTLIEpTlLa7xcVWigXvATEKZqyAAfl6Ya+t4YLXiOLwzSVEw+TEns4Tw/mFTzvmrCGBOGJPxEOJvWkII56VxRyNWz+xJzmbsPBAUwXpGN4ooczXeDZhhuPAMZPp3DCcm1aNFWiZXgwt+0MAFhOAfPViDh6OetoIE1SzHGfOWIvn3D7VMfY8=
+sidebar_class_name: "put api-method"
+info_path: docs/generated/api/v2.12/quantification-and-analytics-tool
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Update Unit"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"put"}
+  path={"/api/unit/"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+API used to update a Unit
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={undefined}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"description":"The Unit object that you want to update","content":{"application/json":{"schema":{"type":"object","properties":{"createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"},"active":{"type":"boolean"},"unitId":{"type":"integer","format":"int32"},"label":{"type":"object","properties":{"createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"},"active":{"type":"boolean"},"labelId":{"type":"integer","format":"int32"},"label_en":{"type":"string"},"label_sp":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"baseModel":{"type":"object","properties":{"createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"},"active":{"type":"boolean"},"baseModel":"circular(BaseModel)"},"title":"BaseModel"}},"title":"Label"},"unitCode":{"type":"string"},"dimension":{"type":"object","properties":{"id":{"type":"integer","format":"int32"},"label":{"type":"object","properties":{"createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"},"active":{"type":"boolean"},"labelId":{"type":"integer","format":"int32"},"label_en":{"type":"string"},"label_sp":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"baseModel":{"type":"object","properties":{"createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"},"active":{"type":"boolean"},"baseModel":"circular(BaseModel)"},"title":"BaseModel"}},"title":"Label"},"idString":{"type":"string"}},"title":"SimpleObject"},"baseModel":{"type":"object","properties":{"createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"},"active":{"type":"boolean"},"baseModel":"circular(BaseModel)"},"title":"BaseModel"}},"title":"Unit"}}},"required":true}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Returns a Success code if the operation was successful","content":{"text/json":{}}},"406":{"description":"Returns a HttpStatus.NOT_ACCEPTABLE if the data supplied is not unique","content":{"text/json":{}}},"500":{"description":"Returns a HttpStatus.INTERNAL_SERVER_ERROR if there was some other error that did not allow the operation to complete","content":{"text/json":{}}}}}
+>
+  
+</StatusCodes>
+
+
+      

@@ -1,0 +1,33 @@
+---
+id: treetemplate-dropdownview
+title: "TreeTemplate_DropDownView"
+description: ""
+sidebar_label: "TreeTemplate_DropDownView"
+hide_title: true
+hide_table_of_contents: true
+schema: true
+sample: {"baseModel":{},"flatList":[{}],"forecastMethod":{"id":0,"idString":"string","label":{"baseModel":{},"labelId":0,"label_en":"string","label_fr":"string","label_pr":"string","label_sp":"string"},"typeId":0},"label":{"baseModel":{},"labelId":0,"label_en":"string","label_fr":"string","label_pr":"string","label_sp":"string"},"levelList":[{}],"monthsInFuture":0,"monthsInPast":0,"notes":"string","realm":{"code":"string","id":0,"idString":"string","label":{"baseModel":{},"labelId":0,"label_en":"string","label_fr":"string","label_pr":"string","label_sp":"string"}},"rootNodeType":{"id":0,"idString":"string","label":{"baseModel":{},"labelId":0,"label_en":"string","label_fr":"string","label_pr":"string","label_sp":"string"}},"treeTemplateId":0}
+custom_edit_url: null
+---
+
+import Schema from "@theme/Schema";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"TreeTemplate_DropDownView"}
+>
+</Heading>
+
+
+
+
+
+<Schema
+  schema={{"type":"object","properties":{"baseModel":{"type":"object","properties":{"baseModel":"circular(BaseModel_DropDownView)"},"title":"BaseModel_DropDownView"},"flatList":{"type":"array","items":{"type":"object","title":"ForecastNodeTreeNode_DropDownView"}},"forecastMethod":{"type":"object","properties":{"id":{"type":"integer","format":"int32"},"idString":{"type":"string"},"label":{"type":"object","properties":{"baseModel":{"type":"object","properties":{"baseModel":"circular(BaseModel_DropDownView)"},"title":"BaseModel_DropDownView"},"labelId":{"type":"integer","format":"int32"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"}},"title":"Label_DropDownView"},"typeId":{"type":"integer","format":"int32"}},"title":"SimpleObjectWithType_DropDownView"},"label":{"type":"object","properties":{"baseModel":{"type":"object","properties":{"baseModel":"circular(BaseModel_DropDownView)"},"title":"BaseModel_DropDownView"},"labelId":{"type":"integer","format":"int32"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"}},"title":"Label_DropDownView"},"levelList":{"type":"array","items":{"type":"object","title":"TreeLevel_DropDownView"}},"monthsInFuture":{"type":"integer","format":"int32"},"monthsInPast":{"type":"integer","format":"int32"},"notes":{"type":"string"},"realm":{"type":"object","properties":{"code":{"type":"string"},"id":{"type":"integer","format":"int32"},"idString":{"type":"string"},"label":{"type":"object","properties":{"baseModel":{"type":"object","properties":{"baseModel":"circular(BaseModel_DropDownView)"},"title":"BaseModel_DropDownView"},"labelId":{"type":"integer","format":"int32"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"}},"title":"Label_DropDownView"}},"title":"SimpleCodeObject_DropDownView"},"rootNodeType":{"type":"object","properties":{"id":{"type":"integer","format":"int32"},"idString":{"type":"string"},"label":{"type":"object","properties":{"baseModel":{"type":"object","properties":{"baseModel":"circular(BaseModel_DropDownView)"},"title":"BaseModel_DropDownView"},"labelId":{"type":"integer","format":"int32"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"}},"title":"Label_DropDownView"}},"title":"SimpleObject_DropDownView"},"treeTemplateId":{"type":"integer","format":"int32"}},"title":"TreeTemplate_DropDownView"}}
+  schemaType={"response"}
+>
+  
+</Schema>
+            

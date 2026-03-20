@@ -1,0 +1,71 @@
+---
+id: create-authentication-token
+title: "Authenticate user"
+description: "Get JWT token for authentication"
+sidebar_label: "Authenticate user"
+hide_title: true
+hide_table_of_contents: true
+api: eJy1VUtP20AQ/iurudYkKSqgWlWlgFIUhFogaTlEOUzsSbyw2V1214Qo8n+vZu00DtDHgebkzHvmm292Azn5zEkbpNGQwjkFcXE7FsHckxZz4wSWoSAdZIbRJAFjycXvYQ4pZI4wUH/PaMzOkICjh5J8ODX5GtINZEYH0oE/0VrVGHfvPGfegM8KWiJ/hbUlSMHM7igLkIB1nDNI8qxVqBclLuisQL2gvOUwM0YRaqiSnZHJqWXhg5N6wQYWvV8Zl7+qLD05jcvXPKsEggyKRRerEDu9qduEipXcs3RcVnAlRYG3Rvu69sNe7w+TKFC9+9s0YpJ9zEZllpH381KpdRsuyrmXD733b59yqB9RyVxkjnLOhsrXuY7fPtdVg5SgJxsnWyVw9D/mONSBYVfCk3skJ8g542rEceEhnQAzY3/VYZrAkkJhmAvW+LiuGApIoduGAhKoo3KcDZROQQpFCNan3S5a2XkoUQc5b8KiRrUOMvMd4xbwvNBz0kxByreVcrhqyimy0smwjjlmhI4clwvpZNpWj3gm9UK2jbb/vhi3xMALfjt+kXvAQxKhoNaZkDoK5tEvFacxivgUlZ+585iPCRo1kGyx4AHEATNaN7trMXjCpVX0KtuZVs/5vWVnm9Y72Y7NLYpLPTccf7+76z0URH8LgxgboyABJTPSPhbWROxbzAoSl7VC/CDn2fOw0+PMezCvVqsORnNGtdvE8t3L4dng62hwwD6t83Ld5+k/1gEhhcPOx5PJ0dHxyTTeL+PDEnW7kta6Ce75OXYtvvzLnW8wCvQUulahjHc1drRpVnwCeys+TaBgBqQT2Gxm6Om7U1XF4oeSHC/lNIFHdBJn3OBkWiVQEObk4r7e0xpSOKtLPBhzdjZXJVfx4sGokq1HP8vIht/Y/joFVZuoV99GPNtZ8zAt6yVyuOJHC1eQQnznOEJkSZTtdhFSqGPy7ycYeIgH
+sidebar_class_name: "post api-method"
+info_path: docs/generated/api/qat
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Authenticate user"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/authenticate"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Get JWT token for authentication
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={undefined}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"content":{"application/json":{"schema":{"type":"object","properties":{"languageChanged":{"type":"boolean"},"languageCode":{"type":"string"},"password":{"type":"string"},"username":{"type":"string"}},"title":"JwtTokenRequest"}}},"required":true}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"content":{"application/hal+json":{"schema":{"type":"object"}}},"description":"Successfully authenticated"},"401":{"content":{"application/hal+json":{"schema":{"type":"object"}}},"description":"Invalid credentials"},"406":{"content":{"application/hal+json":{"schema":{"type":"object"}}},"description":"Password expired"},"500":{"content":{"application/hal+json":{"schema":{"type":"object"}}},"description":"Internal server error"}}}
+>
+  
+</StatusCodes>
+
+
+      

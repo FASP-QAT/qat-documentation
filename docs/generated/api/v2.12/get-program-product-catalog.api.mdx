@@ -1,0 +1,71 @@
+---
+id: get-program-product-catalog
+title: "Forecasting Unit import data from Supply Plan"
+description: "API Used in Forecasting Unit import data from Supply Plan"
+sidebar_label: "Forecasting Unit import data from Supply Plan"
+hide_title: true
+hide_table_of_contents: true
+api: eJylVk1z2zgM/SscXPYif8Rtprs6rZs0E182TuzsYT2eDCzBErsSyZCQXY9H/71Dyh+yk7TN1BdLIIgHkO8B2gJj5iCegbE6s1heIyPMI0jJJVYallpBDMPxSDw6SoVU4kZbStCxVJl4VJKFLI22LFJkFEurSzGpjCk2Ylygggi0IYs+ziiFGDLicYM0tjqtEr5CxkJnEIGl54ocf9bpBuItJFoxKfaPaEwhkxCk99X5jLbgkpxK9E+8MQQx6MVXShgiX4khy5KcX93V5cEPrlIxZWQhgqW2JXJj+jCAOoIVWbdL9pf8TYFKSZX5oxilrrULrcUNRCCZyrbdsZUqg7qOwDFavkaml8strBSZOixLgrBFm/ftsJSFgt6Z22lhk2bhpecx/psudQQsufCmYcIVFldauaoM5PJ8GylT8dMDeRr9K2kNdV03dJCWUojZVhQMzmjlmmsd9Pv+75SmD8SVVU4U0rHQS/Eq2l3FpvI8aRGM6RvvmRXAP/Y/vB0exS2zmTBy5bo3dw+fR9fXX/4Rcik4J68TK1JNTijNIscVCUwScu4nkJevVTRSTFZhIchabQXnyMJYWpFiSgOcJbYkV1j4gn+38DqCkjjXXqlGu6Am5Bxi6KGRvVaP2D/38ByquUeIwJH1YoJ4toXKFhBDzmxc3POxus8VKpbLnaxRYbFhmbiutp7Jp6ewaxVSK9EEFUttxf1wChGs0EpcFIEVdT2PwFfzcGwlX75haQo6awX9E6H3X5HxbE/f+YlMYdAffOz0P3UGf00vLuPLi3jwZ7f/6eI/aEvzR14tObYxXpfbUdvnKmsJUKqlDpe5E9n9ydEKVKkY7s9XTLUu4FC9T7V7Mej2X5z5cDz6wwnWO/IGrt0Pp2ISLmDHIkwCixSWHvdmOBkLJiwhOrvw9Xr9kwunEqXfcTuZPPk4T7f3f2e5SzrGlcGljqCQCSlHLcShwSQn0eR/CrnUurtA27Qy7bhE1U71nUPs5Gxas+m3JuOuTQYNmgKl8kWGKrY72c0AjWxG2mE4H94ggrfEN48g9/KNZ7DdLtDRoy3q2pufK7IbiGfzo3L8Wx1BTpiSDWr9nzYQw1VTZGfq0/TuRRVGx/kwrqP9jmGSkOGW77G9eGUeWsv4buKlu9hN+lKn3tni2vMc1xBD+G7wEKHZB9sWClRZhZn3bWL633dJQQbI
+sidebar_class_name: "post api-method"
+info_path: docs/generated/api/v2.12/quantification-and-analytics-tool
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Forecasting Unit import data from Supply Plan"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/api/programData/program/actualConsumptionReport"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+API Used in Forecasting Unit import data from Supply Plan
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={undefined}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"content":{"application/json":{"schema":{"type":"object","properties":{"programId":{"type":"integer","format":"int32"},"versionId":{"type":"integer","format":"int32"},"planningUnitIds":{"type":"array","items":{"type":"string"}},"startDate":{"type":"string","format":"date-time"},"stopDate":{"type":"string","format":"date-time"},"regionIds":{"type":"array","items":{"type":"string"}},"planningUnitIdString":{"type":"string"},"regionIdString":{"type":"string"}},"title":"ActualConsumptionDataInput_ReportView"}}},"required":true}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Returns list of ActualConsumptionDataOutput","content":{"text/json":{}}},"403":{"description":"Returns a HttpStatus.FORBIDDEN if the User does not have access","content":{"text/json":{}}},"500":{"description":"Internal error that prevented the retreival of list of ActualConsumptionDataOutput","content":{"text/json":{}}}}}
+>
+  
+</StatusCodes>
+
+
+      

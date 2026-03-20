@@ -1,0 +1,71 @@
+---
+id: add-dimension
+title: "Add Dimension"
+description: "API used to add a Dimension"
+sidebar_label: "Add Dimension"
+hide_title: true
+hide_table_of_contents: true
+api: eJztWMFu4zYQ/RViLm0BxXHcTbfVqUrWRQJkE8f29tAgMMbi2OJWEhWSitcw9O/FULIt24HTvbVBcoqGw5lHcvjmmStwOLcQPoBUGeVW6RweA5BkY6MKx58hRINrUVqSwmmBUgoUnzbOAeiCDLLntYQQUMr2oKGnkqy70HIJ4Wov7jihbSShp18pdsIl6MRSl2KBuWsyQgCxzh3ljoNgUaQq9ilPv1qOtAIbJ5Qh/+eWBUEIdTQIoDAM0CmyPBobQkfyYvm6a2nJ8JI2fip3NCcDAcy0ydDVpp97UAXeOceMWu7WGZXPoaoCcMqlbLpAq+IvlgxPaaB8QvfCrFYOiY5OnMqIJ6Vo3Wct1Uz9NxbRxvN9K8HYqee2/1TrlDDnsU0t/mvoKU4pfT/+t3H8/jC/7+gnlL8Aez1oiyODM3NksHh5cIqWPmv5XnJvpeRaBwqxMnGZovnxYm38CXbRNK5tjDeegN5L4700Dkpjq4cqNrMkUoYkhM6U5A220Lmt96jX7R4KpSG50uRWoBiVcUzWilhLEmomXEJiI8DEAq2wtcesTHdVk6Nvbi2XPI4P3V+OZbpyrhg5dKXt3N6NJ9HlZX8wji5u+uu0W+VmS1ZkJIWyItdOlLl6KumV9OfHF9pKf3077g9vo5vJqD/8sz+c9IfDu2GDwlC9aJ2R0PwtyBhtahUplfR4ME31Ym+rnBaxzoqU3HGgVQAZuUSzti209UWNLoEQTrFQpxulcgoBWDLPZFhNr6A0XC+Jc4UNT9m181Ri7tSsUa6YY7p0KrYdbbgud/dhYLQsYw+0Dipm2oj7aAwBPKNROE19uVTVYwAMdrjV2f1vyOs6IJj17eu271arp+1QAPS6vQ8n3Y8nvd/GZ+fh+VnY+7XT/Xj2F7x07V8LfXgxj8VfX0a+HntasNtSem9hcRul023rmC1bbeXLvo1Vy76t2LHtNKL//2ZV+731bSxJ5TPtaadpFvc7LCEwlyJaU4UYa82sziRT80Svc9brdA/oIxpc/2D9b+e6WzD13UdjMfJc0vAdxp7vmvX8EY0GwhFmEOxx12KxeIW7KEPFM65GownHmVzd/z5PbHxS2My78C6pmHJLrYxRgXFCosa/m3KmdWeKxndRJt0M8/ZEKXceIHbWvtpy+SvvFk2n93xfpKh8s/c4Vg3FPwAWCloUBAHw60jCfSB8gNWKC/KLSauKzU8lmSWED49bjuavKoCEUJLxfeFvWkIIlzXGkzFjYPe0ZCwHLxtVsJ4RxTEVruW77VPcAzY9anA34iYxbR5cMi3Z2eCCH2NwASH4JxtO4fWGt60gxXxe4px965j89w9a8hc4
+sidebar_class_name: "post api-method"
+info_path: docs/generated/api/v2.12/quantification-and-analytics-tool
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Add Dimension"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/api/dimension/"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+API used to add a Dimension
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={undefined}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"description":"The Dimension object that you want to add","content":{"application/json":{"schema":{"type":"object","properties":{"createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"},"active":{"type":"boolean"},"dimensionId":{"type":"integer","format":"int32"},"label":{"type":"object","properties":{"createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"},"active":{"type":"boolean"},"labelId":{"type":"integer","format":"int32"},"label_en":{"type":"string"},"label_sp":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"baseModel":{"type":"object","properties":{"createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"},"active":{"type":"boolean"},"baseModel":"circular(BaseModel)"},"title":"BaseModel"}},"title":"Label"},"baseModel":{"type":"object","properties":{"createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"},"active":{"type":"boolean"},"baseModel":"circular(BaseModel)"},"title":"BaseModel"}},"title":"Dimension"}}},"required":true}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Returns a Success code if the operation was successful","content":{"text/json":{}}},"406":{"description":"Returns a HttpStatus.NOT_ACCEPTABLE if the Dimension supplied is not unique","content":{"text/json":{}}},"500":{"description":"Returns a HttpStatus.INTERNAL_SERVER_ERROR if there was some other error that did not allow the operation to complete","content":{"text/json":{}}}}}
+>
+  
+</StatusCodes>
+
+
+      

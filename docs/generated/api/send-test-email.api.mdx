@@ -1,0 +1,71 @@
+---
+id: send-test-email
+title: "Send a test email"
+description: "Send a test email"
+sidebar_label: "Send a test email"
+hide_title: true
+hide_table_of_contents: true
+api: eJydVMFu2zAM/RWBpw3Q4iJDV8wYBmRdVqQoBrTN1kPgg2IzsVpbciW6WWD43wfKzuIkRQ87JRbJp8f3KDaQoU+drkhbAzHco8mEEoSeBJZKFyDBVugUx2cZxODRZHP0NO2jlXKqRELnIV40R3DzHMXsu7ArQTl2gOgEWcEo4Wx/k1hZBxI011WKcpBgVIkQQ183y0CCw+daO8wgJlejBJ/mWCqIG6BtxcnaEK6RkVbWlYq6o49jaNuEy31ljUfPFeOzM/5JrSE0FDDwD0WPnrk3bSuPurlDqp3xwtdpit6L1GYIrYTzN3FOKdrlI6bE2jnWlnRHp0Tv1RovGXWf7MlpswZmQ5oKDDy6JkJme8pzZgidUYVA56wTm1wXGBTXZr03ooNUa/YN2FFIJJRIuWWb1xgIsg8xRKrSETsVHbgfNf+caUGCR/eyG4PaFRBDTlT5OOLy0XOtDOmVTsMoKaOKLenUj6xbw3EDV2h45DATHaZgOLbPY1o7TdtwxxKVQzepmeIiGYbvWfFO1GHS7uvHbjCuH+Ynd09ZvKDS9cNckH1CI7QJB91AxeJbQBFfQvAr9EPIznT4IHfmsQBBZ21Wlgkc3nV7oImY7EQRc2v5bRU6RePDNPRPYVKpNEdx0wXEb3SeK8ejM5BHom82m5EK6axx1GP56GZ2Of15P/3ANYOhup2wFi8dIMQwHn2+WJyff7pIOKuynkplBkxe2xQH3Q0exKvJvUThqVSF0obvCS00/dwtQFWaM3k45cnmifd7IZGQW09c0jRL5fGXK9qWj59rdDwuiYQX5bRacrO8p7Tn/xnEK1V4fIP7u7t+5bwX/7HOXu2yP1Rmy5KrouYvkPCE24N11yathBxVhi6Q7uKTNMWKBpX7bdMOn/DVdA5t+xdgGgK9
+sidebar_class_name: "get api-method"
+info_path: docs/generated/api/qat
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Send a test email"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/api/test/sendTestEmail/{emailerId}"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Send a test email
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"description":"The ID of the emailer to send the test email for","in":"path","name":"emailerId","required":true,"schema":{"type":"integer","format":"int32"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"content":{"text/json":{}},"description":"Returns success code"},"500":{"content":{"text/json":{"schema":{"type":"object","properties":{"messageCode":{"type":"string"}},"title":"ResponseCode"}}},"description":"Internal error while sending the email"}}}
+>
+  
+</StatusCodes>
+
+
+      

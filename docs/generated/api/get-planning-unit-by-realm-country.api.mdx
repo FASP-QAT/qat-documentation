@@ -1,0 +1,71 @@
+---
+id: get-planning-unit-by-realm-country
+title: "Get Planning Units by Realm Country"
+description: "Retrieve a list of all planning units attached to a supply plan for a specific realm country"
+sidebar_label: "Get Planning Units by Realm Country"
+hide_title: true
+hide_table_of_contents: true
+api: eJzdV21v2zYQ/ivEfWoB1Q7SZsWEYYCTZoGLtF0TZ/0QGMVZOltsKVIhT84MQ/99OEpe5Tiv2AoU/ZSYvLfn4ZH3aA05hczrirWzkMIZsde0JIXK6MDKzRUaoyqD1mq7ULXVHBQyY1ZQrtgpVKGuKrOKNmruvKxUlOm5zpQnNKXKXG3ZryABV5FHSTXOIYUF8Z9d4Aur+XB1JuZH/1pX6LEkJh8gvVzfqHRSkBq/kQK5oO1EUpbfALlR+tx5SEBLhAq5gAQslgQp+F7ucQ4JeLqqtaccUvY1JRCygkqEdA28qsRDW6YFSbi58yVyu/RyH5pmKu6hcjZQEI/9vT35kznLZDnGoL95+CUIlPVuaPQehQHNVIbeupt9oYyFGi9Usm7D6/xRZSWg83P22i565qFdaBIwOCPzcDLMWC+pZzdzzhBaCTHDQO9c/j+GgUz7rDbonx1uFp9DApknZMoPVw8nqgP58WMJEuO2IXYIahJgzUaWDjHo7CKQF5eulDfIt3j1cuTI9IJ1SS3Xgd+5XM/1jwGiX89TkGzH6w6t+RnOZ0bm0VVF689k775Wn+f+ns3qvs1Q3bH503XQaXyAms2TfF/qc11Whj60UJtGtnYGWe1t6M2x3UFw96RqEni19/JJT/YdtJcUAi7oyOUPIDrr5kW0vAWQ8KxyR0FZx6rAJSmvFwWHOISzjEJQXOhwG5JXPxSS9273LGqbxxORWd6dCeW7UA6eOEe/N5SxZbkoRpH3zqvrQhtSC2IWbFsg27C4ECkDG9WjRPbANIGSuHCdJIrChwtIYYiVHlY9hTTsi5TheluyNJBAIL/cyKXay/gsmKuQDiXU4KpGy9LtUYKhRbNinYWB83I5t5GdkBWpRrlqYyoJJ7omUFZ7zauYY0boyY9qKfdy2t8+l6No2e4bbX79sXkJ3n6a7OQ+FlZjK7z9NFHsvpJV2saF9gVJ1WGMon6Lm79Dp86ijIg7kGxOVQiI5Gs7d1LAdq6PW5yo0YYUNXHOQAJGZ2RDbJNOKI4q0b7qtN1Qf5EP4rk/2IPkBunX19cDjObC8bCLFYan46Pj9+fHL8Sn120fR8LFsg0IKewPfn19eXDwy+upWFUucIm2V8kJsdpqpaBmKxVFtPqmorfw9u7O99b6Hf/xglYGdVR2kZ911+CXgJWWdu+1eBTeW18B6Q1lPk2gcIHFfb0WpXjhTdPI8lVNXvpymsASvcaZsCofDjrI/zmkczSB7qHk2Vkn+p+r//R9cSv2jba3gmqJppZfkMBXWu1+fzTTJoGCMCcfMbRGoyyjinvu356/pv+MnBxPoGn+AV3QzOw=
+sidebar_class_name: "get api-method"
+info_path: docs/generated/api/qat
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get Planning Units by Realm Country"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/api/planningUnit/realmCountry/{realmCountryId}"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Retrieve a list of all planning units attached to a supply plan for a specific realm country
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"description":"The ID of the realm country to retrieve planning units for","in":"path","name":"realmCountryId","required":true,"schema":{"type":"integer","format":"int32"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"content":{"text/json":{"schema":{"type":"array","items":{"type":"object","properties":{"id":{"type":"integer","format":"int32"},"idString":{"type":"string"},"label":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":"circular(BaseModel)","createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"}},"title":"BaseModel"},"createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"labelId":{"type":"integer","format":"int32"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"}},"title":"Label"},"name":{"type":"string"}},"title":"SimpleObject"}}}},"description":"Returns a list of planning units for a specific realm country"},"403":{"content":{"text/json":{"schema":{"type":"object","properties":{"messageCode":{"type":"string"}},"title":"ResponseCode"}}},"description":"User does not have rights to access this realm country"},"404":{"content":{"text/json":{"schema":{"type":"object","properties":{"messageCode":{"type":"string"}},"title":"ResponseCode"}}},"description":"No planning units found for the specified realm country"},"500":{"content":{"text/json":{"schema":{"type":"object","properties":{"messageCode":{"type":"string"}},"title":"ResponseCode"}}},"description":"Internal error while getting planning unit"}}}
+>
+  
+</StatusCodes>
+
+
+      

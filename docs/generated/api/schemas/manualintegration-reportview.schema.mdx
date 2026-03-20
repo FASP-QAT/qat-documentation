@@ -1,0 +1,33 @@
+---
+id: manualintegration-reportview
+title: "ManualIntegration_ReportView"
+description: ""
+sidebar_label: "ManualIntegration_ReportView"
+hide_title: true
+hide_table_of_contents: true
+schema: true
+sample: {"completedDate":"2024-07-29T15:51:28.071Z","createdBy":{"userId":0,"username":"string"},"createdDate":"2024-07-29T15:51:28.071Z","integrationId":0,"integrationName":"string","manualIntegrationId":0,"program":{"code":"string","id":0,"idString":"string","label":{"baseModel":{},"label_en":"string","label_fr":"string","label_pr":"string","label_sp":"string"}},"versionId":0}
+custom_edit_url: null
+---
+
+import Schema from "@theme/Schema";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"ManualIntegration_ReportView"}
+>
+</Heading>
+
+
+
+
+
+<Schema
+  schema={{"type":"object","properties":{"completedDate":{"type":"string","format":"date-time"},"createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser_ReportView"},"createdDate":{"type":"string","format":"date-time"},"integrationId":{"type":"integer","format":"int32"},"integrationName":{"type":"string"},"manualIntegrationId":{"type":"integer","format":"int32"},"program":{"type":"object","properties":{"code":{"type":"string"},"id":{"type":"integer","format":"int32"},"idString":{"type":"string"},"label":{"type":"object","properties":{"baseModel":{"type":"object","properties":{"baseModel":"circular(BaseModel_ReportView)"},"title":"BaseModel_ReportView"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"}},"title":"Label_ReportView"}},"title":"SimpleCodeObject_ReportView"},"versionId":{"type":"integer","format":"int32"}},"title":"ManualIntegration_ReportView"}}
+  schemaType={"response"}
+>
+  
+</Schema>
+            

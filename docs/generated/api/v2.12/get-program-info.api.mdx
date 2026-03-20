@@ -1,0 +1,71 @@
+---
+id: get-program-info
+title: "Get Pipeline Program Info"
+description: "API used to get pipeline program info by pipelineId"
+sidebar_label: "Get Pipeline Program Info"
+hide_title: true
+hide_table_of_contents: true
+api: eJydVU1v4zYQ/SvEXNoCqp1mtxedqiLOxkDhOLLTS2AYE2pksZVIhhzFawj67wVp+SvbJm1PkuiZeW8e34w7YNx4SJ/AKku10gSrBAry0inLymhIIZtPReupEGzEhlgcIoV1ZuOwEUqXRjzvjj9MC0jAWHIYKkwLSGFDPN9HT3VpIAGLDhticgG8A40NQQoXFVQAt8gVvGU0P4aJ0jixrZSsxM60QhMVl7RK4yABRy+tclRAyq6lBLysqEFIO+CdDcBKM20ohJbGNcj7o0/X0PerkO6t0Z58yLi+ugqPS0Y5ceu0F/gP6qhScEXiKIrYohe+lZK8L9saEpBGM2mOnOgrj//woXDX930Cn68+vQd5x2wXjNz60e19/uv05mYyOyA+enKiMOSFNiwqfCWBEfVDyM//EnJ2v1zf3j/Obg6Q8zf6x0NvSapShes5Xd6RF31Vnj9g9PP7up8xms6Wk3yW/bZeTPLfJ/l6kuf3+cDO0V5605Aw4VuQc5EjsihUEelgXZvtmwtjI6RpbE1M7xLtE2iIKzO4PlqdK0hhjFaND82P7Wkaxt1Jkh4S8OReD3PRuhpSqJitT8ehwuilRc2qVDLSQo31jpX0I+M2386JM0UrI/190XgdD9kSEnhFp/C5jp6OJg/XFftRXIeReLgAEqgLkR3QxNKYYNrAcw91PfrpenT1DYNsPv3OB+32pouaPmRLsYh0BiFRRiGHHXCbLeaCCRtI3rS/3W4/aJ8aVCHjbrFYhzrru4dfNpWXP1rfxJA+gVpJ0p7OEDOLsiKx538JWRozekYH4Vqt8dygPkv8QiwOu+ho+2HBXejQnQzzP9fpsKei2WyNSodWItduMNgToFXBbodFnoC9WLnpWcFVApXxHLK67hk9Pbq678PxS0tuB+nT6mSR6MRC+fBeQFpi7emdBr/Ph237g/jPi/pv2xwOUe+ib+s2fEECf9Lu8j+jX/UJVIQFuch5H5BJSZbPUk8TG3x/nNYvkyX0/V9bJ3Hp
+sidebar_class_name: "get api-method"
+info_path: docs/generated/api/v2.12/quantification-and-analytics-tool
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get Pipeline Program Info"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/api/pipeline/programInfo/{pipelineId}"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+API used to get pipeline program info by pipelineId
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"pipelineId","in":"path","description":"PipelineId for which you need program info for","required":true,"schema":{"type":"integer","format":"int32"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Returns a pipeline program info if the operation was successful","content":{"text/json":{}}},"403":{"description":"Returns a HttpStatus.FORBIDDEN if the User does not have access","content":{"text/json":{}}},"404":{"description":"Returns a HttpStatus.NOT_FOUND if the Program info for the specified pipelineId does not exist","content":{"text/json":{}}},"500":{"description":"Returns a HttpStatus.INTERNAL_SERVER_ERROR if there was some other error that did not allow the operation to complete","content":{"text/json":{}}}}}
+>
+  
+</StatusCodes>
+
+
+      

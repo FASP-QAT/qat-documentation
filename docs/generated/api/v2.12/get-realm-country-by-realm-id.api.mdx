@@ -1,0 +1,71 @@
+---
+id: get-realm-country-by-realm-id
+title: "Get RealmCountry list for a specific realmId"
+description: "API used to get the RealmCountry list for a specific realmId"
+sidebar_label: "Get RealmCountry list for a specific realmId"
+hide_title: true
+hide_table_of_contents: true
+api: eJylVE1v2zAM/SsCL9sAL8nS7eLT0vUrlzZp0lMRFKxNx9psSZXoZIHh/z5IcRq3TdcVO1mS9fgeqUfWwLh0EN+CJSzKH7pSbDewiCAll1hpWGoFMYwmY1E5SgVrsSQWnJO47iBEIR2LTFuBwhlKZCYTEUKOU4hAG7LoQ41TiGFJ3MUeb64fLxq0WBKT9ZpqUFgSxLAPJL0Yg5zDc4VtDME5stjoSqxR8WGNEIGlh0paSiFmW1EELsmpRIhr4I3xlFIxLclfzbQtkbdHR0NomoWHO6OVI+cRw8HAf57L4coqd7hQEEGiFZPiwEi/uf/TeVjdNE0EXwdHrwdEccFsZoxcud7Z1fXx+OTk9FLILFDdOLIi1eSE0ixyXJHAJCHn3qT8+o+Ul1fzu7Orm8sTT6n07pFFpiuVvsHy7VClxorJKiwEWavt9v2MpRUp9n7LSVhiS3KFhdDZO4vZRFAS57q1XXAY5xBDH43sdz3fbxPp1+2igQgc2dXOi5UtIIac2bi47+G9hwoVe6cHa6PCYsMycT1tly/sObE6rRK/EdugoVmmozlEsEIr8b4Ibgr2kirTIRnJhTfj9AmRQJWK0Y5NzLUufBCybks17H0Z9gYvFIwm4w/O9+/WEKGy09FczIKctoqYhCq2fXc2mk0EE5YQPUt/vV6/kT6VKD3iYja783HuLqbfl7lLPhtXhitNBIVMSDnqMI4MJjmJrf6nlJnWvXu04N/UaMclqg7wnF5p9sMD6Ulp6r2B/nfQtdMjuNAUKJVPM+RRt867BTQyTKDOvI06Iy7eLRcR5Nqxh9T1PTq6sUXT+OOHiuwG4tvF3jvBoql0fp1CnGHh6C9pfrxuB+An8b7BeTDB9hDVJri5qPwOIvhFm870bhZNBDlhSjao3f4dJQkZ7uD2Hexb4bF7z0/n0DR/AM8sTsw=
+sidebar_class_name: "get api-method"
+info_path: docs/generated/api/v2.12/quantification-and-analytics-tool
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get RealmCountry list for a specific realmId"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/api/realmCountry/realmId/{realmId}"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+API used to get the RealmCountry list for a specific realmId
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"realmId","in":"path","description":"RealmId that you want RealmCountry list for","required":true,"schema":{"type":"integer","format":"int32"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Returns the RealmCountry list","content":{"text/json":{}}},"403":{"description":"Returns a HttpStatus.FORBIDDEN if the User does not have access","content":{"text/json":{}}},"404":{"description":"Returns a HttpStatus.NOT_FOUND if no realmId found","content":{"text/json":{}}},"500":{"description":"Internal error that prevented the retreival of RealmCountry list","content":{"text/json":{}}}}}
+>
+  
+</StatusCodes>
+
+
+      

@@ -1,0 +1,33 @@
+---
+id: stockstatusforprogramoutput-reportview
+title: "StockStatusForProgramOutput_ReportView"
+description: ""
+sidebar_label: "StockStatusForProgramOutput_ReportView"
+hide_title: true
+hide_table_of_contents: true
+schema: true
+sample: {"amc":0,"lastStockCount":"2024-07-29T15:51:28.071Z","maxMos":0,"minMos":0,"mos":0,"planBasedOn":0,"planningUnit":{"id":0,"idString":"string","label":{"baseModel":{},"label_en":"string","label_fr":"string","label_pr":"string","label_sp":"string"}},"stock":0,"tracerCategory":{"id":0,"idString":"string","label":{"baseModel":{},"label_en":"string","label_fr":"string","label_pr":"string","label_sp":"string"}}}
+custom_edit_url: null
+---
+
+import Schema from "@theme/Schema";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"StockStatusForProgramOutput_ReportView"}
+>
+</Heading>
+
+
+
+
+
+<Schema
+  schema={{"type":"object","properties":{"amc":{"type":"number","format":"double"},"lastStockCount":{"type":"string","format":"date-time"},"maxMos":{"type":"number","format":"double"},"minMos":{"type":"number","format":"double"},"mos":{"type":"number","format":"double"},"planBasedOn":{"type":"integer","format":"int32"},"planningUnit":{"type":"object","properties":{"id":{"type":"integer","format":"int32"},"idString":{"type":"string"},"label":{"type":"object","properties":{"baseModel":{"type":"object","properties":{"baseModel":"circular(BaseModel_ReportView)"},"title":"BaseModel_ReportView"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"}},"title":"Label_ReportView"}},"title":"SimpleObject_ReportView"},"stock":{"type":"number","format":"double"},"tracerCategory":{"type":"object","properties":{"id":{"type":"integer","format":"int32"},"idString":{"type":"string"},"label":{"type":"object","properties":{"baseModel":{"type":"object","properties":{"baseModel":"circular(BaseModel_ReportView)"},"title":"BaseModel_ReportView"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"}},"title":"Label_ReportView"}},"title":"SimpleObject_ReportView"}},"title":"StockStatusForProgramOutput_ReportView"}}
+  schemaType={"response"}
+>
+  
+</Schema>
+            

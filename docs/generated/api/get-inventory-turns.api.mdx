@@ -1,0 +1,71 @@
+---
+id: get-inventory-turns
+title: "Get Inventory Turns Report"
+description: "Retrieve the inventory turns report"
+sidebar_label: "Get Inventory Turns Report"
+hide_title: true
+hide_table_of_contents: true
+api: eJztWG1vGjkQ/iur+XQnbQLhLpfr6nQS4dKKKi0t0FY6hCKzO1nc7NqOPQtFiP9+Gi/bLAQI6aerlHwi9rx5nhl7nl1Cgi620pDUCiLoI1mJMwxoioFUM1Sk7SKgwioXWDTaEoSgDVrBGt0EIkiRupXkkAUhBIv3BTq61MkCoiXEWhEq4p/CmEzGXrvx1bHTJbh4irngX7QwCBHoyVeM2ZOx7IskOt5NqCbjyEqVQgi32uaCIIJEEJ6QzBFWIUgVZ0WCHzKhFCaDqTQ5KnI1AxOtMxSKhY3VSRFTRxCm2i66SV1OWCsWEIIkzN3jAFalfmpF/my9wmHbGKtnmAwKY7IFh9tT2WJ3mDOJ88v6nlSEKdp6EqSi31reOEnKWGgTnK4yBd30PZSfJc5hxbKbVTDcAb5kvTWy0mICEdkCV7zgjFauRKjVbG7hTfiN9gO9L0d7CkBM3D+YUd2CKvLJZgYSXUwyXwNihjbFAen47kiN5BnW5WbRH6eUCxY5TlSqd1rR1PVut4+wH/cQcnesA6V7t6WHI02bspm6P3JwrytV+klJehpomRwZkkwGZTs97q8QMjHB7GlnE+HwnU6eKQqxtHGRCfvLZbVYa6tfodaBuwS+x3eDan/wN7f2wKY5tOnM7junCuraS21cBA+bA5mbDHs+CVtBb92VL1j+3Fjyu/V0rmKd4M74XsD9P4Db0clugC2KLO/oQtFLp/4sYO4BUtsE7Ws/WKt40VXPerlJk8g6WrkiXw95Rz3aXq0aQtaj9G4rPzCJ9gp6PIo+mkX7WM6fBwjJKoTzZ86dewotR+dE6tvpMIz99dDLkk8M011FaJXIArRW22A+lRkGKSpPoVTqD1YdhD2I1EE0gtKog3EIOdJUM9My2vmYBU0hgoYwslFqNuQ2AXNoZ2jZ0hIKy40zJTIuarDW6X0hFMnbNQ8TSmQLkrE71ZYJ1Wb8b8pQMQlKmwGbW43ZRVxYSQvvY4LCom0XHNloXN8ecO7XfVwTqv57XZXL2y/DR76vOHc+Q2+/DAPSd6gCqfxCWWZRcOmtBH/5zb/55N4fEye/A2EFIyfAp5irov9AUK++CW67imBCq9n6/aR5cdJ6NTw7j87Potafp82Ls3/hAKlkLrSbRo6q8hlv0sT6+gEaWBquiF/T045b7WPdyNTHDUSDdgVpMNQ6gxAyGaMqmYESPj1tI+IpBtflRvAZrWPN1mkTwq2Smc/np8KLc4U01rZc47rbuXo/uDphnVpzfGwzkrPSICf09NXF6Pz8j4uxnzm0o1yoWiRvkILvV0PgKzjoV98aNo5Z6/AjP1Wssfe3gcmE9Dzan2657qMRCCM9sV2rbPXSOIQp9100guWSX6JPNlutePm+QH5VR+MQZsJKwZcmF38IUxQJWt8Yd7iACDpl2CdDDofFs8LT3+2PIauw0mjHMRqqyT5caKv6nfChN+BsT9ZfWnJ/dYEVcz6SmEME/oMNu/A96NeWkAmVFiJl2dIm//0HA1FLDg==
+sidebar_class_name: "post api-method"
+info_path: docs/generated/api/qat
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get Inventory Turns Report"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/api/report/inventoryTurns"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Retrieve the inventory turns report
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={undefined}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"content":{"application/json":{"schema":{"type":"object","properties":{"dt":{"type":"string","format":"date-time"},"includePlannedShipments":{"type":"boolean"},"productCategoryIds":{"type":"array","items":{"type":"string"}},"programIds":{"type":"array","items":{"type":"string"}},"useApprovedSupplyPlanOnly":{"type":"boolean"},"viewBy":{"type":"integer","format":"int32"}},"title":"InventoryTurnsInput_ReportView"}}},"description":"The inventory turns input","required":true}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"content":{"text/json":{"schema":{"type":"array","items":{"type":"object","properties":{"absDelta":{"type":"number","format":"double"},"avergeStock":{"type":"number","format":"double"},"delta":{"type":"number","format":"double"},"inventoryTurns":{"type":"number","format":"double"},"mape":{"type":"number","format":"double"},"minMonthsOfStock":{"type":"integer","format":"int32"},"mse":{"type":"number","format":"double"},"noOfMonths":{"type":"integer","format":"int32"},"plannedInventoryTurns":{"type":"number","format":"double"},"planningUnit":{"type":"object","properties":{"id":{"type":"integer","format":"int32"},"idString":{"type":"string"},"label":{"type":"object","properties":{"baseModel":{"type":"object","properties":{"baseModel":"circular(BaseModel_ReportView)"},"title":"BaseModel_ReportView"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"}},"title":"Label_ReportView"}},"title":"SimpleObject_ReportView"},"productCategory":{"type":"object","properties":{"id":{"type":"integer","format":"int32"},"idString":{"type":"string"},"label":{"type":"object","properties":{"baseModel":{"type":"object","properties":{"baseModel":"circular(BaseModel_ReportView)"},"title":"BaseModel_ReportView"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"}},"title":"Label_ReportView"}},"title":"SimpleObject_ReportView"},"program":{"type":"object","properties":{"code":{"type":"string"},"id":{"type":"integer","format":"int32"},"idString":{"type":"string"},"label":{"type":"object","properties":{"baseModel":{"type":"object","properties":{"baseModel":"circular(BaseModel_ReportView)"},"title":"BaseModel_ReportView"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"}},"title":"Label_ReportView"}},"title":"SimpleCodeObject_ReportView"},"realmCountry":{"type":"object","properties":{"id":{"type":"integer","format":"int32"},"idString":{"type":"string"},"label":{"type":"object","properties":{"baseModel":{"type":"object","properties":{"baseModel":"circular(BaseModel_ReportView)"},"title":"BaseModel_ReportView"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"}},"title":"Label_ReportView"}},"title":"SimpleObject_ReportView"},"reorderFrequencyInMonths":{"type":"integer","format":"int32"},"totalConsumption":{"type":"number","format":"double"},"totalMonthsOfPlannedConsumption":{"type":"integer","format":"int32"}},"title":"InventoryTurnsOutput_ReportView"}}}},"description":"Returns the inventory turns report"},"500":{"content":{"text/json":{"schema":{"type":"object","properties":{"messageCode":{"type":"string"}},"title":"ResponseCode_ReportView"}}},"description":"Internal error while generating the report"}}}
+>
+  
+</StatusCodes>
+
+
+      

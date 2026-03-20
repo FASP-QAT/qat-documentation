@@ -1,0 +1,33 @@
+---
+id: shipmentoverviewoutput-reportview
+title: "ShipmentOverviewOutput_ReportView"
+description: ""
+sidebar_label: "ShipmentOverviewOutput_ReportView"
+hide_title: true
+hide_table_of_contents: true
+schema: true
+sample: {"fundingSourceSplit":[{"amount":0,"fundingSource":{"code":"string","id":0,"idString":"string","label":{"baseModel":{},"label_en":"string","label_fr":"string","label_pr":"string","label_sp":"string"}}}],"planningUnitSplit":[{"multiplier":0,"orderedShipmentQty":0,"plannedShipmentQty":0,"planningUnit":{"id":0,"idString":"string","label":{"baseModel":{},"label_en":"string","label_fr":"string","label_pr":"string","label_sp":"string"}}}],"procurementAgentSplit":[{"multiplier":0,"planningUnit":{"id":0,"idString":"string","label":{"baseModel":{},"label_en":"string","label_fr":"string","label_pr":"string","label_sp":"string"}},"procurementAgentQty":{},"total":0}]}
+custom_edit_url: null
+---
+
+import Schema from "@theme/Schema";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"ShipmentOverviewOutput_ReportView"}
+>
+</Heading>
+
+
+
+
+
+<Schema
+  schema={{"type":"object","properties":{"fundingSourceSplit":{"type":"array","items":{"type":"object","properties":{"amount":{"type":"number","format":"double"},"fundingSource":{"type":"object","properties":{"code":{"type":"string"},"id":{"type":"integer","format":"int32"},"idString":{"type":"string"},"label":{"type":"object","properties":{"baseModel":{"type":"object","properties":{"baseModel":"circular(BaseModel_ReportView)"},"title":"BaseModel_ReportView"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"}},"title":"Label_ReportView"}},"title":"SimpleCodeObject_ReportView"}},"title":"ShipmentOverviewFundingSourceSplit_ReportView"}},"planningUnitSplit":{"type":"array","items":{"type":"object","properties":{"multiplier":{"type":"integer","format":"int32"},"orderedShipmentQty":{"type":"number","format":"double"},"plannedShipmentQty":{"type":"number","format":"double"},"planningUnit":{"type":"object","properties":{"id":{"type":"integer","format":"int32"},"idString":{"type":"string"},"label":{"type":"object","properties":{"baseModel":{"type":"object","properties":{"baseModel":"circular(BaseModel_ReportView)"},"title":"BaseModel_ReportView"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"}},"title":"Label_ReportView"}},"title":"SimpleObject_ReportView"}},"title":"ShipmentOverviewPlanningUnitSplit_ReportView"}},"procurementAgentSplit":{"type":"array","items":{"type":"object","properties":{"multiplier":{"type":"integer","format":"int32"},"planningUnit":{"type":"object","properties":{"id":{"type":"integer","format":"int32"},"idString":{"type":"string"},"label":{"type":"object","properties":{"baseModel":{"type":"object","properties":{"baseModel":"circular(BaseModel_ReportView)"},"title":"BaseModel_ReportView"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"}},"title":"Label_ReportView"}},"title":"SimpleObject_ReportView"},"procurementAgentQty":{"type":"object","additionalProperties":{"type":"number","format":"double"}},"total":{"type":"number","format":"double"}},"title":"ShipmentOverviewProcurementAgentSplit_ReportView"}}},"title":"ShipmentOverviewOutput_ReportView"}}
+  schemaType={"response"}
+>
+  
+</Schema>
+            

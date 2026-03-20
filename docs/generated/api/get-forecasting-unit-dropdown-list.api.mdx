@@ -1,0 +1,63 @@
+---
+id: get-forecasting-unit-dropdown-list
+title: "Get All Forecasting Units"
+description: "Retrieve a complete list of forecasting units"
+sidebar_label: "Get All Forecasting Units"
+hide_title: true
+hide_table_of_contents: true
+api: eJyVVdtuEzEQ/RVrnkBakqqoIFYIKUCoggqopJeHKKqc3UnW7cY249mEKNp/R+PdwKY32qck4+OZOcdnJlvIMWRkPBtnIYWfyGRwhUqrzC19iYyqNIGVm6u5I8x0YGMXqrKGAyTgPJKWu6McUlggf/kHOreGP5PzuVvbExMYEiAM3tmAAdItHB4cyEfmLKNl+cr4m/vXQTrZQsgKXOoY3niEFDSR3kAChnEZOnE3u8ZMsnuSdtg06U3ewRjLuECCBOaOlpqb0OtDqBMw+ZjJ2EUHHppAnUCpZ1j+v9hMB/zm8mdCITOUVaWmFx93wStR7LNb2wuD65fSARsuJd39kL89jp5KN6Kv0D5M92pOjxz6xw6Dv+ewQ+IkovYJdI7HRjz3Iwp3GyW4O2atyAbFBT7FrXUCR8+03ANPuMQQ9AI/uRwfp/uz9bsg7/C5TWdkGcnqUiGRI8WFZuUJV2gZ80iSmunUpRB8KmtpRy8CpBPYTWOAaQJL5MK1UysMNReQQl97089bXH++P82QQEBaIUm2LVQkHi6YfUj7crH3q9KWzdxkcSdoq8sNmyz0HC3gNt1jtLI7MFdNTiXp6qmUyCoyvIk1ZqgJaVBJc5Np93gsj9WOVAe0+/VlZ/yvl2d3ag9F6qjg18szxe4GrTI2BpqBSdXHmEW9j4cfhHmsB2mbH5Ldu4sAUWZj504a2K91uqeJGuxEUWfOlZBAaTK0IRrJ6lhg4HVWoDppDtQFUpCbh70DSG6Jvl6vezrCReN+myv0T0afht/Hw1dyp+PH04FosWoSQgqHvXdvJ0dHb95OBeVd4KW2nU6OkdWgLFVnq6vzdvXvsezM1LP/Q1oZ4yT6UhsrvUSa29aVE9DeSMnWl81e23PmNIHCBRbsdisr9pzKupbwrwpJvDRNYKXJ6JkoMZnWCRSoc6RosxvciPBZhl5cvtJl9benuB3q7sQcD8+grv8As9WFlQ==
+sidebar_class_name: "get api-method"
+info_path: docs/generated/api/qat
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get All Forecasting Units"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/api/dropdown/forecastingUnit"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Retrieve a complete list of forecasting units
+
+<ParamsDetails
+  parameters={undefined}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"content":{"text/json":{"schema":{"type":"array","items":{"type":"object","properties":{"id":{"type":"integer","format":"int32"},"idString":{"type":"string"},"label":{"type":"object","properties":{"baseModel":{"type":"object","properties":{"baseModel":"circular(BaseModel_DropDownView)"},"title":"BaseModel_DropDownView"},"labelId":{"type":"integer","format":"int32"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"}},"title":"Label_DropDownView"}},"title":"SimpleObject_DropDownView"}}}},"description":"Returns the complete list of forecasting units"},"500":{"content":{"text/json":{"schema":{"type":"object","properties":{"messageCode":{"type":"string"}},"title":"ResponseCode_DropDownView"}}},"description":"Internal error that prevented the retrieval of the complete list of forecasting units"}}}
+>
+  
+</StatusCodes>
+
+
+      

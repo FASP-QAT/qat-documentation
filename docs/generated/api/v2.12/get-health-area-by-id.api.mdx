@@ -1,0 +1,71 @@
+---
+id: get-health-area-by-id
+title: "Get HealthArea for a HealthAreaId"
+description: "API used to get the HealthArea for a specific HealthAreaId"
+sidebar_label: "Get HealthArea for a HealthAreaId"
+hide_title: true
+hide_table_of_contents: true
+api: eJyllE1v2zAMhv+KwMs2wEuytLv4NBf9SC5t0qSnIihYm4m12ZIq0UkDw/99kOI2X91abKfEMqn3Jf2QNTAuHMT3kBMWnCeWEGYRZORSKw1LrSCGZDQUlaNMsBYLYsE5icFrvJhrK1A4Q6mcy3TnzTCDCLQhi/6iYQYxLIi378/WIcKgxZKYrDdSg8KSIN4xFIKkN2KQczh0t6snOEcWa12JFSr2fo+9QgSWnippKYOYbUURuDSnEiGugdfGi0vFtCAfOte2RN4cnfShaWY+3RmtHDmf0e/1/M++p1viyip3oA4RpFoxKQ5S9Mzdn87H103TRHDaO/nzTSgGzGbCyJXrXN7cng3Pzy+uhZwHjTtHVmSanFCaRY5LEpim5Ny7kqcflLy+mT5c3txdn79I7rW9/fiUbU3Qs3T8jvz3t3o3VExWYSHIWm03X9RYWpJij2BOwhJbkksshJ5/tL1NBCVxrlsIA3acQwxdNLK7ha1b74LXQASO7PKFzcoWHk1m4+Kuz+w8VajYcx8YR4XFmmXqOtoujkgdWZ1VqX8Qm0vD6IyTKUSwRCvxsQhMBcikmutQh+TCIzneExKoMpG8qImp1oW/hKzbSPU73/qd3pGDZDT85PxYbOgI3RwnUzEJdtoGYhoa2M7hZTIZCSYsIToof7VavVM+lSh9xmAyefD3PAzGPxa5S78aV4aQJoJCpqQc7SgmBtOcxMb/vuRc684jWvCf02jHJaqdxCvi4710sI72+lFvgfm/JdeujcCcKVAqX1mwXrec3QMaCdHuno0g3ltyswhy7djH1vUjOrqzRdP446eK7Bri+9mWk4BjJp3/n0E8x8LRX6r7fNuuvC/iH/blm+W1h6jWAd+i8k8QwS9aH67vZtaEyjOywfcmJElTMryTvB1ZPwCv43p1MYWm+Q3OuEjV
+sidebar_class_name: "get api-method"
+info_path: docs/generated/api/v2.12/quantification-and-analytics-tool
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get HealthArea for a HealthAreaId"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/api/healthArea/{healthAreaId}"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+API used to get the HealthArea for a specific HealthAreaId
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"healthAreaId","in":"path","description":"HealthAreaId that you want to the HealthArea for","required":true,"schema":{"type":"integer","format":"int32"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Returns the HealthArea","content":{"text/json":{}}},"403":{"description":"Returns a HttpStatus.FORBIDDEN if the User does not have access","content":{"text/json":{}}},"404":{"description":"Returns a HttpStatus.NOT_FOUND if the HealthAreaId specified does not exist","content":{"text/json":{}}},"500":{"description":"Internal error that prevented the retreival of HealthArea","content":{"text/json":{}}}}}
+>
+  
+</StatusCodes>
+
+
+      

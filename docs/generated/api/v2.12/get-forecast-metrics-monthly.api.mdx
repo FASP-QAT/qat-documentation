@@ -1,0 +1,71 @@
+---
+id: get-forecast-metrics-monthly
+title: "get the ForecastMetricsMonthlyOutput list"
+description: "API used to get the ForecastMetricsMonthlyOutput list."
+sidebar_label: "get the ForecastMetricsMonthlyOutput list"
+hide_title: true
+hide_table_of_contents: true
+api: eJylVcFu2zgQ/RViLnuRbcXdoLs61d1tUR+KOrG7hxpBMJbGErsSyZCjuIahfy+GdhI5SVu31UUS8R5nOPPecAeMZYBsCZ6c9QxXCRQUcq8da2sgg8lsqtpAhWKrSmLFFam31lOOgd8Te52H99ZwVW8/tOxaVrUOPIQErCOPssm0gAxK4udZkICnm5YCv7bFFrId5NYwGZZPdK7Wedxl9DlIPjsIeUUNyhdvHUEGdvWZcoYEnJeYrClEHKPnf5GpBw3stSkhgbX1DTJkUCDTgHVD0CUQ2LqfYzhvS4+NHPGeog1TSb7P0YZfjAV/Sz4cSnIS3tVojDblR6P5dJKnW23bfYXDSaQuAdZcC+j5Nk2Na/n6MorkP00b6IQjndOeCsjYtxQXgrMm7DswTlN5Hevpkrj1JpymI0j6amD6wncyiOHPnwswNUzeYK3Ie+sVV8hKKkKGRcUVKU/sSd9irez6N3PoEmiIKysSdzaCHXIFGYzQ6dHeVKP1t5QfyIsiIFvuoPU1ZFAxu5CNhD28adGwXh8MgAbrLes8DK0XQR6feuZt0ebyo/abqrX16mKygARu0Wtc1bEpXXeVgOR/+WC6N1+wcTU9Mg2M0/Gfg/TlYPz34uw8Oz/Lxn8N05dnn6BvlO+heuZIj6SfPhV2+lS2aZeANmsby34Q58VRSRSaQk3u6qIW1tZwH0hyG56Nh+mTWk1m0z+CzDPMcwp7KV5MFmoeC3foN+ax3wabaIrJfKaYsIHkUaM2m80PGkUNamG8m8+vZZ/rdxevyirkAxeaCOkSqHVOJlAv4sRhXpHa538ccm3tcIU+ulZE16DpEU8e0o/r0pu8vz71D5Mm2sTVqI2cLqa/OzhjCeh0nPrxwomz6Dl3XCVQiaOyJex2Kwz00dddJ8s3LfktZMurB2nLX5dARViQj3b6n7aQwT/7Ew0WkpbA61bSe3KvdMkdY5Ln5LiHfXC8WOfe7bMPc/HW6nBpNbYQsMeNHA03kEG8AyVEHIZxbQc1mrLFUrD7PeX5CuwdmY0=
+sidebar_class_name: "post api-method"
+info_path: docs/generated/api/v2.12/quantification-and-analytics-tool
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"get the ForecastMetricsMonthlyOutput list"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/api/report/forecastMetricsMonthly"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+API used to get the ForecastMetricsMonthlyOutput list.
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={undefined}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"content":{"application/json":{"schema":{"type":"object","properties":{"startDate":{"type":"string","format":"date-time"},"stopDate":{"type":"string","format":"date-time"},"programId":{"type":"integer","format":"int32"},"versionId":{"type":"integer","format":"int32"},"planningUnitId":{"type":"integer","format":"int32"},"previousMonths":{"type":"integer","format":"int32"}},"title":"ForecastMetricsMonthlyInput_ReportView"}}},"required":true}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Returns the ForecastMetricsMonthlyOutput list","content":{"text/json":{}}},"500":{"description":"Internal error that prevented the retreival of ForecastMetricsMonthlyOutput list","content":{"text/json":{}}}}}
+>
+  
+</StatusCodes>
+
+
+      

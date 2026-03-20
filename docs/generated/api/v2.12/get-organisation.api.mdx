@@ -1,0 +1,71 @@
+---
+id: get-organisation
+title: "Get Organisation for a OrganisationId"
+description: "API used to get the Organisation for a specific OrganisationId"
+sidebar_label: "Get Organisation for a OrganisationId"
+hide_title: true
+hide_table_of_contents: true
+api: eJyllE1z2jAQhv+KZi9tZ1ygJL34VDr54hIgkFOGyWzsNVZrS4q0hjIe//eOBBQMtMlMT7Zkrd53189uDYwLB/ETaLtAJR2y1ArmEaTkEitNWMYwGA9F5SgVrMWCWHBOYnQQITJtBQpnKJGZTFrfhilEoA3Z3SqGBfHhCYjAoMWSmKw3U4PCkiBumQrXSG/GIOdw7LCtKDhHFmtdiRUq9q7POYYILL1W0lIKMduKInBJTiVCXAOvjbcgFdOC/NFM2xJ5s3XRh6aZ+3BntHLkfES/1/OPtq8H4soqd6IPESRaMSkOYvSLuz+cj6ibpongsnfx97tQ3DGbKSNXrnMzevg+vLq6vhcyCyqPjqxINTmhNIsclyQwSci5NyUv3yl5P5o934we7692kkfF32JA6d4G/ZKO3zDw9Vz9horJKiwEWavt5r8aS0tS7HHMSVhiS3KJhdDZ+0vcRFAS53qLY0CQc4ihi0Z2D8Hr1m0MG4jAkV3uWK1sATHkzMbFXR/dea1Qse+DEIEKizXLxHW0XZxwO7Y6rZJA5ObS0EqTwQwiWKKV+FIEugJuUmU65CK58HBOWkICVSoGOzUx07rwl5B1G6l+50u/0ztxMBgPPzjfIhtKQk0ng5mYBjvbImISirjty5vBdCyYsIToKP3VavVG+lSi9BF30+mzv+f5bvJtkbvks3FlONJEUMiElKMDxYHBJCex8d+WzLTuvKAF/0uNdlyiOgi8JT43qU4GVKsm9R6c/x9920ES+DMFSuUzDCnUW+aeAI30Q7INb3w0/uYR5NqxP1/XL+jo0RZN47dfK7JriJ/me2YCmql0/j2FOMPC0T+y/PiwHYSfjpv5vZP0bJrbTVTrgHNR+RVE8JPWp+O9mTcR5IQp2eB+c2iQJGT4IHzfyL4l/jTx7fUMmuY3vk9e+A==
+sidebar_class_name: "get api-method"
+info_path: docs/generated/api/v2.12/quantification-and-analytics-tool
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get Organisation for a OrganisationId"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/api/organisation/{organisationId}"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+API used to get the Organisation for a specific OrganisationId
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"organisationId","in":"path","description":"OrganisationId that you want to the Organisation for","required":true,"schema":{"type":"integer","format":"int32"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Returns the Organisation","content":{"text/json":{}}},"403":{"description":"Returns a HttpStatus.FORBIDDEN if the User does not have access","content":{"text/json":{}}},"404":{"description":"Returns a HttpStatus.NOT_FOUND if the OrganisationId specified does not exist","content":{"text/json":{}}},"500":{"description":"Internal error that prevented the retreival of Organisation","content":{"text/json":{}}}}}
+>
+  
+</StatusCodes>
+
+
+      

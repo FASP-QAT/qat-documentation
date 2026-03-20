@@ -1,0 +1,71 @@
+---
+id: post-check-access-to-program
+title: "Check for user access to specified programIds"
+description: "API used to check for user access to specified programIds"
+sidebar_label: "Check for user access to specified programIds"
+hide_title: true
+hide_table_of_contents: true
+api: eJylVVFv2kAM/isnv+wlo6zbXvI0tjEVaWppYHtBqHIvDrktyV3vnDIU5b9PvkCBTuo0DQlEfL7Pn+3PTgeMmwDpCtpAHtYJ5BS0N46NbSCFyXym2kC5Yqt0SfqnKqwXi1eoNYUgB8GRNoWhXDlvNx7rWR4gAevIo+DMckjB2cCfBGES7y3tfPCFBDw9tBT4o813kHbPGXiPO2WLE+wjmT0H4QQJaNswNSwY6FxldIx+8SMIUAdBl1Sj/OOdI0gBBRoSMEx1OLGbhmlDHhIorK+RB9PbS+j7vh/oGk85pOxbiobgbBMoYlyOx38mkRG3vgkKlVxRphhKWGI4pIBNrgqswvEwtxRUY3nvcZ4f0y8+JBZJvRu/fSnsFbNbMHIbRl9uso+zz5+n1xKJS1LfzqKV+Egnvd0QRyf31K2XWLx/OfkTFrPr5TS7nny9W0yz79PsbpplN9mekSe1xaCCrUlZeVbkvfWKS2SVm3yoSlXZbaT2pLOoC1u7ipheJNonUBOX9qBLSMAhl5DCBTpzgbqS75LiSSD/SF5mpIPWV5BCyexCeiG+o4cWGzbFXmvYYLVjo8PI+g08H6a5t3mrI9MBNAr3drKEBB7RG7yvoob6fp2AsM2OgzH9hZIYpKvxOgHTFDbmZVhscHvGIoppcqCiltZWEoF8GHhcjt5cjsZ/0JvMZ69izw/dL0nIqUXkui8o6ljQBmuJ+2WymCumqIvz2my327/Uhmo0cuNqsbgTnLur2w+bMujXLtTRpU+gMpqaQCcRJw51SWrgfx6ysHZ0jx6kvdLVGpuTi5/+cXud1aY7ium/VuJ+wUQ5ugpNI0nGLLq9AleAzkACqKvhN6pwnUApOk1X0HX3GOibr/pezA8t+R2kq/VRQvLUJ1AS5uSjbH/STiowpPB6KSTEvWrjFny+KvvkcENWteMT3+MciUSfZmh+sxAN3+8XeG1zcfa4leWOW0ghvg4kRNyR0dZBhc2mxY34Dpjy+Q3bRkQc
+sidebar_class_name: "post api-method"
+info_path: docs/generated/api/v2.12/quantification-and-analytics-tool
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Check for user access to specified programIds"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/api/acl/aclTest"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+API used to check for user access to specified programIds
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={undefined}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"description":"Array of programIds to check access for ","content":{"application/json":{"schema":{"type":"array","items":{"type":"integer","format":"int32"}}}},"required":true}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Returns a true if user has access and false if user does not access","content":{"text/json":{}}},"403":{"description":"Returns a HttpStatus.FORBIDDEN if the User does not have access to get the program","content":{"text/json":{}}},"500":{"description":"Returns a HttpStatus.INTERNAL_SERVER_ERROR if there was some other error that did not allow the operation to complete","content":{"text/json":{}}}}}
+>
+  
+</StatusCodes>
+
+
+      

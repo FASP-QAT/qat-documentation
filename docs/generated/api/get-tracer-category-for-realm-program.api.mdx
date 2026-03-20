@@ -1,0 +1,71 @@
+---
+id: get-tracer-category-for-realm-program
+title: "Get Tracer Categories"
+description: "Get list of Tracer Categories for all the Planning Units mapped to a Supply Plan Program"
+sidebar_label: "Get Tracer Categories"
+hide_title: true
+hide_table_of_contents: true
+api: eJztWVFv2zgM/isCnzbAa4puveGMwwFt1w0dutvWpreHIhgYm4m12ZIr0e0Fgf/7gbLTOGmatd0GdEOeYksk9ZGUaOXjFFLyidMla2sghjfEKteelR2pvsOEnDpAprF1mrwaWacwzxVnpD7kaIw2Y3VmNHtVYFlSqtgqVKdVWeaTIKE+ODt2WEAEtiSHssxRCjGMiRv7rfnJa+tOCPNirlCiw4KYnIf4fLoEtJ+ROnolMAWME01ZfEysuMGdLOCGCLTolcgZRGCwIIgh6B2lEIGji0o7SiFmV1EEPsmoQIinwJNSRLVhGpPYGVlXIDdDz3egrqP14MrGowfAazW/G+BA1H1pjScvGjvb2/KTWMNkONig/7j3xQv66U3T6BxOBCJT4TvjdviFEpZUOcku68Y8JqwvqSM3tDYnNFBHMERP72xK+Q8zA4l2SZWje7I/G3wKESSOkCndn3x7ocqTk015h1BGQbhJz7W4Z6fNWDYCsOZchvbR6+TMkxOVFsor5BVanTVSZHrGuiBRytHzO5vqkX4cTnTx3MeTRXtt0upfPz8ZYc7ZniP8tgOJTVfhiUDf1SudnjZKq6zkOPyB52lzLDfH8lG49sD8DCm/M6og/ZnM7cfq88itmSzXTfrylsnfbgcdhwJUz+4t65Y+1UWZ04FN6X3j7qZ+berXpn5t6tejqF+/i29R8892czPdVPZfbu9uKvumsj+WmykvUJR39LVjc5HihLqWyUWu8IS4csYHpnDGvK6kCIOELykJ8WgpTzTpjF8UvC+2n8N9iL1bEluQ9zgOsVgfs5OWVQySK5yTTKrUklfGssrwkhQmCXkvZOicuLVu0YkXj8qJ/o1siDMjW5lU4O7ek0z92XCPDMtJyxU5Z526ynROQjyzkPUS88XdNQm7rlkBx0K1Lzk8gUEEBXFmW94+UPOcQQw9LHVv8Yz0Wkq9N20f6t41i92bXj/WEIEndzkj9ysnH+aMufRxT8xuXVRoWI90EnoGaDCfsE78lnVy7Je7FkZ6C5SqxqYSc8J6e0oqp3kS1hgSOnJ7lUA/H3SnTyVHTRq6QrO317MD/vZT/8bahxLuENe3n/qK7VcySpsw0BSGWO0HK+qvMPk3tNx9uKCEGYhm6ZYAhFRoM7ICYHGtjwsxUXuzoKi+tTlEkOuEjA/7p+0g7JWYZKSOmwn1Lzkvmjtb2xAtBf3q6moLg7jEuNfa8r3jo4PDf04Pn4lOZxt+3JNYXDYGIYadrT9fnu/u/vFyIFKl9Vyg6SCRztKNjtJyNDvH6Ge2otpoh3Na5qjDDTFEY9pu7XPAUsPyBwCiTsconj92+zTx/GUQQWY9i7XpVC6gZy6vaxm+qMjJphxEcIlO41BCKj0u7eU5hXiEuac10Xly0vaDnqoHtMJWBmDW7DHi5yXmlbxBBF9p0mmVhW7X98O8Y1PsAUDn8a8HDU+fkgvRbeb3koRK7mjOy3XdrXRvDvtQ1/8DZvD7eg==
+sidebar_class_name: "get api-method"
+info_path: docs/generated/api/qat
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get Tracer Categories"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/api/tracerCategory/realmId/{realmId}/programId/{programId}"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Get list of Tracer Categories for all the Planning Units mapped to a Supply Plan Program
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"description":"The ID of the realm to get tracer categories for","in":"path","name":"realmId","required":true,"schema":{"type":"integer","format":"int32"}},{"description":"The ID of the program to get tracer categories for","in":"path","name":"programId","required":true,"schema":{"type":"integer","format":"int32"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"content":{"text/json":{"schema":{"type":"array","items":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":"circular(BaseModel)","createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"}},"title":"BaseModel"},"createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"healthArea":{"type":"object","properties":{"code":{"type":"string"},"id":{"type":"integer","format":"int32"},"idString":{"type":"string"},"label":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":"circular(BaseModel)","createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"}},"title":"BaseModel"},"createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"labelId":{"type":"integer","format":"int32"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"}},"title":"Label"},"name":{"type":"string"}},"title":"SimpleCodeObject"},"label":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":"circular(BaseModel)","createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"}},"title":"BaseModel"},"createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"labelId":{"type":"integer","format":"int32"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"}},"title":"Label"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"},"realm":{"type":"object","properties":{"code":{"type":"string"},"id":{"type":"integer","format":"int32"},"idString":{"type":"string"},"label":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":"circular(BaseModel)","createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"}},"title":"BaseModel"},"createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"labelId":{"type":"integer","format":"int32"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"}},"title":"Label"},"name":{"type":"string"}},"title":"SimpleCodeObject"},"tracerCategoryId":{"type":"integer","format":"int32"}},"title":"TracerCategory"}}}},"description":"Returns the list of tracer categories for the specified realm and program"},"403":{"content":{"text/json":{"schema":{"type":"object","properties":{"messageCode":{"type":"string"}},"title":"ResponseCode"}}},"description":"User does not have access to the realm or program"},"404":{"content":{"text/json":{"schema":{"type":"object","properties":{"messageCode":{"type":"string"}},"title":"ResponseCode"}}},"description":"Tracer categories not found"},"500":{"content":{"text/json":{"schema":{"type":"object","properties":{"messageCode":{"type":"string"}},"title":"ResponseCode"}}},"description":"Internal error while getting the tracer category list"}}}
+>
+  
+</StatusCodes>
+
+
+      

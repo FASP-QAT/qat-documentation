@@ -1,0 +1,33 @@
+---
+id: shipmentreportoutput-reportview
+title: "ShipmentReportOutput_ReportView"
+description: ""
+sidebar_label: "ShipmentReportOutput_ReportView"
+hide_title: true
+hide_table_of_contents: true
+schema: true
+sample: {"freightCost":0,"freightPerc":0,"planningUnit":{"id":0,"idString":"string","label":{"baseModel":{},"label_en":"string","label_fr":"string","label_pr":"string","label_sp":"string"}},"productCost":0,"qty":0,"totalCost":0}
+custom_edit_url: null
+---
+
+import Schema from "@theme/Schema";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"ShipmentReportOutput_ReportView"}
+>
+</Heading>
+
+
+
+
+
+<Schema
+  schema={{"type":"object","properties":{"freightCost":{"type":"number","format":"double"},"freightPerc":{"type":"number","format":"double"},"planningUnit":{"type":"object","properties":{"id":{"type":"integer","format":"int32"},"idString":{"type":"string"},"label":{"type":"object","properties":{"baseModel":{"type":"object","properties":{"baseModel":"circular(BaseModel_ReportView)"},"title":"BaseModel_ReportView"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"}},"title":"Label_ReportView"}},"title":"SimpleObject_ReportView"},"productCost":{"type":"number","format":"double"},"qty":{"type":"number","format":"double"},"totalCost":{"type":"number","format":"double"}},"title":"ShipmentReportOutput_ReportView"}}
+  schemaType={"response"}
+>
+  
+</Schema>
+            

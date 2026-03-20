@@ -1,0 +1,63 @@
+---
+id: get-database-labels-list
+title: "Get Database Labels"
+description: "Retrieve a complete list of all database labels."
+sidebar_label: "Get Database Labels"
+hide_title: true
+hide_table_of_contents: true
+api: eJzVVd9vEkEQ/lc286TJCU1NNV6MCSo2NVXTFtsHQshwN3Cry+45O4CE8L+bWaC5UtqkPukTMD++mfl2vmEFJcWCbS02eMjhkoQtzcmgKcK0diRknI1iwtigc6ZEwRFGMg5H5GILMgg1MWr6WQk5TEg+bmPOU8i5jQIZMMU6+EgR8hUcHx3pRxG8kBf9KvRb2j+i9rCCWFQ0xWRe1gQ5IDMuIQMrNI0Nexj9oELRa9YuxG7gtfiXUJJ7UigUlouZQ372fmccnnkh9uiuLS2ewzoDseIU7nCIRiRiPgVu1I7C1k9uncrTrc96oQkxZDAOPEXZmF4e30YPyT8MNRw/UmdYP+aM9UEnk0Ohshf+B5r/YSYbQyQd7A3QcO/k0mP00SUlxY+9b/sJmnJPqzP20UhFZgdiUrEkWW3w5IlCe+D5phQjTuhDKOnxUS+3KtfIewPs97/zG2IObKRCMTXTnLxQmaZiEiY7R6fn5+CIWhsnEfL+hmYYZDAlqcL2FukoKBXk0Mbatg9ep45zkEEknhMr0gpmrItaidQxb2ti69cMvdixLdL7oEe3FFvEVuAJ7M91Sl4vIpVmg2kUbj3QEsWMrSxTjREhE3dm2lx/0HRf6atsddMI2v36tNvuzze9e7W7ymni7vNNz0j4Sd5YnwwbVeTmfUIxb5PznU6e6kG+xYds98BKQKLY+nG6B3drXdzhxHR2pJheCMqoswX5mDbGYyrQqbGoyJxvHOaaOGrmcesIsj3SF4tFC1O4ctzeYsX2+dmH7ter7gvNaSzeRUe5mG8AIYfj1pvX/ZOTV68HGlWHKFP0jU5OSfYWKu5z2ZDN3/wtbjlMeqsdWq+NpBlX25XsA9YWssN/mbqUgwyqEEUjVyt1f2e3Xqv514xY12iQwRzZ4khJ6A/WGVSEJXHasJ+0VM6LgmrVwRzd7LajdAHWTbGcdnuwXv8BpgvLWg==
+sidebar_class_name: "get api-method"
+info_path: docs/generated/api/qat
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get Database Labels"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/api/getDatabaseLabelsListAll"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Retrieve a complete list of all database labels.
+
+<ParamsDetails
+  parameters={undefined}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"content":{"text/json":{"schema":{"type":"array","items":{"type":"object","properties":{"baseModel":{"type":"object","properties":{"baseModel":"circular(BaseModel_InternalView)"},"title":"BaseModel_InternalView"},"labelFor":{"type":"string"},"labelId":{"type":"integer","format":"int32"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"},"relatedTo":{"type":"object","properties":{"baseModel":{"type":"object","properties":{"baseModel":"circular(BaseModel_InternalView)"},"title":"BaseModel_InternalView"},"labelId":{"type":"integer","format":"int32"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"}},"title":"Label_InternalView"}},"title":"DatabaseTranslationsDTO_InternalView"}}}},"description":"Returns the Database Label list"},"500":{"content":{"text/json":{"schema":{"type":"object","properties":{"messageCode":{"type":"string"}},"title":"ResponseCode_InternalView"}}},"description":"Internal error that prevented the retreival of Database Label list"}}}
+>
+  
+</StatusCodes>
+
+
+      

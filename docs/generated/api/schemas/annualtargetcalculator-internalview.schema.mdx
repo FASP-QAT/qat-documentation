@@ -1,0 +1,33 @@
+---
+id: annualtargetcalculator-internalview
+title: "AnnualTargetCalculator_InternalView"
+description: ""
+sidebar_label: "AnnualTargetCalculator_InternalView"
+hide_title: true
+hide_table_of_contents: true
+schema: true
+sample: {"actualOrTargetValueList":[0],"baseModel":{},"firstMonthOfTarget":"string","nodeDataAnnualTargetCalculatorId":0,"yearsOfTarget":0}
+custom_edit_url: null
+---
+
+import Schema from "@theme/Schema";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"AnnualTargetCalculator_InternalView"}
+>
+</Heading>
+
+
+
+
+
+<Schema
+  schema={{"type":"object","properties":{"actualOrTargetValueList":{"type":"array","items":{"type":"integer","format":"int32"}},"baseModel":{"type":"object","properties":{"baseModel":"circular(BaseModel_InternalView)"},"title":"BaseModel_InternalView"},"firstMonthOfTarget":{"type":"string"},"nodeDataAnnualTargetCalculatorId":{"type":"integer","format":"int32"},"yearsOfTarget":{"type":"integer","format":"int32"}},"title":"AnnualTargetCalculator_InternalView"}}
+  schemaType={"response"}
+>
+  
+</Schema>
+            

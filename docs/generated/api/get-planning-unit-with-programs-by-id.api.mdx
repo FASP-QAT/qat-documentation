@@ -1,0 +1,71 @@
+---
+id: get-planning-unit-with-programs-by-id
+title: "Get Planning Unit with Programs"
+description: "Retrieve a planning unit with its associated supply planning and forecasting programs (active and disabled)"
+sidebar_label: "Get Planning Unit with Programs"
+hide_title: true
+hide_table_of_contents: true
+api: eJy9Vd9v0zAQ/lesexqSaafBQEQIqRtjKprQgMIepgrdkmtiSG3PvqxUVf53dE6qpeuE4AGeLNv387vvszdQUMyD8WychQw+EQdDd6RQ+RqtNbZUjTWsVoYrZTgqjNHlBpkKFRvv6/W9IdpCLVygHCPL3gdXBlxGdYA5GwlqC1WYiDc1FU9Ag/MUUDJPC8igJL7sQ32xhq8MV5d9hJP1tAANHgMuiSlEyK43D0qfVaSmb5VbKK7oQfXsVOg7Aw1GzD1yBRosLkl2g8QpVaDbxgQqIOPQkIaYV7REyDbAay8exjKVFEDDwoUlcnf07Ajadi7u0TsbKYrH0eGhLLmzTJZTDPrJ4+9R6t7sh44cjC2hbVu9P54m2PhIh/9gPq2G54fP/6pyd/OdcpZJBZktmw6AJcWIJZ26gh5rUwMbrin118Emlt+mlilYrL8aWj0GxuUOANaxWrjGFlL38V8i/l/r3t4rCsEFtapMTaok7mYybKrLgaXQ/b5d4SjMNSyJK9cLJ4mDK8hgjN6Mh3Qeb3bJ3Y5XA2WBhkjhbiupJtSQQcXsYzaWUKPbBi2bhcmTUNFivWaTx5ELJTzs7JysCFqol2IqCSdyiJQ3wfA65bghDBQmjZR7PR9ef5a5dNAPjba7d1uhvb+a7eU+E1STMN5fzRS7H2SVsemgE2imTlIU9TpdvoFe1DK/Lj7o7YgFgAS+sQsnBezm+riDiZpsQVEz52rQUJucbEyc6d+Xice8InXRXaivFKJ4Ho0OQT8AfbVajTCZC8bjPlYcX0xPzz58PnsqPgPqfZwIFnddQMjgaPTq5fXx8YuXc7HyLvIS7aCSc2K1Q6Xu6RjwYafXgYj+8+fQjyIJ19dorPSToNr0XL8G9EaYP+A3aMj2HvMdws81VC6yuG82NxjpS6jbVo5vGwpC0bmGOwxGKun+mb4qyBZYR/oNQgef+m/jifrz7+jRRvtDtGuZLtaN7EDDD1rvf1ftvNVQERYUUsGd0STPyfPA/f4NbIfPx/nZDNr2F1yD0ac=
+sidebar_class_name: "get api-method"
+info_path: docs/generated/api/qat
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get Planning Unit with Programs"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/api/planningUnit/{planningUnitId}/withPrograms"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Retrieve a planning unit with its associated supply planning and forecasting programs (active and disabled)
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"description":"The ID of the planning unit to retrieve","in":"path","name":"planningUnitId","required":true,"schema":{"type":"integer","format":"int32"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"content":{"text/json":{"schema":{"type":"string"}}},"description":"Returns the planning unit with its associated supply planning and forecasting programs (active and disabled)"},"404":{"content":{"text/json":{"schema":{"type":"object","properties":{"messageCode":{"type":"string"}},"title":"ResponseCode_InternalView"}}},"description":"Planning unit not found"},"500":{"content":{"text/json":{"schema":{"type":"object","properties":{"messageCode":{"type":"string"}},"title":"ResponseCode_InternalView"}}},"description":"Internal error while getting planning unit"}}}
+>
+  
+</StatusCodes>
+
+
+      

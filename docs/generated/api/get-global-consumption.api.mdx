@@ -1,0 +1,71 @@
+---
+id: get-global-consumption
+title: "Get Global Consumption"
+description: "Retrieve the global consumption report"
+sidebar_label: "Get Global Consumption"
+hide_title: true
+hide_table_of_contents: true
+api: eJydV21v2zYQ/ivCfVoBxXa8ZVmFYoCTpkGKbEljtwVmGMFZushsKZIhqbiG4f8+HGXXUvzSOPnk8N6Pzx0fzSEjl1phvNAKErgjbwU9UeQnFOVSj1FGqVauLIJGZMlo6yEGbcgiH11lkEBO/jIon691IQZLjyU5f6azGSRzSLXypDz/RGOkSIOD9jfHoefg0gkVyL/8zBAkoMffKOVgxnI4L8ix1EhUSqj8sxL+Kut7K1Res3LVwSJ+puhqOmgtziAG4alwW2wXIWZusdgfYKVzoG9LKItzXSpvZ3sDNBVfE4Wv56dQKE85WYjhQdsCfXX0e7cKxTf7RdD0hQbOo/Xv0dNm9Jp6hp6OvCioMtHmMIvSUc8Yq58o65fGyNmtRHWj5KzmYqy1JFShZi+85LMNNF4pU/r7u3WRC1Zvgn+wHfOCTZdoFpYySLwtKbTMGa1chcpup/MM455++N3g3nWBO0CfViCoz9cWG8wywTKUtw3r/b4x9WVzdNcmqizGTQBkuhzLcDnLnF6SfLblzhcxiJeiU+ybEoljkr/OYoyO/tHZgaqQCpuWEu1vZ6vDGozeQA102xR+5ndPanfy9w92j9DsEzqzffpXSV0HrQbw18K+KIykc53RTWjEs8QftKUUnafsUHDUYpxvIPc9etzISHuUvVcCMRi/0uzDq2uMwVtU7pCFtm9D3ZR+c0Vt7Kg78qVVbsf7zEmdHLiIdoxAQc5hHrCxH2B3yy3Imr9YsFfKk1UoI7JW22g6EZKinFSgEioPRS0ZRoiAuYNkCJVTB6MYCvITzYzDaBdyRj+BBNpoRLuybOdbiIgj+0SWnc2htDzVE++NS9ps2HosUXnxsOQjqFDOvEhdS1u+x2YJl1W2lEWVz4jdLUYcIi2t8LMQY0xoyfZKTm44qov73P7lkqkprf77sALNx6+DjdgX3L7QpI9fB5HX34kfp3BQgS2JzoKX6F0Q/s2Vh3j8SgYJxKub5AaELjMw7tZE7eIH8k7YTbTWCN/gV8OVbLSFP9XsarSpbrKdFq3tNtjQhjGznU6Ty3QaTAW6ne4fR53To+7bwfFJcnKcdP9qdU6P/4M6O9mntYeRLGmBUA+a29e8vE8NkEW9FcqigdYSYpAiJeVC3xWGG+sZTCcUXVeC6AtZx5bdVofTaKB4Op22MKgzaNtLX659fXV+8W//4ohtaiP7qcfgeqoccrmtt6fDk5M/T0eB1WrnC1S1TC7JR9W+ippz1SixtnNe/h2xRGNYUUaiCCssFDdfDvcQ0AhYXSrEsDngoxgmvA+SIczn/HZ/tnKx4OPHkpigDEcxPKEVyIubJzKGCWFGNkzrd5qFdyokfzTgjFhdloGnPf9SWcQri16akvE13fWiXdR31e1Nn/s9Xn4GFWGlgsUpV4VTSCB8UHGIsBjC2RwkqrzEnHUrn/z3Pz67yMo=
+sidebar_class_name: "post api-method"
+info_path: docs/generated/api/qat
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get Global Consumption"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/api/report/globalConsumption"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Retrieve the global consumption report
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={undefined}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"content":{"application/json":{"schema":{"type":"object","properties":{"planningUnitIdString":{"type":"string"},"planningUnitIds":{"type":"array","items":{"type":"string"}},"programIdString":{"type":"string"},"programIds":{"type":"array","items":{"type":"string"}},"realmCountryIdString":{"type":"string"},"realmCountryIds":{"type":"array","items":{"type":"string"}},"realmId":{"type":"integer","format":"int32"},"reportView":{"type":"integer","format":"int32"},"startDate":{"type":"string","format":"date-time"},"stopDate":{"type":"string","format":"date-time"},"useApprovedSupplyPlanOnly":{"type":"boolean"}},"title":"GlobalConsumptionInput_ReportView"}}},"description":"The global consumption input","required":true}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"content":{"text/json":{"schema":{"type":"array","items":{"type":"object","properties":{"countryConsumption":{"type":"object","additionalProperties":{"type":"object","properties":{"actualConsumption":{"type":"number","format":"double"},"country":{"type":"object","properties":{"code":{"type":"string"},"id":{"type":"integer","format":"int32"},"idString":{"type":"string"},"label":{"type":"object","properties":{"baseModel":{"type":"object","properties":{"baseModel":"circular(BaseModel_ReportView)"},"title":"BaseModel_ReportView"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"}},"title":"Label_ReportView"}},"title":"SimpleCodeObject_ReportView"},"forecastedConsumption":{"type":"number","format":"double"}},"title":"CountryConsumptionData_ReportView"}},"totalActualConsumption":{"type":"number","format":"double"},"totalConsumption":{"type":"number","format":"double"},"totalForecastedConsumption":{"type":"number","format":"double"},"transDate":{"type":"string","format":"date-time"}},"title":"GlobalConsumptionOutput_ReportView"}}}},"description":"Returns the global consumption"},"500":{"content":{"text/json":{"schema":{"type":"object","properties":{"messageCode":{"type":"string"}},"title":"ResponseCode_ReportView"}}},"description":"Internal error while generating the report"}}}
+>
+  
+</StatusCodes>
+
+
+      

@@ -1,0 +1,71 @@
+---
+id: add-health-area
+title: "Add HealthArea"
+description: "API used to add a HealthArea"
+sidebar_label: "Add HealthArea"
+hide_title: true
+hide_table_of_contents: true
+api: eJztWd1v4jgQ/1esebk7KaWU/brL0wXKqpW6LQX2Hq6q0BAPjfeSOLWdsgjlfz/ZAZJQDrpvtwiesD2er4xnfmMvweCTBv8BIsLYRIEihEcPOOlQicwImYIPweCa5Zo4M5Ih5wzZVUXtgcxIoSW95uADct5YVfSckzZdyRfgL7c4jyOq8WJy+o1Cw0yEhi1kzuaYmpVQ8CCUqaHUWC6YZbEIndDzb9qyWoIOI0rQ/jOLjMCHkht4kCmrohGk7WqoCA3x7uIwaa5JWaM2dCI19EQKPJhJlaApp951oPAccYoJ1ci1USJ9gqLwwAgT26kuahF+1aTslpUql2h27KrJ4GjozIiE7KYYtfkiuZiJ/4cRdX1+zBIMjXip00+ljAlTu1bF45t1V4Rxctgf4q38YpxSfIqn44gn9zHfrLajnlC6Q+31os72LM7UnsVs9+IUNX2R/BRyxxJytQ8KoVBhHqP6tbue/A2a2qxI6zreuARknSz5LnM8EHxU/t9r60gkWUw9yemu9O8puR1XpJ2S2ynkftrkViG93n+lOYfsejJPjVoESmHdq+jGHghDid7tllPwnYKvGXy1DrUoirJJFYo4+Ebl5CZ0JlNdOqnTbr9uXYdkcpVqhmyUhyFpzWyVZmLGTERs0xOzOWqmS4pZHjfbWEPfzbp/dXq8b7/bJ+nKmGxk0OS69flu2L2+vOzfriVajzMuSbNUGhbhCzF0Ug+K/PhGkbd340nQ6/UH46B701/L5WiQ6dw25MSZKMXnqXjO6YDkD/vdWpN8fTvuD2+Dm8moP/yrP5z0h8O74UoBRaWLZUJM2jEjpaQqLxG44E4fjGM53/owRrJQWmBk9itaeJCQiaS93MikdmcITQQ+nGMmzqv0dQ4eaFIvpOyNyhJyZeMzMibT/rmlbT3nmBoxW91cYIrxwohQt6Sy56DpiIGSPA+dpiVTNpOK3Qdj8OAFlcBp7KKzKB49sNoOq4uW/ne0hr1KaOvT3q6f5VqebaQc6LQ778/an846f4wvPvgfLvzO7632p4u/YVeaOcT6dSLYx399+O1p3L4LaNc6fVGON2D2GKzdgLl2HapV6bJCaNtzFphtz2WNuUYl/PmdVWx6o8rEqiXaxqbHYfMpQH4wQLbxZWXsDlj5sF59PEpfiHQmXYlb4aD7RkFimHIWrKsSG0tp8YqtZ2VJ6rQuOq32q0oVDK5/0e6avsRBtszeB2M2cmVrVVsxdLV1Zc/nYDRghjABb6tMzufzA2WSEhR2x9VoNLF8Jlf3fz5FOjzLdOJIrJdESKmmmsQgwzAiVurfFDmTsjVF5QCiLfAJpvWNnDefOxrGLyvgcOiZZAVjHbrIYhQOyTpNlitA8QCYCahHLHhgIzGysMN/gOXSxuRXFReFnX7OSdmYfawQgR2VMc9JORTyDy3Ah16p5dnYKmHJ49w1T9vvKIW33hGEIWWmRlvBIos4NpBocDeykGS6et9JyjOmcG4PGM7BB/dEZEU4MO3mlhBj+pTjk6Utedrfv9Gf6FA=
+sidebar_class_name: "post api-method"
+info_path: docs/generated/api/v2.12/quantification-and-analytics-tool
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Add HealthArea"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/api/healthArea/"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+API used to add a HealthArea
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={undefined}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"description":"The HealthArea object that you want to add","content":{"application/json":{"schema":{"type":"object","properties":{"createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"},"active":{"type":"boolean"},"healthAreaId":{"type":"integer","format":"int32"},"realm":{"type":"object","properties":{"id":{"type":"integer","format":"int32"},"label":{"type":"object","properties":{"createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"},"active":{"type":"boolean"},"labelId":{"type":"integer","format":"int32"},"label_en":{"type":"string"},"label_sp":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"baseModel":{"type":"object","properties":{"createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"},"active":{"type":"boolean"},"baseModel":"circular(BaseModel)"},"title":"BaseModel"}},"title":"Label"},"code":{"type":"string"},"idString":{"type":"string"}},"title":"SimpleCodeObject"},"label":{"type":"object","properties":{"createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"},"active":{"type":"boolean"},"labelId":{"type":"integer","format":"int32"},"label_en":{"type":"string"},"label_sp":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"baseModel":{"type":"object","properties":{"createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"},"active":{"type":"boolean"},"baseModel":"circular(BaseModel)"},"title":"BaseModel"}},"title":"Label"},"healthAreaCode":{"type":"string"},"realmCountryArray":{"type":"array","items":{"type":"string"}},"baseModel":{"type":"object","properties":{"createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"},"active":{"type":"boolean"},"baseModel":"circular(BaseModel)"},"title":"BaseModel"}},"title":"HealthArea"}}},"required":true}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Returns a Success code if the operation was successful","content":{"text/json":{}}},"403":{"description":"Returns a HttpStatus.FORBIDDEN if the User does not have access","content":{"text/json":{}}},"406":{"description":"Returns a HttpStatus.NOT_ACCEPTABLE if the data supplied is not unique","content":{"text/json":{}}},"500":{"description":"Returns a HttpStatus.INTERNAL_SERVER_ERROR if there was some other error that did not allow the operation to complete","content":{"text/json":{}}}}}
+>
+  
+</StatusCodes>
+
+
+      

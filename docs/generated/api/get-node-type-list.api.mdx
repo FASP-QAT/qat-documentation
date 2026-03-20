@@ -1,0 +1,63 @@
+---
+id: get-node-type-list
+title: "Get active Node Types"
+description: "Retrieve a list of active node types"
+sidebar_label: "Get active Node Types"
+hide_title: true
+hide_table_of_contents: true
+api: eJzdVt9vEzkQ/lesebqTlqTqqaCL0EkplKqoRQICPETRabI7SQxe24wnKVG0/zsabxZtoKRFuocTT9nM7/n8ecY7qCiVbKPY4GEEb0jY0oYMGmeTmLAwWIrdkPGhIiPbSAkKCJEY1eWqghEsSV6FiibbSNc2CRTAlGLwiRKMdnB6cqI/ZfBCXvRT6IsMPybNuINUrqjGLN5GghEgM26hACtUp548zD9SqdEja36xbXj6IowxuFzP2LlwS1XPax6CI/TQFLAITCUmmTDRUUPbl1svtCSG7F+jtKK/TtXQ4Zzc/SW2EN6da46JbkL1H4aB0nK5dsh/nHfCP6GAkgmFqvPt/YnWifjqoRiosce6X1cStn4JTVOAWHEqOsdky3eJWF32pTxHucOrl6NCoUdia2qxTnITKruw/48m+vX8SieH8faH1vwO5zMn9+CqsvW/5O+oqlMu+IgyHlOm+BPlb8eg6zyAmgJqpZH1y6NzTZhoQnV0KMcGYC9+N9ehaVT8w7JYs09GVmQ6w7w2NNfZL079n5xBTSnhkp6F6h5k3+xXTra8o9grL3pAzhBzYCMrFBOZNuSFqtwCkzDZDTrdet/1o4lwmWA0hRtMQmyeoyDMCqhJVmG/BbV6lBWMYIjRDutsOfQdhgUk4g2xhtnBmnVWr0RiGg3VfvB5jV7swpZ5laFHtxVbpkFgZcJhO5fkdQVTZdqYRsM1M01RrtnKNueYEzLxeK01TWd99VvFv4W4b9T9e9HR7uWHyQ+5LxTKDNnLDxMj4RN5Y30WtHQdmfMcxTzNyn+085xPWZY1UHRHqQBkfK1fBC3gMNfrA0zMuAPFTEJwUICzJfmUudHePhhHLFdkrluFeU+c1PN0cALFd6Df3t4OMJsrxsN9rDS8vnp28ertxSP16VHs9Vix2LQBYQSng7+fTM/OHj+ZqVUMSWr0vUouSbrXk9LJTPavp4MOe1fkoa+vPXL5PkWHNt/t3Nluz78pYLRQQMtAKOAbB2cFrEISNdnt9NHwjl3TqPjzmlhZMytgg2xxrj1PZ00BK8KKOBPqE20V4rKkqGzfoFt/KyVf7aZ/JS4vJtA0XwGj0pHo
+sidebar_class_name: "get api-method"
+info_path: docs/generated/api/qat
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get active Node Types"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/api/master/nodeType"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Retrieve a list of active node types
+
+<ParamsDetails
+  parameters={undefined}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"content":{"text/json":{"schema":{"type":"array","items":{"type":"object","properties":{"extrapolationAllowed":{"type":"boolean"},"forecastTreeAllowed":{"type":"boolean"},"id":{"type":"integer","format":"int32"},"label":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":"circular(BaseModel)","createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"}},"title":"BaseModel"},"createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"labelId":{"type":"integer","format":"int32"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"}},"title":"Label"},"modelingAllowed":{"type":"boolean"},"treeTemplateAllowed":{"type":"boolean"}},"title":"NodeType"}}}},"description":"Returns the NodeType list"},"500":{"content":{"text/json":{"schema":{"type":"object","properties":{"messageCode":{"type":"string"}},"title":"ResponseCode"}}},"description":"Internal error that prevented the retreival of NodeType list"}}}
+>
+  
+</StatusCodes>
+
+
+      

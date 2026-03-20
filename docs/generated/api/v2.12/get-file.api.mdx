@@ -1,0 +1,71 @@
+---
+id: get-file
+title: "Get file from Server"
+description: "Returns the byte stream of the file that was requested"
+sidebar_label: "Get file from Server"
+hide_title: true
+hide_table_of_contents: true
+api: eJydlE1v2zAMhv+KwMs2QE2yHn1aDuvHZWia7FQEBSPTsTBbUiW6WWD4vw9U3CZttxXoyfrkSz566R4YtwmKO6hsQ7DWUFIy0Qa23kEBt8RddElxTWqzZ1KJI2GrfJWX5JLiGlntMKlIDx0lphI0+EARJch1CQVsiS8kvoaAEVtiiiLag8OWoMjiP2SowYpsQK7hdS5yQISPopJClyiqHTpOir3aEqsq+jZvLSk+UgQNkpiNVELBsSMNydTUIhQ98D6IfuJo3RaGYS2HU/AuUZL989lMPu9AwRhx/z4T4x2TYwmIITTWZEBTb5j47AAWin4YhkFDS1z7EV3GxjUUMJXg0/4J1wAaUi7yQLOLDRRQM4dUTKcY7OShQ8e2GqXQYbNna9LEx+0bvjfRl52RiToEVZWPajFfgYZHjBY3TYaSKVlX+QzQciMEFy+EFLpSzZ/U1Mr7RoJQTAep88nX88nsTQbzm+tP+RnRGEoHwIv56viQQhBNJjg652K+vFEs5PSr8ne73TvlU4tWblwtl/cS5/5q8W1bJ3MWUpuPDBoaa8glOlGcBzQ1qUP+LyUr7ycbjCAPGHziFt3JxUvxppgjG/S5phcI+qNJPt57o6mZfvM0NGidFJIz7Ucjje2uoXjuvLWG2ieWvb7fYKKfsRkGWX7oKO6huFsfbZDdVtok4xKKCptE/6nk8+3YgF/Ux5v4r1WNi+j22aRNJzPQ8Iv2p7+VYT1oqAlLijn1w/bcGAp8cvGfXSmOf+7Iy+8rGIY/qSDMaw==
+sidebar_class_name: "get api-method"
+info_path: docs/generated/api/v2.12/quantification-and-analytics-tool
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get file from Server"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/file/{fileName}"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Returns the byte stream of the file that was requested
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"fileName","in":"path","description":"Name of file that the user wants to get from the Server","required":true,"schema":{"type":"string"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Returns the byte array of the file that was requested","content":{"application/octet-stream":{}}}}}
+>
+  
+</StatusCodes>
+
+
+      

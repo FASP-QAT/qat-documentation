@@ -1,0 +1,71 @@
+---
+id: add-funding-source
+title: "Add FundingSource"
+description: "API used to add a FundingSource"
+sidebar_label: "Add FundingSource"
+hide_title: true
+hide_table_of_contents: true
+api: eJztWVFv4jgQ/ivWvNydlFLK7t7e5emgpWqlbkuBvYerKjTEA3gviVPbKYtQ/vtpHGgT6EL7dlvBU3DGnm8m45lv7CU4nFoI72CSp1Kl04HOTURwH4AkGxmVOaVTCKHduxS5JSmcFiilQHFemxCAzsggS19KCAGl3BQw9JCTdR0tFxAuN9Yfzqi+otDjbxQ54WboxELnYo6pW2mHACKdOkodL4RZFqvIqz7+Znm1JdhoRgnyk1tkBCGUq0EAmWGgTpHlt5EhdCQ7i/2iuSXDpj3JqdTRlAwEMNEmQVcOfWhBEXjhFBOqiFtnVDqFogjAKRfzUAetir5aMjxlBeUM3QuzKjokOjpyKiGeFKN1X7RUE/X/MKKK522WYOTUY1V+rHVMmPK7Wmy+Gn5t1qmWL9nBiMcUHwLlfQSK/5ivhu2lR5T+OC5GNtvxcmJ2vMxefjlGS1+0PITcewm5ygeFSJkoj9H82lkP/gZ1NCvRKsYrn4AKro8YJ/vdpN4U3ocwex9hdshsh5D7aTNb9CPypeSgfN5p60AlWewZ3E3pXwYex3pO8jLt5HJKbq8Fh5A8hCSEUO9Ji6Io21JlSELoTE5+wGY6taWfWs3mdrPaJ5eb1AoUgzyKyFrBES7URLgZiadGWMzRCltKTPK43rU6+u7W7arH8bH5YZemC+eygUOX28b5Tb9zeXbWvV5rZKcLqcmKVDsxw0cS6LXuVfn7K1Ve3wxH7dPTbm/Y7lx113olOhQ25/6bpFCl+jxVDznt0fxpt1srmi+vh93+dftqNOj2/+72R91+/6a/AmCodLFOSGj+L8gYbcozA6mkx+MzxcaHcVpEmpOK2w20CCAhN9N8opFp67cRuhmEcIyZOq51mMcQgCXzSIbPU5aQG47SmXOZDY9ZvPGQY+rUZHVWgSnGC6ci29CGd0PdFz2jZR55sOWiYqKNuG0PIYBHNArHsQ/QorgPgAH3n09Xut+RbdtKa+s936zu6Eo2riUeaDVbH4+an49afw5PPoWfTsLWH43m55N/4KVks2/p7XSwa/11CuAN+UL333yxt3/OK0/E9z1Y/0T8mlVat2GsZ3ObY0ziNsey2litPv78ziqqTZSquOx9mHeIhTfGQrSRF57ZZkXFFpEsXf0O3aHSifY1bsWFbmvlSGAqRXtdk8RQayYsXM3KgtRqnLQaza061e5d/mL9sXxJhLjO3raHYuCL1qq4YuSL68qe8/agJxxhAsFGkZzP53uKJCWoeMbFYDDidUYXt39NZzY6ymziRdhLKqLUUkVjO8NoRqLEX1c50boxRuNJIlf4BNPqRCm37jlq9i+fycMrrkhWhNaTjCxG5Tmtx7Nc8Yo7wEzBRn2DAPhCZsYEJLyD5ZKD86uJi4KHH3IyCwjv7p+JAf8rApgRSjKejPxLCwjhtMR6NGQcLB7njGfrAqUI1jPaUUSZq8g+EyQmHk/kqHczYGYyXt3tJOXOMzjnex+cQwj+hohVeFrtx5YQYzrNccqy5Zr8+w9+N+7U
+sidebar_class_name: "post api-method"
+info_path: docs/generated/api/v2.12/quantification-and-analytics-tool
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Add FundingSource"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/api/fundingSource/"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+API used to add a FundingSource
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={undefined}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"description":"The FundingSource object that you want to add","content":{"application/json":{"schema":{"type":"object","properties":{"createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"},"active":{"type":"boolean"},"fundingSourceId":{"type":"integer","format":"int32"},"fundingSourceCode":{"type":"string"},"label":{"type":"object","properties":{"createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"},"active":{"type":"boolean"},"labelId":{"type":"integer","format":"int32"},"label_en":{"type":"string"},"label_sp":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"baseModel":{"type":"object","properties":{"createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"},"active":{"type":"boolean"},"baseModel":"circular(BaseModel)"},"title":"BaseModel"}},"title":"Label"},"realm":{"type":"object","properties":{"id":{"type":"integer","format":"int32"},"label":{"type":"object","properties":{"createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"},"active":{"type":"boolean"},"labelId":{"type":"integer","format":"int32"},"label_en":{"type":"string"},"label_sp":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"baseModel":{"type":"object","properties":{"createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"},"active":{"type":"boolean"},"baseModel":"circular(BaseModel)"},"title":"BaseModel"}},"title":"Label"},"code":{"type":"string"},"idString":{"type":"string"}},"title":"SimpleCodeObject"},"allowedInBudget":{"type":"boolean"},"baseModel":{"type":"object","properties":{"createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"},"active":{"type":"boolean"},"baseModel":"circular(BaseModel)"},"title":"BaseModel"}},"title":"FundingSource"}}},"required":true}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Returns a Success code if the operation was successful","content":{"text/json":{}}},"403":{"description":"Returns a HttpStatus.FORBIDDEN if the User does not have access","content":{"text/json":{}}},"406":{"description":"Returns a HttpStatus.NOT_ACCEPTABLE if the data supplied is not unique","content":{"text/json":{}}},"500":{"description":"Returns a HttpStatus.INTERNAL_SERVER_ERROR if there was some other error that did not allow the operation to complete","content":{"text/json":{}}}}}
+>
+  
+</StatusCodes>
+
+
+      

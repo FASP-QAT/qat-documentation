@@ -1,0 +1,71 @@
+---
+id: get-forecast-error
+title: "Get Forecast error report"
+description: "API used to get the forecast error report."
+sidebar_label: "Get Forecast error report"
+hide_title: true
+hide_table_of_contents: true
+api: eJydVU1z2kgQ/SuqvuQiQGbjSlanJbv54BRsyB6WolyN1EiTSDPjmZYJRem/b/VINsh2dp1wQWq9/pz3eo7AWHhI1+DIGsewiSEnnzllWRkNKcwW86jxlEdsooI44pKinXGUoeeInDMu6lzHEIOx5FAc5zmkUBB/6JHvBQgxOLptyPM7kx8gPUJmNJNmeURrK5UF58lXL6mP4LOSapQnPliCFMz2K2UMMVgnqViRl6/WmcJhLUkfoEozFSQ5d8bVyJ3ptym0MdyR832RL8Mr2r87vBDcaMUvjuyoCIX4Mzw6hweIQTHV53bPTukC2jYGz+j4L2R6+vksS45MI1Y1QXAx9uc86LZRd1iRzg5ffqWnZRf+2QZYcSWmAT/m2jZ8cx3Y9LeiPbRt21FGOcohZddQMHhrtO+Ofpok8jfk7DVx47T/MVchPqce03e+51xIeflc0LlmchqrPhCXyJF1dEeaRR0lRY7YkYwsMrtfyNvGUBOXRqRjjQ80Ry4hhQlaNekiTHaPFOXJCZ0hXR+hcRWkUDJbn07EaXzboGa164WFGqsDq8yPjZNzHza4cCZvMnmJuqDSQ3Q1W0EMd+gUbqsw87bdxCBlX5/E/P471raiR2JMBlJLTkJKTjJJBiJY35NkMyA5TJPp61HyZjT9fXVxmV5epNO34+TNxT9wTuz/Qj1D5uQpVR8oGoPSOxMOqWfq1WCSEeo8mt2PM1oZU8FDs1LJ+GI6Tp6MeLaYv/KySTHLyHcEvZqtomWYd88OzAI7NNZBIbPlImLCGuJH57vf7//nfKlGJR6flssbiXPz6eqPovTZyPo6QNoYKpWR9nSWcWYxKynq6h+m3Bkz3qILEhaK1qjPHD8SRx9+QPvBHM4W/8/dL/0iCcKxFSodFq6UeOy1sga0Klw0feKhXjYxlCKtdA3H4xY9fXFV24r5tiF3gHS9OZFd3toYSsKcXBDYNzpACn92xY9WUo3Aqybs7cc3WBvfe8yyjCyfYU/SFzE9yH7xeSlq2/bXY21yATvcS0e4hxTCJSspwvYLtiNUqIsGC8F2MeX3L3Pdrac=
+sidebar_class_name: "post api-method"
+info_path: docs/generated/api/v2.12/quantification-and-analytics-tool
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get Forecast error report"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/api/report/forecastError"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+API used to get the forecast error report.
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={undefined}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"content":{"application/json":{"schema":{"type":"object","properties":{"programId":{"type":"integer","format":"int32"},"versionId":{"type":"integer","format":"int32"},"viewBy":{"type":"integer","format":"int32"},"unitId":{"type":"integer","format":"int32"},"regionIds":{"type":"array","items":{"type":"string"}},"startDate":{"type":"string","format":"date-time"},"stopDate":{"type":"string","format":"date-time"},"equivalencyUnitId":{"type":"integer","format":"int32"},"regionIdString":{"type":"string"}},"title":"ForecastErrorInput_ReportView"}}},"required":true}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Returns the forecast error report","content":{"text/json":{}}},"500":{"description":"Internal error that prevented the retreival of forecast error report","content":{"text/json":{}}}}}
+>
+  
+</StatusCodes>
+
+
+      

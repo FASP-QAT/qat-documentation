@@ -1,0 +1,71 @@
+---
+id: get-shipment-details
+title: "get the ShipmentDetailsOutput object"
+description: "API used to get the ShipmentDetailsOutput object."
+sidebar_label: "get the ShipmentDetailsOutput object"
+hide_title: true
+hide_table_of_contents: true
+api: eJydllFz2zYMx78KDy97kW3FW66bnuat29VPdWJ3D/P5crAES+wkkgGhuD6fvnuPkh3L9tIm1Ysk6g+AIPEDtQfB3EOyBCZnWWAVQUY+Ze1EWwMJTGZTVXvKlFiVkygpSM0L7Soy8p4Edek/1uJqUXb9mVIZQgTWEWOwn2aQQE5yYQARMD3W5OUPm+0g2UNqjZCR8IjOlTptzUeffZjDHnxaUIXhSXaOIIEuFkTgOAQTTT58dWxzxiqEfZZqI5QTQwQbyxVKN/TzGJoInoj9YZqv0ntBlvco1NN7YW3yvjxDoYHoijoT695msalNpk0+tzWnNM18zxKZcQcRaKHKX3tsmgjWdZaTvNnMlWiMNvkno99u3NXOP5q2r1zHi2jzztW17+vF+Ib0OfMXNU0EoqUMQxcVOTWulof7Ux5Nl9djrZkySIRrage8s8Z3xTaO43A7x+WepGbjv4sJRP2aF/oix2JvI9/+n++pEWKDpSJmy0oKFOWYnshI4LMgxSRM+glLZTc/Hr6JoCIpbIDXWd9ihlJAAiN0etTt9shfMe2JA1CQLPdQcwkJFCLOJ6NgNnys0YjeHNBGg+VOdOqHlgMK55nO2GZ1Gl5U51RtLKu7yQIieELWuC7bPWiaVQRh4vendvLXF6xcSRftID6DPT5DGcbx+JdB/G4w/m1xc5vc3iTjX4fxu5t/oY/vt1TXyC6PRbc6Q7I/fIVc/2MfqfhFYHqt5AVOToorPHroaLOxbSEc6Lg72yuFJlOT44aphbUlPC9nWJjhzXgYX23iZDb9yYdjA9OUfIfE3WSh5u2OHioQ07YCDVYh7t+T+UwJYQXRRQVtt9vvVBBVqIPFh/n8Ifh5+HD3e174dOB81UqaCEqdkvHUizhxmBakuvmfh9xYO1wjd+3ReqnQ9AxfcxZeLknvnPuhc/XQzlpcXYnahJzaSe8PhC4BnYZj+YT6vaB0FUERkE6WsN+v0dMnLpsmDD/WxDtIlqsTYuGtiaAgzIhbrP+jHSTwZ5fFYBHmE+Rl3Z4Ulyd3Ex0tJmlKTnraU8sJCD+3m9nHeWB8ffgtqGwWxIzbkBNuIYH29yKEaHtwO7aHEk1eYx60nc9wfQUBJw+Q
+sidebar_class_name: "post api-method"
+info_path: docs/generated/api/v2.12/quantification-and-analytics-tool
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"get the ShipmentDetailsOutput object"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/api/report/shipmentDetails"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+API used to get the ShipmentDetailsOutput object.
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={undefined}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"content":{"application/json":{"schema":{"type":"object","properties":{"programId":{"type":"integer","format":"int32"},"versionId":{"type":"integer","format":"int32"},"startDate":{"type":"string","format":"date-time"},"stopDate":{"type":"string","format":"date-time"},"fundingSourceIds":{"type":"array","items":{"type":"string"}},"budgetIds":{"type":"array","items":{"type":"string"}},"planningUnitIds":{"type":"array","items":{"type":"string"}},"reportView":{"type":"integer","format":"int32"},"planningUnitIdsString":{"type":"string"},"fundingSourceIdsString":{"type":"string"},"budgetIdsString":{"type":"string"}},"title":"ShipmentDetailsInput_ReportView"}}},"required":true}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Returns the ShipmentDetailsOutput object","content":{"text/json":{}}},"500":{"description":"Internal error that prevented the retreival of ShipmentDetailsOutput object","content":{"text/json":{}}}}}
+>
+  
+</StatusCodes>
+
+
+      

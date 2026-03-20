@@ -1,0 +1,71 @@
+---
+id: get-budget-report
+title: "Get Budget Report"
+description: "Retrieve the budget report"
+sidebar_label: "Get Budget Report"
+hide_title: true
+hide_table_of_contents: true
+api: eJztWG1v2zYQ/ivCfdoA+SXesqzCMMDJsiJFtqyx2wIzjICWzjJbiWSOVFzD0H8fjrITyW+N92VAFn+Sec+98O45iqclJGhjksZJrSCCW3Qk8QEDN8NgUiQpuoDQaHIQgjZIgoFXCUSQojv3gNu1nPC+QOvOdbKAaAmxVg6V40dhTCZjr9v5bNnTEmw8w1zwk1sYhAj05DPGbMcQe3ISLUunhUqkSge6oBivkoEjqdKamq0WynATaWsgQSQWEIJ0mNsdyqX3mpLIeW9banOSDm9UtoDIUYHPs3Mg0kfMkTFaJ8j9Jhxui0OYasqFgwgS4bDlZI7gVbQ5RqMMwUmXMa5e3itlCndXPX+UOIeSkU3yDDc5E0jWWjFDEiZV+kpesEYrW1W41+1u8MXhV7efKPsStYdAVUjfxsU62ZGlMgRZp4RUDlOkevakcj/0KuCBmmdigtkzohUW/9DJkVCIJcVFJui78/VirVjfQ72qOwCP8d2h2h/83ZQOCM0hoTW7Cb0O6tqjGvR6Eg5kbjK80Ane+ERsBF7Vt5/XS6yKfNIsUqKLSeY7Ii6IUMWLV0a8VEY0XgSvZf5flHnoXbyW+mWWWlOChMn5kUe9yYRS/0Ktup690uml0okwF1JJlT4y44NNnkmO/+4OflO47Uv41i38Fl1Byu6Y4MoQTo+8au+hUY7WitTn93CRblf3fEZ+Y3q4Ug5JiSxAIk3BfCYzDFJUfuZUqd/PeiPsQaQWohFURi2MQ8jRzTSPpkZbH7NwM4igI4zsVJqdSXNitUgPSGxnCQVxU8ycMzbqsE77vhDKyelqcBVKZAsnY9vWxIVrRv+2ChSToLIZsLlyzC7igqRbeB8TFITULziu0bguHnDmVz1aA63//b5mybtPwy3fl5w5n593n4aB019QBVL5hYpdUXDurQS/eOGvvHPvD6KVfQjXReQE+AQzJ26fJvrLr4Jb6sBEXuP01iA+WgvHjUF75/K2vfq4XFeptSL0ur0fW92zVu/N8OQ0Oj2Jej+3u2cnf0O9/faj+ChWU83bayb3fYMEQX/NgmCodQYhZDJGZX1elPAZ7RsRzzC4rgTBRyTLmr12F8INls3n87bwcCZVZ2XLdq6vLi7/HFy2WKfWTe/7XPyHyiDvpv3mbHR6+tPZ2L+1tHW5ULVI3qILqgMkeKR8Y3e1k+Dwp58VOfxhYTIhFTv0e1mu2mwEwkg/6q9UGq02DmHGTRmNYLnkl9AHysqSl+8LJG6OcQgPgqTgU5Z7I4QZigTJ980XXEAEF1WsLX/VY3hW+M8Bmx+XynCt0Y9jNK6GfTrtyvqB8dfNgDM7WX25yv25BiTmvCExhwj85y924VvUry0hEyotRMrYyib//gEsl7H1
+sidebar_class_name: "post api-method"
+info_path: docs/generated/api/qat
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get Budget Report"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/api/report/budgetReport"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Retrieve the budget report
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={undefined}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"content":{"application/json":{"schema":{"type":"object","properties":{"fundingSourceIdString":{"type":"string"},"fundingSourceIds":{"type":"array","items":{"type":"string"}},"programId":{"type":"array","writeOnly":true,"items":{"type":"string"}},"programIdString":{"type":"string"},"programIds":{"type":"array","items":{"type":"string"}},"startDate":{"type":"string","format":"date-time"},"stopDate":{"type":"string","format":"date-time"}},"title":"BudgetReportInput_ReportView"}}},"description":"The budget report input","required":true}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"content":{"text/json":{"schema":{"type":"array","items":{"type":"object","properties":{"budget":{"type":"object","properties":{"code":{"type":"string"},"id":{"type":"integer","format":"int32"},"idString":{"type":"string"},"label":{"type":"object","properties":{"baseModel":{"type":"object","properties":{"baseModel":"circular(BaseModel_ReportView)"},"title":"BaseModel_ReportView"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"}},"title":"Label_ReportView"}},"title":"SimpleCodeObject_ReportView"},"budgetAmt":{"type":"number","format":"double"},"currency":{"type":"object","properties":{"code":{"type":"string"},"id":{"type":"integer","format":"int32"},"idString":{"type":"string"},"label":{"type":"object","properties":{"baseModel":{"type":"object","properties":{"baseModel":"circular(BaseModel_ReportView)"},"title":"BaseModel_ReportView"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"}},"title":"Label_ReportView"}},"title":"SimpleCodeObject_ReportView"},"fundingSource":{"type":"object","properties":{"code":{"type":"string"},"id":{"type":"integer","format":"int32"},"idString":{"type":"string"},"label":{"type":"object","properties":{"baseModel":{"type":"object","properties":{"baseModel":"circular(BaseModel_ReportView)"},"title":"BaseModel_ReportView"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"}},"title":"Label_ReportView"}},"title":"SimpleCodeObject_ReportView"},"fundingSourceType":{"type":"object","properties":{"code":{"type":"string"},"id":{"type":"integer","format":"int32"},"idString":{"type":"string"},"label":{"type":"object","properties":{"baseModel":{"type":"object","properties":{"baseModel":"circular(BaseModel_ReportView)"},"title":"BaseModel_ReportView"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"}},"title":"Label_ReportView"}},"title":"SimpleCodeObject_ReportView"},"orderedBudgetAmt":{"type":"number","format":"double"},"plannedBudgetAmt":{"type":"number","format":"double"},"program":{"type":"object","properties":{"code":{"type":"string"},"id":{"type":"integer","format":"int32"},"idString":{"type":"string"},"label":{"type":"object","properties":{"baseModel":{"type":"object","properties":{"baseModel":"circular(BaseModel_ReportView)"},"title":"BaseModel_ReportView"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"}},"title":"Label_ReportView"}},"title":"SimpleCodeObject_ReportView"},"remainingBudgetAmtUsd":{"type":"number","format":"double"},"startDate":{"type":"string","format":"date-time"},"stopDate":{"type":"string","format":"date-time"}},"title":"BudgetReportOutput_ReportView"}}}},"description":"Returns the budget report"},"500":{"content":{"text/json":{"schema":{"type":"object","properties":{"messageCode":{"type":"string"}},"title":"ResponseCode_ReportView"}}},"description":"Internal error while generating the report"}}}
+>
+  
+</StatusCodes>
+
+
+      

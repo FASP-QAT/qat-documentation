@@ -1,0 +1,71 @@
+---
+id: get-pipeline-program-inventory
+title: "Get Pipeline Inventory Data"
+description: "Retrieve  pipeline inventory data from adb or temp tables"
+sidebar_label: "Get Pipeline Inventory Data"
+hide_title: true
+hide_table_of_contents: true
+api: eJylVNtu2zAM/RWBTxugJUWGrpgxDMjarEhRDL1k60OQB8VmbLW25FJ0uiDwvw/0pU3TbsDQp8QSeXh4eMQtJBhisiVb7yCCK2SyuEalSltibh0q69bo2NNGJYaNWpEvlEmWypNiLErFZpljAA2+RDKCM00gghT5ooO4IJ+SKaY9EGgoDZkCGSlANN/ukZhlqKYnyq8UZ/hEhL2inp5cvEIMNFhBKA1noMGZAuWrQ5gmoIHwvrKECURMFWoIcYaFgWgLvCkl2jrGFAk0rDwVhtujjyOo64Wkh9K7gEEyRgcH8hN7x+i4wcDfPLwN0sb2JXRgsi6Fuq71S90rcmGvJ6g1HP5nDb+8xZhFYpKBsG2pFhiCSfHYJ/gaIQ1sOceGSdtgE/kK06ljJGdyhUSe1ENmc1QpMluX/s00bQGTyrChdwUsNBTIme/c0riCM4hgaEo77KGGj1DD7dMga9AQkNa9gSrKIYKMuQzRUPIH95VxbFc2bixpnMk3bOMw8JTCfk+n6MS6mKgWUwmcTDtgXJHlTVNjiYaQxpVwnC92r69lCK3Ou0H91/feR2c3sxe1J6Jn4+ezm5lif4dOWdcctP6L1LcGRX1pLr9C51kZVosPup+nCNCIbd3KC4HntS6faaLGvShq5n0OGnIbowuNQbqnMy5NnKE6by/UL6QgmaPBAeg90R8eHgamCReNhx1WGJ5Pjyc/ricfJGfHZ5dj0WLdAkIEo8Hno/nh4aejhUSVPnBh3A6TU2TVW0c9rhJ1Ivba03TntbxpoXWiNu+tzI11wqxpettZdQ6mtGLc3tOi/NOWi3Y2z0JD5gNLzna7NAF/Ul7XcnxfIYnDFhrWhqxUb5eiDfI/gWhl8oD/aPLdVbfU3qs37c5XG+4OjZOO1iav5As03OHm+W6tF7WGDE2C1PBvA8ZxjCXvpD6tr3p3A5xOZlDXfwAPXUdZ
+sidebar_class_name: "get api-method"
+info_path: docs/generated/api/qat
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get Pipeline Inventory Data"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/api/pipeline/inventory/{pipelineId}"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Retrieve  pipeline inventory data from adb or temp tables
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"description":"The ID of the pipeline to retrieve the inventory data from","in":"path","name":"pipelineId","required":true,"schema":{"type":"integer","format":"int32"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"content":{"text/json":{"schema":{"type":"string"}}},"description":"Returns inventory data"},"500":{"content":{"text/json":{"schema":{"type":"object","properties":{"messageCode":{"type":"string"}},"title":"ResponseCode"}}},"description":"Internal error while getting pipeline inventory data"}}}
+>
+  
+</StatusCodes>
+
+
+      

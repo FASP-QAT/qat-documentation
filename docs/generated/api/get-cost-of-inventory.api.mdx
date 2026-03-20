@@ -1,0 +1,71 @@
+---
+id: get-cost-of-inventory
+title: "Get Cost Of Inventory Report"
+description: "Retrieve the cost of inventory report"
+sidebar_label: "Get Cost Of Inventory Report"
+hide_title: true
+hide_table_of_contents: true
+api: eJyVVm1v2zYQ/ivEfdoAxXa8ZVmFYUASZEWKrElttwVmGAEtnWU2FMmSp7iGof8+HCUnsvNaf5J5z/HunnvjBnIMmVeOlDWQwgjJK7xDQUsUmQ0k7EIoc4eGrF8Lj856ggSsQy9Z5yKHFAqkMxvoanGxRUICHr9XGOjU5mtIN5BZQ2iIP6VzWmVRvf8tsN0NhGyJpeQvWjuEFOz8G2Zsynk2RgoDS3PqYAJ5ZQpIYGF9KQlSyCXhAakSoU5AmUxXOV5raQzm46VyJRoKnQvm1mqUhsHO28LLkuO5FytDWKDvGlCGfhsy/g59aON/A75OgBRpBu0xdWFcRTejSOwXhSuoGbyblcmTyVCs2RKtPOaQkq+w5oPgrAkNYcPBYI9+wh/0PO/Se8npU4RleD0fmdRZpSVh/jStmSSpbXHtVYYdhKnK+S5Rua3mOqaNI30j1HFqlSk+G0Wv+6remluVj5vKelRqdQJazlG/bmwuA/5r85+EQqY88+l/Od0edmrjV+jU0VOAe/9u0Dzv/M3CvyB0LwmDe0LYceoyonaq+UE4VqXTeBVJ2HM6kM1u35T05zvpqqLHrfSol0ZIlTchDjitmp56dtDVCRz9ZP88k+MSQ5AFntkcX2Zw1DYvI18ZCxeG0BupBXpvvVgtlUZRoImj2RQxxG0gbEEWAdIpNJcGmCVQIi0tT3DHPZeAk7SEFPrSqX6j2c8eDfaAnocfpNMNVJ6LdknkQtpntd73ShpSi3a+SyP1mlQWetbzoN4N4H3jK+aiuVPwdfWMTWSVV7SONuYoPfqTil2bzrriMZPf9lAHtP33z7Z2PnydPLJ9zuRFij58nQiyt2iEMvGgqblUnMZbxF9R+DdHHu3xgIsSSLZ5ZAIix1wWo4fFd/5DcslvFxcMB8PfDwbHB8N3k8Oj9OgwHf7ZGxwf/gcvLCse6jvrabCzfAZx0S1stLET4aedTIiTbSrExFoNCWiVoQnROSNjWCdOZksUl41AfGmsiGFvAMleqlerVU9GOGe2394V+pcXZ+cfx+cHrNOp6k8nnIHWbSai9+54enT0x/EsjnEbqJSm48l7JMHtLa4W4r72xGj7/NgJtNOcb36/tHmLrey0VHFXxQg3bRNMQToVt2urst8IswSWcVNNYbPhEf7Z67rm4+8Vei7dWQJ30ivJc4srN4Elyhx9rOpbXMcRFj0/mLA/DNdVXML7L6Q62WqcZBk66mAfxlHd7ejrqzFTPm+fX2UcPODlimOSK0ghPuPYRGygeLYBLU1RyYKxzZ38+x+urIW+
+sidebar_class_name: "post api-method"
+info_path: docs/generated/api/qat
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get Cost Of Inventory Report"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/api/report/costOfInventory"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Retrieve the cost of inventory report
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={undefined}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"content":{"application/json":{"schema":{"type":"object","properties":{"dt":{"type":"string","format":"date-time"},"includePlannedShipments":{"type":"boolean"},"programId":{"type":"integer","format":"int32"},"versionId":{"type":"integer","format":"int32"}},"title":"CostOfInventoryInput_ReportView"}}},"description":"The cost of inventory input","required":true}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"content":{"text/json":{"schema":{"type":"array","items":{"type":"object","properties":{"calculated":{"type":"boolean"},"catalogPrice":{"type":"number","format":"double"},"cost":{"type":"number","format":"double"},"planningUnit":{"type":"object","properties":{"id":{"type":"integer","format":"int32"},"idString":{"type":"string"},"label":{"type":"object","properties":{"baseModel":{"type":"object","properties":{"baseModel":"circular(BaseModel_ReportView)"},"title":"BaseModel_ReportView"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"}},"title":"Label_ReportView"}},"title":"SimpleObject_ReportView"},"stock":{"type":"number","format":"double"}},"title":"CostOfInventoryOutput_ReportView"}}}},"description":"Returns the list of cost of inventory report"},"500":{"content":{"text/json":{"schema":{"type":"object","properties":{"messageCode":{"type":"string"}},"title":"ResponseCode_ReportView"}}},"description":"Internal error while generating the report"}}}
+>
+  
+</StatusCodes>
+
+
+      

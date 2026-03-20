@@ -1,0 +1,71 @@
+---
+id: get-consumption-forecast-vs-actual
+title: "get the ConsumptionForecastVsActualOutput list"
+description: "API used to get the ConsumptionForecastVsActualOutput list."
+sidebar_label: "get the ConsumptionForecastVsActualOutput list"
+hide_title: true
+hide_table_of_contents: true
+api: eJytVU1v4zYQ/SvEXHqRbcVtsK1OVT8W69M6sXcPNYJgTI0lbiWSIUfxGob+ezGSs5GTNk3Q6iKJePP93vAIjGWEbAOBvAsMNwkUFHUwno2zkEG+XKg2UqHYqZJYcUXqV2dj2/SI9y6QxsifY665xfpjy75lVZvIU0jAeQoouEUBGZTEL5hCAoHuWor8iysOkB1BO8tkWT7R+9ro3tXsS5TMjhB1RQ3KFx88QQZu+4U0QwI+SGA2FHscY+DfkGkEjRyMLSGBnQsNMmRQINOETUPQJRDZ+bdZ+ODKgI3U+c3EWKaSwtjGWP5+Lvh7CvHUl1fhfY3WGlt+soZfbTQM9bOh/asMugTYcC2gF+a0sL7l2+tH113XDaMzgQrIOLTUH0TvbBxGME9TeZ1T65q4DTa+gVKQjDnB9JUfyNDncPl3URaWKVisFYXgguIKWflA92RZWF2RCsSBzD3Wyu3+j0S6BBriygnlvevBHrmCDGbozWwYyky/qIRIQRgC2eYIbaghg4rZx2wmLqZ3LVo2u5Mg0GJ9YKPj1AUh6Hn9y+CKVsuPGpyqnQvqKl9DAvcYDG7rfkZdd5OAFHH9KMLfv2Lja3oiIpin8x8m6bvJ/Kf1xWV2eZHNf5ym7y7+gLFwXkKNxJKeSSF9TvT0nMZpl4CxO9f3/UTWq7N2KLSFyh96otbOSUNPQSSv6cV8mj7rU75cfBdly6HWFAdWXuVrteqbdho46n7gFhuJ+z5fLRUTNpA8GdJ+v/+XIVGDRiw+rFa34uf2w9XPZRX1xMemh3QJ1EaTjTSKmHvUFakh//OQO+emWwy9ioV1DdqR4dtW99PmjFbxf7wQTjuoV4yv0Vipsy/keBLJBtAbeBj60Pd/FMpNApUoLNvA8bjFSJ9C3XVyfNdSOEC2uXlkufx1CVSEBYVeWX/SYdh1UttkLbkJvG4lx2dXTpc8WORak+cR9nEDiIq+qX/5cSUy257us8YVAg64l/pwDxn0d6SE6Ndkf3aEGm3ZYinYwac8fwG7lqgP
+sidebar_class_name: "post api-method"
+info_path: docs/generated/api/v2.12/quantification-and-analytics-tool
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"get the ConsumptionForecastVsActualOutput list"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/api/report/consumptionForecastVsActual"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+API used to get the ConsumptionForecastVsActualOutput list.
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={undefined}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"content":{"application/json":{"schema":{"type":"object","properties":{"startDate":{"type":"string","format":"date-time"},"stopDate":{"type":"string","format":"date-time"},"programId":{"type":"integer","format":"int32"},"versionId":{"type":"integer","format":"int32"},"planningUnitId":{"type":"integer","format":"int32"},"reportView":{"type":"integer","format":"int32"}},"title":"ConsumptionForecastVsActualInput_ReportView"}}},"required":true}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Returns the ConsumptionForecastVsActualOutput list","content":{"text/json":{}}},"500":{"description":"Internal error that prevented the retreival of ConsumptionForecastVsActualOutput list","content":{"text/json":{}}}}}
+>
+  
+</StatusCodes>
+
+
+      

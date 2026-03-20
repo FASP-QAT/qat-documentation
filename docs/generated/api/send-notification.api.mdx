@@ -1,0 +1,71 @@
+---
+id: send-notification
+title: "Send Notification"
+description: "Send a notification for a Commit Request once it is processed successfully"
+sidebar_label: "Send Notification"
+hide_title: true
+hide_table_of_contents: true
+api: eJztWG1v2zgM/isCP22AlxQ99IYzDgPSlxsydDssyW4fimBgbCZRZ0uuRKcXBP7vB8oO6qRpmh2Kw63opzii+IikKEoPV5CST5wuWFsDMQzJpAqVsaynOkEZVVPrFKozm+ea1YBuSvKsrElIaVbaq8LZhLynVPkyka9pmWVLiMAW5AJEP4UYPJn0UwsXIijQYU5MzkN8tdoyZTQn1T9Xdqp4Tiqpl3fN8myV320qRKBFvUCeQwQGc4IYavXG+H4KEQiSdpRCzK6kCHwypxwhXgEvC1HRhmlGgje1Lkeuh345hqoai7ovrPHkReP46Eh+EmuYDAcM+pu7114cWd2HtpNrSlgC4CRGrGuYbSMPsSVqtJjSv8j5JtiHKhYZMaXnyNTS8ey0mbVVUmR6wzqnoOYImdLT5eMOlZ7cwebI5Hq3ti2pqghYcyZDp+h18sWTa5nyY/ZPUWeUDgib3dlaK4LrhwTGcu3XPUnh7MxhfsgWp7scjEAfGiadDmulXSgZTih73ApMWC/adkyszQiNQEzQ00ebPiEMJNolZYbu1el68DX8/HmUoeePNtVT/f9wom3Pj3iyidds2jM45+EsHGxVmP2Ndh/8Wjh1e4TFPqEvHhA+uwy6DAWoWt+7+5Yearl+zmxKf9bu3tXR0bKggx31uKBzZNxdhzwjl/5AqEV9g47CzMd246Vi/3wV4dmdt5eK/VKx/+OKva7WLcFZm7hAJaJNLjcgLp3xgcnVFXk3rxM7Tp6GTOXkPc7C/bLfq0HD5MLMHbb3Dcu+ZIqcs07xHFkVjhZkmNLggyN2mhaYPUBWmzsoLIoz4bqwyaZhHEFOPLfCk2cUnBH6GkMXC92t4brbBLq72iKMFUTgyS3WfLp0UsvnzIWPu4LUuSnR3AGgwWzJOvEd6yRTNv1+T0bou9D6gKkETqivp6R0mpdhjQmhI9crxdqrcVs8lI2q96I9af3vj3Vafvg6urf2hcQ8hPLD15Fi+52M0iYM1Okcq9OAon4PwnfQEPhwpwUJROs9lwCE4GsztWLA5lqfN2KieuugqJG1GUSQ6YSMD0nUNBN6BSZzUpe1QDW8Wx13jiDaCvrt7W0Hw3SJcbfB8t3L/tnFp+HFG9Fp5eLnnsSieYZADMed395enZz8+nYcXkfWc46mZUlo12w1VTa8a52jp+3tNLENR7PIUIcnRPB91eTuFWChYd2fCKl5rwEUb7c8xhHMrWfRXq3kRfLFZVUlwzclOUm5cQQLdBonEjBpGmkv3ynEU8w87fH/1aBp+bxW/763tNPvZhCNRGaBWSn/IILvtNzRe6rGVQRzwpRc8KCe1UsSKrilf1f1qnZ5eH8xgqr6BwZfxsQ=
+sidebar_class_name: "get api-method"
+info_path: docs/generated/api/qat
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Send Notification"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/api/commit/sendNotification/{commitRequestId}"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Send a notification for a Commit Request once it is processed successfully
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"description":"The ID of the commit request to send a notification for","in":"path","name":"commitRequestId","required":true,"schema":{"type":"integer","format":"int32"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"content":{"text/json":{"schema":{"type":"object","properties":{"commitRequestId":{"type":"integer","format":"int32"},"committedVersionId":{"type":"integer","format":"int32"},"completedDate":{"type":"string","format":"date-time"},"createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"failedReason":{"type":"string"},"json":{"type":"string"},"notes":{"type":"string"},"program":{"type":"object","properties":{"code":{"type":"string"},"id":{"type":"integer","format":"int32"},"idString":{"type":"string"},"label":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":"circular(BaseModel)","createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"}},"title":"BaseModel"},"createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"labelId":{"type":"integer","format":"int32"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"}},"title":"Label"},"name":{"type":"string"}},"title":"SimpleCodeObject"},"programTypeId":{"type":"integer","format":"int32"},"saveData":{"type":"boolean"},"status":{"type":"integer","format":"int32"},"versionType":{"type":"object","properties":{"id":{"type":"integer","format":"int32"},"idString":{"type":"string"},"label":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":{"type":"object","properties":{"active":{"type":"boolean"},"baseModel":"circular(BaseModel)","createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"}},"title":"BaseModel"},"createdBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"createdDate":{"type":"string","format":"date-time"},"labelId":{"type":"integer","format":"int32"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"},"lastModifiedBy":{"type":"object","properties":{"userId":{"type":"integer","format":"int32"},"username":{"type":"string"}},"title":"BasicUser"},"lastModifiedDate":{"type":"string","format":"date-time"}},"title":"Label"},"name":{"type":"string"}},"title":"SimpleObject"}},"title":"CommitRequest"}}},"description":"Returns the status of the commit request"},"500":{"content":{"text/json":{"schema":{"type":"object","properties":{"messageCode":{"type":"string"}},"title":"ResponseCode"}}},"description":"Internal error that prevented the retrieval of the commit request status"}}}
+>
+  
+</StatusCodes>
+
+
+      

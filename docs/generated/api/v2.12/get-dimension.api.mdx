@@ -1,0 +1,71 @@
+---
+id: get-dimension
+title: "Get Dimension for a DimensionId"
+description: "API used to get the Dimension for a specific DimensionId"
+sidebar_label: "Get Dimension for a DimensionId"
+hide_title: true
+hide_table_of_contents: true
+api: eJylVMFu2zAM/RWBl22Al2TZdvFpBrq2ubRJk56KoGBtOtZmS6pEJw0M//sgOWmcpls37GRLIvkeyUc2wLhyEN9BJitSTmoFywgycqmVhv0xhmQ6EbWjTLAWK2LBBYmzvbnItRUonKFU5jI9PEwyiEAbssjdKYYV8fMzRGDQYkVM1hNoQGFFEB+IhADSEzDIBbxk1QMSXCCLra7FBhV7micUIQJLj7W0lEHMtqYIXFpQhRA3wFvjkaViWpE3zbWtkLurz2No26V3d0YrR857jEcj/zlmdENcW+WOwSGCVCsmxQGJnnj4w3nzpm3bCL6Mvvw+EIpLZjNn5NoNrq4X9+fXt1dnQubHEJNsX37KRKbJCaVZ0JN0/Ab619fSmCgmq7AUZK22XW2NpTUp9hooSFhiS3KNpdD5X2baRlARF3ong9B9LiCGIRo5fO75sOm1v4UIHNn1XiC1LSGGgtm4eOj9Bo81KvayCxpDheWWZeoG2q5O9DK1OqtTfxBd0KDcWbKACNZoJT6Uobeh2VLlOmQhufTSmB0BCVSZSPZoYqF16YOQdR3UePBpPBidMEimk3fOqxPTlFynk1myEPNAZ1c+TEP5dsNwnsynggkriF6kv9ls3kifKpTe43I+v/dx7i9n31aFSz8aVwWTNoJSpqQc9RATg2lBouN/DJlrPXhAC76ZRjuuUPUcL4hPtsLxMjiqRnMQy/8smN3oBrWZEqXyWQXazU5hd4BGevSeTuP+kllGUGjH3rJpHtDRrS3b1l8/1mS3EN8tDwoJQsyk8/8ZxDmWjv6Q2fub3dL5IP55X72a2u4S1TbItqz9CSL4SdsXu7NdthEUhBnZQLqzSNKUDPd8D3Pqdf88oxffF9C2vwABUByc
+sidebar_class_name: "get api-method"
+info_path: docs/generated/api/v2.12/quantification-and-analytics-tool
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get Dimension for a DimensionId"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/api/dimension/{dimensionId}"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+API used to get the Dimension for a specific DimensionId
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"dimensionId","in":"path","description":"DimensionId that you want to the Dimension for","required":true,"schema":{"type":"integer","format":"int32"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Returns the Dimension","content":{"text/json":{}}},"404":{"description":"Returns a HttpStatus.NOT_FOUND if the DimensionId specified does not exist","content":{"text/json":{}}},"500":{"description":"Internal error that prevented the retreival of Dimension","content":{"text/json":{}}}}}
+>
+  
+</StatusCodes>
+
+
+      

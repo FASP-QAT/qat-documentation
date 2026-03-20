@@ -1,0 +1,71 @@
+---
+id: get-problme-by-realm-id
+title: "Get active Problem list for a realm country"
+description: "API used to get the list of active problem list for a realm"
+sidebar_label: "Get active Problem list for a realm country"
+hide_title: true
+hide_table_of_contents: true
+api: eJylVE1v2zAM/SsCL9sAL+nS7uLTXPQrlzZt0lMRFIxNx9psSZXopIHh/z5Idpr0Y2uHnSzLJN979CMbYFw6iO/AWL0oqYJ5BBm51ErDUiuIIZmMRe0oE6zFklhwQaKUjoXOBaYsVyT63O4611agsIRlBRFoQxZ9pXEGMSyJJz62ouPNjY8YZxCBQYsVMVlPpAGFFUEM9um79DQMcgEvufUxggtksdG1WKPqGL6kBBFYeqilpQxitjVF4NKCKoS4Ad4YjygV05J8aK5thdxdHY6gbec+3RmtHDmfMTo48I/nbG6Ia6tcwO87M9mjARGkWjEpDpj0yMOfzic2bdtGcHRw+OeSKC6YzZSRazc4u7o5Hp+cnF4KmQewW0dWZJqcUJpFgSuPn5Jz70IefRDy8mp2f3Z1e3myhdx23hlKZS4p2+HT4/tiv7/Vv7FisgpLQdZq2/1UY2lFir39Aipbkissvfk+3Ns2goq40L0Dg+O4gBiGaOSwd8qwVzRs+kMLETiyq60ta1tCDAWzcfHQZw4ealQsc5kGg6PCcsMydQNtl6+cOrE6q1P/IrqiYU6ukxlEsEIrcVEGZwWrSZXroENy6Y15/QxIoMpEskUTM61LX4Ss66BGg2+jwcErBslk/Mn5Ie6sEfp5nczENNDpG4hpaGA/gmfJdCKY0A/yc/nr9fod+VSh9BkX0+m9r3N/cf1jWbj0q3FVCGkjKGVKytEeYmIwLUh0/J9D5loPFmjB/06jHVeo9hLPid+auf1tJFJdK7abl51pdtb5z2XX75FgP1OiVF5kUNH0lrsDNNIbsN+20d6ai7fHeQSFduyjm2aBjm5t2bb++qEmu4H4br4zTfBmJp0/ZxDnWDr6i8DPN/0W/CL+aXm+Ka2/RLUJLi5r/wYR/KLN3gJv520EBWFGNpDtviZpSob38nZD60fgaWDPT2fQtr8Bx/JJ/A==
+sidebar_class_name: "get api-method"
+info_path: docs/generated/api/v2.12/quantification-and-analytics-tool
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get active Problem list for a realm country"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/api/problem/realmId/{realmId}"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+API used to get the list of active problem list for a realm
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"realmId","in":"path","description":"realmId that you want the problem list for","required":true,"schema":{"type":"integer","format":"int32"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Returns the active Problem list","content":{"text/json":{}}},"403":{"description":"Returns a HttpStatus.FORBIDDEN if the User does not have access","content":{"text/json":{}}},"404":{"description":"Returns a HttpStatus.NOT_FOUND if the realmId specified does not exist","content":{"text/json":{}}},"500":{"description":"Internal error that prevented the retreival of Problem list","content":{"text/json":{}}}}}
+>
+  
+</StatusCodes>
+
+
+      

@@ -1,0 +1,71 @@
+---
+id: final-save-program-data
+title: "Save Final Program Data"
+description: "save final program data into QAT tables from temp table"
+sidebar_label: "Save Final Program Data"
+hide_title: true
+hide_table_of_contents: true
+api: eJy1Ve9v0zAQ/Ves+wSSacdgICKEVGCgIgT7UeBD1Q+35NoYEtuzLx1Vlf8dnZNo2QZIE+JTa/v87t3zu8seCop5MJ6Ns5BBxC2ptbFYKR/cJmCtCmRUxrJTp7OFYryoKKp1cLViqn23ARqcp4CCMi8ggwRxjls66VDeIiNo8BiwJqYQIVvub+VelKTmb5VbKy5JeeOpMpYUO5VYyeYfmIEGIwgeuQQNFmuSVY8wL0BDoMvGBCog49CQhpiXVCNke+Cdl2hjmTYUQMPahRq523pyCG27kuvROxspyo3DgwP5yZ1lspww6CdPv0cpY38v6FbfEuGMuAk2qsfQanh68OxeidzFd8pZdA7yHGw6vjXFiBt64woaBUcOxm5AKLDhilLyrsoU+Rty/WMqrAJhsVP000SOwvTonpL8b6ZzyxTEKxSCC+qqNBWJjYzdXDvrrpu6HLgRe8JJHwcrDTVx6cTY3sVEW5yWwRS9mQ540x5JgKb7a/e1oCFS2A6ub0IFGZTMPmZTQZhcNmjZrE2eGggtVjs2eZy4sIHblb0nK41GheowlcCJRSPlTTC8SzkuCAOFWSMsl6vx8bk8Raf2OGhYvRsc+uHb4k7uY1E1NeKHbwvF7gdZZWzXmelepl4nFPUyHb6CvtHkyTp80MOrigBJb2PXTgjczHV6QxM1G0RRC+cq0FCZnGxMNun7feYxL0l97A7UVwpRbh5ODkDfEv3q6mqCKVw0nvZYcfpx/ub40/nxI7kzctvpTLTYdoCQweHkxfPl0dGz5yuJEkvUaEdMZPCpd8ldQ8v0A/BGjaN++YfB28uZ+s1XaKxwSuXue5suAb0R0w6GTm03WBU0ZKNRudJQisezJez3FxjpS6jaVrYvGwrirpWGLQaT0qcpbqL8LyBbYxXpL0U+OOun8EP1T8P+tyX3m2h38lZYNbICDT9od/Nj0K5aDSVhQSHx7wJmeU6eR1evB1g7HgAnn88X0La/AHj9fYc=
+sidebar_class_name: "post api-method"
+info_path: docs/generated/api/qat
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Save Final Program Data"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/api/pipeline/programdata/{pipelineId}"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+save final program data into QAT tables from temp table
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"description":"The ID of the pipeline to save the final program data into","in":"path","name":"pipelineId","required":true,"schema":{"type":"integer","format":"int32"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"content":{"text/json":{"schema":{"type":"integer","format":"int32"}}},"description":"Returns 1"},"406":{"content":{"text/json":{"schema":{"type":"object","properties":{"messageCode":{"type":"string"}},"title":"ResponseCode"}}},"description":"Program already exists"},"500":{"content":{"text/json":{"schema":{"type":"object","properties":{"messageCode":{"type":"string"}},"title":"ResponseCode"}}},"description":"Internal error while saving pipeline final program data"}}}
+>
+  
+</StatusCodes>
+
+
+      

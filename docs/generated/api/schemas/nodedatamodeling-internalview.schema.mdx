@@ -1,0 +1,33 @@
+---
+id: nodedatamodeling-internalview
+title: "NodeDataModeling_InternalView"
+description: ""
+sidebar_label: "NodeDataModeling_InternalView"
+hide_title: true
+hide_table_of_contents: true
+schema: true
+sample: {"dataValue":0,"increaseDecrease":0,"modelingSource":0,"modelingType":{"id":0,"idString":"string","label":{"baseModel":{},"labelId":0,"label_en":"string","label_fr":"string","label_pr":"string","label_sp":"string"}},"nodeDataModelingId":0,"notes":"string","startDate":"string","startDateNo":0,"stopDate":"string","stopDateNo":0,"transferNodeDataId":0}
+custom_edit_url: null
+---
+
+import Schema from "@theme/Schema";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"NodeDataModeling_InternalView"}
+>
+</Heading>
+
+
+
+
+
+<Schema
+  schema={{"type":"object","properties":{"dataValue":{"type":"number","format":"double"},"increaseDecrease":{"type":"integer","format":"int32"},"modelingSource":{"type":"integer","format":"int32"},"modelingType":{"type":"object","properties":{"id":{"type":"integer","format":"int32"},"idString":{"type":"string"},"label":{"type":"object","properties":{"baseModel":{"type":"object","properties":{"baseModel":"circular(BaseModel_InternalView)"},"title":"BaseModel_InternalView"},"labelId":{"type":"integer","format":"int32"},"label_en":{"type":"string"},"label_fr":{"type":"string"},"label_pr":{"type":"string"},"label_sp":{"type":"string"}},"title":"Label_InternalView"}},"title":"SimpleObject_InternalView"},"nodeDataModelingId":{"type":"integer","format":"int32"},"notes":{"type":"string"},"startDate":{"type":"string"},"startDateNo":{"type":"integer","format":"int32"},"stopDate":{"type":"string"},"stopDateNo":{"type":"integer","format":"int32"},"transferNodeDataId":{"type":"integer","format":"int32"}},"title":"NodeDataModeling_InternalView"}}
+  schemaType={"response"}
+>
+  
+</Schema>
+            
