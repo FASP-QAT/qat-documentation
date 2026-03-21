@@ -1,7 +1,7 @@
 ---
 id: acronyms
-title: Acronyms & Definitions
-sidebar_label: Acronyms
+title: "generales"
+sidebar_label: "generales"
 sidebar_position: 15
 ---
 Esta página proporciona definiciones de acrónimos y términos comúnmente utilizados en la documentación QAT.

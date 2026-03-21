@@ -1,7 +1,7 @@
 ---
 id: supply-planning-module-supply-planning
-title: "Supply Planning Module: Supply Planning"
-sidebar_label: "Supply Planning Module: Supply Planning"
+title: "Módulo de Planejamento de Fornecimento: Planejamento de Fornecimento"
+sidebar_label: "Módulo de Planejamento de Fornecimento: Planejamento de Fornecimento"
 sidebar_position: 5
 ---
 # Módulo de Planejamento de Fornecimento: Planejamento de Fornecimento

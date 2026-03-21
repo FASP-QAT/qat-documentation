@@ -1,7 +1,7 @@
 ---
 id: annex-4-business-functions
-title: "Annex 4: Business Functions"
-sidebar_label: "Annex 4: Business Functions"
+title: "Anexo 4: Funções Empresariais"
+sidebar_label: "Anexo 4: Funções Empresariais"
 sidebar_position: 13
 ---
 | \# | Opção de Menu | Função Empresarial | Descrição da função de negócios (“Permite que usuários habilitados…”) |

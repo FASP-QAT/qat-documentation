@@ -1,7 +1,7 @@
 ---
 id: overview
-title: "Overview"
-sidebar_label: "Overview"
+title: "Descripción general"
+sidebar_label: "Descripción general"
 sidebar_position: 1
 ---
 # Descripción general

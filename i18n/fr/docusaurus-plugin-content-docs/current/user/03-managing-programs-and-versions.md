@@ -1,7 +1,7 @@
 ---
 id: managing-programs-and-versions
-title: "Managing Programs and Versions"
-sidebar_label: "Managing Programs and Versions"
+title: "Gestion des programmes et des versions"
+sidebar_label: "Gestion des programmes et des versions"
 sidebar_position: 3
 ---
 # Gestion des programmes et des versions

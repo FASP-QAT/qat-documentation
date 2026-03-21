@@ -1,7 +1,7 @@
 ---
 id: forecasting-module-reports-and-outputs
-title: "Forecasting Module: Reports and Outputs"
-sidebar_label: "Forecasting Module: Reports and Outputs"
+title: "Module de prévision : rapports et résultats"
+sidebar_label: "Module de prévision : rapports et résultats"
 sidebar_position: 9
 ---
 # Module de prévision : rapports et résultats

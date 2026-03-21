@@ -1,7 +1,7 @@
 ---
 id: getting-started
-title: "Getting Started"
-sidebar_label: "Getting Started"
+title: "Primeiros passos"
+sidebar_label: "Primeiros passos"
 sidebar_position: 2
 ---
 # Primeiros passos
