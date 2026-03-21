@@ -22,7 +22,7 @@ Os dados do programa podem ser baixados, carregados, importados e exportados no 
 
 - > Os usuários devem **fazer download** dos dados do programa para iniciar o planejamento ou previsão de fornecimento e precisam **fazer upload** de seus dados de volta ao servidor para compartilhar seu trabalho com outras pessoas.
 
-- > O upload pode ser “rascunho” ou “final”. Carregar um programa de plano de fornecimento como “final” inicia o processo de revisão do plano de fornecimento. O status das versões do plano de fornecimento pode ser visualizado na tela **Versão e revisão do plano de fornecimento** – esta é a única função descrita nesta seção que está disponível para visualizadores de relatórios. Carregar um programa de previsão como “final” permite que os usuários importem essa previsão diretamente para o módulo do plano de fornecimento. Consulte [Importação de previsão QAT](#qat-forecast-import) para obter mais instruções sobre como importar uma previsão para um plano de fornecimento.
+- > O upload pode ser “rascunho” ou “final”. Carregar um programa de plano de fornecimento como “final” inicia o processo de revisão do plano de fornecimento. O status das versões do plano de fornecimento pode ser visualizado na tela **Versão e revisão do plano de fornecimento** – esta é a única função descrita nesta seção que está disponível para visualizadores de relatórios. Carregar um programa de previsão como “final” permite que os usuários importem essa previsão diretamente para o módulo do plano de fornecimento. Consulte [Importação de previsão QAT](04-supply-planning-module-program-data.md#qat-forecast-import) para obter mais instruções sobre como importar uma previsão para um plano de fornecimento.
 
 - > Quando não há Internet disponível, o recurso **Exportar** permite que os usuários compartilhem seus dados com outros usuários por meio de dispositivos externos, como um pen drive/flash drive, que podem então usar a função **Importar** dados para abrir esse arquivo em seu computador.
 
@@ -165,7 +165,7 @@ e está disponível para todos os outros usuários baixarem ou visualizarem
 3. Selecione um **Tipo de versão** usando o menu suspenso:
     1. **Versão preliminar**: indica que o plano de fornecimento é um trabalho em andamento. Use isto para compartilhar um plano de fornecimento com outras pessoas, mas ainda não está pronto para ser enviado ao processo de revisão do plano de fornecimento.
 
-    2. **Versão Final**: Indica que o plano de fornecimento atingiu o status final e está sendo submetido ao processo de revisão do plano de fornecimento. Observe que o QAT não permitirá que o usuário carregue como final qualquer problema “Aberto” na lista de problemas do QAT. Use a lista de problemas do QAT (consulte [Encerramento e resolução de problemas](#closing-and-addressing-problems)) para marcar qualquer problema em aberto como “Abordado” com uma nota explicativa ou mova o problema para “em conformidade” por meio da entrada de dados primeiro.
+    2. **Versão Final**: Indica que o plano de fornecimento atingiu o status final e está sendo submetido ao processo de revisão do plano de fornecimento. Observe que o QAT não permitirá que o usuário carregue como final qualquer problema “Aberto” na lista de problemas do QAT. Use a lista de problemas do QAT (consulte [Encerramento e resolução de problemas](06-supply-planning-module-reports.md#closing-and-addressing-problems)) para marcar qualquer problema em aberto como “Abordado” com uma nota explicativa ou mova o problema para “em conformidade” por meio da entrada de dados primeiro.
 
 4. Em **Notas**, digite quaisquer notas gerais sobre esta versão, como um resumo das principais alterações feitas no plano de fornecimento e o raciocínio por trás dessas alterações.
 
@@ -351,7 +351,7 @@ Figura 64: Tela do Programa de Exportação
 
 <!-- lista final -->
 
-1. > Determine se deseja exportar do módulo de previsão ou de planejamento de fornecimento e navegue até o módulo correto (consulte [Seção 2.J Navegação e barra de menu](#navigation-and-menu-bar)). Se você tiver acesso apenas a um módulo, poderá ignorar esta etapa.
+1. > Determine se deseja exportar do módulo de previsão ou de planejamento de fornecimento e navegue até o módulo correto (consulte [Seção 2.J Navegação e barra de menu](02-getting-started.md#navigation-and-menu-bar)). Se você tiver acesso apenas a um módulo, poderá ignorar esta etapa.
 
 2. > Vá em “Gerenciamento de Programas” \> “Exportar Programa”
 
@@ -395,7 +395,7 @@ Figura 65: Tela de Importação do Programa
 
 <!-- lista final -->
 
-1. > Determine se deseja exportar do módulo de previsão ou de planejamento de fornecimento e navegue até o módulo correto (consulte [Seção 2.J Navegação e barra de menu](#navigation-and-menu-bar)). Se você tiver acesso apenas a um módulo, poderá ignorar esta etapa.
+1. > Determine se deseja exportar do módulo de previsão ou de planejamento de fornecimento e navegue até o módulo correto (consulte [Seção 2.J Navegação e barra de menu](02-getting-started.md#navigation-and-menu-bar)). Se você tiver acesso apenas a um módulo, poderá ignorar esta etapa.
 
 2. > Vá em “Gerenciamento de Programas” \> “Importar Programa”
 

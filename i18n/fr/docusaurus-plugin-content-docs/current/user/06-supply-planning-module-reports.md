@@ -64,7 +64,7 @@ Figure 122 : Clôture d'un exemple de problème
 
 1. Accédez à l'écran de saisie des données de consommation en cliquant directement sur le problème (ce qui ouvrira une nouvelle fenêtre QAT) ou en cliquant sur Données du plan d'approvisionnement  Données de consommation.
 
-2. À partir de l'écran de saisie des données de consommation, l'utilisateur ajoutera la consommation réelle pour les mois demandés. Pour obtenir des instructions sur la façon d'ajouter une consommation, veuillez vous référer à [Données de consommation](#consumption-data).
+2. À partir de l'écran de saisie des données de consommation, l'utilisateur ajoutera la consommation réelle pour les mois demandés. Pour obtenir des instructions sur la façon d'ajouter une consommation, veuillez vous référer à [Données de consommation](04-supply-planning-module-program-data.md#consumption-data).
 
 3. Revenez à la liste des problèmes QAT et cliquez sur Recalculer pour actualiser la liste des problèmes QAT afin d'inclure l'ajout le plus récent des données de consommation réelle. Le problème précédemment signalé devrait désormais être « Conforme » et ne plus être signalé par la liste des problèmes QAT.
 
@@ -483,7 +483,7 @@ Figure 147 : Rapport sur les délais de livraison de l'agent d'approvisionnemen
   - Le rapport peut inclure les quantités des expéditions planifiées qui devraient arriver et expirer pendant la période sélectionnée.
 
   - Il calculera (en fonction de la durée de conservation, des projections de stock et de la consommation prévue) la quantité d'un lot particulier qui devrait expirer et quand.
-    - Pour le calcul de l'expiration, reportez-vous à [Annexe 2 : Règles commerciales](#annex-2-business-rules)
+    - Pour le calcul de l'expiration, reportez-vous à [Annexe 2 : Règles commerciales](11-annex-2-business-rules.md#annex-2-business-rules)
 
   - Le rapport calculera le coût du produit expiré, en fonction de la quantité expirée et du prix par défaut de l'unité de planification défini par l'utilisateur dans l'écran Mettre à jour les unités de planification.
 

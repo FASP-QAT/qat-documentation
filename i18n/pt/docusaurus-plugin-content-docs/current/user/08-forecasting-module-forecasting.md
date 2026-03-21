@@ -34,9 +34,9 @@ Existem duas maneiras pelas quais um usuário pode adicionar dados de consumo re
 
 1. > Navegue até a tela “Previsão Baseada em Consumo” à tela “Importar do Plano de Fornecimento QAT”
 
-2. > Escolha o Programa de Previsão, os dados da Faixa de Consumo Real a importar, o programa Plano de Fornecimento e depois a versão do Plano de Fornecimento. _Observação: apenas programas de previsão que foram **baixados** no computador local do usuário estarão disponíveis no menu suspenso “Programa de previsão”. Consulte [Baixar/Excluir programa](#downloaddelete) para saber como baixar um programa para o computador local._
+2. > Escolha o Programa de Previsão, os dados da Faixa de Consumo Real a importar, o programa Plano de Fornecimento e depois a versão do Plano de Fornecimento. _Observação: apenas programas de previsão que foram **baixados** no computador local do usuário estarão disponíveis no menu suspenso “Programa de previsão”. Consulte [Baixar/Excluir programa](03-managing-programs-and-versions.md#downloaddelete) para saber como baixar um programa para o computador local._
 
-3. > Os usuários mapearão a Unidade de Planejamento do Plano de Fornecimento para a Unidade de Planejamento de Previsão. _Observação: somente as unidades de planejamento que foram adicionadas ao Programa de Previsão na tela “Atualizar Unidades de Planejamento” e para as quais marcamos a caixa de seleção de previsão de consumo estarão disponíveis no menu suspenso “Unidade de Planejamento de Previsão”. Consulte Módulo de previsão [Unidades de planejamento](#planning-units-1) para saber como adicionar unidades de planejamento a um programa de previsão._
+3. > Os usuários mapearão a Unidade de Planejamento do Plano de Fornecimento para a Unidade de Planejamento de Previsão. _Observação: somente as unidades de planejamento que foram adicionadas ao Programa de Previsão na tela “Atualizar Unidades de Planejamento” e para as quais marcamos a caixa de seleção de previsão de consumo estarão disponíveis no menu suspenso “Unidade de Planejamento de Previsão”. Consulte Módulo de previsão [Unidades de planejamento](07-forecasting-module-program-data.md#planning-units) para saber como adicionar unidades de planejamento a um programa de previsão._
 
 4. > _Escolha “Não importar” no menu suspenso para quaisquer PUs que não correspondam automaticamente. Caso você tenha muitas PUs e queira selecionar “Não importar” para todas as unidades não mapeadas você pode marcar a caixa ‘Não importar todas as unidades de planejamento não mapeadas”_
 
@@ -324,9 +324,9 @@ Os usuários podem realizar uma previsão baseada em árvore se os dados necess�
 
 - manualmente - selecione ‘+ Desenhe sua própria árvore’
 
-- a partir de um modelo de árvore - selecione o nome do modelo desejado. Se um usuário quiser ver um modelo de árvore adicionado ao QAT que não existe e que beneficiaria a comunidade QAT, ele poderá enviar uma solicitação de alteração ao [Sistema de suporte técnico de tickets do QAT](#qat-helpdesk-and-tickets).
+- a partir de um modelo de árvore - selecione o nome do modelo desejado. Se um usuário quiser ver um modelo de árvore adicionado ao QAT que não existe e que beneficiaria a comunidade QAT, ele poderá enviar uma solicitação de alteração ao [Sistema de suporte técnico de tickets do QAT](02-getting-started.md#qat-helpdesk-and-tickets).
 
-**\*Nota**: [Visualizadores de previsão](#annex-3-user-role-matrix) podem visualizar qualquer árvore que tenha sido carregada no servidor e à qual tenham acesso; no entanto, apenas usuários/administradores do Forecast poderão criar e editar/atualizar árvores.\*
+**\*Nota**: [Visualizadores de previsão](12-annex-3-user-role-matrix.md#annex-3-user-role-matrix) podem visualizar qualquer árvore que tenha sido carregada no servidor e à qual tenham acesso; no entanto, apenas usuários/administradores do Forecast poderão criar e editar/atualizar árvores.\*
 
 **<u>Usando esta tela</u>:**
 
@@ -614,7 +614,7 @@ com a construção de uma árvore de forma eficiente. Este menu suspenso não é
 
       -> <u>Unidade de previsão: lista suspensa </u> de todos os disponíveis
 unidade de previsão no programa do usuário. Se uma unidade de previsão não estiver disponível
-no menu suspenso, o usuário deve primeiro adicioná-lo a ‘[Atualizar unidade de planejamento](#planning-units-1)’
+no menu suspenso, o usuário deve primeiro adicioná-lo a ‘[Atualizar unidade de planejamento](07-forecasting-module-program-data.md#planning-units)’
 tela.
 
       -> <u>P Unidade de planejamento: menu suspenso </u> filtrado com base em
@@ -718,7 +718,7 @@ As árvores de previsão são construídas de cima para baixo usando diferentes 
 
 ![A screenshot of a computer Description automatically generated](/img/media/image282.png)
 
-9. > As árvores QAT são **salvas automaticamente** no computador local (para salvar uma árvore no servidor, consulte [Versão de upload](#upload). As quantidades que aparecem nos nós também são calculadas automaticamente conforme uma árvore muda; no entanto, se o QAT estiver lento durante a edição da árvore, os usuários podem desmarcar a caixa “Calcular automaticamente” para interromper os cálculos automáticos de backend. Para ver manualmente os cálculos atualizados após cada edição, os usuários precisarão clicar no Ícone ![P3121#yIS1](/img/media/image283.png).
+9. > As árvores QAT são **salvas automaticamente** no computador local (para salvar uma árvore no servidor, consulte [Versão de upload](03-managing-programs-and-versions.md#upload). As quantidades que aparecem nos nós também são calculadas automaticamente conforme uma árvore muda; no entanto, se o QAT estiver lento durante a edição da árvore, os usuários podem desmarcar a caixa “Calcular automaticamente” para interromper os cálculos automáticos de backend. Para ver manualmente os cálculos atualizados após cada edição, os usuários precisarão clicar no Ícone ![P3121#yIS1](/img/media/image283.png).
     1. > Os usuários podem baixar suas árvores como PDFs para compartilhar com as partes interessadas clicando no ícone ![P3122#yIS1](/img/media/image284.png).
 
     2. > Os usuários podem baixar um formulário de esboço de sua árvore para verificar novamente a validação da Soma de Filhos, os valores dos nós e seus nós clicando no ícone ![P3123#yIS1](/img/media/image285.png).
@@ -778,7 +778,7 @@ _Notas_
 
 - _Por padrão, apenas _cenários_ ativos são mostrados. Para visualizar cenários inativos, clique no ícone_ ![P3125#yIS1](/img/media/image277.png) _ próximo ao menu suspenso do cenário, seguido de “Mostrar inativo”_
 
-- _Os usuários podem escolher diferentes combinações de cenário de árvore para cada unidade de planejamento na tela [Comparar e selecionar](#compare-and-select)._
+- _Os usuários podem escolher diferentes combinações de cenário de árvore para cada unidade de planejamento na tela [Comparar e selecionar](09-forecasting-module-reports-and-outputs.md#compare-and-select)._
 
 #### Modelagem/Transferências
 
@@ -1855,7 +1855,7 @@ Figura 180: Validações de Produto
 
 Figura 181 Pop-up de detalhes da árvore com 'Unidades de planejamento ausentes'
 
-3. **Observe que todos os detalhes da árvore podem ser atualizados posteriormente clicando no ícone de engrenagem** ![P3402#yIS1](/img/media/image310.png) **ao lado do menu suspenso da árvore e as unidades de planejamento podem ser adicionadas navegando até a tela ‘Atualizar [unidades de planejamento](#planning-units-1)’.**
+3. **Observe que todos os detalhes da árvore podem ser atualizados posteriormente clicando no ícone de engrenagem** ![P3402#yIS1](/img/media/image310.png) **ao lado do menu suspenso da árvore e as unidades de planejamento podem ser adicionadas navegando até a tela ‘Atualizar [unidades de planejamento](07-forecasting-module-program-data.md#planning-units)’.**
 
 <!-- lista final -->
 
@@ -1894,11 +1894,11 @@ Figura 182: Tela de modelos de árvore
 
   - **Adicione notas para explicar quaisquer fontes de informação.**
 
-- Se houver um modelo de árvore que beneficie a comunidade QAT, os usuários podem solicitá-lo através do [sistema de helpdesk de tickets QAT](#tickets-for-addingupdating-users-and-master-data).
+- Se houver um modelo de árvore que beneficie a comunidade QAT, os usuários podem solicitá-lo através do [sistema de helpdesk de tickets QAT](02-getting-started.md#tickets-for-addingupdating-users-and-master-data).
 
 #### Modelos de filial
 
-**<u>Purpose:</u> Os modelos de ramificação permitem que os usuários adicionem um modelo de árvore, incluindo a estrutura e todos os vários nós filhos como uma ramificação** <u>dentro de </u> **uma árvore pré-existente.** _Observação: os modelos de ramificação/árvore são gerenciados no nível de região (global)._ Se houver um modelo de árvore/filial que possa beneficiar a comunidade QAT, os usuários podem solicitar através do [Sistema de Helpdesk QAT Ticketing](#tickets-for-addingupdating-users-and-master-data).
+**<u>Purpose:</u> Os modelos de ramificação permitem que os usuários adicionem um modelo de árvore, incluindo a estrutura e todos os vários nós filhos como uma ramificação** <u>dentro de </u> **uma árvore pré-existente.** _Observação: os modelos de ramificação/árvore são gerenciados no nível de região (global)._ Se houver um modelo de árvore/filial que possa beneficiar a comunidade QAT, os usuários podem solicitar através do [Sistema de Helpdesk QAT Ticketing](02-getting-started.md#tickets-for-addingupdating-users-and-master-data).
 
 **<u>Usando modelos de ramificação:</u>**
 

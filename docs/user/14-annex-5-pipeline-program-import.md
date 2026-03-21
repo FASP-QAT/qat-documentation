@@ -7,7 +7,7 @@ sidebar_position: 14
 
 # Annex 5: PipeLine Program Import
 
-In certain cases, users will be granted a special set of credentials that can import PipeLine databases if they desire to set up their program this way (see [Setting up a new program](#setting-up-a-new-program) in Annex 1).
+In certain cases, users will be granted a special set of credentials that can import PipeLine databases if they desire to set up their program this way (see [Setting up a new program](10-annex-1-application-realm-administrator-manual.md#setting-up-a-new-program) in Annex 1).
 
 **Step 1: Convert the .accdb file into a JSON file:**
 

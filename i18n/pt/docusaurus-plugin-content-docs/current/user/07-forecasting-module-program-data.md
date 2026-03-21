@@ -24,7 +24,7 @@ Depois que as diversas previsões forem criadas, os usuários poderão navegar a
 
 _Administradores do programa_ podem usar a tela principal para:
 
-- Atualize o nome do programa de previsão, o gerente do programa e o campo Notas. Os administradores do programa também podem optar por desativar ou ativar um programa nesta tela. Para alterações relacionadas à área técnica, organização ou nome de exibição do programa, os Administradores do Programa devem solicitar a alteração a um Administrador do Realm por meio do [Sistema QAT Helpdesk.](#qat-helpdesk-and-tickets)
+- Atualize o nome do programa de previsão, o gerente do programa e o campo Notas. Os administradores do programa também podem optar por desativar ou ativar um programa nesta tela. Para alterações relacionadas à área técnica, organização ou nome de exibição do programa, os Administradores do Programa devem solicitar a alteração a um Administrador do Realm por meio do [Sistema QAT Helpdesk.](02-getting-started.md#qat-helpdesk-and-tickets)
 
 _Realm Admins_ podem usar a tela principal para:
 
@@ -34,7 +34,7 @@ _Realm Admins_ podem usar a tela principal para:
 
 ![P2710#yIS1](/img/media/image235.png)
 
-**\*<u>Purpose</u>**: permite que os usuários atualizem as configurações do programa e visualizem detalhes sobre versões anteriores. Para visualizar os resultados da previsão, use as telas na seção [Saída da análise de previsão](#forecasting-module-reports-and-outputs).\*
+**\*<u>Purpose</u>**: permite que os usuários atualizem as configurações do programa e visualizem detalhes sobre versões anteriores. Para visualizar os resultados da previsão, use as telas na seção [Saída da análise de previsão](09-forecasting-module-reports-and-outputs.md#forecasting-module-reports-and-outputs).\*
 
 **\*<u>Usando esta tela</u>**:\*
 
@@ -77,7 +77,7 @@ Nesta tela, os usuários podem:
 2. Veja um ciclo de vida histórico de cada programa em todas as suas versões.
     1. Veja todas as configurações de versão acima
 
-    2. (Clique com o botão direito) Visualize a tela [Validação de previsão](#upload) (mesma tela visualizada durante o processo de upload) – que lista previsões faltantes, dados faltantes e todas as notas. Isso facilita para os usuários entender as previsões anteriores sem baixá-las. Use as telas [Previsão mensal](#monthly-forecast), [Resumo da previsão](#forecast-summary) ou [Comparação de versões](#version-comparison) para visualizar os resultados da previsão de outras versões.
+    2. (Clique com o botão direito) Visualize a tela [Validação de previsão](03-managing-programs-and-versions.md#upload) (mesma tela visualizada durante o processo de upload) – que lista previsões faltantes, dados faltantes e todas as notas. Isso facilita para os usuários entender as previsões anteriores sem baixá-las. Use as telas [Previsão mensal](09-forecasting-module-reports-and-outputs.md#monthly-forecast), [Resumo da previsão](09-forecasting-module-reports-and-outputs.md#forecast-summary) ou [Comparação de versões](03-managing-programs-and-versions.md#version-comparison) para visualizar os resultados da previsão de outras versões.
 
 ## Unidades de planejamento
 
@@ -95,7 +95,7 @@ Tabela 9: Configurações da unidade de planejamento do módulo de previsão
 
 ## Unidades de Equivalência
 
-**<u>Purpose</u>**: permite que os usuários gerenciem unidades de equivalência. As Unidades de Equivalência (EUs) permitem que os usuários agreguem dados de produtos diferentes, mas relacionados. Eles permitem que os usuários agrupem diversas unidades de previsão para agregação em [Relatórios e resultados](#forecasting-module-reports-and-outputs).
+**<u>Purpose</u>**: permite que os usuários gerenciem unidades de equivalência. As Unidades de Equivalência (EUs) permitem que os usuários agreguem dados de produtos diferentes, mas relacionados. Eles permitem que os usuários agrupem diversas unidades de previsão para agregação em [Relatórios e resultados](09-forecasting-module-reports-and-outputs.md#forecasting-module-reports-and-outputs).
 
 **<u>Usando esta tela</u>:**
 
@@ -120,11 +120,11 @@ Tabela 10: Exemplo da UE - Tratamento para QATite
 
 1. Um usuário deve primeiro verificar se a UE já existe nos dados mestres do QAT navegando até “Realm Masters” à “Equivalency Units”.
 
-2. Se a UE não existir, clique em “Gerenciar Unidade de Equivalência” e depois em “Adicionar Linha” e os usuários poderão inserir a UE que gostariam de utilizar para seu programa específico em todo o QAT. Esta UE será específica do programa e não estará disponível para outros programas. Se houver uma UE que possa beneficiar a comunidade QAT, os usuários podem solicitá-la através do [Sistema de suporte técnico de tickets QAT](#tickets-for-addingupdating-users-and-master-data).
+2. Se a UE não existir, clique em “Gerenciar Unidade de Equivalência” e depois em “Adicionar Linha” e os usuários poderão inserir a UE que gostariam de utilizar para seu programa específico em todo o QAT. Esta UE será específica do programa e não estará disponível para outros programas. Se houver uma UE que possa beneficiar a comunidade QAT, os usuários podem solicitá-la através do [Sistema de suporte técnico de tickets QAT](02-getting-started.md#tickets-for-addingupdating-users-and-master-data).
 
 > ![P2819#yIS1](/img/media/image237.png)
 
-3. Se a UE existir e um usuário desejar mapear unidades de previsão para a UE existente, ele poderá clicar em “Adicionar linha” na tela principal e mapear a unidade de previsão para a UE em nível de programa. Se um usuário quiser mapear a unidade de previsão para uma UE _em nível de reino_ existente e achar que isso beneficiaria a comunidade QAT, os usuários podem solicitá-la por meio do [Sistema de suporte técnico de tickets QAT](#tickets-for-addingupdating-users-and-master-data).
+3. Se a UE existir e um usuário desejar mapear unidades de previsão para a UE existente, ele poderá clicar em “Adicionar linha” na tela principal e mapear a unidade de previsão para a UE em nível de programa. Se um usuário quiser mapear a unidade de previsão para uma UE _em nível de reino_ existente e achar que isso beneficiaria a comunidade QAT, os usuários podem solicitá-la por meio do [Sistema de suporte técnico de tickets QAT](02-getting-started.md#tickets-for-addingupdating-users-and-master-data).
 
 > ![P2821#yIS1](/img/media/image238.png)
 

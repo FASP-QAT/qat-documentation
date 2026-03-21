@@ -12,7 +12,7 @@ sidebar_position: 9
 
 **<u>Usando esta pantalla</u>:**
 
-1. **Verifique que todos los pronósticos esperados aparezcan en la tabla Comparar y seleccionar. Para agregar pronósticos, navegue hasta la pantalla** [Administrar árbol](#tree-forecasts) **para crear un pronóstico de árbol o la pantalla [Extrapolación](#extrapolation)** **para crear un pronóstico basado en el consumo.** Es posible que los usuarios también deban volver a verificar la pantalla [Actualizar unidades de planificación](#planning-units-1) para asegurarse de que los métodos de Pronóstico de consumo o Pronósticos de árbol se hayan marcado o desmarcado para cada unidad de planificación.
+1. **Verifique que todos los pronósticos esperados aparezcan en la tabla Comparar y seleccionar. Para agregar pronósticos, navegue hasta la pantalla** [Administrar árbol](08-forecasting-module-forecasting.md#tree-forecasts) **para crear un pronóstico de árbol o la pantalla [Extrapolación](08-forecasting-module-forecasting.md#extrapolation)** **para crear un pronóstico basado en el consumo.** Es posible que los usuarios también deban volver a verificar la pantalla [Actualizar unidades de planificación](07-forecasting-module-program-data.md#planning-units) para asegurarse de que los métodos de Pronóstico de consumo o Pronósticos de árbol se hayan marcado o desmarcado para cada unidad de planificación.
     1. Nota: Las filas se resaltan en gris y no se pueden editar cuando no hay nada que mostrar o seleccionar.
 
 2. **Revise los pronósticos disponibles para cada unidad de planificación utilizando la siguiente información en la pantalla:**
@@ -20,7 +20,7 @@ sidebar_position: 9
 
 > _Nota: el error de pronóstico no siempre es confiable para los pronósticos de árboles; a menos que un pronóstico de árbol tenga una superposición significativa con los datos reales pasados, es posible que no haya datos de pronósticos anteriores disponibles para comparar._
 
-2. **Comparar con el pronóstico de consumo:** QAT compara los pronósticos de consumo y los pronósticos de árboles disponibles. Para cualquier pronóstico de árbol, QAT marcará el porcentaje por encima del pronóstico de consumo más alto o por debajo del más bajo. La comparación se resaltará en texto rojo si está fuera de los porcentajes de umbral establecidos por el usuario en la pantalla [Configuración de versión](#version-settings). Suponiendo datos de consumo real confiables, esta comparación ayuda a los usuarios a determinar si sus pronósticos de árboles son comparables al consumo histórico. Esta estadística no estará disponible para las previsiones de consumo.
+2. **Comparar con el pronóstico de consumo:** QAT compara los pronósticos de consumo y los pronósticos de árboles disponibles. Para cualquier pronóstico de árbol, QAT marcará el porcentaje por encima del pronóstico de consumo más alto o por debajo del más bajo. La comparación se resaltará en texto rojo si está fuera de los porcentajes de umbral establecidos por el usuario en la pantalla [Configuración de versión](07-forecasting-module-program-data.md#version-settings). Suponiendo datos de consumo real confiables, esta comparación ayuda a los usuarios a determinar si sus pronósticos de árboles son comparables al consumo histórico. Esta estadística no estará disponible para las previsiones de consumo.
 
 3. **Gráfico: compare visualmente los diferentes pronósticos.** El pronóstico seleccionado en la tabla superior aparecerá **en negrita** en el gráfico.
 
@@ -119,7 +119,7 @@ Figura 191 Resumen de pronóstico: vista nacional
 4. **Haga clic en la casilla de verificación "ocultar cálculos" para ver una versión simplificada de la tabla.**
 
 5. Para que los datos se muestren aquí correctamente, ingrese los siguientes datos:
-    1. En [Actualizar unidad de planificación](#planning-units-1):
+    1. En [Actualizar unidad de planificación](07-forecasting-module-program-data.md#planning-units):
         1. **Stock** – al comienzo de su período de pronóstico
 
         2. **Envíos existentes**: durante el período de pronóstico

@@ -34,9 +34,9 @@ Hay dos formas en que un usuario puede agregar datos de consumo real a su progra
 
 1. > Navegue hasta la pantalla “Pronóstico basado en el consumo” à “Importar desde plan de suministro QAT”
 
-2. > Elija el Programa de Pronóstico, Rango de datos de Consumo Real a importar, el programa Plan de Suministro y luego la versión del Plan de Suministro. _Nota: solo los programas de pronóstico que hayan sido **descargados** en la computadora local del usuario estarán disponibles en el menú desplegable de "Programa de pronóstico". Consulte [Descargar/Eliminar programa](#downloaddelete) para saber cómo descargar un programa a la computadora local._
+2. > Elija el Programa de Pronóstico, Rango de datos de Consumo Real a importar, el programa Plan de Suministro y luego la versión del Plan de Suministro. _Nota: solo los programas de pronóstico que hayan sido **descargados** en la computadora local del usuario estarán disponibles en el menú desplegable de "Programa de pronóstico". Consulte [Descargar/Eliminar programa](03-managing-programs-and-versions.md#downloaddelete) para saber cómo descargar un programa a la computadora local._
 
-3. > Los usuarios luego asignarán la Unidad de planificación del plan de suministro a la Unidad de planificación de pronósticos. _Nota: solo las unidades de planificación que se hayan agregado al Programa de pronóstico en la pantalla "Actualizar unidades de planificación" y para las cuales hayamos marcado la casilla de pronóstico de consumo estarán disponibles en el menú desplegable de "Unidad de planificación de pronóstico". Consulte el Módulo de pronóstico [Unidades de planificación](#planning-units-1) para saber cómo agregar unidades de planificación a un programa de pronóstico._
+3. > Los usuarios luego asignarán la Unidad de planificación del plan de suministro a la Unidad de planificación de pronósticos. _Nota: solo las unidades de planificación que se hayan agregado al Programa de pronóstico en la pantalla "Actualizar unidades de planificación" y para las cuales hayamos marcado la casilla de pronóstico de consumo estarán disponibles en el menú desplegable de "Unidad de planificación de pronóstico". Consulte el Módulo de pronóstico [Unidades de planificación](07-forecasting-module-program-data.md#planning-units) para saber cómo agregar unidades de planificación a un programa de pronóstico._
 
 4. > _Elija "No importar" en el menú desplegable para cualquier PU que no coincida automáticamente. En caso de que tenga muchas PU y desee seleccionar "No importar" para todas las no asignadas, puede marcar la casilla "No importar todas las unidades de planificación no asignadas"_
 
@@ -326,7 +326,7 @@ Los usuarios pueden realizar un pronóstico basado en árboles si los datos nece
 
 - desde una plantilla de árbol - seleccione el nombre de la plantilla deseada. Si un usuario desea ver una plantilla de árbol agregada a QAT que no existe y que beneficiaría a la comunidad QAT, puede enviar una solicitud de cambio al [Sistema de asistencia técnica de tickets de QAT] (#qat-helpdesk-and-tickets).
 
-**\*Nota**: [Los espectadores del pronóstico](#annex-3-user-role-matrix) pueden ver cualquier árbol que se haya subido al servidor y al que tengan acceso; sin embargo, solo los usuarios/administradores de Forecast podrán crear y editar/actualizar árboles.\*
+**\*Nota**: [Los espectadores del pronóstico](12-annex-3-user-role-matrix.md#annex-3-user-role-matrix) pueden ver cualquier árbol que se haya subido al servidor y al que tengan acceso; sin embargo, solo los usuarios/administradores de Forecast podrán crear y editar/actualizar árboles.\*
 
 **<u>Usando esta pantalla</u>:**
 
@@ -614,7 +614,7 @@ con la construcción de un árbol de manera eficiente. Este menú desplegable no
 
       - > Unidad de pronóstico <u>: menú desplegable </u> de todos los disponibles
 unidad de previsión en el programa de usuario. Si una unidad de pronóstico no está disponible
-en el menú desplegable, el usuario primero debe agregarlo a '[Actualizar unidad de planificación](#planning-units-1)'
+en el menú desplegable, el usuario primero debe agregarlo a '[Actualizar unidad de planificación](07-forecasting-module-program-data.md#planning-units)'
 pantalla.
 
       - > Unidad de planificación <u>: menú desplegable </u> filtrado según
@@ -718,7 +718,7 @@ Los árboles de pronóstico se construyen de arriba hacia abajo usando diferente
 
 ![A screenshot of a computer Description automatically generated](/img/media/image282.png)
 
-9. > Los árboles QAT se **guardan automáticamente** en la computadora local (para guardar un árbol en el servidor, consulte [Cargar versión](#upload). Las cantidades que aparecen en los nodos también se calculan automáticamente a medida que cambia el árbol; sin embargo, si QAT funciona con lentitud mientras editan el árbol, los usuarios pueden desmarcar la casilla "Calcular automáticamente" para detener los cálculos automáticos del backend. Para ver manualmente los cálculos actualizados después de cada edición, los usuarios deberán hacer clic en ![P3121#yIS1](/img/media/image283.png) icono.
+9. > Los árboles QAT se **guardan automáticamente** en la computadora local (para guardar un árbol en el servidor, consulte [Cargar versión](03-managing-programs-and-versions.md#upload). Las cantidades que aparecen en los nodos también se calculan automáticamente a medida que cambia el árbol; sin embargo, si QAT funciona con lentitud mientras editan el árbol, los usuarios pueden desmarcar la casilla "Calcular automáticamente" para detener los cálculos automáticos del backend. Para ver manualmente los cálculos actualizados después de cada edición, los usuarios deberán hacer clic en ![P3121#yIS1](/img/media/image283.png) icono.
     1. > Los usuarios pueden descargar sus árboles en formato PDF para compartirlos con las partes interesadas haciendo clic en el ícono ![P3122#yIS1](/img/media/image284.png).
 
     2. > Los usuarios pueden descargar un formulario de esquema de su árbol para verificar la validación de la suma de niños, los valores de los nodos y sus nodos haciendo clic en el ícono ![P3123#yIS1](/img/media/image285.png).
@@ -1855,7 +1855,7 @@ Figura 180: Validaciones de productos
 
 Figura 181 Ventana emergente de detalles del árbol con 'Unidades de planificación faltantes'
 
-3. **Tenga en cuenta que todos los detalles del árbol se pueden actualizar en una etapa posterior haciendo clic en el ícono de ajustes** ![P3402#yIS1](/img/media/image310.png) **al lado del menú desplegable del árbol y las unidades de planificación se pueden agregar navegando a la pantalla 'Actualizar [Unidades de planificación](#planning-units-1)'.**
+3. **Tenga en cuenta que todos los detalles del árbol se pueden actualizar en una etapa posterior haciendo clic en el ícono de ajustes** ![P3402#yIS1](/img/media/image310.png) **al lado del menú desplegable del árbol y las unidades de planificación se pueden agregar navegando a la pantalla 'Actualizar [Unidades de planificación](07-forecasting-module-program-data.md#planning-units)'.**
 
 <!-- finalizar lista -->
 

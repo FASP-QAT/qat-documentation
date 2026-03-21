@@ -12,7 +12,7 @@ sidebar_position: 9
 
 **<u>Usando esta tela</u>:**
 
-1. **Verifique se todas as previsões esperadas aparecem na tabela Comparar e Selecionar. Para adicionar previsões, navegue até a tela** [Gerenciar árvore](#tree-forecasts) **para criar uma previsão de árvore ou a tela [Extrapolação](#extrapolation)** **para criar uma previsão baseada em consumo.** Os usuários também podem precisar verificar novamente a tela [Atualizar unidades de planejamento](#planning-units-1) para garantir que os métodos Previsão de consumo ou Previsões de árvore foram marcados/desmarcados para cada unidade de planejamento.
+1. **Verifique se todas as previsões esperadas aparecem na tabela Comparar e Selecionar. Para adicionar previsões, navegue até a tela** [Gerenciar árvore](08-forecasting-module-forecasting.md#tree-forecasts) **para criar uma previsão de árvore ou a tela [Extrapolação](08-forecasting-module-forecasting.md#extrapolation)** **para criar uma previsão baseada em consumo.** Os usuários também podem precisar verificar novamente a tela [Atualizar unidades de planejamento](07-forecasting-module-program-data.md#planning-units) para garantir que os métodos Previsão de consumo ou Previsões de árvore foram marcados/desmarcados para cada unidade de planejamento.
     1. Observação: as linhas ficam destacadas em cinza e não são editáveis ​​quando não há nada para exibir ou selecionar.
 
 2. **Revise as previsões disponíveis para cada unidade de planejamento usando as seguintes informações na tela:**
@@ -20,7 +20,7 @@ sidebar_position: 9
 
 > _Nota: o erro de previsão nem sempre é confiável para previsões de árvores – a menos que uma previsão de árvore tenha uma sobreposição significativa com os dados reais anteriores, pode não haver dados de previsões anteriores disponíveis para comparação._
 
-2. **Comparar com a previsão de consumo:** o QAT compara as previsões de consumo e as previsões de árvore disponíveis. Para qualquer previsão de árvore, o QAT sinalizará a porcentagem acima da previsão de consumo mais alta ou abaixo da previsão de consumo mais baixa. A comparação será destacada em texto vermelho se estiver fora das porcentagens limite definidas pelo usuário na tela [Configurações de versão](#version-settings). Assumindo dados de consumo reais confiáveis, esta comparação ajuda os usuários a determinar se suas previsões de árvore são comparáveis ​​ao consumo histórico. Esta estatística não estará disponível para previsões de consumo.
+2. **Comparar com a previsão de consumo:** o QAT compara as previsões de consumo e as previsões de árvore disponíveis. Para qualquer previsão de árvore, o QAT sinalizará a porcentagem acima da previsão de consumo mais alta ou abaixo da previsão de consumo mais baixa. A comparação será destacada em texto vermelho se estiver fora das porcentagens limite definidas pelo usuário na tela [Configurações de versão](07-forecasting-module-program-data.md#version-settings). Assumindo dados de consumo reais confiáveis, esta comparação ajuda os usuários a determinar se suas previsões de árvore são comparáveis ​​ao consumo histórico. Esta estatística não estará disponível para previsões de consumo.
 
 3. **Gráfico: compare visualmente as diferentes previsões.** A previsão selecionada na tabela superior aparecerá **em negrito** no gráfico.
 
@@ -119,7 +119,7 @@ Figura 191 Resumo da Previsão - Visão Nacional
 4. **Clique na caixa de seleção “ocultar cálculos” para ver uma versão simplificada da tabela.**
 
 5. Para que os dados sejam exibidos aqui corretamente, insira os seguintes dados:
-    1. Em [Atualizar unidade de planejamento](#planning-units-1):
+    1. Em [Atualizar unidade de planejamento](07-forecasting-module-program-data.md#planning-units):
         1. **Estoque** – no início do seu período de previsão
 
         2. **Remessas existentes** – durante o período de previsão
@@ -128,7 +128,7 @@ Figura 191 Resumo da Previsão - Visão Nacional
 
         4. **Tipo de preço** e **Preços unitários**
 
-    2. Em [Atualizar configurações de versão](#version-settings):
+    2. Em [Atualizar configurações de versão](07-forecasting-module-program-data.md#version-settings):
         1. **% do frete** - o custo do frete é calculado como uma porcentagem do custo do produto
 
 **Fórmulas usadas para calcular o excedente/lacuna de aquisições**

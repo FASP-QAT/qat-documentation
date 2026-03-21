@@ -24,7 +24,7 @@ Os relatórios são divididos em **Relatórios Globais** e **Relatórios Especí
 
 Figura 120: Lista de Problemas QAT
 
-**Observação:** Somente o problema associado aos programas que foram baixados pelo usuário em sua máquina local aparecerá na lista de problemas do QAT. Para obter detalhes sobre como baixar programas e versões específicas, consulte a seção [Baixar Programa](#downloaddelete) do Manual do Usuário.
+**Observação:** Somente o problema associado aos programas que foram baixados pelo usuário em sua máquina local aparecerá na lista de problemas do QAT. Para obter detalhes sobre como baixar programas e versões específicas, consulte a seção [Baixar Programa](03-managing-programs-and-versions.md#downloaddelete) do Manual do Usuário.
 
 ### Noções básicas da lista de problemas do QAT
 
@@ -64,7 +64,7 @@ Figura 122: Exemplo de Fechamento de um Problema
 
 1. Navegue até a tela de Entrada de Dados de Consumo clicando diretamente no Problema (que abrirá uma nova janela QAT) ou clicando em Dados do Plano de Fornecimento  Dados de Consumo.
 
-2. Na tela de entrada de dados de consumo o usuário adicionará o consumo real dos meses solicitados. Para obter instruções sobre como adicionar consumo, consulte [Dados de consumo](#consumption-data).
+2. Na tela de entrada de dados de consumo o usuário adicionará o consumo real dos meses solicitados. Para obter instruções sobre como adicionar consumo, consulte [Dados de consumo](04-supply-planning-module-program-data.md#consumption-data).
 
 3. Navegue de volta para a lista de problemas de QAT e clique em Recalcular para atualizar a lista de problemas de QAT para incluir a adição mais recente de dados de consumo real. O problema sinalizado anteriormente deve agora estar “Em conformidade” e não ser mais sinalizado pela Lista de Problemas do QAT.
 
@@ -157,7 +157,7 @@ Figura 128: O Plano de Fornecimento não segue o exemplo do parâmetro de quanti
 
 - **Navegação:** Relatórios  Catálogo de Programas
 
-- **Observações:** Um usuário pode selecionar todas as categorias de unidades de planejamento e categorias de rastreador ou pode escolher uma categoria específica para visualização. Se um usuário desejar adicionar uma unidade de planejamento que não aparece no Relatório do Catálogo de Programas, consulte [Tickets para Adicionar/Atualizar Usuários e Dados Mestres](#tickets-for-addingupdating-users-and-master-data).
+- **Observações:** Um usuário pode selecionar todas as categorias de unidades de planejamento e categorias de rastreador ou pode escolher uma categoria específica para visualização. Se um usuário desejar adicionar uma unidade de planejamento que não aparece no Relatório do Catálogo de Programas, consulte [Tickets para Adicionar/Atualizar Usuários e Dados Mestres](02-getting-started.md#tickets-for-addingupdating-users-and-master-data).
 
 ![P2414#yIS1](/img/media/image207.png)
 
@@ -483,7 +483,7 @@ Figura 147: Relatório de prazo de entrega do agente de compras
   - O relatório pode incluir quantidades em remessas planejadas com previsão de chegada e vencimento durante o período selecionado.
 
   - Ele calculará (com base no prazo de validade, projeções de estoque e previsão de consumo) quanto de um determinado lote deverá expirar e quando.
-    - Para o cálculo de vencimento, consulte [Anexo 2: Regras de Negócios](#annex-2-business-rules)
+    - Para o cálculo de vencimento, consulte [Anexo 2: Regras de Negócios](11-annex-2-business-rules.md#annex-2-business-rules)
 
   - O relatório calculará o custo do produto vencido, com base na quantidade vencida e no preço padrão da unidade de planejamento definido pelo usuário na tela Atualizar Unidades de Planejamento
 

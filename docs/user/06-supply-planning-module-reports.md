@@ -25,7 +25,7 @@ The reports are divided into **Global Reports** and **Program-specific Reports**
 
 Figure 120: QAT Problem List
 
-**Note:** Only the Problem associated with the programs that have been downloaded by the user in their local machine will appear in the QAT Problem List. For details on how to download specific programs and versions, refer to the [Download Program](#downloaddelete) section of the User Manual.
+**Note:** Only the Problem associated with the programs that have been downloaded by the user in their local machine will appear in the QAT Problem List. For details on how to download specific programs and versions, refer to the [Download Program](03-managing-programs-and-versions.md#downloaddelete) section of the User Manual.
 
 ### QAT Problem List Basics
 
@@ -65,7 +65,7 @@ Figure 122: Closing a Problem Example
 
 1.  Navigate to the Consumption Data Entry screen by either clicking directly on the Problem (which will open a new QAT window) or by clicking on Supply Plan Data  Consumption Data.
 
-2.  From the consumption data entry screen, the user will add actual consumption for the requested months. For instructions on how to add consumption, please refer to [Consumption Data](#consumption-data).
+2.  From the consumption data entry screen, the user will add actual consumption for the requested months. For instructions on how to add consumption, please refer to [Consumption Data](04-supply-planning-module-program-data.md#consumption-data).
 
 3.  Navigate back to the QAT Problem List and click Recalculate to refresh the QAT Problem List to include the most recent addition of actual consumption data. The previously flagged problem should now be “In-compliance” and no longer be flagged by the QAT Problem List.
 
@@ -158,7 +158,7 @@ Figure 128: Supply Plan does not follow min/max quantity parameter example
 
 - **Navigation:** Reports  Program Catalog
 
-- **Notes:** A user may select all Planning Unit Categories and Tracer Categories, or they may choose a specific category for viewing. If a user would like to add a planning unit that does not appear in the Program Catalog Report, please refer to [Tickets for Adding/Updating Users and Master Data](#tickets-for-addingupdating-users-and-master-data).
+- **Notes:** A user may select all Planning Unit Categories and Tracer Categories, or they may choose a specific category for viewing. If a user would like to add a planning unit that does not appear in the Program Catalog Report, please refer to [Tickets for Adding/Updating Users and Master Data](02-getting-started.md#tickets-for-addingupdating-users-and-master-data).
 
 ![P2414#yIS1](/img/media/image207.png)
 
@@ -484,7 +484,7 @@ Figure 147: Procurement Agent Lead Time Report
   - The report can include quantities in planned shipments expected to arrive and expiry during the selected timeframe.
 
   - It will calculate (based on shelf life, stock projections, and forecast consumption) how much of a particular batch is expected to expire and when.
-    - For the expiry calculation, refer to [Annex 2: Business Rules](#annex-2-business-rules)
+    - For the expiry calculation, refer to [Annex 2: Business Rules](11-annex-2-business-rules.md#annex-2-business-rules)
 
   - The report will calculate a cost of expired product, based on the quantity expired and the planning unit default price set by the user in the Update Planning Units screen
 

@@ -6,7 +6,7 @@ sidebar_position: 14
 ---
 # Anexo 5: Importação do Programa PipeLine
 
-Em certos casos, os usuários receberão um conjunto especial de credenciais que podem importar bancos de dados PipeLine se desejarem configurar seu programa desta forma (consulte [Configurando um novo programa](#setting-up-a-new-program) no Anexo 1).
+Em certos casos, os usuários receberão um conjunto especial de credenciais que podem importar bancos de dados PipeLine se desejarem configurar seu programa desta forma (consulte [Configurando um novo programa](10-annex-1-application-realm-administrator-manual.md#setting-up-a-new-program) no Anexo 1).
 
 **Etapa 1: Converta o arquivo .accdb em um arquivo JSON:**
 

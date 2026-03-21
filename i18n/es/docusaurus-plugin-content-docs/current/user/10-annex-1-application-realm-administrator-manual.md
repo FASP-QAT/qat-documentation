@@ -220,7 +220,7 @@ Si bien el objetivo del manual del usuario es guiar a los administradores y usua
 
 ## Panel de aplicaciones
 
-Las funciones disponibles en el Panel de la aplicación de pronóstico serán visibles según el **rol del usuario**. A continuación se muestra una explicación de los mosaicos exclusivos de los administradores de nivel de aplicación y reino. Para obtener una explicación de otros mosaicos (boletos y programa), consulte [Navegación y barra de menú] (#navigación-y-barra-de-menú). Consulte el [Panel QAT](#qat-dashboard) para obtener información sobre el panel de planificación de suministro mejorado.
+Las funciones disponibles en el Panel de la aplicación de pronóstico serán visibles según el **rol del usuario**. A continuación se muestra una explicación de los mosaicos exclusivos de los administradores de nivel de aplicación y reino. Para obtener una explicación de otros mosaicos (boletos y programa), consulte [Navegación y barra de menú] (#navigación-y-barra-de-menú). Consulte el [Panel QAT](02-getting-started.md#qat-dashboard) para obtener información sobre el panel de planificación de suministro mejorado.
 
 En la captura de pantalla siguiente, la función asignada es "**Administrador de nivel de aplicación**".
 
@@ -531,7 +531,7 @@ Agregar y actualizar usuarios y sus roles/controles de acceso está disponible t
 
 3. Ingrese el nombre, la dirección de correo electrónico, la organización y el país, la función y el idioma del nuevo usuario y haga clic en "Enviar".
 
-4. Para obtener una descripción detallada de los roles, su función y acceso, consulte el [Anexo 3: Matriz de roles de usuario](#annex-3-user-role-matrix)
+4. Para obtener una descripción detallada de los roles, su función y acceso, consulte el [Anexo 3: Matriz de roles de usuario](12-annex-3-user-role-matrix.md#annex-3-user-role-matrix)
 
 **Para actualizar un usuario existente o administrar los controles de acceso de usuarios:**
 
@@ -1352,7 +1352,7 @@ Figura 247: Agregar datos del programa
 
 2. Haga clic en el icono azul “+” en la esquina superior derecha de la pantalla.
 
-3. Complete los campos obligatorios para País, Área técnica, Organización, Región, Programa de pronóstico, Administrador del programa y Configuración de la versión 1 (Inicio del pronóstico, Período de pronóstico, Fin del pronóstico). Los administradores del programa pueden actualizar la [Configuración de versión](#version-settings) en cualquier momento.
+3. Complete los campos obligatorios para País, Área técnica, Organización, Región, Programa de pronóstico, Administrador del programa y Configuración de la versión 1 (Inicio del pronóstico, Período de pronóstico, Fin del pronóstico). Los administradores del programa pueden actualizar la [Configuración de versión](07-forecasting-module-program-data.md#version-settings) en cualquier momento.
     - > **Inicio del pronóstico, período de pronóstico (meses) y fin del pronóstico**: según la fecha de inicio y finalización, QAT calculará automáticamente el período de pronóstico en meses. Alternativamente, los usuarios pueden optar por ingresar una fecha de inicio del pronóstico y una cantidad de meses en el período del pronóstico, y QAT calculará automáticamente la fecha de finalización del pronóstico.
 
 4. Haga clic en "Enviar"

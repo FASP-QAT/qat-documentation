@@ -8,7 +8,7 @@ sidebar_position: 4
 
 Comme défini précédemment dans [Concepts et termes importants de QAT] (#important-qat-concepts-and-terms), un programme a une structure similaire à celle d'une base de données de plan d'approvisionnement PipeLine. Chaque programme comprend un seul pays, un ou plusieurs domaines techniques, une région (niveau national, niveau central, etc.) et une organisation (MOH, PEPFAR uniquement, PMI uniquement). Chaque programme d'un domaine est régi par les mêmes données de base standardisées, telles que le catalogue de produits, les agents d'approvisionnement, les sources de financement, les sources de données, etc.
 
-La gestion des données du programme se situe au troisième niveau de la hiérarchie du système QAT et est généralement effectuée par les utilisateurs avec les rôles **administrateur du programme et utilisateur du programme** (pour plus d'informations sur les rôles des utilisateurs, veuillez consulter [Annexe 3 : Matrice des rôles des utilisateurs](#annex-3-user-role-matrix)). Les données de base au niveau du programme gérées par ces utilisateurs comprennent les budgets et les unités de reporting alternatives.
+La gestion des données du programme se situe au troisième niveau de la hiérarchie du système QAT et est généralement effectuée par les utilisateurs avec les rôles **administrateur du programme et utilisateur du programme** (pour plus d'informations sur les rôles des utilisateurs, veuillez consulter [Annexe 3 : Matrice des rôles des utilisateurs](12-annex-3-user-role-matrix.md#annex-3-user-role-matrix)). Les données de base au niveau du programme gérées par ces utilisateurs comprennent les budgets et les unités de reporting alternatives.
 
 Un utilisateur peut « Télécharger » ou « Supprimer » des programmes de sa machine locale. Les programmes peuvent également être « importés » vers la machine locale ou « exportés » depuis la machine locale pour être partagés avec d'autres utilisateurs en cas de problèmes de connectivité.
 
@@ -100,7 +100,7 @@ Les responsables de programme dans QAT peuvent définir leurs paramètres géné
 1. Cliquez sur « Gestion du programme » puis sélectionnez « Mettre à jour les informations sur le programme »
 
 2. Cliquez sur le programme qui doit être mis à jour
-    1. Les administrateurs du programme peuvent ajouter/supprimer des agents d'approvisionnement et des sources de financement qui existent déjà dans QAT à leur programme. Cela ajoutera/supprimera à son tour les agents d'approvisionnement dans les champs déroulants des écrans [Saisie des données d'expédition] (#shipment-data). Si un utilisateur souhaite ajouter un agent d'approvisionnement à son programme qui <u>not</u> existe dans QAT, il peut souscrire un ticket auprès du système [QAT HelpDesk](#tickets-for-addingupdating-users-and-master-data).
+    1. Les administrateurs du programme peuvent ajouter/supprimer des agents d'approvisionnement et des sources de financement qui existent déjà dans QAT à leur programme. Cela ajoutera/supprimera à son tour les agents d'approvisionnement dans les champs déroulants des écrans [Saisie des données d'expédition] (#shipment-data). Si un utilisateur souhaite ajouter un agent d'approvisionnement à son programme qui <u>not</u> existe dans QAT, il peut souscrire un ticket auprès du système [QAT HelpDesk](02-getting-started.md#tickets-for-addingupdating-users-and-master-data).
 
 ![](/img/media/image113.png)
 
@@ -112,7 +112,7 @@ Figure 68 : Mettre à jour les informations sur le programme – Module de prév
 
 3. Mettez à jour les champs comme vous le souhaitez et cliquez sur « Soumettre »
 
-**\*Remarque :** QAT permet uniquement aux administrateurs au niveau du domaine ou aux administrateurs au niveau de l'application de mettre à jour les champs grisés dans l'écran Mettre à jour les informations sur le programme. Si un utilisateur souhaite que ces champs soient mis à jour, il peut souscrire un ticket auprès du système [QAT HelpDesk](#tickets-for-addingupdating-users-and-master-data).\*
+**\*Remarque :** QAT permet uniquement aux administrateurs au niveau du domaine ou aux administrateurs au niveau de l'application de mettre à jour les champs grisés dans l'écran Mettre à jour les informations sur le programme. Si un utilisateur souhaite que ces champs soient mis à jour, il peut souscrire un ticket auprès du système [QAT HelpDesk](02-getting-started.md#tickets-for-addingupdating-users-and-master-data).\*
 
 ### Unités de planification
 
@@ -510,7 +510,7 @@ Figure 80 : Ajouter un inventaire
 
 **Ajouter/mettre à jour les détails du lot – Ajustements**
 
-(pour plus d'informations sur les calculs par lots QAT, veuillez consulter [Annexe 2 : Règles commerciales](#annex-2-business-rules) ou la section 5.E).
+(pour plus d'informations sur les calculs par lots QAT, veuillez consulter [Annexe 2 : Règles commerciales](11-annex-2-business-rules.md#annex-2-business-rules) ou la section 5.E).
 
 1. Faites un clic droit sur la ligne Ajustement et cliquez sur « Afficher les informations sur le lot ».
 

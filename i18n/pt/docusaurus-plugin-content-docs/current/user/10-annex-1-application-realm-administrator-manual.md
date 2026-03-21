@@ -220,7 +220,7 @@ Embora o foco do manual do usuário seja orientar os administradores do programa
 
 ## Painel do aplicativo
 
-As funções disponíveis no Painel do Aplicativo de Previsão ficarão visíveis de acordo com a **função do usuário**. Abaixo está uma explicação dos blocos exclusivos para administradores de nível de aplicativo e reino. Para uma explicação de outros blocos (ingressos e programa), consulte [Barra de navegação e menu](#navigation-and-menu-bar). Consulte [Painel QAT](#qat-dashboard) para obter informações sobre o painel aprimorado de planejamento de fornecimento.
+As funções disponíveis no Painel do Aplicativo de Previsão ficarão visíveis de acordo com a **função do usuário**. Abaixo está uma explicação dos blocos exclusivos para administradores de nível de aplicativo e reino. Para uma explicação de outros blocos (ingressos e programa), consulte [Barra de navegação e menu](02-getting-started.md#navigation-and-menu-bar). Consulte [Painel QAT](02-getting-started.md#qat-dashboard) para obter informações sobre o painel aprimorado de planejamento de fornecimento.
 
 Na captura de tela abaixo, a função atribuída é “**Administrador de nível de aplicativo**”.
 
@@ -412,7 +412,7 @@ Figura 204: Tela Adicionar Idioma
 
 #### Funções
 
-Os administradores de aplicativos podem criar e editar tipos de funções para todo o aplicativo conforme surge a necessidade de modificar as regras de negócios que determinadas funções podem acessar. Para obter uma lista das funções atuais, acesso e funções associadas, consulte [Anexo 3: Matriz de funções do usuário](#annex-3-user-role-matrix).
+Os administradores de aplicativos podem criar e editar tipos de funções para todo o aplicativo conforme surge a necessidade de modificar as regras de negócios que determinadas funções podem acessar. Para obter uma lista das funções atuais, acesso e funções associadas, consulte [Anexo 3: Matriz de funções do usuário](12-annex-3-user-role-matrix.md#annex-3-user-role-matrix).
 
 **Para visualizar uma lista das funções atuais que estão no QAT:**
 
@@ -432,7 +432,7 @@ Figura 205: Lista atual de funções
 
 3. Insira a nova Função, Função de Negócios e Pode Criar Função e clique no botão “Enviar”.
 
-4. Para obter uma descrição e mais informações sobre funções empresariais individuais, consulte [Anexo 4: Funções Empresariais](#annex-4-business-functions)
+4. Para obter uma descrição e mais informações sobre funções empresariais individuais, consulte [Anexo 4: Funções Empresariais](13-annex-4-business-functions.md#annex-4-business-functions)
 
 5. “Pode criar função” permite que a nova função crie usuários e atribua-lhes funções e acessos específicos. Por exemplo, um Administrador de Realm pode criar um usuário, atribuí-lo como Administrador de Programa e determinar a quais países e programas o usuário terá acesso.
 
@@ -448,7 +448,7 @@ Figura 206: Tela Adicionar Função
 
 3. Atualize as informações conforme necessário e clique no botão “Atualizar”.
 
-4. Para obter uma descrição e mais informações sobre funções empresariais individuais, consulte [Anexo 4: Funções Empresariais](#annex-4-business-functions)
+4. Para obter uma descrição e mais informações sobre funções empresariais individuais, consulte [Anexo 4: Funções Empresariais](13-annex-4-business-functions.md#annex-4-business-functions)
 
 5. “Pode criar função” permite que a nova função crie usuários e atribua-lhes funções e acessos específicos. Por exemplo, um Administrador de Realm pode criar um usuário, atribuí-lo como Administrador de Programa e determinar a quais países e programas o usuário terá acesso.
 
@@ -531,7 +531,7 @@ Adicionar e atualizar usuários e suas funções/controles de acesso está dispo
 
 3. Insira o nome, endereço de e-mail, organização e país, função e idioma do novo usuário e clique em “Enviar”.
 
-4. Para obter uma descrição detalhada sobre funções, suas funções e acesso, consulte [Anexo 3: Matriz de funções do usuário](#annex-3-user-role-matrix)
+4. Para obter uma descrição detalhada sobre funções, suas funções e acesso, consulte [Anexo 3: Matriz de funções do usuário](12-annex-3-user-role-matrix.md#annex-3-user-role-matrix)
 
 **Para atualizar um usuário existente ou gerenciar controles de acesso de usuário:**
 
@@ -988,7 +988,7 @@ Figura 234: Visualizando/adicionando categorias de unidades de planejamento
 
 ##### Unidade de Relatório Alternativa
 
-Consulte [Unidades de Relatório Alternativas](#alternate-reporting-units) para obter mais informações.
+Consulte [Unidades de Relatório Alternativas](04-supply-planning-module-program-data.md#alternate-reporting-units) para obter mais informações.
 
 ##### Unidade de Aquisições
 
@@ -1056,7 +1056,7 @@ Figura 237: Atualizar categoria do rastreador
 
 #### Unidade de Equivalência
 
-A Unidade de Equivalência permite que os usuários gerenciem dados agregados de produtos diferentes, mas relacionados. Unidades de equivalência podem ser usadas na [tela de comparação e seleção de previsão](#compare-and-select), na [tela de previsão mensal](#previsão mensal), na [tela de erro de previsão (mensal)](#forecast-error-monthly) e no [relatório do plano de fornecimento](#relatório do plano de fornecimento).
+A Unidade de Equivalência permite que os usuários gerenciem dados agregados de produtos diferentes, mas relacionados. Unidades de equivalência podem ser usadas na [tela de comparação e seleção de previsão](09-forecasting-module-reports-and-outputs.md#compare-and-select), na [tela de previsão mensal](#previsão mensal), na [tela de erro de previsão (mensal)](06-supply-planning-module-reports.md#forecast-error-monthly) e no [relatório do plano de fornecimento](#relatório do plano de fornecimento).
 
 **Para adicionar um mapeamento de unidade de equivalência:**
 
@@ -1352,7 +1352,7 @@ Figura 247: Adicionar dados do programa
 
 2. Clique no ícone azul “+” no canto superior direito da tela.
 
-3. Preencha os campos obrigatórios para País, Área Técnica, Organização, Região, Programa de Previsão, Gerente de Programa e as Configurações da Versão 1 (Início da Previsão, Período de Previsão, Fim da Previsão). As [Configurações de versão](#version-settings) podem ser atualizadas a qualquer momento pelos administradores do programa.
+3. Preencha os campos obrigatórios para País, Área Técnica, Organização, Região, Programa de Previsão, Gerente de Programa e as Configurações da Versão 1 (Início da Previsão, Período de Previsão, Fim da Previsão). As [Configurações de versão](07-forecasting-module-program-data.md#version-settings) podem ser atualizadas a qualquer momento pelos administradores do programa.
     - > **Início da previsão, Período de previsão (meses) e Fim da previsão** – com base na data de início e término, o QAT calculará automaticamente o período de previsão em meses. Alternativamente, os usuários podem optar por inserir uma data de início da previsão e o número de meses no período de previsão, e o QAT calculará automaticamente a data de término da previsão.
 
 4. Clique em “Enviar”

@@ -23,7 +23,7 @@ The QAT system has **three levels of hierarchy** for conducting operations. The 
 
 - **Program** Level Masters is the third level of hierarchy in QAT. While program admins cannot add programs, they can update the program information (e.g., lead times, freight costs, etc.) within their assigned program(s). Program Admin and Program Users can also add and update the program’s data, such as consumption adjustments, extrapolation, and managing trees (in forecasting); and consumption, inventory, shipments (in supply planning).
 
-For more on functionality for Application- and Realm-level administrators, please see [Annex 1: Application & Realm Administrator Manual.](#annex-1-application-realm-administrator-manual)
+For more on functionality for Application- and Realm-level administrators, please see [Annex 1: Application & Realm Administrator Manual.](10-annex-1-application-realm-administrator-manual.md#annex-1-application-realm-administrator-manual)
 
 **Programs** are a combination of Country, Technical Area (1 or more), Organization and Region. For example, **FASPonia**–ARV-MOH-National, is a supply planning program under the Global Health Realm for the management and planning of **antiretrovirals** for the ministry of health of the fictional country FASPonia, and the consumption and inventory data is captured at a national level (region).
 
@@ -39,7 +39,7 @@ A **Realm** Admin manages master data and can have access to all programs within
 
 At the **Application** level, there is an Application Administrator role. This role has exclusive access to create application-wide data structures, including adding languages, roles, creating realms, updating static and dynamic labels, among other business functions.
 
-Please refer to [Annex 4: Business Functions](#annex-4-business-functions) for a table with the full list of QAT business functions available per user role.
+Please refer to [Annex 4: Business Functions](13-annex-4-business-functions.md#annex-4-business-functions) for a table with the full list of QAT business functions available per user role.
 
 ## How to Log into QAT and Install the Progressive Web Application (PWA)
 
@@ -233,7 +233,7 @@ Most version releases will not require significant action from the user, except 
 
 Figure 13: New QAT Version Released Prompt for Users
 
-If there is a major change to the structure of the QAT backend architecture, users may be required to upload their latest version to the server (see the [Upload](#upload) section for more information) to avoid losing data once the new version of QAT is released. The QAT Support Team ([support@quantificationanalytics.org](mailto:support@quantificationanalytics.org)) will inform users well in advance if a program upload is required.
+If there is a major change to the structure of the QAT backend architecture, users may be required to upload their latest version to the server (see the [Upload](03-managing-programs-and-versions.md#upload) section for more information) to avoid losing data once the new version of QAT is released. The QAT Support Team ([support@quantificationanalytics.org](mailto:support@quantificationanalytics.org)) will inform users well in advance if a program upload is required.
 ## Troubleshooting
 
 When a user comes across a potential system issue with QAT, they should attempt to troubleshoot the issue by trying the solutions outlined in this section, in the order they are described (i.e. try H1 first, and if that does not work, then attempt H2, and then H3). If none of these steps resolve the issue, the user should submit a helpdesk ticket to report the bug (see section on ‘[Reporting a Bug](#reporting-a-bug)’).
@@ -310,7 +310,7 @@ This message appears for two reasons: 1) Unstable internet, or 2) Restricted int
 
 ### Tickets for Adding/Updating Users and Master Data
 
-When a user needs to either add or update a user or master data for any reason, they may do so by taking out a helpdesk ticket. Before requesting any additions or changes to the master data in QAT, the user should first check the realm-level master data (Realm Level Masters \>\> Product) and the Program Catalog Report to make sure the information does not already exist. For more information on how to access and use master data, please see [Program Management](#working-with-program-data) and [Realm Masters](#realm-masters). For information on how to access the Program Catalog, please see [Program Catalog](#product). To access the QAT Helpdesk:
+When a user needs to either add or update a user or master data for any reason, they may do so by taking out a helpdesk ticket. Before requesting any additions or changes to the master data in QAT, the user should first check the realm-level master data (Realm Level Masters \>\> Product) and the Program Catalog Report to make sure the information does not already exist. For more information on how to access and use master data, please see [Program Management](03-managing-programs-and-versions.md#working-with-program-data) and [Realm Masters](10-annex-1-application-realm-administrator-manual.md#realm-masters). For information on how to access the Program Catalog, please see [Program Catalog](10-annex-1-application-realm-administrator-manual.md#product). To access the QAT Helpdesk:
 
 1.  > Users can access the QAT Helpdesk from two different locations in QAT:
     1.  > On the login page, and
@@ -374,7 +374,7 @@ The bug ticket will be addressed by the development team per the business priori
 2.  Enter a summary of the bug as well as a description of the bug. Please be descriptive and provide as much detail as possible (_e.g., what program/version/functionality you were working on, steps you took to obtain the bug, etc_).
 
 3.  Upload a screenshot of the bug by clicking the “Browse” button and pulling a saved screenshot file from your computer.
-    1.  It is also helpful to provide the program export, if possible (see [Program Exports](#export) on how to export a local program)
+    1.  It is also helpful to provide the program export, if possible (see [Program Exports](03-managing-programs-and-versions.md#export) on how to export a local program)
 
     2.  **\*Note**: If you want to upload multiple files, place the multiple screenshots in a folder on your computer and zip it before browsing in QAT. Then, upload the zipped folder.\*
 
@@ -682,7 +682,7 @@ Table 5: Commonly Used Buttons
 
 ## Changing Language
 
-To ensure that QAT is adaptable to users around the world, the application displays text in four different languages: English, French, Portuguese, and Spanish. Users are encouraged to submit tickets if they would like to see a particular label translation improved. (_Note: Translations for application labels can be edited only by **application admins**. Instructions on how to do so can be found in the [translation section](#database-translation)._)
+To ensure that QAT is adaptable to users around the world, the application displays text in four different languages: English, French, Portuguese, and Spanish. Users are encouraged to submit tickets if they would like to see a particular label translation improved. (_Note: Translations for application labels can be edited only by **application admins**. Instructions on how to do so can be found in the [translation section](10-annex-1-application-realm-administrator-manual.md#database-translation)._)
 
 There are two ways to change the language displayed for the user:
 

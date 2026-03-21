@@ -23,7 +23,7 @@ Program data can be downloaded, uploaded, imported, and exported in QAT.
 
 - > Users must **Download** program data to begin supply planning or forecasting and need to **Upload** their data back to the server to share their work with others.
 
-- > Uploading can be as “draft” or as “final”. Uploading a supply plan program as “final” initiates the supply plan review process. The status of supply plan versions can be viewed in the **Supply Plan Version & Review** screen – this is the only function described in this section that is available to report viewers. Uploading a forecast program as “final” allows users to import that forecast directly into the supply plan module. See [QAT Forecast Import](#qat-forecast-import) for further instructions on how to import a forecast into a supply plan.
+- > Uploading can be as “draft” or as “final”. Uploading a supply plan program as “final” initiates the supply plan review process. The status of supply plan versions can be viewed in the **Supply Plan Version & Review** screen – this is the only function described in this section that is available to report viewers. Uploading a forecast program as “final” allows users to import that forecast directly into the supply plan module. See [QAT Forecast Import](04-supply-planning-module-program-data.md#qat-forecast-import) for further instructions on how to import a forecast into a supply plan.
 
 - > When no internet is available, the **Export** feature allows users to share their data with other users via external devices such as a pen drive/flash drive, who can then use the **Import** data function to open that file on their computer.
 
@@ -72,7 +72,7 @@ in the JSON format.
 
 <!-- end list -->
 
-1.  > Determine whether you would like to download from the forecasting or the supply planning module, and navigate to the correct module (See [Section 2.J Navigation and Menu Bar](#navigation-and-menu-bar)). If you only have access to one module, you can ignore this step.
+1.  > Determine whether you would like to download from the forecasting or the supply planning module, and navigate to the correct module (See [Section 2.J Navigation and Menu Bar](02-getting-started.md#navigation-and-menu-bar)). If you only have access to one module, you can ignore this step.
 
 2.  > Go to “Program Management” \> “Download/Delete Program.” (Alternatively, access this screen by clicking the ![P1055#yIS1](/img/media/image89.png) icon in the top right bar in QAT). The screen will display the Program Data as shown in the below figure.
     - > Red text indicates that the program downloaded is not the latest version. Green text indicates that the program downloaded is the latest version. Black text indicates the program is not downloaded.
@@ -166,7 +166,7 @@ and is available for all other users to download or view
 3.  Select a **Version Type** using the dropdown:
     1.  **Draft Version**: Indicates the supply plan is a work in progress. Use this to share a supply plan with others, but not ready to be submitted into the supply plan review process.
 
-    2.  **Final Version**: Indicates that the supply plan has reached a final status, and is being submitted to the supply plan review process. Note that QAT will not allow the user to upload as final with any “Open” issues in the QAT Problem List. Please use the QAT problem list (see [Closing and Addressing Problems](#closing-and-addressing-problems)) to mark any open issue as “Addressed” with an explanatory note, or move issue to “in compliance” via data entry first.
+    2.  **Final Version**: Indicates that the supply plan has reached a final status, and is being submitted to the supply plan review process. Note that QAT will not allow the user to upload as final with any “Open” issues in the QAT Problem List. Please use the QAT problem list (see [Closing and Addressing Problems](06-supply-planning-module-reports.md#closing-and-addressing-problems)) to mark any open issue as “Addressed” with an explanatory note, or move issue to “in compliance” via data entry first.
 
 4.  In **Notes**, type any overall notes about this version, such as summarizing the major changes made the supply plan and the reasoning behind those changes.
 
@@ -258,7 +258,7 @@ supply plan review status of supply plans.**
 
 <!-- end list -->
 
-1.  > Go to “Program Management” \> “Supply Plan Version and Review” and the below screen will be displayed. Select the Report Period, Country, Program, Version Type, and Status. In this table, users can see the status of all supply plans and any version comments. Users can also use the search, filter and sort options (see [Navigation and Menu Bar](#navigation-and-menu-bar)) to find specific programs.
+1.  > Go to “Program Management” \> “Supply Plan Version and Review” and the below screen will be displayed. Select the Report Period, Country, Program, Version Type, and Status. In this table, users can see the status of all supply plans and any version comments. Users can also use the search, filter and sort options (see [Navigation and Menu Bar](02-getting-started.md#navigation-and-menu-bar)) to find specific programs.
 
 ![A screenshot of a computer Description automatically generated](/img/media/image106.png)
 
@@ -352,7 +352,7 @@ Figure 64: Export Program Screen
 
 <!-- end list -->
 
-1.  > Determine whether you would like to export from the forecasting or the supply planning module, and navigate to the correct module (See [Section 2.J Navigation and Menu Bar](#navigation-and-menu-bar)). If you only have access to one module, you can ignore this step.
+1.  > Determine whether you would like to export from the forecasting or the supply planning module, and navigate to the correct module (See [Section 2.J Navigation and Menu Bar](02-getting-started.md#navigation-and-menu-bar)). If you only have access to one module, you can ignore this step.
 
 2.  > Go to “Program Management” \> “Export Program”
 
@@ -396,7 +396,7 @@ Figure 65: Import Program Screen
 
 <!-- end list -->
 
-1.  > Determine whether you would like to export from the forecasting or the supply planning module, and navigate to the correct module (See [Section 2.J Navigation and Menu Bar](#navigation-and-menu-bar)). If you only have access to one module, you can ignore this step.
+1.  > Determine whether you would like to export from the forecasting or the supply planning module, and navigate to the correct module (See [Section 2.J Navigation and Menu Bar](02-getting-started.md#navigation-and-menu-bar)). If you only have access to one module, you can ignore this step.
 
 2.  > Go to “Program Management” \> “Import Program”
 

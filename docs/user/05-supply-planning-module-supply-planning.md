@@ -25,7 +25,7 @@ to use this screen for active supply planning (including data updates and
 planning new shipments), but to use the data entry screen when significant
 data entry is required. Note that some sections vary **based on whether the
 planning unit is planned by MOS or planned by Quantity (as selected in
-[Updating Planning Units](#planning-units)) – differences are noted below.**
+[Updating Planning Units](04-supply-planning-module-program-data.md#planning-units)) – differences are noted below.**
   - This screen can also be viewed by the alternate reporting unit (ARU) associated with the planning unit. This means that users can view their supply plans in terms of the product names and units of measure they enter the data in, with values on the table and graph changing according to the ARU/PU conversion factor that is established by the user (see Alternate Reporting Units). The user selects to view by ARU clicking on the radio button and then selecting the desired ARU to display.
 
 ![A screenshot of a calendar Description automatically generated](/img/media/image155.png)
@@ -45,7 +45,7 @@ while online before beginning.
 > **Note:** other than step 1 being required, the remaining steps are not sequential, but an explanation of the features available in the supply planning screen.
 
 1.  > On the left menu bar, go to Supply Planning \> “Supply Planning”
-    1.  Select the desired **Program**. The drop-down list in the supply plan screen will show all the programs that have been downloaded by the user. Refer to [Download Program](#downloaddelete) for details on how to download a program.
+    1.  Select the desired **Program**. The drop-down list in the supply plan screen will show all the programs that have been downloaded by the user. Refer to [Download Program](03-managing-programs-and-versions.md#downloaddelete) for details on how to download a program.
 
     2.  Select the desired **QAT Planning Unit or Alternate Reporting Unit (ARU)**.
 
@@ -87,7 +87,7 @@ Figure 102: Ending Stock Balance Calculation
 
 Figure 103 Differences in the Supply Planning Table - Plan by MOS vs Plan by Quantity
 
-- > **Average monthly consumption (AMC)** is an average of the consumption over the months indicated by the AMC parameters, which are displayed above the table. **To edit these parameters, see [Updating Planning Units](#planning-units).**
+- > **Average monthly consumption (AMC)** is an average of the consumption over the months indicated by the AMC parameters, which are displayed above the table. **To edit these parameters, see [Updating Planning Units](04-supply-planning-module-program-data.md#planning-units).**
 
 ![](/img/media/image163.png)
 
@@ -150,7 +150,7 @@ In the supply planning table, only one number will show per month for the whole 
 
 3.  To create a new record, right click on the details row and select “Add new consumption” <u>or</u> click the “+ Add Row” button.
 
-4.  To edit a record, click on any cell and edit consumption details (consumption type, data source, quantity, etc.) Double click to activate any dropdowns. See [Consumption Data](#consumption-data) for additional guidance on consumption data entry.
+4.  To edit a record, click on any cell and edit consumption details (consumption type, data source, quantity, etc.) Double click to activate any dropdowns. See [Consumption Data](04-supply-planning-module-program-data.md#consumption-data) for additional guidance on consumption data entry.
 
 5.  Click “Submit” to save the changes and return to the main supply planning screen, where your changes will be reflected. ![A screenshot of a computer Description automatically generated](/img/media/image170.png)
 
@@ -160,7 +160,7 @@ By default, shipments are only shown as one row in the supply planning screen �
 
 **To see a detailed breakdown of all shipments in a month, click on the cell in the corresponding month in the ‘+Shipments row’. To see the detailed breakdown of all shipments by status, click on the cell in the corresponding month in the individual status row.**
 
-**ERP (enterprise resource planning)**: data linked to ERP from procurement agents are non-editable (see [ERP Shipment Linking](#erp-shipment-linking))
+**ERP (enterprise resource planning)**: data linked to ERP from procurement agents are non-editable (see [ERP Shipment Linking](04-supply-planning-module-program-data.md#erp-shipment-linking))
 
 For all shipment rows, the colors indicate the procurement agent. If a month has multiple shipments with different procurement agents, the cell will be green. Red triangles on the top right of the cell indicate that a shipment is an emergency. If the shipment is a local procurement, there will be an L icon in the bottom left of the cell. If the shipment is ERP linked, there will be a link icon in the top left of the cell. Shipments can have multiple icons such as a local ERP linked emergency order. The legend appears at the top of the screen.
 
@@ -194,7 +194,7 @@ The following sections will cover how to update existing shipments and create ne
 
 **Updating Shipment Quantity with Recalculate Button**
 
-For planned shipments in the future, QAT will suggest a revised shipment quantity as an early warning to avoid going below minimum stock levels. Just like suggested shipments (see [Creating a new Shipment](#_Creating_a_New)), QAT will only provide the recalculate button if the shipment falls in a month that is below min followed by at least two months that also below minimum stock level. The quantity recommended by the recalculate button will follow the same logic as the QAT suggested shipments (see **Rules for Suggested Shipments** below).
+For planned shipments in the future, QAT will suggest a revised shipment quantity as an early warning to avoid going below minimum stock levels. Just like suggested shipments (see [Creating a new Shipment](#creating-a-new-shipment)), QAT will only provide the recalculate button if the shipment falls in a month that is below min followed by at least two months that also below minimum stock level. The quantity recommended by the recalculate button will follow the same logic as the QAT suggested shipments (see **Rules for Suggested Shipments** below).
 
 Below are the steps to use the recalculate button in the Supply Planning screen:
 
@@ -347,13 +347,13 @@ From the pop-up – users can do 2 functions:
 
 ![P2240#yIS1](/img/media/image189.png)
 
-> **Note:** Users can also edit this information in the Shipment Data entry screen (see [Shipment Data](#shipment-data)).
+> **Note:** Users can also edit this information in the Shipment Data entry screen (see [Shipment Data](04-supply-planning-module-program-data.md#shipment-data)).
 
 2.  **View the batch ledger:** Click on the <u>Expired Quantity</u> cell. QAT will automatically open a pop-up screen below with the batch ledger, which shows the life of a batch month-by-month from shipment receipt to expiry.
 
 ![P2247#yIS1](/img/media/image190.png)
 
-> **Note:** unless the user tags a batch to specific actual consumption or adjustment entries (see “Add/Update Batch Details” in [Consumption Data](#consumption-data) and [Inventory Data](#inventory-data)), QAT will default to monthly batch quantities being placed in the “Auto-Allocated” column in the Batch Ledger.
+> **Note:** unless the user tags a batch to specific actual consumption or adjustment entries (see “Add/Update Batch Details” in [Consumption Data](04-supply-planning-module-program-data.md#consumption-data) and [Inventory Data](04-supply-planning-module-program-data.md#inventory-data)), QAT will default to monthly batch quantities being placed in the “Auto-Allocated” column in the Batch Ledger.
 
 ## Scenario Planning
 
@@ -450,7 +450,7 @@ Figure 118: Supply Plan Report: Multi-program/EU View, Tabular Data
 
     3.  **Shipments disaggregated by program, PU, or program-PU**
 
-    4.  **Notes: QAT is able to aggregate across PUs that are different (different pack sizes, usage rates, etc.), but related by utilizing an EU (see [Equivalency Units](#equivalency-units) for more information) and a corresponding conversion factor. This could be useful for countries or global viewers that would like to see concepts such as, Malaria Treatments, Couples Year Protection (CYP), ARV Patient Months, etc. as an aggregate.**
+    4.  **Notes: QAT is able to aggregate across PUs that are different (different pack sizes, usage rates, etc.), but related by utilizing an EU (see [Equivalency Units](07-forecasting-module-program-data.md#equivalency-units) for more information) and a corresponding conversion factor. This could be useful for countries or global viewers that would like to see concepts such as, Malaria Treatments, Couples Year Protection (CYP), ARV Patient Months, etc. as an aggregate.**
 
 ![A graph with colorful lines and numbers Description automatically generated with medium confidence](/img/media/image197.png)
 

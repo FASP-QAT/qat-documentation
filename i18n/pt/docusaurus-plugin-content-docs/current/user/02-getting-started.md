@@ -22,7 +22,7 @@ O sistema QAT possui **três níveis de hierarquia** para conduzir operações. 
 
 - **Programa** Level Masters é o terceiro nível de hierarquia no QAT. Embora os administradores do programa não possam adicionar programas, eles podem atualizar as informações do programa (por exemplo, prazos de entrega, custos de frete, etc.) dentro do(s) programa(s) atribuído(s). Administradores e Usuários do Programa também podem adicionar e atualizar dados do programa, como ajustes de consumo, extrapolação e gerenciamento de árvores (em previsões); e consumo, estoque, remessas (no planejamento de abastecimento).
 
-Para obter mais informações sobre a funcionalidade para administradores em nível de aplicativo e realm, consulte [Anexo 1: Manual do administrador de aplicativo e realm.](#annex-1-application-realm-administrator-manual)
+Para obter mais informações sobre a funcionalidade para administradores em nível de aplicativo e realm, consulte [Anexo 1: Manual do administrador de aplicativo e realm.](10-annex-1-application-realm-administrator-manual.md#annex-1-application-realm-administrator-manual)
 
 **Programas** são uma combinação de País, Área Técnica (1 ou mais), Organização e Região. Por exemplo, **FASPonia** –ARV-MOH-National, é um programa de planeamento de abastecimento no âmbito do Reino da Saúde Global para a gestão e planeamento de **antirretrovirais** para o ministério da saúde do país fictício FASPonia, e os dados de consumo e inventário são capturados a nível nacional (região).
 
@@ -38,7 +38,7 @@ Um administrador do **Realm** gerencia dados mestre e pode ter acesso a todos os
 
 No nível **Aplicativo**, há uma função de Administrador de Aplicativo. Esta função tem acesso exclusivo para criar estruturas de dados em todo o aplicativo, incluindo adição de linguagens, funções, criação de domínios, atualização de rótulos estáticos e dinâmicos, entre outras funções de negócios.
 
-Consulte [Anexo 4: Funções de negócios](#annex-4-business-functions) para obter uma tabela com a lista completa de funções de negócios do QAT disponíveis por função de usuário.
+Consulte [Anexo 4: Funções de negócios](13-annex-4-business-functions.md#annex-4-business-functions) para obter uma tabela com a lista completa de funções de negócios do QAT disponíveis por função de usuário.
 
 ## Como fazer login no QAT e instalar o Progressive Web Application (PWA)
 
@@ -232,7 +232,7 @@ A maioria dos lançamentos de versões não exigirá ação significativa do usu
 
 Figura 13: Solicitação de lançamento de nova versão do QAT para usuários
 
-Se houver uma grande mudança na estrutura da arquitetura de back-end do QAT, os usuários poderão ser solicitados a fazer upload de sua versão mais recente para o servidor (consulte a seção [Upload](#upload) para obter mais informações) para evitar a perda de dados quando a nova versão do QAT for lançada. A equipe de suporte do QAT ([support@quantificationanalytics.org](mailto:support@quantificationanalytics.org)) informará os usuários com bastante antecedência se for necessário fazer o upload do programa.
+Se houver uma grande mudança na estrutura da arquitetura de back-end do QAT, os usuários poderão ser solicitados a fazer upload de sua versão mais recente para o servidor (consulte a seção [Upload](03-managing-programs-and-versions.md#upload) para obter mais informações) para evitar a perda de dados quando a nova versão do QAT for lançada. A equipe de suporte do QAT ([support@quantificationanalytics.org](mailto:support@quantificationanalytics.org)) informará os usuários com bastante antecedência se for necessário fazer o upload do programa.
 ## Solução de problemas
 
 Quando um usuário se depara com um possível problema de sistema com QAT, ele deve tentar solucionar o problema tentando as soluções descritas nesta seção, na ordem em que são descritas (ou seja, tente H1 primeiro e, se não funcionar, tente H2 e depois H3). Se nenhuma dessas etapas resolver o problema, o usuário deverá enviar um ticket de suporte técnico para relatar o bug (consulte a seção ‘[Relatando um bug](#reporting-a-bug)’).
@@ -309,7 +309,7 @@ Esta mensagem aparece por dois motivos: 1) Internet instável ou 2) Internet res
 
 ### Tickets para adição/atualização de usuários e dados mestre
 
-Quando um usuário precisar adicionar ou atualizar um usuário ou dados mestre por qualquer motivo, ele poderá fazê-lo solicitando um ticket de suporte técnico. Antes de solicitar quaisquer adições ou alterações nos dados mestres no QAT, o usuário deve primeiro verificar os dados mestres em nível de região (Mestres em nível de região \>\> Produto) e o Relatório de Catálogo de Programas para garantir que as informações ainda não existam. Para obter mais informações sobre como acessar e usar dados mestres, consulte [Gerenciamento de programas](#working-with-program-data) e [Realm Masters](#realm-masters). Para obter informações sobre como acessar o Catálogo de Programas, consulte [Catálogo de Programas](#product). Para acessar o Helpdesk do QAT:
+Quando um usuário precisar adicionar ou atualizar um usuário ou dados mestre por qualquer motivo, ele poderá fazê-lo solicitando um ticket de suporte técnico. Antes de solicitar quaisquer adições ou alterações nos dados mestres no QAT, o usuário deve primeiro verificar os dados mestres em nível de região (Mestres em nível de região \>\> Produto) e o Relatório de Catálogo de Programas para garantir que as informações ainda não existam. Para obter mais informações sobre como acessar e usar dados mestres, consulte [Gerenciamento de programas](03-managing-programs-and-versions.md#working-with-program-data) e [Realm Masters](10-annex-1-application-realm-administrator-manual.md#realm-masters). Para obter informações sobre como acessar o Catálogo de Programas, consulte [Catálogo de Programas](10-annex-1-application-realm-administrator-manual.md#product). Para acessar o Helpdesk do QAT:
 
 1. > Os usuários podem acessar o Helpdesk do QAT de dois locais diferentes no QAT:
     1. > Na página de login e
@@ -373,7 +373,7 @@ O ticket de bug será abordado pela equipe de desenvolvimento de acordo com a pr
 2. Insira um resumo do bug, bem como uma descrição do bug. Por favor, seja descritivo e forneça o máximo de detalhes possível (_por exemplo, em qual programa/versão/funcionalidade você estava trabalhando, etapas que você executou para obter o bug, etc_).
 
 3. Carregue uma captura de tela do bug clicando no botão “Navegar” e extraindo um arquivo de captura de tela salvo do seu computador.
-    1. Também é útil fornecer a exportação do programa, se possível (veja [Exportações de Programas](#export) sobre como exportar um programa local)
+    1. Também é útil fornecer a exportação do programa, se possível (veja [Exportações de Programas](03-managing-programs-and-versions.md#export) sobre como exportar um programa local)
 
     2. **\*Nota**: Se você quiser fazer upload de vários arquivos, coloque as várias capturas de tela em uma pasta no seu computador e compacte-as antes de navegar no QAT. Em seguida, faça upload da pasta compactada.\*
 
@@ -681,7 +681,7 @@ Tabela 5: Botões comumente usados
 
 ## Mudando o idioma
 
-Para garantir que o QAT seja adaptável a usuários de todo o mundo, o aplicativo exibe texto em quatro idiomas diferentes: inglês, francês, português e espanhol. Os usuários são incentivados a enviar tickets se desejarem que a tradução de uma etiqueta específica seja melhorada. (_Observação: as traduções de rótulos de aplicativos podem ser editadas apenas por **administradores de aplicativos**. Instruções sobre como fazer isso podem ser encontradas na [seção de tradução](#database-translation)._)
+Para garantir que o QAT seja adaptável a usuários de todo o mundo, o aplicativo exibe texto em quatro idiomas diferentes: inglês, francês, português e espanhol. Os usuários são incentivados a enviar tickets se desejarem que a tradução de uma etiqueta específica seja melhorada. (_Observação: as traduções de rótulos de aplicativos podem ser editadas apenas por **administradores de aplicativos**. Instruções sobre como fazer isso podem ser encontradas na [seção de tradução](10-annex-1-application-realm-administrator-manual.md#database-translation)._)
 
 Existem duas maneiras de alterar o idioma exibido para o usuário:
 

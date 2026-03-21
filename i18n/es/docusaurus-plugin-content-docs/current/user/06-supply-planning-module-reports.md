@@ -24,7 +24,7 @@ Los informes se dividen en **Informes globales** e **Informes específicos del p
 
 Figura 120: Lista de problemas QAT
 
-**Nota:** Solo el problema asociado con los programas que ha descargado el usuario en su máquina local aparecerá en la Lista de problemas de QAT. Para obtener detalles sobre cómo descargar programas y versiones específicas, consulte la sección [Descargar programa](#downloaddelete) del Manual del usuario.
+**Nota:** Solo el problema asociado con los programas que ha descargado el usuario en su máquina local aparecerá en la Lista de problemas de QAT. Para obtener detalles sobre cómo descargar programas y versiones específicas, consulte la sección [Descargar programa](03-managing-programs-and-versions.md#downloaddelete) del Manual del usuario.
 
 ### Conceptos básicos de la lista de problemas QAT
 
@@ -64,7 +64,7 @@ Figura 122: Ejemplo de cierre de un problema
 
 1. Navegue a la pantalla Entrada de datos de consumo haciendo clic directamente en el Problema (que abrirá una nueva ventana QAT) o haciendo clic en Datos del plan de suministro  Datos de consumo.
 
-2. Desde la pantalla de ingreso de datos de consumo, el usuario agregará el consumo real de los meses solicitados. Para obtener instrucciones sobre cómo agregar el consumo, consulte [Datos de consumo](#consumption-data).
+2. Desde la pantalla de ingreso de datos de consumo, el usuario agregará el consumo real de los meses solicitados. Para obtener instrucciones sobre cómo agregar el consumo, consulte [Datos de consumo](04-supply-planning-module-program-data.md#consumption-data).
 
 3. Vuelva a la Lista de problemas de QAT y haga clic en Recalcular para actualizar la Lista de problemas de QAT e incluir la adición más reciente de datos de consumo real. El problema anteriormente marcado ahora debería ser "Cumplimiento" y ya no estar marcado en la Lista de problemas QAT.
 

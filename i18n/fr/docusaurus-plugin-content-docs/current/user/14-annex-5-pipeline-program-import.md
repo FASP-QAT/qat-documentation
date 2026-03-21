@@ -6,7 +6,7 @@ sidebar_position: 14
 ---
 # Annexe 5 : Importation du programme PipeLine
 
-Dans certains cas, les utilisateurs recevront un ensemble spécial d'informations d'identification leur permettant d'importer des bases de données PipeLine s'ils souhaitent configurer leur programme de cette façon (voir [Configuration d'un nouveau programme](#setting-up-a-new-program) en Annexe 1).
+Dans certains cas, les utilisateurs recevront un ensemble spécial d'informations d'identification leur permettant d'importer des bases de données PipeLine s'ils souhaitent configurer leur programme de cette façon (voir [Configuration d'un nouveau programme](10-annex-1-application-realm-administrator-manual.md#setting-up-a-new-program) en Annexe 1).
 
 **Étape 1 : Convertissez le fichier .accdb en fichier JSON :**
 

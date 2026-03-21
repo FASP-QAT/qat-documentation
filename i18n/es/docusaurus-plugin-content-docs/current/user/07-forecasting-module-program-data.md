@@ -24,7 +24,7 @@ Una vez que se han creado los distintos pronósticos, los usuarios pueden navega
 
 Los _Administradores del programa_ pueden usar la pantalla principal para:
 
-- Actualizar el nombre del programa de pronóstico, el administrador del programa y el campo de notas. Los administradores del programa también pueden optar por desactivar o activar un programa en esta pantalla. Para cambios relacionados con el área técnica, la organización o el nombre para mostrar del programa, los administradores del programa deben solicitar el cambio a un administrador de Realm a través del [Sistema de asistencia técnica QAT.](#qat-helpdesk-and-tickets)
+- Actualizar el nombre del programa de pronóstico, el administrador del programa y el campo de notas. Los administradores del programa también pueden optar por desactivar o activar un programa en esta pantalla. Para cambios relacionados con el área técnica, la organización o el nombre para mostrar del programa, los administradores del programa deben solicitar el cambio a un administrador de Realm a través del [Sistema de asistencia técnica QAT.](02-getting-started.md#qat-helpdesk-and-tickets)
 
 Los _Realm Admins_ pueden usar la pantalla principal para:
 
@@ -34,7 +34,7 @@ Los _Realm Admins_ pueden usar la pantalla principal para:
 
 ![P2710#yIS1](/img/media/image235.png)
 
-**\*<u>Propósito</u>**: permite a los usuarios actualizar la configuración de su programa y ver detalles sobre versiones anteriores. Para ver los resultados del pronóstico, use las pantallas en la sección [Resultado del análisis del pronóstico](#forecasting-module-reports-and-outputs).\*
+**\*<u>Propósito</u>**: permite a los usuarios actualizar la configuración de su programa y ver detalles sobre versiones anteriores. Para ver los resultados del pronóstico, use las pantallas en la sección [Resultado del análisis del pronóstico](09-forecasting-module-reports-and-outputs.md#forecasting-module-reports-and-outputs).\*
 
 **\*<u>Usando esta pantalla</u>**:\*
 
@@ -77,7 +77,7 @@ En esta pantalla, los usuarios pueden:
 2. Ver un ciclo de vida histórico de cada programa a través de todas sus versiones.
     1. Ver todas las configuraciones de la versión arriba
 
-    2. (Clic derecho) Vea la pantalla [Validación de pronóstico](#upload) (la misma pantalla que se ve durante el proceso de carga), que enumera los pronósticos faltantes, los datos faltantes y todas las notas. Esto sirve para que los usuarios comprendan fácilmente los pronósticos anteriores sin descargarlos. Utilice las pantallas [Pronóstico mensual] (# pronóstico mensual), [Resumen de pronóstico] (# resumen de pronóstico) o [Comparación de versiones] (# comparación de versiones) para ver los resultados de pronóstico de otras versiones.
+    2. (Clic derecho) Vea la pantalla [Validación de pronóstico](03-managing-programs-and-versions.md#upload) (la misma pantalla que se ve durante el proceso de carga), que enumera los pronósticos faltantes, los datos faltantes y todas las notas. Esto sirve para que los usuarios comprendan fácilmente los pronósticos anteriores sin descargarlos. Utilice las pantallas [Pronóstico mensual] (# pronóstico mensual), [Resumen de pronóstico] (# resumen de pronóstico) o [Comparación de versiones] (# comparación de versiones) para ver los resultados de pronóstico de otras versiones.
 
 ## Unidades de planificación
 

@@ -25,7 +25,7 @@ Once the various forecasts have been created, users can navigate to the Forecast
 
 _Program Admins_ can use the main screen to:
 
-- Update Forecast Program Name, Program Manager, and the Notes field. Program Admins can also choose to disable or activate a program in this screen. For changes relating to the technical area, organization, or program display name, Program Admins must request the change from a Realm Admin through the [QAT Helpdesk System.](#qat-helpdesk-and-tickets)
+- Update Forecast Program Name, Program Manager, and the Notes field. Program Admins can also choose to disable or activate a program in this screen. For changes relating to the technical area, organization, or program display name, Program Admins must request the change from a Realm Admin through the [QAT Helpdesk System.](02-getting-started.md#qat-helpdesk-and-tickets)
 
 _Realm Admins_ can use the main screen to:
 
@@ -35,7 +35,7 @@ _Realm Admins_ can use the main screen to:
 
 ![P2710#yIS1](/img/media/image235.png)
 
-**\*<u>Purpose</u>**: Enables users to update their program settings and view details about previous versions. For viewing forecast results, use the screens in the [Forecast Analysis Output](#forecasting-module-reports-and-outputs) section.\*
+**\*<u>Purpose</u>**: Enables users to update their program settings and view details about previous versions. For viewing forecast results, use the screens in the [Forecast Analysis Output](09-forecasting-module-reports-and-outputs.md#forecasting-module-reports-and-outputs) section.\*
 
 **\*<u>Using this screen</u>**:\*
 
@@ -65,7 +65,7 @@ On this screen, users can:
 2.  See a historical lifecycle of each program through all its versions.
     1.  View all version settings above
 
-    2.  (Right click) View the [Forecast Validation](#upload) screen (same screen as viewed during the Upload process) – which lists missing forecasts, missing data and all notes. This serves as an easy for users to understand previous forecasts without downloading them. Use the [Monthly Forecast](#monthly-forecast), [Forecast Summary](#forecast-summary) or [Version Comparison](#version-comparison) screens to view the forecast outputs from other versions.
+    2.  (Right click) View the [Forecast Validation](03-managing-programs-and-versions.md#upload) screen (same screen as viewed during the Upload process) – which lists missing forecasts, missing data and all notes. This serves as an easy for users to understand previous forecasts without downloading them. Use the [Monthly Forecast](09-forecasting-module-reports-and-outputs.md#monthly-forecast), [Forecast Summary](09-forecasting-module-reports-and-outputs.md#forecast-summary) or [Version Comparison](03-managing-programs-and-versions.md#version-comparison) screens to view the forecast outputs from other versions.
 
 ## Planning Units
 
@@ -94,7 +94,7 @@ Table 9: Forecasting Module Planning Unit Settings
 
 ## Equivalency Units
 
-**<u>Purpose</u>**: Enable users manage Equivalency Units. Equivalency Units (EUs) allow users to aggregate data across products that are different, but related. They allow users to group multiple forecasting units for aggregation in the [Reports and Outputs](#forecasting-module-reports-and-outputs).
+**<u>Purpose</u>**: Enable users manage Equivalency Units. Equivalency Units (EUs) allow users to aggregate data across products that are different, but related. They allow users to group multiple forecasting units for aggregation in the [Reports and Outputs](09-forecasting-module-reports-and-outputs.md#forecasting-module-reports-and-outputs).
 
 **<u>Using this screen</u>:**
 
@@ -119,11 +119,11 @@ Table 10: EU Example - Treatment for QATitis
 
 1.  A user should first check to see if the EU exists already in the QAT Master Data by navigating to “Realm Masters” à “Equivalency Units.”
 
-2.  If the EU does not exist, click on “Manage Equivalency Unit” then “Add Row” and users can input the EU they would like to utilize for their specific program throughout QAT. This EU will be program-specific and will not be available to other programs. If there is an EU that would benefit the QAT community, users can request it via the [QAT Ticketing Helpdesk System](#tickets-for-addingupdating-users-and-master-data).
+2.  If the EU does not exist, click on “Manage Equivalency Unit” then “Add Row” and users can input the EU they would like to utilize for their specific program throughout QAT. This EU will be program-specific and will not be available to other programs. If there is an EU that would benefit the QAT community, users can request it via the [QAT Ticketing Helpdesk System](02-getting-started.md#tickets-for-addingupdating-users-and-master-data).
 
 > ![P2819#yIS1](/img/media/image237.png)
 
-3.  If the EU exists and a user would like to map forecasting units to the existing EU, they can click “Add Row” on the main screen and map the forecasting unit to the program-level EU. If a user would like to map the forecasting unit to an existing _realm-level_ EU and thinks it would benefit the QAT community, users can request it via the [QAT Ticketing Helpdesk System](#tickets-for-addingupdating-users-and-master-data).
+3.  If the EU exists and a user would like to map forecasting units to the existing EU, they can click “Add Row” on the main screen and map the forecasting unit to the program-level EU. If a user would like to map the forecasting unit to an existing _realm-level_ EU and thinks it would benefit the QAT community, users can request it via the [QAT Ticketing Helpdesk System](02-getting-started.md#tickets-for-addingupdating-users-and-master-data).
 
 > ![P2821#yIS1](/img/media/image238.png)
 

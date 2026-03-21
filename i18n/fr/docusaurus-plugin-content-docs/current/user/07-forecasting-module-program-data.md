@@ -24,7 +24,7 @@ Une fois les différentes prévisions créées, les utilisateurs peuvent accéde
 
 Les _Administrateurs du programme_ peuvent utiliser l'écran principal pour :
 
-- Mettre à jour le nom du programme de prévision, le gestionnaire de programme et le champ Notes. Les administrateurs du programme peuvent également choisir de désactiver ou d'activer un programme sur cet écran. Pour les modifications relatives au domaine technique, à l'organisation ou au nom d'affichage du programme, les administrateurs du programme doivent demander le changement à un administrateur de domaine via le [Système d'assistance QAT.](#qat-helpdesk-and-tickets)
+- Mettre à jour le nom du programme de prévision, le gestionnaire de programme et le champ Notes. Les administrateurs du programme peuvent également choisir de désactiver ou d'activer un programme sur cet écran. Pour les modifications relatives au domaine technique, à l'organisation ou au nom d'affichage du programme, les administrateurs du programme doivent demander le changement à un administrateur de domaine via le [Système d'assistance QAT.](02-getting-started.md#qat-helpdesk-and-tickets)
 
 Les _Realm Admins_ peuvent utiliser l'écran principal pour :
 
@@ -34,7 +34,7 @@ Les _Realm Admins_ peuvent utiliser l'écran principal pour :
 
 ![P2710#yIS1](/img/media/image235.png)
 
-**\*<u>Purpose</u>** : permet aux utilisateurs de mettre à jour les paramètres de leur programme et d'afficher les détails des versions précédentes. Pour afficher les résultats des prévisions, utilisez les écrans de la section [Forecast Analysis Output](#forecasting-module-reports-and-outputs).\*
+**\*<u>Purpose</u>** : permet aux utilisateurs de mettre à jour les paramètres de leur programme et d'afficher les détails des versions précédentes. Pour afficher les résultats des prévisions, utilisez les écrans de la section [Forecast Analysis Output](09-forecasting-module-reports-and-outputs.md#forecasting-module-reports-and-outputs).\*
 
 **\*<u>Utilisation de cet écran</u>** :\*
 
@@ -77,7 +77,7 @@ Sur cet écran, les utilisateurs peuvent :
 2. Consultez un cycle de vie historique de chaque programme à travers toutes ses versions.
     1. Afficher tous les paramètres de version ci-dessus
 
-    2. (Clic droit) Affichez l'écran [Validation des prévisions] (#upload) (même écran que celui affiché lors du processus de téléchargement) – qui répertorie les prévisions manquantes, les données manquantes et toutes les notes. Cela permet aux utilisateurs de comprendre facilement les prévisions précédentes sans les télécharger. Utilisez les écrans [Prévisions mensuelles](#monthly-forecast), [Résumé des prévisions](#forecast-summary) ou [Comparaison des versions](#version-comparison) pour afficher les résultats des prévisions d'autres versions.
+    2. (Clic droit) Affichez l'écran [Validation des prévisions] (#upload) (même écran que celui affiché lors du processus de téléchargement) – qui répertorie les prévisions manquantes, les données manquantes et toutes les notes. Cela permet aux utilisateurs de comprendre facilement les prévisions précédentes sans les télécharger. Utilisez les écrans [Prévisions mensuelles](09-forecasting-module-reports-and-outputs.md#monthly-forecast), [Résumé des prévisions](09-forecasting-module-reports-and-outputs.md#forecast-summary) ou [Comparaison des versions](03-managing-programs-and-versions.md#version-comparison) pour afficher les résultats des prévisions d'autres versions.
 
 ## Unités de planification
 

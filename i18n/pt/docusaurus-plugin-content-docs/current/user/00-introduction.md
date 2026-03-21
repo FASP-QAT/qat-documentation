@@ -853,9 +853,9 @@ Bem-vindo à documentação do usuário do QAT. Esta seção é destinada aos us
 
 **Índice**
 
-[Siglas 9](#_Toc71637206)
+[Siglas 9](15-acronyms.md#)
 
-[Seção 1. Visão geral 10](#overview)
+[Seção 1. Visão geral 10](01-overview.md#overview)
 
 [A. Introdução 10](#introdução)
 
@@ -865,29 +865,29 @@ Bem-vindo à documentação do usuário do QAT. Esta seção é destinada aos us
 
 [D. Quem deve usar o QAT? 11](#quem-deveria-usar-qat)
 
-[E. Conceitos e termos importantes do QAT 12](#important-qat-concepts-and-terms)
+[E. Conceitos e termos importantes do QAT 12](01-overview.md#important-qat-concepts-and-terms)
 
 [E1. Termos transversais 12](#termos transversais)
 
-[E2. Termos de planejamento de fornecimento 12](#supply-planning-terms)
+[E2. Termos de planejamento de fornecimento 12](01-overview.md#supply-planning-terms)
 
-[E3. Termos de previsão 15](#forecasting-terms)
+[E3. Termos de previsão 15](01-overview.md#forecasting-terms)
 
 [Seção 2. Primeiros passos 16](#primeiros passos)
 
 [A. Requisitos do sistema 16](#requisitos do sistema)
 
-[B. Níveis de hierarquia no QAT 16](#levels-of-hierarchy-in-qat)
+[B. Níveis de hierarquia no QAT 16](02-getting-started.md#levels-of-hierarchy-in-qat)
 
-[C. Funções e permissões do usuário 17](#user-roles-and-permissions)
+[C. Funções e permissões do usuário 17](02-getting-started.md#user-roles-and-permissions)
 
-[D. Como fazer login no QAT e instalar o aplicativo da Web progressivo (PWA) 17](#how-to-log-into-qat-and-install-the-progressive-web-application-pwa)
+[D. Como fazer login no QAT e instalar o aplicativo da Web progressivo (PWA) 17](02-getting-started.md#how-to-log-into-qat-and-install-the-progressive-web-application-pwa)
 
 [E. Como fazer login no QAT para usuários existentes 19](#how-to-log-into-qat-for-existente-users)
 
-[F. Trabalhando offline 21](#working-offline)
+[F. Trabalhando offline 21](02-getting-started.md#working-offline)
 
-[G. Atualizações de lançamento do QAT 22](#qat-release-updates)
+[G. Atualizações de lançamento do QAT 22](02-getting-started.md#qat-release-updates)
 
 [H. Solução de problemas 23](#solução de problemas)
 
@@ -897,33 +897,33 @@ Bem-vindo à documentação do usuário do QAT. Esta seção é destinada aos us
 
 [H3. Quando e como limpar dados do site 24](#quando-e-como-limpar-dados-do-site)
 
-[H4. Solução de problemas de erros de rede 25](#troubleshooting-network-errors)
+[H4. Solução de problemas de erros de rede 25](02-getting-started.md#troubleshooting-network-errors)
 
-[Eu. Helpdesk e tickets do QAT 26](#qat-helpdesk-and-tickets)
+[Eu. Helpdesk e tickets do QAT 26](02-getting-started.md#qat-helpdesk-and-tickets)
 
-[E1. Tickets para adição/atualização de usuários e dados mestres 26](#tickets-for-addingupdating-users-and-master-data)
+[E1. Tickets para adição/atualização de usuários e dados mestres 26](02-getting-started.md#tickets-for-addingupdating-users-and-master-data)
 
-[E2. Solicitando uma alteração 28](#requesting-a-change)
+[E2. Solicitando uma alteração 28](02-getting-started.md#requesting-a-change)
 
-[E3. Relatando um bug 29](#reporting-a-bug)
+[E3. Relatando um bug 29](02-getting-started.md#reporting-a-bug)
 
-[E4. Gerenciando tickets 30](#managing-tickets)
+[E4. Gerenciando tickets 30](02-getting-started.md#managing-tickets)
 
-[J. Barra de navegação e menu 31](#navigation-and-menu-bar)
+[J. Barra de navegação e menu 31](02-getting-started.md#navigation-and-menu-bar)
 
 [K. Mudança de idioma 36](#mudar idioma)
 
 [EU. Painel QAT 37](#qat-painel)
 
-[Seção 3. Gerenciando Programas e Versões 43](#managing-programs-and-versions)
+[Seção 3. Gerenciando Programas e Versões 43](03-managing-programs-and-versions.md#managing-programs-and-versions)
 
-[A. Trabalhando com dados de programas 43](#working-with-program-data)
+[A. Trabalhando com dados de programas 43](03-managing-programs-and-versions.md#working-with-program-data)
 
-[B. Baixar/Excluir 43](#downloaddelete)
+[B. Baixar/Excluir 43](03-managing-programs-and-versions.md#downloaddelete)
 
 [C. Carregar 46](#carregar)
 
-[D. Versão e revisão do plano de fornecimento (apenas módulo de plano de fornecimento) 52](#supply-plan-version-and-review-supply-plan-module-only)
+[D. Versão e revisão do plano de fornecimento (apenas módulo de plano de fornecimento) 52](03-managing-programs-and-versions.md#supply-plan-version-and-review-supply-plan-module-only)
 
 [E. Exportar 55](#exportar)
 
@@ -931,107 +931,107 @@ Bem-vindo à documentação do usuário do QAT. Esta seção é destinada aos us
 
 [G. Comparação de versões 57](#comparação de versões)
 
-[Seção 4. Módulo de Planejamento de Fornecimento: Dados do Programa 59](#supply-planning-module-program-data)
+[Seção 4. Módulo de Planejamento de Fornecimento: Dados do Programa 59](04-supply-planning-module-program-data.md#supply-planning-module-program-data)
 
-[A. Dados de segundo plano 59](#background-data)
+[A. Dados de segundo plano 59](04-supply-planning-module-program-data.md#background-data)
 
 [A1. Informações do programa 59](#informações do programa)
 
-[A2. Unidades de planejamento 61](#planning-units)
+[A2. Unidades de planejamento 61](04-supply-planning-module-program-data.md#planning-units)
 
-[A3. Informações específicas do programa/agente de compras 63](#programprocurement-agent-specific-information)
+[A3. Informações específicas do programa/agente de compras 63](04-supply-planning-module-program-data.md#programprocurement-agent-specific-information)
 
 [A4. Unidades de Relatório Alternativas 65](#unidades de relatório alternativas)
 
-[A5. Prazos de entrega padrão 66](#default-lead-times)
+[A5. Prazos de entrega padrão 66](04-supply-planning-module-program-data.md#default-lead-times)
 
 [A6. Orçamentos 68](#orçamentos)
 
-[B. Dados do plano de fornecimento transacional 69](#transactional-supply-plan-data)
+[B. Dados do plano de fornecimento transacional 69](04-supply-planning-module-program-data.md#transactional-supply-plan-data)
 
 [B1. Dados de consumo 70](#consumo-dados)
 
-[B2. Dados de inventário 72](#inventory-data)
+[B2. Dados de inventário 72](04-supply-planning-module-program-data.md#inventory-data)
 
-[B3. Dados de Remessa 74](#shipment-data)
+[B3. Dados de Remessa 74](04-supply-planning-module-program-data.md#shipment-data)
 
-[B4. Vinculação de remessa ERP 77](#erp-shipment-linking)
+[B4. Vinculação de remessa ERP 77](04-supply-planning-module-program-data.md#erp-shipment-linking)
 
-[C. Importando dados para planejamento de fornecimento 84](#_Toc187042366)
+[C. Importando dados para planejamento de fornecimento 84](04-supply-planning-module-program-data.md#supply-plan-data-excel-import-templates)
 
-[C1. Modelos de importação de dados do plano de fornecimento do Excel 84](#supply-plan-data-excel-import-templates)
+[C1. Modelos de importação de dados do plano de fornecimento do Excel 84](04-supply-planning-module-program-data.md#supply-plan-data-excel-import-templates)
 
-[C2. Importação de previsão Quantimed 86](#quantimed-forecast-import)
+[C2. Importação de previsão Quantimed 86](04-supply-planning-module-program-data.md#quantimed-forecast-import)
 
-[C3. Importação de previsão QAT 88](#qat-forecast-import)
+[C3. Importação de previsão QAT 88](04-supply-planning-module-program-data.md#qat-forecast-import)
 
-[Seção 5. Módulo de Planejamento de Fornecimento: Planejamento de Fornecimento 92](#supply-planning-module-supply-planning)
+[Seção 5. Módulo de Planejamento de Fornecimento: Planejamento de Fornecimento 92](05-supply-planning-module-supply-planning.md#supply-planning-module-supply-planning)
 
-[A. Planejamento de fornecimento: uma visão geral 92](#supply-planning-an-overview)
+[A. Planejamento de fornecimento: uma visão geral 92](05-supply-planning-module-supply-planning.md#supply-planning-an-overview)
 
-[B. Planejamento de Fornecimento: Consumo 97](#_Toc187042372)
+[B. Planejamento de Fornecimento: Consumo 97](05-supply-planning-module-supply-planning.md#supply-planning-consumption)
 
-[C. Planejamento de Fornecimento: Remessas 98](#supply-planning-shipments)
+[C. Planejamento de Fornecimento: Remessas 98](05-supply-planning-module-supply-planning.md#supply-planning-shipments)
 
 [C1. Atualizando uma Remessa Existente 99](#updating-an-existente-remessa)
 
-[C2. Criando uma nova remessa 101](#_Toc187042375)
+[C2. Criando uma nova remessa 101](05-supply-planning-module-supply-planning.md#creating-a-new-shipment)
 
-[D. Planejamento de fornecimento: estoque/ajustes 104](#supply-planning-inventoryadjustments)
+[D. Planejamento de fornecimento: estoque/ajustes 104](05-supply-planning-module-supply-planning.md#supply-planning-inventoryadjustments)
 
-[E. Planejamento de fornecimento: estoque expirado do projeto e informações de lote 108](#supply-planning-project-expired-stock-and-batch-information)
+[E. Planejamento de fornecimento: estoque expirado do projeto e informações de lote 108](05-supply-planning-module-supply-planning.md#supply-planning-project-expired-stock-and-batch-information)
 
 [F. Planejamento de cenário 109](#planejamento de cenário)
 
 [G. Relatório do plano de fornecimento 110](#relatório do plano de fornecimento)
 
-[Seção 6. Módulo de Planejamento de Fornecimento: Relatórios 114](#supply-planning-module-reports)
+[Seção 6. Módulo de Planejamento de Fornecimento: Relatórios 114](06-supply-planning-module-reports.md#supply-planning-module-reports)
 
-[A. Lista de problemas QAT 114](#qat-problem-list)
+[A. Lista de problemas QAT 114](06-supply-planning-module-reports.md#qat-problem-list)
 
-[A1. Noções básicas da lista de problemas QAT 115](#qat-problem-list-basics)
+[A1. Noções básicas da lista de problemas QAT 115](06-supply-planning-module-reports.md#qat-problem-list-basics)
 
-[A2. Fechando e resolvendo problemas 116](#closing-and-addressing-problems)
+[A2. Fechando e resolvendo problemas 116](06-supply-planning-module-reports.md#closing-and-addressing-problems)
 
-[A3. Lista de problemas QAT: explicação dos problemas 117](#qat-problem-list-explanation-of-problems)
+[A3. Lista de problemas QAT: explicação dos problemas 117](06-supply-planning-module-reports.md#qat-problem-list-explanation-of-problems)
 
-[B. Catálogo de Programas 120](#program-catalog)
+[B. Catálogo de Programas 120](06-supply-planning-module-reports.md#program-catalog)
 
-[C. Relatórios de status de estoque 121](#stock-status-reports)
+[C. Relatórios de status de estoque 121](06-supply-planning-module-reports.md#stock-status-reports)
 
-[C1. Status do estoque ao longo do tempo 121](#stock-status-over-time)
+[C1. Status do estoque ao longo do tempo 121](06-supply-planning-module-reports.md#stock-status-over-time)
 
-[C2. Matriz de status de estoque 121](#stock-status-matrix)
+[C2. Matriz de status de estoque 121](06-supply-planning-module-reports.md#stock-status-matrix)
 
-[C3. Instantâneo de status de estoque 122](#stock-status-snapshot)
+[C3. Instantâneo de status de estoque 122](06-supply-planning-module-reports.md#stock-status-snapshot)
 
-[C4. Instantâneo de status de estoque (global) 123](#stock-status-snapshot-global)
+[C4. Instantâneo de status de estoque (global) 123](06-supply-planning-module-reports.md#stock-status-snapshot-global)
 
-[D. Relatórios de consumo 124](#consumption-reports)
+[D. Relatórios de consumo 124](06-supply-planning-module-reports.md#consumption-reports)
 
 [D1. Consumo (Global) 124](#consumo-global)
 
-[D2. Erro de previsão (mensal) 125](#forecast-error-monthly)
+[D2. Erro de previsão (mensal) 125](06-supply-planning-module-reports.md#forecast-error-monthly)
 
-[D3. Erro de previsão (por unidade de planejamento) 127](#forecast-error-by-planning-unit)
+[D3. Erro de previsão (por unidade de planejamento) 127](06-supply-planning-module-reports.md#forecast-error-by-planning-unit)
 
-[E. Relatórios de Remessa 128](#shipment-reports)
+[E. Relatórios de Remessa 128](06-supply-planning-module-reports.md#shipment-reports)
 
-[E1. Remessa (Global) 128](#shipment-global)
+[E1. Remessa (Global) 128](06-supply-planning-module-reports.md#shipment-global)
 
 [E2. Visão geral da remessa 129](#visão geral da remessa)
 
 [E3. Detalhes da remessa 130](# detalhes da remessa)
 
-[E4. Detalhes do custo de envio 131](#shipment-cost-details)
+[E4. Detalhes do custo de envio 131](06-supply-planning-module-reports.md#shipment-cost-details)
 
 [E5. Visão geral dos custos de remessa 131](#visão geral dos custos de remessa)
 
 [E6. Orçamento 132](#orçamento)
 
-[E7. Prazo de entrega do agente de compras 133](#procurement-agent-lead-time)
+[E7. Prazo de entrega do agente de compras 133](06-supply-planning-module-reports.md#procurement-agent-lead-time)
 
-[F. Relatórios de inventário 134](#inventory-reports)
+[F. Relatórios de inventário 134](06-supply-planning-module-reports.md#inventory-reports)
 
 [F1. Expirações 134](#expirações)
 
@@ -1045,23 +1045,23 @@ Bem-vindo à documentação do usuário do QAT. Esta seção é destinada aos us
 
 [F6. Capacidade do armazém (por país) 137](#capacidade do armazém por país)
 
-[Seção 7. Módulo de Previsão: Dados do Programa 139](#forecasting-module-program-data)
+[Seção 7. Módulo de Previsão: Dados do Programa 139](07-forecasting-module-program-data.md#forecasting-module-program-data)
 
 [A. Introdução 139](#introdução-1)
 
-[B. Informações do programa 139](#program-information-1)
+[B. Informações do programa 139](07-forecasting-module-program-data.md#program-information)
 
-[C. Configurações de versão 140](#version-settings)
+[C. Configurações de versão 140](07-forecasting-module-program-data.md#version-settings)
 
-[D. Unidades de planejamento 141](#planning-units-1)
+[D. Unidades de planejamento 141](07-forecasting-module-program-data.md#planning-units)
 
 [E. Unidades de equivalência 141](#unidades de equivalência)
 
-[Seção 8. Módulo de Previsão: Previsão 143](#forecasting-module-forecasting)
+[Seção 8. Módulo de Previsão: Previsão 143](08-forecasting-module-forecasting.md#forecasting-module-forecasting)
 
 [A. Previsões de consumo 143](#previsões de consumo)
 
-[A1. Importar/Inserir Dados Reais 144](#importinputting-actuals)
+[A1. Importar/Inserir Dados Reais 144](08-forecasting-module-forecasting.md#importinputting-actuals)
 
 [A2. Ajustes 147](#ajustes)
 
@@ -1071,50 +1071,50 @@ Bem-vindo à documentação do usuário do QAT. Esta seção é destinada aos us
 
 [B1. Construindo uma árvore 154](#construindo uma árvore)
 
-[B2. Validações de modelagem 171](#modeling-validations)
+[B2. Validações de modelagem 171](08-forecasting-module-forecasting.md#modeling-validations)
 
-[B3. Validações de produto 173](#product-validations)
+[B3. Validações de produto 173](08-forecasting-module-forecasting.md#product-validations)
 
-[B4. Usando modelos 174](#using-templates)
+[B4. Usando modelos 174](08-forecasting-module-forecasting.md#using-templates)
 
-[Seção 9. Módulo de previsão: relatórios e resultados 179](#forecasting-module-reports-and-outputs)
+[Seção 9. Módulo de previsão: relatórios e resultados 179](09-forecasting-module-reports-and-outputs.md#forecasting-module-reports-and-outputs)
 
-[A. Compare e selecione 179](#compare-and-select)
+[A. Compare e selecione 179](09-forecasting-module-reports-and-outputs.md#compare-and-select)
 
 [B. Previsão Mensal 180](#previsão mensal)
 
-[C. Resumo da previsão 182](#forecast-summary)
+[C. Resumo da previsão 182](11-annex-2-business-rules.md#forecast-summary)
 
 [C1. Visualização regional 182](#visualização regional)
 
 [C2. Visão Nacional 183](#visão-nacional)
 
-[Seção 10. **Anexo 1: Manual do Administrador de Aplicativos e Realm** 185](#annex-1-application-realm-administrator-manual)
+[Seção 10. **Anexo 1: Manual do Administrador de Aplicativos e Realm** 185](10-annex-1-application-realm-administrator-manual.md#annex-1-application-realm-administrator-manual)
 
 [A. Introdução 185](#introdução-2)
 
 [B. Painel do aplicativo 185](#painel do aplicativo)
 
-[C. Gerenciando dados mestres 187](#managing-master-data)
+[C. Gerenciando dados mestres 187](10-annex-1-application-realm-administrator-manual.md#managing-master-data)
 
 [C1. Mestres de aplicativos 188](#mestres de aplicativos)
 
 [C2. Mestres do Reino 199](#mestres do reino)
 
-[D. Configurando um novo programa 221](#setting-up-a-new-program)
+[D. Configurando um novo programa 221](10-annex-1-application-realm-administrator-manual.md#setting-up-a-new-program)
 
-[E. Redefinindo a lista de problemas do QAT 223](#resetting-the-qat-problem-list)
+[E. Redefinindo a lista de problemas do QAT 223](10-annex-1-application-realm-administrator-manual.md#resetting-the-qat-problem-list)
 
-[Seção 11. **Anexo 2: Regras de Negócios** 225](#annex-2-business-rules)
+[Seção 11. **Anexo 2: Regras de Negócios** 225](11-annex-2-business-rules.md#annex-2-business-rules)
 
 [A. Introdução 225](#introdução-3)
 
 |              |                                                                                                         |
 | ------------ | ------------------------------------------------------------------------------------------------------------------ |
-| **AMC** | Consumo médio mensal (ver [Conceitos e termos importantes do QAT](#important-qat-concepts-and-terms)) |
+| **AMC** | Consumo médio mensal (ver [Conceitos e termos importantes do QAT](01-overview.md#important-qat-concepts-and-terms)) |
 | **ARIMA** | Média Móvel Integrada Auto Regressiva |
 | **ARTMIS** | Sistema automatizado de informações de gerenciamento de rastreamento de requisições |
-| **ARU** | Unidade de Relatório Alternativa (consulte [Conceitos e termos importantes do QAT](#important-qat-concepts-and-terms)) |
+| **ARU** | Unidade de Relatório Alternativa (consulte [Conceitos e termos importantes do QAT](01-overview.md#important-qat-concepts-and-terms)) |
 | **ERP** | Planejamento de recursos empresariais |
 | **UE** | Unidade de Equivalência |
 | **FASP** | Previsão e Planejamento de Fornecimento |
@@ -1128,8 +1128,8 @@ Bem-vindo à documentação do usuário do QAT. Esta seção é destinada aos us
 | **MAPE** | Erro percentual médio absoluto |
 | **MNCH** | Saúde Materna, Neonatal e Infantil |
 | **MOH** | Ministério da Saúde |
-| **Quantidade mínima** | Quantidade mínima de pedido (consulte [Conceitos e termos importantes do QAT](#important-qat-concepts-and-terms)) |
-| **MOS** | Meses de estoque (consulte [Conceitos e termos importantes do QAT](#important-qat-concepts-and-terms)) |
+| **Quantidade mínima** | Quantidade mínima de pedido (consulte [Conceitos e termos importantes do QAT](01-overview.md#important-qat-concepts-and-terms)) |
+| **MOS** | Meses de estoque (consulte [Conceitos e termos importantes do QAT](01-overview.md#important-qat-concepts-and-terms)) |
 | **PEPFAR** | Plano de Emergência do Presidente para o Alívio da SIDA |
 | **PMI** | Iniciativa do Presidente dos EUA contra a Malária |
 | **PWA** | Aplicativo Web Progressivo |
@@ -1146,36 +1146,36 @@ Bem-vindo à documentação do usuário do QAT. Esta seção é destinada aos us
                                                          |
 
 
-[B. Módulo de Planejamento de Fornecimento: Planejamento de Fornecimento 225](#supply-planning-module-supply-planning-1)
+[B. Módulo de Planejamento de Fornecimento: Planejamento de Fornecimento 225](11-annex-2-business-rules.md#supply-planning-module-supply-planning)
 
-[C. Módulo de Planejamento de Fornecimento: Lista de Problemas QAT 232](#supply-planning-module-qat-problem-list)
+[C. Módulo de Planejamento de Fornecimento: Lista de Problemas QAT 232](11-annex-2-business-rules.md#supply-planning-module-qat-problem-list)
 
 [C1. Qualidade de dados 232](#qualidade de dados)
 
-[C2. Cronograma de Aquisições 232](#procurement-schedule)
+[C2. Cronograma de Aquisições 232](11-annex-2-business-rules.md#procurement-schedule)
 
 [C3. Planejamento de Fornecimento 233](#planejamento de fornecimento)
 
-[C4. Outros (problemas manuais) 234](#other-manual-problems)
+[C4. Outros (problemas manuais) 234](11-annex-2-business-rules.md#other-manual-problems)
 
-[D. Módulo de Planejamento de Fornecimento: Outros Relatórios QAT 234](#supply-planning-module-other-qat-reports)
+[D. Módulo de Planejamento de Fornecimento: Outros Relatórios QAT 234](11-annex-2-business-rules.md#supply-planning-module-other-qat-reports)
 
-[E. Módulo de previsão: previsões de árvores 237](#forecasting-module-tree-forecasts)
+[E. Módulo de previsão: previsões de árvores 237](11-annex-2-business-rules.md#forecasting-module-tree-forecasts)
 
-[F. Módulo de Previsão: Previsão de Consumo 239](#forecasting-module-consumption-forecast)
+[F. Módulo de Previsão: Previsão de Consumo 239](11-annex-2-business-rules.md#forecasting-module-consumption-forecast)
 
-[G. Módulo de previsão: relatórios e resultados 242](#forecasting-module-reports-outputs)
+[G. Módulo de previsão: relatórios e resultados 242](11-annex-2-business-rules.md#forecasting-module-reports-outputs)
 
-[G1. Compare e selecione 242](#compare-select)
+[G1. Compare e selecione 242](11-annex-2-business-rules.md#compare-select)
 
-[G2. Resumo da previsão 242](#forecast-summary-1)
+[G2. Resumo da previsão 242](11-annex-2-business-rules.md#forecast-summary)
 
-[H. Módulo de planejamento e previsão de fornecimento: upload de versões 243](#supply-planning-and-forecasting-module-uploading-versions)
+[H. Módulo de planejamento e previsão de fornecimento: upload de versões 243](11-annex-2-business-rules.md#supply-planning-and-forecasting-module-uploading-versions)
 
-[Seção 12. **Anexo 3: Matriz de funções do usuário** 248](#annex-3-user-role-matrix)
+[Seção 12. **Anexo 3: Matriz de funções do usuário** 248](12-annex-3-user-role-matrix.md#annex-3-user-role-matrix)
 
-[Seção 13. **Anexo 4: Funções Comerciais** 255](#annex-4-business-functions)
+[Seção 13. **Anexo 4: Funções Comerciais** 255](13-annex-4-business-functions.md#annex-4-business-functions)
 
-[Seção 14. **Anexo 5: Importação do Programa PipeLine** 259](#annex-5-pipeline-program-import)
+[Seção 14. **Anexo 5: Importação do Programa PipeLine** 259](14-annex-5-pipeline-program-import.md#annex-5-pipeline-program-import)
 
 <span id="_Toc71637206" class="anchor"></span>Aacrônimos

@@ -22,7 +22,7 @@ Les données du programme peuvent être téléchargées, téléchargées, import
 
 -> Les utilisateurs doivent **Télécharger** les données du programme pour commencer la planification ou la prévision des approvisionnements et doivent **Télécharger** leurs données sur le serveur pour partager leur travail avec d'autres.
 
--> Le téléchargement peut être « brouillon » ou « final ». Le téléchargement d’un programme de plan d’approvisionnement comme « final » lance le processus de révision du plan d’approvisionnement. L'état des versions du plan d'approvisionnement peut être consulté dans l'écran **Version et révision du plan d'approvisionnement** : il s'agit de la seule fonction décrite dans cette section qui est disponible pour les visualiseurs de rapports. Le téléchargement d'un programme de prévisions comme « final » permet aux utilisateurs d'importer cette prévision directement dans le module du plan d'approvisionnement. Voir [QAT Forecast Import](#qat-forecast-import) pour plus d'instructions sur la façon d'importer une prévision dans un plan d'approvisionnement.
+-> Le téléchargement peut être « brouillon » ou « final ». Le téléchargement d’un programme de plan d’approvisionnement comme « final » lance le processus de révision du plan d’approvisionnement. L'état des versions du plan d'approvisionnement peut être consulté dans l'écran **Version et révision du plan d'approvisionnement** : il s'agit de la seule fonction décrite dans cette section qui est disponible pour les visualiseurs de rapports. Le téléchargement d'un programme de prévisions comme « final » permet aux utilisateurs d'importer cette prévision directement dans le module du plan d'approvisionnement. Voir [QAT Forecast Import](04-supply-planning-module-program-data.md#qat-forecast-import) pour plus d'instructions sur la façon d'importer une prévision dans un plan d'approvisionnement.
 
 -> Lorsqu'aucune connexion Internet n'est disponible, la fonction **Exporter** permet aux utilisateurs de partager leurs données avec d'autres utilisateurs via des périphériques externes tels qu'une clé USB/une clé USB, qui peuvent ensuite utiliser la fonction **Importer** de données pour ouvrir ce fichier sur leur ordinateur.
 
@@ -71,7 +71,7 @@ au format JSON.
 
 <!-- fin de liste -->
 
-1. > Déterminez si vous souhaitez télécharger à partir du module de prévision ou de planification des approvisionnements, et accédez au module approprié (voir [Section 2.J Navigation et barre de menus](#navigation-and-menu-bar)). Si vous n'avez accès qu'à un seul module, vous pouvez ignorer cette étape.
+1. > Déterminez si vous souhaitez télécharger à partir du module de prévision ou de planification des approvisionnements, et accédez au module approprié (voir [Section 2.J Navigation et barre de menus](02-getting-started.md#navigation-and-menu-bar)). Si vous n'avez accès qu'à un seul module, vous pouvez ignorer cette étape.
 
 2. > Allez dans « Gestion du programme » \> « Télécharger/Supprimer le programme ». (Vous pouvez également accéder à cet écran en cliquant sur l'icône ![P1055#yIS1](/img/media/image89.png) dans la barre supérieure droite de QAT). L'écran affichera les données du programme comme indiqué dans la figure ci-dessous.
     -> Le texte rouge indique que le programme téléchargé n'est pas la dernière version. Le texte vert indique que le programme téléchargé est la dernière version. Le texte noir indique que le programme n'est pas téléchargé.
@@ -165,7 +165,7 @@ et est disponible pour que tous les autres utilisateurs puissent télécharger o
 3. Sélectionnez un **Type de version** à l'aide du menu déroulant :
     1. **Version préliminaire** : indique que le plan d'approvisionnement est un travail en cours. Utilisez-le pour partager un plan d'approvisionnement avec d'autres, mais pas prêt à être soumis au processus de révision du plan d'approvisionnement.
 
-    2. **Version finale** : Indique que le plan d'approvisionnement a atteint un statut final et est en cours de soumission au processus d'examen du plan d'approvisionnement. Notez que QAT ne permettra pas à l'utilisateur de télécharger en tant que version finale des problèmes « ouverts » dans la liste des problèmes QAT. Veuillez utiliser la liste des problèmes QAT (voir [Clôture et résolution des problèmes](#closing-and-addressing-problems)) pour marquer tout problème ouvert comme « Adressé » avec une note explicative, ou déplacez le problème vers « conforme » via la saisie des données en premier.
+    2. **Version finale** : Indique que le plan d'approvisionnement a atteint un statut final et est en cours de soumission au processus d'examen du plan d'approvisionnement. Notez que QAT ne permettra pas à l'utilisateur de télécharger en tant que version finale des problèmes « ouverts » dans la liste des problèmes QAT. Veuillez utiliser la liste des problèmes QAT (voir [Clôture et résolution des problèmes](06-supply-planning-module-reports.md#closing-and-addressing-problems)) pour marquer tout problème ouvert comme « Adressé » avec une note explicative, ou déplacez le problème vers « conforme » via la saisie des données en premier.
 
 4. Dans **Notes**, saisissez toutes les notes générales sur cette version, par exemple en résumant les principales modifications apportées au plan d'approvisionnement et le raisonnement derrière ces modifications.
 
@@ -257,7 +257,7 @@ prêt pour examen).
 
 <!-- fin de liste -->
 
-1. > Allez dans « Gestion du programme » \> « Version et révision du plan d'approvisionnement » et l'écran ci-dessous s'affichera. Sélectionnez la période du rapport, le pays, le programme, le type de version et le statut. Dans ce tableau, les utilisateurs peuvent voir l'état de tous les plans d'approvisionnement et les commentaires de version. Les utilisateurs peuvent également utiliser les options de recherche, de filtrage et de tri (voir [Navigation et barre de menus](#navigation-and-menu-bar)) pour rechercher des programmes spécifiques.
+1. > Allez dans « Gestion du programme » \> « Version et révision du plan d'approvisionnement » et l'écran ci-dessous s'affichera. Sélectionnez la période du rapport, le pays, le programme, le type de version et le statut. Dans ce tableau, les utilisateurs peuvent voir l'état de tous les plans d'approvisionnement et les commentaires de version. Les utilisateurs peuvent également utiliser les options de recherche, de filtrage et de tri (voir [Navigation et barre de menus](02-getting-started.md#navigation-and-menu-bar)) pour rechercher des programmes spécifiques.
 
 ![A screenshot of a computer Description automatically generated](/img/media/image106.png)
 
@@ -351,7 +351,7 @@ Figure 64 : Écran d'exportation du programme
 
 <!-- fin de liste -->
 
-1. > Déterminez si vous souhaitez exporter à partir du module de prévision ou de planification des approvisionnements, et accédez au module approprié (voir [Section 2.J Navigation et barre de menus](#navigation-and-menu-bar)). Si vous n'avez accès qu'à un seul module, vous pouvez ignorer cette étape.
+1. > Déterminez si vous souhaitez exporter à partir du module de prévision ou de planification des approvisionnements, et accédez au module approprié (voir [Section 2.J Navigation et barre de menus](02-getting-started.md#navigation-and-menu-bar)). Si vous n'avez accès qu'à un seul module, vous pouvez ignorer cette étape.
 
 2. > Allez dans « Gestion du programme » \> « Exporter le programme »
 
@@ -395,7 +395,7 @@ Figure 65 : Écran d'importation du programme
 
 <!-- fin de liste -->
 
-1. > Déterminez si vous souhaitez exporter à partir du module de prévision ou de planification des approvisionnements, et accédez au module approprié (voir [Section 2.J Navigation et barre de menus](#navigation-and-menu-bar)). Si vous n'avez accès qu'à un seul module, vous pouvez ignorer cette étape.
+1. > Déterminez si vous souhaitez exporter à partir du module de prévision ou de planification des approvisionnements, et accédez au module approprié (voir [Section 2.J Navigation et barre de menus](02-getting-started.md#navigation-and-menu-bar)). Si vous n'avez accès qu'à un seul module, vous pouvez ignorer cette étape.
 
 2. > Allez dans « Gestion du programme » \> « Importer un programme »
 

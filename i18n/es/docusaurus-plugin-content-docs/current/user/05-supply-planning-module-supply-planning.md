@@ -24,7 +24,7 @@ utilizar esta pantalla para la planificación activa del suministro (incluidas a
 planificación de nuevos envíos), pero utilizar la pantalla de entrada de datos cuando sea importante
 se requiere la entrada de datos. Tenga en cuenta que algunas secciones varían **según si el
 La unidad de planificación está planificada por MOS o por Cantidad (según se seleccione en
-[Actualización de unidades de planificación](#planning-units)) – las diferencias se indican a continuación.**
+[Actualización de unidades de planificación](04-supply-planning-module-program-data.md#planning-units)) – las diferencias se indican a continuación.**
   - Esta pantalla también puede ser vista por la unidad de informes alternativa (ARU) asociada con la unidad de planificación. Esto significa que los usuarios pueden ver sus planes de suministro en términos de los nombres de los productos y las unidades de medida en las que ingresan los datos, con valores en la tabla y el gráfico que cambian según el factor de conversión ARU/PU establecido por el usuario (consulte Unidades de informe alternativas). El usuario selecciona ver por ARU haciendo clic en el botón de opción y luego seleccionando la ARU deseada para mostrar.
 
 ![A screenshot of a calendar Description automatically generated](/img/media/image155.png)
@@ -44,7 +44,7 @@ mientras está en línea antes de comenzar.
 > **Nota:** aparte de que se requiere el paso 1, los pasos restantes no son secuenciales, sino una explicación de las funciones disponibles en la pantalla de planificación de suministro.
 
 1. > En la barra de menú de la izquierda, vaya a Planificación de suministros \> “Planificación de suministros”
-    1. Seleccione el **Programa** deseado. La lista desplegable en la pantalla del plan de suministro mostrará todos los programas que ha descargado el usuario. Consulte [Descargar programa](#downloaddelete) para obtener detalles sobre cómo descargar un programa.
+    1. Seleccione el **Programa** deseado. La lista desplegable en la pantalla del plan de suministro mostrará todos los programas que ha descargado el usuario. Consulte [Descargar programa](03-managing-programs-and-versions.md#downloaddelete) para obtener detalles sobre cómo descargar un programa.
 
     2. Seleccione la **Unidad de planificación QAT o la Unidad de informes alternativa (ARU)** que desee.
 
@@ -86,7 +86,7 @@ Figura 102: Cálculo del saldo final de existencias
 
 Figura 103 Diferencias en la tabla de planificación de suministros: Planificar por MOS versus Planificar por cantidad
 
-- > **Consumo medio mensual (AMC)** es un promedio del consumo durante los meses indicados por los parámetros AMC, que se muestran encima de la tabla. **Para editar estos parámetros, consulte [Actualización de unidades de planificación](#planning-units).**
+- > **Consumo medio mensual (AMC)** es un promedio del consumo durante los meses indicados por los parámetros AMC, que se muestran encima de la tabla. **Para editar estos parámetros, consulte [Actualización de unidades de planificación](04-supply-planning-module-program-data.md#planning-units).**
 
 ![](/img/media/image163.png)
 
@@ -149,7 +149,7 @@ En la tabla de planificación de suministro, solo se mostrará un número por me
 
 3. Para crear un nuevo registro, haga clic derecho en la fila de detalles y seleccione “Agregar nuevo consumo” <u>or</u> haga clic en el botón “+ Agregar fila”.
 
-4. Para editar un registro, haga clic en cualquier celda y edite los detalles del consumo (tipo de consumo, fuente de datos, cantidad, etc.). Haga doble clic para activar cualquier menú desplegable. Consulte [Datos de consumo](#consumption-data) para obtener orientación adicional sobre el ingreso de datos de consumo.
+4. Para editar un registro, haga clic en cualquier celda y edite los detalles del consumo (tipo de consumo, fuente de datos, cantidad, etc.). Haga doble clic para activar cualquier menú desplegable. Consulte [Datos de consumo](04-supply-planning-module-program-data.md#consumption-data) para obtener orientación adicional sobre el ingreso de datos de consumo.
 
 5. Haga clic en "Enviar" para guardar los cambios y regresar a la pantalla principal de planificación de suministro, donde se reflejarán sus cambios. ![A screenshot of a computer Description automatically generated](/img/media/image170.png)
 
@@ -159,7 +159,7 @@ De forma predeterminada, los envíos solo se muestran como una fila en la pantal
 
 **Para ver un desglose detallado de todos los envíos en un mes, haga clic en la celda del mes correspondiente en la 'fila +Envíos'. Para ver el desglose detallado de todos los envíos por estado, haga clic en la celda del mes correspondiente en la fila de estado individual.**
 
-**ERP (planificación de recursos empresariales)**: los datos vinculados al ERP desde los agentes de adquisiciones no son editables (consulte [Vinculación de envíos de ERP](#erp-shipment-linking))
+**ERP (planificación de recursos empresariales)**: los datos vinculados al ERP desde los agentes de adquisiciones no son editables (consulte [Vinculación de envíos de ERP](04-supply-planning-module-program-data.md#erp-shipment-linking))
 
 Para todas las filas de envío, los colores indican el agente de adquisiciones. Si un mes tiene varios envíos con diferentes agentes de adquisiciones, la celda será verde. Los triángulos rojos en la parte superior derecha de la celda indican que un envío es una emergencia. Si el envío es una adquisición local, habrá un ícono L en la parte inferior izquierda de la celda. Si el envío está vinculado a ERP, habrá un ícono de vínculo en la parte superior izquierda de la celda. Los envíos pueden tener varios íconos, como un pedido de emergencia vinculado al ERP local. La leyenda aparece en la parte superior de la pantalla.
 
@@ -193,7 +193,7 @@ Las siguientes secciones cubrirán cómo actualizar envíos existentes y crear n
 
 **Actualización de la cantidad de envío con el botón Recalcular**
 
-Para envíos planificados en el futuro, QAT sugerirá una cantidad de envío revisada como alerta temprana para evitar bajar de los niveles mínimos de stock. Al igual que los envíos sugeridos (consulte [Crear un nuevo envío](#_Creating_a_New)), QAT solo proporcionará el botón de recalcular si el envío cae en un mes que está por debajo del mínimo seguido de al menos dos meses que también están por debajo del nivel mínimo de existencias. La cantidad recomendada por el botón de recalcular seguirá la misma lógica que los envíos sugeridos por QAT (consulte **Reglas para envíos sugeridos** a continuación).
+Para envíos planificados en el futuro, QAT sugerirá una cantidad de envío revisada como alerta temprana para evitar bajar de los niveles mínimos de stock. Al igual que los envíos sugeridos (consulte [Crear un nuevo envío](#creating-a-new-shipment)), QAT solo proporcionará el botón de recalcular si el envío cae en un mes que está por debajo del mínimo seguido de al menos dos meses que también están por debajo del nivel mínimo de existencias. La cantidad recomendada por el botón de recalcular seguirá la misma lógica que los envíos sugeridos por QAT (consulte **Reglas para envíos sugeridos** a continuación).
 
 A continuación se detallan los pasos para usar el botón recalcular en la pantalla Planificación de suministros:
 
@@ -346,13 +346,13 @@ Desde la ventana emergente, los usuarios pueden realizar 2 funciones:
 
 ![P2240#yIS1](/img/media/image189.png)
 
-> **Nota:** Los usuarios también pueden editar esta información en la pantalla de ingreso de Datos de envío (consulte [Datos de envío](#shipment-data)).
+> **Nota:** Los usuarios también pueden editar esta información en la pantalla de ingreso de Datos de envío (consulte [Datos de envío](04-supply-planning-module-program-data.md#shipment-data)).
 
 2. **Ver el libro mayor de lotes:** Haga clic en la celda <u>Cantidad vencida</u>. QAT abrirá automáticamente una pantalla emergente a continuación con el libro mayor de lotes, que muestra la vida útil de un lote mes a mes desde la recepción del envío hasta su vencimiento.
 
 ![P2247#yIS1](/img/media/image190.png)
 
-> **Nota:** a menos que el usuario etiquete un lote con entradas de ajuste o consumo real específicas (consulte “Agregar/actualizar detalles del lote” en [Datos de consumo](#consumption-data) y [Datos de inventario](#inventory-data)), QAT establecerá de manera predeterminada que las cantidades de lote mensuales se coloquen en la columna “Asignación automática” en el Libro mayor de lotes.
+> **Nota:** a menos que el usuario etiquete un lote con entradas de ajuste o consumo real específicas (consulte “Agregar/actualizar detalles del lote” en [Datos de consumo](04-supply-planning-module-program-data.md#consumption-data) y [Datos de inventario](04-supply-planning-module-program-data.md#inventory-data)), QAT establecerá de manera predeterminada que las cantidades de lote mensuales se coloquen en la columna “Asignación automática” en el Libro mayor de lotes.
 
 ## Planificación de escenarios
 

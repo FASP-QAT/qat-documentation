@@ -232,7 +232,7 @@ La mayoría de los lanzamientos de versiones no requerirán ninguna acción sign
 
 Figura 13: Aviso publicado sobre la nueva versión de QAT para los usuarios
 
-Si hay un cambio importante en la estructura de la arquitectura backend de QAT, es posible que se solicite a los usuarios que carguen su última versión en el servidor (consulte la sección [Cargar](#upload) para obtener más información) para evitar la pérdida de datos una vez que se lance la nueva versión de QAT. El equipo de soporte de QAT ([support@quantificationanalytics.org](mailto:support@quantificationanalytics.org)) informará a los usuarios con suficiente antelación si es necesario cargar un programa.
+Si hay un cambio importante en la estructura de la arquitectura backend de QAT, es posible que se solicite a los usuarios que carguen su última versión en el servidor (consulte la sección [Cargar](03-managing-programs-and-versions.md#upload) para obtener más información) para evitar la pérdida de datos una vez que se lance la nueva versión de QAT. El equipo de soporte de QAT ([support@quantificationanalytics.org](mailto:support@quantificationanalytics.org)) informará a los usuarios con suficiente antelación si es necesario cargar un programa.
 ## Solución de problemas
 
 Cuando un usuario se encuentra con un posible problema del sistema con QAT, debe intentar solucionar el problema probando las soluciones descritas en esta sección, en el orden en que se describen (es decir, intente primero con H1 y, si eso no funciona, luego intente con H2 y luego con H3). Si ninguno de estos pasos resuelve el problema, el usuario debe enviar un ticket al servicio de asistencia técnica para informar el error (consulte la sección sobre '[Reportar un error](#reportar-un-error)').
@@ -309,7 +309,7 @@ Este mensaje aparece por dos motivos: 1) Internet inestable o 2) Internet restri
 
 ### Tickets para Agregar/Actualizar Usuarios y Datos Maestros
 
-Cuando un usuario necesita agregar o actualizar un usuario o datos maestros por cualquier motivo, puede hacerlo solicitando un ticket de asistencia técnica. Antes de solicitar adiciones o cambios a los datos maestros en QAT, el usuario primero debe verificar los datos maestros a nivel de dominio (Realm Level Masters \>\> Producto) y el Informe del catálogo de programas para asegurarse de que la información no exista ya. Para obtener más información sobre cómo acceder y utilizar datos maestros, consulte [Gestión de programas](#working-with-program-data) y [Realm Masters](#realm-masters). Para obtener información sobre cómo acceder al catálogo de programas, consulte [Catálogo de programas](#producto). Para acceder al servicio de asistencia técnica de QAT:
+Cuando un usuario necesita agregar o actualizar un usuario o datos maestros por cualquier motivo, puede hacerlo solicitando un ticket de asistencia técnica. Antes de solicitar adiciones o cambios a los datos maestros en QAT, el usuario primero debe verificar los datos maestros a nivel de dominio (Realm Level Masters \>\> Producto) y el Informe del catálogo de programas para asegurarse de que la información no exista ya. Para obtener más información sobre cómo acceder y utilizar datos maestros, consulte [Gestión de programas](03-managing-programs-and-versions.md#working-with-program-data) y [Realm Masters](10-annex-1-application-realm-administrator-manual.md#realm-masters). Para obtener información sobre cómo acceder al catálogo de programas, consulte [Catálogo de programas](#producto). Para acceder al servicio de asistencia técnica de QAT:
 
 1. > Los usuarios pueden acceder al servicio de asistencia técnica de QAT desde dos ubicaciones diferentes en QAT:
     1. > En la página de inicio de sesión, y
@@ -373,7 +373,7 @@ El equipo de desarrollo abordará el ticket de error según la prioridad empresa
 2. Ingrese un resumen del error, así como una descripción del error. Sea descriptivo y proporcione tantos detalles como sea posible (por ejemplo, en qué programa/versión/funcionalidad estaba trabajando, pasos que siguió para obtener el error, etc.).
 
 3. Cargue una captura de pantalla del error haciendo clic en el botón "Examinar" y extrayendo un archivo de captura de pantalla guardado desde su computadora.
-    1. También es útil proporcionar la exportación del programa, si es posible (consulte [Exportaciones de programas](#export) sobre cómo exportar un programa local).
+    1. También es útil proporcionar la exportación del programa, si es posible (consulte [Exportaciones de programas](03-managing-programs-and-versions.md#export) sobre cómo exportar un programa local).
 
     2. **\*Nota**: Si desea cargar varios archivos, coloque las múltiples capturas de pantalla en una carpeta en su computadora y comprímalas antes de navegar en QAT. Luego, sube la carpeta comprimida.\*
 
@@ -681,7 +681,7 @@ Tabla 5: Botones de uso común
 
 ## Cambiar idioma
 
-Para garantizar que QAT se adapte a usuarios de todo el mundo, la aplicación muestra texto en cuatro idiomas diferentes: inglés, francés, portugués y español. Se anima a los usuarios a enviar tickets si desean que se mejore la traducción de una etiqueta en particular. (_Nota: Las traducciones de las etiquetas de las aplicaciones solo pueden ser editadas por **administradores de aplicaciones**. Las instrucciones sobre cómo hacerlo se pueden encontrar en la [sección de traducción](#database-translation)._)
+Para garantizar que QAT se adapte a usuarios de todo el mundo, la aplicación muestra texto en cuatro idiomas diferentes: inglés, francés, portugués y español. Se anima a los usuarios a enviar tickets si desean que se mejore la traducción de una etiqueta en particular. (_Nota: Las traducciones de las etiquetas de las aplicaciones solo pueden ser editadas por **administradores de aplicaciones**. Las instrucciones sobre cómo hacerlo se pueden encontrar en la [sección de traducción](10-annex-1-application-realm-administrator-manual.md#database-translation)._)
 
 Hay dos formas de cambiar el idioma que se muestra al usuario:
 

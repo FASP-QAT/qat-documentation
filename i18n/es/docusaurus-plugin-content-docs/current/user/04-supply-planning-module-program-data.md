@@ -8,7 +8,7 @@ sidebar_position: 4
 
 Como se definió anteriormente en [Conceptos y términos importantes de QAT] (#conceptos-y-términos-de-qat-importantes), un programa tiene una estructura similar a una base de datos de planes de suministro de PipeLine. Cada programa consta de un solo país, una o más áreas técnicas, una región (nivel nacional, nivel central, etc.) y una organización (MINSA, solo PEPFAR, solo PMI). Cada programa dentro de un ámbito se rige por los mismos datos maestros estandarizados, como catálogo de productos, agentes de adquisiciones, fuentes de financiamiento, fuentes de datos, etc.
 
-La gestión de datos del programa se encuentra en el tercer nivel de la jerarquía del sistema QAT y generalmente la realizan usuarios con los roles **administrador del programa y usuario del programa** (para obtener más información sobre los roles de usuario, consulte el [Anexo 3: Matriz de roles de usuario](#annex-3-user-role-matrix)). Los datos maestros a nivel de programa administrados por estos usuarios incluyen presupuestos y unidades de informes alternativas.
+La gestión de datos del programa se encuentra en el tercer nivel de la jerarquía del sistema QAT y generalmente la realizan usuarios con los roles **administrador del programa y usuario del programa** (para obtener más información sobre los roles de usuario, consulte el [Anexo 3: Matriz de roles de usuario](12-annex-3-user-role-matrix.md#annex-3-user-role-matrix)). Los datos maestros a nivel de programa administrados por estos usuarios incluyen presupuestos y unidades de informes alternativas.
 
 Un usuario puede "Descargar" o "Eliminar" programas desde su máquina local. Los programas también se pueden "importar" a la máquina local o "exportar" desde la máquina local para compartirlos con otros usuarios si hay problemas de conectividad.
 
@@ -100,7 +100,7 @@ Los administradores de programas en QAT pueden definir los parámetros generales
 1. Haga clic en "Administración del programa" y luego seleccione "Actualizar información del programa".
 
 2. Haga clic en el programa que necesita ser actualizado.
-    1. Los administradores del programa pueden agregar o eliminar agentes de adquisiciones y fuentes de financiamiento que ya existen en QAT en su programa. Esto, a su vez, agregará/eliminará los agentes de adquisiciones en los campos desplegables en las pantallas [Entrada de datos de envío](#shipment-data). Si un usuario desea agregar un agente de adquisiciones a su programa que <u>not</u> exista en QAT, puede obtener un ticket con el sistema [QAT HelpDesk](#tickets-for-addingupdating-users-and-master-data).
+    1. Los administradores del programa pueden agregar o eliminar agentes de adquisiciones y fuentes de financiamiento que ya existen en QAT en su programa. Esto, a su vez, agregará/eliminará los agentes de adquisiciones en los campos desplegables en las pantallas [Entrada de datos de envío](#shipment-data). Si un usuario desea agregar un agente de adquisiciones a su programa que <u>not</u> exista en QAT, puede obtener un ticket con el sistema [QAT HelpDesk](02-getting-started.md#tickets-for-addingupdating-users-and-master-data).
 
 ![](/img/media/image113.png)
 
@@ -112,13 +112,13 @@ Figura 68: Actualizar información del programa – Módulo de pronóstico
 
 3. Actualice los campos como desee y haga clic en "Enviar".
 
-**\*Nota:** QAT solo permite que los administradores de nivel de reino o de aplicación actualicen los campos que están en gris en la pantalla Actualizar información del programa. Si un usuario requiere que estos campos se actualicen, puede obtener un ticket con el sistema [QAT HelpDesk](#tickets-for-addingupdating-users-and-master-data).\*
+**\*Nota:** QAT solo permite que los administradores de nivel de reino o de aplicación actualicen los campos que están en gris en la pantalla Actualizar información del programa. Si un usuario requiere que estos campos se actualicen, puede obtener un ticket con el sistema [QAT HelpDesk](02-getting-started.md#tickets-for-addingupdating-users-and-master-data).\*
 
 ### Unidades de planificación
 
 La unidad de planificación es el producto utilizado en QAT como base para planificar adquisiciones y mostrar consumo, envíos, inventario y ajustes. El nombre de una unidad de planificación suele incluir una descripción completa hasta el embalaje primario; por tanto, su nomenclatura sigue fielmente el tamaño del envase en el que se realiza la dispensación, es decir, un frasco de 30 comprimidos, un blister de 10x10 cápsulas, etc.
 
-El catálogo de unidades de planificación QAT se considera datos maestros a nivel de dominio, lo que significa que cualquier adición, edición o resta de ese catálogo se administra a nivel de dominio y se aplica a todos los programas dentro de ese dominio. Cada programa debe tener al menos una unidad de planificación que los **Administradores de programas** puedan seleccionar del catálogo a nivel de dominio para **agregar a sus programas o desactivar** de sus programas. Los administradores del programa también pueden actualizar cualquier parámetro relacionado con una unidad de planificación en particular, incluida la frecuencia de reorden, los meses mínimos de existencias, el cálculo del consumo mensual promedio, el tiempo de entrega del agente de adquisiciones local, la vida útil y el precio. Las unidades de planificación se pueden desactivar del programa si ya no se utilizan, lo que permite a los administradores del programa conservar todos los datos heredados. Si la unidad de planificación no existe en el catálogo QAT, genere un ticket a través del servicio de asistencia técnica de QAT para que se pueda crear para todo el ámbito. Vea más sobre emisión de boletos en la sección [QAT Helpdesk and Tickets](#qat-helpdesk-and-tickets).
+El catálogo de unidades de planificación QAT se considera datos maestros a nivel de dominio, lo que significa que cualquier adición, edición o resta de ese catálogo se administra a nivel de dominio y se aplica a todos los programas dentro de ese dominio. Cada programa debe tener al menos una unidad de planificación que los **Administradores de programas** puedan seleccionar del catálogo a nivel de dominio para **agregar a sus programas o desactivar** de sus programas. Los administradores del programa también pueden actualizar cualquier parámetro relacionado con una unidad de planificación en particular, incluida la frecuencia de reorden, los meses mínimos de existencias, el cálculo del consumo mensual promedio, el tiempo de entrega del agente de adquisiciones local, la vida útil y el precio. Las unidades de planificación se pueden desactivar del programa si ya no se utilizan, lo que permite a los administradores del programa conservar todos los datos heredados. Si la unidad de planificación no existe en el catálogo QAT, genere un ticket a través del servicio de asistencia técnica de QAT para que se pueda crear para todo el ámbito. Vea más sobre emisión de boletos en la sección [QAT Helpdesk and Tickets](02-getting-started.md#qat-helpdesk-and-tickets).
 
 ![](/img/media/image115.png)
 
@@ -177,7 +177,7 @@ Figura 69: Parámetros a actualizar por unidad de planificación.
 
 6. Haga clic en "Enviar" para guardar los cambios.
 
-> **Nota:** Si una unidad de planificación requerida no está disponible en el menú desplegable y, por lo tanto, en el catálogo QAT, genere un ticket a través del servicio de asistencia técnica de QAT para que se pueda crear para todo el ámbito. Vea más sobre emisión de boletos en la sección [QAT Helpdesk and Tickets](#qat-helpdesk-and-tickets).
+> **Nota:** Si una unidad de planificación requerida no está disponible en el menú desplegable y, por lo tanto, en el catálogo QAT, genere un ticket a través del servicio de asistencia técnica de QAT para que se pueda crear para todo el ámbito. Vea más sobre emisión de boletos en la sección [QAT Helpdesk and Tickets](02-getting-started.md#qat-helpdesk-and-tickets).
 
 ### Información específica del agente de adquisiciones/programa
 

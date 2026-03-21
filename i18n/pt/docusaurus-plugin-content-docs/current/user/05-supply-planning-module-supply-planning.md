@@ -24,7 +24,7 @@ usar esta tela para planejamento de fornecimento ativo (incluindo atualizações
 planejando novos embarques), mas usar a tela de entrada de dados quando
 a entrada de dados é necessária. Observe que algumas seções variam **com base em se o
 unidade de planejamento é planejada por MOS ou planejada por Quantidade (conforme selecionado em
-[Atualizando unidades de planejamento](#planning-units)) – as diferenças são indicadas abaixo.**
+[Atualizando unidades de planejamento](04-supply-planning-module-program-data.md#planning-units)) – as diferenças são indicadas abaixo.**
   - Esta tela também pode ser visualizada pela unidade de reporte alternativa (ARU) associada à unidade de planejamento. Isso significa que os usuários podem visualizar seus planos de fornecimento em termos dos nomes dos produtos e unidades de medida em que inserem os dados, com valores na tabela e no gráfico mudando de acordo com o fator de conversão ARU/PU estabelecido pelo usuário (consulte Unidades Alternativas de Relatório). O usuário seleciona visualizar por ARU clicando no botão de opção e selecionando a ARU desejada para exibição.
 
 ![A screenshot of a calendar Description automatically generated](/img/media/image155.png)
@@ -44,7 +44,7 @@ enquanto estiver online antes de começar.
 > **Observação:** além da etapa 1 ser obrigatória, as demais etapas não são sequenciais, mas sim uma explicação das funcionalidades disponíveis na tela de planejamento de abastecimento.
 
 1. > Na barra de menu esquerda, vá em Planejamento de Fornecimento \> “Planejamento de Fornecimento”
-    1. Selecione o **Programa** desejado. A lista suspensa na tela do plano de suprimentos mostrará todos os programas que foram baixados pelo usuário. Consulte [Baixar programa](#downloaddelete) para obter detalhes sobre como baixar um programa.
+    1. Selecione o **Programa** desejado. A lista suspensa na tela do plano de suprimentos mostrará todos os programas que foram baixados pelo usuário. Consulte [Baixar programa](03-managing-programs-and-versions.md#downloaddelete) para obter detalhes sobre como baixar um programa.
 
     2. Selecione a **Unidade de Planejamento QAT ou Unidade de Relatório Alternativa (ARU)** desejada.
 
@@ -86,7 +86,7 @@ Figura 102: Cálculo do Saldo de Estoque Final
 
 Figura 103 Diferenças na Tabela de Planejamento de Fornecimento - Plano por MOS vs Plano por Quantidade
 
-- > **Consumo médio mensal (AMC)** é uma média do consumo ao longo dos meses indicados pelos parâmetros AMC, que são apresentados acima da tabela. **Para editar esses parâmetros, consulte [Atualizando unidades de planejamento](#planning-units).**
+- > **Consumo médio mensal (AMC)** é uma média do consumo ao longo dos meses indicados pelos parâmetros AMC, que são apresentados acima da tabela. **Para editar esses parâmetros, consulte [Atualizando unidades de planejamento](04-supply-planning-module-program-data.md#planning-units).**
 
 ![](/img/media/image163.png)
 
@@ -149,7 +149,7 @@ Na tabela de planejamento de abastecimento, será exibido apenas um número por 
 
 3. Para criar um novo registro, clique com o botão direito na linha de detalhes e selecione “Adicionar novo consumo” <u>or</u> clique no botão “+ Adicionar linha”.
 
-4. Para editar um registro, clique em qualquer célula e edite os detalhes do consumo (tipo de consumo, fonte de dados, quantidade, etc.) Clique duas vezes para ativar qualquer menu suspenso. Consulte [Dados de consumo](#consumption-data) para obter orientações adicionais sobre a entrada de dados de consumo.
+4. Para editar um registro, clique em qualquer célula e edite os detalhes do consumo (tipo de consumo, fonte de dados, quantidade, etc.) Clique duas vezes para ativar qualquer menu suspenso. Consulte [Dados de consumo](04-supply-planning-module-program-data.md#consumption-data) para obter orientações adicionais sobre a entrada de dados de consumo.
 
 5. Clique em “Enviar” para salvar as alterações e retornar à tela principal de planejamento de fornecimento, onde suas alterações serão refletidas. ![A screenshot of a computer Description automatically generated](/img/media/image170.png)
 
@@ -159,7 +159,7 @@ Por padrão, as remessas são mostradas apenas como uma linha na tela de planeja
 
 **Para ver um detalhamento de todas as remessas em um mês, clique na célula do mês correspondente na linha ‘+Embarques’. Para ver o detalhamento de todas as remessas por status, clique na célula do mês correspondente na linha de status individual.**
 
-**ERP (Enterprise Resource Planning)**: os dados vinculados ao ERP dos agentes de compras não são editáveis (consulte [ERP Shipment Linking](#erp-shipment-linking))
+**ERP (Enterprise Resource Planning)**: os dados vinculados ao ERP dos agentes de compras não são editáveis (consulte [ERP Shipment Linking](04-supply-planning-module-program-data.md#erp-shipment-linking))
 
 Para todas as linhas de remessa, as cores indicam o agente de compras. Se um mês tiver múltiplas remessas com diferentes agentes de compras, a célula ficará verde. Os triângulos vermelhos no canto superior direito da célula indicam que uma remessa é uma emergência. Se a remessa for uma compra local, haverá um ícone L no canto inferior esquerdo da célula. Se a remessa estiver vinculada ao ERP, haverá um ícone de link no canto superior esquerdo da célula. As remessas podem ter vários ícones, como um pedido de emergência vinculado ao ERP local. A legenda aparece na parte superior da tela.
 
@@ -193,7 +193,7 @@ As seções a seguir abordarão como atualizar remessas existentes e criar novas
 
 **Atualizando quantidade de remessa com botão recalcular**
 
-Para remessas planejadas no futuro, a QAT irá sugerir uma quantidade revisada de remessa como um aviso prévio para evitar ficar abaixo dos níveis mínimos de estoque. Assim como as remessas sugeridas (consulte [Criando uma nova remessa](#_Creating_a_New)), o QAT só fornecerá o botão de recalcular se a remessa cair em um mês abaixo do mínimo, seguido por pelo menos dois meses que também esteja abaixo do nível mínimo de estoque. A quantidade recomendada pelo botão recalcular seguirá a mesma lógica dos envios sugeridos pelo QAT (ver **Regras para Remessas Sugeridas** abaixo).
+Para remessas planejadas no futuro, a QAT irá sugerir uma quantidade revisada de remessa como um aviso prévio para evitar ficar abaixo dos níveis mínimos de estoque. Assim como as remessas sugeridas (consulte [Criando uma nova remessa](#creating-a-new-shipment)), o QAT só fornecerá o botão de recalcular se a remessa cair em um mês abaixo do mínimo, seguido por pelo menos dois meses que também esteja abaixo do nível mínimo de estoque. A quantidade recomendada pelo botão recalcular seguirá a mesma lógica dos envios sugeridos pelo QAT (ver **Regras para Remessas Sugeridas** abaixo).
 
 Abaixo estão as etapas para usar o botão recalcular na tela Planejamento de Fornecimento:
 
@@ -346,7 +346,7 @@ No pop-up – os usuários podem realizar 2 funções:
 
 ![P2240#yIS1](/img/media/image189.png)
 
-> **Observação:** Os usuários também podem editar essas informações na tela de entrada de Dados da Remessa (consulte [Dados da Remessa](#shipment-data)).
+> **Observação:** Os usuários também podem editar essas informações na tela de entrada de Dados da Remessa (consulte [Dados da Remessa](04-supply-planning-module-program-data.md#shipment-data)).
 
 2. **Visualizar o razão do lote:** Clique na célula <u>Expired Quantity</u>. O QAT abrirá automaticamente uma tela pop-up abaixo com o registro do lote, que mostra a vida útil de um lote mês a mês, desde o recebimento da remessa até o vencimento.
 

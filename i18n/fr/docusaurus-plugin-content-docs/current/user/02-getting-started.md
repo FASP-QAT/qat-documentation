@@ -22,7 +22,7 @@ Le système QAT comporte **trois niveaux hiérarchiques** pour mener les opérat
 
 - **Programme** Level Masters est le troisième niveau de hiérarchie dans QAT. Bien que les administrateurs de programme ne puissent pas ajouter de programmes, ils peuvent mettre à jour les informations du programme (par exemple, les délais de livraison, les frais de transport, etc.) dans le(s) programme(s) qui leur sont attribués. L'administrateur du programme et les utilisateurs du programme peuvent également ajouter et mettre à jour les données du programme, telles que les ajustements de consommation, l'extrapolation et la gestion des arbres (dans les prévisions) ; et la consommation, les stocks, les expéditions (dans la planification des approvisionnements).
 
-Pour en savoir plus sur les fonctionnalités destinées aux administrateurs au niveau des applications et des domaines, veuillez consulter [Annexe 1 : Manuel de l'administrateur des applications et des domaines.](#annex-1-application-realm-administrator-manual)
+Pour en savoir plus sur les fonctionnalités destinées aux administrateurs au niveau des applications et des domaines, veuillez consulter [Annexe 1 : Manuel de l'administrateur des applications et des domaines.](10-annex-1-application-realm-administrator-manual.md#annex-1-application-realm-administrator-manual)
 
 **Les programmes** sont une combinaison de pays, de domaine technique (1 ou plus), d'organisation et de région. Par exemple, **FASPonia**–ARV-MOH-National est un programme de planification de l'approvisionnement dans le cadre du domaine de la santé mondiale pour la gestion et la planification des **antirétroviraux** pour le ministère de la santé du pays fictif FASPonia, et les données de consommation et d'inventaire sont capturées au niveau national (région).
 
@@ -38,7 +38,7 @@ Un administrateur **Realm** gère les données de base et peut avoir accès à t
 
 Au niveau **Application**, il existe un rôle d'administrateur d'application. Ce rôle dispose d'un accès exclusif pour créer des structures de données à l'échelle de l'application, notamment l'ajout de langages, de rôles, la création de domaines, la mise à jour d'étiquettes statiques et dynamiques, entre autres fonctions commerciales.
 
-Veuillez vous référer à [Annexe 4 : Fonctions commerciales](#annex-4-business-functions) pour un tableau avec la liste complète des fonctions commerciales QAT disponibles par rôle d'utilisateur.
+Veuillez vous référer à [Annexe 4 : Fonctions commerciales](13-annex-4-business-functions.md#annex-4-business-functions) pour un tableau avec la liste complète des fonctions commerciales QAT disponibles par rôle d'utilisateur.
 
 ## Comment se connecter à QAT et installer l'application Web progressive (PWA)
 
@@ -232,7 +232,7 @@ La plupart des versions ne nécessiteront aucune action significative de la part
 
 Figure 13 : Invite de publication d'une nouvelle version de QAT pour les utilisateurs
 
-En cas de changement majeur dans la structure de l'architecture backend de QAT, les utilisateurs peuvent être invités à télécharger leur dernière version sur le serveur (voir la section [Upload](#upload) pour plus d'informations) pour éviter de perdre des données une fois la nouvelle version de QAT publiée. L'équipe d'assistance QAT ([support@quantificationanalytics.org](mailto:support@quantificationanalytics.org)) informera les utilisateurs bien à l'avance si un téléchargement de programme est nécessaire.
+En cas de changement majeur dans la structure de l'architecture backend de QAT, les utilisateurs peuvent être invités à télécharger leur dernière version sur le serveur (voir la section [Upload](03-managing-programs-and-versions.md#upload) pour plus d'informations) pour éviter de perdre des données une fois la nouvelle version de QAT publiée. L'équipe d'assistance QAT ([support@quantificationanalytics.org](mailto:support@quantificationanalytics.org)) informera les utilisateurs bien à l'avance si un téléchargement de programme est nécessaire.
 ## Dépannage
 
 Lorsqu'un utilisateur rencontre un problème système potentiel avec QAT, il doit tenter de résoudre le problème en essayant les solutions décrites dans cette section, dans l'ordre dans lequel elles sont décrites (c'est-à-dire, essayez H1 d'abord, et si cela ne fonctionne pas, essayez H2, puis H3). Si aucune de ces étapes ne résout le problème, l'utilisateur doit soumettre un ticket au support technique pour signaler le bug (voir la section « [Signaler un bug](#reporting-a-bug) »).
@@ -309,7 +309,7 @@ Ce message apparaît pour deux raisons : 1) Internet instable ou 2) Internet re
 
 ### Tickets pour l'ajout/la mise à jour d'utilisateurs et de données de base
 
-Lorsqu'un utilisateur doit ajouter ou mettre à jour un utilisateur ou des données de base pour quelque raison que ce soit, il peut le faire en souscrivant un ticket d'assistance. Avant de demander des ajouts ou des modifications aux données principales dans QAT, l'utilisateur doit d'abord vérifier les données principales au niveau du domaine (Realm Level Masters \>\> Product) et le rapport du catalogue de programmes pour s'assurer que les informations n'existent pas déjà. Pour plus d'informations sur la façon d'accéder et d'utiliser les données de base, veuillez consulter [Gestion des programmes](#working-with-program-data) et [Realm Masters](#realm-masters). Pour plus d'informations sur la façon d'accéder au catalogue de programmes, veuillez consulter [Catalogue de programmes](#product). Pour accéder au service d'assistance QAT :
+Lorsqu'un utilisateur doit ajouter ou mettre à jour un utilisateur ou des données de base pour quelque raison que ce soit, il peut le faire en souscrivant un ticket d'assistance. Avant de demander des ajouts ou des modifications aux données principales dans QAT, l'utilisateur doit d'abord vérifier les données principales au niveau du domaine (Realm Level Masters \>\> Product) et le rapport du catalogue de programmes pour s'assurer que les informations n'existent pas déjà. Pour plus d'informations sur la façon d'accéder et d'utiliser les données de base, veuillez consulter [Gestion des programmes](03-managing-programs-and-versions.md#working-with-program-data) et [Realm Masters](10-annex-1-application-realm-administrator-manual.md#realm-masters). Pour plus d'informations sur la façon d'accéder au catalogue de programmes, veuillez consulter [Catalogue de programmes](10-annex-1-application-realm-administrator-manual.md#product). Pour accéder au service d'assistance QAT :
 
 1. > Les utilisateurs peuvent accéder au Helpdesk QAT à partir de deux emplacements différents dans QAT :
     1. > Sur la page de connexion, et
@@ -373,7 +373,7 @@ Le ticket de bogue sera traité par l’équipe de développement en fonction de
 2. Saisissez un résumé du bug ainsi qu'une description du bug. Veuillez être descriptif et fournir autant de détails que possible (_par exemple, sur quel programme/version/fonctionnalité vous travailliez, les étapes que vous avez suivies pour obtenir le bogue, etc_).
 
 3. Téléchargez une capture d'écran du bogue en cliquant sur le bouton « Parcourir » et en extrayant un fichier de capture d'écran enregistré de votre ordinateur.
-    1. Il est également utile de fournir l'exportation du programme, si possible (voir [Exportations de programmes](#export) pour savoir comment exporter un programme local)
+    1. Il est également utile de fournir l'exportation du programme, si possible (voir [Exportations de programmes](03-managing-programs-and-versions.md#export) pour savoir comment exporter un programme local)
 
     2. **\*Remarque** : Si vous souhaitez télécharger plusieurs fichiers, placez les multiples captures d'écran dans un dossier sur votre ordinateur et compressez-le avant de naviguer dans QAT. Ensuite, téléchargez le dossier compressé.\*
 
@@ -681,7 +681,7 @@ Tableau 5 : Boutons couramment utilisés
 
 ## Changer la langue
 
-Pour garantir que QAT soit adaptable aux utilisateurs du monde entier, l'application affiche le texte dans quatre langues différentes : anglais, français, portugais et espagnol. Les utilisateurs sont encouragés à soumettre des tickets s’ils souhaitent voir une traduction d’étiquette particulière améliorée. (_Remarque : les traductions des étiquettes d'application ne peuvent être modifiées que par les **administrateurs d'application**. Les instructions sur la façon de procéder peuvent être trouvées dans la [section traduction](#database-translation)._)
+Pour garantir que QAT soit adaptable aux utilisateurs du monde entier, l'application affiche le texte dans quatre langues différentes : anglais, français, portugais et espagnol. Les utilisateurs sont encouragés à soumettre des tickets s’ils souhaitent voir une traduction d’étiquette particulière améliorée. (_Remarque : les traductions des étiquettes d'application ne peuvent être modifiées que par les **administrateurs d'application**. Les instructions sur la façon de procéder peuvent être trouvées dans la [section traduction](10-annex-1-application-realm-administrator-manual.md#database-translation)._)
 
 Il existe deux manières de modifier la langue affichée pour l'utilisateur :
 

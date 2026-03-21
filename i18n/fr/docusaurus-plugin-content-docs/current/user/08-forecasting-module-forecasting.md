@@ -34,9 +34,9 @@ Il existe deux manières pour un utilisateur d'ajouter des données de consommat
 
 1. > Accédez à l'écran « Prévisions basées sur la consommation » à « Importer depuis le plan d'approvisionnement QAT »
 
-2. > Choisissez le programme de prévision, la plage de données de consommation réelle à importer, le programme du plan d'approvisionnement puis la version du plan d'approvisionnement. _Remarque : seuls les programmes de prévisions qui ont été **téléchargés** sur l'ordinateur local de l'utilisateur seront disponibles dans la liste déroulante « Programme de prévisions ». Voir [Télécharger/Supprimer le programme](#downloaddelete) pour savoir comment télécharger un programme sur l'ordinateur local._
+2. > Choisissez le programme de prévision, la plage de données de consommation réelle à importer, le programme du plan d'approvisionnement puis la version du plan d'approvisionnement. _Remarque : seuls les programmes de prévisions qui ont été **téléchargés** sur l'ordinateur local de l'utilisateur seront disponibles dans la liste déroulante « Programme de prévisions ». Voir [Télécharger/Supprimer le programme](03-managing-programs-and-versions.md#downloaddelete) pour savoir comment télécharger un programme sur l'ordinateur local._
 
-3. > Les utilisateurs mapperont ensuite l'unité de planification du plan d'approvisionnement à l'unité de planification des prévisions. _Remarque : seules les unités de planification qui ont été ajoutées au programme de prévision dans l'écran « Mettre à jour les unités de planification » et pour lesquelles nous avons coché la case de prévision de consommation seront disponibles dans la liste déroulante « Unité de planification de prévision ». Voir Module de prévision [Unités de planification](#planning-units-1) pour savoir comment ajouter des unités de planification à un programme de prévision._
+3. > Les utilisateurs mapperont ensuite l'unité de planification du plan d'approvisionnement à l'unité de planification des prévisions. _Remarque : seules les unités de planification qui ont été ajoutées au programme de prévision dans l'écran « Mettre à jour les unités de planification » et pour lesquelles nous avons coché la case de prévision de consommation seront disponibles dans la liste déroulante « Unité de planification de prévision ». Voir Module de prévision [Unités de planification](07-forecasting-module-program-data.md#planning-units) pour savoir comment ajouter des unités de planification à un programme de prévision._
 
 4. > _Choisissez « Ne pas importer » dans la liste déroulante pour les PU qui ne correspondent pas automatiquement. Si vous avez beaucoup de PU et que vous souhaitez sélectionner « Ne pas importer » pour toutes celles non mappées, vous pouvez cocher la case « Ne pas importer toutes les unités de planification non mappées »_
 
@@ -326,7 +326,7 @@ Les utilisateurs peuvent effectuer une prévision basée sur une arborescence si
 
 - à partir d'un modèle d'arborescence - sélectionnez le nom du modèle souhaité. Si un utilisateur souhaite voir un modèle d'arborescence ajouté à QAT qui n'existe pas et qui bénéficierait à la communauté QAT, il peut soumettre une demande de modification au [Système d'assistance de ticketing QAT] (#qat-helpdesk-and-tickets).
 
-**\*Remarque** : [Forecast Viewers](#annex-3-user-role-matrix) peuvent afficher n'importe quelle arborescence qui a été téléchargée sur le serveur et à laquelle ils ont accès ; cependant, seuls les utilisateurs/administrateurs des prévisions pourront créer et modifier/mettre à jour des arborescences.\*
+**\*Remarque** : [Forecast Viewers](12-annex-3-user-role-matrix.md#annex-3-user-role-matrix) peuvent afficher n'importe quelle arborescence qui a été téléchargée sur le serveur et à laquelle ils ont accès ; cependant, seuls les utilisateurs/administrateurs des prévisions pourront créer et modifier/mettre à jour des arborescences.\*
 
 **<u>Utilisation de cet écran</u> :**
 

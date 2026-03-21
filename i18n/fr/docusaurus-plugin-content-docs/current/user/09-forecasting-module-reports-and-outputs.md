@@ -12,7 +12,7 @@ sidebar_position: 9
 
 **<u>Utilisation de cet écran</u> :**
 
-1. **Vérifiez que toutes les prévisions attendues apparaissent dans le tableau Comparer et sélectionner. Pour ajouter des prévisions, accédez à l'écran** [Gérer l'arborescence](#tree-forecasts) **pour créer une prévision d'arborescence ou à l'écran [Extrapolation](#extrapolation)** **pour créer une prévision basée sur la consommation.** Les utilisateurs devront peut-être également revérifier l'écran [Mettre à jour les unités de planification](#planning-units-1) pour s'assurer que les méthodes de prévision de consommation ou de prévisions d'arborescence ont été cochées/décochées pour chaque unité de planification.
+1. **Vérifiez que toutes les prévisions attendues apparaissent dans le tableau Comparer et sélectionner. Pour ajouter des prévisions, accédez à l'écran** [Gérer l'arborescence](08-forecasting-module-forecasting.md#tree-forecasts) **pour créer une prévision d'arborescence ou à l'écran [Extrapolation](08-forecasting-module-forecasting.md#extrapolation)** **pour créer une prévision basée sur la consommation.** Les utilisateurs devront peut-être également revérifier l'écran [Mettre à jour les unités de planification](07-forecasting-module-program-data.md#planning-units) pour s'assurer que les méthodes de prévision de consommation ou de prévisions d'arborescence ont été cochées/décochées pour chaque unité de planification.
     1. Remarque : les lignes sont surlignées en gris et ne sont pas modifiables lorsqu'il n'y a rien à afficher ou à sélectionner.
 
 2. **Examinez les prévisions disponibles pour chaque unité de planification à l'aide des informations suivantes à l'écran :**
@@ -71,7 +71,7 @@ Figure 189 : Données tabulaires de prévisions mensuelles
 
 - Utilisez les paramètres pour afficher les données graphiques/tabulaires soit par unités de prévision, soit par unités de planification, ainsi que pour afficher l'axe y en unités d'équivalence.
 
-- Les **Unités d'équivalence** (UE) permettent aux utilisateurs d'agréger des données entre des unités de planification ou des unités de prévision qui sont différentes mais qui ont la même unité d'équivalence. Voir [Unités d'équivalence](#equivalency-units) pour plus d'informations.
+- Les **Unités d'équivalence** (UE) permettent aux utilisateurs d'agréger des données entre des unités de planification ou des unités de prévision qui sont différentes mais qui ont la même unité d'équivalence. Voir [Unités d'équivalence](07-forecasting-module-program-data.md#equivalency-units) pour plus d'informations.
 
 - Le filtre « Agrégation sur l'axe X par année » vous permet d'afficher les données agrégées par année plutôt que par mois.
 
@@ -119,7 +119,7 @@ Figure 191 Sommaire des prévisions – Vue nationale
 4. **Cliquez sur la case « Masquer les calculs » pour voir une version simplifiée du tableau.**
 
 5. Pour que les données s'affichent correctement ici, saisissez les données suivantes :
-    1. Sous [Mettre à jour l'unité de planification](#planning-units-1) :
+    1. Sous [Mettre à jour l'unité de planification](07-forecasting-module-program-data.md#planning-units) :
         1. **Stock** – au début de votre période de prévision
 
         2. **Expéditions existantes** – pendant votre période de prévision

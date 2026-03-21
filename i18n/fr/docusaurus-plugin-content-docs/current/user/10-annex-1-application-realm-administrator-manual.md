@@ -220,7 +220,7 @@ Alors que l'objectif du manuel d'utilisation est de guider les administrateurs d
 
 ## Tableau de bord des applications
 
-Les fonctions disponibles sur le tableau de bord de l'application de prévision seront visibles en fonction du **rôle de l'utilisateur**. Vous trouverez ci-dessous une explication des vignettes propres aux administrateurs de niveau application et domaine. Pour une explication des autres vignettes (billets et programme), veuillez consulter [Navigation et barre de menus](#navigation-and-menu-bar). Voir [QAT Dashboard](#qat-dashboard) pour plus d'informations sur le tableau de bord amélioré de planification des approvisionnements.
+Les fonctions disponibles sur le tableau de bord de l'application de prévision seront visibles en fonction du **rôle de l'utilisateur**. Vous trouverez ci-dessous une explication des vignettes propres aux administrateurs de niveau application et domaine. Pour une explication des autres vignettes (billets et programme), veuillez consulter [Navigation et barre de menus](02-getting-started.md#navigation-and-menu-bar). Voir [QAT Dashboard](02-getting-started.md#qat-dashboard) pour plus d'informations sur le tableau de bord amélioré de planification des approvisionnements.
 
 Dans la capture d'écran ci-dessous, le rôle attribué est « **App Level Admin** ».
 
@@ -432,7 +432,7 @@ Figure 205 : Liste actuelle des rôles
 
 3. Entrez le nouveau rôle, la fonction commerciale et le rôle pouvant créer et cliquez sur le bouton « Soumettre ».
 
-4. Pour une description et plus d'informations sur les fonctions commerciales individuelles, voir [Annexe 4 : Fonctions commerciales](#annex-4-business-functions)
+4. Pour une description et plus d'informations sur les fonctions commerciales individuelles, voir [Annexe 4 : Fonctions commerciales](13-annex-4-business-functions.md#annex-4-business-functions)
 
 5. « Can Create Role » permet au nouveau rôle de créer des utilisateurs et de leur attribuer des rôles et des accès spécifiques. Par exemple, un administrateur de domaine peut créer un utilisateur, l'attribuer en tant qu'administrateur de programme et déterminer à quels pays et programmes l'utilisateur aura accès.
 
@@ -448,7 +448,7 @@ Figure 206 : Écran Ajouter un rôle
 
 3. Mettez à jour les informations si nécessaire, puis cliquez sur le bouton « Mettre à jour ».
 
-4. Pour une description et plus d'informations sur les fonctions commerciales individuelles, voir [Annexe 4 : Fonctions commerciales](#annex-4-business-functions)
+4. Pour une description et plus d'informations sur les fonctions commerciales individuelles, voir [Annexe 4 : Fonctions commerciales](13-annex-4-business-functions.md#annex-4-business-functions)
 
 5. « Can Create Role » permet au nouveau rôle de créer des utilisateurs et de leur attribuer des rôles et des accès spécifiques. Par exemple, un administrateur de domaine peut créer un utilisateur, l'attribuer en tant qu'administrateur de programme et déterminer à quels pays et programmes l'utilisateur aura accès.
 
@@ -531,7 +531,7 @@ L'ajout et la mise à jour d'utilisateurs et de leurs rôles/contrôles d'accès
 
 3. Saisissez le nom, l'adresse e-mail, l'organisation et le pays, le rôle et la langue du nouvel utilisateur, puis cliquez sur « Soumettre ».
 
-4. Pour une description détaillée des rôles, de leur fonction et de leur accès, voir [Annexe 3 : Matrice des rôles des utilisateurs](#annex-3-user-role-matrix)
+4. Pour une description détaillée des rôles, de leur fonction et de leur accès, voir [Annexe 3 : Matrice des rôles des utilisateurs](12-annex-3-user-role-matrix.md#annex-3-user-role-matrix)
 
 **Pour mettre à jour un utilisateur existant ou gérer les contrôles d'accès des utilisateurs :**
 
@@ -988,7 +988,7 @@ Figure 234 : Affichage/ajout de catégories d'unités de planification
 
 ##### Unité déclarante alternative
 
-Voir [Unités de reporting alternatives](#alternate-reporting-units) pour plus d'informations.
+Voir [Unités de reporting alternatives](04-supply-planning-module-program-data.md#alternate-reporting-units) pour plus d'informations.
 
 ##### Unité des achats
 
@@ -1056,7 +1056,7 @@ Figure 237 : Catégorie du traceur de mise à jour
 
 #### Unité d'équivalence
 
-L'unité d'équivalence permet aux utilisateurs de gérer des données agrégées sur des produits différents, mais liés. Les unités d'équivalence peuvent être utilisées dans l'[écran de comparaison et de sélection des prévisions](#compare-and-select), l'[écran de prévisions mensuelles](#monthly-forecast), l'[écran d'erreur de prévision (mensuel)](#forecast-error-monthly) et le [rapport sur le plan d'approvisionnement](#supply-plan-report).
+L'unité d'équivalence permet aux utilisateurs de gérer des données agrégées sur des produits différents, mais liés. Les unités d'équivalence peuvent être utilisées dans l'[écran de comparaison et de sélection des prévisions](09-forecasting-module-reports-and-outputs.md#compare-and-select), l'[écran de prévisions mensuelles](09-forecasting-module-reports-and-outputs.md#monthly-forecast), l'[écran d'erreur de prévision (mensuel)](06-supply-planning-module-reports.md#forecast-error-monthly) et le [rapport sur le plan d'approvisionnement](05-supply-planning-module-supply-planning.md#supply-plan-report).
 
 **Pour ajouter un mappage d'unités d'équivalence :**
 

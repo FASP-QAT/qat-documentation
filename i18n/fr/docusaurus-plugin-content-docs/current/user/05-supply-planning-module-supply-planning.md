@@ -24,7 +24,7 @@ pour utiliser cet écran pour la planification active des approvisionnements (y 
 planifier de nouvelles expéditions), mais d'utiliser l'écran de saisie des données lorsque cela est important
 la saisie des données est requise. Notez que certaines sections varient **selon que le
 l'unité de planification est planifiée par MOS ou planifiée par Quantité (selon la sélection dans
-[Mise à jour des unités de planification](#planning-units)) – les différences sont notées ci-dessous.**
+[Mise à jour des unités de planification](04-supply-planning-module-program-data.md#planning-units)) – les différences sont notées ci-dessous.**
   - Cet écran est également visible par l'unité de reporting alternative (ARU) associée à l'unité de planification. Cela signifie que les utilisateurs peuvent visualiser leurs plans d'approvisionnement en termes de noms de produits et d'unités de mesure dans lesquelles ils saisissent les données, les valeurs du tableau et du graphique changeant en fonction du facteur de conversion ARU/PU établi par l'utilisateur (voir Autres unités de rapport). L'utilisateur choisit d'afficher par ARU en cliquant sur le bouton radio, puis en sélectionnant l'ARU souhaité à afficher.
 
 ![A screenshot of a calendar Description automatically generated](/img/media/image155.png)
@@ -44,7 +44,7 @@ en ligne avant de commencer.
 > **Remarque :** autre que l'étape 1 étant requise, les étapes restantes ne sont pas séquentielles, mais une explication des fonctionnalités disponibles dans l'écran de planification des approvisionnements.
 
 1. > Dans la barre de menu de gauche, allez dans Planification des approvisionnements \> « Planification des approvisionnements »
-    1. Sélectionnez le **Programme** souhaité. La liste déroulante de l'écran du plan d'approvisionnement affichera tous les programmes téléchargés par l'utilisateur. Reportez-vous à [Télécharger le programme](#downloaddelete) pour plus de détails sur la façon de télécharger un programme.
+    1. Sélectionnez le **Programme** souhaité. La liste déroulante de l'écran du plan d'approvisionnement affichera tous les programmes téléchargés par l'utilisateur. Reportez-vous à [Télécharger le programme](03-managing-programs-and-versions.md#downloaddelete) pour plus de détails sur la façon de télécharger un programme.
 
     2. Sélectionnez l'**unité de planification QAT ou l'unité de reporting alternative (ARU)** souhaitée.
 
@@ -86,7 +86,7 @@ Figure 102 : Fin du calcul du solde des stocks
 
 Figure 103 Différences dans le tableau de planification des approvisionnements : plan par MOS et plan par quantité
 
--> **La consommation mensuelle moyenne (AMC)** est une moyenne des consommations sur les mois indiquées par les paramètres AMC, qui sont affichés au-dessus du tableau. **Pour modifier ces paramètres, voir [Mise à jour des unités de planification](#planning-units).**
+-> **La consommation mensuelle moyenne (AMC)** est une moyenne des consommations sur les mois indiquées par les paramètres AMC, qui sont affichés au-dessus du tableau. **Pour modifier ces paramètres, voir [Mise à jour des unités de planification](04-supply-planning-module-program-data.md#planning-units).**
 
 ![](/img/media/image163.png)
 
@@ -149,7 +149,7 @@ Dans le tableau de planification des approvisionnements, un seul chiffre s'affic
 
 3. Pour créer un nouvel enregistrement, faites un clic droit sur la ligne de détails et sélectionnez « Ajouter une nouvelle consommation » <u>or</u> cliquez sur le bouton « + Ajouter une ligne ».
 
-4. Pour modifier un enregistrement, cliquez sur n'importe quelle cellule et modifiez les détails de la consommation (type de consommation, source de données, quantité, etc.). Double-cliquez pour activer les listes déroulantes. Voir [Données de consommation](#consumption-data) pour des conseils supplémentaires sur la saisie des données de consommation.
+4. Pour modifier un enregistrement, cliquez sur n'importe quelle cellule et modifiez les détails de la consommation (type de consommation, source de données, quantité, etc.). Double-cliquez pour activer les listes déroulantes. Voir [Données de consommation](04-supply-planning-module-program-data.md#consumption-data) pour des conseils supplémentaires sur la saisie des données de consommation.
 
 5. Cliquez sur « Soumettre » pour enregistrer les modifications et revenir à l'écran principal de planification des approvisionnements, où vos modifications seront reflétées. ![A screenshot of a computer Description automatically generated](/img/media/image170.png)
 
@@ -159,7 +159,7 @@ Par défaut, les expéditions ne sont affichées que sur une seule ligne dans l'
 
 **Pour voir une répartition détaillée de toutes les expéditions au cours d'un mois, cliquez sur la cellule du mois correspondant dans la ligne « + Expéditions ». Pour voir la répartition détaillée de toutes les expéditions par statut, cliquez sur la cellule du mois correspondant dans la ligne de statut individuel.**
 
-**ERP (Enterprise Resource Planning)** : les données liées à l'ERP provenant des agents d'approvisionnement ne sont pas modifiables (voir [ERP Shipment Linking](#erp-shipment-linking))
+**ERP (Enterprise Resource Planning)** : les données liées à l'ERP provenant des agents d'approvisionnement ne sont pas modifiables (voir [ERP Shipment Linking](04-supply-planning-module-program-data.md#erp-shipment-linking))
 
 Pour toutes les lignes d'expédition, les couleurs indiquent l'agent d'approvisionnement. Si un mois comporte plusieurs expéditions avec différents agents d'approvisionnement, la cellule sera verte. Les triangles rouges en haut à droite de la cellule indiquent qu'un envoi est une urgence. Si l'envoi est un approvisionnement local, il y aura une icône L en bas à gauche de la cellule. Si l'envoi est lié à l'ERP, il y aura une icône de lien en haut à gauche de la cellule. Les expéditions peuvent avoir plusieurs icônes, telles qu'une commande d'urgence locale liée à l'ERP. La légende apparaît en haut de l'écran.
 
@@ -193,7 +193,7 @@ Les sections suivantes expliquent comment mettre à jour les expéditions exista
 
 **Mise à jour de la quantité expédiée avec le bouton Recalculer**
 
-Pour les expéditions prévues à l'avenir, QAT suggérera une quantité d'expédition révisée à titre d'avertissement précoce afin d'éviter de descendre en dessous des niveaux de stock minimum. Tout comme les expéditions suggérées (voir [Créer un nouvel envoi](#_Creating_a_New)), QAT ne fournira le bouton de recalcul que si l'envoi tombe dans un mois inférieur au minimum suivi d'au moins deux mois également inférieurs au niveau de stock minimum. La quantité recommandée par le bouton de recalcul suivra la même logique que les expéditions suggérées par QAT (voir **Règles pour les expéditions suggérées** ci-dessous).
+Pour les expéditions prévues à l'avenir, QAT suggérera une quantité d'expédition révisée à titre d'avertissement précoce afin d'éviter de descendre en dessous des niveaux de stock minimum. Tout comme les expéditions suggérées (voir [Créer un nouvel envoi](#creating-a-new-shipment)), QAT ne fournira le bouton de recalcul que si l'envoi tombe dans un mois inférieur au minimum suivi d'au moins deux mois également inférieurs au niveau de stock minimum. La quantité recommandée par le bouton de recalcul suivra la même logique que les expéditions suggérées par QAT (voir **Règles pour les expéditions suggérées** ci-dessous).
 
 Vous trouverez ci-dessous les étapes à suivre pour utiliser le bouton de recalcul dans l'écran Planification des approvisionnements :
 
@@ -346,13 +346,13 @@ Figure 112 : Fenêtre contextuelle des lots affectant l'inventaire final
 
 ![P2240#yIS1](/img/media/image189.png)
 
-> **Remarque :** Les utilisateurs peuvent également modifier ces informations dans l'écran de saisie des données d'expédition (voir [Données d'expédition](#shipment-data)).
+> **Remarque :** Les utilisateurs peuvent également modifier ces informations dans l'écran de saisie des données d'expédition (voir [Données d'expédition](04-supply-planning-module-program-data.md#shipment-data)).
 
 2. **Afficher le grand livre des lots :** Cliquez sur la cellule <u>Expired Quantity</u>. QAT ouvrira automatiquement un écran contextuel ci-dessous avec le grand livre des lots, qui indique la durée de vie d'un lot mois par mois, de la réception de l'expédition à l'expiration.
 
 ![P2247#yIS1](/img/media/image190.png)
 
-> **Remarque :** à moins que l'utilisateur n'associe un lot à des entrées de consommation réelle ou d'ajustement spécifiques (voir « Ajouter/mettre à jour les détails du lot » dans [Données de consommation](#consumption-data) et [Données d'inventaire](#inventaire-data)), QAT utilisera par défaut les quantités de lots mensuelles placées dans la colonne « Auto-alloué » dans le grand livre des lots.
+> **Remarque :** à moins que l'utilisateur n'associe un lot à des entrées de consommation réelle ou d'ajustement spécifiques (voir « Ajouter/mettre à jour les détails du lot » dans [Données de consommation](04-supply-planning-module-program-data.md#consumption-data) et [Données d'inventaire](#inventaire-data)), QAT utilisera par défaut les quantités de lots mensuelles placées dans la colonne « Auto-alloué » dans le grand livre des lots.
 
 ## Planification de scénarios
 

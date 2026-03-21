@@ -13,7 +13,7 @@ sidebar_position: 9
 
 **<u>Using this screen</u>:**
 
-1.  **Check to make sure all expected forecasts appear in the Compare & Select table. To add forecasts, navigate to the** [Manage Tree](#tree-forecasts) **screen to build a tree forecast or the [Extrapolation](#extrapolation)** **screen to build a consumption-based forecast.** Users may also need to double-check the [Update Planning Units](#planning-units-1) screen to make sure the Consumption Forecast or Tree Forecasts methods have been checked/unchecked for each Planning Unit.
+1.  **Check to make sure all expected forecasts appear in the Compare & Select table. To add forecasts, navigate to the** [Manage Tree](08-forecasting-module-forecasting.md#tree-forecasts) **screen to build a tree forecast or the [Extrapolation](08-forecasting-module-forecasting.md#extrapolation)** **screen to build a consumption-based forecast.** Users may also need to double-check the [Update Planning Units](07-forecasting-module-program-data.md#planning-units) screen to make sure the Consumption Forecast or Tree Forecasts methods have been checked/unchecked for each Planning Unit.
     1.  Note: Rows are highlighted gray and non-editable when there is nothing to display or select.
 
 2.  **Review available forecasts for each planning unit using the following information on the screen:**
@@ -21,7 +21,7 @@ sidebar_position: 9
 
 > _Note: the forecast error is not always reliable for tree forecasts – unless a tree forecast has a significant overlap with the past actual data, there may not be past forecast data available for comparison._
 
-2.  **Compare to Consumption Forecast:** QAT compares available Consumption Forecasts and Tree Forecasts. For any Tree Forecasts, QAT will flag the percentage above the highest or below the lowest Consumption Forecast. The comparison will be highlighted in red text if it is outside of the threshold percentages set by the user in the [Version Settings](#version-settings) screen. Assuming reliable actual consumption data, this comparison helps users determine if their Tree Forecasts are comparable to historical consumption. This statistic will not be available for consumption forecasts.
+2.  **Compare to Consumption Forecast:** QAT compares available Consumption Forecasts and Tree Forecasts. For any Tree Forecasts, QAT will flag the percentage above the highest or below the lowest Consumption Forecast. The comparison will be highlighted in red text if it is outside of the threshold percentages set by the user in the [Version Settings](07-forecasting-module-program-data.md#version-settings) screen. Assuming reliable actual consumption data, this comparison helps users determine if their Tree Forecasts are comparable to historical consumption. This statistic will not be available for consumption forecasts.
 
 3.  **Graph: Visually compare the different forecasts.** The forecast selected in the top table will appear **bolded** in the graph.
 
@@ -40,7 +40,7 @@ sidebar_position: 9
 
 **<u>Tips on Using the Graph & Detailed Data Table:</u>**
 
-- A user may view the graph in Planning Unit, Forecasting Unit, [Equivalency Unit](#equivalency-units), and for a specific period of time. If a user chooses to “Show only Forecast Period,” the graph will display only the period of time the user chose as the forecast period in the Version Settings screen.
+- A user may view the graph in Planning Unit, Forecasting Unit, [Equivalency Unit](07-forecasting-module-program-data.md#equivalency-units), and for a specific period of time. If a user chooses to “Show only Forecast Period,” the graph will display only the period of time the user chose as the forecast period in the Version Settings screen.
 
 - By default, QAT will display all available forecasts by Planning Unit and any actuals entered or imported from QAT Supply Planning module in the graph; however, a user may deselect the “Display?” checkbox for any forecasts in the top table if they do not wish to view it in the graph.
 
@@ -72,7 +72,7 @@ Figure 189: Monthly Forecast Tabular Data
 
 - Use the parameters to view the graph/tabular data either by forecasting units or planning units as well as showing the y-axis in equivalency units.
 
-- **Equivalency Units** (EUs) allow users to aggregate data across planning units or forecasting units that are different but have the same equivalency unit. See [Equivalency Units](#equivalency-units) for more information.
+- **Equivalency Units** (EUs) allow users to aggregate data across planning units or forecasting units that are different but have the same equivalency unit. See [Equivalency Units](07-forecasting-module-program-data.md#equivalency-units) for more information.
 
 - The ‘X-axis Aggregate By Year’ filter allows you to view the data aggregated by year instead of by month.
 
@@ -120,7 +120,7 @@ Figure 191 Forecast Summary - National View
 4.  **Click the “hide calculations” checkbox to see a simplified version of the table.**
 
 5.  For the data to display here properly, enter the following data:
-    1.  Under [Update Planning Unit](#planning-units-1):
+    1.  Under [Update Planning Unit](07-forecasting-module-program-data.md#planning-units):
         1.  **Stock** – at the beginning of your forecast period
 
         2.  **Existing shipments** – during your forecast period
@@ -129,7 +129,7 @@ Figure 191 Forecast Summary - National View
 
         4.  **Price Type** and **Unit Prices**
 
-    2.  Under [Update Version Settings](#version-settings):
+    2.  Under [Update Version Settings](07-forecasting-module-program-data.md#version-settings):
         1.  **Freight %** - Freight cost is calculated as a percentage of product cost
 
 **Formulas used to calculate the Procurement Surplus/Gap**

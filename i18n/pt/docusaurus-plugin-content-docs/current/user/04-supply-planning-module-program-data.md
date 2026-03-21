@@ -6,9 +6,9 @@ sidebar_position: 4
 ---
 # Módulo de Planejamento de Fornecimento: Dados do Programa
 
-Conforme definido anteriormente em [Conceitos e termos importantes do QAT](#important-qat-concepts-and-terms), um programa é semelhante em estrutura a um banco de dados de plano de fornecimento do PipeLine. Cada programa consiste em apenas um país, uma ou mais áreas técnicas, uma região (nível nacional, nível central, etc.) e uma organização (MS, apenas PEPFAR, apenas PMI). Cada programa dentro de um domínio é governado pelos mesmos dados mestre padronizados, como catálogo de produtos, agentes de compras, fontes de financiamento, fontes de dados, etc.
+Conforme definido anteriormente em [Conceitos e termos importantes do QAT](01-overview.md#important-qat-concepts-and-terms), um programa é semelhante em estrutura a um banco de dados de plano de fornecimento do PipeLine. Cada programa consiste em apenas um país, uma ou mais áreas técnicas, uma região (nível nacional, nível central, etc.) e uma organização (MS, apenas PEPFAR, apenas PMI). Cada programa dentro de um domínio é governado pelos mesmos dados mestre padronizados, como catálogo de produtos, agentes de compras, fontes de financiamento, fontes de dados, etc.
 
-O gerenciamento de dados do programa fica no terceiro nível da hierarquia do sistema QAT e geralmente é feito por usuários com as funções **administrador do programa e usuário do programa** (para obter mais informações sobre as funções do usuário, consulte [Anexo 3: Matriz de funções do usuário](#annex-3-user-role-matrix)). Os dados mestre em nível de programa gerenciados por esses usuários incluem orçamentos e unidades de relatório alternativas.
+O gerenciamento de dados do programa fica no terceiro nível da hierarquia do sistema QAT e geralmente é feito por usuários com as funções **administrador do programa e usuário do programa** (para obter mais informações sobre as funções do usuário, consulte [Anexo 3: Matriz de funções do usuário](12-annex-3-user-role-matrix.md#annex-3-user-role-matrix)). Os dados mestre em nível de programa gerenciados por esses usuários incluem orçamentos e unidades de relatório alternativas.
 
 Um usuário pode “baixar” ou “excluir” programas de sua máquina local. Os programas também podem ser “importados” para a máquina local ou “exportados” da máquina local para compartilhar com outros usuários se houver problemas de conectividade.
 
@@ -100,7 +100,7 @@ Os gerentes de programa no QAT podem definir seus parâmetros gerais de programa
 1. Clique em “Gerenciamento de programas” e selecione “Atualizar informações do programa”
 
 2. Clique no programa que precisa ser atualizado
-    1. Os administradores do programa podem adicionar/remover agentes de compras e fontes de financiamento que já existem no QAT ao seu programa. Isso, por sua vez, adicionará/removerá os agentes de compras dos campos suspensos nas telas [Entrada de dados da remessa](#shipment-data). Se um usuário quiser adicionar um agente de compras ao seu programa que <u>not</u> exista no QAT, ele poderá emitir um ticket com o sistema [QAT HelpDesk](#tickets-for-addingupdating-users-and-master-data).
+    1. Os administradores do programa podem adicionar/remover agentes de compras e fontes de financiamento que já existem no QAT ao seu programa. Isso, por sua vez, adicionará/removerá os agentes de compras dos campos suspensos nas telas [Entrada de dados da remessa](#shipment-data). Se um usuário quiser adicionar um agente de compras ao seu programa que <u>not</u> exista no QAT, ele poderá emitir um ticket com o sistema [QAT HelpDesk](02-getting-started.md#tickets-for-addingupdating-users-and-master-data).
 
 ![](/img/media/image113.png)
 
@@ -118,7 +118,7 @@ Figura 68: Atualizar informações do programa – Módulo de previsão
 
 A unidade de planejamento é o produto utilizado no QAT como base para planejar compras e exibir consumo, remessas, estoque e ajustes. O nome da unidade de planejamento geralmente inclui uma descrição completa até a embalagem primária; assim, sua nomenclatura segue de perto o tamanho da embalagem em que ocorre a dispensação, ou seja, um frasco de 30 comprimidos, blister de 10x10 cápsulas, etc.
 
-O catálogo da unidade de planejamento QAT é considerado dados mestre em nível de domínio, o que significa que quaisquer adições/edições/subtrações desse catálogo são gerenciadas em nível de domínio e se aplicam a todos os programas dentro desse domínio. Cada programa deve ter pelo menos uma unidade de planejamento que **Administradores de Programa** possam selecionar no catálogo em nível de região para **adicionar a seus programas ou desativar** de seus programas. Os administradores do programa também podem atualizar qualquer parâmetro relacionado a uma unidade de planejamento específica, incluindo a frequência de novos pedidos, meses mínimos de estoque, cálculo de consumo médio mensal, prazo de entrega do agente de compras local, prazo de validade e preço. As unidades de planejamento podem ser desativadas do programa se não estiverem mais em uso, permitindo que os administradores do programa mantenham todos os dados legados. Caso a unidade de planejamento não exista no catálogo do QAT, por favor, levante um ticket através do Helpdesk do QAT para que ele possa ser criado para todo o domínio. Veja mais sobre emissão de tickets na seção [QAT Helpdesk e Tickets](#qat-helpdesk-and-tickets).
+O catálogo da unidade de planejamento QAT é considerado dados mestre em nível de domínio, o que significa que quaisquer adições/edições/subtrações desse catálogo são gerenciadas em nível de domínio e se aplicam a todos os programas dentro desse domínio. Cada programa deve ter pelo menos uma unidade de planejamento que **Administradores de Programa** possam selecionar no catálogo em nível de região para **adicionar a seus programas ou desativar** de seus programas. Os administradores do programa também podem atualizar qualquer parâmetro relacionado a uma unidade de planejamento específica, incluindo a frequência de novos pedidos, meses mínimos de estoque, cálculo de consumo médio mensal, prazo de entrega do agente de compras local, prazo de validade e preço. As unidades de planejamento podem ser desativadas do programa se não estiverem mais em uso, permitindo que os administradores do programa mantenham todos os dados legados. Caso a unidade de planejamento não exista no catálogo do QAT, por favor, levante um ticket através do Helpdesk do QAT para que ele possa ser criado para todo o domínio. Veja mais sobre emissão de tickets na seção [QAT Helpdesk e Tickets](02-getting-started.md#qat-helpdesk-and-tickets).
 
 ![](/img/media/image115.png)
 
@@ -143,7 +143,7 @@ Figura 69: Parâmetros a atualizar por unidade de planejamento.
 - **Prazo de entrega de aquisição local: todo o prazo de entrega (“planejado para recebimento”), em meses, para unidades de planejamento adquiridas localmente. Idealmente, nas compras locais, o prazo de entrega seria muito menor do que nas compras internacionais.
   - > **Prazo de entrega de distribuição: Número de meses entre o recebimento da remessa e o produto a ser distribuído até o nível mais baixo. Usado para remessas sugeridas antes do estoque insuficiente.**
 
-  - > **Prazo de Validade: número de meses desde o recebimento da remessa (status = recebido) até o vencimento. Este é um número médio de meses para a unidade de planejamento – para inserir dados exatos do lote, incluindo datas de vencimento, consulte [Planejamento de fornecimento: estoque expirado do projeto e informações do lote](#supply-planning-project-expired-stock-and-batch-information)**
+  - > **Prazo de Validade: número de meses desde o recebimento da remessa (status = recebido) até o vencimento. Este é um número médio de meses para a unidade de planejamento – para inserir dados exatos do lote, incluindo datas de vencimento, consulte [Planejamento de fornecimento: estoque expirado do projeto e informações do lote](05-supply-planning-module-supply-planning.md#supply-planning-project-expired-stock-and-batch-information)**
 
   - > **Limite de erro de previsão (%): um valor usado nos relatórios de consumo de Erro de previsão (mensal) e Erro de previsão (por PU) como uma demarcação se um erro de previsão é considerado muito alto**
 
@@ -177,7 +177,7 @@ Figura 69: Parâmetros a atualizar por unidade de planejamento.
 
 6. Clique em “Enviar” para salvar as alterações
 
-> **Observação:** Se uma unidade de planejamento necessária não estiver disponível no menu suspenso e, portanto, no catálogo do QAT, crie um ticket por meio do Helpdesk do QAT para que ele possa ser criado para todo o domínio. Veja mais sobre emissão de tickets na seção [QAT Helpdesk e Tickets](#qat-helpdesk-and-tickets).
+> **Observação:** Se uma unidade de planejamento necessária não estiver disponível no menu suspenso e, portanto, no catálogo do QAT, crie um ticket por meio do Helpdesk do QAT para que ele possa ser criado para todo o domínio. Veja mais sobre emissão de tickets na seção [QAT Helpdesk e Tickets](02-getting-started.md#qat-helpdesk-and-tickets).
 
 ### Informações específicas do programa/agente de compras
 
@@ -510,7 +510,7 @@ Figura 80: Adicionar inventário
 
 **Adicionar/atualizar detalhes do lote – ajustes**
 
-(para obter mais informações sobre cálculos de lote QAT, consulte [Anexo 2: Regras de negócios](#annex-2-business-rules) ou Seção 5.E).
+(para obter mais informações sobre cálculos de lote QAT, consulte [Anexo 2: Regras de negócios](11-annex-2-business-rules.md#annex-2-business-rules) ou Seção 5.E).
 
 1. Clique com o botão direito na linha Ajuste e clique em “Mostrar informações do lote”.
 
