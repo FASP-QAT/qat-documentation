@@ -1,14 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
 /**
  * Any CSS included here will be global. The classic template
  * bundles Infima by default. Infima is a CSS framework designed to
  * work well for content-centric websites.
  */
 
-/* You can override the default Infima variables here. 
-See: https://docusaurus.community/knowledge/design/css/variables/
-*/
 :root {
-  /* Primary color palette */
+  /* Modern Typography */
+  --ifm-font-family-base: 'Poppins', sans-serif;
+  --ifm-heading-font-family: 'Poppins', sans-serif;
+
+  /* Refined Primary color palette */
   --ifm-color-primary: #002F6C;
   --ifm-color-primary-dark: #002a61;
   --ifm-color-primary-darker: #002557;
@@ -17,17 +20,16 @@ See: https://docusaurus.community/knowledge/design/css/variables/
   --ifm-color-primary-lighter: #003981;
   --ifm-color-primary-lightest: #003e8b;
   
-  /* Custom red color palette */
+  /* Premium Accent */
   --custom-accent: #BA0C2F;
-  --custom-accent-dark: #a70b2a;
-  --custom-accent-darker: #950a26;
-  --custom-accent-darkest: #840922;
-  --custom-accent-light: #cd0d34;
-  --custom-accent-lighter: #df0e38;
-  --custom-accent-lightest: #f20f3d;
+  --premium-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  --glass-bg: rgba(255, 255, 255, 0.85);
+  --glass-border: rgba(255, 255, 255, 0.2);
 
-  /* Colour overrides */
-  --ifm-code-font-size: 95%;
+  /* Infima Overrides */
+  --ifm-code-font-size: 90%;
+  --ifm-navbar-background-color: var(--glass-bg);
+  --ifm-footer-background-color: #f8fafc;
   --ifm-menu-color-active: var(--custom-accent);
   --ifm-menu-color-background-active: transparent;
   --ifm-breadcrumb-color-active: var(--custom-accent);
@@ -39,52 +41,58 @@ See: https://docusaurus.community/knowledge/design/css/variables/
 }
 
 [data-theme='dark'] {
-  --ifm-color-primary: #A6C5EC;
-  --ifm-color-primary-dark: #8bb3e6;
-  --ifm-color-primary-darker: #70a1e0;
-  --ifm-color-primary-darkest: #558fda;
-  --ifm-color-primary-light: #c1d7f2;
-  --ifm-color-primary-lighter: #dce9f8;
-  --ifm-color-primary-lightest: #f7fbff;
-
-  --custom-accent: #ff1744;
-  --custom-accent-dark: #f01440;
-  --custom-accent-darker: #e31236;
-  --custom-accent-darkest: #d61134;
-  --custom-accent-light: #ff4569;
-  --custom-accent-lighter: #ff6b88;
-  --custom-accent-lightest: #ff97ab;
-
-  --docusaurus-highlighted-code-line-bg: rgba(0, 47, 108, 0.3);
+  --ifm-color-primary: #8bb3e6;
+  --glass-bg: rgba(15, 23, 42, 0.85);
+  --glass-border: rgba(255, 255, 255, 0.1);
+  --premium-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+  --ifm-footer-background-color: #0f172a;
 }
 
-/* add underline to all links and remove from navbar, sidebar and footer */
+/* Glassmorphism for Navbar and Sidebar */
+.navbar {
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--glass-border);
+  box-shadow: var(--premium-shadow);
+}
+
+.theme-doc-sidebar-container {
+  border-right: 1px solid var(--glass-border);
+}
+
+/* Modern Link Hover States */
 a {
+  transition: all 0.2s ease;
   text-decoration: underline;
 }
+
 .navbar__inner a, .table-of-contents a, a.menu__link, a.footer__link-item, a.button {
   text-decoration: none;
 }
 
-/* custom styles for the left sidebar */
+.menu__link {
+  border-radius: 8px;
+  margin: 2px 0;
+  padding: 8px 12px;
+}
+
 .menu__link--active:not(.menu__link--sublist) {
-  border-left: 0.25rem solid var(--custom-accent);
-}
-.menu__list-item .menu__list-item-collapsible a {
-  text-transform: capitalize;
-}
-
-/* custom styles for the top navbar - add an bottom border to the active link */
-.navbar__link--active{
-  border-bottom: 0.25rem solid var(--ifm-color-primary);
+  background: linear-gradient(90deg, rgba(186, 12, 47, 0.1) 0%, transparent 100%);
+  border-left: 4px solid var(--custom-accent) !important;
+  font-weight: 600;
 }
 
-/* custom styles for HRs */
-.section-divider {
-  margin: 3rem auto;
-  width: 100%;
-  border: none;
-  border-bottom: .5rem solid #BA0C2F;
+/* Premium Admonitions (Callouts) */
+.admonition {
+  border-radius: 12px;
+  border-left-width: 6px;
+  box-shadow: var(--premium-shadow);
+  padding: 1.25rem;
+}
+
+.admonition-icon svg {
+  width: 20px;
+  height: 20px;
 }
 .section-divider-footer {
   margin: 3rem auto;
