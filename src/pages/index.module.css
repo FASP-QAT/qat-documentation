@@ -1,122 +1,27 @@
-/* Premium UI Styles */
-.heroBanner {
-  padding: 6rem 0;
-  background: linear-gradient(135deg, #002F6C 0%, #001A3D 100%);
-  color: white;
+/**
+ * CSS files with the .module.css suffix will be treated as CSS modules
+ * and scoped locally.
+ */
+
+ .heroBanner {
+  padding: 4rem 0;
   text-align: center;
   position: relative;
   overflow: hidden;
 }
 
-.heroTitle {
-  font-family: 'Outfit', sans-serif;
-  font-size: 4rem;
-  font-weight: 700;
-  margin-bottom: 1rem;
-  background: linear-gradient(to right, #fff, #A6C5EC);
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
+@media screen and (max-width: 996px) {
+  .heroBanner {
+    padding: 2rem;
+  }
 }
 
-.heroSubtitle {
-  font-size: 1.5rem;
-  opacity: 0.9;
-  margin-bottom: 2rem;
-}
-
-.heroDescriptionContainer {
-  max-width: 800px;
-  margin: 0 auto;
-}
-
-.heroDescription {
-  font-size: 1.1rem;
-  line-height: 1.6;
-  margin-bottom: 3rem;
-  opacity: 0.8;
-}
-
-.heroButtons {
-  display: flex;
-  gap: 1rem;
-  justify-content: center;
-}
-
-.features {
-  padding: 4rem 0;
-  background: #f8fafc;
-}
-
-.premiumCard {
-  background: white;
-  border-radius: 16px;
-  overflow: hidden;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  border: 1px solid rgba(0, 0, 0, 0.05);
-}
-
-.premiumCard:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
-}
-
-.cardHeader {
-  height: 200px;
-  background: #f1f5f9;
+.buttons {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 1rem;
 }
 
-.cardImage {
-  max-height: 100%;
-  width: auto;
-  filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.1));
-}
-
-.cardBody {
-  padding: 2rem;
-  flex-grow: 1;
-  display: flex;
-  flex-direction: column;
-}
-
-.cardBody h3 {
-  font-family: 'Outfit', sans-serif;
-  margin-bottom: 1rem;
-  color: #002F6C;
-}
-
-.cardBody p {
-  font-size: 0.95rem;
-  color: #64748b;
-  margin-bottom: 2rem;
-  line-height: 1.5;
-}
-
-[data-theme='dark'] .features {
-  background: #0f172a;
-}
-
-[data-theme='dark'] .premiumCard {
-  background: #1e293b;
-  border-color: rgba(255, 255, 255, 0.05);
-}
-
-[data-theme='dark'] .cardHeader {
-  background: #334155;
-}
-
-[data-theme='dark'] .cardBody h3 {
-  color: #A6C5EC;
-}
-
-[data-theme='dark'] .cardBody p {
-  color: #94a3b8;
+.dropShadow {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.08);
 }

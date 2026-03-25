@@ -9,33 +9,25 @@ import styles from './index.module.css';
 function HomepageHeader() {
   const {siteConfig} = useDocusaurusContext();
   return (
-    <header className={clsx('hero', styles.heroBanner)}>
+    <header className={clsx('hero hero--primary', styles.heroBanner)}>
       <div className="container">
-        <Heading as="h1" className={styles.heroTitle}>
+        <Heading as="h1" className="hero__title">
           Quantification Analytics Tool
         </Heading>
-        <p className={styles.heroSubtitle}>
-          Modern Country-Led Forecasting & Supply Planning
+        <p className="hero__subtitle">
+          QAT Documentation Platform
         </p>
-        <div className={styles.heroDescriptionContainer}>
-          <p className={styles.heroDescription}>
-            Funded by USAID, QAT enables program managers to easily build 
-            multiple forecasts, optimize commodity procurement, and monitor 
-            stock status with advanced analytical capabilities and automated data exchange.
+        <p style={{ textAlign: 'center', maxWidth: '800px', margin: '2rem auto', fontSize: '1.2rem' }}>
+          The Quantification Analytics Tool (QAT), is a modernized solution for 
+          country-led forecasting and supply planning. Funded by USAID, QAT 
+          leverages new technologies and enhances the existing tools such as, 
+          PipeLine and Quantimed. With an enhanced user interface and 
+          usability, greater analytical capabilities and automated data 
+          exchange, this new tool enables program managers to easily build 
+          multiple forecasts for comparison and selection, optimize commodity 
+          procurement and delivery schedules, monitor the stock status of 
+          products and share data with external platforms and key stakeholders.
           </p>
-          <div className={styles.heroButtons}>
-            <Link
-              className="button button--primary button--lg"
-              to="/docs/user/introduction">
-              Get Started
-            </Link>
-            <Link
-              className="button button--secondary button--lg"
-              to="/docs/developer/overview">
-              Architecture
-            </Link>
-          </div>
-        </div>
       </div>
     </header>
   );
@@ -45,49 +37,100 @@ function ResourceColumns() {
   const resources = [
     {
       image: "img/home/QAT Overview Cover.png",
-      heading: "Overview Guide",
-      description: "Learn how QAT enhances supply planning through advanced analytics and automated data exchange.",
+      heading: "Overview",
+      text: <>
+        <p>Download this overview to learn how QAT enhances supply planning through its improved 
+        interface, advanced analytics, and automated data exchange.</p><p>This two-page document 
+        highlights key features that help program managers optimize procurement, monitor 
+        stock levels, and share data efficiently with stakeholders.</p>
+      </>,
       link: "https://www.ghsupplychain.org/sites/default/files/2023-02/QAT_Overview_External.pdf"
     },
     {
       image: "img/home/QAT User Manual Cover Image.png",
       heading: "User Manual",
-      description: "Complete guide for online/offline functionality, scenario planning, and best practices.",
+      text: <>
+        <p>Download the QAT User Manual to learn how to use this supply planning tool.</p>
+        <p>The manual covers:
+        <ol>
+          <li>Essential background and development information</li>
+          <li>Step-by-step guidance for both online and offline functionality</li>
+          <li>Advanced features including scenario planning and updated planning logic</li>
+          <li>Best practices for master data management and program standardization</li>
+          <li>Instructions for monitoring stock status, optimizing procurement, and sharing data</li>
+        </ol></p>
+      </>,
       link: "https://www.ghsupplychain.org/sites/default/files/2025-01/QAT%20User%20Manual_2024.12.31.pdf"
     },
     {
       image: "img/home/QAT Reports Reference Sheet Image.png",
-      heading: "Reports Reference",
-      description: "Visual guide to Stock Status, Consumption, and Inventory reports available in QAT.",
+      heading: "Reports Reference Sheet",
+      text: <>
+        <p>Download the QAT Reports Reference Sheet to learn about the reports available in QAT, 
+        which cover Stock Status, Consumption, Shipment, and Inventory.</p><p>The reference sheet 
+        provides visual examples and brief descriptions of each report, including the 
+        Program Catalog and Supply Plan Report. This guide helps users quickly identify 
+        the most appropriate reports for their specific data analysis needs.</p>
+      </>,
       link: "https://www.ghsupplychain.org/sites/default/files/2023-11/Reports%20Reference%20Sheet.pdf"
     }
   ];
 
   return (
-    <section className={styles.features}>
-      <div className="container">
-        <div className="row">
-          {resources.map((props, idx) => (
-            <div key={idx} className={clsx('col col--4')}>
-              <div className={styles.premiumCard}>
-                <div className={styles.cardHeader}>
-                  <img src={props.image} alt={props.heading} className={styles.cardImage} />
-                </div>
-                <div className={styles.cardBody}>
-                  <Heading as="h3">{props.heading}</Heading>
-                  <p>{props.description}</p>
-                  <Link
-                    className="button button--secondary button--block"
-                    to={props.link}>
-                    Download PDF
-                  </Link>
-                </div>
-              </div>
+    <div className="container">
+      <div style={{
+        display: 'flex',
+        flexWrap: 'wrap',
+        gap: '2rem',
+        marginTop: '3rem',
+        justifyContent: 'center',
+        alignItems: 'start'
+      }}>
+        {resources.map((resource, index) => (
+          <div key={index} style={{
+            flex: '1 1 300px',
+            maxWidth: '400px',
+            display: 'flex',
+            flexDirection: 'column',
+            alignItems: 'center',
+            textAlign: 'center'
+          }}>
+            <Heading as="h3" style={{ marginBottom: '1rem' }}>
+              {resource.heading}
+            </Heading>
+            <Link
+              to={resource.link}
+              className={styles.imageLink}
+            >
+              <img 
+                src={resource.image}
+                alt={resource.heading}
+                style={{
+                  width: 'auto',
+                  height: '200px',
+                  objectFit: 'contain',
+                  marginBottom: '1rem'
+                }}
+                className={styles.dropShadow}
+              />
+            </Link>
+            <Link
+              className="button button--primary"
+              to={resource.link}
+              style={{ marginTop: 'auto' }}
+            >
+              Download
+            </Link>
+            <div style={{ 
+              textAlign: 'left',
+              marginTop: '1rem'
+            }}>
+              {resource.text}
             </div>
-          ))}
-        </div>
+          </div>
+        ))}
       </div>
-    </section>
+    </div>
   );
 }
 

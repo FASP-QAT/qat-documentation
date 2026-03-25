@@ -100,7 +100,6 @@ Details on the end points and the parameters that you need to pass and that you 
 As an example, to generate the JWT authorization token you need to call the `https://www.quantificationanalytics.org/authenticate` endpoint. The Username and Password should be passed to the end point as part of the Body as a JSON object.
 
 Sample JSON
-
 ```json
 {
   "username": "sombody@somedomain.com",

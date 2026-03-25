@@ -8,9 +8,7 @@ sidebar_position: 6
 # QAT Application Rollback Procedure
 
 ## Prerequisites
-
 Before starting rollback, ensure you have:
-
 - Previous commit hashes (saved during installation)
 - Database backup (taken before installation)
 - Access to both API and UI repositories
@@ -18,7 +16,6 @@ Before starting rollback, ensure you have:
 ## Rollback Steps
 
 ### 1. Database Rollback
-
 1. Connect to your MySQL database server
 2. Restore the previous database backup:
    ```bash
@@ -26,34 +23,28 @@ Before starting rollback, ensure you have:
    ```
 
 ### 2. UI Rollback
-
 1. Navigate to the UI directory:
-
    ```bash
    cd /home/ubuntu/GitRepo/fasp-core-ui
    ```
 
 2. Stop the UI service:
-
    ```bash
    pm2 stop QAT-React
    ```
 
 3. Revert to previous commit:
-
    ```bash
    git checkout $(cat /backup/fasp/ui_last_commit_$(date +%Y%m%d_%H%M%S).txt)
    ```
 
 4. Clean and reinstall dependencies:
-
    ```bash
    rm -rf node_modules
    npm install
    ```
 
 5. Start the UI service:
-
    ```bash
    pm2 start QAT-React
    ```
@@ -64,27 +55,22 @@ Before starting rollback, ensure you have:
    ```
 
 ### 3. API Rollback
-
 1. Navigate to the API directory:
-
    ```bash
    cd /home/ubuntu/GitRepo/fasp-api
    ```
 
 2. Stop the API service:
-
    ```bash
    pm2 stop fasp-api
    ```
 
 3. Revert to previous commit:
-
    ```bash
    git checkout $(cat /backup/fasp/api_last_commit_$(date +%Y%m%d_%H%M%S).txt)
    ```
 
 4. Rebuild and redeploy:
-
    ```bash
    run sh buildAndDeploy.sh
    ```
@@ -95,9 +81,7 @@ Before starting rollback, ensure you have:
    ```
 
 ### 4. Post-Rollback Verification
-
 1. Check service status:
-
    ```bash
    pm2 status
    ```
@@ -109,17 +93,15 @@ Before starting rollback, ensure you have:
    - Basic navigation
    - Core features
 5. Monitor logs for any errors:
-
    ```bash
    # UI logs
    pm2 log QAT-React
-
+   
    # API logs
    tail -f /home/ubuntu/QAT/logs/qat/faspLogger.log
    ```
 
 ## Troubleshooting
-
 - If services fail to start:
   - Check logs for specific error messages
   - Verify all dependencies are installed
