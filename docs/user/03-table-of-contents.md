@@ -9,7 +9,6 @@ sidebar_position: 3
 
 Below is the full breakdown of the QAT user documentation. Click on any section to navigate to the detailed guide.
 
-- [Acronyms](18-acronyms.md)
 - [Section 1: Overview](04-overview.md#overview)
 - [Section 2: Getting Started](05-getting-started.md#getting-started)
 - [Section 3: Managing Programs and Versions](06-managing-programs-and-versions.md#managing-programs-and-versions)
@@ -24,6 +23,7 @@ Below is the full breakdown of the QAT user documentation. Click on any section 
 - [Annex 3: User Role Matrix](15-annex-3-user-role-matrix.md#annex-3-user-role-matrix)
 - [Annex 4: Business Functions](16-annex-4-business-functions.md#annex-4-business-functions)
 - [Annex 5: PipeLine Program Import](17-annex-5-pipeline-program-import.md#annex-5-pipeline-program-import)
+- [Acronyms](18-acronyms.md)
 
 ---
 

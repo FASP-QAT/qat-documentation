@@ -7,8 +7,6 @@ sidebar_position: 4
 
 # Overview
 
-# Overview
-
 ## Introduction
 
 The Global Health Supply Chain – Procurement and Supply Management (GHSC-PSM) program is an official United States Agency for International Development (USAID) project. Implemented by Chemonics International and its consortium members, GHSC-PSM ensures the uninterrupted supply of health commodities to support U.S. Government-funded public health initiatives worldwide.
@@ -100,3 +98,7 @@ QAT empowers local program managers to take charge of their own forecasting and 
 | **Tree Template** | Pre-defined forecasting trees that can be downloaded and customized to a specific user's context. |
 | **Usage Template** | Pre-defined rates of use for specific products that can be applied consistently across different trees and programs. |
 | **Continuous and Discrete Usage** | When defining usage rates, users can choose between **Continuous** (ongoing) or **Discrete** (specific period or single-use) applications. |
+
+### Acronyms
+
+For a comprehensive list of acronyms used in the QAT application and documentation, please see the [Acronyms](18-acronyms.md) page.
