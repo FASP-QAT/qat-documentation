@@ -1,12 +1,12 @@
 ---
 id: forecasting-module-program-data
-title: "Module de prévision : données du programme"
-sidebar_label: "Module de prévision : données du programme"
+title: "Forecasting Module: Program Data"
+sidebar_label: "Forecasting Module: Program Data"
 sidebar_position: 10
 ---
 # Module de prévision : données du programme
 
-##Présentation
+## Présentation
 Une prévision est une estimation des quantités de produits requises par les clients sur une période future. Dans QAT, les prévisions suivent un flux de travail structuré : **Configuration** → **Sélection de méthodologie** → **Saisie de données** → **Analyse et sélection**.
 
 ### Méthodologies de prévision
