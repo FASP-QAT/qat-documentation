@@ -39,6 +39,19 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
+      # Setup deep-translator for translating the documentation
+      - name: Setup Deep-Translator
+        run: python3 -m pip install deep-translator
+        
+      # Run the python script to build the User manual in other languages
+      - name: Translate
+        run: python3 docs/translate_docs.py
+        continue-on-error: false
+
+      - name: Translate Sidebar and Frontmatter
+        run: python3 docs/translate_sidebar_frontmatter.py
+        continue-on-error: false
+
       - name: Build website
         run: npm run build
         continue-on-error: false
