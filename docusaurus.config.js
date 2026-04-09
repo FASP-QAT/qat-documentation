@@ -110,8 +110,7 @@ const config = {
             position: 'left',
           },
           {
-            type: 'docSidebar',
-            sidebarId: 'userSidebar',
+            type: 'localeDropdown',
             label: 'User',
             position: 'left',
           },
@@ -126,10 +125,6 @@ const config = {
             sidebarId: 'api-latest',
             label: 'API',
             position: 'left',
-          },
-          {
-            type: 'localeDropdown',
-            position: 'right',
           },
           {
             href: 'https://github.com/FASP-QAT',
