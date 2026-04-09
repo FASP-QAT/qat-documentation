@@ -11,7 +11,7 @@ def translate_markdown():
         return
 
     target_languages = {
-        'fr': 'French',
+        # 'fr': 'French',
         'es': 'Spanish',
         'pt': 'Portuguese',
         # 'fr': 'French' # Uncomment if you want to redo French too!

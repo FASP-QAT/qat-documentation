@@ -4,7 +4,7 @@
 // There are various equivalent ways to declare your Docusaurus config.
 // See: https://docusaurus.io/docs/api/docusaurus-config
 
-import {themes as prismThemes} from 'prism-react-renderer';
+import { themes as prismThemes } from 'prism-react-renderer';
 
 /** define the GIT repository details */
 const orgName = 'FASP-QAT';
@@ -213,62 +213,62 @@ const config = {
         theme: prismThemes.github,
         darkTheme: prismThemes.dracula,
       },
-      // announcementBar: {
-      //   id: "announcementBar_1",
-      //   content: "Draft version",
-      //   isCloseable: false,
-      // },
+      announcementBar: {
+        id: "announcementBar_1",
+        content: "Draft version",
+        isCloseable: false,
+      },
     }),
 
-    plugins: [
-      require.resolve('docusaurus-plugin-image-zoom'),
-      [
-        'docusaurus-plugin-openapi-docs',
-        {
-          id: "api",
-          docsPluginId: "classic",
-          config: {
-            api: {
-              // current version
-              specPath: "static/api/api-docs-2.97.json",
-              outputDir: "docs/generated/api",
-              sidebarOptions: {
-                groupPathsBy: "tag",
-                categoryLinkSource: "tag",
-              },
-              showSchemas: true,
-              version: "2.97",
-              label: "v2.97",
-              baseUrl: "api",
-              downloadUrl: `${rawDownloadUrl}/static/api/api-docs-2.97.json`,
-              versions: {
-                // previous versions
-                "2.12": {
-                  specPath: "static/api/Altius-QAT-2.12-swagger.json",
-                  outputDir: "docs/generated/api/v2.12",
-                  label: "v2.12",
-                  baseUrl: "api-2.12",
-                  downloadUrl: `${rawDownloadUrl}/static/api/Altius-QAT-2.12-swagger.json`,
-                },
+  plugins: [
+    require.resolve('docusaurus-plugin-image-zoom'),
+    [
+      'docusaurus-plugin-openapi-docs',
+      {
+        id: "api",
+        docsPluginId: "classic",
+        config: {
+          api: {
+            // current version
+            specPath: "static/api/api-docs-2.97.json",
+            outputDir: "docs/generated/api",
+            sidebarOptions: {
+              groupPathsBy: "tag",
+              categoryLinkSource: "tag",
+            },
+            showSchemas: true,
+            version: "2.97",
+            label: "v2.97",
+            baseUrl: "api",
+            downloadUrl: `${rawDownloadUrl}/static/api/api-docs-2.97.json`,
+            versions: {
+              // previous versions
+              "2.12": {
+                specPath: "static/api/Altius-QAT-2.12-swagger.json",
+                outputDir: "docs/generated/api/v2.12",
+                label: "v2.12",
+                baseUrl: "api-2.12",
+                downloadUrl: `${rawDownloadUrl}/static/api/Altius-QAT-2.12-swagger.json`,
               },
             },
-          }
-        },
-      ]
-    ],
-    themes: [
-      'docusaurus-theme-openapi-docs',
-      [
-        "@easyops-cn/docusaurus-search-local",
-        ({
-          hashed: true,
-          language: ["en", "fr", "es", "pt"],
-          indexDocs: true,
-          highlightSearchTermsOnTargetPage: true,
-          searchBarPosition: "right",
-        })
-      ]
-    ],
+          },
+        }
+      },
+    ]
+  ],
+  themes: [
+    'docusaurus-theme-openapi-docs',
+    [
+      "@easyops-cn/docusaurus-search-local",
+      ({
+        hashed: true,
+        language: ["en", "fr", "es", "pt"],
+        indexDocs: true,
+        highlightSearchTermsOnTargetPage: true,
+        searchBarPosition: "right",
+      })
+    ]
+  ],
 };
 
 export default config;
