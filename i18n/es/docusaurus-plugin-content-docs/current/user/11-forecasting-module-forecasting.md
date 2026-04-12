@@ -1,7 +1,7 @@
 ---
 id: forecasting-module-forecasting
-title: "Módulo de pronóstico: pronóstico"
-sidebar_label: "Módulo de pronóstico: pronóstico"
+title: "Forecasting Module: Forecasting"
+sidebar_label: "Forecasting Module: Forecasting"
 sidebar_position: 11
 ---
 # Módulo de pronóstico: pronóstico

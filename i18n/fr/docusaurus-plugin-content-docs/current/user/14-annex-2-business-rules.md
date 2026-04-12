@@ -1,7 +1,7 @@
 ---
 id: annex-2-business-rules
-title: "Annexe 2 : Règles Métier"
-sidebar_label: "Annexe 2 : Règles Métier"
+title: "Annex 2: Business Rules"
+sidebar_label: "Annex 2: Business Rules"
 sidebar_position: 14
 ---
 # Annexe 2 : Règles Métier
@@ -24,7 +24,7 @@ Cette annexe documente les formules mathématiques de base et les conditions log
   - *S'il manque des données réelles dans une région :* `MAX(Sum(Actual Consumption), Sum(Forecasted Consumption))`.
 
 ### 3. Paramètres du plan d'approvisionnement
-- **AMC (Consommation Mensuelle Moyenne)** : `[Sum(Full Demand in Past Window) + Sum(Full Demand in Future Window)] / Total Months`.
+- **AMC (Consommation mensuelle moyenne)** : `[Sum(Full Demand in Past Window) + Sum(Full Demand in Future Window)] / Total Months`.
 - **Min MOS** : `MAX(Program Min MOS, Realm Min MOS Guardrail)`.
 - **MOS maximum** : `MIN(MAX(Min MOS + Reorder Interval, Realm Min Max Guardrail), Realm Max Max Guardrail)`.
 - **Stock minimum** : `AMC × Min MOS`.

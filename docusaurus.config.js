@@ -266,6 +266,14 @@ const config = {
         indexDocs: true,
         highlightSearchTermsOnTargetPage: true,
         searchBarPosition: "right",
+        searchContextByPaths: [
+          { path: 'docs/user', label: 'User' },
+          { path: 'docs/developer', label: 'Developer' },
+          { path: 'docs/community', label: 'Community' },
+          { path: 'docs/product', label: 'About' },
+          { path: 'docs/api', label: 'API' },
+        ],
+        hideSearchBarWithNoSearchContext: false,
       })
     ]
   ],

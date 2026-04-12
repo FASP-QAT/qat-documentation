@@ -1,7 +1,7 @@
 ---
 id: supply-planning-module-supply-planning
-title: "Módulo de Planejamento de Fornecimento: Planejamento de Fornecimento"
-sidebar_label: "Módulo de Planejamento de Fornecimento: Planejamento de Fornecimento"
+title: "Supply Planning Module: Supply Planning"
+sidebar_label: "Supply Planning Module: Supply Planning"
 sidebar_position: 8
 ---
 # Módulo de Planejamento de Fornecimento: Planejamento de Fornecimento
@@ -119,7 +119,7 @@ O Relatório do Plano de Fornecimento fornece uma visão abrangente do status do
 
 **Principais recursos:**
 - **Visualizações tabulares e gráficas:** os dados são apresentados como um gráfico interativo e uma tabela de dados detalhada.
-- **Remessas Desagregadas:** Veja detalhes individuais da remessa (Fonte de Financiamento, Status, Agente de Compras) diretamente na tabela.
+- **Remessas Desagregadas:** Veja detalhes de remessas individuais (Fonte de Financiamento, Status, Agente de Compras) diretamente na tabela.
 - **Exportação:** Suporta exportações de PDF e CSV com várias opções de agregação.
 
 ![Supply Plan Report](/img/media/image193.png)

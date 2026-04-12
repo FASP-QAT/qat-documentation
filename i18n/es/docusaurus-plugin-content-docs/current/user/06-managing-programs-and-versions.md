@@ -1,7 +1,7 @@
 ---
 id: managing-programs-and-versions
-title: "Gestión de programas y versiones"
-sidebar_label: "Gestión de programas y versiones"
+title: "Managing Programs and Versions"
+sidebar_label: "Managing Programs and Versions"
 sidebar_position: 6
 ---
 # Gestión de programas y versiones
@@ -18,7 +18,7 @@ QAT le permite administrar los datos del programa a través de cuatro acciones p
 | **Importar** | Sin conexión | Cargue datos de un archivo `.zip` exportado en QAT. |
 
 > [!NOTA]
-> Los programas de Previsión y Planificación de Suministros son módulos separados. Asegúrese de estar en el módulo correcto antes de realizar cualquier operación de datos.
+> Los programas de Previsión y Planificación de Suministros son módulos independientes. Asegúrese de estar en el módulo correcto antes de realizar cualquier operación de datos.
 
 ### Resumen del flujo de trabajo
 - **Descargar:** Necesario para comenzar a trabajar en cualquier programa.
@@ -110,7 +110,7 @@ Para mejorar el rendimiento de programas grandes, puede descargar una versión t
 #### Para revisores:
 - **Pestaña Planificación de suministros:** Revise el estado del stock y los datos de cada unidad de planificación.
 - **Pestaña Lista de problemas de QAT:** Revise todos los problemas marcados.
-- **Acción:** Marque la casilla **Revisado** para cada problema. Puede agregar **Notas del revisor** o actualizar el **Estado del problema** (por ejemplo, marcar como "Resuelto").
+- **Acción:** Marque la casilla **Revisado** para cada problema. Puede agregar **Notas del revisor** o actualizar el **Estado del problema** (por ejemplo, marcarlo como "Resuelto").
 - **Problemas manuales:** Haga clic en el icono **+** para agregar problemas no detectados por la validación automática.
 - **Aprobación:** Establezca el estado en **Aprobado** o **Necesita revisión**, agregue notas obligatorias y haga clic en **Actualizar**.
 

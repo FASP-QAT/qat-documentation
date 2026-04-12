@@ -1,7 +1,7 @@
 ---
 id: annex-2-business-rules
-title: "Anexo 2: Reglas de Negocio"
-sidebar_label: "Anexo 2: Reglas de Negocio"
+title: "Annex 2: Business Rules"
+sidebar_label: "Annex 2: Business Rules"
 sidebar_position: 14
 ---
 # Anexo 2: Reglas de Negocio
@@ -13,7 +13,7 @@ Este anexo documenta las fórmulas matemáticas básicas y las condiciones lógi
 ### 1. Conceptos básicos del inventario
 - **Saldo de apertura**: `Opening Balance(t) = Ending Balance(t-1)`. (El primer mes por defecto es 0).
 - **Stock caducado**: `Sum(Ending Balance of batches expiring in month t)`.
-- **Envíos Totales**: `Sum(Quantities where Receive Date is in month t)`.
+- **Envíos totales**: `Sum(Quantities where Receive Date is in month t)`.
 - **Inventario Proyectado**: `Opening Balance + Total Shipments ± Total Adjustments - Final Consumption - Expired Stock`.
 
 ### 2. Stock final y consumo
@@ -47,7 +47,7 @@ Se utiliza para consumir existencias según las fechas de vencimiento más tempr
 2. Calcular **Consumo no asignado** (Consumo final - Ajustes).
 3. Recorrer lotes:
    - `Batch Ending Balance = MAX(0, Batch Temp Balance - Unallocated Consumption)`.
-   - Subtract consumed amount from the total `Unallocated Consumption` pool.
+   - Reste la cantidad consumida del total del grupo `Unallocated Consumption`.
 
 ### LEFO (Último vencimiento, primero en salir)
 Se utiliza principalmente para distribuir ajustes negativos (pérdidas).

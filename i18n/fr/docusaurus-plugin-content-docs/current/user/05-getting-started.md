@@ -1,7 +1,7 @@
 ---
 id: getting-started
-title: "Mise en route"
-sidebar_label: "Mise en route"
+title: "Getting Started"
+sidebar_label: "Getting Started"
 sidebar_position: 5
 ---
 # Mise en route
@@ -145,7 +145,7 @@ Si une actualisation ne fonctionne pas, essayez une **synchronisation complète 
 - *Exigence :* Une connexion Internet stable est requise.
 
 ![Full Master Data Sync](/img/media/image24.png)
-*Figure 5: Full Master Data Sync Link*
+*Figure 5 : Lien de synchronisation complet des données de base*
 
 #### 3. Effacer les données du site
 Comme dernière étape de dépannage, vous pouvez effacer toutes les données stockées localement. 
@@ -172,7 +172,7 @@ Si vous voyez un message « Erreur réseau », cela est généralement dû à :
 
 ### Tickets pour l'ajout/la mise à jour d'utilisateurs et de données de base
 
-Lorsqu'un utilisateur doit ajouter ou mettre à jour un utilisateur ou des données de base pour quelque raison que ce soit, il peut le faire en souscrivant un ticket d'assistance. Before requesting any additions or changes to the master data in QAT, the user should first check the realm-level master data (Realm Level Masters \>\> Product) and the Program Catalog Report to make sure the information does not already exist. Pour plus d'informations sur la façon d'accéder et d'utiliser les données de base, veuillez consulter [Program Management](06-managing-programs-and-versions.md#working-with-program-data) et [Realm Masters](13-annex-1-application-realm-administrator-manual.md#realm-masters). Pour plus d'informations sur la façon d'accéder au catalogue de programmes, veuillez consulter [Catalogue de programmes](13-annex-1-application-realm-administrator-manual.md#product). Pour accéder au service d'assistance QAT :
+Lorsqu'un utilisateur doit ajouter ou mettre à jour un utilisateur ou des données de base pour quelque raison que ce soit, il peut le faire en souscrivant un ticket d'assistance. Avant de demander des ajouts ou des modifications aux données principales dans QAT, l'utilisateur doit d'abord vérifier les données principales au niveau du domaine (Realm Level Masters \>\> Product) et le rapport du catalogue de programmes pour s'assurer que les informations n'existent pas déjà. Pour plus d'informations sur la façon d'accéder et d'utiliser les données de base, veuillez consulter [Program Management](06-managing-programs-and-versions.md#working-with-program-data) et [Realm Masters](13-annex-1-application-realm-administrator-manual.md#realm-masters). Pour plus d'informations sur la façon d'accéder au catalogue de programmes, veuillez consulter [Catalogue de programmes](13-annex-1-application-realm-administrator-manual.md#product). Pour accéder au service d'assistance QAT :
 
 1. > Les utilisateurs peuvent accéder au Helpdesk QAT à partir de deux emplacements différents dans QAT :
     1. > Sur la page de connexion, et

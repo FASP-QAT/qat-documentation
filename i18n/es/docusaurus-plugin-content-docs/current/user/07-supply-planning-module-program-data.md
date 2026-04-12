@@ -1,7 +1,7 @@
 ---
 id: supply-planning-module-program-data
-title: "Módulo de planificación de suministros: datos del programa"
-sidebar_label: "Módulo de planificación de suministros: datos del programa"
+title: "Supply Planning Module: Program Data"
+sidebar_label: "Supply Planning Module: Program Data"
 sidebar_position: 7
 ---
 # Módulo de planificación de suministros: datos del programa
@@ -92,7 +92,7 @@ Una ARU permite la entrada de datos en unidades diferentes a la unidad de planif
 *Figura 3: Unidades de informes alternativas*
 
 ### Plazos de entrega
-Los plazos de entrega rastrean la progresión del envío en seis estados. El sistema prioriza los plazos de entrega de la siguiente manera: **Específico del programa/agente** > **Valores predeterminados del programa** > **Valores predeterminados del ámbito**.
+Los plazos de entrega rastrean la progresión del envío en seis estados. El sistema prioriza los tiempos de entrega de la siguiente manera: **Específico del programa/agente** > **Valores predeterminados del programa** > **Valores predeterminados del ámbito**.
 
 #### Definiciones de plazos de entrega
 

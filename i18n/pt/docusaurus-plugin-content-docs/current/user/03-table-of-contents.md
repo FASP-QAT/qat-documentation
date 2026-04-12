@@ -1,7 +1,7 @@
 ---
 id: table-of-contents
-title: "Índice"
-sidebar_label: "Índice"
+title: "Table of Contents"
+sidebar_label: "Table of Contents"
 sidebar_position: 3
 ---
 # Índice

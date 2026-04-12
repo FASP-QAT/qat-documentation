@@ -1,7 +1,7 @@
 ---
 id: forecasting-module-program-data
-title: "Módulo de pronóstico: datos del programa"
-sidebar_label: "Módulo de pronóstico: datos del programa"
+title: "Forecasting Module: Program Data"
+sidebar_label: "Forecasting Module: Program Data"
 sidebar_position: 10
 ---
 # Módulo de pronóstico: datos del programa
@@ -79,5 +79,5 @@ Si un régimen de tratamiento requiere 14 comprimidos de un producto O 1 tubo de
 
 ### Uso en informes
 - **Comparar y seleccionar:** Muestra la demanda total en UE en lugar de unidades individuales.
-- **Monthly Forecast:** Aggregate disparate products into a single "total requirement" line.
+- **Pronóstico mensual:** Agregue productos dispares en una única línea de "requerimiento total".
 - **Planificación de suministro:** Vea el consumo real y previsto en la UE para identificar tendencias de alto nivel.

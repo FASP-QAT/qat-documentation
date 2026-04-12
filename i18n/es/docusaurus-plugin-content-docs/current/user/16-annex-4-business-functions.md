@@ -1,7 +1,7 @@
 ---
 id: annex-4-business-functions
-title: "Anexo 4: Funciones Empresariales"
-sidebar_label: "Anexo 4: Funciones Empresariales"
+title: "Annex 4: Business Functions"
+sidebar_label: "Annex 4: Business Functions"
 sidebar_position: 16
 ---
 # Anexo 4: Funciones Empresariales

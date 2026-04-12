@@ -1,7 +1,7 @@
 ---
 id: getting-started
-title: "Empezando"
-sidebar_label: "Empezando"
+title: "Getting Started"
+sidebar_label: "Getting Started"
 sidebar_position: 5
 ---
 # Empezando
@@ -233,7 +233,7 @@ El equipo de desarrollo abordará el ticket de error según la prioridad empresa
 
 1. Abra la pantalla del servicio de asistencia técnica de QAT y haga clic en "Informar un error".
 
-2. Ingrese un resumen del error así como una descripción del error. Sea descriptivo y proporcione tantos detalles como sea posible (por ejemplo, en qué programa/versión/funcionalidad estaba trabajando, pasos que siguió para obtener el error, etc.).
+2. Ingrese un resumen del error, así como una descripción del error. Sea descriptivo y proporcione tantos detalles como sea posible (por ejemplo, en qué programa/versión/funcionalidad estaba trabajando, pasos que siguió para obtener el error, etc.).
 
 3. Cargue una captura de pantalla del error haciendo clic en el botón "Examinar" y extrayendo un archivo de captura de pantalla guardado desde su computadora.
     1. También es útil proporcionar la exportación del programa, si es posible (consulte [Exportaciones de programas](06-managing-programs-and-versions.md#export) sobre cómo exportar un programa local)

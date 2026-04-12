@@ -1,7 +1,7 @@
 ---
 id: supply-planning-module-program-data
-title: "Module de planification des approvisionnements : données du programme"
-sidebar_label: "Module de planification des approvisionnements : données du programme"
+title: "Supply Planning Module: Program Data"
+sidebar_label: "Supply Planning Module: Program Data"
 sidebar_position: 7
 ---
 # Module de planification des approvisionnements : données du programme
@@ -14,7 +14,7 @@ La gestion des données au niveau du programme est principalement gérée par le
 
 | Catégorie | Type de données | Exemples |
 | :--- | :--- | :--- |
-| **Données de base** | Informations sur le programme | Délais, fret %, responsables de programme. |
+| **Données de base** | Informations sur le programme | Délais, fret %, responsables de programmes. |
 | | Informations sur le produit | Unités de planification, intervalles de réapprovisionnement, stock min/max. |
 | | Budget | Sources de financement, montants budgétaires, dates de validité. |
 | **Données transactionnelles**| Consommation | Consommation réelle et prévue. |
@@ -247,7 +247,7 @@ Les planificateurs recevront des alertes sur l'écran **Notifications d'expédit
 
 ![P1723#yIS1](/img/media/image138.png)
 
-Figure 88 : Afficher les expéditions ERP dans la saisie de données
+Figure 88 : Afficher les expéditions ERP dans la saisie de données
 
 Dans l'écran de planification des approvisionnements, les expéditions liées à l'ERP auront une icône de lien en haut à gauche de la cellule. L'utilisateur peut cliquer sur un envoi spécifique pour afficher les détails, mais ces cellules seront également grisées pour indiquer qu'elles ne sont pas modifiables. Cependant, l'utilisateur peut toujours cliquer avec le bouton droit sur les détails de l'expédition pour afficher les dates d'expédition et les informations sur les lots.
 
@@ -271,7 +271,7 @@ Pour afficher les notifications, l'utilisateur devra sélectionner parmi les 3 l
 
 Figure 90 : Filtrage des notifications d'expédition ERP
 
-Pour adresser une notification, l'utilisateur doit cocher la case dans la colonne « Adressée ? », puis cliquer sur le bouton « Soumettre ». Si l'utilisateur adresse une notification de changement de produit ERP, il doit d'abord saisir le facteur de conversion. Le champ du facteur de conversion n'est pas modifiable tant que la case adressée n'est pas cochée.
+Pour adresser une notification, l'utilisateur doit cocher la case dans la colonne « Adressée ? », puis appuyer sur le bouton « Soumettre ». Si l'utilisateur adresse une notification de changement de produit ERP, il doit d'abord saisir le facteur de conversion. Le champ du facteur de conversion n'est pas modifiable tant que la case adressée n'est pas cochée.
 
 Tout comme dans l’écran « Lié », l’utilisateur peut consulter l’historique des commandes ERP. Pour ce faire, faites un clic droit sur la ligne de notification et cliquez sur « Afficher l'historique des commandes ERP ». Reportez-vous à la section Écran lié pour plus d'informations.
 
@@ -356,7 +356,7 @@ Figure 93 : Importation de fichiers quantimés
 
 ![P1794#yIS1](/img/media/image148.png)
 
-Figure 94: Map Planning Units
+Figure 94 : Unités de planification de la carte
 
 **Étape 3 : Région**
 

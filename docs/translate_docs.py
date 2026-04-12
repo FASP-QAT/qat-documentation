@@ -4,7 +4,7 @@ import time
 from deep_translator import GoogleTranslator
 
 def translate_markdown():
-    source_dir = os.path.join('user')
+    source_dir = os.path.join('docs/user')
     
     if not os.path.exists(source_dir):
         print(f"❌ ERROR: Cannot find the '{source_dir}' folder.")
@@ -33,9 +33,10 @@ def translate_markdown():
                 
             target_file = os.path.join(target_dir, filename)
             
-            if os.path.exists(target_file):
-                print(f"⏭️ Skipping {filename} (Already exists)")
-                continue
+            # Retranslate and overwrite if specifically requested (current behavior now)
+            # if os.path.exists(target_file):
+            #     print(f"⏭️ Skipping {filename} (Already exists)")
+            #     continue
                 
             print(f"\n📄 Processing: {filename} -> {lang_code}...")
             with open(os.path.join(source_dir, filename), 'r', encoding='utf-8') as f:
@@ -109,8 +110,10 @@ def translate_markdown():
 
             # Restore HTML Tags
             for i, tag in enumerate(html_tags):
+                # Ensure <br> tags are self-closing for MDX compatibility
+                fixed_tag = re.sub(r'<br\s*>', '<br />', tag, flags=re.IGNORECASE)
                 pattern = re.compile(rf'ZXCHTML\s*{i}\s*ZXC', re.IGNORECASE)
-                translated_body = pattern.sub(lambda m, t=tag: t, translated_body)
+                translated_body = pattern.sub(lambda m, t=fixed_tag: t, translated_body)
 
             # Restore Image links
             for i, img in enumerate(images):

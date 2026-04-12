@@ -1,7 +1,7 @@
 ---
 id: managing-programs-and-versions
-title: "Gerenciando programas e versões"
-sidebar_label: "Gerenciando programas e versões"
+title: "Managing Programs and Versions"
+sidebar_label: "Managing Programs and Versions"
 sidebar_position: 6
 ---
 # Gerenciando programas e versões
@@ -98,7 +98,7 @@ Para melhorar o desempenho de programas grandes, você pode fazer download de um
 ### Visão geral
 - **Quem:** Administradores, usuários do programa, revisores e visualizadores.
 - **Quando:** Usado on-line para rastrear o status de envio e aprovação de planos de fornecimento.
-- **Por quê:** 
+- **Por que:** 
   - **Planejadores:** Monitore o status de aprovação e feedback.
   - **Revisores:** Gerencie a fila de revisão e aprove/rejeite envios.
 

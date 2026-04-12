@@ -1,7 +1,7 @@
 ---
 id: table-of-contents
-title: "Tabla de contenidos"
-sidebar_label: "Tabla de contenidos"
+title: "Table of Contents"
+sidebar_label: "Table of Contents"
 sidebar_position: 3
 ---
 # Tabla de contenidos

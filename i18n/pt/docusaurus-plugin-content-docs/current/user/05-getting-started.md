@@ -1,7 +1,7 @@
 ---
 id: getting-started
-title: "Primeiros passos"
-sidebar_label: "Primeiros passos"
+title: "Getting Started"
+sidebar_label: "Getting Started"
 sidebar_position: 5
 ---
 # Primeiros passos
@@ -55,7 +55,7 @@ Se você não possui um perfil de usuário, entre em contato com o administrador
 ### Instalando o aplicativo Web progressivo QAT (PWA)
 O PWA oferece uma experiência autônoma semelhante a um aplicativo em sua área de trabalho e oferece suporte ao modo offline. É compatível com **Google Chrome** e **Microsoft Edge**.
 
-#### Instalação padrão
+#### Instalação Padrão
 1. Navegue até o [site da Quantification Analytics](https://www.quantificationanalytics.org/).
 2. Clique no ícone **Instalar** (sinal de mais) na barra de endereço do navegador.
 3. Selecione **Instalar** no pop-up de confirmação.
@@ -78,7 +78,7 @@ O PWA oferece uma experiência autônoma semelhante a um aplicativo em sua área
 3. (Opcional) Marque a caixa **Offline** para trabalhar sem conexão com a Internet.
 
 ![Login Screen](/img/media/image13.png)
-*Figura 3: Tela de Login*
+*Figura 3: Tela de login*
 
 ### Segurança e Manutenção
 - **Logout:** Clique no ícone de logout na faixa superior direita.

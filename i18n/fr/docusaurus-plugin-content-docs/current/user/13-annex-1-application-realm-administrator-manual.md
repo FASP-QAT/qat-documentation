@@ -1,12 +1,12 @@
 ---
 id: annex-1-application-realm-administrator-manual
-title: "Annexe 1 : Manuel de l'administrateur d'application et de domaine"
-sidebar_label: "Annexe 1 : Manuel de l'administrateur d'application et de domaine"
+title: "Annex 1: Application & Realm Administrator Manual"
+sidebar_label: "Annex 1: Application & Realm Administrator Manual"
 sidebar_position: 13
 ---
 # Annexe 1 : Manuel de l'administrateur d'application et de domaine
 
-## Présentation
+##Présentation
 Cette annexe fournit des conseils sur les fonctionnalités administratives réservées aux **administrateurs d'application** et aux **administrateurs de domaine**.
 - **Application Masters** : paramètres globaux affectant tous les domaines (administrateur de l'application uniquement).
 - **Realm Level Masters** : données spécifiques à un royaume, affectant ses programmes et plans d'approvisionnement (administrateurs d'application et de royaume).

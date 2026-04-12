@@ -1,7 +1,7 @@
 ---
 id: annex-5-pipeline-program-import
-title: "Annexe 5 : Importation du programme PipeLine"
-sidebar_label: "Annexe 5 : Importation du programme PipeLine"
+title: "Annex 5: PipeLine Program Import"
+sidebar_label: "Annex 5: PipeLine Program Import"
 sidebar_position: 17
 ---
 # Annexe 5 : Importation du programme PipeLine
@@ -15,7 +15,7 @@ Cette annexe détaille le processus de migration des anciennes bases de données
 
 ---
 
-## Étape 1 : Convertir .accdb en JSON
+## Étape 1 : Convertir .accdb en JSON
 QAT nécessite des données au format JSON. Utilisez l'**outil de conversion PipeLine** pour cette conversion.
 
 1. Accédez à **Gestion des programmes > Importation du programme PipeLine**.

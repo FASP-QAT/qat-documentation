@@ -1,7 +1,7 @@
 ---
 id: supply-planning-module-reports
-title: "Módulo de Planejamento de Suprimentos: Relatórios"
-sidebar_label: "Módulo de Planejamento de Suprimentos: Relatórios"
+title: "Supply Planning Module: Reports"
+sidebar_label: "Supply Planning Module: Reports"
 sidebar_position: 9
 ---
 # Módulo de Planejamento de Suprimentos: Relatórios
@@ -31,7 +31,7 @@ A **Lista de problemas do QAT** é uma ferramenta integrada de garantia de quali
 
 ### Problemas e soluções comuns
 - **Dados ausentes:** Consumo real ou contagens de estoque ausentes nos últimos 3 meses. *Solução: insira os dados ausentes.*
-- **Lacunas de previsão:** Valores de previsão ausentes nos próximos 18 meses. *Solução: Insira a previsão ou zeros se estiver descontinuando.*
+- **Lacunas de previsão:** valores de previsão ausentes nos próximos 18 meses. *Solução: Insira a previsão ou zeros se estiver descontinuando.*
 - **Remessas Passadas:** Remessas com datas de "Recebimento" no passado que ainda estão marcadas como "Encomendadas" ou "Enviadas". *Solução: atualize o status para "Recebido".*
 - **Violações de prazo de entrega:** Remessas que deveriam ter sido enviadas até uma determinada data. *Solução: atualize o status ou adie a data de recebimento.*
 - **Violações de estoque:** Plano fica abaixo dos parâmetros Mínimo ou acima do Máximo. *Solução: Ajustar remessas ou consumo.*
@@ -129,7 +129,7 @@ Mede a velocidade da cadeia de abastecimento (eficácia da gestão).
 - **Interpretação:** Rotações altas geralmente indicam uma cadeia de suprimentos mais saudável e mais responsiva.
 
 ### Relatório de ajuste de estoque
-Lists all manually entered stock adjustments.
+Lista todos os ajustes de estoque inseridos manualmente.
 > [!NOTA]
 > Os ajustes calculados automaticamente (a partir de discrepâncias na contagem de estoque) não são mostrados aqui.
 

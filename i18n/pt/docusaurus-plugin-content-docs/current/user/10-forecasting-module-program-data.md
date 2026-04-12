@@ -1,7 +1,7 @@
 ---
 id: forecasting-module-program-data
-title: "Módulo de Previsão: Dados do Programa"
-sidebar_label: "Módulo de Previsão: Dados do Programa"
+title: "Forecasting Module: Program Data"
+sidebar_label: "Forecasting Module: Program Data"
 sidebar_position: 10
 ---
 # Módulo de Previsão: Dados do Programa
@@ -19,7 +19,7 @@ QAT suporta duas metodologias principais, que podem ser usadas individualmente o
 
 Depois que as previsões são preparadas, elas são comparadas na seção **Análise de previsões** para selecionar o plano final.
 
-## Informações do Programa
+## Informações do programa
 Os administradores do programa podem atualizar metadados básicos (Nome, Gerente, Notas) e alternar o status do programa (Ativo/Desativado).
 > [!NOTA]
 > Alterações na área técnica, organização ou nome de exibição exigem um [ticket de suporte técnico](05-getting-started.md#qat-helpdesk-and-tickets).
@@ -49,7 +49,7 @@ Defina estas configurações para ativar metodologias e cálculos financeiros es
 | **Metodologia de previsão** | Alterne a metodologia **Consumo** e/ou **Árvore**. | Determina quais telas de entrada de dados estão ativas. |
 | **Estoque disponível** | Saldo inicial no início do período de previsão. | Usado para calcular a lacuna de aquisição. |
 | **Remessas Existentes** | Total de quantidades comprometidas para o período de previsão. | Reduz a lacuna total a ser preenchida. |
-| **MOS desejado** | Nível de estoque alvo (meses de estoque) no final do período. | Define a meta para o cálculo da lacuna. |
+| **MOS desejado** | Nível de estoque desejado (meses de estoque) no final do período. | Define a meta para o cálculo da lacuna. |
 | **Preço e Tipo** | Preço de catálogo ou preço personalizado por agente de compras. | Estima o custo total da lacuna de aquisição. |
 
 > [!TIP]

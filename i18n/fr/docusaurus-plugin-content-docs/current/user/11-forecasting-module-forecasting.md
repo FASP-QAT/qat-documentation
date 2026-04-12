@@ -1,7 +1,7 @@
 ---
 id: forecasting-module-forecasting
-title: "Module de prévision : Prévision"
-sidebar_label: "Module de prévision : Prévision"
+title: "Forecasting Module: Forecasting"
+sidebar_label: "Forecasting Module: Forecasting"
 sidebar_position: 11
 ---
 # Module de prévision : Prévision
@@ -142,7 +142,7 @@ Si vous ne connaissez pas le tarif mensuel, utilisez le **Calculateur de modéli
 ### Techniques avancées
 #### Retard d'utilisation
 Disponible dans les **nœuds FU**. Utilisez le champ **Lag** pour retarder l'utilisation du produit par rapport au pilote parent. 
-- *Exemple :* Si les patients sont diagnostiqués au mois 1 mais commencent le traitement au mois 3, saisissez un décalage de `2`.
+- *Exemple :* Si les patients sont diagnostiqués au cours du mois 1 mais commencent le traitement au mois 3, saisissez un décalage de `2`.
 
 #### Méthodes de calcul (utilisation discrète)
 - **Tout au cours du premier mois :** Charge en avance la totalité du traitement dans le premier mois du patient. (Par défaut)

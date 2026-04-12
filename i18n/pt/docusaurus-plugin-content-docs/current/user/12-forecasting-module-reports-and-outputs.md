@@ -1,7 +1,7 @@
 ---
 id: forecasting-module-reports-and-outputs
-title: "Módulo de Previsão: Relatórios e Resultados"
-sidebar_label: "Módulo de Previsão: Relatórios e Resultados"
+title: "Forecasting Module: Reports and Outputs"
+sidebar_label: "Forecasting Module: Reports and Outputs"
 sidebar_position: 12
 ---
 # Módulo de Previsão: Relatórios e Resultados
@@ -11,7 +11,7 @@ Após definir suas metodologias e parâmetros, a etapa final é comparar os mode
 ## Compare e selecione
 **Navegação:** **Árvore de previsão** > **Comparar e selecionar**.
 
-Esta tela permite comparar múltiplas previsões (com base no consumo vs. com base na árvore) lado a lado para fazer sua seleção final.
+Esta tela permite comparar múltiplas previsões (com base em consumo vs. com base em árvore) lado a lado para fazer sua seleção final.
 
 ### Principais métricas para seleção
 - **Erro de previsão (%):** Usa o cálculo **WAPE**. Um destaque verde indica o modelo com menor erro histórico.

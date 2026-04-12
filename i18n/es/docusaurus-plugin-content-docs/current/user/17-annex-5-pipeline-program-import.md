@@ -1,7 +1,7 @@
 ---
 id: annex-5-pipeline-program-import
-title: "Anexo 5: Importación del programa PipeLine"
-sidebar_label: "Anexo 5: Importación del programa PipeLine"
+title: "Annex 5: PipeLine Program Import"
+sidebar_label: "Annex 5: PipeLine Program Import"
 sidebar_position: 17
 ---
 # Anexo 5: Importación del programa PipeLine

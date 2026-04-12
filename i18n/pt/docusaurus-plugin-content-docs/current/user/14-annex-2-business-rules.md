@@ -1,7 +1,7 @@
 ---
 id: annex-2-business-rules
-title: "Anexo 2: Regras de Negócios"
-sidebar_label: "Anexo 2: Regras de Negócios"
+title: "Annex 2: Business Rules"
+sidebar_label: "Annex 2: Business Rules"
 sidebar_position: 14
 ---
 # Anexo 2: Regras de Negócios
@@ -47,7 +47,7 @@ Usado para consumir estoque com base nas primeiras datas de vencimento.
 2. Calcular **Consumo Não Alocado** (Consumo Final - Ajustes).
 3. Percorrer lotes:
    -`Batch Ending Balance = MAX(0, Batch Temp Balance - Unallocated Consumption)`.
-   - Subtraia a quantidade consumida do pool total de `Unallocated Consumption`.
+   - Subtraia a quantidade consumida do pool `Unallocated Consumption` total.
 
 ### LEFO (último vencimento, primeiro a sair)
 Utilizado principalmente para distribuição de ajustes (perdas) negativos.

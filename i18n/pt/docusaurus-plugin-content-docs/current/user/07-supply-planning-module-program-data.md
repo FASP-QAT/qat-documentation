@@ -1,7 +1,7 @@
 ---
 id: supply-planning-module-program-data
-title: "Módulo de Planejamento de Fornecimento: Dados do Programa"
-sidebar_label: "Módulo de Planejamento de Fornecimento: Dados do Programa"
+title: "Supply Planning Module: Program Data"
+sidebar_label: "Supply Planning Module: Program Data"
 sidebar_position: 7
 ---
 # Módulo de Planejamento de Fornecimento: Dados do Programa
@@ -28,7 +28,7 @@ O gerenciamento de dados no nível do programa é feito principalmente por **Adm
 > [!TIP]
 > Os dados de segundo plano devem ser atualizados enquanto estiver online. Execute uma **Master Data Sync** após as atualizações para garantir que as alterações sejam refletidas em todo o aplicativo.
 
-### Informações do programa
+### Informações do Programa
 Os administradores do programa podem definir parâmetros gerais, como gerentes de programa, prazos de entrega e porcentagens de frete padrão.
 
 **Para atualizar as informações do programa:**
@@ -241,7 +241,7 @@ Os planejadores receberão alertas na tela **Notificações de remessa do ERP** 
 
     2. **Observação:** Determinados campos do ERP não são capturados nesta tela, portanto pode haver alguns casos em que 1 ou mais linhas tenham os mesmos detalhes. Isso significa que uma coluna no backend foi alterada.
 
-> **Depois de vincular remessas QAT a pedidos ERP, os dados serão refletidos em seu plano de fornecimento sem a necessidade de sincronização de dados mestre.** Os dados ERP recém-vinculados serão refletidos nos relatórios locais, na tela de planejamento de fornecimento, bem como na tela de entrada de dados de remessa. O usuário **precisa** fazer upload de uma versão para o servidor para que outros usuários vejam essas alterações.
+> **Depois de vincular remessas QAT a pedidos ERP, os dados serão refletidos em seu plano de fornecimento sem a necessidade de sincronização de dados mestres.** Os dados ERP recém-vinculados serão refletidos nos relatórios locais, na tela de planejamento de fornecimento, bem como na tela de entrada de dados de remessa. O usuário **precisa** fazer upload de uma versão para o servidor para que outros usuários vejam essas alterações.
 >
 > Para visualizar as remessas vinculadas ao ERP na tela de entrada de dados da remessa, o usuário deve selecionar ‘Remessas vinculadas ao ERP’ no menu suspenso Tipo de Remessa. O usuário pode exibir apenas esta opção ou combiná-la com os envios manuais para mostrar todos os envios. As remessas vinculadas ao ERP ficarão esmaecidas para indicar que não são editáveis.
 
@@ -279,7 +279,7 @@ Assim como na tela ‘Vinculado’, o usuário pode visualizar o histórico de p
 
 ### Modelos de importação de dados do plano de fornecimento do Excel
 
-Os dados de Consumo, Estoque e Expedição podem ser inseridos através das telas de entrada de dados do QAT, através da tela de Planejamento de Fornecimento ou através do Quantimed Import (somente consumo previsto). O QAT também oferece aos usuários a capacidade de inserir esses dados diretamente do Microsoft Excel. Este método de entrada de dados destina-se a entradas em massa que contêm muitos dados. As etapas abaixo mostrarão como inserir dados do Excel no QAT:
+Os dados de Consumo, Estoque e Embarque podem ser inseridos através das telas de entrada de dados do QAT, através da tela de Planejamento de Fornecimento ou através da Quantimed Import (somente consumo previsto). O QAT também oferece aos usuários a capacidade de inserir esses dados diretamente do Microsoft Excel. Este método de entrada de dados destina-se a entradas em massa que contêm muitos dados. As etapas abaixo mostrarão como inserir dados do Excel no QAT:
 
 1. Na barra lateral do menu, vá em “Dados do Plano de Fornecimento” e clique no tipo de dados que deseja inserir (por exemplo, “Dados de Consumo”). ![P1748L76#yIS1](/img/media/image142.png)
 
@@ -421,7 +421,7 @@ Como o planejamento do fornecimento exige números inteiros, o QAT arredonda o c
 | :--- | :---: | :---: | :---: | :---: |
 | Janeiro | 0,25 | 0,25 | 0 | 0,25 |
 | Fevereiro | 0,25 | 0,50 | 0 | 0,50 |
-| março | 0,25 | 0,75 | 0 | 0,75 |
+| Março | 0,25 | 0,75 | 0 | 0,75 |
 | abril | 0,25 | 1,00 | 1 | 0,00 |
 
 *Tabela 2: Demonstração da Lógica de Arredondamento Residual*

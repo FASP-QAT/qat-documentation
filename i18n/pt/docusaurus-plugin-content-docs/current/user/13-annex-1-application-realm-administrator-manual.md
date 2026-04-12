@@ -1,7 +1,7 @@
 ---
 id: annex-1-application-realm-administrator-manual
-title: "Anexo 1: Manual do Administrador do Aplicativo e do Realm"
-sidebar_label: "Anexo 1: Manual do Administrador do Aplicativo e do Realm"
+title: "Annex 1: Application & Realm Administrator Manual"
+sidebar_label: "Annex 1: Application & Realm Administrator Manual"
 sidebar_position: 13
 ---
 # Anexo 1: Manual do Administrador do Aplicativo e do Realm
