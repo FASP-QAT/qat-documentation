@@ -1,7 +1,7 @@
 ---
 id: annex-4-business-functions
-title: "Annex 4: Business Functions"
-sidebar_label: "Annex 4: Business Functions"
+title: "Annexe 4 : Fonctions Métiers"
+sidebar_label: "Annexe 4 : Fonctions Métiers"
 sidebar_position: 16
 ---
 # Annexe 4 : Fonctions Métiers

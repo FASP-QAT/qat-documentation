@@ -1,7 +1,7 @@
 ---
 id: overview
-title: "Acronyms & Definitions"
-sidebar_label: "Acronyms & Definitions"
+title: "Siglas e Definições"
+sidebar_label: "Siglas e Definições"
 sidebar_position: 4
 ---
 Se você estiver procurando por um termo específico, use Ctrl + F no teclado para pesquisar diretamente o termo nesta página.

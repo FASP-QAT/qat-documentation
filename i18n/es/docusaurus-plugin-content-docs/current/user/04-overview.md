@@ -1,7 +1,7 @@
 ---
 id: overview
-title: "Acronyms & Definitions"
-sidebar_label: "Acronyms & Definitions"
+title: "Acrónimos & Definiciones"
+sidebar_label: "Acrónimos & Definiciones"
 sidebar_position: 4
 ---
 Si está buscando un término específico, use Ctrl+F en su teclado para buscar el término directamente en esta página.
@@ -60,6 +60,6 @@ acceso electrónico y rendimiento mejorado; QAT utiliza tecnología PWA.        
 | Suavizado Triple Exponencial (Holt-Winters) (TES) | Un método de pronóstico de series de tiempo que tiene en cuenta el nivel, la tendencia y la estacionalidad de los datos históricos.                                                                                                                                                                                                                                                                                                                 |
 | Error porcentual absoluto ponderado (WAPE) | Una métrica de precisión de pronóstico que mide el error absoluto total como porcentaje de la demanda real total, ponderada por volumen.                                                                                                                                                                                                                                                                                         |
 
-# Acrónimos \& Definiciones
+# Acrónimos & Definiciones
 
 Esta página proporciona definiciones de acrónimos y términos comúnmente utilizados dentro de la aplicación y documentación QAT.

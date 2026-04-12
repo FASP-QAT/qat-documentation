@@ -1,7 +1,7 @@
 ---
 id: annex-2-business-rules
-title: "Annex 2: Business Rules"
-sidebar_label: "Annex 2: Business Rules"
+title: "Anexo 2: Regras de Negócios"
+sidebar_label: "Anexo 2: Regras de Negócios"
 sidebar_position: 14
 ---
 # Anexo 2: Regras de Negócios

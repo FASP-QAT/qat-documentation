@@ -1,7 +1,7 @@
 ---
 id: supply-planning-module-program-data
-title: "Supply Planning Module: Program Data"
-sidebar_label: "Supply Planning Module: Program Data"
+title: "Módulo de Planejamento de Fornecimento: Dados do Programa"
+sidebar_label: "Módulo de Planejamento de Fornecimento: Dados do Programa"
 sidebar_position: 7
 ---
 # Módulo de Planejamento de Fornecimento: Dados do Programa

@@ -1,7 +1,7 @@
 ---
 id: overview
-title: "Acronyms & Definitions"
-sidebar_label: "Acronyms & Definitions"
+title: "Acronymes & Définitions"
+sidebar_label: "Acronymes & Définitions"
 sidebar_position: 4
 ---
 Si vous recherchez un terme spécifique, utilisez Ctrl+F sur votre clavier pour rechercher directement le terme sur cette page.
@@ -60,6 +60,6 @@ e accès et performances améliorées ; QAT utilise la technologie PWA.        
 | Lissage exponentiel triple (Holt‑Winters) (TES) | Une méthode de prévision de séries chronologiques qui prend en compte le niveau, la tendance et la saisonnalité des données historiques.                                                                                                                                                                                                                                                                                                                 |
 | Erreur de pourcentage absolu pondéré (WAPE) | Mesure de précision des prévisions qui mesure l'erreur absolue totale en pourcentage de la demande totale réelle, pondérée par le volume.                                                                                                                                                                                                                                                                                         |
 
-# Acronymes \& Définitions
+# Acronymes & Définitions
 
 Cette page fournit des définitions pour les acronymes et les termes couramment utilisés dans l'application et la documentation QAT.

@@ -1,7 +1,7 @@
 ---
 id: introduction
-title: "Introduction"
-sidebar_label: "Introduction"
+title: "Introducción"
+sidebar_label: "Introducción"
 sidebar_position: 1
 ---
 # Introducción

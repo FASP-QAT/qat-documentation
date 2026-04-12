@@ -1,7 +1,7 @@
 ---
 id: supply-planning-module-reports
-title: "Supply Planning Module: Reports"
-sidebar_label: "Supply Planning Module: Reports"
+title: "Módulo de Planejamento de Suprimentos: Relatórios"
+sidebar_label: "Módulo de Planejamento de Suprimentos: Relatórios"
 sidebar_position: 9
 ---
 # Módulo de Planejamento de Suprimentos: Relatórios

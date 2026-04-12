@@ -1,7 +1,7 @@
 ---
 id: acronyms
-title: Acronyms & Definitions
-sidebar_label: Acronyms
+title: "Acronymes et définitions"
+sidebar_label: "Acronymes et définitions"
 sidebar_position: 18
 ---
 # Acronymes et définitions

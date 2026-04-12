@@ -1,7 +1,7 @@
 ---
 id: annex-3-user-role-matrix
-title: "Annex 3: User Role Matrix"
-sidebar_label: "Annex 3: User Role Matrix"
+title: "Anexo 3: Matriz de roles de usuario"
+sidebar_label: "Anexo 3: Matriz de roles de usuario"
 sidebar_position: 15
 ---
 # Anexo 3: Matriz de roles de usuario

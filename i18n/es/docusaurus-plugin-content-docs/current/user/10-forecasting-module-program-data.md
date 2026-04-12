@@ -1,7 +1,7 @@
 ---
 id: forecasting-module-program-data
-title: "Forecasting Module: Program Data"
-sidebar_label: "Forecasting Module: Program Data"
+title: "Módulo de pronóstico: datos del programa"
+sidebar_label: "Módulo de pronóstico: datos del programa"
 sidebar_position: 10
 ---
 # Módulo de pronóstico: datos del programa

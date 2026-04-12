@@ -1,7 +1,7 @@
 ---
 id: version-history
-title: "Version History"
-sidebar_label: "Version History"
+title: "Histórico de versões"
+sidebar_label: "Histórico de versões"
 sidebar_position: 2
 ---
 | Versão | Data | Autor/Editor | Notas e principais alterações |

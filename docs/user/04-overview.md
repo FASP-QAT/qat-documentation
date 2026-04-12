@@ -4,7 +4,7 @@ title: "Acronyms & Definitions"
 sidebar_label: "Acronyms & Definitions"
 sidebar_position: 4
 ---
-# Acronyms \& Definitions
+# Acronyms & Definitions
 
 This page provides definitions for commonly used acronyms and terms within the QAT application and documentation.
 
