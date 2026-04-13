@@ -335,10 +335,6 @@ html[data-theme="dark"] .header-github-link:before {
 }
 
 @media print {
-  body {
-    counter-reset: page;
-  }
-
   .print-header {
     display: block;
     text-align: center;
@@ -347,33 +343,22 @@ html[data-theme="dark"] .header-github-link:before {
     padding-bottom: 1rem;
   }
 
-  /* Footer for every page */
-  .print-footer {
-    display: block;
-    position: fixed;
-    bottom: 0.5cm; /* Move it up slightly from the absolute bottom */
-    left: 0;
-    right: 0;
-    text-align: center;
-    font-size: 10pt;
-    color: var(--ifm-color-emphasis-700);
-    border-top: 1px solid var(--ifm-color-emphasis-400);
-    padding-top: 10px;
-    background: transparent;
-    z-index: 1000;
-  }
-
-  /* This is the magic for Chrome/Edge/Safari to show page numbers on DOM elements */
-  .print-footer::after {
-    content: "Page " counter(page) " / " counter(pages);
-  }
-
-  /* We must increment the page counter on every page break */
-  .manual-page-break {
-    counter-increment: page;
-  }
 }
 
-.print-footer {
-  display: none;
+.navbar-version-badge {
+  background-color: var(--custom-accent);
+  color: white !important;
+  font-size: 0.8rem;
+  font-weight: 700;
+  padding: 0.2rem 0.6rem;
+  border-radius: 1rem;
+  margin-left: 0.5rem;
+  line-height: normal;
+  display: flex;
+  align-items: center;
+}
+
+.navbar-version-badge:hover {
+  background-color: var(--custom-accent-dark);
+  text-decoration: none !important;
 }

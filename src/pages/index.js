@@ -8,6 +8,8 @@ import styles from './index.module.css';
 
 function HomepageHeader() {
   const {siteConfig} = useDocusaurusContext();
+  const {docVersion, uploadDate} = siteConfig.customFields;
+
   return (
     <header className={clsx('hero hero--primary', styles.heroBanner)}>
       <div className="container">
@@ -17,6 +19,17 @@ function HomepageHeader() {
         <p className="hero__subtitle">
           QAT Documentation Platform
         </p>
+        <div style={{ 
+          display: 'inline-block', 
+          background: 'rgba(255,255,255,0.2)', 
+          padding: '0.5rem 1rem', 
+          borderRadius: '2rem',
+          fontSize: '0.9rem',
+          fontWeight: '500',
+          marginTop: '0.5rem'
+        }}>
+          Version: {docVersion} | Last Updated: {uploadDate}
+        </div>
         <p style={{ textAlign: 'center', maxWidth: '800px', margin: '2rem auto', fontSize: '1.2rem' }}>
           The Quantification Analytics Tool (QAT), is a modernized solution for 
           country-led forecasting and supply planning. Funded by USAID, QAT 
@@ -32,6 +45,8 @@ function HomepageHeader() {
     </header>
   );
 }
+
+import DownloadPdfButton from '@site/src/components/DownloadPdfButton';
 
 function ResourceColumns() {
   const resources = [
@@ -49,6 +64,7 @@ function ResourceColumns() {
     {
       image: "img/home/QAT User Manual Cover Image.png",
       heading: "User Manual",
+      isPremiumPdf: true, // Mark for background download
       text: <>
         <p>Download the QAT User Manual to learn how to use this supply planning tool.</p>
         <p>The manual covers:
@@ -60,7 +76,7 @@ function ResourceColumns() {
           <li>Instructions for monitoring stock status, optimizing procurement, and sharing data</li>
         </ol></p>
       </>,
-      link: "https://www.ghsupplychain.org/sites/default/files/2025-01/QAT%20User%20Manual_2024.12.31.pdf"
+      link: "/qat-documentation/full-manual?print=true"
     },
     {
       image: "img/home/QAT Reports Reference Sheet Image.png",
@@ -98,29 +114,59 @@ function ResourceColumns() {
             <Heading as="h3" style={{ marginBottom: '1rem' }}>
               {resource.heading}
             </Heading>
-            <Link
-              to={resource.link}
-              className={styles.imageLink}
-            >
-              <img 
-                src={resource.image}
-                alt={resource.heading}
-                style={{
-                  width: 'auto',
-                  height: '200px',
-                  objectFit: 'contain',
-                  marginBottom: '1rem'
-                }}
-                className={styles.dropShadow}
+            
+            {resource.isPremiumPdf ? (
+              /* Custom cover image and downloader for the User Manual */
+              <div style={{ cursor: 'pointer' }}>
+                <Link to={resource.link}>
+                   <img 
+                    src={resource.image}
+                    alt={resource.heading}
+                    style={{
+                      width: 'auto',
+                      height: '200px',
+                      objectFit: 'contain',
+                      marginBottom: '1rem'
+                    }}
+                    className={styles.dropShadow}
+                  />
+                </Link>
+              </div>
+            ) : (
+              <Link
+                to={resource.link}
+                className={styles.imageLink}
+              >
+                <img 
+                  src={resource.image}
+                  alt={resource.heading}
+                  style={{
+                    width: 'auto',
+                    height: '200px',
+                    objectFit: 'contain',
+                    marginBottom: '1rem'
+                  }}
+                  className={styles.dropShadow}
+                />
+              </Link>
+            )}
+
+            {resource.isPremiumPdf ? (
+              <DownloadPdfButton 
+                label="Download" 
+                showEverywhere={true} 
+                className="button button--primary" 
               />
-            </Link>
-            <Link
-              className="button button--primary"
-              to={resource.link}
-              style={{ marginTop: 'auto' }}
-            >
-              Download
-            </Link>
+            ) : (
+              <Link
+                className="button button--primary"
+                to={resource.link}
+                style={{ marginTop: 'auto' }}
+              >
+                Download
+              </Link>
+            )}
+
             <div style={{ 
               textAlign: 'left',
               marginTop: '1rem'

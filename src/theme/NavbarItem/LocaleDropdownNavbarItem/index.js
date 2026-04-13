@@ -1,6 +1,7 @@
 import React from 'react';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import {translate} from '@docusaurus/Translate';
+import {useLocation} from '@docusaurus/router';
 import DropdownNavbarItem from '@theme/NavbarItem/DropdownNavbarItem';
 import IconLanguage from '@theme/Icon/Language';
 import styles from './styles.module.css';
@@ -16,9 +17,30 @@ export default function LocaleDropdownNavbarItem({
     siteConfig: {baseUrl},
     i18n: {currentLocale, locales, localeConfigs},
   } = useDocusaurusContext();
+  const {pathname} = useLocation();
+
   const localeItems = locales.map((locale) => {
-    const localePath = locale === 'en' ? '' : `${locale}/`;
-    const to = `pathname://${baseUrl}${localePath}docs/user/introduction`;
+    // Check if we are currently in the "User" module or full manual
+    const isUserModule = pathname.includes('/docs/user') || pathname.includes('/full-manual');
+
+    let to;
+    if (isUserModule) {
+      // Stay on the same page but change the locale
+      let relativePath = pathname.startsWith(baseUrl)
+        ? pathname.substring(baseUrl.length)
+        : pathname;
+
+      if (currentLocale !== 'en' && relativePath.startsWith(`${currentLocale}/`)) {
+        relativePath = relativePath.substring(currentLocale.length + 1);
+      }
+      
+      const localePath = locale === 'en' ? '' : `${locale}/`;
+      to = `pathname://${baseUrl}${localePath}${relativePath}`;
+    } else {
+      // If not in the user module, redirect to the user introduction in that language
+      const localePath = locale === 'en' ? '' : `${locale}/`;
+      to = `pathname://${baseUrl}${localePath}docs/user/introduction`;
+    }
     
     return {
       label: localeConfigs[locale].label,
@@ -47,7 +69,6 @@ export default function LocaleDropdownNavbarItem({
         description: 'The label for the mobile language switcher dropdown',
       })
     : localeConfigs[currentLocale].label);
-  const currentUserPath = `pathname://${baseUrl}${currentLocale === 'en' ? '' : `${currentLocale}/`}docs/user/introduction`;
 
   return (
     <DropdownNavbarItem

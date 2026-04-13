@@ -12,6 +12,10 @@ const projectName = 'qat-documentation';
 const repoRoot = `https://github.com/${orgName}/${projectName}`;
 const rawDownloadUrl = `https://raw.githubusercontent.com/${orgName}/${projectName}/refs/heads/main/`;
 
+// Centralized version information
+const DOC_VERSION = "v1.0.0";
+const UPLOAD_DATE = "13 April, 2026";
+
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
 /** @type {import('@docusaurus/types').Config} */
@@ -33,6 +37,11 @@ const config = {
   organizationName: orgName,
   projectName: projectName,
   trailingSlash: false,
+
+  customFields: {
+    docVersion: DOC_VERSION,
+    uploadDate: UPLOAD_DATE,
+  },
 
   onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
@@ -134,6 +143,11 @@ const config = {
             position: 'left',
           },
           {
+            type: 'html',
+            value: `<span class="navbar-version-badge">${DOC_VERSION} | ${UPLOAD_DATE}</span>`,
+            position: 'right',
+          },
+          {
             href: 'https://github.com/FASP-QAT',
             className: 'header-github-link',
             position: 'right',
@@ -191,7 +205,7 @@ const config = {
               },
               {
                 label: 'User Guide',
-                href: 'https://www.ghsupplychain.org/sites/default/files/2025-01/QAT%20User%20Manual_2024.12.31.pdf',
+                to: 'full-manual?print=true',
               },
               {
                 label: 'Reports Reference',
