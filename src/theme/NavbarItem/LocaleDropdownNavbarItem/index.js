@@ -53,8 +53,6 @@ export default function LocaleDropdownNavbarItem({
     <DropdownNavbarItem
       {...props}
       mobile={mobile}
-      to={currentUserPath}
-      target="_self"
       label={
         <>
           <IconLanguage className={styles.iconLanguage} />

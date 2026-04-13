@@ -20,6 +20,13 @@ const config = {
   tagline: 'Quantification Analytics Tool',
   favicon: 'img/favicon.ico',
 
+  stylesheets: [
+    {
+      href: 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css',
+      type: 'text/css',
+    },
+  ],
+
   // Github Pages deployment config
   url: `https://${orgName}.github.io`,
   baseUrl: `/${projectName}/`,

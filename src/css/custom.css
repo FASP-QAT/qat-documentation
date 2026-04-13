@@ -261,3 +261,119 @@ html[data-theme="dark"] .header-github-link:before {
     transform: translateY(0);
   }
 }
+
+/* Full Manual Print Styles */
+@media print {
+  .navbar,
+  .footer,
+  .theme-doc-sidebar,
+  .theme-doc-toc-mobile,
+  .theme-doc-footer-edit-meta-row,
+  .theme-doc-footer,
+  .theme-admonition,
+  .table-of-contents,
+  .pagination-nav,
+  .download-button-container,
+  .no-print {
+    display: none !important;
+  }
+
+  .container {
+    padding: 3rem 1rem !important;
+    margin: 0 auto !important;
+    max-width: 100% !important;
+  }
+
+  main {
+    padding: 0 !important;
+  }
+
+  .manual-page-break {
+    page-break-after: always;
+    padding-top: 1rem;
+  }
+}
+
+@media print {
+  /* Disable flexbox for print as it often causes issues with page breaks and margins */
+  .row, .col, .container, main, article {
+    display: block !important;
+    overflow: visible !important;
+  }
+
+  table {
+    display: table !important;
+    width: 100% !important;
+    border-collapse: collapse !important;
+    page-break-inside: auto;
+  }
+
+  thead {
+    display: table-header-group !important;
+  }
+
+  tr {
+    page-break-inside: avoid !important;
+    page-break-after: auto !important;
+  }
+}
+
+@page {
+  size: A4 portrait;
+  margin: 3.5cm 1.5cm !important;
+}
+
+.page-break-divider {
+  margin: 4rem 0;
+  border: 0;
+  height: 2px;
+  background: linear-gradient(to right, transparent, var(--ifm-color-emphasis-300), transparent);
+}
+
+.print-header {
+  display: none;
+}
+
+@media print {
+  body {
+    counter-reset: page;
+  }
+
+  .print-header {
+    display: block;
+    text-align: center;
+    margin-bottom: 3rem;
+    border-bottom: 2px solid var(--ifm-color-primary);
+    padding-bottom: 1rem;
+  }
+
+  /* Footer for every page */
+  .print-footer {
+    display: block;
+    position: fixed;
+    bottom: 0.5cm; /* Move it up slightly from the absolute bottom */
+    left: 0;
+    right: 0;
+    text-align: center;
+    font-size: 10pt;
+    color: var(--ifm-color-emphasis-700);
+    border-top: 1px solid var(--ifm-color-emphasis-400);
+    padding-top: 10px;
+    background: transparent;
+    z-index: 1000;
+  }
+
+  /* This is the magic for Chrome/Edge/Safari to show page numbers on DOM elements */
+  .print-footer::after {
+    content: "Page " counter(page) " / " counter(pages);
+  }
+
+  /* We must increment the page counter on every page break */
+  .manual-page-break {
+    counter-increment: page;
+  }
+}
+
+.print-footer {
+  display: none;
+}
