@@ -1,4 +1,5 @@
 import React from 'react';
+import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Part01 from '../../docs/user/01-introduction.md';
 import Part02 from '../../docs/user/02-version-history.md';
 import Part03 from '../../docs/user/03-table-of-contents.md';
@@ -24,10 +25,16 @@ const parts = [
 ];
 
 export default function FullManualContent() {
+  const { siteConfig } = useDocusaurusContext();
+  const { docVersion, uploadDate } = siteConfig.customFields;
+
   return (
     <div className="full-manual-content">
       <div className="print-header" style={{ textAlign: 'center', marginBottom: '3rem' }}>
-         <h2 style={{ fontSize: '2.5rem', color: 'var(--ifm-color-primary)', marginBottom: '1.5rem' }}>QAT User Manual</h2>
+         <h2 style={{ fontSize: '2.5rem', color: 'var(--ifm-color-primary)', marginBottom: '0.25rem' }}>QAT User Manual</h2>
+         <div style={{ fontSize: '1.1rem', color: 'var(--ifm-color-emphasis-700)', marginBottom: '1.5rem', fontWeight: '500' }}>
+            Version: {docVersion} | Date: {uploadDate}
+         </div>
          <img src="/qat-documentation/img/QAT-logo.png" alt="QAT Logo" style={{ height: '80px' }} />
       </div>
       {parts.map((Part, i) => (

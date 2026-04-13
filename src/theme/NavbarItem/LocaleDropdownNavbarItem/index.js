@@ -20,27 +20,41 @@ export default function LocaleDropdownNavbarItem({
   const {pathname} = useLocation();
 
   const localeItems = locales.map((locale) => {
-    // Check if we are currently in the "User" module or full manual
-    const isUserModule = pathname.includes('/docs/user') || pathname.includes('/full-manual');
+    // 1. Get the path relative to baseUrl
+    let relativePath = pathname.startsWith(baseUrl)
+      ? pathname.substring(baseUrl.length)
+      : pathname;
 
-    let to;
-    if (isUserModule) {
-      // Stay on the same page but change the locale
-      let relativePath = pathname.startsWith(baseUrl)
-        ? pathname.substring(baseUrl.length)
-        : pathname;
-
-      if (currentLocale !== 'en' && relativePath.startsWith(`${currentLocale}/`)) {
-        relativePath = relativePath.substring(currentLocale.length + 1);
-      }
-      
-      const localePath = locale === 'en' ? '' : `${locale}/`;
-      to = `pathname://${baseUrl}${localePath}${relativePath}`;
-    } else {
-      // If not in the user module, redirect to the user introduction in that language
-      const localePath = locale === 'en' ? '' : `${locale}/`;
-      to = `pathname://${baseUrl}${localePath}docs/user/introduction`;
+    // Remove leading slash if any
+    if (relativePath.startsWith('/')) {
+      relativePath = relativePath.substring(1);
     }
+
+    // 2. Remove the current locale prefix to get the "pure" path
+    let purePath = relativePath;
+    const otherLocales = locales.filter(l => l !== 'en');
+    for (const l of otherLocales) {
+      if (purePath === l || purePath.startsWith(`${l}/`)) {
+        purePath = purePath === l ? '' : purePath.substring(l.length + 1);
+        break;
+      }
+    }
+
+    // 3. Determine if we stay on the current page or go to user introduction
+    const isUserModule = purePath.startsWith('docs/user') || purePath.startsWith('full-manual');
+    
+    let targetPath;
+    if (isUserModule) {
+      targetPath = purePath;
+    } else {
+      targetPath = 'docs/user/introduction';
+    }
+
+    // 4. Construct the target URL
+    const localePrefix = locale === 'en' ? '' : `${locale}/`;
+    // Ensure combine without double slashes (except the leading one from baseUrl)
+    const fullPath = `${baseUrl}${localePrefix}${targetPath}`.replace(/\/+/g, '/');
+    const to = `pathname://${fullPath}`;
     
     return {
       label: localeConfigs[locale].label,

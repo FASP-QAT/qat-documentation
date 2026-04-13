@@ -2,8 +2,12 @@ import React, { useEffect } from 'react';
 import Layout from '@theme/Layout';
 import FullManualContent from '@site/src/components/FullManualContent';
 import Head from '@docusaurus/Head';
+import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 
 export default function FullManualPage() {
+  const { siteConfig } = useDocusaurusContext();
+  const { docVersion } = siteConfig.customFields;
+  const pageTitle = `QAT User Manual - ${docVersion}`;
   useEffect(() => {
     const params = new URLSearchParams(window.location.search);
     if (params.get('print') === 'true') {
@@ -15,7 +19,7 @@ export default function FullManualPage() {
   }, []);
 
   return (
-    <Layout title="QAT User Manual" noFooter noNavbar>
+    <Layout title={pageTitle} noFooter noNavbar>
       <Head>
         <meta name="robots" content="noindex" />
       </Head>
