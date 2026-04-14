@@ -60,4 +60,4 @@ QAT was built with funding from  the U. S. Government under the [Global Health S
 
 ## Which countries have been trained on QAT?
 
-![map](static\img\home\QAT%20Training%20Map.png)
+![map](/img/home/QAT-Training-Map.png)
