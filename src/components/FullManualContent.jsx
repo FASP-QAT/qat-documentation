@@ -1,48 +1,31 @@
-import React from 'react';
+import React, { Suspense, lazy } from 'react';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
-import Part01 from '../../docs/user/01-introduction.md';
-import Part02 from '../../docs/user/02-version-history.md';
-import Part03 from '../../docs/user/03-table-of-contents.md';
-import Part04 from '../../docs/user/04-overview.md';
-import Part05 from '../../docs/user/05-getting-started.md';
-import Part06 from '../../docs/user/06-managing-programs-and-versions.md';
-import Part07 from '../../docs/user/07-supply-planning-module-program-data.md';
-import Part08 from '../../docs/user/08-supply-planning-module-supply-planning.md';
-import Part09 from '../../docs/user/09-supply-planning-module-reports.md';
-import Part10 from '../../docs/user/10-forecasting-module-program-data.md';
-import Part11 from '../../docs/user/11-forecasting-module-forecasting.md';
-import Part12 from '../../docs/user/12-forecasting-module-reports-and-outputs.md';
-import Part13 from '../../docs/user/13-annex-1-application-realm-administrator-manual.md';
-import Part14 from '../../docs/user/14-annex-2-business-rules.md';
-import Part15 from '../../docs/user/15-annex-3-user-role-matrix.md';
-import Part16 from '../../docs/user/16-annex-4-business-functions.md';
-import Part17 from '../../docs/user/17-annex-5-pipeline-program-import.md';
-import Part18 from '../../docs/user/18-acronyms.md';
 
-const parts = [
-  Part01, Part02, Part03, Part04, Part05, Part06, Part07, Part08, Part09,
-  Part10, Part11, Part12, Part13, Part14, Part15, Part16, Part17, Part18
-];
+const FullManualContentEn = lazy(() => import('./FullManualContentEn'));
+const FullManualContentFr = lazy(() => import('./FullManualContentFr'));
+const FullManualContentEs = lazy(() => import('./FullManualContentEs'));
+const FullManualContentPt = lazy(() => import('./FullManualContentPt'));
+
+const Loading = () => (
+  <div style={{ textAlign: 'center', padding: '2rem' }}>
+    <div className="loader">Loading manual content...</div>
+  </div>
+);
 
 export default function FullManualContent() {
-  const { siteConfig } = useDocusaurusContext();
-  const { docVersion, uploadDate } = siteConfig.customFields;
+  const { i18n } = useDocusaurusContext();
+  const locale = i18n.currentLocale;
 
   return (
-    <div className="full-manual-content">
-      <div className="print-header" style={{ textAlign: 'center', marginBottom: '3rem' }}>
-         <h2 style={{ fontSize: '2.5rem', color: 'var(--ifm-color-primary)', marginBottom: '0.25rem' }}>QAT User Manual</h2>
-         <div style={{ fontSize: '1.1rem', color: 'var(--ifm-color-emphasis-700)', marginBottom: '1.5rem', fontWeight: '500' }}>
-            Version: {docVersion} | Date: {uploadDate}
-         </div>
-         <img src="/qat-documentation/img/QAT-logo.png" alt="QAT Logo" style={{ height: '80px' }} />
-      </div>
-      {parts.map((Part, i) => (
-        <div key={i} className="manual-page-break">
-          <Part />
-          {i < parts.length - 1 && <hr className="page-break-divider" />}
-        </div>
-      ))}
-    </div>
+    <Suspense fallback={<Loading />}>
+      {(() => {
+        switch (locale) {
+          case 'fr': return <FullManualContentFr />;
+          case 'es': return <FullManualContentEs />;
+          case 'pt': return <FullManualContentPt />;
+          default: return <FullManualContentEn />;
+        }
+      })()}
+    </Suspense>
   );
 }

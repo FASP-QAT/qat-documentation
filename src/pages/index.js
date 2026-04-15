@@ -2,6 +2,8 @@ import clsx from 'clsx';
 import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
+import useBaseUrl from '@docusaurus/useBaseUrl';
+
 
 import Heading from '@theme/Heading';
 import styles from './index.module.css';
@@ -76,7 +78,8 @@ function ResourceColumns() {
           <li>Instructions for monitoring stock status, optimizing procurement, and sharing data</li>
         </ol></p>
       </>,
-      link: "/qat-documentation/full-manual?print=true"
+      link: "/full-manual?print=true"
+
     },
     {
       image: "img/home/QAT Reports Reference Sheet Image.png",
@@ -118,7 +121,8 @@ function ResourceColumns() {
             {resource.isPremiumPdf ? (
               /* Custom cover image and downloader for the User Manual */
               <div style={{ cursor: 'pointer' }}>
-                <Link to={resource.link}>
+                <Link to={useBaseUrl(resource.link)}>
+
                    <img 
                     src={resource.image}
                     alt={resource.heading}
@@ -134,9 +138,10 @@ function ResourceColumns() {
               </div>
             ) : (
               <Link
-                to={resource.link}
+                to={useBaseUrl(resource.link)}
                 className={styles.imageLink}
               >
+
                 <img 
                   src={resource.image}
                   alt={resource.heading}
@@ -153,19 +158,19 @@ function ResourceColumns() {
 
             {resource.isPremiumPdf ? (
               <DownloadPdfButton 
-                label="Download" 
                 showEverywhere={true} 
                 className="button button--primary" 
               />
             ) : (
               <Link
                 className="button button--primary"
-                to={resource.link}
+                to={useBaseUrl(resource.link)}
                 style={{ marginTop: 'auto' }}
               >
                 Download
               </Link>
             )}
+
 
             <div style={{ 
               textAlign: 'left',
