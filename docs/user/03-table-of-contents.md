@@ -2,7 +2,7 @@
 id: table-of-contents
 title: "Table of Contents"
 sidebar_label: "Table of Contents"
-sidebar_position: 3
+sidebar_position: 1
 ---
 
 # Table of Contents
