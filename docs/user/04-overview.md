@@ -2,7 +2,7 @@
 id: terms
 title: "Terms & Acronyms"
 sidebar_label: "Terms & Acronyms"
-sidebar_position: 18
+sidebar_position: 2
 ---
 # Terms & Acronyms
 
