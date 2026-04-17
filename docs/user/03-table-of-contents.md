@@ -7,7 +7,9 @@ sidebar_position: 1
 
 # Table of Contents
 
-Below is the full breakdown of the QAT user documentation. Click on any section to navigate to the detailed guide.
+Welcome to the User Manual for the Quantification Analytics Tool (QAT). This manual is designed for end-users, providing comprehensive information on system functionality, workflows, and best practices. Technical administrators should view the [Developer](/docs/developer/01_purpose.md) and [API](https://fasp-qat.github.io/qat-documentation/docs/api) sections.
+
+Click on any section to navigate to the detailed guide.
 
 - [Section 1: Overview](04-overview.md#overview)
 - [Section 2: Getting Started](05-getting-started.md#getting-started)
