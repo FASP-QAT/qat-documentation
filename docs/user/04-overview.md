@@ -1,10 +1,10 @@
 ---
-id: overview
-title: "Acronyms & Definitions"
-sidebar_label: "Acronyms & Definitions"
-sidebar_position: 4
+id: terms
+title: "Terms & Acronyms"
+sidebar_label: "Terms & Acronyms"
+sidebar_position: 18
 ---
-# Acronyms & Definitions
+# Terms & Acronyms
 
 This page provides definitions for commonly used acronyms and terms within the QAT application and documentation.
 
