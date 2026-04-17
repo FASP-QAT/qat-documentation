@@ -2,7 +2,7 @@
 id: version-history
 title: "Version History"
 sidebar_label: "Version History"
-sidebar_position: 2
+sidebar_position: 18
 ---
 
 # Version History
