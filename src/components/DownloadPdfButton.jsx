@@ -2,10 +2,14 @@ import React, { useState } from 'react';
 import useBaseUrl from '@docusaurus/useBaseUrl';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import { useDoc } from '@docusaurus/plugin-content-docs/client';
+import { useLocation } from '@docusaurus/router';
+import IconLanguage from '@theme/Icon/Language';
 
 export default function DownloadPdfButton({ label, showEverywhere = false, className }) {
-  const { i18n } = useDocusaurusContext();
-  const locale = i18n.currentLocale;
+  const { siteConfig, i18n } = useDocusaurusContext();
+  const { pathname } = useLocation();
+  const { baseUrl } = siteConfig;
+  const { currentLocale, locales, localeConfigs, defaultLocale } = i18n;
   const [isGenerating, setIsGenerating] = useState(false);
   
   // Detection logic
@@ -25,6 +29,40 @@ export default function DownloadPdfButton({ label, showEverywhere = false, class
     return null;
   }
 
+  const getLocalePath = (targetLocale) => {
+    const normalizedBaseUrl = baseUrl.endsWith('/') ? baseUrl : `${baseUrl}/`;
+    let relativePath = pathname.startsWith(normalizedBaseUrl)
+      ? pathname.substring(normalizedBaseUrl.length)
+      : pathname;
+
+    if (relativePath.startsWith('/')) {
+      relativePath = relativePath.substring(1);
+    }
+
+    let purePath = relativePath;
+    for (const l of locales) {
+      if (purePath === l || purePath.startsWith(`${l}/`)) {
+        purePath = purePath === l ? '' : purePath.substring(l.length + 1);
+        break;
+      }
+    }
+
+    const isUserModuleOnTarget = purePath.startsWith('docs/user') || purePath.startsWith('full-manual');
+    const isHomePage = purePath === '' || purePath === '/';
+    
+    let targetPath;
+    if (isUserModuleOnTarget || isHomePage) {
+      targetPath = purePath;
+    } else {
+      targetPath = 'docs/user/introduction';
+    }
+
+    const localePrefix = targetLocale === defaultLocale ? '' : `${targetLocale}/`;
+    const fullPath = `${normalizedBaseUrl}${localePrefix}${targetPath}`.replace(/\/+/g, '/').replace(/\/$/, '');
+    
+    return fullPath || normalizedBaseUrl;
+  };
+
   const printUrl = useBaseUrl('/full-manual');
 
   const labels = {
@@ -34,7 +72,7 @@ export default function DownloadPdfButton({ label, showEverywhere = false, class
     pt: { idle: label || 'Baixar Manual do Usuário', busy: 'Gerando...' }
   };
 
-  const currentLabels = labels[locale] || labels.en;
+  const currentLabels = labels[currentLocale] || labels.en;
 
   const handleDownload = (e) => {
     if (e) {
@@ -82,10 +120,49 @@ export default function DownloadPdfButton({ label, showEverywhere = false, class
     <div className={!className ? "no-print" : ""} style={!className ? { 
       display: 'flex', 
       justifyContent: 'flex-end', 
+      alignItems: 'center',
+      gap: '10px',
       padding: '5px 0',
       marginBottom: '10px',
       borderBottom: '1px solid var(--ifm-color-emphasis-300)'
-    } : {}}>
+    } : {
+      display: 'flex',
+      flexDirection: 'column',
+      alignItems: 'center',
+      gap: '10px'
+    }}>
+      <div className="dropdown dropdown--hoverable no-print">
+        <button 
+          className="button button--sm button--outline button--primary"
+          style={{
+            display: 'inline-flex',
+            alignItems: 'center',
+            gap: '8px',
+            borderRadius: '50px',
+            padding: '6px 16px',
+            textTransform: 'none',
+            fontWeight: '700',
+            cursor: 'pointer'
+          }}
+        >
+          <IconLanguage style={{ width: '16px', height: '16px' }} />
+          {localeConfigs[currentLocale].label}
+        </button>
+        <ul className="dropdown__menu dropdown__menu--right">
+          {locales.map((l) => (
+            <li key={l}>
+              <a 
+                className={`dropdown__link ${l === currentLocale ? 'dropdown__link--active' : ''}`}
+                href={getLocalePath(l)}
+                style={{ cursor: 'pointer' }}
+              >
+                {localeConfigs[l].label}
+              </a>
+            </li>
+          ))}
+        </ul>
+      </div>
+
       <button
         onClick={handleDownload}
         disabled={isGenerating}

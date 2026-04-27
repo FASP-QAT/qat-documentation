@@ -1,7 +1,7 @@
 ---
 id: supply-planning-module-program-data
 title: "Supply Planning Module: Program Data"
-sidebar_label: "Supply Planning Module: Program Data"
+sidebar_label: "SP: Program Data"
 sidebar_position: 7
 ---
 

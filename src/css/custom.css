@@ -82,6 +82,10 @@ a.button {
   border-bottom: 0.25rem solid var(--ifm-color-primary);
 }
 
+.navbar__title {
+  font-weight: var(--ifm-font-weight-semibold);
+}
+
 /* custom styles for HRs */
 .section-divider {
   margin: 3rem auto;

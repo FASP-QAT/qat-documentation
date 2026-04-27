@@ -18,30 +18,8 @@ function HomepageHeader() {
         <Heading as="h1" className="hero__title">
           Quantification Analytics Tool
         </Heading>
-        <p className="hero__subtitle">
-          QAT Documentation Platform
-        </p>
-        <div style={{ 
-          display: 'inline-block', 
-          background: 'rgba(255,255,255,0.2)', 
-          padding: '0.5rem 1rem', 
-          borderRadius: '2rem',
-          fontSize: '0.9rem',
-          fontWeight: '500',
-          marginTop: '0.5rem'
-        }}>
-          Version: {docVersion} | Last Updated: {uploadDate}
-        </div>
         <p style={{ textAlign: 'center', maxWidth: '800px', margin: '2rem auto', fontSize: '1.2rem' }}>
-          The Quantification Analytics Tool (QAT), is a modernized solution for 
-          country-led forecasting and supply planning. Funded by USAID, QAT 
-          leverages new technologies and enhances the existing tools such as, 
-          PipeLine and Quantimed. With an enhanced user interface and 
-          usability, greater analytical capabilities and automated data 
-          exchange, this new tool enables program managers to easily build 
-          multiple forecasts for comparison and selection, optimize commodity 
-          procurement and delivery schedules, monitor the stock status of 
-          products and share data with external platforms and key stakeholders.
+          The Quantification Analytics Tool (QAT) is a cloud-based software for country-led forecasting and supply planning (FASP). QAT has a forecasting module and a supply planning module, and can be used for any health commodity.
           </p>
       </div>
     </header>
@@ -192,8 +170,9 @@ export default function Home() {
       title={`${siteConfig.title}`}
       description={`${siteConfig.tagline}`}>
       <HomepageHeader />
-      <ResourceColumns />
-      <hr className="section-divider-footer" />
+      {/* <ResourceColumns /> */}
+      {/* <hr className="section-divider-footer" /> */}
+      <br />
       <main className="container">
         <div>
           <p style={{ textAlign: 'left' }}>
@@ -215,11 +194,11 @@ export default function Home() {
           represent the views or positions of the Agency for International 
           Development or the U.S. government.
           </p>
-          <div style={{ display: 'flex', justifyContent: 'center', flexWrap: 'wrap', gap: '2rem', marginTop: '2rem', marginBottom: '2rem' }}>
+          {/* <div style={{ display: 'flex', justifyContent: 'center', flexWrap: 'wrap', gap: '2rem', marginTop: '2rem', marginBottom: '2rem' }}>
             <img src="img/home/USAID-wordmark.png" alt="USAID" style={{ maxWidth: '300px', width: '100%', height: 'auto', objectFit: 'contain' }} />
             <img src="img/home/PEPFAR-logo.png" alt="PEPFAR" style={{ maxWidth: '300px', width: '100%', height: 'auto', objectFit: 'contain' }} />
             <img src="img/home/USAID-presidents-malaria-initiative.png" alt="PEPFAR Malaria Initiative" style={{ maxWidth: '300px', width: '100%', height: 'auto', objectFit: 'contain' }} />
-          </div>
+          </div> */}
         </div>
       </main>
     </Layout>
