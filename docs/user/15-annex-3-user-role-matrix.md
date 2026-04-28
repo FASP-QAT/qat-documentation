@@ -5,11 +5,11 @@ sidebar_label: "Annex 3: User Role Matrix"
 sidebar_position: 15
 ---
 
-# Annex 3: User Role Matrix
+# Annex 3. User Role Matrix
 
 This matrix defines the permissions for every role within QAT. Permissions are categorized by functional area.
 
-## Role Descriptions
+## Annex 3.A. Role Descriptions.
 
 | Role | Description |
 | :--- | :--- |
@@ -25,7 +25,7 @@ This matrix defines the permissions for every role within QAT. Permissions are c
 
 ---
 
-## 1. Administrative & Master Data
+## Annex 3.B. Administrative & Master Data.
 | Business Function | App Admin | Realm Admin | Program Admin | Users | Viewers |
 | :--- | :---: | :---: | :---: | :---: | :---: |
 | Label & DB Translations | **X** | - | - | - | - |
@@ -38,7 +38,7 @@ This matrix defines the permissions for every role within QAT. Permissions are c
 
 ---
 
-## 2. Program Management
+## Annex 3.C. Program Management.
 | Business Function | Realm Admin | SP Admin | FC Admin | Users |
 | :--- | :---: | :---: | :---: | :---: |
 | Setup/Create New Program | **X** | - | **X** | - |
@@ -49,7 +49,7 @@ This matrix defines the permissions for every role within QAT. Permissions are c
 
 ---
 
-## 3. Supply Plan Operations
+## Annex 3.D. Supply Plan Operations.
 | Business Function | Realm Admin | SP Admin | SP User | SP Reviewer | SP Viewer |
 | :--- | :---: | :---: | :---: | :---: | :---: |
 | Data Entry (Cons./Inv./Ship.) | **X** | **X** | **X** | - | V¹ |
@@ -62,7 +62,7 @@ This matrix defines the permissions for every role within QAT. Permissions are c
 
 ---
 
-## 4. Forecasting Operations
+## Annex 3.E. Forecasting Operations.
 | Business Function | Realm Admin | FC Admin | FC User | FC Viewer |
 | :--- | :---: | :---: | :---: | :---: |
 | Consumption Data Entry | **X** | **X** | **X** | V |
@@ -73,7 +73,7 @@ This matrix defines the permissions for every role within QAT. Permissions are c
 
 ---
 
-## 5. Reports Access
+## Annex 3.F. Reports Access.
 | Report Type | Admins | Users | Viewers |
 | :--- | :---: | :---: | :---: |
 | Supply Plan / Stock Status | **X** | **X** | **X** |

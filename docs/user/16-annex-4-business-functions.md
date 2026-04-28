@@ -5,11 +5,11 @@ sidebar_label: "Annex 4: Business Functions"
 sidebar_position: 16
 ---
 
-# Annex 4: Business Functions
+# Annex 4. Business Functions
 
 Business functions are granular capabilities assigned to roles. They define exactly what actions a user can perform within the system.
 
-## Permission Verbs
+## Annex 4.A. Permission Verbs.
 When configuring roles, the following verbs determine the level of access:
 - **List**: Allows viewing the data table only; no additions or edits.
 - **Add**: Allows creating new records.
@@ -18,7 +18,7 @@ When configuring roles, the following verbs determine the level of access:
 
 ---
 
-## 1. Translations & Admin Dashboards
+## Annex 4.B. Translations & Admin Dashboards.
 | Category | Business Function | Description |
 | :--- | :--- | :--- |
 | **Translations** | Label Translations | Update "Static Labels" (UI headers) across languages. |
@@ -30,7 +30,7 @@ When configuring roles, the following verbs determine the level of access:
 
 ---
 
-## 2. Master Data Management
+## Annex 4.C. Master Data Management.
 | Category | Business Function | Description |
 | :--- | :--- | :--- |
 | **App Masters** | Manage Country/Currency | Global configuration of geographic and monetary units. |
@@ -44,7 +44,7 @@ When configuring roles, the following verbs determine the level of access:
 
 ---
 
-## 3. Program & Supply Chain Operations
+## Annex 4.D. Program & Supply Chain Operations.
 | Category | Business Function | Description |
 | :--- | :--- | :--- |
 | **Programs** | Setup Program | Create and configure new Supply Planning or Forecast programs. |
@@ -58,7 +58,7 @@ When configuring roles, the following verbs determine the level of access:
 
 ---
 
-## 4. Forecasting & Reporting
+## Annex 4.E. Forecasting & Reporting.
 | Category | Business Function | Description |
 | :--- | :--- | :--- |
 | **Methodologies** | Tree Forecasting | Build and manage tiered demand models (Aggregation/Percentage/Number). |

@@ -5,15 +5,15 @@ sidebar_label: "Annex 1: Application & Realm Administrator Manual"
 sidebar_position: 13
 ---
 
-# Annex 1: Application & Realm Administrator Manual
+# Annex 1. Application & Realm Administrator Manual
 
-## Introduction
+## Annex 1.A. Introduction.
 This annex provides guidance on administrative functionalities restricted to **Application Administrators** and **Realm Administrators**.
 - **Application Masters**: Global settings affecting all realms (App Admin only).
 - **Realm Level Masters**: Data specific to a realm, affecting its programs and supply plans (App and Realm Admins).
 - **Program Level Masters**: Settings managed by Program Admins for specific programs.
 
-## Administrative Dashboards
+## Annex 1.B. Administrative Dashboards.
 Administrators see unique tiles on their dashboards to manage global and realm-level data.
 
 | Tile | Admin Level | Function |
@@ -29,10 +29,10 @@ Administrators see unique tiles on their dashboards to manage global and realm-l
 
 ---
 
-## Managing Master Data
+## Annex 1.C. Managing Master Data.
 QAT uses a three-tier hierarchy for data management.
 
-### 1. Application Masters (Global)
+### Annex 1.C.1. Application Masters (Global).
 These settings apply application-wide across all realms.
 
 #### Translation Management
@@ -55,7 +55,7 @@ The following entities follow a standard **List > Add (+) > Update** workflow:
 
 ---
 
-### 2. Realm Masters (Business Logic)
+### Annex 1.C.2. Realm Masters (Business Logic).
 Realm settings govern the specific products, funders, and procurement logic for a group of programs.
 
 #### Product Catalog
@@ -80,10 +80,10 @@ EUs allow disparate products to be aggregated for reporting (e.g., converting bo
 
 ---
 
-## Setting Up a New Program
+## Annex 1.D. Setting Up a New Program.
 Administrators initiate programs via the **Setup Program** wizard.
 
-### Workflow:
+### Annex 1.D.1. Workflow.
 1. **Choose Realm & Country**: Assign the program to its clinical/geographic context.
 2. **Define Technical Area**: Select one or more areas (e.g., HIV + TB).
 3. **Select Organization & Regions**: Determine the managing body and geographic scope (National or sub-national).
@@ -94,7 +94,7 @@ Administrators initiate programs via the **Setup Program** wizard.
 
 ---
 
-## Utility Tools
-### Resetting the QPL
+## Annex 1.E. Utility Tools.
+### Annex 1.E.1. Resetting the QPL.
 Administrators can bulk-reset the **QAT Problem List (QPL)** to reopen "Addressed" issues for a new review cycle.
 - **Usage:** Typically done at the start of a new submission period for approved versions.

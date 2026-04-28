@@ -5,9 +5,9 @@ sidebar_label: "FC: Forecasting"
 sidebar_position: 11
 ---
 
-# Forecasting Module: Forecasting
+# Section 8. Forecasting Module: Forecasting
 
-## Consumption Forecasts
+## 8.A. Consumption Forecasts.
 Consumption-based forecasts use historical data to project future demand. This method is ideal for stable programs with at least 24 months of reliable monthly consumption data.
 
 **The Workflow:**
@@ -15,7 +15,7 @@ Consumption-based forecasts use historical data to project future demand. This m
 2. **Adjust:** Account for under-reporting, stockouts, and missing data points.
 3. **Extrapolate:** Apply statistical models to project the "Adjusted Consumption" into the future.
 
-### Data Entry & Import
+### 8.A.1. Data Entry & Import.
 You can populate historical actuals via two methods:
 
 #### Method 1: Import from Supply Plan
@@ -33,7 +33,7 @@ You can populate historical actuals via two methods:
 ![Data Entry Interface](/img/media/image242.png)
 *Figure 1: Historical Consumption Data Entry Table*
 
-### Statistical Adjustments
+### 8.A.2. Statistical Adjustments.
 Raw data must be cleaned to create a reliable "Adjusted Consumption" series. QAT handles three types of adjustments:
 
 #### 1. Under-Reporting
@@ -49,7 +49,7 @@ The **Interpolate** button fills gaps in your data using a straight-line formula
 > [!NOTE]
 > QAT will not interpolate months where actual consumption is zero (as this may be a valid data point). It only fills blank "missing" cells.
 
-### Extrapolation Concepts
+### 8.A.3. Extrapolation Concepts.
 QAT offers several statistical models to project future demand. Choose a model based on your data availability and consumption patterns:
 
 - **Simple Models (3+ months data):**
@@ -59,7 +59,7 @@ QAT offers several statistical models to project future demand. Choose a model b
   - **ARIMA (13+ months data):** Flexible model that accounts for trends and seasonal cycles.
   - **Triple Exponential Smoothing (24+ months data):** Best for complex data with both strong trends and annual seasonality.
 
-### Interpreting Forecast Errors
+### 8.A.4. Interpreting Forecast Errors.
 QAT calculates several error metrics to help you select the best fit.
 
 | Metric | Definition | Best Used For... |
@@ -71,10 +71,10 @@ QAT calculates several error metrics to help you select the best fit.
 
 ---
 
-## Tree Forecasts
+## 8.B. Tree Forecasts.
 Tree-based forecasting is a flexible method used when historical consumption is unavailable or unreliable. It supports **morbidity, services, and demographic** methodologies by allowing you to build a logical "tree" of drivers that result in product demand.
 
-### Building & Managing Trees
+### 8.B.1. Building & Managing Trees.
 **Navigation:** **Forecasting Tree** > **Manage Tree**.
 
 You can manage your trees through the following actions:
@@ -86,7 +86,7 @@ You can manage your trees through the following actions:
 > [!NOTE]
 > Trees are saved locally first. You must **Upload Version** to save your work to the server.
 
-### Node Types & Hierarchy
+### 8.B.2. Node Types & Hierarchy.
 A tree is built from the top down using specific node types. Every tree must end in **Planning Units** to generate a forecast.
 
 | Node Type | Function | Allowed Children | Advanced Options |
@@ -104,7 +104,7 @@ A tree is built from the top down using specific node types. Every tree must end
 - **Add Branch Template:** Inserts a pre-defined branch (e.g., a standard drug regimen).
 - **Collapse/Expand:** Simplifies the visual view of the tree.
 
-### Node Attributes
+### 8.B.3. Node Attributes.
 Each node has editable fields that define its value and behavior:
 
 - **# Number Node:** Define the **Node Unit** (patients, people, etc.) and its **Value** for a specific starting month.
@@ -116,7 +116,7 @@ Each node has editable fields that define its value and behavior:
   - **Lag:** Delays the start of product usage relative to the parent driver (e.g., product usage starts 2 months after diagnosis).
 - **Planning Unit (PU) Node:** Defaults to the system conversion but can be overridden manually if needed.
 
-### Dynamic Changes (Modeling & Transfers)
+### 8.B.4. Dynamic Changes (Modeling & Transfers).
 Trees are not static; values can change over time to reflect program growth or transitions.
 
 #### 1. Modeling Types
@@ -135,12 +135,12 @@ You can further refine monthly data by clicking **Show Monthly Data**:
 - **Seasonality Index:** Enter a percentage (e.g., `20%` for a 20% increase over baseline) to reflect cyclic demand.
 - **Manual Change:** Override a specific month's value for one-off events (e.g., a massive drug campaign).
 
-### Modeling Calculator
+### 8.B.5. Modeling Calculator.
 If you don't know the monthly rate, use the **Modeling Calculator** (⇅) to derive it:
 - **Ending Value:** Enter your start value, target date, and final target value. QAT calculates the monthly rate.
 - **Annual Target:** Enter a yearly cumulative target (Actual + Target Year). QAT interpolates a smooth monthly transition to avoid "stairstep" patterns.
 
-### Advanced Techniques
+### 8.B.6. Advanced Techniques.
 #### Lag in Usage
 Available in **FU Nodes**. Use the **Lag** field to delay product usage relative to the parent driver. 
 - *Example:* If patients are diagnosed in Month 1 but start treatment in Month 3, enter a lag of `2`.
@@ -153,7 +153,7 @@ Available in **FU Nodes**. Use the **Lag** field to delay product usage relative
 Funnel nodes allow you to aggregate source nodes from different branches—or even different trees—into a single stream for further calculation.
 - *Use Case:* Different demographic groups (Adults, Children) that all use the same Viral Load testing instruments.
 
-### Validations & Templates
+### 8.B.7. Validations & Templates.
 #### Validations
 - **Modeling Validation:** Charts showing how your drivers (Population, Patients) change over time.
 - **Product Validation:** Aggregated view of all Planning Units across the tree for consistency checks.

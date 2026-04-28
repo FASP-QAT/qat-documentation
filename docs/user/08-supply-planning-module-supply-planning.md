@@ -5,9 +5,9 @@ sidebar_label: "SP: Supply Planning"
 sidebar_position: 8
 ---
 
-# Supply Planning Module: Supply Planning
+# Section 5. Supply Planning Module: Supply Planning
 
-## Supply Planning: An Overview
+## 5.A. Supply Planning: An Overview.
 The Supply Planning screen is the central hub where consumption, inventory, and shipments converge to project stock levels.
 
 **Who:** Realm/Program Admins, Reviewers, and Program Users.
@@ -18,7 +18,7 @@ The Supply Planning screen is the central hub where consumption, inventory, and 
 - **Interactive Table:** Click cells to edit data directly or view detailed pop-ups.
 - **Dynamic Legend:** Toggle data elements in the graph by clicking legend items.
 
-### Stock Balance Calculations
+### 5.A.1. Stock Balance Calculations.
 QAT uses a standard logic to calculate the monthly progression:
 
 | Component | Description | Visual Indicator |
@@ -27,7 +27,7 @@ QAT uses a standard logic to calculate the monthly progression:
 | **Ending Balance** | End-of-month stock. | **Bold** = Actual; Regular = Projected. |
 | **Unmet Demand** | Stock needed but unavailable. | Captures "negative" stock scenarios. |
 
-### Stock Status Legend
+### 5.A.2. Stock Status Legend.
 Stock status is color-coded based on the planning method:
 - **Plan by MOS:** Transitions: **Stock Out (Red)** → **Understock (Yellow)** → **Ideal (Green)** → **Overstock (Blue)**.
 - **Plan by Quantity (Min/Max):** Color-coded based on user-defined minimum and calculated maximum quantities.
@@ -35,10 +35,10 @@ Stock status is color-coded based on the planning method:
 ![Supply Planning Interface](/img/media/image153.png)
 *Figure 1: Plan by Months of Stock (MOS) View*
 
-## Supply Planning: Consumption & Shipments
+## 5.B. Supply Planning: Consumption & Shipments.
 The Supply Planning table allows granular control over transactions.
 
-### Consumption
+### 5.B.1. Consumption.
 - **Forecasted Consumption:** Purple italic text.
 - **Actual Consumption:** Black non-italicized text.
 
@@ -47,7 +47,7 @@ The Supply Planning table allows granular control over transactions.
 2. In the pop-up, edit quantities by region.
 3. Click **Submit** to update the plan.
 
-### Shipments
+### 5.B.2. Shipments.
 Shipments are aggregated by default. Click the **+** next to **Shipments** to expand into:
 - **Suggested:** Auto-calculated by QAT to maintain stock levels.
 - **Planned, Submitted, Shipped, Arrived, Received:** Tracked milestones.
@@ -72,7 +72,7 @@ QAT suggests shipments to keep the plan between **Minimum** and **Maximum** leve
 ![Shipment Details Pop-up](/img/media/image174.png)
 *Figure 2: Editing Shipment Details*
 
-## Supply Planning: Inventory & Adjustments
+## 5.C. Supply Planning: Inventory & Adjustments.
 Inventory and adjustments can be managed directly from the supply planning table.
 
 **To add/edit records:**
@@ -81,7 +81,7 @@ Inventory and adjustments can be managed directly from the supply planning table
 3. **Inventory Count:** Entering an inventory count will **bold** the ending balance and override projections.
 4. **Adjustments:** Notes are required for all adjustment entries.
 
-### Projecting Expiries
+### 5.C.1. Projecting Expiries.
 The **Projected Expired Stock** row highlights potential losses.
 - **Action:** Click a cell to see the **Expiry Details**.
 - **Correction:** Click the batch number to jump to the source shipment and update the expiry date or quantity.
@@ -90,7 +90,7 @@ The **Projected Expired Stock** row highlights potential losses.
 ![Expiry Management Pop-up](/img/media/image189.png)
 *Figure 3: Batch Expiry Details*
 
-## Scenario Planning
+## 5.D. Scenario Planning.
 Scenario Planning allows users to simulate changes to their supply plan without altering the current version.
 
 **Available Scenarios:**
@@ -108,10 +108,10 @@ Scenario Planning allows users to simulate changes to their supply plan without 
 ![Scenario Planning interface](/img/media/image191.png)
 *Figure 4: Comparing Scenarios*
 
-## Supply Plan Report
+## 5.E. Supply Plan Report.
 The Supply Plan Report provides a comprehensive view of stock status across one or multiple programs.
 
-### Report Views
+### 5.E.1. Report Views.
 - **Single Program:** Detailed view of one program and planning unit.
 - **Multi-Program:** Aggregates data for the same planning unit across multiple programs.
 - **Equivalency Unit (EU):** Aggregates different planning units using standardized conversion factors (e.g., CYP or ARV Patient Months).

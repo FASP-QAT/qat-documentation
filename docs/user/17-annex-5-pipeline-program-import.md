@@ -5,7 +5,7 @@ sidebar_label: "Annex 5: PipeLine Program Import"
 sidebar_position: 17
 ---
 
-# Annex 5: PipeLine Program Import
+# Annex 5. PipeLine Program Import
 
 This annex details the process for migrating legacy **PipeLine** databases into QAT. This is a three-stage process: conversion, upload, and data mapping.
 
@@ -16,7 +16,7 @@ This annex details the process for migrating legacy **PipeLine** databases into 
 
 ---
 
-## Step 1: Convert .accdb to JSON
+## Annex 5.A. Step 1: Convert .accdb to JSON.
 QAT requires data in JSON format. Use the **PipeLine Converter Tool** for this conversion.
 
 1. Navigate to **Program Management > PipeLine Program Import**.
@@ -30,7 +30,7 @@ QAT requires data in JSON format. Use the **PipeLine Converter Tool** for this c
 
 ---
 
-## Step 2: Upload to QAT
+## Annex 5.B. Step 2: Upload to QAT.
 Once you have the `.json` file, you must upload it to the QAT server.
 
 1. In QAT, return to **Program Management > PipeLine Program Import**.
@@ -40,7 +40,7 @@ Once you have the `.json` file, you must upload it to the QAT server.
 
 ---
 
-## Step 3: Data Mapping Wizard
+## Annex 5.C. Step 3: Data Mapping Wizard.
 The final stage involves mapping legacy PipeLine fields to QAT's realm-level master data.
 
 Click on your imported program row to launch the **Mapping Wizard**. You will navigate through the following screens:

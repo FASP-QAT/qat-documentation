@@ -5,13 +5,13 @@ sidebar_label: "SP: Program Data"
 sidebar_position: 7
 ---
 
-# Supply Planning Module: Program Data
+# Section 4. Supply Planning Module: Program Data
 
 In QAT, a **Program** is the primary unit of supply planning, typically corresponding to a country's technical area (e.g., Malaria, HIV). Programs are governed by realm-level master data, ensuring consistency across the system.
 
 Data management at the program level is primarily handled by **Program Admins** and **Program Users**. For more details on roles, see [Annex 3: User Role Matrix](15-annex-3-user-role-matrix.md).
 
-### Data Categories
+### 4.A.1. Data Categories.
 
 | Category | Data Type | Examples |
 | :--- | :--- | :--- |
@@ -24,12 +24,12 @@ Data management at the program level is primarily handled by **Program Admins** 
 
 *Table 1: Program Data Hierarchy*
 
-## Background Data
+## 4.A. Background Data.
 
 > [!TIP]
 > Background data must be updated while online. Perform a **Master Data Sync** after updates to ensure changes are reflected across the application.
 
-### Program Information
+### 4.A.2. Program Information.
 Program Admins can define general parameters such as program managers, lead times, and default freight percentages.
 
 **To update program info:**
@@ -41,7 +41,7 @@ Program Admins can define general parameters such as program managers, lead time
 ![Update Program Info Interface](/img/media/image113.png)
 *Figure 1: Program Information Management*
 
-### Planning Units
+### 4.A.3. Planning Units.
 Planning units are the specific products used for procurement and inventory tracking. While the master catalog is managed at the realm level, Program Admins manage which units are active within their specific programs.
 
 **Key Parameters:**
@@ -60,7 +60,7 @@ Planning units are the specific products used for procurement and inventory trac
 > [!NOTE]
 > If a planning unit is missing from the catalog, submit a ticket via the [QAT Helpdesk](05-getting-started.md#qat-helpdesk-and-tickets).
 
-### Program/Procurement Agent-specific Information
+### 4.A.4. Program/Procurement Agent-specific Information.
 Users can override default lead times, freight costs, and unit prices for specific procurement agents and planning units.
 
 **Key Roles and Rules:**
@@ -77,7 +77,7 @@ Users can override default lead times, freight costs, and unit prices for specif
 ![Procurement Agent Info Interface](/img/media/image117.png)
 *Figure 2: Specific Procurement Agent Settings*
 
-### Alternate Reporting Units (ARU)
+### 4.A.5. Alternate Reporting Units (ARU).
 An ARU allows data entry in units different from the standard planning unit (e.g., pieces vs. packs).
 
 **Rules:**
@@ -92,7 +92,7 @@ An ARU allows data entry in units different from the standard planning unit (e.g
 ![ARU Interface](/img/media/image118.png)
 *Figure 3: Alternate Reporting Units*
 
-### Lead Times
+### 4.A.6. Lead Times.
 Lead times track shipment progression across six statuses. The system prioritizes lead times as follows: **Program/Agent Specific** > **Program Defaults** > **Realm Defaults**.
 
 #### Lead Time Definitions
@@ -115,7 +115,7 @@ For local procurement, the entire lead time (Planned to Received) is managed per
 ![Shipment Status Flow](/img/media/image120.png)
 *Figure 4: Shipment Lead Time Lifecycle*
 
-### Budgets
+### 4.A.7. Budgets.
 Budgets track capital allocation for purchasing commodities. A budget can be linked to one or multiple programs.
 
 - **Status Alert:** Budgets highlighted in **Red** indicate that the end date has passed or the used amount exceeds the budget.
@@ -134,10 +134,10 @@ Budgets track capital allocation for purchasing commodities. A budget can be lin
 ![Budget Management Screen](/img/media/image123.png)
 *Figure 5: Budget Overview*
 
-## Transactional Supply Plan Data
+## 4.B. Transactional Supply Plan Data.
 Transactional data includes the "Big 3": **Consumption**, **Inventory**, and **Shipments**.
 
-### Consumption Data
+### 4.B.1. Consumption Data.
 Consumption refers to stock dispensed to clients.
 - **Actual Consumption:** Reported quantity dispensed.
 - **Forecasted Consumption:** Predicted quantity agreed upon by the program.
@@ -158,7 +158,7 @@ Consumption refers to stock dispensed to clients.
 ![Consumption Data Entry](/img/media/image125.png)
 *Figure 6: Consumption Management*
 
-### Inventory Data
+### 4.B.2. Inventory Data.
 Inventory data includes **Stock Counts** and **Adjustments** (e.g., damages, transfers).
 
 - **Stock Count:** Physical inventory on a specific date.
@@ -180,7 +180,7 @@ Inventory data includes **Stock Counts** and **Adjustments** (e.g., damages, tra
 ![Inventory Data Entry](/img/media/image127.png)
 *Figure 7: Inventory Management*
 
-### Shipment Data
+### 4.B.3. Shipment Data.
 Shipments are tracked from planning to receipt.
 
 **To add/update shipments:**
@@ -198,7 +198,7 @@ Shipments are tracked from planning to receipt.
 ![Shipment Management](/img/media/image131.png)
 *Figure 8: Strategic Order Calculator*
 
-### ERP Shipment Linking
+### 4.B.4. ERP Shipment Linking.
 ERP linking allows planners to sync QAT shipments with a procurement agent's ERP system (e.g., GHSC-PSM's ARTMIS). This automates updates for status, costs, and dates.
 
 **Rules for Linking:**
@@ -223,7 +223,7 @@ ERP linking allows planners to sync QAT shipments with a procurement agent's ERP
 ![ERP Linking Screens](/img/media/image133.png)
 *Figure 9: ERP Linking Overview*
 
-#### ERP Notifications
+#### 4.B.5. ERP Notifications.
 Planners will receive alerts in the **ERP Shipment Notifications** screen if there are discrepancies between QAT and the ERP system (e.g., cancelled orders, quantity changes, or SKU updates).
 
 1.  Select the radio button at the top labeled ‘Linked’.
@@ -276,9 +276,9 @@ To address a notification, the user must check the box in the ‘Addressed?’ c
 
 Just like in the ‘Linked’ screen, the user can view ERP order history. To do so, right-click on the notification row and click ‘View ERP Order History’. Refer to the Linked Screen section for more information.
 
-## Importing Data for Supply Planning
+## 4.C. Importing Data for Supply Planning.
 
-### Supply Plan Data Excel Import Templates
+### 4.C.1. Supply Plan Data Excel Import Templates.
 
 Consumption, Inventory and Shipment data can be entered through QAT’s data entry screens, through the Supply Planning screen or through Quantimed Import (forecasted consumption only). QAT also provides users with the ability to input this data directly from Microsoft Excel. This method of data entry is intended for bulk entries that have a lot of data. The steps below will show how to input data from Excel into QAT:
 
@@ -323,7 +323,7 @@ Figure 92: Excel Template
 
 13. Click “Submit”.
 
-### Quantimed Forecast Import
+### 4.C.2. Quantimed Forecast Import.
 
 ![](/img/media/image146.png)Quantimed is a software designed to facilitate the process of determining the quantities of medicines and medical supplies required for a health program. The output of Quantimed is a health programs’ forecasted consumption data. That forecasted consumption data can be a key input into QAT user’s supply plans. QAT allows users to import Quantimed forecasts into QAT to include in their supply plan.
 
@@ -395,9 +395,9 @@ Figure 95: Consumption Month Screen
 
 Figure 96: Confirm Data Import Screen
 
-### QAT Forecast Import
+### 4.C.3. QAT Forecast Import.
 
-### Importing Forecasts into Supply Plans
+### 4.C.4. Importing Forecasts into Supply Plans.
 Planners can import QAT-created forecasts into their supply plan programs to drive procurement needs.
 
 **Prerequisites:**

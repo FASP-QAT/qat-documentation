@@ -5,21 +5,21 @@ sidebar_label: "FC: Reports and Outputs"
 sidebar_position: 12
 ---
 
-# Forecasting Module: Reports and Outputs
+# Section 9. Forecasting Module: Reports and Outputs
 
 After defining your methodologies and parameters, the final stage is to compare the available models, select the most accurate forecast, and review the resulting procurement requirements.
 
-## Compare and Select
+## 9.A. Compare and Select.
 **Navigation:** **Forecasting Tree** > **Compare and Select**.
 
 This screen allows you to compare multiple forecasts (Consumption-based vs. Tree-based) side-by-side to make your final selection.
 
-### Key Metrics for Selection
+### 9.A.1. Key Metrics for Selection.
 - **Forecast Error (%):** Uses the **WAPE** calculation. A green highlight indicates the model with the lowest historical error.
 - **Compare to Consumption:** For tree forecasts, QAT flags if the output is significantly higher or lower than historical consumption trends. Red text indicates the variance exceeds your set thresholds.
 - **Visual Audit:** Use the **Graph** to see how different forecasts trend against historical actuals. The bolded line represents your currently selected model.
 
-### Selection Rules
+### 9.A.2. Selection Rules.
 - **One Region at a Time:** Selection is performed per Planning Unit and Region.
 - **Multiple Trees:** You can select and aggregate multiple tree forecasts (e.g., for different patient groups).
 - **Mutual Exclusivity:** You cannot combine a consumption-based forecast with a tree-based forecast for the same region/unit.
@@ -29,7 +29,7 @@ This screen allows you to compare multiple forecasts (Consumption-based vs. Tree
 
 ---
 
-## Monthly Forecast
+## 9.B. Monthly Forecast.
 **Navigation:** **Forecasting Tree** > **Monthly Forecast**.
 
 Use this report to verify your final selected forecasts in aggregate. It is the primary tool for a final sanity check before finishing the quantification.
@@ -40,16 +40,16 @@ Use this report to verify your final selected forecasts in aggregate. It is the 
 
 ---
 
-## Forecast Summary
+## 9.C. Forecast Summary.
 **Navigation:** **Forecasting Tree** > **Forecast Summary**.
 
 This screen provides two high-level views of your quantification results across the entire forecast period.
 
-### 1. Regional View
+### 9.C.1. Regional View.
 - Provides a spreadsheet-style overview of all planning units across all regions.
 - You can directly update forecast methods or add justification notes in this table.
 
-### 2. National View (Gap Analysis)
+### 9.C.2. National View (Gap Analysis).
 This view provides a high-level procurement surplus/gap analysis based on your forecast and existing supply data.
 
 > [!WARNING]
