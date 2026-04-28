@@ -30,6 +30,8 @@ The **QAT Problem List** is a built-in quality assurance tool. It identifies dat
 | **Resolved** | Reviewer confirms the issue is permanently handled. | Reviewer-only status. |
 | **Reviewed** | Reviewer has inspected the entry. | Reviewer-only status. |
 
+*Table 11: QAT Problem List Status Definitions*
+
 ### 6.A.2. Common Problems & Solutions.
 - **Missing Data:** Actual consumption or inventory counts missing in the last 3 months. *Solution: Enter missing data.*
 - **Forecast Gaps:** Missing forecast values within the next 18 months. *Solution: Enter forecast or zeros if phasing out.*
@@ -37,8 +39,13 @@ The **QAT Problem List** is a built-in quality assurance tool. It identifies dat
 - **Lead Time Violations:** Shipments that should have been submitted by a certain date. *Solution: Update status or push back receipt date.*
 - **Stock Violations:** Plan falls below Minimum or above Maximum parameters. *Solution: Adjust shipments or consumption.*
 
+<div style={{textAlign: 'center'}}>
+
 ![QAT Problem List Interface](/img/media/image198.png)
+
 *Figure 1: High-level view of the Problem List*
+
+</div>
 
 ## 6.B. Program Catalog.
 The **Program Catalog** provides a standardized list of all Planning Units and Forecasting Units within a program, including their corresponding attributes.
@@ -67,8 +74,13 @@ A point-in-time view (single month) of all planning units in a program.
 ### 6.C.4. Stock Status Snapshot (Global).
 Similar to the Snapshot but allows for cross-program comparisons (Realm-level access).
 
+<div style={{textAlign: 'center'}}>
+
 ![Stock Status Matrix](/img/media/image209.png)
+
 *Figure 2: Stock Status Matrix Heatmap*
+
+</div>
 
 ## 6.D. Consumption Reports.
 These reports analyze how products are being used compared to forecasts.
@@ -85,8 +97,13 @@ Analyzes forecast accuracy using the **Weighted Average Percent Error (WAPE)** m
 - **Adjusted Consumption:** Toggle to see consumption adjusted for stock-out days.
 - **WAPE Formula:** Measures the absolute deviation of forecast from actual, weighted by total volume.
 
+<div style={{textAlign: 'center'}}>
+
 ![Forecast Error Report](/img/media/image213.png)
+
 *Figure 3: Forecast Error (Monthly) with Threshold*
+
+</div>
 
 ## 6.E. Shipment Reports.
 These reports track procurement volume, costs, and logistics.
@@ -109,8 +126,13 @@ Tracks spending against predefined program budgets.
 ### 6.E.4. Procurement Agent Lead Time.
 A reference report showing established lead times for each agent/planning unit combination.
 
+<div style={{textAlign: 'center'}}>
+
 ![Shipment Details Report](/img/media/image221.png)
+
 *Figure 4: Detailed Shipment Tracking*
+
+</div>
 
 ## 6.F. Inventory Reports.
 These reports monitor stock on hand, expiry risks, and warehouse capacity.
@@ -137,5 +159,10 @@ Lists all manually entered stock adjustments.
 ### 6.F.5. Warehouse Capacity.
 Displays storage volume (m³) utilization by region or country. Requires Realm-level access for the Global view.
 
+<div style={{textAlign: 'center'}}>
+
 ![Warehouse Capacity Report](/img/media/image232.png)
+
 *Figure 5: Regional Warehouse Capacity Utilization*
+
+</div>

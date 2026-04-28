@@ -27,6 +27,8 @@ Administrators see unique tiles on their dashboards to manage global and realm-l
 | **Total Program** | Realm | Overview and bulk update of program info. |
 | **Setup Program** | Realm | Primary wizard for onboarding new programs. |
 
+*Table 18: Administrative Dashboard Tile Functions*
+
 ---
 
 ## Annex 1.C. Managing Master Data.

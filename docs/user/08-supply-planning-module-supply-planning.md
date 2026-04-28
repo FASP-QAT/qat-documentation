@@ -27,13 +27,20 @@ QAT uses a standard logic to calculate the monthly progression:
 | **Ending Balance** | End-of-month stock. | **Bold** = Actual; Regular = Projected. |
 | **Unmet Demand** | Stock needed but unavailable. | Captures "negative" stock scenarios. |
 
+*Table 9: Stock Balance Component Definitions*
+
 ### 5.A.2. Stock Status Legend.
 Stock status is color-coded based on the planning method:
 - **Plan by MOS:** Transitions: **Stock Out (Red)** → **Understock (Yellow)** → **Ideal (Green)** → **Overstock (Blue)**.
 - **Plan by Quantity (Min/Max):** Color-coded based on user-defined minimum and calculated maximum quantities.
 
+<div style={{textAlign: 'center'}}>
+
 ![Supply Planning Interface](/img/media/image153.png)
+
 *Figure 1: Plan by Months of Stock (MOS) View*
+
+</div>
 
 ## 5.B. Supply Planning: Consumption & Shipments.
 The Supply Planning table allows granular control over transactions.
@@ -60,6 +67,8 @@ Shipments are aggregated by default. Click the **+** next to **Shipments** to ex
 | **L Icon** | Local Procurement. |
 | **Green Cell** | Multiple shipments in the same month. |
 
+*Table 10: Shipment Visual Indicators*
+
 #### Suggested Shipments Logic
 QAT suggests shipments to keep the plan between **Minimum** and **Maximum** levels.
 - **Trigger:** If stock falls below Min for 3 consecutive months.
@@ -69,8 +78,13 @@ QAT suggests shipments to keep the plan between **Minimum** and **Maximum** leve
 1. Click the **Suggested** row cell.
 2. Update the status and click **Submit**.
 
+<div style={{textAlign: 'center'}}>
+
 ![Shipment Details Pop-up](/img/media/image174.png)
+
 *Figure 2: Editing Shipment Details*
+
+</div>
 
 ## 5.C. Supply Planning: Inventory & Adjustments.
 Inventory and adjustments can be managed directly from the supply planning table.
@@ -87,8 +101,13 @@ The **Projected Expired Stock** row highlights potential losses.
 - **Correction:** Click the batch number to jump to the source shipment and update the expiry date or quantity.
 - **Batch Ledger:** Click the **Expired Quantity** cell to view the full month-by-month history of that batch.
 
+<div style={{textAlign: 'center'}}>
+
 ![Expiry Management Pop-up](/img/media/image189.png)
+
 *Figure 3: Batch Expiry Details*
+
+</div>
 
 ## 5.D. Scenario Planning.
 Scenario Planning allows users to simulate changes to their supply plan without altering the current version.
@@ -105,8 +124,13 @@ Scenario Planning allows users to simulate changes to their supply plan without 
 3. Click **Add** to visualize the impact.
 4. If satisfied, click **Submit** to save the scenario as a new supply plan version.
 
+<div style={{textAlign: 'center'}}>
+
 ![Scenario Planning interface](/img/media/image191.png)
+
 *Figure 4: Comparing Scenarios*
+
+</div>
 
 ## 5.E. Supply Plan Report.
 The Supply Plan Report provides a comprehensive view of stock status across one or multiple programs.
@@ -123,5 +147,10 @@ The Supply Plan Report provides a comprehensive view of stock status across one 
 - **Disaggregated Shipments:** See individual shipment details (Funding Source, Status, Procurement Agent) directly in the table.
 - **Exporting:** Supports PDF and CSV exports with various aggregation options.
 
+<div style={{textAlign: 'center'}}>
+
 ![Supply Plan Report](/img/media/image193.png)
+
 *Figure 5: Single Program Supply Plan Report*
+
+</div>

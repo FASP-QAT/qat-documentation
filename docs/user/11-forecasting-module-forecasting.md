@@ -30,8 +30,13 @@ You can populate historical actuals via two methods:
 - **Expansion:** Expand rows to drill down into regional data.
 - **Unit Conversion:** Use the "change" link to toggle entry between Planning Units (PU) or Forecasting Units (FU).
 
+<div style={{textAlign: 'center'}}>
+
 ![Data Entry Interface](/img/media/image242.png)
+
 *Figure 1: Historical Consumption Data Entry Table*
+
+</div>
 
 ### 8.A.2. Statistical Adjustments.
 Raw data must be cleaned to create a reliable "Adjusted Consumption" series. QAT handles three types of adjustments:
@@ -69,6 +74,8 @@ QAT calculates several error metrics to help you select the best fit.
 | **RMSE** | Root Mean Squared Error. | Highlighting and penalizing large outliers. |
 | **R²** | Correlation Coefficient. | Measuring how well the model fits historical patterns. |
 
+*Table 15: Statistical Error Metric Definitions*
+
 ---
 
 ## 8.B. Tree Forecasts.
@@ -98,6 +105,8 @@ A tree is built from the top down using specific node types. Every tree must end
 | **FU (Forecasting Unit)** | Usage parameters (Continuous/Discrete). | Planning Unit. | ⇅, Lag |
 | **PU (Planning Unit)** | The final product output. | None. | Override |
 
+*Table 16: Forecasting Tree Node Definitions*
+
 #### Node Actions
 - **Delete:** Removes node and all its children.
 - **Copy/Move:** Relocates a branch to a different tree or parent.
@@ -126,6 +135,8 @@ Trees are not static; values can change over time to reflect program growth or t
 | **Linear (%)** | Adds/subtracts a fixed % of the *starting* value. | Consistent growth rates. |
 | **Exponential (%)** | Multiplies the *previous* month by a percentage. | Compounding growth. |
 | **Linear (% point)** | Adjusts a percentage node's value (e.g., 30% -> 31%). | Market share shifts. |
+
+*Table 17: Comparison of Modeling Calculation Types*
 
 #### 2. Transfers
 Transfers link two nodes of the same level (for Number nodes) or same parent (for Percentage nodes). As the "Source" node decreases, the "Destination" node increases proportionally. This is essential for regimen transitions.

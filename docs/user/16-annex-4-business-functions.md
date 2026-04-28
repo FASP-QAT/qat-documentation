@@ -19,6 +19,7 @@ When configuring roles, the following verbs determine the level of access:
 ---
 
 ## Annex 4.B. Translations & Admin Dashboards.
+
 | Category | Business Function | Description |
 | :--- | :--- | :--- |
 | **Translations** | Label Translations | Update "Static Labels" (UI headers) across languages. |
@@ -28,9 +29,12 @@ When configuring roles, the following verbs determine the level of access:
 | | Realm Dashboard | Access the realm-specific administrator overview. |
 | | Program Dashboard | Access the operational dashboard for specific programs. |
 
+*Table 27: Business Functions for Administration and UI*
+
 ---
 
 ## Annex 4.C. Master Data Management.
+
 | Category | Business Function | Description |
 | :--- | :--- | :--- |
 | **App Masters** | Manage Country/Currency | Global configuration of geographic and monetary units. |
@@ -42,9 +46,12 @@ When configuring roles, the following verbs determine the level of access:
 | | Manage Products | Full control over Forecasting, Planning, and Procurement Units. |
 | | Equivalency Units | Define aggregation logic for related products. |
 
+*Table 28: Business Functions for Master Data Governance*
+
 ---
 
 ## Annex 4.D. Program & Supply Chain Operations.
+
 | Category | Business Function | Description |
 | :--- | :--- | :--- |
 | **Programs** | Setup Program | Create and configure new Supply Planning or Forecast programs. |
@@ -56,14 +63,19 @@ When configuring roles, the following verbs determine the level of access:
 | **Shipments** | ERP Linking | Link QAT shipments to external procurement systems. |
 | | Manual Tagging | Categorize shipments for advanced tracking. |
 
+*Table 29: Business Functions for Operational Management*
+
 ---
 
 ## Annex 4.E. Forecasting & Reporting.
+
 | Category | Business Function | Description |
 | :--- | :--- | :--- |
 | **Methodologies** | Tree Forecasting | Build and manage tiered demand models (Aggregation/Percentage/Number). |
 | | Consumption Forecast | Access data entry, adjustment, and extrapolation screens. |
 | | Templates | Manage Usage and Tree templates for rapid setup. |
 | **Reports** | View Reports | Access the full suite of analytical outputs. |
-| | QAT Problem List | Access and manage data quality and planning issues. |
+| **Quality** | QAT Problem List | Access and manage data quality and planning issues. |
 | | Global Reports | View aggregated data across all countries and programs. |
+
+*Table 30: Business Functions for Analytics and Decision Support*

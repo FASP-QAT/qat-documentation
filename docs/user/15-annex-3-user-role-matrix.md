@@ -23,6 +23,8 @@ This matrix defines the permissions for every role within QAT. Permissions are c
 | **Forecast User** | Builds forecasts and enters consumption data. |
 | **Forecast Viewer** | View-only access to forecast outputs and trees. |
 
+*Table 21: QAT User Role Descriptions*
+
 ---
 
 ## Annex 3.B. Administrative & Master Data.
@@ -33,6 +35,8 @@ This matrix defines the permissions for every role within QAT. Permissions are c
 | Manage Realm Masters (PU/FU/Org) | - | **X** | V | V | V |
 | Manage Realm Countries/Regions | - | **X** | - | - | V |
 | Manage Procurement Agents | - | **X** | **X** | V | V |
+
+*Table 22: Permissions for Administrative and Master Data*
 
 **Legend:** **X** = Full Access | **V** = View Only | **-** = No Access
 
@@ -47,6 +51,8 @@ This matrix defines the permissions for every role within QAT. Permissions are c
 | Budget Management | **X** | **X** | - | V |
 | Import/Export Programs | **X** | **X** | **X** | **X** |
 
+*Table 23: Permissions for Program Management*
+
 ---
 
 ## Annex 3.D. Supply Plan Operations.
@@ -57,6 +63,8 @@ This matrix defines the permissions for every role within QAT. Permissions are c
 | Upload Versions | **X** | **X** | **X** | - | - |
 | Review/Approve Versions | - | - | - | **X** | - |
 | ERP Shipment Linking | **X** | **X** | **X** | - | - |
+
+*Table 24: Permissions for Supply Planning Operations*
 
 *¹ SP Viewer - Data only | ² SP Viewer - Data/Review*
 
@@ -71,6 +79,8 @@ This matrix defines the permissions for every role within QAT. Permissions are c
 | Usage/Tree Templates | **X** | **X** | **X** | V |
 | Import from Supply Plan | **X** | **X** | **X** | - |
 
+*Table 25: Permissions for Forecasting Operations*
+
 ---
 
 ## Annex 3.F. Reports Access.
@@ -81,3 +91,5 @@ This matrix defines the permissions for every role within QAT. Permissions are c
 | Shipment / Cost Reports | **X** | **X** | **X** |
 | Inventory Turns / Expiries | **X** | **X** | **X** |
 | Warehouse Capacity | **X** | **X** | **X** |
+
+*Table 26: Permissions for Reports and Analytics*

@@ -11,8 +11,9 @@ This annex details the process for migrating legacy **PipeLine** databases into 
 
 > [!IMPORTANT]
 > **Prerequisites:**
-> - **Software:** Java JDK 1.8 or higher must be installed on your machine.
-> - **Data Quality:** Your PipeLine database (.accdb) must not contain negative inventory values. Ensure all shipment, stock, and consumption data is finalized before starting.
+> - **Java Installed:** Java JDK 1.8 or higher must be installed on your machine.
+> - **No Negative Inventory:** Your PipeLine database (.accdb) must not contain negative inventory values.
+> - **Data Finalization:** Ensure all shipment, stock, and consumption data is finalized before starting the import.
 
 ---
 
@@ -21,12 +22,12 @@ QAT requires data in JSON format. Use the **PipeLine Converter Tool** for this c
 
 1. Navigate to **Program Management > PipeLine Program Import**.
 2. Click the **Add (+)** button, then click the **Download (↓)** icon in the top right.
-3. Select your OS (Windows or Linux) and download the `.zip` file.
-4. Extract and run the converter (executable or `.jar` file).
-5. **In the Converter:**
-   - **Source:** Browse and select your `.accdb` file.
+3. Select your OS (**Windows** or **Linux**) and download the `.zip` file.
+4. Extract the folder and run the converter (executable for Windows, `.jar` for Linux).
+5. **In the Converter Interface:**
+   - **Source:** Browse and select your legacy `.accdb` file.
    - **Destination:** Select the folder where the resulting `.json` file should be saved.
-   - Click **Convert**. A notification will appear upon success.
+   - **Convert:** Click the action button to start. A notification will appear upon success.
 
 ---
 

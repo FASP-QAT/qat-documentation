@@ -58,12 +58,12 @@ This view provides a high-level procurement surplus/gap analysis based on your f
 #### Formulas & Logic
 QAT uses the following logic to estimate procurement needs:
 
-1. **Projected Stock** = (Starting Stock + Existing Shipments) - Forecasted Quantity
-2. **Desired Stock** = (Forecasted Quantity × Desired Months of Stock) / Months in Period
-3. **Procurement Gap** = Projected Stock - Desired Stock
+- **Projected Stock** = `(Starting Stock + Existing Shipments) - Forecasted Quantity`
+- **Desired Stock** = `(Forecasted Quantity × Desired Months of Stock) / Months in Period`
+- **Procurement Gap** = `Projected Stock - Desired Stock`
 
 #### Cost Estimation
 If a gap exists, QAT estimates costs based on your defined unit prices and freight percentages:
-- **Product Cost** = Procurement Gap × Unit Price
-- **Freight Cost** = Product Cost × Freight %
-- **Total Cost** = Product Cost + Freight Cost
+- **Product Cost** = `Procurement Gap × Unit Price`
+- **Freight Cost** = `Product Cost × Freight %`
+- **Total Cost** = `Product Cost + Freight Cost`

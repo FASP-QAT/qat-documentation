@@ -60,18 +60,24 @@ Used primarily for distributing negative adjustments (losses).
 ## Annex 2.C. QAT Problem List (QPL) Logic.
 
 ### Annex 2.C.1. Data Quality.
+
 | Problem | Suggestion | Logic |
 | :--- | :--- | :--- |
 | **Missing Actuals** | Enter actual consumption. | Flagged if actuals are missing for 3+ consecutive months. |
 | **Missing Inventory** | Enter stock count. | Flagged if no stock count is reported for 3+ consecutive months. |
 | **Past Shipments** | Update receive date. | Flagged if a shipment's expected date is >14 days in the past. |
 
+*Table 19: Data Quality Validation Rules*
+
 ### Annex 2.C.2. Supply Planning.
+
 | Problem | Suggestion | Logic |
 | :--- | :--- | :--- |
 | **Missing Forecast** | Extend forecast period. | Flagged if any of the next 18 months lack a forecast. |
 | **Non-Dynamic Forecast** | Review seasonality. | Flagged (for ARV/Malaria) if 4+ consecutive months have identical values. |
 | **Min/Max Violation** | Re-evaluate supply plan. | Flagged if MOS falls outside Min/Max parameters within 18 months. |
+
+*Table 20: Supply Planning Logic Validations*
 
 ---
 

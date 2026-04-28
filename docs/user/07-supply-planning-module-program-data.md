@@ -22,7 +22,7 @@ Data management at the program level is primarily handled by **Program Admins** 
 | | Inventory | Stock counts and adjustments (damages, expiries). |
 | | Shipments | Quantities, delivery dates, procurement agents. |
 
-*Table 1: Program Data Hierarchy*
+*Table 7: Program Data Hierarchy*
 
 ## 4.A. Background Data.
 
@@ -38,8 +38,13 @@ Program Admins can define general parameters such as program managers, lead time
 3. Modify fields as needed and click **Submit**.
 4. (Optional) Add/remove procurement agents and funding sources from the program-specific lists.
 
+<div style={{textAlign: 'center'}}>
+
 ![Update Program Info Interface](/img/media/image113.png)
-*Figure 1: Program Information Management*
+
+*Figure 8: Program Information Management*
+
+</div>
 
 ### 4.A.3. Planning Units.
 Planning units are the specific products used for procurement and inventory tracking. While the master catalog is managed at the realm level, Program Admins manage which units are active within their specific programs.
@@ -74,8 +79,13 @@ Users can override default lead times, freight costs, and unit prices for specif
 3. Fill in the specific Lead Times, Freight %, or Unit Prices.
 4. Click **Submit** and perform a **Master Data Sync**.
 
+<div style={{textAlign: 'center'}}>
+
 ![Procurement Agent Info Interface](/img/media/image117.png)
-*Figure 2: Specific Procurement Agent Settings*
+
+*Figure 9: Specific Procurement Agent Settings*
+
+</div>
 
 ### 4.A.5. Alternate Reporting Units (ARU).
 An ARU allows data entry in units different from the standard planning unit (e.g., pieces vs. packs).
@@ -89,8 +99,13 @@ An ARU allows data entry in units different from the standard planning unit (e.g
 2. Select the program.
 3. Click **Add Row** to create a new ARU, define the conversion factor, and click **Submit**.
 
+<div style={{textAlign: 'center'}}>
+
 ![ARU Interface](/img/media/image118.png)
-*Figure 3: Alternate Reporting Units*
+
+*Figure 10: Alternate Reporting Units*
+
+</div>
 
 ### 4.A.6. Lead Times.
 Lead times track shipment progression across six statuses. The system prioritizes lead times as follows: **Program/Agent Specific** > **Program Defaults** > **Realm Defaults**.
@@ -112,8 +127,13 @@ Lead times track shipment progression across six statuses. The system prioritize
 
 For local procurement, the entire lead time (Planned to Received) is managed per planning unit in **Update Planning Units**.
 
+<div style={{textAlign: 'center'}}>
+
 ![Shipment Status Flow](/img/media/image120.png)
-*Figure 4: Shipment Lead Time Lifecycle*
+
+*Figure 11: Shipment Lead Time Lifecycle*
+
+</div>
 
 ### 4.A.7. Budgets.
 Budgets track capital allocation for purchasing commodities. A budget can be linked to one or multiple programs.
@@ -131,8 +151,13 @@ Budgets track capital allocation for purchasing commodities. A budget can be lin
 1. Select the budget from the list.
 2. Modify details in the **Update Budget** screen and click **Submit**.
 
+<div style={{textAlign: 'center'}}>
+
 ![Budget Management Screen](/img/media/image123.png)
-*Figure 5: Budget Overview*
+
+*Figure 12: Budget Overview*
+
+</div>
 
 ## 4.B. Transactional Supply Plan Data.
 Transactional data includes the "Big 3": **Consumption**, **Inventory**, and **Shipments**.
@@ -155,8 +180,13 @@ Consumption refers to stock dispensed to clients.
 1. Right-click an "Actual Consumption" row and select **Show Batch Information**.
 2. Edit batch numbers or quantities. The total batch quantity must exactly match the total consumption quantity.
 
+<div style={{textAlign: 'center'}}>
+
 ![Consumption Data Entry](/img/media/image125.png)
-*Figure 6: Consumption Management*
+
+*Figure 13: Consumption Management*
+
+</div>
 
 ### 4.B.2. Inventory Data.
 Inventory data includes **Stock Counts** and **Adjustments** (e.g., damages, transfers).
@@ -177,8 +207,13 @@ Inventory data includes **Stock Counts** and **Adjustments** (e.g., damages, tra
 - **Adjustments:** Right-click a row and select **Show Batch Information**. QAT uses "Best Case Scenario" logic to handle batch quantities if not explicitly provided.
 - **Inventory:** Batch details are managed within the Supply Planning screen (see [Section 5.E](08-supply-planning-module-supply-planning.md#supply-planning-project-expired-stock-and-batch-information)).
 
+<div style={{textAlign: 'center'}}>
+
 ![Inventory Data Entry](/img/media/image127.png)
-*Figure 7: Inventory Management*
+
+*Figure 14: Inventory Management*
+
+</div>
 
 ### 4.B.3. Shipment Data.
 Shipments are tracked from planning to receipt.
@@ -195,8 +230,13 @@ Shipments are tracked from planning to receipt.
 - **Freight Cost:** Automatically calculated based on `Cost * Freight %` unless manually overridden.
 - **Shipment Dates:** Right-click a shipment and select **Show shipment dates** to compare Estimated vs. Actual milestones.
 
+<div style={{textAlign: 'center'}}>
+
 ![Shipment Management](/img/media/image131.png)
-*Figure 8: Strategic Order Calculator*
+
+*Figure 15: Strategic Order Calculator*
+
+</div>
 
 ### 4.B.4. ERP Shipment Linking.
 ERP linking allows planners to sync QAT shipments with a procurement agent's ERP system (e.g., GHSC-PSM's ARTMIS). This automates updates for status, costs, and dates.
@@ -220,180 +260,206 @@ ERP linking allows planners to sync QAT shipments with a procurement agent's ERP
 5. Provide the **Alternate Reporting Unit (ARU)** to set the conversion factor.
 6. Click **Link Shipment**.
 
-![ERP Linking Screens](/img/media/image133.png)
-*Figure 9: ERP Linking Overview*
+<div style={{textAlign: 'center'}}>
 
-#### 4.B.5. ERP Notifications.
+![ERP Linking Screens](/img/media/image133.png)
+
+*Figure 16: ERP Linking Overview*
+
+</div>
+
+### 4.B.5. ERP Notifications.
+
 Planners will receive alerts in the **ERP Shipment Notifications** screen if there are discrepancies between QAT and the ERP system (e.g., cancelled orders, quantity changes, or SKU updates).
 
-1.  Select the radio button at the top labeled ‘Linked’.
+1. Select the radio button at the top labeled **Linked**.
 
-2.  Select the program and planning unit(s) you want to see the list of linked shipments for. Once selected, a list of shipments will appear. The information in these shipments is being pulled in from the ERP.
+2. Select the program and planning unit(s) you want to see the list of linked shipments for. Once selected, a list of shipments will appear. The information in these shipments is being pulled in from the ERP.
 
-3.  To make any of the updates listed in step 2, left click on a single shipment.
-    1.  To edit ARU and/or notes, double-click on the cell and type or select from dropdown.
+3. To make any of the updates listed in step 2, left click on a single shipment.
+   1. To edit ARU and/or notes, double-click on the cell and type or select from dropdown.
+   2. To de-link an ERP order, uncheck the box in the **Link?** column.
+   3. To add an ERP order, check the box for that order under **Link?** column. The user can clear the search dropdowns in the middle section to look up a different planning unit or order number and the originally linked orders will remain linked.
 
-    2.  To de-link an ERP order, uncheck the box in the ‘Link?’ column.
+4. Users will have the ability to also view order history details from the ERP. To do so, from the original **Linked** screen, right-click on a single shipment and click **View ERP Order History**. A pop-up window will appear labeled **ERP Order History**. This screen will show any details that have changed over time in the ERP order. Each row indicates that one or more of the columns has changed. The furthest column on the right labeled **Data Received On** is when the record was received by QAT.
+   1. To view batch details, click on the ![](file:///img/media/image137.png) icon.
+   2. **Note:** Certain fields from the ERP are not captured on this screen so there may be some instances where 1 or more rows have the same details. This means that a column in the backend was changed.
 
-    3.  To add an ERP order, check the box for that order under ‘Link?’ column. The user can clear the search dropdowns in the middle section to look up a differe planning unit or order number and the originally linked orders will remain linked.
+> [!NOTE]
+> Once you have linked QAT shipments with ERP orders, the data will reflect in your supply plan without having to master data sync. The newly linked ERP data will reflect in the local reports, supply planning screen as well as the shipment data entry screen. The user **does** need to upload a version to the server in order for other users to see these changes.
 
-4.  Users will have the ability to also view order history details from the ERP. To do so, from the original ‘Linked’ screen, right-click on a single shipment and click ‘View ERP Order History’. A pop-up window will appear labeled ‘ERP Order History’. This screen will show any details that have changed over time in the ERP order. Each row indicates that one or more of the columns has changed. The furthest column on the right labeled ‘Data Received On’ is when the record was received by QAT.
-    1.  To view batch details, click on the![](/img/media/image137.png) icon.
+To view the ERP-linked shipments in the shipment data entry screen, the user must select **ERP-linked shipments** from the Shipment Type dropdown. The user can either display only this option or combine it with the manual shipments to show all shipments. The ERP-linked shipments will be greyed out to indicate that they are non-editable.
 
-    2.  **Note:** Certain fields from the ERP are not captured on this screen so there may be some instances where 1 or more rows have the same details. This means that a column in the backend was changed.
+<div style={{textAlign: 'center'}}>
 
-> **Once you have linked QAT shipments with ERP orders, the data will reflect in your supply plan without having to master data sync.** The newly linked ERP data will reflect in the local reports, supply planning screen as well as the shipment data entry screen. The user **does** need to upload a version to the server in order for other users to see these changes.
->
-> To view the ERP-linked shipments in the shipment data entry screen, the user must select ‘ERP-linked shipments’ from the Shipment Type dropdown. The user can either display only this option or combine it with the manual shipments to show all shipments. The ERP-linked shipments will be greyed out to indicate that they are non-editable.
+![View ERP Shipments in Data Entry](/img/media/image138.png)
 
-![P1723#yIS1](/img/media/image138.png)
+*Figure 17: View ERP Shipments in Data Entry*
 
-Figure 88: View ERP Shipments in Data Entry
+</div>
 
-In the supply planning screen, ERP-linked shipments will have a link icon in the top left of the cell. The user can click into a specific shipment to view the details but those cells will also be greyed out to indicate that they are non-editable. The user can still right click on the shipment details,however, to view the shipment dates and batch information.
+In the supply planning screen, ERP-linked shipments will have a link icon in the top left of the cell. The user can click into a specific shipment to view the details but those cells will also be greyed out to indicate that they are non-editable. The user can still right click on the shipment details, however, to view the shipment dates and batch information.
 
-![P1727#yIS1](/img/media/image139.png)
+<div style={{textAlign: 'center'}}>
 
-Figure 89: View ERP Shipments in Supply Plan
+![View ERP Shipments in Supply Plan](/img/media/image139.png)
 
-**ERP Shipment Notifications**
+*Figure 18: View ERP Shipments in Supply Plan*
 
-The purpose of the ‘ERP Shipment Notifications’ screen is to alert supply planners of any key changes made to ERP linked shipments, such as an order being cancelled or a product SKU changing. Supply planners will be encouraged to ‘address’ each of the notifications to confirm that they are aware of the change and the implications made on the supply plan. For product changes, the user will re-confirm the conversion factor, whether it changes or not.
+</div>
 
-![](/img/media/image140.png)
+#### ERP Shipment Notifications
 
-At the top of the screen, there is a icon. This icon will display a red number indicating how many non-addressed notifications are in the ERP shipment notifications screen. If there is no red number, that means there are none.
+The purpose of the **ERP Shipment Notifications** screen is to alert supply planners of any key changes made to ERP linked shipments, such as an order being cancelled or a product SKU changing. Supply planners are encouraged to "address" each of the notifications to confirm that they are aware of the change and the implications made on the supply plan. For product changes, the user will re-confirm the conversion factor, whether it changes or not.
 
-To get to the ‘ERP Shipment Notifications’ screen, either click on the truck icon at the top of QAT or select ‘ERP Shipment Notifications’ under ‘Supply Plan Data’ in the left sidebar menu.
+<div style={{textAlign: 'center'}}>
 
-To view the notifications, the user will need to select from the 3 dropdowns (Program, Planning Unit, Addressed). The user also has the option to select directly from the table above the dropdowns. When a user left clicks on a row in the table, the 3 dropdowns will atomically populate based on the program that user selected. The planning unit dropdown will populate to all planning units and the addressed dropdown will select ‘Not Addressed’.
+![ERP Shipment Notifications Icon](/img/media/image140.png)
 
-![P1739#yIS1](/img/media/image141.png)
+</div>
 
-Figure 90: ERP Shipment Notifications Filtering
+At the top of the screen, there is an icon. This icon will display a red number indicating how many non-addressed notifications are in the ERP shipment notifications screen. If there is no red number, that means there are none.
 
-To address a notification, the user must check the box in the ‘Addressed?’ column and then hit the ‘Submit’ button. If the user is addressing an ERP Product Change notification, he/she must first enter the conversion factor. The conversion factor field is not editable until the addressed box is checked.
+To get to the **ERP Shipment Notifications** screen, either click on the truck icon at the top of QAT or select **ERP Shipment Notifications** under **Supply Plan Data** in the left sidebar menu.
 
-Just like in the ‘Linked’ screen, the user can view ERP order history. To do so, right-click on the notification row and click ‘View ERP Order History’. Refer to the Linked Screen section for more information.
+To view the notifications, the user will need to select from the 3 dropdowns (Program, Planning Unit, Addressed). The user also has the option to select directly from the table above the dropdowns. When a user left clicks on a row in the table, the 3 dropdowns will automatically populate based on the program that user selected. The planning unit dropdown will populate to all planning units and the addressed dropdown will select **Not Addressed**.
 
-## 4.C. Importing Data for Supply Planning.
+<div style={{textAlign: 'center'}}>
+
+![ERP Shipment Notifications Filtering](/img/media/image141.png)
+
+*Figure 19: ERP Shipment Notifications Filtering*
+
+</div>
+
+To address a notification, the user must check the box in the **Addressed?** column and then hit the **Submit** button. If the user is addressing an ERP Product Change notification, he/she must first enter the conversion factor. The conversion factor field is not editable until the addressed box is checked.
+
+Just like in the **Linked** screen, the user can view ERP order history. To do so, right-click on the notification row and click **View ERP Order History**. Refer to the Linked Screen section for more information.
 
 ### 4.C.1. Supply Plan Data Excel Import Templates.
 
 Consumption, Inventory and Shipment data can be entered through QAT’s data entry screens, through the Supply Planning screen or through Quantimed Import (forecasted consumption only). QAT also provides users with the ability to input this data directly from Microsoft Excel. This method of data entry is intended for bulk entries that have a lot of data. The steps below will show how to input data from Excel into QAT:
 
-1.  From the menu sidebar, go to “Supply Plan Data” and click the type of data you want to enter (e.g. “Consumption Data”). ![P1748L76#yIS1](/img/media/image142.png)
+1. From the menu sidebar, go to **Supply Plan Data** and click the type of data you want to enter (e.g. **Consumption Data**). ![](file:///img/media/image142.png)
 
-2.  ![](/img/media/image143.png)Once on the data entry screen, go to the top right corner and click “Download Template”.
+2. ![](file:///img/media/image143.png) Once on the data entry screen, go to the top right corner and click **Download Template**.
 
-3.  A Microsoft Excel file will be downloaded directly to your computer’s ‘**Downloads’** folder.
+3. A Microsoft Excel file will be downloaded directly to your computer’s **Downloads** folder.
 
-4.  Proceed to your computer’s Downloads folder and open the Excel file. The name format should be **ConsumptionDataEntryTemplate.xlsx** with the first portion dependent on the type of data you are entering.
-    1.  _<u>Each of the four data types (Inventory, Adjustment, Consumption and Shipment) have their own Excel template so it is important that you click on “Download Template” from the proper screen. For inventory and adjustment, make sure the drop-down menu has selected the type of data you want the template for.</u>_
+4. Proceed to your computer’s Downloads folder and open the Excel file. The name format should be **ConsumptionDataEntryTemplate.xlsx** with the first portion dependent on the type of data you are entering.
+   1. *Each of the four data types (Inventory, Adjustment, Consumption and Shipment) have their own Excel template so it is important that you click on "Download Template" from the proper screen. For inventory and adjustment, make sure the drop-down menu has selected the type of data you want the template for.*
 
-5.  Once in the Excel template, click “Enable Editing” at the top if it prompts you to.
+5. Once in the Excel template, click **Enable Editing** at the top if it prompts you to.
 
-![P1755#yIS1](/img/media/image144.png)
+<div style={{textAlign: 'center'}}>
 
-Figure 91: Enable Editing
+![Enable Editing](/img/media/image144.png)
 
-6.  Enter data for all of the required fields.
-    1.  Any cell highlighted in grey (e.g. Conversion Factor) is non-editable and does not need to be filled in.
+*Figure 20: Enable Editing*
 
-    2.  Certain fields (e.g. Data Source) will have drop down menus pre-populated from QAT. Therefore, it is important to download a new template if it has been a while since the last time the user used the template.
+</div>
 
-    3.  Certain fields have built in data validations (e.g. letters cannot be entered in cost cells). If the validation is not met, a pop-up error message will appear.
+6. Enter data for all of the required fields.
+   1. Any cell highlighted in grey (e.g. Conversion Factor) is non-editable and does not need to be filled in.
+   2. Certain fields (e.g. Data Source) will have drop down menus pre-populated from QAT. Therefore, it is important to download a new template if it has been a while since the last time the user used the template.
+   3. Certain fields have built in data validations (e.g. letters cannot be entered in cost cells). If the validation is not met, a pop-up error message will appear.
 
-![P1762#yIS1](/img/media/image145.png)
+<div style={{textAlign: 'center'}}>
 
-Figure 92: Excel Template
+![Excel Template](/img/media/image145.png)
 
-7.  Once all the data is entered in the Excel template, re-open QAT window.
+*Figure 21: Excel Template*
 
-8.  Go to the Data Entry screen (Consumption, Inventory, Adjustment, Shipment).
+</div>
 
-9.  Click the blue “+Add Row” button at the bottom.
-    1.  **Note:** You only need to add 1 row in QAT regardless of how many rows there are in the Excel template.
+7. Once all the data is entered in the Excel template, re-open QAT window.
 
-10. In the Excel template, select all data and press Ctrl + C on your keyboard to copy the data.
+8. Go to the Data Entry screen (Consumption, Inventory, Adjustment, Shipment).
 
-11. Go to the added row in QAT, left click on the far most left cell in that row and press Ctrl + V on your keyboard to paste the data.
+9. Click the blue **+Add Row** button at the bottom.
+   1. **Note:** You only need to add 1 row in QAT regardless of how many rows there are in the Excel template.
+
+10. In the Excel template, select all data and press **Ctrl + C** on your keyboard to copy the data.
+
+11. Go to the added row in QAT, left click on the far most left cell in that row and press **Ctrl + V** on your keyboard to paste the data.
 
 12. QAT will automatically create new rows for the data being imported from Excel.
 
-13. Click “Submit”.
+13. Click **Submit**.
 
 ### 4.C.2. Quantimed Forecast Import.
 
-![](/img/media/image146.png)Quantimed is a software designed to facilitate the process of determining the quantities of medicines and medical supplies required for a health program. The output of Quantimed is a health programs’ forecasted consumption data. That forecasted consumption data can be a key input into QAT user’s supply plans. QAT allows users to import Quantimed forecasts into QAT to include in their supply plan.
+![](file:///img/media/image146.png) Quantimed is a software designed to facilitate the process of determining the quantities of medicines and medical supplies required for a health program. The output of Quantimed is a health programs’ forecasted consumption data. That forecasted consumption data can be a key input into QAT user’s supply plans. QAT allows users to import Quantimed forecasts into QAT to include in their supply plan.
 
 **Step 1: Import Quantimed Data into QAT**
 
-1.  Go to “Supply Plan Data” on the sidebar menu
+1. Go to **Supply Plan Data** on the sidebar menu.
+2. Select **Quantimed Import**.
+3. **Import Quantimed Data File**
+   1. Choose the Quantimed .xml forecast file from your local computer system.
+   2. Select the QAT program that you want the Quantimed data to import into.
+   3. Click on **Import**.
 
-2.  Selected “Quantimed Import”
+<div style={{textAlign: 'center'}}>
 
-3.  **Import Quantimed Data File**
-    1.  Choose the Quantimed .xml forecast file from your local computer system.
+![Quantimed File Import](/img/media/image147.png)
 
-    2.  Select the QAT program that you want the Quantimed data to import into.
+*Figure 22: Quantimed File Import*
 
-    3.  Click on “Import”.
-
-![P1783#yIS1](/img/media/image147.png)
-
-Figure 93: Quantimed File Import
+</div>
 
 **Step 2: Map Planning Units**
 
-1.  > To map a Quantimed product to a QAT planning unit, select the QAT planning unit using the drop-down menu.
+1. To map a Quantimed product to a QAT planning unit, select the QAT planning unit using the drop-down menu.
+2. If you do not want to import a specific Quantimed product, select the **Do Not Import** option for that row.
+3. If there is not a QAT planning unit associated with the Quantimed product, the dropdown will show **Planning Unit Not Found**. You will either need to manually select a planning unit from the dropdown or go back to the program and add a planning unit for that Quantimed product before proceeding. You cannot click **Next** if one or more of the cells says **Planning Unit Not Found**.
+   1. **Note:** To minimize instances where a planning unit is not found, it is recommended that Quantimed users select products from the GHSC-PSM product catalog .xml file.
+4. Once every row has a planning unit selected or says **Do not import**, click **Next** at the bottom of the screen.
 
-2.  > If you do not want to import a specific Quantimed product, select the “Do Not Import” option for that row.
+<div style={{textAlign: 'center'}}>
 
-3.  > If there is not a QAT planning unit associated with the Quantimed product, the dropdown will show “Planning Unit Not Found”. You will either need to manually select a planning unit from the dropdown or go back to the program and add a planning unit for that Quantimed product before proceeding. You cannot click “Next” one or more of the cells says “Planning Unit Not Found”.
-    1.  > **Note**: to minimize instances where a planning unit is not found, it is recommended that Quantimed users select products from the GHSC-PSM product catalog .xml file.
+![Map Planning Units](/img/media/image148.png)
 
-4.  > Once very row has a planning unit selected or says “Do not import”, click “Next” at the bottom of the screen.
+*Figure 23: Map Planning Units*
 
-![P1794#yIS1](/img/media/image148.png)
-
-Figure 94: Map Planning Units
+</div>
 
 **Step 3: Region**
 
-1.  > In this step select the region that you want to import the forecasted consumption data into. If there is only one region, you must select that region to proceed.
-
-2.  > Then, input the percentage of that consumption data that you want to import into QAT. This percentage must range from 0-100% and will apply to all the planning units previously selected.
-
-3.  > Click “Next”.
+1. In this step select the region that you want to import the forecasted consumption data into. If there is only one region, you must select that region to proceed.
+2. Then, input the percentage of that consumption data that you want to import into QAT. This percentage must range from 0-100% and will apply to all the planning units previously selected.
+3. Click **Next**.
 
 **Step 4: Consumption Month**
 
-1.  > Select the date range for the Quantimed data that you want to import into QAT.
-    1.  > The period you select is the period of data that you will be able to import and will apply to all planning units previously selected.
+1. Select the date range for the Quantimed data that you want to import into QAT.
+   1. The period you select is the period of data that you will be able to import and will apply to all planning units previously selected.
+2. Click **Next**.
 
-2.  > Click “Next”.
+<div style={{textAlign: 'center'}}>
 
-![P1806#yIS1](/img/media/image149.png)
+![Consumption Month Screen](/img/media/image149.png)
 
-Figure 95: Consumption Month Screen
+*Figure 24: Consumption Month Screen*
+
+</div>
 
 **Step 5: Import Data**
 
-1.  > The final step is to confirm the data that will be imported from Quantimed into QAT based on what was entered in steps 1-4.
-    1.  > “Quantimed Forecasted Consumption” is the amount that is being pulled in from Quantimed for the associated product and month-year.
+1. The final step is to confirm the data that will be imported from Quantimed into QAT based on what was entered in steps 1-4.
+   1. **Quantimed Forecasted Consumption** is the amount that is being pulled in from Quantimed for the associated product and month-year.
+   2. **Converted Quantimed Forecasted Consumption** is the amount that will be pulled into QAT for the associated product and month-year after applying the import percentage and conversion factor.
+   3. **Current QAT Forecasted Consumption** is the forecasted consumption amount currently in QAT for that planning unit and month-year. Once you import the Quantimed data, this amount will be overwritten by the **Converted Quantimed Forecasted Consumption** amount.
+2. This screen will show all the data that will be imported into QAT. If you do not want to import certain records, click on the checkbox in the **Import?** column on the far right. This will prevent QAT from importing the Quantimed data and will keep the current QAT forecasted consumption for that planning unit and month-year.
+3. Click **Submit** to import the data.
 
-    2.  > “Converted Quantimed Forecasted Consumption” is the amount that will be pulled into QAT for the associated product and month-year after applying the import percentage and conversion factor.
+<div style={{textAlign: 'center'}}>
 
-    3.  > “Current QAT Forecasted Consumption” is the forecasted consumption amount currently in QAT for that planning unit and month-year. Once you import the Quantimed data, this amount will be overwritten by the “Converted Quantimed Forecasted Consumption” amount.
+![Confirm Data Import Screen](/img/media/image150.png)
 
-2.  > This screen will show all the data that will be imported into QAT. If you do not want to import certain records, click on the checkbox in the ‘Import?’ column on the far right. This will prevent QAT from importing the Quantimed data and will keep the current QAT forecasted consumption for that planning unit and month-year.
+*Figure 25: Confirm Data Import Screen*
 
-3.  > Click “Submit” to import the data.
-
-![P1816#yIS1](/img/media/image150.png)
-
-Figure 96: Confirm Data Import Screen
+</div>
 
 ### 4.C.3. QAT Forecast Import.
 
@@ -408,11 +474,16 @@ Planners can import QAT-created forecasts into their supply plan programs to dri
 1. Navigate to **Supply Plan Data** > **Import Forecast into Supply Plan**.
 2. Select the **Source Forecast Program** and **Target Supply Plan Program** (local versions only).
 3. Select the date range for import.
-4. **Map Planning Units:** Map forecasting planning units to supply plan units. Set a conversion factor if packaging differs. Use "Do not import" for units you wish to exclude.
+4. **Map Planning Units:** Map forecasting planning units to supply plan units. Set a conversion factor if packaging differs. Use **Do not import** for units you wish to exclude.
 5. **Map Regions:** Define the percentage of the forecast to allocate to each supply plan region (e.g., 100% National to National, or split 50/50 between two regions).
 
+<div style={{textAlign: 'center'}}>
+
 ![Forecast Import Screen](/img/media/image151.png)
-*Figure 10: Mapping Forecast Data to Supply Plans*
+
+*Figure 26: Mapping Forecast Data to Supply Plans*
+
+</div>
 
 #### Rounding and Residuals
 Since supply planning requires whole numbers, QAT rounds forecasted consumption down to the nearest whole number. To prevent data loss, "residuals" (remainders) are carried over and summed across months. Once the cumulative residual reaches 1.0, it is added to the current month's imported quantity.
@@ -425,6 +496,6 @@ Since supply planning requires whole numbers, QAT rounds forecasted consumption 
 | Mar | 0.25 | 0.75 | 0 | 0.75 |
 | Apr | 0.25 | 1.00 | 1 | 0.00 |
 
-*Table 2: Demonstration of the Residual Rounding Logic*
+*Table 8: Demonstration of the Residual Rounding Logic*
 
 6. Review the final conversion list and click **Import** to finalize.

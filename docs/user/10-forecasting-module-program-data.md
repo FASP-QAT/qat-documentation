@@ -18,6 +18,8 @@ QAT supports two primary methodologies, which can be used individually or combin
 | **Consumption-Based** | Mature, stable programs with reliable data. | 24+ months of historical consumption data. |
 | **Tree-Based** | New programs, scale-ups, or variable demand. | Morbidity, service, or demographic data; demographic trends. |
 
+*Table 12: Comparison of Primary Forecasting Methodologies*
+
 Once forecasts are prepared, they are compared in the **Forecast Analysis** section to select the final plan.
 
 ## 7.B. Program Information.
@@ -37,8 +39,13 @@ The **Version Settings** screen allows users to define the parameters of the cur
 ### 7.C.2. Version History.
 Users can view the historical lifecycle of the program and right-click any version to view the **Forecast Validation** summary (listing missing data and validation notes) without downloading that specific version.
 
+<div style={{textAlign: 'center'}}>
+
 ![Version Settings Interface](/img/media/image235.png)
+
 *Figure 1: Forecasting Version Settings*
+
+</div>
 
 ## 7.D. Planning Units.
 The **Planning Units** screen is where you define the products to be forecasted. Products can be added manually or copied from the Supply Planning module.
@@ -55,9 +62,10 @@ Configure these settings to enable specific methodologies and financial calculat
 | **Desired MOS** | Target inventory level (Months of Stock) at end of period. | Sets the goal for the gap calculation. |
 | **Price & Type** | Catalog price or custom price per procurement agent. | Estimates the total cost of the procurement gap. |
 
+*Table 13: Planning Unit Forecast Parameters*
+
 > [!TIP]
 > Always perform a **Master Data Sync** after updating these settings to ensure they propagate to the Analysis screens.
- Planning Unit Settings
 
 ## 7.E. Equivalency Units.
 **Equivalency Units (EUs)** allow you to aggregate data across different but related products (e.g., different pack sizes or concentrations). This enables a unified view of the forecast in the **Reports & Outputs** section.
@@ -73,6 +81,8 @@ If a treatment regimen requires 14 tablets of one product OR 1 tube of another, 
 | :--- | :--- | :---: |
 | Regimen Treatment | 1 tablet of Product A | 14 |
 | Regimen Treatment | 1 tube of Product B | 1 |
+
+*Table 14: Demonstration of Equivalency Mapping*
 
 ### 7.E.3. Managing EUs.
 1. **Check Master Data:** Search for existing EUs in **Realm Masters** > **Equivalency Units**.
