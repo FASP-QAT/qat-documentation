@@ -5,11 +5,11 @@ sidebar_label: "Annex 3: User Role Matrix"
 sidebar_position: 15
 ---
 
-# Annex 3. User Role Matrix
+# Section 12. Annex 3: User Role Matrix
 
 This matrix defines the permissions for every role within QAT. Permissions are categorized by functional area.
 
-## Annex 3.A. Role Descriptions.
+## 12.A. Annex 3.A. Role Descriptions.
 
 | Role | Description |
 | :--- | :--- |
@@ -27,7 +27,7 @@ This matrix defines the permissions for every role within QAT. Permissions are c
 
 ---
 
-## Annex 3.B. Administrative & Master Data.
+## 12.B. Annex 3.B. Administrative & Master Data.
 | Business Function | App Admin | Realm Admin | Program Admin | Users | Viewers |
 | :--- | :---: | :---: | :---: | :---: | :---: |
 | Label & DB Translations | **X** | - | - | - | - |
@@ -42,7 +42,7 @@ This matrix defines the permissions for every role within QAT. Permissions are c
 
 ---
 
-## Annex 3.C. Program Management.
+## 12.C. Annex 3.C. Program Management.
 | Business Function | Realm Admin | SP Admin | FC Admin | Users |
 | :--- | :---: | :---: | :---: | :---: |
 | Setup/Create New Program | **X** | - | **X** | - |
@@ -55,7 +55,7 @@ This matrix defines the permissions for every role within QAT. Permissions are c
 
 ---
 
-## Annex 3.D. Supply Plan Operations.
+## 12.D. Annex 3.D. Supply Plan Operations.
 | Business Function | Realm Admin | SP Admin | SP User | SP Reviewer | SP Viewer |
 | :--- | :---: | :---: | :---: | :---: | :---: |
 | Data Entry (Cons./Inv./Ship.) | **X** | **X** | **X** | - | V¹ |
@@ -70,7 +70,7 @@ This matrix defines the permissions for every role within QAT. Permissions are c
 
 ---
 
-## Annex 3.E. Forecasting Operations.
+## 12.E. Annex 3.E. Forecasting Operations.
 | Business Function | Realm Admin | FC Admin | FC User | FC Viewer |
 | :--- | :---: | :---: | :---: | :---: |
 | Consumption Data Entry | **X** | **X** | **X** | V |
@@ -83,7 +83,7 @@ This matrix defines the permissions for every role within QAT. Permissions are c
 
 ---
 
-## Annex 3.F. Reports Access.
+## 12.F. Annex 3.F. Reports Access.
 | Report Type | Admins | Users | Viewers |
 | :--- | :---: | :---: | :---: |
 | Supply Plan / Stock Status | **X** | **X** | **X** |

@@ -5,20 +5,23 @@ sidebar_label: "Annex 4: Business Functions"
 sidebar_position: 16
 ---
 
-# Annex 4. Business Functions
+# Section 13. Annex 4: Business Functions
 
-Business functions are granular capabilities assigned to roles. They define exactly what actions a user can perform within the system.
+Business functions are a set of capabilities available to the user. They are used when creating roles (see Roles (App Admin only)). Each role has one or more business functions.
 
-## Annex 4.A. Permission Verbs.
-When configuring roles, the following verbs determine the level of access:
-- **List**: Allows viewing the data table only; no additions or edits.
-- **Add**: Allows creating new records.
-- **Edit**: Allows updating existing records. (Note: Entities cannot be deleted, only disabled).
-- **Manage**: A shortcut for List + Add + Edit.
+For master level data, the verbs used in the business functions are as follows:
+- **List** – Allows user to see the table with the existing data for that master data element. If only “List X” is chosen, the user can only see “X” but cannot edit or add.
+- **Edit** – Allows user to update or edit the master data element. Note: Always include “list” along with “edit” or the user will not be able to see the screen to edit data elements. (NOTE: An entity cannot be deleted. Users can only ‘Disable” entities.)
+- **Add** – Allows user to add a new record for the master data element. Note: Always include “list” along with “add” or the user will not be able to see the screen to add data elements.
+- **Manage** – Allows user to perform all of the aforementioned functions.
 
----
+The above business functions can be provided to users in any combination. For example:
+- User A has only “List” access, so they can only view existing data (“read only”).
+- User B has only “List” + “Edit” access, so they can view and edit existing data, but cannot add ‘new’ entities.
+- User C has “List” + “Add” access, so they can add new entities and view the list of entities.
+- User D has “Add” + “Edit” + “List” (Manage) access that enables performing all 3 actions.
 
-## Annex 4.B. Translations & Admin Dashboards.
+## 13.A. Annex 4.B. Translations & Admin Dashboards
 
 | Category | Business Function | Description |
 | :--- | :--- | :--- |
@@ -29,11 +32,7 @@ When configuring roles, the following verbs determine the level of access:
 | | Realm Dashboard | Access the realm-specific administrator overview. |
 | | Program Dashboard | Access the operational dashboard for specific programs. |
 
-*Table 27: Business Functions for Administration and UI*
-
----
-
-## Annex 4.C. Master Data Management.
+## 13.B. Annex 4.C. Master Data Management
 
 | Category | Business Function | Description |
 | :--- | :--- | :--- |
@@ -46,11 +45,7 @@ When configuring roles, the following verbs determine the level of access:
 | | Manage Products | Full control over Forecasting, Planning, and Procurement Units. |
 | | Equivalency Units | Define aggregation logic for related products. |
 
-*Table 28: Business Functions for Master Data Governance*
-
----
-
-## Annex 4.D. Program & Supply Chain Operations.
+## 13.C. Annex 4.D. Program & Supply Chain Operations
 
 | Category | Business Function | Description |
 | :--- | :--- | :--- |
@@ -63,11 +58,7 @@ When configuring roles, the following verbs determine the level of access:
 | **Shipments** | ERP Linking | Link QAT shipments to external procurement systems. |
 | | Manual Tagging | Categorize shipments for advanced tracking. |
 
-*Table 29: Business Functions for Operational Management*
-
----
-
-## Annex 4.E. Forecasting & Reporting.
+## 13.D. Annex 4.E. Forecasting & Reporting
 
 | Category | Business Function | Description |
 | :--- | :--- | :--- |
@@ -77,5 +68,3 @@ When configuring roles, the following verbs determine the level of access:
 | **Reports** | View Reports | Access the full suite of analytical outputs. |
 | **Quality** | QAT Problem List | Access and manage data quality and planning issues. |
 | | Global Reports | View aggregated data across all countries and programs. |
-
-*Table 30: Business Functions for Analytics and Decision Support*

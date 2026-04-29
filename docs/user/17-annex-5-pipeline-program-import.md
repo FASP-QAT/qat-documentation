@@ -5,52 +5,45 @@ sidebar_label: "Annex 5: PipeLine Program Import"
 sidebar_position: 17
 ---
 
-# Annex 5. PipeLine Program Import
+# Section 14. Annex 5: PipeLine Program Import
 
-This annex details the process for migrating legacy **PipeLine** databases into QAT. This is a three-stage process: conversion, upload, and data mapping.
+In certain cases, users will be granted a special set of credentials that can import PipeLine databases if they desire to set up their program this way (see Setting up a new program in Annex 1).
 
-> [!IMPORTANT]
-> **Prerequisites:**
-> - **Java Installed:** Java JDK 1.8 or higher must be installed on your machine.
-> - **No Negative Inventory:** Your PipeLine database (.accdb) must not contain negative inventory values.
-> - **Data Finalization:** Ensure all shipment, stock, and consumption data is finalized before starting the import.
+## 14.A. Step 1: Convert the .accdb file into a JSON file:
 
----
+### 14.A.1. About the PipeLine Access DB to JSON conversion tool:
+Since the QAT system is only able to import program data in JSON format and PipeLine databases are in .accdb format, QAT has a downloadable tool for converting the .accdb file into a JSON file, thus allowing importation into QAT. Once installed, this tool does not require internet access to run. Also, this tool allows the user to choose their preferred language.
 
-## Annex 5.A. Step 1: Convert .accdb to JSON.
-QAT requires data in JSON format. Use the **PipeLine Converter Tool** for this conversion.
+1. **Confirm that you have the appropriate System Configuration Requirements:**
+   - Operating System: Windows / Linux / Ubuntu
+   - Other Software: Java JDK 1.8 and above.
 
-1. Navigate to **Program Management > PipeLine Program Import**.
-2. Click the **Add (+)** button, then click the **Download (↓)** icon in the top right.
-3. Select your OS (**Windows** or **Linux**) and download the `.zip` file.
-4. Extract the folder and run the converter (executable for Windows, `.jar` for Linux).
-5. **In the Converter Interface:**
-   - **Source:** Browse and select your legacy `.accdb` file.
-   - **Destination:** Select the folder where the resulting `.json` file should be saved.
-   - **Convert:** Click the action button to start. A notification will appear upon success.
+2. **Confirm that your PipeLine data is fully updated:**
+   - The database cannot have negative inventory values.
+   - All the shipment, stock, consumption data must be updated.
 
----
+3. Go to “Program Management” and click on “PipeLine Program Import”.
+4. On the top right corner click on the “Add” button. It will lead to a file input screen.
+5. Click on the downward arrow button on the top right corner.
+6. Click the “Download PipeLine Converter” on the screen, then select your computer’s operating system (Windows or Linux). The converter will be downloaded in a zip file.
+7. Open the converter file and run the tool (.exe file / .java executable file).
 
-## Annex 5.B. Step 2: Upload to QAT.
-Once you have the `.json` file, you must upload it to the QAT server.
+## 14.B. Step 2: Upload the JSON file into QAT:
 
-1. In QAT, return to **Program Management > PipeLine Program Import**.
-2. Click **Add (+)**.
-3. Browse and select your converted `.json` file.
-4. Click **Submit**. You will receive a success message, and the new program will appear in the import list.
+1. In QAT go to “Program Management” > “PipeLine Program Import” menu item.
+2. Click on the “Add” button, and a new screen will be opened. Browse to find the converted JSON file (from Step 1) from the local machine. Click on “Submit”.
+3. After completing the process, the user will get a message that the program is successfully imported.
+4. This program will be shown as a row in the program list. Click on that row to continue to Step 3.
+   - *Note: While doing the program setup the QAT user can select multiple technical areas from the technical area dropdown list.*
 
----
+## 14.C. Step 3: Configure data for import into QAT
 
-## Annex 5.C. Step 3: Data Mapping Wizard.
-The final stage involves mapping legacy PipeLine fields to QAT's realm-level master data.
+After importing PipeLine data, the user will navigate through a series of screens where there will be prompts to enter data. After editing data on one screen, the user should click “Next” to move to the following data entry screen. If needed, navigate to previous screens by clicking “Back”. The user should navigate through the following screens: Program Info, Planning Units, Data Source, Funding Source, Procurement Agent, Consumption, Inventory, and Shipments.
 
-Click on your imported program row to launch the **Mapping Wizard**. You will navigate through the following screens:
-1. **Program Info**: Map Technical Areas and Organizations.
-2. **Planning Units**: Link PipeLine products to QAT Planning Units.
-3. **Data & Funding Sources**: Map logistics and financial partners.
-4. **Shipments & Inventory**: Final review of imported records.
+Each of these major screens have sub-screens where users need to enter data and map current PipeLine data to QAT realm-level master data; for example, the PipeLine products need to be mapped to QAT’s planning units. At the last step (Shipment screen) a pop-up will be displayed if any program contains negative inventory.
 
-> [!TIP]
-> Use the **Next** and **Back** buttons to navigate. If the system detects negative inventory during the final step, a warning will appear; you must resolve these discrepancies in the source data or during mapping.
-
-Once completed, the program will be fully active in **Program Management > Update Program Info**, where it can be downloaded for active supply planning.
+### 14.C.1. After the file is successfully imported to QAT:
+1. The users can go to “Program Management”.
+2. Click on the “Programs” menu item.
+3. The program list will show the imported program.
+4. Now the user can “Download”, “Import” and “Export” that program.
