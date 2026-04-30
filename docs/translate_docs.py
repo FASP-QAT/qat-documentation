@@ -75,6 +75,12 @@ def translate_markdown():
             html_tags = list(set(re.findall(r'<[a-zA-Z\/](?:[^>"\']|"[^"]*"|\'[^\']*\')*>', body)))
             for i, tag in enumerate(html_tags):
                 body = body.replace(tag, f'ZXCHTML{i}ZXC')
+
+            # 7. Protect stray Comparison Operators and Entities (<, >, &lt;, &gt;)
+            # This prevents the translator from decoding &lt; or breaking MDX with literal <
+            comparisons = list(set(re.findall(r'&[lg]t;|[<>]', body)))
+            for i, comp in enumerate(comparisons):
+                body = body.replace(comp, f'ZXCCOMP{i}ZXC')
                 
             # Split by paragraphs and translate
             paragraphs = body.split('\n\n')
@@ -134,6 +140,16 @@ def translate_markdown():
             for i, block in enumerate(style_blocks):
                 pattern = re.compile(rf'ZXCSTYLE\s*{i}\s*ZXC', re.IGNORECASE)
                 translated_body = pattern.sub(lambda m, t=block: t, translated_body)
+
+            # Restore Comparisons as safe entities for MDX compatibility
+            for i, comp in enumerate(comparisons):
+                # Ensure literal < and > are converted to entities to avoid JSX parsing errors
+                safe_comp = comp
+                if comp == '<': safe_comp = '&lt;'
+                elif comp == '>': safe_comp = '&gt;'
+                
+                pattern = re.compile(rf'ZXCCOMP\s*{i}\s*ZXC', re.IGNORECASE)
+                translated_body = pattern.sub(lambda m, t=safe_comp: t, translated_body)
                 
             # Save the file
             with open(target_file, 'w', encoding='utf-8') as f:
