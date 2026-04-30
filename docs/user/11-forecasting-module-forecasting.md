@@ -1,7 +1,7 @@
 ---
 id: forecasting-module-forecasting
-title: "Forecasting Module: Forecasting"
-sidebar_label: "FC: Forecasting"
+title: "8. Forecasting Module: Forecasting"
+sidebar_label: "8. Forecasting Module: Forecasting"
 sidebar_position: 11
 ---
 

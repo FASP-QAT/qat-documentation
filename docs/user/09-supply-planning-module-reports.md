@@ -1,7 +1,7 @@
 ---
 id: supply-planning-module-reports
-title: "Supply Planning Module: Reports"
-sidebar_label: "SP: Reports"
+title: "6. Supply Planning Module: Reports"
+sidebar_label: "6. Supply Planning Module: Reports"
 sidebar_position: 9
 ---
 
