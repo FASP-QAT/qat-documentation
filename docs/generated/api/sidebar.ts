@@ -783,7 +783,7 @@ const sidebar: SidebarsConfig = {
       label: "Quantimed Import",
       link: {
         type: "doc",
-        id: "generated/api/quantimed-import",
+        id: "generated/api/quantimed-import-tag",
       },
       items: [
         {
@@ -1129,7 +1129,7 @@ const sidebar: SidebarsConfig = {
       label: "Export Supply Plan",
       link: {
         type: "doc",
-        id: "generated/api/export-supply-plan",
+        id: "generated/api/export-supply-plan-tag",
       },
       items: [
         {
