@@ -66,7 +66,7 @@ The PWA provides a standalone, app-like experience on your desktop and supports 
 
 #### Alternate Installation (If the button is missing)
 1. In Chrome, click the **three vertical dots** (top-right).
-2. Select **Cast, Save, and Share** > **Create Shortcut**.
+2. Select **Cast, Save, and Share** &gt; **Create Shortcut**.
 3. A QAT icon will appear on your desktop.
 
 ![PWA Alternate Method](/img/media/image12.png)
@@ -83,7 +83,7 @@ The PWA provides a standalone, app-like experience on your desktop and supports 
 
 ### 2.E.1 Security and Maintenance
 - **Logging Out:** Click the logout icon in the top-right ribbon.
-- **Changing Passwords:** Within QAT, go to your **Profile** > **Change Password**.
+- **Changing Passwords:** Within QAT, go to your **Profile** &gt; **Change Password**.
 - **Forgot Password:** Click the **Forgot Password?** link on the login screen to receive a reset link via email.
 
 > **Note:** QAT passwords expire one year after they are created or updated.
@@ -212,12 +212,12 @@ Figure 25: Report a Bug
 
 ### 2.I.3 Tickets for Adding/Updating Users and Master Data
 
-When a user needs to either add or update a user or master data for any reason, they may do so by taking out a helpdesk ticket. Before requesting any additions or changes to the master data in QAT, the user should first check the realm-level master data (Realm Level Masters \>\> Product) and the Program Catalog Report to make sure the information does not already exist. For more information on how to access and use master data, please see [Program Management](06-managing-programs-and-versions.md#working-with-program-data) and [Realm Masters](13-annex-1-application-realm-administrator-manual.md#realm-masters). For information on how to access the Program Catalog, please see [Program Catalog](13-annex-1-application-realm-administrator-manual.md#product). To access the QAT Helpdesk:
+When a user needs to either add or update a user or master data for any reason, they may do so by taking out a helpdesk ticket. Before requesting any additions or changes to the master data in QAT, the user should first check the realm-level master data (Realm Level Masters \&gt;\&gt; Product) and the Program Catalog Report to make sure the information does not already exist. For more information on how to access and use master data, please see [Program Management](06-managing-programs-and-versions.md#working-with-program-data) and [Realm Masters](13-annex-1-application-realm-administrator-manual.md#realm-masters). For information on how to access the Program Catalog, please see [Program Catalog](13-annex-1-application-realm-administrator-manual.md#product). To access the QAT Helpdesk:
 
-1.  > Users can access the QAT Helpdesk from two different locations in QAT:
-    1.  > On the login page, and
+1.  &gt; Users can access the QAT Helpdesk from two different locations in QAT:
+    1.  &gt; On the login page, and
 
-    2.  > from the top right ribbon in QAT
+    2.  &gt; from the top right ribbon in QAT
 
 ![A screenshot of a login screen Description automatically generated](/img/media/image27.png)
 
@@ -225,15 +225,15 @@ When a user needs to either add or update a user or master data for any reason, 
 
 Figure 18: Three location to access the QAT Helpdesk
 
-2.  > Four options will appear for taking out a ticket: Add/Update User, Add/Update Master Data, Change Request, and Report a Bug. See below sections on [Change Requests](#requesting-a-change) and [Report a Bug](#reporting-a-bug).
+2.  &gt; Four options will appear for taking out a ticket: Add/Update User, Add/Update Master Data, Change Request, and Report a Bug. See below sections on [Change Requests](#requesting-a-change) and [Report a Bug](#reporting-a-bug).
 
 ![P772#yIS1](/img/media/image29.png)
 
 Figure 19: QAT Helpdesk Menu
 
-3.  > Choose to Add/Update User or Add/Update Master data. Either option will take you to different screens for more information.
+3.  &gt; Choose to Add/Update User or Add/Update Master data. Either option will take you to different screens for more information.
 
-4.  > Enter the information required in the form and click “Submit.”
+4.  &gt; Enter the information required in the form and click “Submit.”
 
 ![P778#yIS1](/img/media/image30.png)
 
@@ -249,21 +249,21 @@ After submitting a ticket, the user will be assigned a Ticket Code number (ex: Q
 
 When a user has an idea for a new feature, functionality, or design element that would make QAT a better application for all users, such as a new report, removing an unnecessary column, etc., they may request a change through the QAT Helpdesk. All change request tickets will require a detailed description and screenshots. Once the technical team receives a user’s change request ticket, it will be reviewed for feasibility and usefulness to all QAT users. If the change request is accepted, it will not be made available in QAT immediately, but will placed in a queue based on realm business priority, criticality, and LOE requirements. To request a change in QAT:
 
-1.  > Click on the QAT Helpdesk icon.
+1.  &gt; Click on the QAT Helpdesk icon.
 
 ![A red line with numbers and circles Description automatically generated](/img/media/image28.png)
 
 Figure 23: QAT Helpdesk Icon
 
-2.  > Click on “Request a Change” from the QAT Helpdesk menu options.
+2.  &gt; Click on “Request a Change” from the QAT Helpdesk menu options.
 
-3.  > Complete the form by filling out the required information and click “Submit,”
+3.  &gt; Complete the form by filling out the required information and click “Submit,”
 
 ![A screenshot of a computer Description automatically generated](/img/media/image33.png)
 
 Figure 24: Change Request Ticket
 
-4.  > After submitting a ticket, the user will be assigned a Ticket Code number (ex: QAT-570). The user will also receive an email notification and the number of “Open Tickets” on the top ribbon in red will increase. This ticket number corresponds to the ticket number stored in the JIRA software management tool. For more information on managing tickets and the JIRA software management tool, please see [Managing Tickets](#managing-tickets).
+4.  &gt; After submitting a ticket, the user will be assigned a Ticket Code number (ex: QAT-570). The user will also receive an email notification and the number of “Open Tickets” on the top ribbon in red will increase. This ticket number corresponds to the ticket number stored in the JIRA software management tool. For more information on managing tickets and the JIRA software management tool, please see [Managing Tickets](#managing-tickets).
 
 
 ### 2.I.5 Managing Tickets
@@ -445,7 +445,7 @@ The Overview table summarizes multiple programs based on your access level.
 This section provides deep-dive metrics for a single selected program.
 
 - **Stock Status:** A bar graph showing the percentage of months by stock category (e.g., Stocked, Overstocked, Stockout).
-- **Forecast Error:** (Server programs only) Highlights planning units with high error rates (default >50%).
+- **Forecast Error:** (Server programs only) Highlights planning units with high error rates (default &gt;50%).
 - **Shipments:** A pie chart showing funding sources and procurement status for upcoming shipments.
 - **Data Quality:** Displays real-time metrics from the QAT Problem List (QPL), such as missing consumption data or overdue shipments.
 - **Expiries:** Summarizes the quantity and total cost of products expiring within the report period.

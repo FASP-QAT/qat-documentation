@@ -70,7 +70,7 @@ Average monthly consumption (AMC) is calculated as the ratio of sum of full dema
 ### 11.B.9. Min MOS:
 Min MOS is calculated as Max of Min MOS and Min MOS guardrail. Min MOS is based on the mapping of the program planning unit and Min MOS guardrail is based on the realm.
 #### Rules for Decimal places:
-- Display 0 decimal places if 3+ digits (>100, e.g. 10,000)
+- Display 0 decimal places if 3+ digits (&gt;100, e.g. 10,000)
 - Display 1 decimal places if 2 digits (e.g. 99.8)
 - Display 2 decimal places if 1 digit (e.g. 1.63)
 - Display 3 decimal places if under 0 (e.g 0.124)
@@ -106,7 +106,7 @@ Ending balance is calculated based on certain conditions:
 
 ### 11.B.15. Unmet demand:
 - When actual consumption is available = (Actual consumption * Days stocked out) / (Days in Month – Days Stocked out)
-- When no actual consumption is available = Projected Inventory (if < 0)
+- When no actual consumption is available = Projected Inventory (if &lt; 0)
 
 ### 11.B.16. MOS:
 #### Formula:
@@ -115,20 +115,20 @@ Ending balance is calculated based on certain conditions:
 ### 11.B.17. When to suggest shipments (Plan by MOS):
 QAT suggests the shipment for a month when MOS for the month and following two months is less than that of the Min MOS and if the month is greater than the current month.
 #### Formula:
-- Suggest shipment if MOS for month and following two months < Min MOS
+- Suggest shipment if MOS for month and following two months &lt; Min MOS
 
 ### 11.B.18. Suggested shipment quantity (Plan by MOS):
 - If MOS for current month and following two months is less than Min MOS:
   - Suggested Order Qty = Max Stock - Ending Balance + Unmet Demand
-- If MOS is '0' and AMC is > 0 and the following two months are less than Min MOS:
+- If MOS is '0' and AMC is &gt; 0 and the following two months are less than Min MOS:
   - Suggested Order Qty = Max Stock - Ending Balance + Unmet Demand
-- If MOS is '0' and AMC is > 0 and one of the following two months is greater than Min MOS:
+- If MOS is '0' and AMC is &gt; 0 and one of the following two months is greater than Min MOS:
   - Suggested Order Qty = Min Stock - Ending Balance + Unmet Demand
 
 ### 11.B.19. When to suggest shipments (Plan by Qty):
 QAT suggests the shipment for a month when Ending Balance for the month + Distribution lead time and following two months is less than that of the Min Qty or when Ending Balance for month is 0 and AMC is greater than 0.
 #### Formula:
-- Suggest shipment if Ending Balance for month + Distribution Lead Time and following two months < Min Qty, or if Ending Balance = 0 and AMC != 0.
+- Suggest shipment if Ending Balance for month + Distribution Lead Time and following two months &lt; Min Qty, or if Ending Balance = 0 and AMC != 0.
 
 ### 11.B.20. Suggested shipment quantity (Plan by Qty):
 - Suggested Order Qty calculations use Max Qty or Min Qty minus Ending Balance plus Unmet Demand based on similar logic as Plan by MOS, incorporating the Distribution Lead Time.
@@ -138,8 +138,8 @@ QAT suggests the shipment for a month when Ending Balance for the month + Distri
 #### a. FEFO Calculations:
 1. Sort batches by Expiry Date in ascending order.
 2. Calculate Unallocated FEFO:
-   - If sum of adjustments < 0: Unallocated FEFO = Final consumption - (Manual + Auto Adjustment)
-   - If sum of adjustments >= 0: Unallocated FEFO = Final consumption
+   - If sum of adjustments &lt; 0: Unallocated FEFO = Final consumption - (Manual + Auto Adjustment)
+   - If sum of adjustments &gt;= 0: Unallocated FEFO = Final consumption
 3. Loop through batches to calculate Batch Ending Balance using `Temp Ending Balance - Unallocated FEFO`.
 
 #### b. LEFO Calculations:

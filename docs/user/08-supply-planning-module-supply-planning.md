@@ -23,7 +23,7 @@ At any time. The user does not have to be online. However, they must have downlo
 ### 5.A.4. How?
 *Note: other than step 1 being required, the remaining steps are not sequential, but an explanation of the features available in the supply planning screen.*
 
-1. On the left menu bar, go to **Supply Planning > Supply Planning**.
+1. On the left menu bar, go to **Supply Planning &gt; Supply Planning**.
    - a. Select the desired **Program**. The drop-down list in the supply plan screen will show all the programs that have been downloaded by the user. Refer to Download Program for details on how to download a program.
    - b. Select the desired **QAT Planning Unit** or **Alternate Reporting Unit (ARU)**.
 
@@ -121,21 +121,21 @@ QAT suggests a shipment as an early warning to avoid going below minimum stock l
 
 #### Rules for Suggested Shipments:
 **For Plan by MOS:**
-1. Is the planning unit understocked (MOS < Min) for 3 straight months?
+1. Is the planning unit understocked (MOS &lt; Min) for 3 straight months?
    - a. If yes, suggested shipment will bring the current month’s stock level to maximum.
    - b. If no, no suggested shipment.
 2. If the planning unit is stocked out, QAT will always suggest a shipment.
-   - a. If both of the next 2 months are < Min, the suggested shipment will bring the current month’s stock level to maximum.
-   - b. If 1 of the next 2 months is > Min, the suggested shipment will bring the current month’s stock level to minimum.
+   - a. If both of the next 2 months are &lt; Min, the suggested shipment will bring the current month’s stock level to maximum.
+   - b. If 1 of the next 2 months is &gt; Min, the suggested shipment will bring the current month’s stock level to minimum.
 3. If AMC = 0 or N/A, there will not be a suggested shipment for that month.
 
 **For Plan by Quantity:**
 *Where Month N is the month QAT is calculating for, and X = Distribution Lead Time*
 1. If AMC = 0 or N/A for Month N, no suggested shipment.
 2. If Month N is stocked out (Ending balance = 0), QAT will always suggest a shipment.
-   - a. If both of next 2 months (N+1, N+2) are < min qty, suggested shipment is the quantity that would bring month N to maximum qty.
-   - b. If one or both of the next 2 months (N+1 or N+2) is > min qty, suggested shipment is the quantity that would bring month N to minimum qty.
-3. Is product understocked (ending balance < Min qty) for 3 straight months (Month N, N+1, N+2)?
+   - a. If both of next 2 months (N+1, N+2) are &lt; min qty, suggested shipment is the quantity that would bring month N to maximum qty.
+   - b. If one or both of the next 2 months (N+1 or N+2) is &gt; min qty, suggested shipment is the quantity that would bring month N to minimum qty.
+3. Is product understocked (ending balance &lt; Min qty) for 3 straight months (Month N, N+1, N+2)?
    - a. If yes, suggested shipment is the quantity that would bring Month N to maximum qty.
    - b. If no, no suggested shipment.
 *QAT puts the suggested quantity in Month N-X. In other words, X months before Month N, where X is the distribution lead time.*

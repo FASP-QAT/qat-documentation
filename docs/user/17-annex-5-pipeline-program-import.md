@@ -30,7 +30,7 @@ Since the QAT system is only able to import program data in JSON format and Pipe
 
 ## 14.B. Step 2: Upload the JSON file into QAT:
 
-1. In QAT go to “Program Management” > “PipeLine Program Import” menu item.
+1. In QAT go to “Program Management” &gt; “PipeLine Program Import” menu item.
 2. Click on the “Add” button, and a new screen will be opened. Browse to find the converted JSON file (from Step 1) from the local machine. Click on “Submit”.
 3. After completing the process, the user will get a message that the program is successfully imported.
 4. This program will be shown as a row in the program list. Click on that row to continue to Step 3.

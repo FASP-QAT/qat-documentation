@@ -51,7 +51,7 @@ Program data can be downloaded, uploaded, imported, and exported in QAT.
 
 - **How to Download a Program:**
   1. Determine whether you would like to download from the forecasting or the supply planning module, and navigate to the correct module (See Section 2.J Navigation and Menu Bar). If you only have access to one module, you can ignore this step.
-  2. Go to “Program Management” > “Download/Delete Program.” (Alternatively, access this screen by clicking the download icon ![download icon](/img/media/image89.png) in the top right bar in QAT). The screen will display the Program Data as shown in the below figure.
+  2. Go to “Program Management” &gt; “Download/Delete Program.” (Alternatively, access this screen by clicking the download icon ![download icon](/img/media/image89.png) in the top right bar in QAT). The screen will display the Program Data as shown in the below figure.
      - Red text indicates that the program downloaded is not the latest version. Green text indicates that the program downloaded is the latest version. Black text indicates the program is not downloaded.
 
 <div style={{textAlign: 'center'}}>
@@ -134,7 +134,7 @@ Program data can be downloaded, uploaded, imported, and exported in QAT.
 
 ### 3.C.1. Supply Plan Module - How to Upload a Program:
 1. Ensure you are in the Supply Plan Module.
-   a. Go to “Program Management” > “Upload Version.”
+   a. Go to “Program Management” &gt; “Upload Version.”
    b. Or, click the upload icon ![upload icon](/img/media/image98.png) in the top right bar in QAT.
 2. Use Program dropdown to select the appropriate program, if it is not already selected (only downloaded programs will be visible).
 3. Select a Version Type using the dropdown:
@@ -179,7 +179,7 @@ Program data can be downloaded, uploaded, imported, and exported in QAT.
 
 ### 3.C.2. Forecasting Module – How to Upload a Program:
 1. Ensure you are in the Forecasting Module.
-   a. Go to “Program Management” > “Upload Version.”
+   a. Go to “Program Management” &gt; “Upload Version.”
    b. Or, click the upload icon ![upload icon](/img/media/image102.png) in the top right bar in QAT.
 2. Use Program dropdown to select the appropriate program, if it is not already selected (only downloaded programs will be visible).
 3. Select a Version Type using the dropdown:
@@ -243,7 +243,7 @@ Program data can be downloaded, uploaded, imported, and exported in QAT.
   - Supply plan reviewers can view the review queue.
   - Supply Plan viewers can check on the status of supply plan reviews.
 - **How?**
-  1. Go to “Program Management” > “Supply Plan Version and Review” and the below screen will be displayed. Select the Report Period, Country, Program, Version Type, and Status. In this table, users can see the status of all supply plans and any version comments. Users can also use the search, filter and sort options to find specific programs.
+  1. Go to “Program Management” &gt; “Supply Plan Version and Review” and the below screen will be displayed. Select the Report Period, Country, Program, Version Type, and Status. In this table, users can see the status of all supply plans and any version comments. Users can also use the search, filter and sort options to find specific programs.
 
 <div style={{textAlign: 'center'}}>
 
@@ -325,7 +325,7 @@ Program data can be downloaded, uploaded, imported, and exported in QAT.
 
 - **How to export a program:**
   1. Determine whether you would like to export from the forecasting or the supply planning module, and navigate to the correct module (See Section 2.J Navigation and Menu Bar). If you only have access to one module, you can ignore this step.
-  2. Go to “Program Management” > “Export Program.”
+  2. Go to “Program Management” &gt; “Export Program.”
   3. Select the program to be exported using the dropdown. Programs must be first downloaded before exporting is available. (See Section 3.B Download/Delete Program).
      - If the program was downloaded with a subset of data, the export will also be limited to that same subset.
   4. Determine whether or not you need an unencrypted version.
@@ -354,7 +354,7 @@ Program data can be downloaded, uploaded, imported, and exported in QAT.
 
 - **How to import a program:**
   1. Determine whether you would like to export from the forecasting or the supply planning module, and navigate to the correct module (See Section 2.J Navigation and Menu Bar). If you only have access to one module, you can ignore this step.
-  2. Go to “Program Management” > “Import Program.”
+  2. Go to “Program Management” &gt; “Import Program.”
   3. Click “Browse.” Choose the required file that needs to be imported. The selected file must be in the zip format. The zip file may have multiple programs.
   4. Click “Next.”
   5. Select the required program to import (if only one program is in the file, it will be auto-selected).
