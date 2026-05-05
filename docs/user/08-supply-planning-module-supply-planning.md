@@ -9,10 +9,21 @@ sidebar_position: 8
 
 ## 5.A. Supply Planning: An Overview
 
+![Figure 99: Supply Planning Screen – Plan by MOS](/img/media/image153.png)
+*Figure 99: Supply Planning Screen – Plan by MOS*
+
+![Figure 100: Supply Planning Screen – Plan by Quantity](/img/media/image154.png)
+*Figure 100: Supply Planning Screen – Plan by Quantity*
+
+
 ### 5.A.1. What?
 All major data points (consumption, shipments, inventory) come together on the supply planning screen, and this is where most QAT users will spend the majority of their time. Users can click on many of the cells in the table to directly edit their data. It is recommended to use this screen for active supply planning (including data updates and planning new shipments), but to use the data entry screen when significant data entry is required. Note that some sections vary based on whether the planning unit is planned by MOS or planned by Quantity (as selected in Updating Planning Units) – differences are noted below.
 
 - This screen can also be viewed by the alternate reporting unit (ARU) associated with the planning unit. This means that users can view their supply plans in terms of the product names and units of measure they enter the data in, with values on the table and graph changing according to the ARU/PU conversion factor that is established by the user (see Alternate Reporting Units). The user selects to view by ARU clicking on the radio button and then selecting the desired ARU to display.
+
+![Figure 101: Supply Planning Table –by Planning Unit vs by Alternate Reporting Unit](/img/media/image155.png)
+*Figure 101: Supply Planning Table –by Planning Unit vs by Alternate Reporting Unit*
+
 
 ### 5.A.2. Who?
 Realm Admins, Program Admins, Supply Plan Reviewers, and Program Users can add data/edit data in the supply plan. Certain “view only” roles can view the supply plan.
@@ -40,8 +51,15 @@ At any time. The user does not have to be online. However, they must have downlo
    - **Ending Balance** represents the quantity of stock at the end of the month. It can be an inventory count (bolded), or a projected value (unbolded).
    - Follow the `+/-` signs besides each row to understand how the math works from opening balance to ending balance.
 
+![Figure 102: Ending Stock Balance Calculation](/img/media/image161.png)
+*Figure 102: Ending Stock Balance Calculation*
+
 6. **The bottom half of the table contains more detail to help the user interpret the stock status.**
    - **Average monthly consumption (AMC)** is an average of the consumption over the months indicated by the AMC parameters, which are displayed above the table. To edit these parameters, see Updating Planning Units.
+
+![Figure 103: Differences in the Supply Planning Table - Plan by MOS vs Plan by Quantity](/img/media/image162.png)
+*Figure 103: Differences in the Supply Planning Table - Plan by MOS vs Plan by Quantity*
+
    - **Unmet demand.** Estimated quantities of product that would have been consumed if sufficient stock was available:
      - When the forecast consumption is greater than the projected available beginning stock on hand.
      - When the actual consumption includes days of stock out.
@@ -54,9 +72,22 @@ At any time. The user does not have to be online. However, they must have downlo
      - *Planned by MOS:* The “Months of Stock” row is color-coded based on the stock status using the color coding displayed in the legend. Stock status is determined by comparing the MOS with the MIN MOS and MAX MOS.
      - *Planned by Quantity:* The “Ending Balance” row is color-coded based on the stock status using the color coding displayed in the legend. Stock status is determined by comparing the quantity of the “ending balance” with the min quantity (provided by user) and max quantity (calculated).
 
+![Figure 104: Differences in the Supply Planning Legend- Plan by MOS vs Plan by Quantity](/img/media/image163.png)
+*Figure 104: Differences in the Supply Planning Legend- Plan by MOS vs Plan by Quantity*
+
 7. **Reading the stock status graph.** The dates on this graph follow the table. By default, all graph elements are displayed. Click on any data element in the legend to hide a data element. The Stock Status graph has two vertical (Y) axes:
    - The primary (left) axis is in units, and depicts shipments, consumption, stock, and expiries. For Plan by Quantity, there minimum and maximum quantities use the primary axis.
+
+![Figure 105: Supply Planning Graph - Primary Axis (Plan by MOS)](/img/media/image165.png)
+*Figure 105: Supply Planning Graph - Primary Axis (Plan by MOS)*
+
+![Figure 106: Supply Planning Graph - Primary Axis (Plan by Quantity)](/img/media/image206.png)
+*Figure 106: Supply Planning Graph - Primary Axis (Plan by Quantity)*
+
    - For plan by MOS, there is a secondary (right) axis in months, and depicts the stock parameters (minimum, maximum) and the calculated months of stock.
+
+![Figure 107: Supply Planning Graph - Secondary Axis (Plan by MOS)](/img/media/image205.png)
+*Figure 107: Supply Planning Graph - Secondary Axis (Plan by MOS)*
 
 ## 5.B. Supply Planning: Consumption
 
@@ -86,6 +117,10 @@ To see a detailed breakdown of all shipments in a month, click on the cell in th
 
 For all shipment rows, the colors indicate the procurement agent. If a month has multiple shipments with different procurement agents, the cell will be green. Red triangles on the top right of the cell indicate that a shipment is an emergency. If the shipment is a local procurement, there will be an L icon in the bottom left of the cell. If the shipment is ERP linked, there will be a link icon in the top left of the cell. Shipments can have multiple icons such as a local ERP linked emergency order. The legend appears at the top of the screen.
 
+![Figure 108: Shipments in Supply Planning](/img/media/image175.png)
+*Figure 108: Shipments in Supply Planning*
+
+
 The following sections will cover how to update existing shipments and create new shipments within the supply planning screen. See Shipment Data for more tips on the shipment data fields, which apply across the Shipment Data Entry screen and the supply planning screen.
 
 ### 5.C.1. Updating an Existing Shipment
@@ -108,6 +143,10 @@ Below are the steps to use the recalculate button in the Supply Planning screen:
 5. Click ‘Ok’. The pop-up will go away, and the revised order quantity will appear in the ‘Order Quantity’ column. Click ‘Submit’ if you wish to proceed with the revised order quantity. At any point, the user can override the quantity by double clicking into the cell and typing in a new quantity.
    The revised quantity will now reflect in the supply plan.
 
+![Figure 109: Recalculate Button](/img/media/image177.png)
+*Figure 109: Recalculate Button*
+
+
 ### 5.C.3. Creating a New Shipment
 There are two ways to create new shipments – 1) converting a QAT suggested shipment into a planned shipment or 2) manually adding a shipment.
 
@@ -118,6 +157,10 @@ QAT suggests a shipment as an early warning to avoid going below minimum stock l
 1. Click on the row for **Suggested Shipment** under the desired month.
 2. The **Shipment Details** pop-up will appear. Change the status to the desired status, fill out the required fields, indicated by an asterisk. Double click to activate any dropdowns. Scroll to the right to see all fields. Hover over tool tips if any clarification is needed. The order quantity will be pre-filled by the suggested order quantity.
 3. Click “Submit” to save the changes and return to the main supply planning screen, where changes will be reflected *(Note: The Submit button will not appear if all required fields are not filled).*
+
+![Figure 110: Suggested Shipment](/img/media/image178.png)
+*Figure 110: Suggested Shipment*
+
 
 #### Rules for Suggested Shipments:
 **For Plan by MOS:**
@@ -180,8 +223,16 @@ On the Adjustments and Inventory Details popup, users can directly access the Ad
      - i. Ensure there is an actual/manual inventory count for the month.
      - ii. Click on “final inventory” to pull up the batches.
      - iii. Type over the actual quantity – use the dropdowns if you want to change batches.
+
+![Figure 111: Batches included in Final Inventory Pop-up](/img/media/image186.png)
+*Figure 111: Batches included in Final Inventory Pop-up*
+
      - iv. Remember, the total of the batches must match the total inventory total for the month.
      - v. Right click on any batch to view the batch ledger (learn more in Supply Planning: Project Expired Stock and Batch Information.)
+
+![Figure 112: Batches Affecting Final Inventory Pop-up](/img/media/image185.png)
+*Figure 112: Batches Affecting Final Inventory Pop-up*
+
 
 ## 5.E. Supply Planning: Project Expired Stock and Batch Information
 
@@ -227,7 +278,15 @@ There are currently six predefined scenarios available to users; more can be pro
 1. Go to **Supply Planning** and click on **Scenario Planning**.
 2. Select a predefined scenario from the dropdown menu and edit the required fields.
 3. Click **Add** to view the changes.
+
+![Figure 113: Scenario Planning Screen](/img/media/image191.png)
+*Figure 113: Scenario Planning Screen*
+
 4. The scenario will be shown in the “Scenario List”.
+
+![Figure 114: Scenario Planning Scenario List](/img/media/image192.png)
+*Figure 114: Scenario Planning Scenario List*
+
 5. If the user wishes to apply the scenario to their supply plan, they can click on the **Submit** button. The new supply plan will get stored in the computer of that user, and the user can upload this to the server as a new version via the Upload functionality.
 6. If the user does not wish to apply the scenario to their current supply plan, they can click on the **Cancel** button or the **Reset** button, and the changes will not take effect.
 
@@ -245,17 +304,35 @@ Users can utilize the various dropdown parameters at the top of the screen to ge
 - b. Single Planning Unit (PU) or single Alternate Reporting Unit (ARU)
 - c. Shipments disaggregated by status (i.e. planning, shipped, received, etc.)
 
+![Figure 115: Supply Plan Report: Single Program View, Graph](/img/media/image193.png)
+*Figure 115: Supply Plan Report: Single Program View, Graph*
+
+![Figure 116: Supply Plan Report: Single Program View, Tabular Data](/img/media/image194.png)
+*Figure 116: Supply Plan Report: Single Program View, Tabular Data*
+
+
 ### 5.G.2. Multi-Program View
 - a. Multiple programs
 - b. Single PU or ARU
 - c. Shipments disaggregated by program (i.e. FASPonia Malaria MOH & FASPonia Malaria Social Marketing)
 - d. *Notes: QAT is able to aggregate the supply planning data across multiple programs if they share the same PU/ARU. This could be useful if a country has multiple parallel programs monitoring the same products and would like to see an aggregated or national view of the stock status over time.*
 
+![Figure 117: Supply Plan Report: Multi-program View](/img/media/image195.png)
+*Figure 117: Supply Plan Report: Multi-program View*
+
+![Figure 118: Supply Plan Report: Multi-program/EU View, Tabular Data](/img/media/image196.png)
+*Figure 118: Supply Plan Report: Multi-program/EU View, Tabular Data*
+
+
 ### 5.G.3. Equivalency Unit (EU) View
 - a. Single or multiple programs
 - b. Multiple PUs (ARUs cannot be used with EUs)
 - c. Shipments disaggregated by program, PU, or program-PU
 - d. *Notes: QAT is able to aggregate across PUs that are different (different pack sizes, usage rates, etc.), but related by utilizing an EU (see Equivalency Units for more information) and a corresponding conversion factor. This could be useful for countries or global viewers that would like to see concepts such as, Malaria Treatments, Couples Year Protection (CYP), ARV Patient Months, etc. as an aggregate.*
+
+![Figure 119: Supply Plan Report: Equivalency Unit View](/img/media/image197.png)
+*Figure 119: Supply Plan Report: Equivalency Unit View*
+
 
 *Note:*
 1. The report utilizes the Planning Unit settings set by the Program Admin for AMC, shelf life, MIN, reorder interval, and MAX.

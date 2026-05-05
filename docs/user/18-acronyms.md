@@ -24,6 +24,7 @@ If you're looking for a specific term, use Ctrl+F on your keyboard to search thi
 | Forecast / Forecasting Module (FC) | The QAT module used to generate, review, and adjust forecasts of product demand based on historical data, assumptions, and forecasting methods. |
 | Forecasting and Supply Planning (FASP) | Forecasting: An estimate or prediction of the quantities of products to be consumed by clients or consumers over a future period.<br />Supply Planning: The component of supply chain management focused on fulfilling demand plan requirements. The goal is to balance supply and demand to meet the financial and service delivery objectives of the health program. |
 | Forecasting Unit (FU) | The smallest unit of measure used in QAT when forecasting demand in QAT (for example tablets, tests, or vials). Forecasting Units are always smaller than or equal to Planning Units (PUs). |
+| Family Planning and Reproductive Health (FP/RH) | A health focus area covering commodities and services related to family planning and reproductive health. |
 | Global Family Planning Visibility and Analytics Network (GFPVAN) | A global platform that provides visibility into family planning product pipelines and supply chains, often integrated with QAT analyses. |
 | Global Health Supply Chain Program – Procurement and Supply Management (GHSC‑PSM) | A USAID‑funded program that supports procurement, supply planning, and data systems for global health commodities, including QAT. |
 | Global Location Number (GLN) | A unique identifier used to identify physical locations or organizations in supply chain systems. |
@@ -53,7 +54,9 @@ If you're looking for a specific term, use Ctrl+F on your keyboard to search thi
 | Stock on Hand (SOH) | The quantity of usable stock physically available at a specific location at a given point in time. |
 | Supply Plan / Supply Planning Module (SP) | The QAT module used to plan procurement and shipments over time to meet forecasted demand while maintaining target stock levels. |
 | Triple Exponential Smoothing (Holt‑Winters) (TES) | A time‑series forecasting method that accounts for level, trend, and seasonality in historical data. |
+| United States Agency for International Development (USAID) | The U.S. Government agency responsible for administering civilian foreign aid and development assistance. |
 | Weighted Absolute Percentage Error (WAPE) | A forecasting accuracy metric that measures total absolute error as a percentage of total actual demand, weighted by volume. |
+
 
 <div style={{textAlign: 'center'}}>
 

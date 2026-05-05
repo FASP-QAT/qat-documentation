@@ -20,12 +20,22 @@ The reports are divided into Global Reports and Program-specific Reports. Progra
 - **Accessible to:** Realm Admins, Program Admins, and Program Users
 - **Navigation:** **Reports → QAT Problem List**
 
+The QAT Problem List is a list of data and logic issues that have been automatically identified by the system for that program and version. The user can use this list to identify areas of their data or supply plan that may need correction or further review.
+
+![Figure 120: QAT Problem List](/img/media/image198.png)
+*Figure 120: QAT Problem List*
+
+The problem list consists of the following aspects:
+
+![Figure 121: Aspects QAT Problem List](/img/media/image199.png)
+*Figure 121: Aspects QAT Problem List*
+
 *Note: Only the Problem associated with the programs that have been downloaded by the user in their local machine will appear in the QAT Problem List. For details on how to download specific programs and versions, refer to the Download Program section of the User Manual.*
 
 ### 6.A.1. QAT Problem List Basics
 Each Problem that is flagged in the QAT Problem List will have a separate line. This will have the associated planning unit, a description of the problem, a suggestion on how to fix the problem, the problem status, user notes, a checkbox for identifying if the problem has been reviewed, the latest reviewer notes (as applicable), the date it was last reviewed and the criticality.
 
-QAT Problems can be subdivided into four main categories: Data Quality, Procurement Schedule, Supply Planning, and Other. They are also assigned to different levels of criticality: Low (yellow), Medium (orange), and High (red). The criticality informs users the extent to which a problem affects the quality of the supply plan. However, regardless of criticality, all problems must be “In-compliance” or “Addressed” in the QAT Problem List to be uploaded as a Final Version. There are five main statuses associated with the individual problems in the QAT Problem List:
+QAT Problems can be subdivided into four main categories: Data Quality, Procurement Schedule, Supply Planning, and Other. They are also assigned to different levels of criticality: High (red), Medium (orange), and Low (yellow). The criticality informs users the extent to which a problem affects the quality of the supply plan. However, regardless of criticality, all problems must be “In-compliance” or “Addressed” in the QAT Problem List to be uploaded as a Final Version. There are five main statuses associated with the individual problems in the QAT Problem List:
 
 1. **In-Compliance** – Issue has been closed through data entry by the user. Status will be automatically changed, and notes are not required.
    *Example:* A planning unit is missing actual consumption in the last 3 months. A user enters actual consumption data for the last 3 months. QAT automatically marks this as ‘in-compliance’.
@@ -44,9 +54,29 @@ QAT Problems can be subdivided into four main categories: Data Quality, Procurem
    - b. From the consumption data entry screen, the user will add actual consumption for the requested months. For instructions on how to add consumption, please refer to Consumption Data.
    - c. Navigate back to the QAT Problem List and click **Recalculate** to refresh the QAT Problem List to include the most recent addition of actual consumption data. The previously flagged problem should now be “In-compliance” and no longer be flagged by the QAT Problem List.
 
+![Figure 122: Closing a Problem Example](/img/media/image200.png)
+*Figure 122: Closing a Problem Example*
+
+**Refreshing/Recalculating the Problem List:**
+To refresh the problem list, the user can click on the Recalculate icon (the blue circle with white arrows). This will cause the system to re-run the logic checks on the data and supply plan and update the problem list.
+
+![Figure 123: QAT Problem List Recalculate/Refresh](/img/media/image201.png)
+*Figure 123: QAT Problem List Recalculate/Refresh*
+
 2. **Addressing a problem with a comment:** If a problem that has been flagged in the QAT Problem List cannot be fixed and made ‘In-compliance’ through data entry as recommended in the “Suggestion” column, a user can provide a comment and manually change the status to ‘Addressed.’ For example, a planning unit may be overstock/understocked and the suggestion to “re-evaluate supply plan to meet the min/max parameters” is presented. If a user is unable to fix this problem via data entry, they will need to address the problem:
    - a. Double-click on the **Problem Status** dropdown for that problem and choose “Addressed.” Users must provide an explanatory note in the Notes column for all problems marked as “Addressed.”
+
+![Figure 124: Addressing a Problem & Adding a Note](/img/media/image202.png)
+*Figure 124: Addressing a Problem & Adding a Note*
+
    - *Note: the user can also see in the “Problem Transaction Details” screen by right clicking on the Problem. This area will show the user past notes, reviewers, dates reviewed, etc.*
+
+![Figure 125: Problem Transaction Right Click](/img/media/image203.png)
+*Figure 125: Problem Transaction Right Click*
+
+![Figure 126: Problem Transaction Details](/img/media/image204.png)
+*Figure 126: Problem Transaction Details*
+
    - b. Click **Update**. The QAT Problem List will now include the most recent addition of explanatory notes and the status.
 
 ### 6.A.3. QAT Problem List: Explanation of Problems
@@ -78,10 +108,18 @@ QAT Problems can be subdivided into four main categories: Data Quality, Procurem
 - **Supply Plan does not follow minimum/maximum parameters**
   If a planning unit is overstocked, understocked or stocked out at any point during the next 18 months, it will be flagged in the QAT Problem List. QAT will count the number of months the planning unit is overstocked and understocked, by subdividing it in two different time windows: those months within lead time (1-6 months) and those within the planning window (7-18 months). The QAT Problem List will also denote the number of shipments being received in the next 1-6 months and the next 7-18 months. Stock-outs will be flagged as a separate problem in the QAT Problem List. QAT will directly state which months are stocked out in the subdivided time periods of 1-6 months and 7-18 months. The QAT Problem List will also denote the number of shipments being received in the next 1-6 months and the next 7-18 months.
 
-  **Plan by MOS:** Overstocked is defined by MOS &gt; Maximum MOS. Understocked is defined by MOS &lt; Minimum MOS.
+  The following images show how QAT flags when the supply plan does not follow the parameters set by the user:
+
+  ![Figure 127: Supply Plan does not follow min/max MOS parameter example](/img/media/image205.png)
+  *Figure 127: Supply Plan does not follow min/max MOS parameter example*
+
+  ![Figure 128: Supply Plan does not follow min/max quantity parameter example](/img/media/image206.png)
+  *Figure 128: Supply Plan does not follow min/max quantity parameter example*
+
+  **Plan by MOS:** Overstocked is defined by MOS > Maximum MOS. Understocked is defined by MOS < Minimum MOS.
   *Note: If the MOS value for a given month is “N/A”, then all such instances are excluded while calculating the overstocked, understocked or stocked out problems.*
 
-  **Plan by Quantity:** Overstocked is defined by Ending Balance Quantity &gt; Maximum Quantity. Understocked is defined by Ending Balance Quantity &lt; Minimum Quantity. Note that QAT will only flag the overstock if this overstock occurs more than distribution lead time in a row (e.g. if lead time is 2 months, then QAT flags if there is an overstock more than 2 months in a row - but won’t flag the problem if the overstock every other month).
+  **Plan by Quantity:** Overstocked is defined by Ending Balance Quantity > Maximum Quantity. Understocked is defined by Ending Balance Quantity < Minimum Quantity. Note that QAT will only flag the overstock if this overstock occurs more than distribution lead time in a row (e.g. if lead time is 2 months, then QAT flags if there is an overstock more than 2 months in a row - but won’t flag the problem if the overstock every other month).
 
 - **Other – Manual**
   These are specific questions or clarifications manually entered by the supply plan reviewer that are not automatically flagged by QAT. These problems could be items that supply plan reviewer wants addressed that quarter before finalizing or a reminder for the next quarterly submission. The problem description, suggestion, and the criticality are determined by the supply plan reviewer.
@@ -93,6 +131,11 @@ QAT Problems can be subdivided into four main categories: Data Quality, Procurem
 - **Accessible to:** Realm Admins, Program Admins, Report Viewers, and Program Users
 - **Navigation:** **Reports → Program Catalog**
 
+The Program Catalog report is a list of all the planning units that are included in the program. The report includes information such as the planning unit name, the planning unit category, the tracer category, and the planning unit details.
+
+![Figure 129: Program Catalog Report](/img/media/image207.png)
+*Figure 129: Program Catalog Report*
+
 *Notes: A user may select all Planning Unit Categories and Tracer Categories, or they may choose a specific category for viewing. If a user would like to add a planning unit that does not appear in the Program Catalog Report, please refer to Tickets for Adding/Updating Users and Master Data.*
 
 ## 6.C. Stock Status Reports
@@ -102,6 +145,11 @@ QAT Problems can be subdivided into four main categories: Data Quality, Procurem
 
 - **Accessible to:** Realm Admins, Program Admins, Report Viewers, and Program Users
 - **Navigation:** **Reports → Stock Status → Stock Status Over Time**
+
+The Stock Status Over Time report is a graph that shows the stock status of a planning unit over a period of time. The graph shows the stock on hand, the consumption, and the shipments for the planning unit.
+
+![Figure 130: Stock Status Over Time Report](/img/media/image208.png)
+*Figure 130: Stock Status Over Time Report*
 
 *Notes: The Planning Unit can be single, multi-select, or select all. The “Select All” option may not be advantageous if the program has many planning units, as the graph will not be able to discern the individual lines on the graph. We suggest choosing less than ten products at once. Specifically, this report can be useful to compare categories.*
 
@@ -128,6 +176,14 @@ QAT Problems can be subdivided into four main categories: Data Quality, Procurem
 - **Accessible to:** Realm Admins, Program Admins, Report Viewers, and Program Users
 - **Navigation:** **Reports → Stock Status → Stock Status Snapshot**
 
+The Stock Status Snapshot report is a table that shows the stock status of all planning units in a program at a specific point in time. The table includes information such as the planning unit name, the stock on hand, the consumption, and the shipments for the planning unit.
+
+![Figure 131: Stock Status Snapshot Report](/img/media/image209.png)
+*Figure 131: Stock Status Snapshot Report*
+
+![Figure 132: Stock Status Snapshot Report](/img/media/image210.png)
+*Figure 132: Stock Status Snapshot Report*
+
 *Notes:*
 - The various colors correspond to the stock levels during that particular month:
   - **Red** – Stocked Out
@@ -142,6 +198,11 @@ QAT Problems can be subdivided into four main categories: Data Quality, Procurem
 
 - **Accessible to:** Realm Admins, Program Admins, Program Users, and Report Viewers
 - **Navigation:** **Reports → Stock Status → Stock Status Snapshot (Global)**
+
+The Stock Status Snapshot (Global) report is a table that shows the stock status of all planning units in all programs at a specific point in time. The table includes information such as the planning unit name, the stock on hand, the consumption, and the shipments for the planning unit.
+
+![Figure 133: Stock Status Snapshot (Global) Report](/img/media/image211.png)
+*Figure 133: Stock Status Snapshot (Global) Report*
 
 *Notes:*
 - The various colors correspond to the stock levels during that particular month:
@@ -159,6 +220,11 @@ QAT Problems can be subdivided into four main categories: Data Quality, Procurem
 - **Accessible to:** Realm Admins, Program Admins, Program Users, and Report Viewers
 - **Navigation:** **Reports → Consumption Reports → Consumption (Global)**
 
+The Consumption (Global) report is a table that shows the consumption of all planning units in all programs over a period of time. The table includes information such as the planning unit name, the consumption, and the period.
+
+![Figure 134: Consumption (Global) Report](/img/media/image212.png)
+*Figure 134: Consumption (Global) Report*
+
 *Notes:*
 - The various colors stacked in the horizontal bars represent different countries. Users can determine which country by referencing the graph legend.
 - The x-axis corresponds to the consumption quantity (in millions) for each country.
@@ -168,6 +234,29 @@ QAT Problems can be subdivided into four main categories: Data Quality, Procurem
 
 - **Accessible to:** Realm Admins, Program Admins, Report Viewers, and Program Users
 - **Navigation:** **Reports → Consumption Reports → Forecast Error (Monthly)**
+
+The Forecast Error (Monthly) report is a table that shows the forecast error of a planning unit over a period of time. The table includes information such as the planning unit name, the forecast error, and the period.
+
+![Figure 135: Forecast Error (Monthly) Report](/img/media/image213.png)
+*Figure 135: Forecast Error (Monthly) Report*
+
+The forecast error is calculated using the following formula:
+
+![Figure 136: WAPE Formula with 6-month time window as example](/img/media/image214.png)
+*Figure 136: WAPE Formula with 6-month time window as example*
+
+The user can choose to view the forecast error by planning unit, forecasting unit, or equivalency unit.
+
+![Figure 137: Forecast Error (Monthly) Report – displayed by forecasting unit](/img/media/image215.png)
+*Figure 137: Forecast Error (Monthly) Report – displayed by forecasting unit*
+
+![Figure 138: Forecast Error (Monthly) Report – displayed by equivalency unit](/img/media/image216.png)
+*Figure 138: Forecast Error (Monthly) Report – displayed by equivalency unit*
+
+QAT uses the Weighted Absolute Percentage Error (WAPE) formula to calculate the forecast error:
+
+![Figure 139: WAPE Formula](/img/media/image217.png)
+*Figure 139: WAPE Formula*
 
 *Notes:*
 - In the graph, the red vertical bars represent the actual consumption, the blue vertical bars represent the forecasted consumption, the green line (which uses the right axis), represents the forecast error, and the turquoise dotted line represents the forecast error threshold.
@@ -189,6 +278,11 @@ QAT Problems can be subdivided into four main categories: Data Quality, Procurem
 - **Accessible to:** Realm Admins, Program Admins, Report Viewers, and Program Users
 - **Navigation:** **Reports → Consumption Reports → Forecast Error (by Planning Unit)**
 
+The Forecast Error (by Planning Unit) report is a table that shows the forecast error of all planning units in a program over a period of time. The table includes information such as the planning unit name, the forecast error, and the period.
+
+![Figure 140: Forecast Error (by Planning Unit) Report](/img/media/image218.png)
+*Figure 140: Forecast Error (by Planning Unit) Report*
+
 *Notes:*
 - For the time window, non-seasonal products with predictable consumption patterns can have a short time window, but those that have a more variable consumption/those with seasons should have a long-time window, or at least long enough to consider the entire season.
 - In the table, the forecast error percentages that are above the forecast error threshold (%), set by a Program Admin in the Update Planning Units screen, will be highlighted red.
@@ -203,6 +297,11 @@ QAT Problems can be subdivided into four main categories: Data Quality, Procurem
 - **Accessible to:** Realm Admins, Program Admins, Program Users, and Report Viewers
 - **Navigation:** **Reports → Shipment Reports → Shipments (Global)**
 
+The Shipment (Global) report is a table that shows the shipments of all planning units in all programs over a period of time. The table includes information such as the planning unit name, the shipment quantity, and the period.
+
+![Figure 141: Shipment (Global) Report](/img/media/image219.png)
+*Figure 141: Shipment (Global) Report*
+
 *Notes:*
 - The two graphs that appear first in the Shipments (Global) Report depict the aggregated quantity of shipments per country and cost of the shipments (in USD) per funding source for a single planning unit. For a tabular view of the data, the user may find details in the bottom two tables.
 - If a country does not procure the selected planning unit, it will not appear in the graph of the tables in the report.
@@ -213,6 +312,11 @@ QAT Problems can be subdivided into four main categories: Data Quality, Procurem
 - **Accessible to:** Realm Admins, Program Admins/Users, and Report Viewers
 - **Navigation:** **Reports → Shipment Reports → Shipment Overview**
 
+The Shipment Overview report is a table that shows the shipments of all planning units in a program over a period of time. The table includes information such as the planning unit name, the shipment quantity, and the period.
+
+![Figure 142: Shipment Overview Report](/img/media/image220.png)
+*Figure 142: Shipment Overview Report*
+
 *Notes:*
 - Once navigating to the Shipment Overview screen, Users will see dropdowns in which they must fill out to show specific data. Once selecting certain dropdowns or all, users are shown a graph and a pie chart. The graph that appears first in the Shipments Overview Report depicts the aggregated quantity of shipments across countries and cost (in USD) of the shipments per funding source across planning units. The pie chart shows percentages of Funding Source depending on user selections while also being able to hover over to see the total amount (in USD). Users may also choose to group the data by Procurement Agent Type or Funding Source Type. For a tabular view of the data, the user may find details in the bottom table.
 
@@ -221,6 +325,11 @@ QAT Problems can be subdivided into four main categories: Data Quality, Procurem
 
 - **Accessible to:** Realm Admins, Program Admins, Report Viewers, and Program Users
 - **Navigation:** **Reports → Shipment Reports → Shipment Details**
+
+The Shipment Details report is a table that shows the details of a shipment, such as the shipment ID, the shipment date, the shipment quantity, and the status.
+
+![Figure 143: Shipment Details Report](/img/media/image221.png)
+*Figure 143: Shipment Details Report*
 
 *Notes:*
 - The top graphs show total USD per month by shipment status.
@@ -234,6 +343,11 @@ QAT Problems can be subdivided into four main categories: Data Quality, Procurem
 - **Accessible to:** Realm Admins, Program Admins, Report Viewers, and Program Users
 - **Navigation:** **Reports → Shipment Reports → Shipment Cost Details**
 
+The Shipment Cost Details report is a table that shows the cost details of a shipment, such as the product cost, the freight cost, and the total cost.
+
+![Figure 144: Shipment Cost Details Report](/img/media/image222.png)
+*Figure 144: Shipment Cost Details Report*
+
 *Notes:*
 - Can be displayed by funding source, procurement agent, or planning unit.
 
@@ -242,6 +356,11 @@ QAT Problems can be subdivided into four main categories: Data Quality, Procurem
 
 - **Accessible to:** Realm Admins, Program Admins, Report Viewers, and Program Users
 - **Navigation:** **Reports → Shipment Reports → Shipment Cost Overview**
+
+The Shipment Cost Overview report is a table that shows the cost overview of all shipments in a program over a period of time. The table includes information such as the planning unit name, the total shipment cost, and the period.
+
+![Figure 145: Shipment Cost Overview Report](/img/media/image223.png)
+*Figure 145: Shipment Cost Overview Report*
 
 *Notes:*
 - This report can be viewed in PDF or Excel (CSV) format.
@@ -252,6 +371,11 @@ QAT Problems can be subdivided into four main categories: Data Quality, Procurem
 
 - **Accessible to:** Realm Admins, Program Admins, Report Viewers, and Program Users
 - **Navigation:** **Reports → Shipment Reports → Budget**
+
+The Budget report is a table that shows the budget of a program over a period of time. The table includes information such as the budget name, the budget amount, and the period.
+
+![Figure 146: Budget Report](/img/media/image224.png)
+*Figure 146: Budget Report*
 
 *Notes:*
 - The graph shows every predefined Budget in a program and whether it is allocated to shipments (planned or ordered) and the remaining amount.
