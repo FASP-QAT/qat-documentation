@@ -233,7 +233,7 @@ const config = {
       'docusaurus-plugin-openapi-docs',
       {
         id: "api",
-        docsPluginId: "classic",
+        docsPluginId: "default",
         config: {
           api: {
             // current version
@@ -261,7 +261,21 @@ const config = {
           },
         }
       },
-    ]
+    ],
+    function (context, options) {
+      return {
+        name: 'webpack-fallback-plugin',
+        configureWebpack(config, isServer, utils) {
+          return {
+            resolve: {
+              fallback: {
+                path: require.resolve('path-browserify'),
+              },
+            },
+          };
+        },
+      };
+    },
   ],
   themes: [
     'docusaurus-theme-openapi-docs',

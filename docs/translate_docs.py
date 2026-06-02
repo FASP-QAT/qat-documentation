@@ -151,6 +151,18 @@ def translate_markdown():
                 pattern = re.compile(rf'Z\s*X\s*C\s*C\s*O\s*M\s*P\s*{i}\s*Z\s*X\s*C', re.IGNORECASE)
                 translated_body = pattern.sub(lambda m, t=safe_comp: t, translated_body)
                 
+            # --- POST-PROCESSING FIXES FOR MDX ---
+            # 1. Remove double newlines inside <li> tags (which break MDX paragraph parsing)
+            translated_body = re.sub(r'<li>.*?</li>', lambda m: m.group(0).replace('\n\n', ' '), translated_body, flags=re.DOTALL)
+            
+            # 2. Fix scrambled closing tags caused by Google Translate reordering placeholders
+            translated_body = translated_body.replace('</li></li></ol>', '</li></ol></li>')
+            translated_body = translated_body.replace('</ol></li></li>', '</li></ol></li>')
+            
+            # 3. Known French dropped closing tag
+            translated_body = translated_body.replace('<u> doivent être téléchargés, <u>', '<u> doivent être téléchargés, </u>')
+            translated_body = translated_body.replace('<u> doivent être téléchargés', 'doivent être téléchargés')
+            
             # Save the file
             with open(target_file, 'w', encoding='utf-8') as f:
                 f.write(frontmatter + translated_body)

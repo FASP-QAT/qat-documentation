@@ -56,15 +56,25 @@ export default function LocaleDropdownNavbarItem({
 
     // 4. Construct the target URL
     const localePrefix = locale === defaultLocale ? '' : `${locale}/`;
-    const fullPath = `${normalizedBaseUrl}${localePrefix}${targetPath}`.replace(/\/+/g, '/').replace(/\/$/, '');
+    let fullPath = `${normalizedBaseUrl}${localePrefix}${targetPath}`.replace(/\/+/g, '/').replace(/\/$/, '');
     
-    const finalPath = fullPath || normalizedBaseUrl;
-    const to = `pathname://${finalPath}`;
+    // If the path is exactly the baseUrl (e.g. homepage), ensure it has a trailing slash
+    // to prevent relative asset links from breaking on GitHub Pages.
+    if (fullPath === normalizedBaseUrl.replace(/\/$/, '')) {
+      fullPath = normalizedBaseUrl;
+    }
     
+    let finalPath = fullPath || normalizedBaseUrl;
+    
+    // Preserve search and hash from current URL
+    if (typeof window !== 'undefined') {
+      finalPath = `${finalPath}${window.location.search}${window.location.hash}`;
+    }
+
     return {
       label: localeConfigs[locale].label,
       lang: localeConfigs[locale].htmlLang,
-      to,
+      href: finalPath,
       target: '_self',
       autoAddBaseUrl: false,
       className:
