@@ -153,7 +153,7 @@ def translate_markdown():
                 
             # --- POST-PROCESSING FIXES FOR MDX ---
             # 1. Remove double newlines inside <li> tags (which break MDX paragraph parsing)
-            translated_body = re.sub(r'<li>.*?</li>', lambda m: m.group(0).replace('\n\n', ' '), translated_body, flags=re.DOTALL)
+            # Removed because it breaks nested HTML tags due to non-greedy matching.
             
             # 2. Fix scrambled closing tags caused by Google Translate reordering placeholders
             translated_body = translated_body.replace('</li></li></ol>', '</li></ol></li>')
