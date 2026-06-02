@@ -118,27 +118,27 @@ def translate_markdown():
             for i, tag in enumerate(html_tags):
                 # Ensure <br> tags are self-closing for MDX compatibility
                 fixed_tag = re.sub(r'<br\s*>', '<br />', tag, flags=re.IGNORECASE)
-                pattern = re.compile(rf'ZXCHTML\s*{i}\s*ZXC', re.IGNORECASE)
+                pattern = re.compile(rf'Z\s*X\s*C\s*H\s*T\s*M\s*L\s*{i}\s*Z\s*X\s*C', re.IGNORECASE)
                 translated_body = pattern.sub(lambda m, t=fixed_tag: t, translated_body)
 
             # Restore Image links
             for i, img in enumerate(images):
-                pattern = re.compile(rf'ZXCIMG\s*{i}\s*ZXC', re.IGNORECASE)
+                pattern = re.compile(rf'Z\s*X\s*C\s*I\s*M\s*G\s*{i}\s*Z\s*X\s*C', re.IGNORECASE)
                 translated_body = pattern.sub(lambda m, t=img: t, translated_body)
 
             # Restore Inline Code
             for i, ic in enumerate(inline_code):
-                pattern = re.compile(rf'ZXCINLINE\s*{i}\s*ZXC', re.IGNORECASE)
+                pattern = re.compile(rf'Z\s*X\s*C\s*I\s*N\s*L\s*I\s*N\s*E\s*{i}\s*Z\s*X\s*C', re.IGNORECASE)
                 translated_body = pattern.sub(lambda m, t=ic: t, translated_body)
                 
             # Restore Code Blocks
             for i, cb in enumerate(code_blocks):
-                pattern = re.compile(rf'ZXCCODE\s*{i}\s*ZXC', re.IGNORECASE)
+                pattern = re.compile(rf'Z\s*X\s*C\s*C\s*O\s*D\s*E\s*{i}\s*Z\s*X\s*C', re.IGNORECASE)
                 translated_body = pattern.sub(lambda m, t=cb: t, translated_body)
 
             # Restore Style Blocks
             for i, block in enumerate(style_blocks):
-                pattern = re.compile(rf'ZXCSTYLE\s*{i}\s*ZXC', re.IGNORECASE)
+                pattern = re.compile(rf'Z\s*X\s*C\s*S\s*T\s*Y\s*L\s*E\s*{i}\s*Z\s*X\s*C', re.IGNORECASE)
                 translated_body = pattern.sub(lambda m, t=block: t, translated_body)
 
             # Restore Comparisons as safe entities for MDX compatibility
@@ -148,7 +148,7 @@ def translate_markdown():
                 if comp == '<': safe_comp = '&lt;'
                 elif comp == '>': safe_comp = '&gt;'
                 
-                pattern = re.compile(rf'ZXCCOMP\s*{i}\s*ZXC', re.IGNORECASE)
+                pattern = re.compile(rf'Z\s*X\s*C\s*C\s*O\s*M\s*P\s*{i}\s*Z\s*X\s*C', re.IGNORECASE)
                 translated_body = pattern.sub(lambda m, t=safe_comp: t, translated_body)
                 
             # Save the file
