@@ -156,10 +156,13 @@ def translate_markdown():
             # Removed because it breaks nested HTML tags due to non-greedy matching.
             
             # 2. Fix scrambled closing tags caused by Google Translate reordering placeholders
-            translated_body = translated_body.replace('</li></li></ol>', '</li></ol></li>')
-            translated_body = translated_body.replace('</ol></li></li>', '</li></ol></li>')
+            translated_body = re.sub(r'</li>\s*</li>\s*</ol>', '</li></ol></li>', translated_body)
+            translated_body = re.sub(r'</ol>\s*</li>\s*</li>', '</li></ol></li>', translated_body)
             
-            # 3. Known French dropped closing tag
+            # 3. Fix MDX paragraph parsing errors caused by hallucinated double newlines inside inline <li> tags
+            translated_body = re.sub(r'\n\n([^<]*</li>)', r' \1', translated_body)
+            
+            # 4. Known French dropped closing tag
             translated_body = translated_body.replace('<u> doivent être téléchargés, <u>', '<u> doivent être téléchargés, </u>')
             translated_body = translated_body.replace('<u> doivent être téléchargés', 'doivent être téléchargés')
             
