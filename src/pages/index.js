@@ -173,34 +173,6 @@ export default function Home() {
       {/* <ResourceColumns /> */}
       {/* <hr className="section-divider-footer" /> */}
       <br />
-      <main className="container">
-        <div>
-          <p style={{ textAlign: 'left' }}>
-          For more information regarding QAT, please contact the FASP Team 
-          at <a href="mailto:HSS_FASP_HQ@ghsc-psm.org">HSS_FASP_HQ@ghsc-psm.org</a>
-          </p>
-          <p style={{ textAlign: 'left', marginTop: '2rem' }}>
-          The USAID Global Health Supply Chain Program-Procurement and Supply 
-          Management (GHSC-PSM) project is funded under USAID Contract No. 
-          AID-OAA-I-15-0004. GHSC-PSM connects technical solutions and proven 
-          commercial processes to promote efficient and cost-effective health 
-          supply chains worldwide. Our goal is to ensure uninterrupted supplies 
-          of health commodities to save lives and create a healthier future for 
-          all. The project purchases and delivers health commodities, offers 
-          comprehensive technical assistance to strengthen national supply 
-          chain systems, and provides global supply chain leadership. For more 
-          information, visit ghsupplychain.org. The information provided in 
-          this tool is not official U.S. government information and does not 
-          represent the views or positions of the Agency for International 
-          Development or the U.S. government.
-          </p>
-          {/* <div style={{ display: 'flex', justifyContent: 'center', flexWrap: 'wrap', gap: '2rem', marginTop: '2rem', marginBottom: '2rem' }}>
-            <img src="img/home/USAID-wordmark.png" alt="USAID" style={{ maxWidth: '300px', width: '100%', height: 'auto', objectFit: 'contain' }} />
-            <img src="img/home/PEPFAR-logo.png" alt="PEPFAR" style={{ maxWidth: '300px', width: '100%', height: 'auto', objectFit: 'contain' }} />
-            <img src="img/home/USAID-presidents-malaria-initiative.png" alt="PEPFAR Malaria Initiative" style={{ maxWidth: '300px', width: '100%', height: 'auto', objectFit: 'contain' }} />
-          </div> */}
-        </div>
-      </main>
     </Layout>
   );
 }
