@@ -54,33 +54,33 @@ def translate_markdown():
             # 2. Protect Full <style>...</style> blocks (Protects all CSS code)
             style_blocks = list(set(re.findall(r'<style[^>]*>[\s\S]*?</style>', body, re.IGNORECASE)))
             for i, block in enumerate(style_blocks):
-                body = body.replace(block, f'ZXCSTYLE{i}ZXC')
+                body = body.replace(block, f'[{{ZXCSTYLE{i}ZXC}}]')
                 
             # 3. Protect Markdown Code Blocks (```code```)
             code_blocks = list(set(re.findall(r'```[\s\S]*?```', body)))
             for i, cb in enumerate(code_blocks):
-                body = body.replace(cb, f'ZXCCODE{i}ZXC')
+                body = body.replace(cb, f'[{{ZXCCODE{i}ZXC}}]')
 
             # 4. Protect Inline Code Snippets (`code`)
             inline_code = list(set(re.findall(r'`[^`]+`', body)))
             for i, ic in enumerate(inline_code):
-                body = body.replace(ic, f'ZXCINLINE{i}ZXC')
+                body = body.replace(ic, f'[{{ZXCINLINE{i}ZXC}}]')
 
             # 5. Protect Image links (![alt](url))
             images = list(set(re.findall(r'!\[.*?\]\(.*?\)', body)))
             for i, img in enumerate(images):
-                body = body.replace(img, f'ZXCIMG{i}ZXC')
+                body = body.replace(img, f'[{{ZXCIMG{i}ZXC}}]')
 
             # 6. Protect robust HTML tags (Safely captures style="..." without breaking)
             html_tags = list(set(re.findall(r'<[a-zA-Z\/](?:[^>"\']|"[^"]*"|\'[^\']*\')*>', body)))
             for i, tag in enumerate(html_tags):
-                body = body.replace(tag, f'ZXCHTML{i}ZXC')
+                body = body.replace(tag, f'[{{ZXCHTML{i}ZXC}}]')
 
             # 7. Protect stray Comparison Operators and Entities (<, >, &lt;, &gt;)
             # This prevents the translator from decoding &lt; or breaking MDX with literal <
             comparisons = list(set(re.findall(r'&[lg]t;|[<>]', body)))
             for i, comp in enumerate(comparisons):
-                body = body.replace(comp, f'ZXCCOMP{i}ZXC')
+                body = body.replace(comp, f'[{{ZXCCOMP{i}ZXC}}]')
                 
             # Split by paragraphs and translate
             paragraphs = body.split('\n\n')
@@ -129,27 +129,27 @@ def translate_markdown():
             for i, tag in enumerate(html_tags):
                 # Ensure <br> tags are self-closing for MDX compatibility
                 fixed_tag = re.sub(r'<br\s*>', '<br />', tag, flags=re.IGNORECASE)
-                pattern = re.compile(rf'Z\s*X\s*C\s*H\s*T\s*M\s*L\s*{i}\s*Z\s*X\s*C', re.IGNORECASE)
+                pattern = re.compile(rf'\[{{\s*Z\s*X\s*C\s*H\s*T\s*M\s*L\s*{i}\s*Z\s*X\s*C\s*}}\]', re.IGNORECASE)
                 translated_body = pattern.sub(lambda m, t=fixed_tag: t, translated_body)
 
             # Restore Image links
             for i, img in enumerate(images):
-                pattern = re.compile(rf'Z\s*X\s*C\s*I\s*M\s*G\s*{i}\s*Z\s*X\s*C', re.IGNORECASE)
+                pattern = re.compile(rf'\[{{\s*Z\s*X\s*C\s*I\s*M\s*G\s*{i}\s*Z\s*X\s*C\s*}}\]', re.IGNORECASE)
                 translated_body = pattern.sub(lambda m, t=img: t, translated_body)
 
             # Restore Inline Code
             for i, ic in enumerate(inline_code):
-                pattern = re.compile(rf'Z\s*X\s*C\s*I\s*N\s*L\s*I\s*N\s*E\s*{i}\s*Z\s*X\s*C', re.IGNORECASE)
+                pattern = re.compile(rf'\[{{\s*Z\s*X\s*C\s*I\s*N\s*L\s*I\s*N\s*E\s*{i}\s*Z\s*X\s*C\s*}}\]', re.IGNORECASE)
                 translated_body = pattern.sub(lambda m, t=ic: t, translated_body)
                 
             # Restore Code Blocks
             for i, cb in enumerate(code_blocks):
-                pattern = re.compile(rf'Z\s*X\s*C\s*C\s*O\s*D\s*E\s*{i}\s*Z\s*X\s*C', re.IGNORECASE)
+                pattern = re.compile(rf'\[{{\s*Z\s*X\s*C\s*C\s*O\s*D\s*E\s*{i}\s*Z\s*X\s*C\s*}}\]', re.IGNORECASE)
                 translated_body = pattern.sub(lambda m, t=cb: t, translated_body)
 
             # Restore Style Blocks
             for i, block in enumerate(style_blocks):
-                pattern = re.compile(rf'Z\s*X\s*C\s*S\s*T\s*Y\s*L\s*E\s*{i}\s*Z\s*X\s*C', re.IGNORECASE)
+                pattern = re.compile(rf'\[{{\s*Z\s*X\s*C\s*S\s*T\s*Y\s*L\s*E\s*{i}\s*Z\s*X\s*C\s*}}\]', re.IGNORECASE)
                 translated_body = pattern.sub(lambda m, t=block: t, translated_body)
 
             # Restore Comparisons as safe entities for MDX compatibility
@@ -159,7 +159,7 @@ def translate_markdown():
                 if comp == '<': safe_comp = '&lt;'
                 elif comp == '>': safe_comp = '&gt;'
                 
-                pattern = re.compile(rf'Z\s*X\s*C\s*C\s*O\s*M\s*P\s*{i}\s*Z\s*X\s*C', re.IGNORECASE)
+                pattern = re.compile(rf'\[{{\s*Z\s*X\s*C\s*C\s*O\s*M\s*P\s*{i}\s*Z\s*X\s*C\s*}}\]', re.IGNORECASE)
                 translated_body = pattern.sub(lambda m, t=safe_comp: t, translated_body)
                 
             # --- POST-PROCESSING FIXES FOR MDX ---
@@ -187,7 +187,7 @@ def translate_with_retry(translator, text, retries=3):
     if not text or not text.strip():
         return text if text is not None else ""
         
-    if re.fullmatch(r'ZXC[A-Z]+[0-9]+ZXC', text.strip()):
+    if re.fullmatch(r'\[\{ZXC[A-Z]+[0-9]+ZXC\}\]', text.strip()):
         return text
         
     for attempt in range(retries):
