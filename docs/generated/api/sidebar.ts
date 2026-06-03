@@ -2149,10 +2149,6 @@ const sidebar: SidebarsConfig = {
     {
       type: "category",
       label: "Test",
-      link: {
-        type: "doc",
-        id: "generated/api/test",
-      },
       items: [
         {
           type: "doc",
@@ -2182,12 +2178,6 @@ const sidebar: SidebarsConfig = {
           type: "doc",
           id: "generated/api/retrieve-data",
           label: "Retrieve data",
-          className: "api-method get",
-        },
-        {
-          type: "doc",
-          id: "generated/api/send-test-email",
-          label: "Send a test email",
           className: "api-method get",
         },
       ],

@@ -678,9 +678,10 @@ This screen is used by supply planners to view the list of currently linked ERP 
 4. Users will have the ability to also view order history details from the ERP. To do so, from the original ‘Linked’ screen, right-click on a single shipment and click ‘View ERP Order History’. A pop-up window will appear labeled ‘ERP Order History’. This screen will show any details that have changed over time in the ERP order. Each row indicates that one or more of the columns has changed. The furthest column on the right labeled ‘Data Received On’ is when the record was received by QAT.<br/>
    <ol style={{ listStyleType: 'lower-alpha' }}>
        <li>To view batch details, click on the icon.</li>
-       <li>**Note:** Certain fields from the ERP are not captured on this screen so there may be some instances where 1 or more rows have the same details. This means that a column in the backend was changed.</li>
 
+       <li>**Note:** Certain fields from the ERP are not captured on this screen so there may be some instances where 1 or more rows have the same details. This means that a column in the backend was changed.</li>
    </ol>
+
 **Note:** Once you have linked QAT shipments with ERP orders, the data will reflect in your supply plan without having to master data sync. The newly linked ERP data will reflect in the local reports, supply planning screen as well as the shipment data entry screen. The user does need to upload a version to the server in order for other users to see these changes.
 
 To view the ERP-linked shipments in the shipment data entry screen, the user must select ‘ERP-linked shipments’ from the Shipment Type dropdown. The user can either display only this option or combine it with the manual shipments to show all shipments. The ERP-linked shipments will be greyed out to indicate that they are non-editable.
