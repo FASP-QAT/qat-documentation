@@ -74,7 +74,7 @@ export default function LocaleDropdownNavbarItem({
     return {
       label: localeConfigs[locale].label,
       lang: localeConfigs[locale].htmlLang,
-      href: finalPath,
+      to: `pathname://${finalPath}`,
       target: '_self',
       autoAddBaseUrl: false,
       className:

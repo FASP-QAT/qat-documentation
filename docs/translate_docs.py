@@ -110,6 +110,17 @@ def translate_markdown():
             safe_paragraphs = [str(p) if p is not None else "" for p in translated_paragraphs]
             translated_body = '\n\n'.join(safe_paragraphs)
             
+            # --- STRIP HALLUCINATED HTML TAGS ---
+            # Google Translate sometimes outputs HTML tags for markdown formatting.
+            # Real HTML tags are safely stored as ZXCHTML#ZXC placeholders at this point,
+            # so any <tag> present here is a hallucination that will break MDX.
+            translated_body = re.sub(r'</?(?:b|strong)\b[^>]*>', '**', translated_body, flags=re.IGNORECASE)
+            translated_body = re.sub(r'</?(?:i|em)\b[^>]*>', '*', translated_body, flags=re.IGNORECASE)
+            translated_body = re.sub(r'</?(?:p|div|a|span)\b[^>]*>', '', translated_body, flags=re.IGNORECASE)
+            
+            # Clean up potential duplicate markdown stars generated from the above
+            translated_body = re.sub(r'\*\*\*\*', '**', translated_body)
+            
             # --- RESTORATION PHASE ---
             # We use `lambda m: tag` to ensure Python's Regex engine doesn't accidentally 
             # delete backslashes inside your CSS and inline styles!
