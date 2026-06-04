@@ -55,7 +55,42 @@ def translate_markdown():
             style_blocks = list(set(re.findall(r'<style[^>]*>[\s\S]*?</style>', body, re.IGNORECASE)))
             for i, block in enumerate(style_blocks):
                 body = body.replace(block, f'[{{ZXCSTYLE{i}ZXC}}]')
-                
+
+            # 2b. Protect multi-line HTML/JSX blocks (<div>...</div>, <table>...</table>, <ol>...</ol>)
+            # These are blocks that span multiple lines and contain JSX attributes like style={{...}}
+            multiline_html_blocks = []
+            for tag_name in ['div', 'table', 'ol']:
+                pattern = re.compile(
+                    rf'^\s*<{tag_name}\b[^>]*>[\s\S]*?</{tag_name}>\s*$',
+                    re.MULTILINE | re.IGNORECASE
+                )
+                for match in pattern.finditer(body):
+                    multiline_html_blocks.append(match.group())
+            # Sort by length descending so we replace longer blocks first (avoids partial replacements)
+            multiline_html_blocks = sorted(set(multiline_html_blocks), key=len, reverse=True)
+            for i, block in enumerate(multiline_html_blocks):
+                body = body.replace(block, f'[{{ZXCBLOCK{i}ZXC}}]')
+
+            # 2c. Protect entire HTML-heavy lines (lines that are predominantly inline HTML)
+            # These are single lines like: <ul><li><strong>Notes:</strong><ul>.....</ul></li></ul>
+            html_heavy_lines = []
+            for line in body.split('\n'):
+                stripped = line.strip()
+                if not stripped:
+                    continue
+                # Line starts with < and contains nested tags — treat as atomic
+                if stripped.startswith('<') and stripped.endswith('>') and len(stripped) > 50:
+                    html_heavy_lines.append(line)
+                # Line contains multiple HTML tags and most content is inside tags
+                elif stripped.count('<') >= 4 and stripped.count('>') >= 4:
+                    tag_content_len = sum(len(m) for m in re.findall(r'<[^>]+>', stripped))
+                    if tag_content_len > len(stripped) * 0.3:
+                        html_heavy_lines.append(line)
+            # Sort by length descending to replace longer lines first
+            html_heavy_lines = sorted(set(html_heavy_lines), key=len, reverse=True)
+            for i, line in enumerate(html_heavy_lines):
+                body = body.replace(line, f'[{{ZXCHEAVY{i}ZXC}}]')
+
             # 3. Protect Markdown Code Blocks (```code```)
             code_blocks = list(set(re.findall(r'```[\s\S]*?```', body)))
             for i, cb in enumerate(code_blocks):
@@ -112,11 +147,12 @@ def translate_markdown():
             
             # --- STRIP HALLUCINATED HTML TAGS ---
             # Google Translate sometimes outputs HTML tags for markdown formatting.
-            # Real HTML tags are safely stored as ZXCHTML#ZXC placeholders at this point,
+            # Real HTML tags are safely stored as ZXC placeholders at this point,
             # so any <tag> present here is a hallucination that will break MDX.
             translated_body = re.sub(r'</?(?:b|strong)\b[^>]*>', '**', translated_body, flags=re.IGNORECASE)
             translated_body = re.sub(r'</?(?:i|em)\b[^>]*>', '*', translated_body, flags=re.IGNORECASE)
-            translated_body = re.sub(r'</?(?:p|div|a|span)\b[^>]*>', '', translated_body, flags=re.IGNORECASE)
+            # Strip all other hallucinated HTML tags (p, div, a, span, li, ul, ol, table, tr, td, th, sup, sub, br, etc.)
+            translated_body = re.sub(r'</?(?:p|div|a|span|li|ul|ol|table|thead|tbody|tr|td|th|sup|sub|br|hr|img|u)\b[^>]*/?>', '', translated_body, flags=re.IGNORECASE)
             
             # Clean up potential duplicate markdown stars generated from the above
             translated_body = re.sub(r'\*\*\*\*', '**', translated_body)
@@ -124,8 +160,9 @@ def translate_markdown():
             # --- RESTORATION PHASE ---
             # We use `lambda m: tag` to ensure Python's Regex engine doesn't accidentally 
             # delete backslashes inside your CSS and inline styles!
+            # Restore in reverse order of protection (most specific first).
 
-            # Restore HTML Tags
+            # Restore HTML Tags (individual tags)
             for i, tag in enumerate(html_tags):
                 # Ensure <br> tags are self-closing for MDX compatibility
                 fixed_tag = re.sub(r'<br\s*>', '<br />', tag, flags=re.IGNORECASE)
@@ -152,6 +189,16 @@ def translate_markdown():
                 pattern = re.compile(rf'\[{{\s*Z\s*X\s*C\s*S\s*T\s*Y\s*L\s*E\s*{i}\s*Z\s*X\s*C\s*}}\]', re.IGNORECASE)
                 translated_body = pattern.sub(lambda m, t=block: t, translated_body)
 
+            # Restore HTML-heavy lines (single lines with dense inline HTML)
+            for i, line in enumerate(html_heavy_lines):
+                pattern = re.compile(rf'\[{{\s*Z\s*X\s*C\s*H\s*E\s*A\s*V\s*Y\s*{i}\s*Z\s*X\s*C\s*}}\]', re.IGNORECASE)
+                translated_body = pattern.sub(lambda m, t=line: t, translated_body)
+
+            # Restore multi-line HTML blocks (<div>...</div>, <table>...</table>, <ol>...</ol>)
+            for i, block in enumerate(multiline_html_blocks):
+                pattern = re.compile(rf'\[{{\s*Z\s*X\s*C\s*B\s*L\s*O\s*C\s*K\s*{i}\s*Z\s*X\s*C\s*}}\]', re.IGNORECASE)
+                translated_body = pattern.sub(lambda m, t=block: t, translated_body)
+
             # Restore Comparisons as safe entities for MDX compatibility
             for i, comp in enumerate(comparisons):
                 # Ensure literal < and > are converted to entities to avoid JSX parsing errors
@@ -163,8 +210,10 @@ def translate_markdown():
                 translated_body = pattern.sub(lambda m, t=safe_comp: t, translated_body)
                 
             # --- POST-PROCESSING FIXES FOR MDX ---
-            # 1. Remove double newlines inside <li> tags (which break MDX paragraph parsing)
-            # Removed because it breaks nested HTML tags due to non-greedy matching.
+            # 1. Final safety net: strip any remaining hallucinated HTML tags that appeared after restoration
+            # Only strip tags that are NOT legitimate (i.e., not part of restored placeholders)
+            # We check for any bare <tag> that doesn't have JSX-style attributes (style={{...}})
+            # This catches edge cases where Google Translate hallucinates tags around restored content
             
             # 2. Fix scrambled closing tags caused by Google Translate reordering placeholders
             translated_body = re.sub(r'</li>\s*</li>\s*</ol>', '</li></ol></li>', translated_body)
@@ -187,7 +236,7 @@ def translate_with_retry(translator, text, retries=3):
     if not text or not text.strip():
         return text if text is not None else ""
         
-    if re.fullmatch(r'\[\{ZXC[A-Z]+[0-9]+ZXC\}\]', text.strip()):
+    if re.fullmatch(r'(\s*\[\{ZXC[A-Z]+[0-9]+ZXC\}\]\s*)+', text.strip()):
         return text
         
     for attempt in range(retries):
