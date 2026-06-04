@@ -2149,6 +2149,10 @@ const sidebar: SidebarsConfig = {
     {
       type: "category",
       label: "Test",
+      link: {
+        type: "doc",
+        id: "generated/api/test",
+      },
       items: [
         {
           type: "doc",
