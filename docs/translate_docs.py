@@ -13,8 +13,7 @@ def translate_markdown():
     target_languages = {
         'fr': 'French',
         'es': 'Spanish',
-        'pt': 'Portuguese',
-        # 'fr': 'French' # Uncomment if you want to redo French too!
+        'pt': 'Portuguese'
     }
     
     for lang_code, lang_name in target_languages.items():
@@ -225,6 +224,14 @@ def translate_markdown():
             # 4. Known French dropped closing tag
             translated_body = translated_body.replace('<u> doivent être téléchargés, <u>', '<u> doivent être téléchargés, </u>')
             translated_body = translated_body.replace('<u> doivent être téléchargés', 'doivent être téléchargés')
+            
+            # 5. Fix unbalanced tags globally to prevent MDX compilation errors
+            for tag in ['u', 'b', 'i', 'strong', 'em', 'sup', 'sub']:
+                open_tag = f'<{tag}>'
+                close_tag = f'</{tag}>'
+                # Simple check for exact tags. If count is mismatched, strip all instances of that tag.
+                if translated_body.count(open_tag) != translated_body.count(close_tag):
+                    translated_body = re.sub(rf'</?{tag}\b[^>]*>', '', translated_body, flags=re.IGNORECASE)
             
             # Save the file
             with open(target_file, 'w', encoding='utf-8') as f:
