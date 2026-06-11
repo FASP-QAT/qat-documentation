@@ -7,20 +7,61 @@ sidebar_position: 7
 
 # Section 4. Supply Planning Module: Program Data
 
-As previously defined on Important QAT Concepts and Terms, a program is similar in structure to a PipeLine supply plan database. Each program consists of only one country, one or more technical area(s), one region (national level, central level, etc.), and one organization (MOH, PEPFAR-only, PMI-only). Every program within a realm is governed by the same standardized master data, such as product catalog, procurement agents, funding sources, data sources, etc.
+As previously defined on [Important QAT Concepts and Terms](./04-overview.md#e-important-qat-concepts-and-terms), a program is similar in structure to a PipeLine supply plan database. Each program consists of only one country, one or more technical area(s), one region (national level, central level, etc.), and one organization (MOH, PEPFAR-only, PMI-only). Every program within a realm is governed by the same standardized master data, such as product catalog, procurement agents, funding sources, data sources, etc.
 
-Program data management sits on the third tier of the QAT system hierarchy and is generally done by users with the roles program admin and program user (for more information on the user roles, please see Annex 3: User Role Matrix). Program-level master data managed by these users include budgets and alternate reporting units.
+Program data management sits on the third tier of the QAT system hierarchy and is generally done by users with the roles program admin and program user (for more information on the user roles, please see [Annex 3: User Role Matrix](./15-annex-3-user-role-matrix.md)). Program-level master data managed by these users include budgets and alternate reporting units.
 
 A user can “Download” or “Delete” programs from their local machine. Programs can also be “Imported” to the local machine or “Exported” from the local machine to share with other users if there are connectivity issues.
 
 Program admins and users can manipulate two big categories of data within their programs: Program data and Transactional data (the “big 3” – consumption, inventory, shipments).
 
-| Data Category | Details |
-| :--- | :--- |
-| **Program Info** | Program Manager, Freight %, Lead Times |
-| **Background Data Product Info** | Planning units – min, reorder interval, alternate reporting units |
-| **Budget** | Funding source, amounts, beginning and ending dates, etc. |
-| **Transactional Data (“Big 3”)** | **Consumption:** Forecasted consumption and actual consumption, as it becomes available. **Stock for each product:** Shipments, Inventory counts & Adjustments (Quantities, receive date, status, procurement agent, funder & associated budget, (if available) batch #s & expiry dates). |
+<table style={{ width: '100%', borderCollapse: 'collapse', border: '1px solid #ccc', margin: '20px 0' }}>
+  <thead>
+    <tr>
+      <th style={{ border: 'none', backgroundColor: 'transparent', width: '20%' }}></th>
+      <th style={{ border: '1px solid #ccc', padding: '10px', textAlign: 'left', fontWeight: 'bold', width: '25%', backgroundColor: '#eaeaea' }}>Data Category</th>
+      <th style={{ border: '1px solid #ccc', padding: '10px', textAlign: 'left', fontWeight: 'bold', width: '55%', backgroundColor: '#eaeaea' }}>Details</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowSpan="3" style={{ border: '1px solid #ccc', padding: '10px', verticalAlign: 'middle', textAlign: 'center', backgroundColor: '#eaeaea', fontWeight: 'normal', color: '#000' }}>
+        Background Data
+      </td>
+      <td style={{ border: '1px solid #ccc', padding: '10px', fontWeight: 'bold', color: '#000' }}>Program Info</td>
+      <td style={{ border: '1px solid #ccc', padding: '10px', color: '#000' }}>Program Manager, Freight %, Lead Times</td>
+    </tr>
+    <tr>
+      <td style={{ border: '1px solid #ccc', padding: '10px', fontWeight: 'bold', color: '#000' }}>Product Info</td>
+      <td style={{ border: '1px solid #ccc', padding: '10px', color: '#000' }}>Planning units – min, reorder interval, alternate reporting units</td>
+    </tr>
+    <tr>
+      <td style={{ border: '1px solid #ccc', padding: '10px', fontWeight: 'bold', color: '#000' }}>Budget</td>
+      <td style={{ border: '1px solid #ccc', padding: '10px', color: '#000' }}>Funding source, amounts, beginning and ending dates, etc.</td>
+    </tr>
+    <tr>
+      <td rowSpan="3" style={{ border: '1px solid #ccc', padding: '10px', verticalAlign: 'middle', textAlign: 'center', backgroundColor: '#eaeaea', fontWeight: 'normal', color: '#000' }}>
+        Transactional Data<br/>(“Big 3”)<br/>for each product
+      </td>
+      <td style={{ border: '1px solid #ccc', padding: '10px', fontWeight: 'bold', color: '#000' }}>Consumption</td>
+      <td style={{ border: '1px solid #ccc', padding: '10px', color: '#000' }}>
+        Forecasted consumption<br/>
+        And actual consumption, as it becomes available
+      </td>
+    </tr>
+    <tr>
+      <td style={{ border: '1px solid #ccc', padding: '10px', fontWeight: 'bold', color: '#000' }}>Stock</td>
+      <td style={{ border: '1px solid #ccc', padding: '10px', color: '#000' }}>Inventory counts & Adjustments</td>
+    </tr>
+    <tr>
+      <td style={{ border: '1px solid #ccc', padding: '10px', fontWeight: 'bold', color: '#000' }}>Shipments</td>
+      <td style={{ border: '1px solid #ccc', padding: '10px', color: '#000' }}>
+        Quantities, receive date, status, procurement agent, funder & associated budget<br/>
+        (if available) batch #s & expiry dates
+      </td>
+    </tr>
+  </tbody>
+</table>
 
 *Table 7: Program level data*
 
@@ -30,13 +71,13 @@ Program admins and users can manipulate two big categories of data within their 
 
 ### A1. Program Information
 
-Program managers in QAT can define their general program parameters, by selecting from a list of dropdowns that contain realm-level master data for each the fields. These general parameters for the supply planning module include program name, program manager, default freight percentages for air, sea, & road freight, lead times by shipment status, and notes. General parameters for the forecasting module include program name, program manager, and notes. Program users will be able to list/view all the programs they have access to, while only Program Admins are able to update any of the program’s general parameters.
+Program managers in QAT can define their general program parameters, by selecting from a list of dropdowns that contain realm-level master data for each the fields. These general parameters for the supply planning module include program name, program manager, default freight percentages for air, sea, & road freight, lead times by shipment status, and notes. General parameters for the forecasting module include program name, program manager, and notes. **Program users** will be able to list/view all the programs they have access to, while only **Program Admins** are able to update any of the program’s general parameters.
 
 Update program information:
 1. Click on "Program Management" and then select "Update Program Info"
 2. Click on the program that needs to be updated<br/>
     <ol style={{ listStyleType: 'lower-alpha' }}>
-        <li>Program Admins can add/remove procurement agents and funding sources that already exist<br/>in QAT to their program. This will in turn, add/remove the procurement agents to the<br/>dropdown fields in the [Shipment Data entry](#) screens. If a user would like to add a<br/>procurement agent to their program that does not exist in QAT, they can take out a ticket<br/>with the [QAT HelpDesk](#) system.</li>
+        <li>Program Admins can add/remove procurement agents and funding sources that already exist<br/>in QAT to their program. This will in turn, add/remove the procurement agents to the<br/>dropdown fields in the [Shipment Data entry](#b3-shipment-data) screens. If a user would like to add a<br/>procurement agent to their program that does not exist in QAT, they can take out a ticket<br/>with the [QAT HelpDesk](./05-getting-started.md#i-qat-helpdesk-and-tickets) system.</li>
     </ol>
 
 <div style={{textAlign: 'center'}}>
@@ -47,9 +88,11 @@ Figure 67: Update Program Info - Supply Planning Module
 
 </div>
 
+![Update Program Info - Supply Planning Module](/img/media/image114.png)
+
 3. Update fields as desired, and click “Submit”
 
-**Note:** QAT only allows Realm-level Admin or App-level Admins to update the fields which are in gray in the Update Program Info screen. If a user requires these fields to be updated, they can take out a ticket with the QAT HelpDesk system.
+**Note:** QAT only allows Realm-level Admin or App-level Admins to update the fields which are in gray in the Update Program Info screen. If a user requires these fields to be updated, they can take out a ticket with the [QAT HelpDesk](./05-getting-started.md#i-qat-helpdesk-and-tickets) system.
 
 ### A2. Planning Units
 
@@ -57,7 +100,7 @@ The planning unit is the product used in QAT as the basis for planning procureme
 
 The QAT planning unit catalog is considered realm-level master data, meaning any additions / edits / subtractions from that catalog are managed at the realm-level and apply to all programs within that realm.
 
-Every program must have at least one planning unit that Program Admins can select from the realm-level catalog to add to their programs or deactivate from their programs. Program Admins can also update any parameter related to a particular planning unit, including the reorder frequency, minimum months of stock, average monthly consumption calculation, local procurement agent lead time, shelf life, and price. Planning units can be deactivated from the program if no longer in use, allowing the program admins to keep all the legacy data. If the planning unit does not exist in the QAT catalog, please raise a ticket through the QAT Helpdesk so that it can be created for the entire realm. See more on ticketing in section QAT Helpdesk and Tickets.
+Every program must have at least one planning unit that **Program Admins** can select from the realm-level catalog to add to their programs or deactivate from their programs. **Program Admins** can also update any parameter related to a particular planning unit, including the reorder frequency, minimum months of stock, average monthly consumption calculation, local procurement agent lead time, shelf life, and price. Planning units can be deactivated from the program if no longer in use, allowing the program admins to keep all the legacy data. If the planning unit does not exist in the QAT catalog, please raise a ticket through the QAT Helpdesk so that it can be created for the entire realm. See more on ticketing in section [QAT Helpdesk and Tickets](./05-getting-started.md#i-qat-helpdesk-and-tickets).
 
 <div style={{textAlign: 'center'}}>
 
@@ -76,7 +119,7 @@ Figure 69: Parameters to update per planning unit.
 - **Average Monthly Consumption (AMC) calculation:** which is the average quantity a product is used over a selected period of time, will take an average of the program admin-entered values for “Months in future (including current month)” and “Months in past”
 - **Local Procurement Lead Time:** the entire lead time (‘planned to received’), in months, for locally procured planning units. Ideally in local procurement, the lead time would be much shorter than that for international.
 - **Distribution Lead Time:** Number of months between shipment receipt and the product to be distributed down to the lowest level. Used for suggested shipments ahead of understock.
-- **Shelf Life:** number of months from shipment receipt (status = received) until expiry. This is an average number of months for the planning unit – for entering exact batch data, including expiry dates see Supply Planning: Project Expired Stock and Batch Information
+- **Shelf Life:** number of months from shipment receipt (status = received) until expiry. This is an average number of months for the planning unit – for entering exact batch data, including expiry dates see [Supply Planning: Project Expired Stock and Batch Information](./08-supply-planning-module-supply-planning.md#e-supply-planning-project-expired-stock-and-batch-information)
 - **Forecast Error Threshold (%):** a value used in the Forecast Error (Monthly) and Forecast Error (by PU) consumption reports as a demarcation of whether a forecast error is deemed too high
 - **Catalog Price:** average price of a single planning unit, which will be used in calculating shipment costs. Price per program and procurement agent can be more granularly updated in Program/Procurement Agent-specific Information or specific shipment prices can be updated in the Shipment data entry screen.
 - **Notes:** a free text field to add relevant planning unit information (i.e. phasing-in/out timelines, if the planning unit is central/national-level data, etc.). These notes are available for viewing in the Supply Plan report, Supply Plan Version & Review Supply Planning screen, Supply Planning screen, & Scenario Planning screen.
@@ -101,7 +144,7 @@ Figure 69: Parameters to update per planning unit.
 5. Complete all the cells (parameters) in that row
 6. Click “Submit” to save the changes
 
-**Note:** If a required planning unit is not available in the dropdown, and thus on the QAT catalog, please<br/>raise a ticket through the QAT Helpdesk so that it can be created for the entire realm. See more on<br/>ticketing in section <a href="#">QAT Helpdesk and Tickets</a>.
+**Note:** If a required planning unit is not available in the dropdown, and thus on the QAT catalog, please<br/>raise a ticket through the QAT Helpdesk so that it can be created for the entire realm. See more on<br/>ticketing in section <a href="./05-getting-started.md#i-qat-helpdesk-and-tickets">QAT Helpdesk and Tickets</a>.
 
 ### A3. Program/Procurement Agent-specific Information
 
@@ -143,16 +186,18 @@ Figure 70. Accessing the Program/Procurement Agent Prices screen
        <li>Only the first three columns (Program, Planning Unit, and Procurement Agent) are required to add a row.</li>
        <li>Only one row is allowed per program/planning unit/procurement agent combination.</li>
    </ol>
-7. Click “Submit” to save the changes.
-8. Click on Master Data Sync after making changes (applies to any item under Program Management).
+
 
 <div style={{textAlign: 'center'}}>
 
 ![Adding Program/Procurement Agent Info for a planning unit](/img/media/image117.png)
 
-Figure 71. Adding Program/Procurement Agent Info for a planning unit
+*Figure 71: Adding Program/Procurement Agent Info for a planning unit*
 
 </div>
+
+7. Click “Submit” to save the changes.
+8. Click on Master Data Sync after making changes (applies to any item under Program Management).
 
 ### A4. Alternate Reporting Units
 
@@ -188,9 +233,44 @@ QAT uses six shipment statuses to track the progression of a shipment from plann
 
 <div style={{textAlign: 'center'}}>
 
-![QAT shipment statuses](/img/media/image119.png)
+<div style={{textAlign: 'center', overflowX: 'auto', margin: '20px 0'}}>
+<svg viewBox="0 0 760 80" style={{ minWidth: '600px', width: '100%', maxWidth: '800px', height: 'auto' }}>
+  <g transform="translate(10, 10)">
+    <g transform="translate(0, 0)">
+      <polygon points="0,0 100,0 120,30 100,60 0,60" fill="#fff" stroke="#5b9bd5" strokeWidth="2.5" />
+      <polygon points="3,3 98,3 115,30 98,57 3,57" fill="none" stroke="#5b9bd5" strokeWidth="1.5" />
+      <text x="55" y="30" fontFamily="system-ui, sans-serif" fontSize="14px" fontWeight="bold" textAnchor="middle" dominantBaseline="central" fill="#000">Planned</text>
+    </g>
+    <g transform="translate(125, 0)">
+      <polygon points="0,0 100,0 120,30 100,60 0,60 20,30" fill="#fff" stroke="#5b9bd5" strokeWidth="2.5" />
+      <polygon points="6,3 98,3 115,30 98,57 6,57 23,30" fill="none" stroke="#5b9bd5" strokeWidth="1.5" />
+      <text x="65" y="30" fontFamily="system-ui, sans-serif" fontSize="14px" fontWeight="bold" textAnchor="middle" dominantBaseline="central" fill="#000">Submitted</text>
+    </g>
+    <g transform="translate(250, 0)">
+      <polygon points="0,0 100,0 120,30 100,60 0,60 20,30" fill="#fff" stroke="#5b9bd5" strokeWidth="2.5" />
+      <polygon points="6,3 98,3 115,30 98,57 6,57 23,30" fill="none" stroke="#5b9bd5" strokeWidth="1.5" />
+      <text x="65" y="30" fontFamily="system-ui, sans-serif" fontSize="14px" fontWeight="bold" textAnchor="middle" dominantBaseline="central" fill="#000">Approved</text>
+    </g>
+    <g transform="translate(375, 0)">
+      <polygon points="0,0 100,0 120,30 100,60 0,60 20,30" fill="#fff" stroke="#5b9bd5" strokeWidth="2.5" />
+      <polygon points="6,3 98,3 115,30 98,57 6,57 23,30" fill="none" stroke="#5b9bd5" strokeWidth="1.5" />
+      <text x="65" y="30" fontFamily="system-ui, sans-serif" fontSize="14px" fontWeight="bold" textAnchor="middle" dominantBaseline="central" fill="#000">Shipped</text>
+    </g>
+    <g transform="translate(500, 0)">
+      <polygon points="0,0 100,0 120,30 100,60 0,60 20,30" fill="#fff" stroke="#5b9bd5" strokeWidth="2.5" />
+      <polygon points="6,3 98,3 115,30 98,57 6,57 23,30" fill="none" stroke="#5b9bd5" strokeWidth="1.5" />
+      <text x="65" y="30" fontFamily="system-ui, sans-serif" fontSize="14px" fontWeight="bold" textAnchor="middle" dominantBaseline="central" fill="#000">Arrived</text>
+    </g>
+    <g transform="translate(625, 0)">
+      <polygon points="0,0 100,0 120,30 100,60 0,60 20,30" fill="#fff" stroke="#5b9bd5" strokeWidth="2.5" />
+      <polygon points="6,3 98,3 115,30 98,57 6,57 23,30" fill="none" stroke="#5b9bd5" strokeWidth="1.5" />
+      <text x="65" y="30" fontFamily="system-ui, sans-serif" fontSize="14px" fontWeight="bold" textAnchor="middle" dominantBaseline="central" fill="#000">Received</text>
+    </g>
+  </g>
+</svg>
+</div>
 
-Figure 73: QAT shipment statuses
+*Figure 73: QAT shipment statuses*
 
 </div>
 
@@ -222,18 +302,28 @@ The priority order for lead time configurations is as follows:
 3. **Realm-level:** Realm-level lead times will apply if no specific lead time is set at the program level.
 
 **Enter/update the default lead times at the program level:**
-1. Go to “Program Management” and then click on “Update Program Info” (see [Updating Program Information](#)).
+1. Go to “Program Management” and then click on “Update Program Info” (see [Updating Program Information](#a1-program-information)).
 2. Scroll down to the second half of the page where all the lead time fields are.
 3. Enter the default program lead times per step.
 4. Click “Update” to save the changes.
 
-Refer to [Program/Procurement Agent Info](#) for instructions on how to add/edit settings at a program/procurement agent level.
+Refer to [Program/Procurement Agent Info](#a3-programprocurement-agent-specific-information) for instructions on how to add/edit settings at a program/procurement agent level.
 
 **Enter/update the default local procurement agent lead times:**
-1. Go to “Program Management” and then click on “Update Planning Units” (see [Updating Planning Units](#))
+1. Go to “Program Management” and then click on “Update Planning Units” (see [Updating Planning Units](#a2-planning-units))
 2. Select the program from the dropdown on the top left.
 3. Enter the default program lead time for local procurement.
 4. Click “Submit” to save the changes.
+
+
+4. Click “Submit” to save the changes.
+
+<div style={{textAlign: 'center'}}>
+
+![](/img/media/image119.png)
+
+</div>
+
 
 ### A6. Budgets
 
@@ -329,7 +419,7 @@ There are 3 main data requirements when creating or updating a supply plan: cons
 4. To add a new consumption record, right click on any cell and select “Add new consumption” OR select the blue “+ Add row” at the bottom.
 5. Enter the required information and click “Submit”.<br/>
    <ol style={{ listStyleType: 'lower-alpha' }}>
-       <li>Any cell that is greyed out (e.g. Quantity (PU)) indicates that it is a QAT generated cell and cannot be manually entered/edited.<ol style={{ listStyleType: 'lower-roman' }}><li>Reminder that [Alternate Reporting Unit](#) (ARU) is the product and the unit that the country’s data is reported in. This could be the same as the planning unit or may be different. QAT users can define an alternate reporting unit and a conversion factor (multiply or divide) to the planning unit.</li></ol></li>
+       <li>Any cell that is greyed out (e.g. Quantity (PU)) indicates that it is a QAT generated cell and cannot be manually entered/edited.<ol style={{ listStyleType: 'lower-roman' }}><li>Reminder that [Alternate Reporting Unit](#a4-alternate-reporting-units) (ARU) is the product and the unit that the country’s data is reported in. This could be the same as the planning unit or may be different. QAT users can define an alternate reporting unit and a conversion factor (multiply or divide) to the planning unit.</li></ol></li>
        <li>Any cell that is highlighted yellow indicates that it is a required field and has not yet been entered by the user.</li>
    </ol>
 
@@ -424,7 +514,7 @@ Figure 80: Add Inventory
 5. Once the update(s) have been made, click “Submit”.
 
 **Add/Update Batch Details – Adjustments**
-(for more information on QAT batch calculations, please see [Annex 2: Business Rules](#) or Section 5.E).
+(for more information on QAT batch calculations, please see [Annex 2: Business Rules](./14-annex-2-business-rules.md) or Section 5.E).
 1. Right click on the Adjustment row and click “Show Batch Information”.
 2. A pop-up screen of the batch details for that record will appear.
 3. The user can edit the existing batch number and/or quantity by double clicking on the cell.
@@ -507,7 +597,7 @@ The column to the far right labeled “Auto Generated” will let the user know 
 
 **Strategic Order Calculator:**
 
-For specific planning unit and procurement agent combinations, a **strategic order calculator** may appear for the user when entering the quantity of a shipment. The purpose of the calculator is to advise users on the appropriate order quantity for a shipment based on one or more of the following elements: a) Minimum Order Quantity (MOQ); b) Container load; c) Euro 1 pallet; d) Euro 2 Pallet. The calculator will help users plan shipments to maximize efficiency with delivery logistics (e.g. utilizing a full container instead of 20% of the container). Strategic products are defined at the realm level by an application or realm admin. For more information on how to define strategic products, see the [section on adding planning units for procurement agents](#).
+For specific planning unit and procurement agent combinations, a **strategic order calculator** may appear for the user when entering the quantity of a shipment. The purpose of the calculator is to advise users on the appropriate order quantity for a shipment based on one or more of the following elements: a) Minimum Order Quantity (MOQ); b) Container load; c) Euro 1 pallet; d) Euro 2 Pallet. The calculator will help users plan shipments to maximize efficiency with delivery logistics (e.g. utilizing a full container instead of 20% of the container). Strategic products are defined at the realm level by an application or realm admin. For more information on how to define strategic products, see the [section on adding planning units for procurement agents](./13-annex-1-application-realm-administrator-manual.md#k-procurement-agent).
 1. To view the Quantity Calculator for a strategic product, double click on the cell under the “Order Quantity” column and the “Quantity Calculator” screen will appear. <em>Note: If the product is a non-strategic product, the user can directly modify the order quantity in the cell after double-clicking and there will not be a pop-up.</em>
 2. The original quantity of the shipment will appear in the “Manual Order Quantity” cell.
 3. If you don’t want to use the strategic calculator and want to use the original “Manual Order Quantity”, select “None” in the drop-down for “Packaging Based On” and click “Save Shipment Quantity”.

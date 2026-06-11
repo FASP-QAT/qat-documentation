@@ -125,14 +125,16 @@ Progressive web applications (PWA) are standalone browsers that bring an app-lik
 
 3. Once on the 'Change Password' screen, enter your old password followed by the desired new password.
 4. The new password must meet the following criteria:
-   - Password must be at least 6 characters
-   - Password should not contain the word 'password'
-   - Password must contain at least 1 special character
-   - Password must contain at least 1 number
-   - Password must contain at least 1 uppercase letter
-   - Password must start with a letter
-   - New Password should not be the same as your username
-   - New password should not be the same as your last password
+   <ul style={{ listStyleType: 'disc' }}>
+     <li>Password must be at least 6 characters</li>
+     <li>Password should not contain the word 'password'</li>
+     <li>Password must contain at least 1 special character</li>
+     <li>Password must contain at least 1 number</li>
+     <li>Password must contain at least 1 uppercase letter</li>
+     <li>Password must start with a letter</li>
+     <li>New Password should not be the same as your username</li>
+     <li>New password should not be the same as your last password</li>
+   </ul>
 5. Confirm the new password by typing it again.
 6. Click "Submit".
 
@@ -213,9 +215,12 @@ When a user comes across a potential system issue with QAT, they should attempt 
 
 The QAT development team deploys incremental software releases to address the bugs and changes needed for the application. QAT prompt users to do so on the log-in screen after each release (see Figure 12). To conduct an application refresh, users should press "Ctrl" + "Shift" + "R" at the same time on their keyboard.
 
-![Hold Ctrl + Shift + R (all 3 keys) to conduct an Application Refresh](/img/media/image23.png)
+<div style={{ display: 'flex', justifyContent: 'center', gap: '20px', flexWrap: 'wrap', textAlign: 'center', marginBottom: '10px' }}>
+  <img src={require('@site/static/img/media/image22.png').default} alt="New QAT Version Released Prompt for Users" style={{ maxWidth: '48%' }} />
+  <img src={require('@site/static/img/media/image23.png').default} alt="Hold Ctrl + Shift + R (all 3 keys) to conduct an Application Refresh" style={{ maxWidth: '48%' }} />
+</div>
 
-*Figure 14: Hold Ctrl + Shift + R (all 3 keys) to conduct an Application Refresh*
+<p align="center"><em>Figure 14: Hold Ctrl + Shift + R (all 3 keys) to conduct an Application Refresh</em></p>
 
 The application refresh can also be used to help troubleshoot any issues experienced while using QAT. After holding all 3 keys, the software should reload automatically. Note that the application refresh is different than simply refreshing the browser ("Ctrl" + "R").
 
