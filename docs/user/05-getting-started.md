@@ -324,7 +324,9 @@ Once logged into QAT, the below screen will appear:
 
 ![Forecasting Module Home Screen](/img/media/image40.png)
 
-In the main area of the home page will be an application dashboard. The Supply Planning Module has an enhanced dashboard with visualizations and analytics regarding downloaded and server-based programs a user has access to. For specific information on the Supply Planning Module dashboard, see QAT Dashboard. For the Forecasting Module, the number of tiles, and types of tiles will depend on the access according to the role assigned to the user. Users will see one tile for program they've downloaded (i.e. When in the forecasting module, users will see one tile for every forecasting program they've loaded.). By clicking on the down arrow on the Forecasting program tile, a user can 1) Delete the program from your local computer, 2) Proceed to the Version Settings for the program, 3) Proceed to the list of Forecasting Trees, or 4) Proceed to the Consumption Data Entry & Adjustment screen.
+In the main area of the home page will be an application dashboard. The Supply Planning Module has an enhanced dashboard with visualizations and analytics regarding downloaded and server-based programs a user has access to. For specific information on the Supply Planning Module dashboard, see [QAT Dashboard](#l-qat-dashboard). 
+
+For the Forecasting Module, the number of tiles, and types of tiles will depend on the access according to the role assigned to the user. Users will see one tile for program they've downloaded (i.e. When in the forecasting module, users will see one tile for every forecasting program they've loaded). By clicking on the down arrow on the Forecasting program tile, a user can 1) Delete the program from your local computer, 2) Proceed to the Version Settings for the program, 3) Proceed to the list of Forecasting Trees, or 4) Proceed to the Consumption Data Entry & Adjustment screen.
 
 ![Forecasting Module Program Tile](/img/media/image41.png)
 
@@ -343,7 +345,7 @@ To return to the Dashboard screen, the user can either click the home icon in th
 | Screenshot | Function |
 | :---: | :--- |
 | ![Logout](/img/media/image46.png) | Logs user out of QAT. |
-| ![Profile](/img/media/image47.png) | The profile icon is green when working online and red while working offline. When the user click on the icon, they are able to:<ul><li>View the username and associated role(s) assigned to them</li><li>Change their preferred language</li><li>Change their password</li><li>Go offline/online</li></ul> |
+| ![Profile](/img/media/image47.png) | The profile icon is green when working online and red while working offline. When the user click on the icon, they are able to:<ul><li>View the username and associated role(s) assigned to them</li><li>Change their preferred language</li><li>Change their password</li><li>Go offline/online</li><li>Change to dark/light theme mode</li><li>Show decimals in the Supply Planning screens</li></ul> |
 | ![Home](/img/media/image42.png) | Returns user to the dashboard/home screen. |
 | ![Download Manual](/img/media/image48.png) | Downloads the QAT user manual to the user's computer. The file can be found in the **Downloads** folder on the user's computer. |
 | ![Refresh](/img/media/image49.png) | Refreshes the current page a user is working on. |
@@ -352,16 +354,6 @@ To return to the Dashboard screen, the user can either click the home icon in th
 | ![Helpdesk](/img/media/image52.png) | Opens up the QAT Helpdesk where users can create tickets to add/update master data, propose change requests and report a bug. The number in the red box indicates thet number of open tickets a user has. For more information on the helpdesk, refer to QAT Helpdesk and Tickets. |
 | ![ERP Notification](/img/media/image53.png) | Directs the user to the ERP Shipment Notification page. This page will inform users if there are any important updates that need to be reviewed for a linked ERP shipment. For more information on these notifications and which will be flagged, refer to ERP Shipment Linking. Note: this icon is only available in the QAT Supply Planning Module. |
 | ![Guidance](/img/media/image54.png) | Opens a Show Guidance webpage on an Introduction to QAT Forecasting. This document provides a high-level overview on the QAT forecasting process flow. Note: This icon is only available in the QAT Forecasting Module. |
-
-Additionally, users can utilize the profile icon to check their current user roles, as well as:
-- Change their password,
-- Go offline/online,
-  ![offline/online toggle](/img/media/image55.png)
-- Change the preferred language,
-- Chage to dark/light theme mode, and
-  ![theme toggle](/img/media/image56.png)
-- Show decimals in the supply planning screens
-  ![decimals toggle](/img/media/image57.png)
 
 **Sidebar Menu:**
 
@@ -433,93 +425,92 @@ The supply planning dashboard provides a comprehensive interface with enhanced v
 
 ![Dashboard](/img/media/image77.jpeg)
 
-**1. Ticker** – This section displays key information through three automatically scrolling tiles.
-To manually navigate the tiles, click the dots at the bottom of the tiles. Each tile links to rel-
-evant screens. Click on the tile name to be directed to that screen (if you lack access, an ap-
-propriate message will display). For example, clicking on the ‘ERP linking’ tile will take you to
-the ERP Linking screen.
-   a. **Realm:** Provides global metrics, such as the number of countries, users, supply plan-
+1. **Ticker** – This section displays key information through three automatically scrolling tiles.
+To manually navigate the tiles, click the dots at the bottom of the tiles. Each tile links to relevant screens. Click on the tile name to be directed to that screen (if you lack access, an appropriate message will display). For example, clicking on the ‘ERP linking’ tile will take you to the ERP Linking screen.
+    - **Realm:** Provides global metrics, such as the number of countries, users, supply plan-
    ning programs, and forecasting programs.
-   b. **My Access:** Highlights the supply plans you have access to, including downloaded
-   supply plans.
-   c. **ERP Linking:** Displays number of linked shipments by realm and downloaded pro-
-   grams.
+    - **My Access:** Highlights the supply plans you have access to, including downloaded supply plans.
+    - **ERP Linking:** Displays number of linked shipments by realm and downloaded programs.
 
 ![Dashboard Ticker](/img/media/image78.png)
 
-**2. Overview** – This table offers a high-level summary of one or more programs based on your access.
+2. **Overview** – This table offers a high-level summary of one or more programs based on your access.
 
 ![Overview Section](/img/media/image79.png)
 
-**Selecting Programs:**
-- Programs can be server-based or downloaded but cannot be mixed
-- Can select 1 to 'all' programs. Multi-select.
-- Offline mode limits selection to downloaded programs only, with the checkbox for server programs greyed out.
-- For server programs, some columns/features (e.g., Action column and QPL links) are not displayed, but all other details remain consistent.
-
-**Features of the Overview Table**
-Each column is designed to present actionable data:
-- **Tooltips:** Hover over tool tip icon in each column for further details
-- **Sorting:** Programs are sorted alphabetically, with an asterisk indicating final and approved versions.
-- **Links and Icons:**
-  - The 'Action' column allows users to delete out a local program as well as click on the cloud icons to be re-directed to the upload or download screens. The cloud icon will appear in red if that downloaded version is outdated. The 'Action' column does not appear on the overview table for server programs.
-  - Clicking on the number in the 'Open QAT Problems' column will direct the user to the QAT Problem List (QPL) for that program. This does not appear for server programs.
-  - Clicking on the status in the 'Review Status' column will direct the user to the Supply Plan Version & Review screen while clicking on the notebook icon in the same cell will open up the notes history for that program.
+  **Selecting Programs:**
+  - Programs can be server-based or downloaded but not both
+  - Multi-select available for programs
+  - Offline mode limits selection to downloaded programs only, with the checkbox for server programs greyed out
+  - For server programs, some columns/features (e.g., action column and QPL links) are not displayed
+  - *Note: downloaded and server versions may display different data, if items have be updated on the local version and not uploaded, or if the QPL has been recalculated based on today's date.*
+  
+  **Features of the Overview Table**
+  Each column is designed to present actionable data:
+  - **Tooltips:** Hover over tool tip icon in each column for further details
+  - **Sorting:** Programs are sorted alphabetically, with an asterisk indicating final and approved versions.
+  - **Links and Icons:**
+      - The 'Action' column allows users to delete out a local program as well as click on the cloud icons to be re-directed to the upload or download screens. The cloud icon will appear in red if that downloaded version is outdated. The 'Action' column does not appear on the overview table for server programs.
+      - Clicking on the number in the 'Open QAT Problems' column will direct the user to the QAT Problem List (QPL) for that program. This does not appear for server programs.
+      - Clicking on the status in the 'Review Status' column will direct the user to the Supply Plan Version & Review screen while clicking on the notebook icon in the same cell will open up the notes history for that program.
 
 ![Version Notes](/img/media/image80.png)
 
-**3. Program Spotlight** – This section provides detailed insights into a single program’s key metrics. Make sure to utilize tooltips and embedded links for efficient navigation and data exploration. All 5 sections have a tool tip next to the header and each header is linked to a QAT screen that you can access by clicking on the header.
+3. **Program Spotlight** – This section provides detailed insights into a single program’s key metrics. Make sure to utilize tooltips and embedded links for efficient navigation and data exploration. All 5 sections have a tool tip next to the header and each header is linked to a QAT screen that you can access by clicking on the header.
 
-**Selecting a program:**
-- Supports server or downloaded programs (single select only)
-- Server programs default to the latest version (draft or final)
-- Offline mode limits selection to downloaded programs.
-
-**Report Period:**
-- **Server programs:** Defaults to 6 moths past and 18 months future (editable)
-- **Downloaded programs:** Defaults to 6 months past and 18 months future (non-editable on the dashboard). Admins can set custom defaults by program via the Update Program Info screen.
+  **Selecting a program:**
+  - Supports server or downloaded programs (single select only)
+  - Server programs default to the latest version (draft or final)
+  - Offline mode limits selection to downloaded programs.
+  
+  **Report Period:**
+  - Only affects the Shipments, Forecast Error, and Expiries sections. The Overall Supply Plan Score and Data Quality section are based on the QPL calculations and the Stock Status section is always 18 months into the future (including current month)
+  - **Server programs:** Defaults to 6 months past and 18 months future (editable)
+  - **Downloaded programs:** Defaults to 6 months past and 18 months future (non-editable on the dashboard). Admins can set custom defaults by program via the Update Program Info screen.
 
 ![Dashboard Default Report Period](/img/media/image81.png)
 
-**Spotlight Metrics**
-
-**Stock Status:**
-- Bar graph displays the percentage of months in the report period by stock category. Can hover over graph for detailed breakdowns.
-- Visual customization: Can hide legend elements or copy/paste graph.
-- The accompanying table shows stockout details per planning unit (PU).
+  **Spotlight Metrics**
+  
+  **Overall Supply Plan Score**
+  - The large dial displays the Overall Supply Plan Score for a specific program. The Overall Supply Plan Score is an average of the Quality Score and the Stock Status Score. In general, higher scores indicate stronger supply plan performance. For more information on how scores are calculated, see the Supply Plan Scorecard Report.
+  
+  **Stock Status:**
+  - Bar graph displays the percentage of months in the report period by stock category. Can hover over graph for detailed breakdowns.
+  - Visual customization: Can hide legend elements or copy/paste graph.
+  - The accompanying table shows stockout details per planning unit (PU).
+  - Displays the Stock Status Score, which is based on the number of months (18 months in future) each planning unit is stocked‑to‑plan.
 
 ![Stock Status Section](/img/media/image82.png)
 
-**Forecast Error (Server Versions Only):**
-- Average percentage error calculated for the report period.
-- Errors above a set threshold (default 50%) are highlighted in red. Admins can adjust thresholds per PU and program in the 'Update Planning Units' screen.
-- Missing data displays a caution icon with an explanatory note.
-
-![Forecast Error Section](/img/media/image83.png)
-
-**Shipments:**
-- Pie chart of shipments by funding source, procurement agent, or status using the
-  dropdown to designate which one.
-- Hover over pie chart for cost breakdowns. The cost breakdown is using the total
-  value of shipments in that report period as the denominator.
-- The accompanying table shows the # of shipments with funding TBD in the report
-  period.
-
-![Shipment Section](/img/media/image84.png)
-
-**Data Quality:**
-- Reflects QAT problem List metrics, independent of the report period. This is the only section of the 5 sections on the program spotlight that does not use the report period displayed on the dashboard.
-- Updates dynamically with changes made in QPL if user has refreshed the QPL. Otherwise, user can click the refresh icon next to the Data Quality header to refresh the data displayed.
-- Dials for:
-  - Forecasted consumption: Counts the number of PUs that have at least one month of missing forecasted consumption in the next 18 months.
-  - Actual Inventory: Counts the number of PUs that have no recent actual inventory data in the last 3 months.
-  - Actual Consumption: Counts the number of PUs that either have no actual consumption data in the last 3 months or a gap in actual consumption data in the last 6 months.
-  - Shipments: Counts the number of PUs that have shipments with receive dates in the past, or shipments that should have been "submitted" based on program lead times.
+  **Data Quality:**
+  - Reflects QAT problem List metrics, independent of the report period.
+  - Updates dynamically with changes made in QPL if user has refreshed the QPL. Otherwise, user can click the refresh icon next to the Data Quality header to refresh the data displayed.
+  - Diplays the Data Quality Score, which is an average of the percentage the supply plan is in-compliance according to the four data quality dials.
+  - Dials for:
+    - Forecasted consumption: Counts the number of PUs that have at least one month of missing forecasted consumption in the next 18 months.
+    - Actual Inventory: Counts the number of PUs that have no recent actual inventory data in the last 3 months.
+    - Actual Consumption: Counts the number of PUs that either have no actual consumption data in the last 3 months or a gap in actual consumption data in the last 6 months.
+    - Shipments: Counts the number of PUs that have shipments with receive dates in the past, or shipments that should have been "submitted" based on program lead times.
 
 ![Data Quality Section](/img/media/image85.png)
 
-**Expiries:**
-- Displays expiries within the report period, including quantity and total cost
-- Total expiry value across all planning units for the selected program appear at the top right of the section.
+  **Forecast Error (Server Versions Only):**
+  - Average percentage error calculated for the report period.
+  - Errors above a set threshold (default 50%) are highlighted in red. Admins can adjust thresholds per PU and program in the 'Update Planning Units' screen.
+  - Missing data displays a caution icon with an explanatory note.
+
+![Forecast Error Section](/img/media/image83.png)
+
+  **Shipments:**
+  - Pie chart of shipments by funding source, procurement agent, or status using the dropdown to designate which one.
+  - Hover over pie chart for cost breakdowns. The cost breakdown is using the total value of shipments in that report period as the denominator.
+  - The accompanying table shows the # of shipments with funding TBD in the report period.
+
+![Shipment Section](/img/media/image84.png)
+
+  **Expiries:**
+  - Displays expiries within the report period, including quantity and total cost
+  - Total expiry value across all planning units for the selected program appear at the top right of the section.
 
 ![Expiries Section](/img/media/image86.png)
