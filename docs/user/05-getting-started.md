@@ -67,9 +67,13 @@ Progressive web applications (PWA) are standalone browsers that bring an app-lik
 
 ![Installing QAT PWA](/img/media/image10.png)
 
+_Installing the PWA_
+
 4. An icon will appear on your Desktop as a standalone application. Users can directly open from the desktop or type **chrome://apps/** in the browser.
 
 ![QAT PWA Icons](/img/media/image11.png)
+
+_QAT PWA Icons_
 
 **Note**: Users can utilize the PWA and browser versions concurrently; however, when making changes in one, a refresh is needed in the other so changes are made effective (see [When and How to Conduct an Application Refresh](#1-application-refresh)).
 
@@ -83,6 +87,8 @@ Progressive web applications (PWA) are standalone browsers that bring an app-lik
 
 ![Install PWA alternate method](/img/media/image12.png)
 
+_Install PWA Alternate Method_
+
 ## E. How to Log into QAT for Existing Users
 
 **Login**
@@ -90,6 +96,8 @@ Progressive web applications (PWA) are standalone browsers that bring an app-lik
 2. A login screen will be displayed.
 
 ![Log-in Screen](/img/media/image13.png)
+
+_Log-in Screen_
 
    a. Type the username and password in the required fields.
    b. Click on the “Login” button.
@@ -103,6 +111,8 @@ Progressive web applications (PWA) are standalone browsers that bring an app-lik
 
 ![Logout Icon](/img/media/image14.png)
 
+_Logout Icon_
+
 3. A pop up will appear asking "Are you sure you want to log out?" – click "yes" to log out
 
 **Change Password**
@@ -110,6 +120,8 @@ Progressive web applications (PWA) are standalone browsers that bring an app-lik
 2. Click "Change Password".
 
 ![Profile Icon](/img/media/image15.png)
+
+_Profile Icon_
 
 3. Once on the 'Change Password' screen, enter your old password followed by the desired new password.
 4. The new password must meet the following criteria:
@@ -132,9 +144,13 @@ Progressive web applications (PWA) are standalone browsers that bring an app-lik
 
 ![Forgot Password Screen](/img/media/image16.png)
 
+_Forgot Password Screen_
+
 3. The user will get a link via email to reset their password.
 
 ![Reset Password Email](/img/media/image17.png)
+
+_Reset Password Email_
 
 4. The "Reset Password" link will redirect you to QAT, where you will input your new password. Once complete, click "Submit".
 5. After clicking "Submit" the user will be redirected to the login screen. Using the User ID email and the newly created password, log in to QAT.
@@ -152,6 +168,8 @@ QAT is a hybrid tool and can be operated in both the online and offline mode. Th
 The Profile icon on the top right corner shows a green-colored circle when working in online mode. When the user switches to offline mode the color changes to red, as shown on the screenshot below.
 
 ![Offline vs. Online Icons](/img/media/image20.png)
+
+_Offline vs. Online Icon_
 
 The below table details some of the key functionalities that can be done in QAT offline as well as some of the functionalities that must be done online:
 
@@ -177,9 +195,13 @@ To maintain the QAT application, regular version releases are pushed automatical
 
 ![QAT Version Releases](/img/media/image21.png)
 
+_QAT Version Releases_
+
 Most version releases will not require significant action from the user, except to refresh the QAT application prior to logging-in. QAT will prompt user that there is a new version of QAT on the login page:
 
 ![New QAT Version Released Prompt for Users](/img/media/image22.png)
+
+_New QAT Version Released Prompt for Users_
 
 If there is a major change to the structure of the QAT backend architecture, users may be required to upload their latest version to the server (see the [Upload](06-managing-programs-and-versions.md#upload) section for more information) to avoid losing data once the new version of QAT is released. The QAT Support Team (support@quantificationanalytics.org) will inform users well in advance if a program upload is required.
 
@@ -196,7 +218,7 @@ The QAT development team deploys incremental software releases to address the bu
   <img src={require('@site/static/img/media/image23.png').default} alt="Hold Ctrl + Shift + R (all 3 keys) to conduct an Application Refresh" style={{ maxWidth: '48%' }} />
 </div>
 
-<p align="center"><em>Figure 14: Hold Ctrl + Shift + R (all 3 keys) to conduct an Application Refresh</em></p>
+<p align="center"><em>Hold Ctrl + Shift + R (all 3 keys) to conduct an Application Refresh</em></p>
 
 The application refresh can also be used to help troubleshoot any issues experienced while using QAT. After holding all 3 keys, the software should reload automatically. Note that the application refresh is different than simply refreshing the browser ("Ctrl" + "R").
 
@@ -208,6 +230,8 @@ If an application refresh ("Ctrl" + "Shift" + "R") does not solve your software 
 
 ![Click "Full Master Data Sync"](/img/media/image24.png)
 
+_Full Master Data Sync_
+
 ### H3. When and How to Clear Site Data
 
 If refreshing QAT (Ctrl + Shift + R) and a Full Master Data Sync do not resolve the issue, the user should attempt to clear site data in order to troubleshoot the issue. Follow the below steps in order to clear site data on your QAT:
@@ -218,12 +242,16 @@ If refreshing QAT (Ctrl + Shift + R) and a Full Master Data Sync do not resolve 
 
 ![Ctrl + Shift + I](/img/media/image25.png)
 
+_Ctrl + Shift + I_
+
 2. Go to "Application".
 3. On the left-hand side of the screen, click where it says "Storage".
 4. Once on the "Storage" screen, select "Clear site data." This will clear any data that was not uploaded.
 5. Log in again to QAT and re-download any programs you need. (Clearing site data erases all programs from your local machine so you will need to re-download those programs.)
 
 ![Clear Site Data](/img/media/image26.png)
+
+_Clear Site Data_
 
 ### H4. Troubleshooting Network Errors
 Users may see the following error message when logging in or while using QAT:
@@ -251,16 +279,24 @@ When a user needs to either add or update a user or master data for any reason, 
 
 ![QAT Login Screen Helpdesk](/img/media/image27.png)
 
+_QAT Login Screen Helpdesk_
+
 ![QAT Top Ribbon Helpdesk](/img/media/image28.png)
+
+_QAT Top Ribbon Helpdesk_
 
 2. Four options will appear for taking out a ticket: Add/Update User, Add/Update Master Data, Change Request, and Report a Bug. See below sections on [Change Requests](#requesting-a-change) and [Report a Bug](#reporting-a-bug).
 
 ![QAT Helpdesk Menu](/img/media/image29.png)
 
+_QAT Helpdesk Menu_
+
 3. Choose to Add/Update User or Add/Update Master data. Either option will take you to different screens for more information.
 4. Enter the information required in the form and click "Submit."
 
 ![Add/Update User Screen](/img/media/image30.png)
+
+_Add/Update User Screen_
 
 | ![Add Master Data Screen](/img/media/image31.png) | ![Add Procurement Agent Master Data Screen](/img/media/image32.png) |
 | :---: | :---: |
@@ -275,10 +311,14 @@ When a user has an idea for a new feature, functionality, or design element that
 
 ![QAT Helpdesk Icon](/img/media/image28.png)
 
+_QAT Helpdesk Icon_
+
 2. Click on "Request a Change" from the QAT Helpdesk menu options.
 3. Complete the form by filling out the required information and click "Submit,"
 
 ![Change Request Ticket](/img/media/image33.png)
+
+_Change Request Ticket_
 
 4. After submitting a ticket, the user will be assigned a Ticket Code number (ex: QAT-570). The user will also receive an email notification and the number of "Open Tickets" on the top ribbon in red will increase. This ticket number corresponds to the ticket number stored in the JIRA software management tool. For more information on managing tickets and the JIRA software management tool, please see [Managing Tickets](#managing-tickets).
 
@@ -297,6 +337,8 @@ The bug ticket will be addressed by the development team per the business priori
 
 ![Report a Bug](/img/media/image34.png)
 
+_Report a Bug_
+
 ### I4. Managing Tickets
 For enhanced visibility, QAT will give users the option to manage and check the status of their tickets, whether they are adding/editing a user or master data, requesting a change, or reporting a bug. When a user submits a ticket, they will be assigned a Ticket Code number (ex: QAT-570). The user will also receive an email notification and the number of "Open Tickets" on the top ribbon in red will increase. This ticket number corresponds to the ticket number stored in the JIRA software management tool.
 
@@ -310,9 +352,15 @@ From the email notification, users may click on “View Requests” to see the s
 
 ![Email Notification for QAT Ticket](/img/media/image36.png)
 
+_Email Notification for QAT Ticket_
+
 ![Option to Navigate to JIRA](/img/media/image37.png)
 
+_Option to Navigate to JIRA_
+
 ![JIRA Ticket Management](/img/media/image38.png)
+
+_JIRA Ticket Management_
 
 ## J. Navigation and Menu Bar
 
@@ -322,13 +370,19 @@ Once logged into QAT, the below screen will appear:
 
 ![Supply Planning Module Home Screen](/img/media/image39.png)
 
+_Supply Planning Module Home Screen_
+
 ![Forecasting Module Home Screen](/img/media/image40.png)
+
+_Forecasting Module Home Screen_
 
 In the main area of the home page will be an application dashboard. The Supply Planning Module has an enhanced dashboard with visualizations and analytics regarding downloaded and server-based programs a user has access to. For specific information on the Supply Planning Module dashboard, see [QAT Dashboard](#l-qat-dashboard). 
 
 For the Forecasting Module, the number of tiles, and types of tiles will depend on the access according to the role assigned to the user. Users will see one tile for program they've downloaded (i.e. When in the forecasting module, users will see one tile for every forecasting program they've loaded). By clicking on the down arrow on the Forecasting program tile, a user can 1) Delete the program from your local computer, 2) Proceed to the Version Settings for the program, 3) Proceed to the list of Forecasting Trees, or 4) Proceed to the Consumption Data Entry & Adjustment screen.
 
 ![Forecasting Module Program Tile](/img/media/image41.png)
+
+_Forecasting Module Program Tile_
 
 In addition to the application dashboard, the screen consists of the top ribbon and a menu sidebar on the left-hand side. All the functions available in the ribbon and sidebar will be accessible to the user throughout the tool no matter which screen they are viewing.
 
@@ -415,15 +469,21 @@ it will also change the text displayed on the login screen.
 
 ![Login Screen Language Change](/img/media/image75.png)
 
+_Login Screen Language Change_
+
 **2. Within QAT:**
 Once logged into QAT, the user may change the display language by clicking on the user profile icon on the top right corner of the screen, selecting the preferred language and then the tool will automatically update it's text/labels.
 
 ![In Tool Language Change](/img/media/image76.png)
 
+_In Tool Language Change_
+
 ## L. QAT Dashboard
 The supply planning dashboard provides a comprehensive interface with enhanced visualizations and analytics. It is structured into three main sections: Ticker, Overview, Program Spotlight.
 
-![Dashboard](/img/media/image77.jpeg)
+![Dashboard](/img/media/image77.png)
+
+_Supply Planning Dashboard_
 
 1. **Ticker** – This section displays key information through three automatically scrolling tiles.
 To manually navigate the tiles, click the dots at the bottom of the tiles. Each tile links to relevant screens. Click on the tile name to be directed to that screen (if you lack access, an appropriate message will display). For example, clicking on the ‘ERP linking’ tile will take you to the ERP Linking screen.
@@ -434,9 +494,13 @@ To manually navigate the tiles, click the dots at the bottom of the tiles. Each 
 
 ![Dashboard Ticker](/img/media/image78.png)
 
+_Dashboard Ticker_
+
 2. **Overview** – This table offers a high-level summary of one or more programs based on your access.
 
 ![Overview Section](/img/media/image79.png)
+
+_Overview Section_
 
   **Selecting Programs:**
   - Programs can be server-based or downloaded but not both
@@ -456,6 +520,8 @@ To manually navigate the tiles, click the dots at the bottom of the tiles. Each 
 
 ![Version Notes](/img/media/image80.png)
 
+_Version Notes_
+
 3. **Program Spotlight** – This section provides detailed insights into a single program’s key metrics. Make sure to utilize tooltips and embedded links for efficient navigation and data exploration. All 5 sections have a tool tip next to the header and each header is linked to a QAT screen that you can access by clicking on the header.
 
   **Selecting a program:**
@@ -470,6 +536,8 @@ To manually navigate the tiles, click the dots at the bottom of the tiles. Each 
 
 ![Dashboard Default Report Period](/img/media/image81.png)
 
+_Dashboard Default Report Period in Program Settings_
+
   **Spotlight Metrics**
   
   **Overall Supply Plan Score**
@@ -483,6 +551,8 @@ To manually navigate the tiles, click the dots at the bottom of the tiles. Each 
 
 ![Stock Status Section](/img/media/image82.png)
 
+_Stock Status Section_
+
   **Data Quality:**
   - Reflects QAT problem List metrics, independent of the report period.
   - Updates dynamically with changes made in QPL if user has refreshed the QPL. Otherwise, user can click the refresh icon next to the Data Quality header to refresh the data displayed.
@@ -495,12 +565,16 @@ To manually navigate the tiles, click the dots at the bottom of the tiles. Each 
 
 ![Data Quality Section](/img/media/image85.png)
 
+_Data Quality Section_
+
   **Forecast Error (Server Versions Only):**
   - Average percentage error calculated for the report period.
   - Errors above a set threshold (default 50%) are highlighted in red. Admins can adjust thresholds per PU and program in the 'Update Planning Units' screen.
   - Missing data displays a caution icon with an explanatory note.
 
 ![Forecast Error Section](/img/media/image83.png)
+
+_Forecast Error Section_
 
   **Shipments:**
   - Pie chart of shipments by funding source, procurement agent, or status using the dropdown to designate which one.
@@ -509,8 +583,12 @@ To manually navigate the tiles, click the dots at the bottom of the tiles. Each 
 
 ![Shipment Section](/img/media/image84.png)
 
+_Shipment Section_
+
   **Expiries:**
   - Displays expiries within the report period, including quantity and total cost
   - Total expiry value across all planning units for the selected program appear at the top right of the section.
 
 ![Expiries Section](/img/media/image86.png)
+
+_Expiries Section_
