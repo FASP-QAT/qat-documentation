@@ -14,7 +14,6 @@ sidebar_position: 6
 | Data from others | Download | Import  |
 | Data from users  | Upload   | Export  |
 
-_Table 6 - Working with Program Data_
 
 ![Left Menu Bar](/img/media/image87.png)
 
@@ -25,13 +24,13 @@ Program data can be downloaded, uploaded, imported, and exported in QAT.
 - Uploading can be as "draft" or as "final". Uploading a supply plan program as "final" initiates the supply plan review process. The status of supply plan versions can be viewed in the **Supply Plan Version & Review** screen — this is the only function described in this section that is available to report viewers. Uploading a forecast program as "final" allows users to import that forecast directly into the supply plan module. See [QAT Forecast Import](07-supply-planning-module-program-data.md#importing-forecasts-into-supply-plans) for further instructions on how to import a forecast into a supply plan.
 - When no internet is available, the **Export** feature allows users to share their data with other users via external devices such as a pen drive/flash drive, who can then use the **Import** data function to open that file on their computer.
 - These functions can be accessed from the left menu bar under **Program Management**.
-- Additionally, Download & Upload can be accessed from the top menu bar (see Figure 32)
+- Additionally, Download & Upload can be accessed from the top menu bar.
 
 <div style={{textAlign: 'center'}}>
 
 ![Top Menu Bar](/img/media/image88.png)
 
-_Figure 47 Menu Bar_
+_Top Ribbon Menu Bar_
 
 </div>
 
@@ -60,7 +59,7 @@ _Figure 47 Menu Bar_
 
 ![Load Program Screen](/img/media/image91.png)
 
-_Figure 48: Load Program Screen_
+_Load Program Screen_
 
 </div>
 
@@ -72,7 +71,7 @@ _Figure 48: Load Program Screen_
 
 ![Version Tree – how to expand](/img/media/image92.png)
 
-_Figure 49: Version Tree – how to expand_
+_Version Tree – how to expand_
 
 </div>
 
@@ -86,7 +85,7 @@ _Figure 49: Version Tree – how to expand_
 
 ![Download Screen Version Tree – clean up and delete icons](/img/media/image95.png)
 
-_Figure 50: Download Screen Version Tree – clean up and delete icons_
+_Download Screen Version Tree – clean up and delete icons_
 
 </div>
 
@@ -98,15 +97,15 @@ _Figure 50: Download Screen Version Tree – clean up and delete icons_
 
 ![Download specific range of data](/img/media/image96.png)
 
-_Figure 51 Download specific range of data_
+_Download specific range of data_
 
 </div>
 
-     - The date range selection would apply to ALL programs selected for download. If the user wants to download one full program (program A) and one truncated program (program B), the user must complete the download process twice – one for the full program and another for the truncated program.
-     - Older data not downloaded always exists on the server and cannot be deleted or overwritten.
-     - When user downloads truncated program (v1), updates it, and uploads a new version (v2), the server version will include the entirety of the data, while the new local version will remain truncated with previously selected start date. User may delete that version and download the full v2 from the server, or v2 with a different range of data, as needed
+   - The date range selection would apply to ALL programs selected for download. If the user wants to download one full program (program A) and one truncated program (program B), the user must complete the download process twice – one for the full program and another for the truncated program.
+   - Older data not downloaded always exists on the server and cannot be deleted or overwritten.
+   - When user downloads truncated program (v1), updates it, and uploads a new version (v2), the server version will include the entirety of the data, while the new local version will remain truncated with previously selected start date. User may delete that version and download the full v2 from the server, or v2 with a different range of data, as needed
 
-Note: If you download an older version, or if another user uploads a later version on the server after you download, you will see a message like the below in Figure 36 any time master data sync happens (upon logging in, upon downloading new program, or if manually requested by user).
+**Note**: If you download an older version, or if another user uploads a later version on the server after you download, you will see a message like the below in Figure 36 any time master data sync happens (upon logging in, upon downloading new program, or if manually requested by user).
 - If you select “OK”, the latest server version will be downloaded and your local version will be permanently deleted. Please only select “OK” if you are okay with discarding your changes or if you have not made any changes.
 - If you select “cancel”, no action will be taken and you will remain with your local version.
 
@@ -114,7 +113,7 @@ Note: If you download an older version, or if another user uploads a later versi
 
 ![More recent server warning](/img/media/image97.png)
 
-_Figure 52: “More recent server” warning on user login_
+_“More recent server” warning on user login_
 
 </div>
 
@@ -161,7 +160,7 @@ _Figure 52: “More recent server” warning on user login_
 
 ![Upload Version](/img/media/image99.png)
 
-_Figure 53 Upload Version_
+_Supply Planning - Upload Version_
 
 </div>
 
@@ -174,7 +173,7 @@ _Figure 53 Upload Version_
 
 <div style={{textAlign: 'center'}}>
 
-_Figure 54 Uploading Supply Plan as Draft vs Final_
+_Uploading Supply Plan as Draft vs Final_
 
 </div>
 
@@ -191,7 +190,7 @@ _Figure 54 Uploading Supply Plan as Draft vs Final_
 <ul style={{ marginTop: '5px', listStyleType: 'disc' }}>
 <li><span style={{backgroundColor: '#c2e0c6'}}>Green</span>: represents changes that have been made in the local version; by uploading your program, these changes will save to the online server as a new version.</li>
 <li><span style={{backgroundColor: '#cfe2f3'}}>Light blue</span>: represents changes made by another user that has already been uploaded to the live/online version - because this is a data point that you did not edit, the server version will persist for this/these records.</li>
-<li><span style={{backgroundColor: '#ffff00'}}>Yellow</span>: represents a conflict in data between the local version and the server version for the same data cell. You must resolve all yellow conflicts before the Upload button appears. To resolve a conflict, right click on the relevant row, and select "Resolve Conflict." In the pop-up screen, choose whether to keep the <span style={{backgroundColor: '#c2e0c6'}}>local version of the data</span> or the <span style={{backgroundColor: '#cfe2f3'}}>server version of the data</span>. (see Figure 32)</li>
+<li><span style={{backgroundColor: '#ffff00'}}>Yellow</span>: represents a conflict in data between the local version and the server version for the same data cell. You must resolve all yellow conflicts before the Upload button appears. To resolve a conflict, right click on the relevant row, and select "Resolve Conflict." In the pop-up screen, choose whether to keep the <span style={{backgroundColor: '#c2e0c6'}}>local version of the data</span> or the <span style={{backgroundColor: '#cfe2f3'}}>server version of the data</span>.</li>
 </ul>
 </div>
 
@@ -199,7 +198,7 @@ _Figure 54 Uploading Supply Plan as Draft vs Final_
 
 ![Resolving Conflict while uploading supply plan](/img/media/image100.png)
 
-_Figure 55 Resolving Conflict while uploading supply plan_
+_Resolving Conflict while uploading supply plan_
 
 </div>
 
@@ -236,7 +235,7 @@ _Figure 55 Resolving Conflict while uploading supply plan_
 
 ![Upload Version](/img/media/image101.png)
 
-_Figure 56 Upload Version_
+_Forecasting - Upload Version_
 
 </div>
 
@@ -247,7 +246,7 @@ _Figure 56 Upload Version_
 
 <div style={{textAlign: 'center'}}>
 
-_Figure 57 Uploading Forecast as Draft vs Final_
+_Uploading Forecast as Draft vs Final_
 
 </div>
 
@@ -264,7 +263,7 @@ _Figure 57 Uploading Forecast as Draft vs Final_
 <ul style={{ marginTop: '5px', listStyleType: 'disc' }}>
 <li><span style={{backgroundColor: '#c2e0c6'}}>Green</span>: represents changes that have been made in the local version; by uploading your program, these changes will save to the online server as a new version.</li>
 <li><span style={{backgroundColor: '#cfe2f3'}}>Light blue</span>: represents changes made by another user that has already been uploaded to the live/online version - because this is a data point that you did not edit, the server version will persist for this/these records.</li>
-<li><span style={{backgroundColor: '#ffff00'}}>Yellow</span>: represents a conflict in data between the local version and the server version for the same data cell. You must resolve all yellow conflicts before the Upload button appears. To resolve a conflict, right click on the relevant row, and select "Resolve Conflict." In the pop-up screen, choose whether to keep the <span style={{backgroundColor: '#c2e0c6'}}>local version of the data</span> or the <span style={{backgroundColor: '#cfe2f3'}}>server version of the data</span>. (see Figure 42 Resolving Conflict while uploading forecast)</li>
+<li><span style={{backgroundColor: '#ffff00'}}>Yellow</span>: represents a conflict in data between the local version and the server version for the same data cell. You must resolve all yellow conflicts before the Upload button appears. To resolve a conflict, right click on the relevant row, and select "Resolve Conflict." In the pop-up screen, choose whether to keep the <span style={{backgroundColor: '#c2e0c6'}}>local version of the data</span> or the <span style={{backgroundColor: '#cfe2f3'}}>server version of the data</span>.</li>
 </ul>
 </div>
 
@@ -272,7 +271,7 @@ _Figure 57 Uploading Forecast as Draft vs Final_
 
 ![Resolving Conflict while uploading forecast](/img/media/image104.png)
 
-_Figure 58 Resolving Conflict while uploading forecast_
+_Resolving Conflict while uploading forecast_
 
 </div>
 
@@ -289,7 +288,7 @@ _Figure 58 Resolving Conflict while uploading forecast_
 
 ![Forecast Validation](/img/media/image105.png)
 
-_Figure 59: Forecast Validation_
+_Forecast Validation_
 
 </div>
 
@@ -310,7 +309,7 @@ _Figure 59: Forecast Validation_
 
 ![Supply Plan Versions and Review](/img/media/image106.png)
 
-_Figure 60: Supply Plan Versions and Review_
+_Supply Plan Versions and Review_
 
 </div>
 
@@ -345,7 +344,7 @@ Utilize the Version Notes History to view overall notes on the supply plan throu
 
 ![View Notes History Button](/img/media/image107.png)
 
-_Figure 61: View Notes History Button_
+_View Notes History Button_
 
 </div>
 
@@ -353,7 +352,7 @@ _Figure 61: View Notes History Button_
 
 ![Version Notes History Example](/img/media/image108.png)
 
-_Figure 62: Version Notes History Example_
+_Version Notes History Example_
 
 </div>
 </li>
@@ -364,7 +363,7 @@ _Figure 62: Version Notes History Example_
 
 ![Supply Plan Version and Review (second screen)](/img/media/image109.png)
 
-_Figure 63: Supply Plan Version and Review (second screen)_
+_Supply Plan Version and Review (second screen)_
 
 </div>
 </li>
@@ -417,7 +416,7 @@ Notification of <b>No Review Needed</b> supply plan:
 
 ![Export Program Screen](/img/media/image110.png)
 
-_Figure 64: Export Program Screen_
+_Export Program Screen_
 
 </div>
 
@@ -462,7 +461,7 @@ Determine whether or not you need an unencrypted version.
 
 ![Import Program Screen](/img/media/image111.png)
 
-_Figure 65: Import Program Screen_
+_Import Program Screen_
 
 </div>
 
@@ -484,12 +483,12 @@ _Figure 65: Import Program Screen_
 
 ![Version Comparison Interface](/img/media/image112.png)
 
-_Figure 66: Version Comparison_
+_Version Comparison_
 
 </div>
 
 <u>**Using this screen:**</u>
 
-1. First, select from the output filters from the dropdowns. This screen only compares 1 program at a time, but allows the user to compare multiple versions of that program. The user has the ability to compare any combination of final and draft versions as well as local and server versions. If the version has a \* next to it, this indicates that the version is final. The version notes and forecast period will appear greyed out as these are non-editable fields. To update these fields, go to ‘Update Version Settings’.
+1. First, select from the output filters from the dropdowns. This screen only compares 1 program at a time, but allows the user to compare multiple versions of that program. The user has the ability to compare any combination of final and draft versions as well as local and server versions. If the version has a \* next to it, this indicates that the version is final. The version notes and forecast period will appear greyed out as these are non-editable fields. To update these fields, go to ‘Version Settings’.
 2. Once all dropdowns are selected, a table will appear with data across for both forecast versions that were selected. For each planning unit and region combination, the table will show the selected forecast, total forecast quantity for the forecast period, and any forecast notes for that selected forecast. Each side of the table represents 1 of the 2 forecast versions selected. The top row of the table shows which version the side is showing data for.
 3. This screen can be exported in both PDF and CSV format by clicking the icons in the top right of the page.
