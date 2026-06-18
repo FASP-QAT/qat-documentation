@@ -164,7 +164,7 @@ def translate_markdown():
             # Restore HTML Tags (individual tags)
             for i, tag in enumerate(html_tags):
                 # Ensure <br> tags are self-closing for MDX compatibility
-                fixed_tag = re.sub(r'<br\s*>', '<br />', tag, flags=re.IGNORECASE)
+                fixed_tag = re.sub(r'</?br\b[^>]*>', '<br />', tag, flags=re.IGNORECASE)
                 pattern = re.compile(rf'\[{{\s*Z\s*X\s*C\s*H\s*T\s*M\s*L\s*{i}\s*Z\s*X\s*C\s*}}\]', re.IGNORECASE)
                 translated_body = pattern.sub(lambda m, t=fixed_tag: t, translated_body)
 
@@ -226,11 +226,11 @@ def translate_markdown():
             translated_body = translated_body.replace('<u> doivent être téléchargés', 'doivent être téléchargés')
             
             # 5. Fix unbalanced tags globally to prevent MDX compilation errors
-            for tag in ['u', 'b', 'i', 'strong', 'em', 'sup', 'sub']:
-                open_tag = f'<{tag}>'
-                close_tag = f'</{tag}>'
+            for tag in ['u', 'b', 'i', 'strong', 'em', 'sup', 'sub', 'ul', 'ol', 'li']:
+                open_matches = len(re.findall(rf'<{tag}\b[^>]*>', translated_body, flags=re.IGNORECASE))
+                close_matches = len(re.findall(rf'</{tag}\b[^>]*>', translated_body, flags=re.IGNORECASE))
                 # Simple check for exact tags. If count is mismatched, strip all instances of that tag.
-                if translated_body.count(open_tag) != translated_body.count(close_tag):
+                if open_matches != close_matches:
                     translated_body = re.sub(rf'</?{tag}\b[^>]*>', '', translated_body, flags=re.IGNORECASE)
             
             # Save the file
