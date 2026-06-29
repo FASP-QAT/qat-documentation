@@ -272,6 +272,9 @@ const config = {
                 path: require.resolve('path-browserify'),
               },
             },
+            optimization: {
+              concatenateModules: false,
+            },
           };
         },
       };
