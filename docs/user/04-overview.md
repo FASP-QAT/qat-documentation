@@ -9,57 +9,31 @@ sidebar_position: 4
 
 ## A. Introduction
 
-The Global Health Supply Chain – Procurement and Supply Management (GHSC-PSM) program is an official project of the United States Agency for International Development (USAID), implemented by Chemonics International and its consortium members. The purpose of GHSC-PSM is to ensure uninterrupted supplies of health commodities in support of US Government-funded public health initiatives around the world.
-
-The Forecasting and Supply Planning (FASP) tool modernization initiative was supported with funding from the U.S. President’s Emergency Plan for AIDS Relief (PEPFAR), the U.S. President’s Malaria Initiative (PMI), USAID’s family planning and reproductive health (FP/RH) program, and USAID’s maternal and child health (MCH) program, which share the cost of the project.
-
-Previous USAID-funded projects, including the Supply Chain Management Systems (SCMS) and DELIVER developed and implemented the previous suite of FASP tools used in the global health domain. These tools performed their specific functions well and achieved their main objectives. The tools, however, were designed separately, were inconsistent in terms of the user interfaces, and required manual manipulation for data exchange.
-
-The primary objectives of this initiative were to build the next generation FASP tools on a scalable and modular platform that is operating-system agnostic; a tool that is web-based with significant offline capabilities; designed to allow for seamless data exchange and sharing across key stakeholders and public health systems, as well as have a user-centric interface for overall usability and automates supply chain functions for end-to-end data visibility and evidence-based decision-making that extends across global and national supply chains and encourages coordination with all stakeholders.
-
-## B. Forecasting vs. Supply Planning
-
-A forecast is an estimate/prediction of the quantities of products to be consumed/utilized by clients or consumers over a future period of time. Supply planning is the component of supply chain management involved with determining how to best fulfill the requirements created from the demand plan. The objective is to balance supply and demand in a manner that achieves the service delivery and financial objectives of the health program.
-
-## C. What is QAT and What Can It Do for You?
-
-The Quantification Analytics Tool (QAT) is a modernized solution for country-led forecasting and supply planning. QAT leverages new technologies to enhance and modernize the functionality offered by the incumbent PipeLine and Quantimed tools by providing flexible forecasting tree structures, advanced extrapolation methodologies, scenario planning and updated planning logic. It also streamlines forecasting supply planning activities. Furthermore, the QAT enables offline functioning that helps users log their data even when there is no network coverage. QAT is changing the paradigm of legacy forecasting and planning solutions by leveraging master data management to drive standardization and increase visibility across all programs.
-
-This new tool seeks to enable users to do multi-method forecasting, compare outputs, quickly transfer the forecast to the supply plan module to optimize commodity procurement and delivery schedules, monitor the stock status of products and share data with external platforms and key stakeholders.
-
-QAT supports forecasting, monitoring, and procurement planning functions, as explained below:
+Welcome to the User Manual for the [Quantification Analytics Tool (QAT)](/docs/product/intro.md)! The Quantification Analytics Tool (QAT) is a modernized solution for country-led forecasting and supply planning. QAT has a forecasting module and a supply planning module, and can be used for any health commodity. 
 
 
+### A.1 Intended Audience 
+This manual is designed for **end-users**, providing comprehensive information on system functionality, workflows, and best practices.
 
-**QAT forecasting functions include:**
-- Forecasts based on multiple types of data.
-- Advanced extrapolation methodologies, including moving averages, semi averages, linear regression, Holt-Winters, and Auto Regressive Integrated Moving Averages (ARIMA).
-- Forecasting tree development that allows flexibility for multiple applications.
-- Visual comparison of multiple forecast outputs to drive stakeholder consensus and selection of final output.
+If you'd like  **overview & background information** on QAT, please see the [About Section](/docs/product/intro.md) to understand [what QAT is](/docs/product/intro#what-is-qat), [who should use QAT](/docs/product/intro#who-should-use-qat), [the history of QAT](/docs/product/intro#history-of-qat), and [the QAT Global Footprint](/docs/product/intro#which-countries-have-been-trained-on-qat).
 
-**QAT monitoring functions include:**
-- Monitoring stock balances, in terms of quantities and months of stocks on hand in the entire program.
-- Comparing stock balances to maximum and minimum stock parameters and identifying stock outs, balances below minimum or above maximum.
-- Automating the identification of problems such as additional procurements needed.
+**Technical administrators** should view the [Developer](/docs/developer/01_purpose.md) and [API](https://fasp-qat.github.io/qat-documentation/docs/api) sections.
 
-**Procurement planning functions include:**
-- Calculation of shortfalls/surpluses and quantities needed to maintain the program’s optimum stock levels.
-- Automated calculation and tracking of pending actions, based on lead times such as shipments to plan, order, ship, and receive.
-- Calculation of estimated shipment and freight costs.
-- Tracking estimated budget expenditures.
-- Comparison of alternative procurement scenarios and analysis.
 
-## D. Who Should Use QAT?
+### A.2 Navigation
+How to navigate this site:
+* Use the _left sidebar_  to browse the main sections of the manual and move step-by-step through different topics.
+* Use the _right sidebar_ to quickly jump to specific sub-headings *within the section or page* you are currently viewing.
+* Please also refer to the [Table of Contents](03-table-of-contents.md) for a high-level overview of the document structure. 
 
-QAT is useful to **supply planners, forecasters, Ministry of Health staff, procurers, donors and other stakeholders**, both in country and at the global level. Below is how you might use QAT to help quantification in country:
+## B. Important QAT Concepts & Terms
 
-| Forecasting | Supply Planning |
-| :--- | :--- |
-| QAT allows you to forecast using different methodologies (consumption, demographic, morbidity, services).<br/><ul><li> **Before annual quantification workshops:** Create your forecast directly in QAT, using flexible and easy-to-use templates to organize your assumptions with built-in validations to check your work –or directly apply advanced extrapolation methods to historical consumption data.</li><li> **During annual quantification workshops:** Use QAT’s built-in visualizations to guide conversations, build/update assumptions (targets, regimens, protocols, etc.) and data (country population, actual consumption imported from the supply planning module, etc.), compare methodologies, and select final forecasts.</li></ul>| QAT can be used to bring together procurements (from all funders and procurement agents), forecast consumption and inventory data to calculate future shipment quantities and timing, project future expiries, inventory, and stock status.<br/><ul><li> **Day-to-Day:** Enter inventory, consumption and shipment information in QAT as it becomes available. Actively manage your procurements and monitor your stock status in a visual and interactive way.</li><li> **Quarterly stock review meetings:** Use QAT to review supply statuses and future procurement requirements and estimate future funding gaps and stock risks.</li><li> **During annual quantification workshops:** Update QAT with your latest forecasts and plan future procurements and procurement budget requirements.</li></ul>|
+### B1. Forecasting vs. Supply Planning
 
-## E. Important QAT Concepts and Terms
+* **Forecasting**: An estimate or prediction of the quantities of products to be consumed by clients or consumers over a future period.
+* **Supply Planning**: The component of supply chain management focused on fulfilling demand plan requirements. The goal is to balance supply and demand to meet the financial and service delivery objectives of the health program.
 
-### E1. Cross-cutting terms
+### B2. Cross-cutting terms
 
 | Terms | Definitions |
 | :--- | :--- |
@@ -73,7 +47,7 @@ QAT is useful to **supply planners, forecasters, Ministry of Health staff, procu
 | **Tickets** | When a program user notices an issue with QAT (i.e. bug, system error) or would like to update/add master data, user role/access, or a program, they may submit a ticket. This ticket will be resolved by a realm or application administrator and changes made accordingly. |
 | **User Roles** | These are dedicated assignments to users that allow for different levels of access to data and functional areas within QAT. |
 
-### E2. Supply Planning Terms
+### B3. Supply Planning Terms
 
 | Terms | Definitions |
 | :--- | :--- |
@@ -93,7 +67,7 @@ QAT is useful to **supply planners, forecasters, Ministry of Health staff, procu
 | **Unmet Demand** | QAT only allows stock on hand (SOH) to be equal to or greater than zero, thus avoiding negative stock balances. Unmet demand is used by QAT to estimate quantities of product that would have been consumed if sufficient stock was available:<br/>a) When the forecast consumption is greater than the projected available beginning stock on hand for that month.<br/>b) When the actual consumption also includes periods of stock out, QAT estimates what the consumption would have been during those days without stock (even when the ending balance is greater than zero).<br/>c) When a negative manual adjustment is larger than the projected ending balance.<br/>QAT places the unmet demand in a separate row. |
 | **Volumetrics** | In QAT, programs users will be able to define volumes, and thus be able to estimate the volumetrics of orders. |
 
-### E3. Forecasting Terms
+### B4. Forecasting Terms
 
 | Terms | Definitions |
 | :--- | :--- |
@@ -103,6 +77,6 @@ QAT is useful to **supply planners, forecasters, Ministry of Health staff, procu
 | **Usage Template** | Pre-defined rates of use of specific products that can be applied across trees and programs in the forecasting module. (Section 8.B4.c Usage Templates for more) |
 | **Continuous and Discrete usage** | When defining a product’s usage rate on a forecasting tree, the user can choose whether it is continuous use (i.e., unending) or discrete use. If discrete, the user must specify the period of time the product is used for, or can also specify if the product is for single use, thus no period is required. |
 
-### Acronyms
+### B5. Acronyms
 
 For a comprehensive list of acronyms used in the QAT application and documentation, please see the [Acronyms](18-acronyms.md) page.

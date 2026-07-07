@@ -27,20 +27,25 @@ Key Features:
 * **Standardized**: Master data management to drive consistency across all programs.
 * **Better Together**: Forecasting & Supply Planning in one tool, with seamless integration between the two modules.
 * **Visually Rich**: Charts and tables to help stakeholders better understand their data and make decisions.
-* **Flexible Forecasting**: Customizable tree structures (demographic, morbidity, services) and advanced extrapolation methodologies (ARIMA, Holt-Winters, etc.)., visual output comparison, and stakeholder consensus tools.
-* **Advanced Supply Planning** With forward-looking tracking of stock balances, scenario planning, batch/expiry tracking, and in-tool supply plan review. 
-
+* **Flexible Forecasting**: 
+- Customizable tree structures (demographic, morbidity, services) to allow forecasts based on multiple types of data.
+- Advanced extrapolation methodologies, including moving averages, semi averages, linear regression, Holt-Winters, and Auto Regressive Integrated Moving Averages (ARIMA).
+- Forecasting tree development that allows flexibility for multiple applications.
+- Visual comparison of multiple forecast outputs to drive stakeholder consensus and selection of final output.
+* **Advanced Supply Planning** 
+- With forward-looking tracking of stock balances, scenario planning, batch/expiry tracking
+- Monitoring stock balances, in terms of quantities and months of stocks on hand in the entire program, visually identifying identifying overstocks, understocks and stock outs
+- Calculation of estimated shipment and freight costs and estimated budget expenditures.
+- Comparison of alternative procurement scenarios and analysis.
+- In-tool supply plan review, flagging procurement planning not matching lead time settings, missing data, or stock riss.
 
 ## Who Should Use QAT?
 
-QAT empowers local program managers to take charge of their own forecasting and procurement planning. While program managers are the primary users, the system provides vital insights for policymakers, country directors, procurers, and donors.
+QAT is useful to **supply planners, forecasters, Ministry of Health staff, procurers, donors and other stakeholders**, both in country and at the global level. Below is how you might use QAT to help quantification in country:
 
-|User Group|Purpose|
-|-|-|
-|**Supply Planners / Program Managers**|Manage procurements across multiple funding sources and procurement agents. QAT provides visibility into long-term stock status and decreases the risk of stock imbalances.|
-|**Forecast / Demand Planners**|Estimate demand using flexible templates and built-in validations. Compare methodologies and select final commodity forecasts using integrated visualizations.|
-|**Policy Makers / Directors**|Visually compare forecasts and analyze the implications of budgetary constraints or new program targets.|
-|**Procurers and Donors**|Gain clear visibility into current supply status and future procurement requirements.|
+| Forecasting | Supply Planning |
+| :--- | :--- |
+| QAT allows you to forecast using different methodologies (consumption, demographic, morbidity, services).<br/><ul><li> **Before annual quantification workshops:** Create your forecast directly in QAT, using flexible and easy-to-use templates to organize your assumptions with built-in validations to check your work –or directly apply advanced extrapolation methods to historical consumption data.</li><li> **During annual quantification workshops:** Use QAT’s built-in visualizations to guide conversations, build/update assumptions (targets, regimens, protocols, etc.) and data (country population, actual consumption imported from the supply planning module, etc.), compare methodologies, and select final forecasts.</li></ul>| QAT can be used to bring together procurements (from all funders and procurement agents), forecast consumption and inventory data to calculate future shipment quantities and timing, project future expiries, inventory, and stock status.<br/><ul><li> **Day-to-Day:** Enter inventory, consumption and shipment information in QAT as it becomes available. Actively manage your procurements and monitor your stock status in a visual and interactive way.</li><li> **Quarterly stock review meetings:** Use QAT to review supply statuses and future procurement requirements and estimate future funding gaps and stock risks.</li><li> **During annual quantification workshops:** Update QAT with your latest forecasts and plan future procurements and procurement budget requirements.</li></ul>|
 
 
 ## History of QAT
