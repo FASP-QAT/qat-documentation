@@ -2,8 +2,7 @@
 id: introduction
 title: "Introduction"
 sidebar_label: "Introduction"
-sidebar_position: 
-sidebar_class_name: hidden
+sidebar_position: 1
 ---
 
 
