@@ -1,19 +1,16 @@
 ---
 id: supply-planning-module-program-data
 title: "4. Supply Planning Module: Program Data"
-sidebar_label: "4. Supply Planning Module: Program Data"
+sidebar_label: "4. SP: Program Data"
 sidebar_position: 7
 ---
+<!-- sidebar_position: 5 -->
 
 # Section 4. Supply Planning Module: Program Data
 
-As previously defined on [Important QAT Concepts and Terms](./04-overview.md#e-important-qat-concepts-and-terms), a program is similar in structure to a PipeLine supply plan database. Each program consists of only one country, one or more technical area(s), one region (national level, central level, etc.), and one organization (MOH, PEPFAR-only, PMI-only). Every program within a realm is governed by the same standardized master data, such as product catalog, procurement agents, funding sources, data sources, etc.
+As previously defined on [Important QAT Concepts and Terms](./04-overview.md#e-important-qat-concepts-and-terms), a program in QAT is defined by one country, one or more technical area(s), one region (generally, national level, but could be sub-national), and one organization (generally MOH). 
 
-Program data management sits on the third tier of the QAT system hierarchy and is generally done by users with the roles program admin and program user (for more information on the user roles, please see [Annex 3: User Role Matrix](./15-annex-3-user-role-matrix.md)). Program-level master data managed by these users include budgets and alternate reporting units.
-
-A user can “Download” or “Delete” programs from their local machine. Programs can also be “Imported” to the local machine or “Exported” from the local machine to share with other users if there are connectivity issues.
-
-Program admins and users can manipulate two big categories of data within their programs: Program data and Transactional data (the “big 3” – consumption, inventory, shipments).
+There are two big categories of program data: Background Data (editable by program admins) and Transactional data (the “big 3” – consumption, inventory, shipments - which are editable by program admins and users).
 
 <table style={{ width: '100%', borderCollapse: 'collapse', border: '1px solid #ccc', margin: '20px 0' }}>
   <thead>
@@ -67,9 +64,13 @@ Program admins and users can manipulate two big categories of data within their 
 
 ## A. Background Data
 
-**Note:** All background data must be updated while a user is online. It is recommended that users click “master data sync” after making any background data updates so it is reflected throughout the tool.
+Every program within the Global Health realm is governed by the same standardized master data, such as product catalog, procurement agents, funding sources, data sources, etc. However, program admins can select a subset of the realm master data to use for their program and provide additional parameters 
 
-### A1. Program Information
+**Notes:** 
+- All background data must be updated while a user is online. It is recommended that users click “master data sync” after making any background data updates so it is reflected throughout the tool.
+- For more on user roles, see [Annex 3: User Role Matrix](./15-annex-3-user-role-matrix.md)). 
+
+### A1. Program Settings
 
 Program managers in QAT can define their general program parameters, by selecting from a list of dropdowns that contain realm-level master data for each the fields. These general parameters for the supply planning module include program name, program manager, default freight percentages for air, sea, & road freight, lead times by shipment status, and notes. General parameters for the forecasting module include program name, program manager, and notes. **Program users** will be able to list/view all the programs they have access to, while only **Program Admins** are able to update any of the program’s general parameters.
 
@@ -90,7 +91,9 @@ Figure 67: Update Program Info - Supply Planning Module
 
 ![Update Program Info - Supply Planning Module](/img/media/image114.png)
 
-3. Update fields as desired, and click “Submit”
+3. Program admins can scroll down to see a list of users who have access to their program. Program admins are encouraged to review this list regularly to ensure those all those users who are listed have a business purpose to view, edit or manage that supply plan.
+
+4. Update fields as desired, and click “Submit”
 
 **Note:** QAT only allows Realm-level Admin or App-level Admins to update the fields which are in gray in the Update Program Info screen. If a user requires these fields to be updated, they can take out a ticket with the [QAT HelpDesk](./05-getting-started.md#i-qat-helpdesk-and-tickets) system.
 
