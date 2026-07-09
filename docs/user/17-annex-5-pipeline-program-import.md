@@ -5,7 +5,7 @@ sidebar_label: "Annex 5: PipeLine Program Import"
 sidebar_position: 17
 ---
 
-# Section 14. Annex 5: PipeLine Program Import
+# Annex 5: PipeLine Program Import
 
 In certain cases, users will be granted a special set of credentials that can import PipeLine databases if they desire to set up their program this way (see Setting up a new program in Annex 1).
 

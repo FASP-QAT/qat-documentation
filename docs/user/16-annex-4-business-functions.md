@@ -5,7 +5,7 @@ sidebar_label: "Annex 4: Business Functions"
 sidebar_position: 16
 ---
 
-# Section 13. Annex 4: Business Functions
+# Annex 4: Business Functions
 
 Business functions are a set of capabilities available to the user. They are used when creating roles (see **Roles (App Admin only)**). Each role has one or more business functions.
 For master level data, the verbs used in the business functions are as follows:

@@ -1,16 +1,14 @@
 ---
-id: introduction
-title: "Introduction"
-sidebar_label: "Introduction"
-sidebar_position: 1
+id: supply-planning
+title: "Supply Planning"
+sidebar_label: "** Supply Planning Module **"
+sidebar_position: 4
 ---
 
+# Supply Planning Module
 
-# Introduction
+Click on any section to navigate there.
 
-Welcome to the User Manual for the [Quantification Analytics Tool (QAT)](/docs/product/intro.md)! Please refer to the [Table of Contents](03-table-of-contents.md) for a high-level overview of the document structure,
-
-This manual is designed for **end-users**, providing comprehensive information on system functionality, workflows, and best practices.
-
-**Technical administrators** should view the [Developer](/docs/developer/01_purpose.md) and [API](https://fasp-qat.github.io/qat-documentation/docs/api) sections.
-
+- [Section 4: Supply Planning Module - Program Data](07-supply-planning-module-program-data.md#supply-planning-module-program-data)
+- [Section 5: Supply Planning Module - Supply Planning](08-supply-planning-module-supply-planning.md#supply-planning-module-supply-planning)
+- [Section 6: Supply Planning Module - Reports](09-supply-planning-module-reports.md#supply-planning-module-reports)

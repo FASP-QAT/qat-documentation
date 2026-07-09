@@ -2,10 +2,10 @@
 id: overview
 title: "1. Overview"
 sidebar_label: "1. Overview"
-sidebar_position: 4
+sidebar_position: 1
 ---
 
-# Section 1. Overview
+# Section 1. Overview 
 
 ## A. Introduction
 
@@ -27,56 +27,10 @@ How to navigate this site:
 * Please also refer to the [Table of Contents](03-table-of-contents.md) for a high-level overview of the document structure. 
 
 ## B. Important QAT Concepts & Terms
-
-### B1. Forecasting vs. Supply Planning
+For a comprehensive list of QAT acronyms and terms, please see the [Acronyms & Terms](18-acronyms.md) page.
 
 * **Forecasting**: An estimate or prediction of the quantities of products to be consumed by clients or consumers over a future period.
 * **Supply Planning**: The component of supply chain management focused on fulfilling demand plan requirements. The goal is to balance supply and demand to meet the financial and service delivery objectives of the health program.
 
-### B2. Cross-cutting terms
 
-| Terms | Definitions |
-| :--- | :--- |
-| **Forecasting Unit** | The base unit that will be used for a specified forecasting period (e.g. one tablet, one condom, one milliliter). |
-| **Master Data (Sync)** | Master data is a cleaned/standardized set of data that is shared and used across a system. Many data points in QAT are standardized – for example, in the Global Health Realm, product lists, shipment statuses, data sources, etc are shared. Users can request updates and additions to this master data though a ticketing mechanism. QAT will sync master when a user logs in online or if the user chooses to manually sync. Note that for the full forecast or supply plan data, users must download the data to their local computer and upload it to the server when done. See Section 3 Managing Programs and Versions for more. |
-| **Planning Unit** | The product to be planned for in QAT. It is a product with a full description up to the primary packaging (e.g. bottle of 30 tablets, 10x10 blister pack, etc.) |
-| **Programs** | A program arises similar in structure to a PipeLine “supply plans database” in the supply planning module, or a Quantimed dataset in the forecasting module. Each program consists of only one country, one or more technical area(s), one region (national level, central level, etc.), and one organization (MOH, PEPFAR-only, PMI-only). |
-| **Realm** | QAT is subdivided into realms, each one governed by their own master data (inclusive of product catalog, funder names, procurement agent names, etc.). QAT has started with the Global Health Realm, but future realms could be set up for other fields such as education supply chains, agriculture supply chains, etc. |
-| **Region** | QAT users can capture data at sub-national levels by structuring their programs with regions. The regions are defined at the program level. If a program administrator does not have subnational-level data or prefers to enter aggregated values, the user may keep the region as “national” or “central.” To define sub-national levels, both forecast/actual consumption and inventory/adjustments must be entered at each level, which the application would then aggregate to a national total. |
-| **Technical Area** | In QAT, technical area is synonymous with commodity groups (i.e. ARV, Family Planning, Malaria, etc.) and are used to build a QAT program. |
-| **Tickets** | When a program user notices an issue with QAT (i.e. bug, system error) or would like to update/add master data, user role/access, or a program, they may submit a ticket. This ticket will be resolved by a realm or application administrator and changes made accordingly. |
-| **User Roles** | These are dedicated assignments to users that allow for different levels of access to data and functional areas within QAT. |
 
-### B3. Supply Planning Terms
-
-| Terms | Definitions |
-| :--- | :--- |
-| **Alternate Reporting Unit (ARU)** | The product and the unit that the country's data (consumption or stock) is reported in. This could be the same as the planning unit or may be different. QAT users can define an alternate reporting unit and a conversion factor (multiplier) to the planning unit. (E.g., The planning unit is one bottle of 30 tablets; inventory reported in a box of 20 bottles (alternate reporting unit) = 100; multiplier is 20. Therefore, inventory reported is converted to planning units = 20 x 100 = 2,000 bottles of 30 tablets.) See Section 4.A3 Alternate Reporting Unit for more. |
-| **Average Monthly Consumption (AMC)** | A dynamic value (could be different month to month) that determines the average quantity a product is used over a selected period of time. For QAT, the default AMC will be an average of the past three (3) months of consumption, the current month, and two (2) months into the future. If there is missing monthly consumption data within the calculated time period, it will be treated as “null,” not as zero. QAT program administrators have the ability to change the AMC time period to a maximum of 12 months into the past and 12 months into the future. |
-| **Data Source** | A data source is the location where data that is being entered into QAT originates from. Data sources should be applied for transactional records (Consumption, Inventory, Adjustments and Shipments) by QAT users. The selection of data sources for each transactional record will depend on which Data Source Type that record is for. |
-| **Enterprise resource planning (ERP)** | The software is designed to interface with different procurement management (ie Enterprise Resource Planning) systems from the various procurement agents. Initially, QAT will have an interface with ARTMIS that will enable import of USAID product information along with shipment data directly into QAT, reducing workload on planners to update shipment delivery dates, quantities, and statuses. In the future, PSM will work to engage other procurement agents to interface with their systems, thus enabling importation of shipment data from them. |
-| **Funding Source** | Funding Source is any financial institution or other entity providing funding or facilities for the program. Every shipment should be assigned a funding source. |
-| **Lead Times** | Lead times for QAT shipments have been mapped to the supply planning statuses and are inputted per product, procurement agent, or program by the QAT program administrator. There are six different lead time calculations:<br/>• Planned to Submitted: time from when a shipment is planned (need identified) until it is entered into the procurement agent’s system.<br/>• Submitted to Approved: time from when the shipment is entered into the procurement agent’s system until it is approved for procurement.<br/>• Approved to Shipped: time from when the shipment is officially approved for procurement until it is shipped by the supplier.<br/>• Shipped to Arrived (sea) and Shipped to Arrived (air): time from when the shipment has left the supplier’s location until it arrives at the port of entry.<br/>• Arrived to Received: time from when the shipment arrives at port of entry and is in the customs clearance process until it arrives at the final destination and is ready to distribute. |
-| **Minimum & Maximum Stock Levels** | The minimum stock level (in months) is determined per planning unit and is set at the program level. QAT program administrators can adjust as desired.<br/><br/>The maximum stock levels (in months) are dynamically calculated based on the minimum stock level plus the reorder interval. |
-| **Minimum Order Quantity (MOQ)** | Minimum number of units a product must be ordered in. |
-| **Months of Stock (MOS)** | This measure is conceptually the same as in PipeLine. However, due to the new AMC calculation methodology, results may vary from those seen in PipeLine. |
-| **Plan by MOS** | For products that are consumed in high quantities, planning by Months of Stock (MOS) is more appropriate. For these products, we expect:<br/>• Minimal expiries<br/>• Shipments mostly replacing consumption rather than expired product<br/>• Minimum and maximum months of Stock (MOS) rather than a minimum or maximum quantity to be the appropriate method to plan for the product.<br/>Therefore, QAT offers the option to “Plan by MOS” See Section 4.A2 Planning Units for how to update this parameter and Section 5.A Supply Planning: An Overview for more information on the supply planning implications. |
-| **Plan by Quantity** | Some products are consumed in low quantities, for emergency purposes with high expiries, such as calcium gluconate for pre-eclampsia, severe malaria treatment in the malaria elimination context, anti-venom treatment for rare bites or fire extinguishers. For these high expiry, low consumption products, we expect:<br/>• high inventory compared to consumption<br/>• high amount of expiries<br/>• shipments replacing both consumption (small percentage) and expired product (large percentage)<br/>• A minimum quantity of stock (e.g. e.g. 2 units per facility * 2,000 facilities = 4,000 min) rather than a minimum months of stock<br/>Therefore, QAT offers the option to “Plan by Quantity” See Section 4.A2 Planning Units for how to update this parameter and Section 5.A Supply Planning: An Overview for more information on the supply planning implications. |
-| **Reorder Interval** | A user-input number of months between shipments. QAT program administrators can adjust (default = 1 month) as desired. The reorder interval is used to calculate the maximum stock parameter.<br/>• For Plan by MOS, Min MOS + Reorder Interval = Max MOS.<br/>• For Plan by Quantity, Min Quantity + Reorder Interval * AMC = Max Quantity.<br/>See Section 4.A2 Planning Units for how to update this parameter. |
-| **Shipment Statuses** | Within QAT, there are a total of nine supply planning statuses that have been identified through the shipment’s lifecycle. These nine statuses are:<br/>• **Suggested:** shipments “suggested” by QAT as an early warning to avoid going below minimum stock levels. These are not actual shipments and as such, do not affect stock projections. Only when a suggested shipment is accepted and the status change to planned, will it be counted towards your stock projections.<br/>• **Planned:** could be manually entered or suggested shipments accepted by the QAT user and are included in stock projections. Must have an assigned procurement agent and funding source (which could be TBD).<br/>• **Submitted:** shipments that have been placed in a procurement management system (i.e. ARTMIS, WAMBO) and have a designated order number (i.e. RO number).<br/>• **Approved:** shipments that have been approved by the procurement agent/funder.<br/>• **Shipped:** orders that have been shipped by the supplier.<br/>• **Arrived:** shipments that have arrived at the port of entry and are in the customs clearance process.<br/>• **Received:** shipments that have been received at destination and ready to distribute.<br/>• **Cancelled:** shipment was placed in a procurement management system, but later cancelled due to various reasons. These do not count towards projected inventory balances.<br/>• **On-hold:** shipment in QAT that has been placed in the procurement management system but is waiting for decision-maker action. These do count towards projected inventory balances. |
-| **Unmet Demand** | QAT only allows stock on hand (SOH) to be equal to or greater than zero, thus avoiding negative stock balances. Unmet demand is used by QAT to estimate quantities of product that would have been consumed if sufficient stock was available:<br/>a) When the forecast consumption is greater than the projected available beginning stock on hand for that month.<br/>b) When the actual consumption also includes periods of stock out, QAT estimates what the consumption would have been during those days without stock (even when the ending balance is greater than zero).<br/>c) When a negative manual adjustment is larger than the projected ending balance.<br/>QAT places the unmet demand in a separate row. |
-| **Volumetrics** | In QAT, programs users will be able to define volumes, and thus be able to estimate the volumetrics of orders. |
-
-### B4. Forecasting Terms
-
-| Terms | Definitions |
-| :--- | :--- |
-| **Consumption-based forecast** | A prediction of future demand based on historical actual consumption data, using linear and non-linear extrapolation methodologies. (Section 8.A Consumption Forecasts for more) |
-| **Tree Forecast** | Flexible forecasting structures used to convert different types of data (demographics, morbidity, services) into commodities for the purpose of extrapolating or interpolating into the future in the forecasting module. (Section 8.B Tree Forecasts for more) |
-| **Tree Template** | Pre-defined forecasting trees that can be downloaded and customized to each user’s context in the forecasting module. (Section 8.B4.a Tree Templates for more) |
-| **Usage Template** | Pre-defined rates of use of specific products that can be applied across trees and programs in the forecasting module. (Section 8.B4.c Usage Templates for more) |
-| **Continuous and Discrete usage** | When defining a product’s usage rate on a forecasting tree, the user can choose whether it is continuous use (i.e., unending) or discrete use. If discrete, the user must specify the period of time the product is used for, or can also specify if the product is for single use, thus no period is required. |
-
-### B5. Acronyms
-
-For a comprehensive list of acronyms used in the QAT application and documentation, please see the [Acronyms](18-acronyms.md) page.

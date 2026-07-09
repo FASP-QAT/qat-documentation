@@ -5,7 +5,7 @@ sidebar_label: "Annex 1: Admin Manual"
 sidebar_position: 13
 ---
 
-# Section 10. Annex I: Application & Realm Administrator Manual
+# Annex I: Application & Realm Administrator Manual
 
 ## A. Introduction
 

@@ -1,4 +1,21 @@
 ---
+id: forecasting
+title: "Forecasting Module"
+sidebar_label: "** Forecasting Module **"
+sidebar_position: 8
+---
+
+# Forecasting Module
+
+Click on any section to navigate there.
+
+- [Section 7: Program Data](10-forecasting-module-program-data.md#forecasting-module-program-data)
+- [Section 8: Forecasting](11-forecasting-module-forecasting.md#forecasting-module-forecasting)
+- [Section 9: Reports and Outputs](12-forecasting-module-reports-and-outputs.md#forecasting-module-reports-and-outputs)
+
+<!--
+
+---
 id: table-of-contents
 title: "Table of Contents"
 sidebar_label: "Table of Contents"
@@ -6,8 +23,6 @@ sidebar_position: 1
 ---
 
 # Table of Contents
-
-Welcome to the User Manual for the Quantification Analytics Tool (QAT). This manual is designed for end-users, providing comprehensive information on system functionality, workflows, and best practices. Technical administrators should view the [Developer](/docs/developer/01_purpose.md) and [API](https://fasp-qat.github.io/qat-documentation/docs/api) sections.
 
 Click on any section to navigate to the detailed guide.
 
@@ -27,40 +42,4 @@ Click on any section to navigate to the detailed guide.
 - [Annex 5: PipeLine Program Import](17-annex-5-pipeline-program-import.md#annex-5-pipeline-program-import)
 - [Acronyms](18-acronyms.md)
 
----
-
-## Acronyms
-
-| Acronym | Definition |
-| :--- | :--- |
-| **AMC** | Average Monthly Consumption |
-| **ARIMA** | Auto Regressive Integrated Moving Average |
-| **ARTMIS** | Automated Requisition Tracking Management Information System |
-| **ARU** | Alternate Reporting Unit |
-| **ERP** | Enterprise Resource Planning |
-| **EU** | Equivalency Unit |
-| **FASP** | Forecasting and Supply Planning |
-| **FEFO** | First Expiry, First Out |
-| **FP/RH** | Family Planning and Reproductive Health |
-| **GFPVAN** | Global Family Planning Visibility and Analytics Network |
-| **GHSC-PSM** | Global Health Supply Chain – Procurement and Supply Management |
-| **GLN** | Global Location Number |
-| **GTIN** | Global Trade Item Number |
-| **MSE** | Mean Squared Error |
-| **MAPE** | Mean Absolute Percentage Error |
-| **MNCH** | Maternal, Newborn and Child Health |
-| **MOH** | Ministry of Health |
-| **MOQ** | Minimum Order Quantity |
-| **MOS** | Months of Stock |
-| **PEPFAR** | President's Emergency Plan for AIDS Relief |
-| **PMI** | U.S. President's Malaria Initiative |
-| **PWA** | Progressive Web Application |
-| **QAT** | Quantification Analytics Tool |
-| **RMSE** | Root Mean Squared Error |
-| **RO** | Requisition Order |
-| **SKU** | Stock Keeping Unit |
-| **SOH** | Stock on Hand |
-| **STG** | Standard Treatment Guidelines |
-| **TES** | Triple Exponential Smoothing (Holt-Winters) |
-| **USAID** | United States Agency for International Development |
-| **WAPE** | Weighted Absolute Percentage Error |
+-->

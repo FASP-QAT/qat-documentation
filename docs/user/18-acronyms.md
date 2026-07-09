@@ -1,10 +1,10 @@
 ---
 id: acronyms
-title: Acronyms & Definitions
-sidebar_label: Acronyms
-sidebar_position: 18
+title: Acronyms & Terms
+sidebar_label: Acronyms & Terms
+sidebar_position: 0
 ---
-# Section 15. Acronyms
+# Acronyms & Terms
 
 This page provides definitions for commonly used acronyms and terms within the QAT application and documentation.
 
@@ -12,50 +12,73 @@ If you're looking for a specific term, use Ctrl+F on your keyboard to search thi
 
 | Term | Definition |
 | :--- | :--- |
-| Alternate Reporting Unit (ARU) | The product and unit in which a country's data (consumption or stock) is reported. This may differ from the planning unit. QAT allows users to define an ARU and a conversion factor (multiplier) to the planning unit. See Section 4.A3 (Alternate Reporting Unit) for details. |
-| Application Programming Interface (API) | A set of rules and endpoints that allow QAT to securely exchange data with other systems (for example, LMIS, ARTMIS, or GFPVAN). |
-| Auto Regressive Integrated Moving Average (ARIMA) | A statistical time‑series forecasting method used to predict future consumption or demand based on historical trends and patterns. |
-| Automated Requisition Tracking Management Information System (ARTMIS) | GHSC-PSM's system for tracking procurement, shipping, and delivery status of health commodities financed by U.S. Government programs. |
-| Average Monthly Consumption (AMC) | A dynamic value calculated month-to-month based on average product usage over a specific period. See **Figure 1** below. |
-| Comma Separated Values (CSV) | A simple file format used to store and exchange tabular data, commonly used for importing and exporting data in QAT. |
-| Enterprise Resource Planning (ERP) | QAT is designed to interface with various procurement management systems (ERPs). Currently, an interface with ARTMIS enables the direct import of USAID product and shipment data which reduces manual planning efforts by auto-updating delivery dates and statuses. |
-| Equivalency Unit (EU) | A standardized unit that converts different product strengths or pack sizes into a common measure for comparison and aggregation in quantification. |
-| First Expiry, First Out (FEFO) | Inventory management principle where products with the earliest expiration dates are issued or used first to reduce wastage. |
-| Forecast / Forecasting Module (FC) | The QAT module used to generate, review, and adjust forecasts of product demand based on historical data, assumptions, and forecasting methods. |
-| Forecasting and Supply Planning (FASP) | Forecasting: An estimate or prediction of the quantities of products to be consumed by clients or consumers over a future period.<br />Supply Planning: The component of supply chain management focused on fulfilling demand plan requirements. The goal is to balance supply and demand to meet the financial and service delivery objectives of the health program. |
-| Forecasting Unit (FU) | The smallest unit of measure used in QAT when forecasting demand in QAT (for example tablets, tests, or vials). Forecasting Units are always smaller than or equal to Planning Units (PUs). |
-| Family Planning and Reproductive Health (FP/RH) | A health focus area covering commodities and services related to family planning and reproductive health. |
-| Global Family Planning Visibility and Analytics Network (GFPVAN) | A global platform that provides visibility into family planning product pipelines and supply chains, often integrated with QAT analyses. |
-| Global Health Supply Chain Program – Procurement and Supply Management (GHSC‑PSM) | A USAID‑funded program that supports procurement, supply planning, and data systems for global health commodities, including QAT. |
-| Global Location Number (GLN) | A unique identifier used to identify physical locations or organizations in supply chain systems. |
-| Global Trade Item Number (GTIN) | A globally unique identifier for products, used to distinguish specific items, pack sizes, or presentations. |
-| Inventory Turns (IT) | A performance metric indicating how many times inventory is used or replaced over a given period. |
-| JavaScript Object Notation (JSON) | A structured data format commonly used for data exchange between systems and APIs, including QAT integrations. |
-| JSON Web Token (JWT) | A secure, compact token used for authentication and authorization when accessing QAT APIs or services. |
-| Last Expiry, First Out (LEFO) | An inventory management approach where products with the latest expiration dates are issued first, generally discouraged due to increased risk of expiry. |
-| Logistics Management Information System (LMIS) | A system that collects, manages, and reports logistics and inventory data for health commodities. |
-| Maternal, Newborn and Child Health (MNCH) | A public health focus area covering health services and commodities for mothers, newborns, and children. |
-| Mean Absolute Percentage Error (MAPE) | A forecasting accuracy metric that measures the average percentage difference between forecasted and actual values. |
-| Mean Squared Error (MSE) | A statistical measure of forecast error that averages the squared differences between forecasted and actual values. |
-| Minimum Order Quantity (MOQ) | The smallest quantity of a product that can be ordered from a supplier. |
-| Ministry of Health (MOH) | The government body responsible for public health policy, planning, and oversight in a country. |
-| Months of Stock (MOS) | An inventory metric indicating how many months existing stock will last based on average consumption. See **Figure 2** below. |
-| Planning Unit (PU) | The primary unit of measure used in QAT for supply planning, typically related to product packs or logistics quantities. PUs are always larger than or equal to Forecasting Units (FUs). Supply planners can also choose to enter data in Alternate Reporting Units (ARUs). |
-| President’s Emergency Plan for AIDS Relief (PEPFAR) | A U.S. Government initiative to prevent and respond to HIV/AIDS globally. |
-| President’s Malaria Initiative (PMI) | A U.S. Government initiative aimed at reducing malaria morbidity and mortality worldwide. |
-| Progressive Web Application (PWA) | A web‑based application that offers app‑like features such as offline access and improved performance; QAT uses PWA technology. |
-| QAT Problem List (QPL) | A QAT feature that highlights data issues, inconsistencies, or warnings that may affect forecasts or supply plans. |
-| Quantification Analytics Tool (QAT) | A web‑based tool used for forecasting, supply planning, and analytics of global health commodities. |
-| Requisition Order (RO) | A formal request for commodities, typically generated to initiate procurement or replenishment. |
-| Root Mean Square Error (RMSE) | A commonly used forecasting accuracy metric that measures the square root of the average squared forecast error. |
-| Service Delivery Point (SP) | A facility or location where health services and commodities are provided directly to clients. |
-| Standard Treatment Guidelines (STG) | Official clinical guidelines that define recommended treatments and affect forecasting assumptions in QAT. |
-| Stock Keeping Unit (SKU) | A unique identifier for a specific product, strength, formulation, and pack size used at the country level. |
-| Stock on Hand (SOH) | The quantity of usable stock physically available at a specific location at a given point in time. |
-| Supply Plan / Supply Planning Module (SP) | The QAT module used to plan procurement and shipments over time to meet forecasted demand while maintaining target stock levels. |
-| Triple Exponential Smoothing (Holt‑Winters) (TES) | A time‑series forecasting method that accounts for level, trend, and seasonality in historical data. |
-| United States Agency for International Development (USAID) | The U.S. Government agency responsible for administering civilian foreign aid and development assistance. |
-| Weighted Absolute Percentage Error (WAPE) | A forecasting accuracy metric that measures total absolute error as a percentage of total actual demand, weighted by volume. |
+| **Alternate Reporting Unit (ARU)** | The product and unit in which a country's data (consumption or stock) is reported. This may differ from the planning unit. QAT users can define an alternate reporting unit and a conversion factor (multiplier) to the planning unit. (E.g., The planning unit is one bottle of 30 tablets; inventory reported in a box of 20 bottles (alternate reporting unit) = 100; multiplier is 20. Therefore, inventory reported is converted to planning units = 20 x 100 = 2,000 bottles of 30 tablets. See Section 4.A3 (Alternate Reporting Unit) for details. |
+| **Application Programming Interface (API)** | A set of rules and endpoints that allow QAT to securely exchange data with other systems (for example, LMIS, ARTMIS, or GFPVAN). |
+| **Auto Regressive Integrated Moving Average (ARIMA)** | A statistical time‑series forecasting method used to predict future consumption or demand based on historical trends and patterns. |
+| **Automated Requisition Tracking Management Information System (ARTMIS)** | GHSC-PSM's system for tracking procurement, shipping, and delivery status of health commodities financed by U.S. Government programs. |
+| **Average Monthly Consumption (AMC)** | A dynamic value calculated month-to-month based on average product usage over a specific period, and is used to calculate Months of Stock (MOS) For QAT, the default AMC will be an average of the past three (3) months of consumption, the current month, and two (2) months into the future. If there is missing monthly consumption data within the calculated time period, it will be treated as “null,” not as zero. QAT program administrators have the ability to change the AMC time period to a maximum of 12 months into the past and 12 months into the future. See **Figure 1** below. |
+| **Comma Separated Values (CSV)** | A simple file format used to store and exchange tabular data, commonly used for importing and exporting data in QAT. |
+| **Consumption-based forecast** | A prediction of future demand based on historical actual consumption data, using linear and non-linear extrapolation methodologies. (Section 8.A Consumption Forecasts for more) |
+| **Continuous and Discrete usage** | When defining a product’s usage rate on a forecasting tree, the user can choose whether it is continuous use (i.e., unending) or discrete use. If discrete, the user must specify the period of time the product is used for, or can also specify if the product is for single use, thus no period is required. |
+| **Data Source** | A data source is the location where data that is being entered into QAT originates from. Data sources should be applied for transactional records (Consumption, Inventory, Adjustments and Shipments) by QAT users. The selection of data sources for each transactional record will depend on which Data Source Type that record is for. |
+| **Enterprise resource planning (ERP) Linking** |  QAT is designed to interface with various procurement management systems (ERPs). Currently, QAT is integrated with ARTMIS, the order management system of the USG-funded GHSC-PSM procurement mechanism, and this integration enables the direct import of USG product and shipment data which reduces manual planning efforts by auto-updating delivery dates and statuses. The hope is that other procurement agent systems will be integrated in the future. Used in the supply planning module. |
+| **Equivalency Unit (EU)** | A standardized unit that converts different product strengths or pack sizes into a common measure for comparison and aggregation in quantification. |
+| **First Expiry, First Out (FEFO)** | Inventory management principle where products with the earliest expiration dates are issued or used first to reduce wastage. |
+| **Forecast / Forecasting Module (FC)** | The QAT module used to generate, review, and adjust forecasts of product demand based on historical data, assumptions, and forecasting methods. |
+| **Forecasting and Supply Planning (FASP)** | Forecasting: An estimate or prediction of the quantities of products to be consumed by clients or consumers over a future period.<br />Supply Planning: The component of supply chain management focused on fulfilling demand plan requirements. The goal is to balance supply and demand to meet the financial and service delivery objectives of the health program. |
+| **Forecasting Unit (FU)** | The smallest unit of measure used in QAT when forecasting demand in QAT (for example tablets, tests, or vials). Forecasting Units are always smaller than or equal to Planning Units (PUs). |
+| **Family Planning and Reproductive Health (FP/RH)** | A health focus area covering commodities and services related to family planning and reproductive health. |
+| **Funding Source** | Funding Source is any financial institution or other entity providing funding or facilities for the program. Every shipment should be assigned a funding source. |
+| **Global Family Planning Visibility and Analytics Network (GFPVAN)** | A global platform that provides visibility into family planning product pipelines and supply chains, often integrated with QAT analyses. |
+| **Global Health Supply Chain Program – Procurement and Supply Management (GHSC‑PSM)** | A USAID‑funded program that supports procurement, supply planning, and data systems for global health commodities, including QAT. |
+| **Global Location Number (GLN)** | A unique identifier used to identify physical locations or organizations in supply chain systems. |
+| **Global Trade Item Number (GTIN)** | A globally unique identifier for products, used to distinguish specific items, pack sizes, or presentations. |
+| **Inventory Turns (IT)** | A performance metric indicating how many times inventory is used or replaced over a given period. |
+| **JavaScript Object Notation (JSON)**| A structured data format commonly used for data exchange between systems and APIs, including QAT integrations. |
+| **JSON Web Token (JWT)** | A secure, compact token used for authentication and authorization when accessing QAT APIs or services. |
+| **Last Expiry, First Out (LEFO)** | An inventory management approach where products with the latest expiration dates are issued first, generally discouraged due to increased risk of expiry. |
+| **Lead Times** | Lead times for QAT shipments have been mapped to the supply planning statuses and are inputted per product, procurement agent, or program by the QAT program administrator. There are six different lead time calculations:<br/>• Planned to Submitted: time from when a shipment is planned (need identified) until it is entered into the procurement agent’s system.<br/>• Submitted to Approved: time from when the shipment is entered into the procurement agent’s system until it is approved for procurement.<br/>• Approved to Shipped: time from when the shipment is officially approved for procurement until it is shipped by the supplier.<br/>• Shipped to Arrived (sea) and Shipped to Arrived (air): time from when the shipment has left the supplier’s location until it arrives at the port of entry.<br/>• Arrived to Received: time from when the shipment arrives at port of entry and is in the customs clearance process until it arrives at the final destination and is ready to distribute. |
+| **Logistics Management Information System (LMIS)** | A system that collects, manages, and reports logistics and inventory data for health commodities. |
+| **Master Data Sync (MDS)** | Master data is a cleaned/standardized set of data that is shared and used across a system. Many data points in QAT are standardized – for example, in the Global Health Realm, product lists, shipment statuses, data sources, etc are shared. Users can request updates and additions to this master data though a ticketing mechanism. QAT will sync master when a user logs in online or if the user chooses to manually sync. Note that for the full forecast or supply plan data, users must download the data to their local computer and upload it to the server when done. See Section 3 Managing Programs and Versions for more. |
+| **Maternal, Newborn and Child Health (MNCH)** | A public health focus area covering health services and commodities for mothers, newborns, and children. |
+| **Mean Absolute Percentage Error (MAPE)** | A forecasting accuracy metric that measures the average percentage difference between forecasted and actual values. |
+| **Mean Squared Error (MSE)** | A statistical measure of forecast error that averages the squared differences between forecasted and actual values. |
+| **Minimum & Maximum Stock Levels** | The minimum stock level (in months) is determined per planning unit and is set at the program level. QAT program administrators can adjust as desired.<br/><br/>The maximum stock levels (in months) are dynamically calculated based on the minimum stock level plus the reorder interval. |
+| **Minimum Order Quantity (MOQ)** | The smallest quantity of a product that can be ordered from a supplier. |
+| **Ministry of Health (MOH)** | The government body responsible for public health policy, planning, and oversight in a country. |
+| **Months of Stock (MOS)** | An inventory metric indicating how many months existing stock will last based on average monthly consumption. MOS = [Ending Balance / Average Monhtly Consumption] This is dynamically calculated each month. |
+| **Plan by MOS** | For products that are consumed in high quantities, planning by Months of Stock (MOS) is more appropriate. For these products, we expect:<br/>• Minimal expiries<br/>• Shipments mostly replacing consumption rather than expired product<br/>• Minimum and maximum months of Stock (MOS) rather than a minimum or maximum quantity to be the appropriate method to plan for the product.<br/>Therefore, QAT offers the option to “Plan by MOS” See Section 4.A2 Planning Units for how to update this parameter and Section 5.A Supply Planning: An Overview for more information on the supply planning implications. |
+| **Plan by Quantity** | Some products are consumed in low quantities, for emergency purposes with high expiries, such as calcium gluconate for pre-eclampsia, severe malaria treatment in the malaria elimination context, anti-venom treatment for rare bites or fire extinguishers. For these high expiry, low consumption products, we expect:<br/>• high inventory compared to consumption<br/>• high amount of expiries<br/>• shipments replacing both consumption (small percentage) and expired product (large percentage)<br/>• A minimum quantity of stock (e.g. e.g. 2 units per facility * 2,000 facilities = 4,000 min) rather than a minimum months of stock<br/>Therefore, QAT offers the option to “Plan by Quantity” See Section 4.A2 Planning Units for how to update this parameter and Section 5.A Supply Planning: An Overview for more information on the supply planning implications. |
+| **Planning Unit** (PU)** | The primary unit of measure used in QAT for supply planning, typically related to product packs or logistics quantities (e.g. bottle of 30 tablets, 10x10 blister pack, etc.). PUs are always larger than or equal to Forecasting Units (FUs). Supply planners can also choose to enter data in Alternate Reporting Units (ARUs). |
+| **President’s Emergency Plan for AIDS Relief (PEPFAR)** | A U.S. Government initiative to prevent and respond to HIV/AIDS globally. |
+| **President’s Malaria Initiative (PMI)** | A U.S. Government initiative aimed at reducing malaria morbidity and mortality worldwide. |
+| **Programs** | A QAT program is similar in structure to a PipeLine “supply plan database” in the supply planning module, or a Quantimed "forecast dataset" in the forecasting module. A program in QAT is defined by one country, one or more technical area(s), one region (generally, national level, but could be sub-national), and one organization (generally MOH). 
+| **Progressive Web Application (PWA)** | A web‑based application that offers app‑like features such as offline access and improved performance; QAT uses PWA technology. |
+| **QAT Problem List (QPL)** | A QAT feature that highlights data issues, inconsistencies, or warnings that may affect forecasts or supply plans. |
+| **Quantification Analytics Tool (QAT)** | A web‑based tool used for forecasting, supply planning, and analytics of global health commodities. |
+| **Realm** | QAT is subdivided into realms, each one governed by their own master data (inclusive of product catalog, funder names, procurement agent names, etc.). QAT has started with the Global Health Realm, but future realms could be set up for other fields such as education supply chains, agriculture supply chains, etc. |
+| **Region** | QAT users can capture data at sub-national levels by structuring their programs with regions. The regions are defined at the program level. If a program administrator does not have subnational-level data or prefers to enter aggregated values, the user may keep the region as “national” or “central.” To define sub-national levels, both forecast/actual consumption and inventory/adjustments must be entered at each level, which the application would then aggregate to a national total. |
+| **Requisition Order (RO)** | A formal request for commodities, typically generated to initiate procurement or replenishment. |
+| **Reorder Interval** | A user-input number of months between shipments. QAT program administrators can adjust (default = 1 month) as desired. The reorder interval is used to calculate the maximum stock parameter.<br/>• For Plan by MOS, Min MOS + Reorder Interval = Max MOS.<br/>• For Plan by Quantity, Min Quantity + Reorder Interval * AMC = Max Quantity.<br/>See Section 4.A2 Planning Units for how to update this parameter. |
+| **Root Mean Square Error (RMSE)** | A commonly used forecasting accuracy metric that measures the square root of the average squared forecast error. |
+| **Service Delivery Point (SDP)** | A facility or location where health services and commodities are provided directly to clients. |
+| **Shipments** | In QAT a shipment refers to a planned or actual delivery of commodities (products) into the supply chain, and appear on the supply plan by the date they are expected to receive. The word "shipments" is used regardless of the order status.
+| **Shipment Statuses** | Within QAT, there are a total of nine supply planning statuses that have been identified through the shipment’s lifecycle. These nine statuses are:<br/>• **Suggested:** shipments “suggested” by QAT as an early warning to avoid going below minimum stock levels. These are not actual shipments and as such, do not affect stock projections. Only when a suggested shipment is accepted and the status change to planned, will it be counted towards your stock projections.<br/>• **Planned:** could be manually entered or suggested shipments accepted by the QAT user and are included in stock projections. Must have an assigned procurement agent and funding source (which could be TBD).<br/>• **Submitted:** shipments that have been placed in a procurement management system (i.e. ARTMIS, WAMBO) and have a designated order number (i.e. RO number).<br/>• **Approved:** shipments that have been approved by the procurement agent/funder.<br/>• **Shipped:** orders that have been shipped by the supplier.<br/>• **Arrived:** shipments that have arrived at the port of entry and are in the customs clearance process.<br/>• **Received:** shipments that have been received at destination and ready to distribute.<br/>• **Cancelled:** shipment was placed in a procurement management system, but later cancelled due to various reasons. These do not count towards projected inventory balances.<br/>• **On-hold:** shipment in QAT that has been placed in the procurement management system but is waiting for decision-maker action. These do count towards projected inventory balances. |
+| **Standard Treatment Guidelines (STG)** | Official clinical guidelines that define recommended treatments and affect forecasting assumptions in QAT. |
+| **Stock Keeping Unit (SKU)** | A unique identifier for a specific product, strength, formulation, and pack size used at the country level. |
+| **Stock on Hand (SOH)** | The quantity of usable stock physically available at a specific location at a given point in time. |
+| **Supply Plan / Supply Planning Module (SP)** | The QAT module used to plan procurement and shipments over time to meet forecasted demand while maintaining target stock levels. |
+| **Technical Area** | In QAT, technical area is synonymous with commodity groups (i.e. ARV, Family Planning, Malaria, etc.) and are used to build a QAT program. |
+| **Tickets** | When a program user notices an issue with QAT (i.e. bug, system error) or would like to update/add master data, user role/access, or a program, they may submit a ticket. This ticket will be resolved by a realm or application administrator and changes made accordingly. |
+| **Tree Forecast** | Flexible forecasting structures used to convert different types of data (demographics, morbidity, services) into commodities for the purpose of extrapolating or interpolating into the future in the forecasting module. (Section 8.B Tree Forecasts for more) |
+| **Tree Template** | Pre-defined forecasting trees that can be downloaded and customized to each user’s context in the forecasting module. (Section 8.B4.a Tree Templates for more) |
+| **Triple Exponential Smoothing (Holt‑Winters) (TES)** | A time‑series forecasting method that accounts for level, trend, and seasonality in historical data. |
+| **United States Government (USG)** | The U.S. Government |
+| **Unmet Demand** |  QAT only allows stock on hand (SOH) to be equal to or greater than zero, thus avoiding negative stock balances. Unmet demand is used by QAT to estimate quantities of product that would have been consumed if sufficient stock was available:<br/>a) When the forecast consumption is greater than the projected available beginning stock on hand for that month.<br/>b) When the actual consumption also includes periods of stock out, QAT estimates what the consumption would have been during those days without stock (even when the ending balance is greater than zero).<br/>c) When a negative manual adjustment is larger than the projected ending balance.<br/>QAT places the unmet demand in a separate row. Used in the Supply Planning module. |
+| **Usage Template** | Pre-defined rates of use of specific products that can be applied across trees and programs in the forecasting module. (Section 8.B4.c Usage Templates for more) |
+| **User Roles** | These are dedicated assignments to users that allow for different levels of access to data and functional areas within QAT, and are unique to each module. Common user roles in the supply planning module are supply plan program administrators, supply plan program users, or supply plan viewers. Common user roles in the forecasting module are forecast program administrators, forecast program users, or forecast viewers.  |
+<!-- do we need this | **Volumetrics** | In QAT, programs users will be able to define volumes, and thus be able to estimate the volumetrics of orders. | -->
+| **Weighted Absolute Percentage Error (WAPE)** | A forecasting accuracy metric that measures total absolute error as a percentage of total actual demand, weighted by volume. |
 
 
 <div style={{textAlign: 'center'}}>
@@ -64,8 +87,8 @@ If you're looking for a specific term, use Ctrl+F on your keyboard to search thi
 
 *Figure 1: Average Monthly Consumption (AMC) Formula*
 
-![MOS Formula](/img/media/image9.png)
+<!--![MOS Formula](/img/media/image9.png)
 
-*Figure 2: Months of Stock (MOS) Formula*
+*Figure 2: Months of Stock (MOS) Formula* -->
 
 </div>

@@ -2,7 +2,7 @@
 id: managing-programs-and-versions
 title: "3. Managing Programs and Versions"
 sidebar_label: "3. Managing Programs and Versions"
-sidebar_position: 6
+sidebar_position: 3
 ---
 
 # Section 3. Managing Programs and Versions

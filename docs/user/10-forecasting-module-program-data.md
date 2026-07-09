@@ -1,7 +1,7 @@
 ---
 id: forecasting-module-program-data
 title: "7. Forecasting Module: Program Data"
-sidebar_label: "7. Forecasting Module: Program Data"
+sidebar_label: "7. Forecast Program Data"
 sidebar_position: 10
 ---
 

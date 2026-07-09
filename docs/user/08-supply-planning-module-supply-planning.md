@@ -1,8 +1,8 @@
 ---
 id: supply-planning-module-supply-planning
 title: "5. Supply Planning Module: Supply Planning"
-sidebar_label: "5. Supply Planning Module: Supply Planning"
-sidebar_position: 8
+sidebar_label: "   5. Supply Planning"
+sidebar_position: 6
 ---
 
 # Section 5. Supply Planning Module: Supply Planning

@@ -2,7 +2,7 @@
 id: getting-started
 title: "2. Getting Started"
 sidebar_label: "2. Getting Started"
-sidebar_position: 5
+sidebar_position: 1
 ---
 
 # Section 2. Getting Started

@@ -1,10 +1,10 @@
 ---
 id: supply-planning-module-program-data
 title: "4. Supply Planning Module: Program Data"
-sidebar_label: "4. SP: Program Data"
-sidebar_position: 7
+sidebar_label: "   4. Supply Plan Program Data"
+sidebar_position: 5
 ---
-<!-- sidebar_position: 5 -->
+
 
 # Section 4. Supply Planning Module: Program Data
 

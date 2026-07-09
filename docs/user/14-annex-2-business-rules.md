@@ -5,7 +5,7 @@ sidebar_label: "Annex 2: Business Rules"
 sidebar_position: 14
 ---
 
-# Section 11. Annex 2: Business Rules
+# Annex 2: Business Rules
 
 ## A. Introduction
 

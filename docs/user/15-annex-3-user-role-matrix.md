@@ -5,7 +5,7 @@ sidebar_label: "Annex 3: User Role Matrix"
 sidebar_position: 15
 ---
 
-# Section 12. Annex 3: User Role Matrix
+# Annex 3: User Role Matrix
 
 This matrix defines the permissions for every role within QAT. Permissions are categorized by functional area.
 

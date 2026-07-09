@@ -1,7 +1,7 @@
 ---
 id: forecasting-module-reports-and-outputs
 title: "9. Forecasting Module: Reports and Outputs"
-sidebar_label: "9. Forecasting Module: Reports and Outputs"
+sidebar_label: "9. Forecast Outputs"
 sidebar_position: 12
 ---
 
