@@ -220,11 +220,7 @@ const config = {
         theme: prismThemes.github,
         darkTheme: prismThemes.dracula,
       },
-      announcementBar: {
-        id: "announcementBar_1",
-        content: "Draft version",
-        isCloseable: false,
-      },
+
     }),
 
   plugins: [
@@ -246,7 +242,7 @@ const config = {
             showSchemas: true,
             version: "2.97",
             label: "v2.97",
-            baseUrl: "api",
+            baseUrl: "/qat-documentation/docs/api",
             downloadUrl: `${rawDownloadUrl}/static/api/api-docs-2.97.json`,
             versions: {
               // previous versions
@@ -254,7 +250,7 @@ const config = {
                 specPath: "static/api/Altius-QAT-2.12-swagger.json",
                 outputDir: "docs/generated/api/v2.12",
                 label: "v2.12",
-                baseUrl: "api-2.12",
+                baseUrl: "/qat-documentation/docs/api-2.12",
                 downloadUrl: `${rawDownloadUrl}/static/api/Altius-QAT-2.12-swagger.json`,
               },
             },

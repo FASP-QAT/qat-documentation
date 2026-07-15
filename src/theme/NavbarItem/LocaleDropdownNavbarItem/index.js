@@ -18,7 +18,7 @@ export default function LocaleDropdownNavbarItem({
     siteConfig: { baseUrl },
     i18n: { currentLocale, locales, localeConfigs, defaultLocale },
   } = useDocusaurusContext();
-  const { pathname } = useLocation();
+  const { pathname, search, hash } = useLocation();
 
   const localeItems = locales.map((locale) => {
     // 1. Get the path relative to baseUrl
@@ -67,14 +67,12 @@ export default function LocaleDropdownNavbarItem({
     let finalPath = fullPath || normalizedBaseUrl;
     
     // Preserve search and hash from current URL
-    if (typeof window !== 'undefined') {
-      finalPath = `${finalPath}${window.location.search}${window.location.hash}`;
-    }
+    finalPath = `${finalPath}${search}${hash}`;
 
     return {
       label: localeConfigs[locale].label,
       lang: localeConfigs[locale].htmlLang,
-      to: `pathname://${finalPath}`,
+      href: finalPath,
       target: '_self',
       autoAddBaseUrl: false,
       className:
