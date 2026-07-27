@@ -1,5 +1,6 @@
 import React from 'react';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
+import {useAlternatePageUtils} from '@docusaurus/theme-common/internal';
 import {translate} from '@docusaurus/Translate';
 import {useLocation} from '@docusaurus/router';
 import DropdownNavbarItem from '@theme/NavbarItem/DropdownNavbarItem';
@@ -16,69 +17,57 @@ export default function LocaleDropdownNavbarItem({
 }) {
   const {
     siteConfig: { baseUrl },
-    i18n: { currentLocale, locales, localeConfigs, defaultLocale },
+    i18n: { currentLocale, locales, localeConfigs },
   } = useDocusaurusContext();
-  const { pathname, search, hash } = useLocation();
+  const alternatePageUtils = useAlternatePageUtils();
+  const { search, hash } = useLocation();
 
   const localeItems = locales.map((locale) => {
-    // 1. Get the path relative to baseUrl (strip current locale if present)
-    let baseWithoutLocale = baseUrl;
-    if (currentLocale !== defaultLocale) {
-      const regex = new RegExp(`/${currentLocale}/?$`);
-      baseWithoutLocale = baseUrl.replace(regex, '/');
-    }
-    const normalizedBaseUrl = baseWithoutLocale.endsWith('/') ? baseWithoutLocale : `${baseWithoutLocale}/`;
-    
-    let relativePath = pathname.startsWith(normalizedBaseUrl)
-      ? pathname.substring(normalizedBaseUrl.length)
-      : pathname.startsWith(baseWithoutLocale.replace(/\/$/, ''))
-        ? pathname.substring(baseWithoutLocale.replace(/\/$/, '').length)
-        : pathname;
+    // Use Docusaurus's built-in utility to get the correct URL for this locale.
+    // This properly handles baseUrl and locale prefixes without manual manipulation.
+    const alternateUrl = alternatePageUtils.createUrl({
+      locale,
+      fullyQualified: false,
+    });
 
-    // Remove leading slash if any
-    if (relativePath.startsWith('/')) {
-      relativePath = relativePath.substring(1);
-    }
+    // The alternateUrl is the full pathname for the equivalent page in the target locale.
+    // Extract just the path suffix (after the target locale's baseUrl) to check
+    // if it's a user module page.
+    // For default locale: baseUrl = /qat-documentation/
+    // For other locales: baseUrl = /qat-documentation/{locale}/
+    const targetLocaleConfig = localeConfigs[locale];
+    const targetBaseUrl = targetLocaleConfig.baseUrl || baseUrl;
+    const pathSuffix = alternateUrl.startsWith('pathname://')
+      ? alternateUrl.substring('pathname://'.length).replace(targetBaseUrl, '')
+      : alternateUrl.replace(targetBaseUrl, '');
 
-    // 2. Identify and remove any locale prefix from the relative path
-    let purePath = relativePath;
-    for (const l of locales) {
-      if (purePath === l || purePath.startsWith(`${l}/`)) {
-        purePath = purePath === l ? '' : purePath.substring(l.length + 1);
-        break;
-      }
-    }
+    // Determine if this page exists in the target locale.
+    // Only user module docs and the homepage are translated;
+    // other pages (developer, product, API) should redirect to the introduction page.
+    const isUserModule = pathSuffix.startsWith('docs/user') || pathSuffix.startsWith('full-manual');
+    const isHomePage = pathSuffix === '' || pathSuffix === '/';
 
-    // 3. Determine the target path
-    const isUserModule = purePath.startsWith('docs/user') || purePath.startsWith('full-manual');
-    const isHomePage = purePath === '' || purePath === '/';
-    
-    let targetPath;
+    let finalUrl;
     if (isUserModule || isHomePage) {
-      targetPath = purePath;
+      // Page exists in this locale — use the Docusaurus-generated URL as-is
+      finalUrl = alternateUrl;
     } else {
-      targetPath = 'docs/user/introduction';
+      // Page doesn't exist in this locale — redirect to the introduction page
+      finalUrl = `pathname://${targetBaseUrl}docs/user/introduction`;
     }
 
-    // 4. Construct the target URL
-    const localePrefix = locale === defaultLocale ? '' : `${locale}/`;
-    let fullPath = `${normalizedBaseUrl}${localePrefix}${targetPath}`.replace(/\/+/g, '/').replace(/\/$/, '');
-    
-    // If the path is exactly the baseUrl (e.g. homepage), ensure it has a trailing slash
-    // to prevent relative asset links from breaking on GitHub Pages.
-    if (fullPath === normalizedBaseUrl.replace(/\/$/, '')) {
-      fullPath = normalizedBaseUrl;
+    // Append search and hash from the current URL
+    if (search || hash) {
+      // Strip pathname:// prefix, append search/hash, then re-add prefix
+      const hasPrefix = finalUrl.startsWith('pathname://');
+      const rawUrl = hasPrefix ? finalUrl.substring('pathname://'.length) : finalUrl;
+      finalUrl = `${hasPrefix ? 'pathname://' : ''}${rawUrl}${search}${hash}`;
     }
-    
-    let finalPath = fullPath || normalizedBaseUrl;
-    
-    // Preserve search and hash from current URL
-    finalPath = `${finalPath}${search}${hash}`;
 
     return {
       label: localeConfigs[locale].label,
       lang: localeConfigs[locale].htmlLang,
-      to: `pathname://${finalPath}`,
+      to: finalUrl,
       target: '_self',
       autoAddBaseUrl: false,
       className:
@@ -114,3 +103,4 @@ export default function LocaleDropdownNavbarItem({
     />
   );
 }
+
