@@ -13,7 +13,7 @@ Click on any section to navigate there.
 - [Section 8: Forecasting](11-forecasting-module-forecasting.md#forecasting-module-forecasting)
 - [Section 9: Reports and Outputs](12-forecasting-module-reports-and-outputs.md#forecasting-module-reports-and-outputs)
 
-<!--
+{/*
 
 ---
 id: table-of-contents
@@ -42,4 +42,4 @@ Click on any section to navigate to the detailed guide.
 - [Annex 5: PipeLine Program Import](17-annex-5-pipeline-program-import.md#annex-5-pipeline-program-import)
 - [Acronyms](18-acronyms.md)
 
--->
+*/}
