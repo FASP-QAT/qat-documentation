@@ -151,7 +151,7 @@ def translate_markdown():
             translated_body = re.sub(r'</?(?:b|strong)\b[^>]*>', '**', translated_body, flags=re.IGNORECASE)
             translated_body = re.sub(r'</?(?:i|em)\b[^>]*>', '*', translated_body, flags=re.IGNORECASE)
             # Strip all other hallucinated HTML tags (p, div, a, span, li, ul, ol, table, tr, td, th, sup, sub, br, etc.)
-            translated_body = re.sub(r'</?(?:p|div|a|span|li|ul|ol|table|thead|tbody|tr|td|th|sup|sub|br|hr|img|u)\b[^>]*/?>', '', translated_body, flags=re.IGNORECASE)
+            translated_body = re.sub(r'[<>]', '', translated_body)
             
             # Clean up potential duplicate markdown stars generated from the above
             translated_body = re.sub(r'\*\*\*\*', '**', translated_body)
