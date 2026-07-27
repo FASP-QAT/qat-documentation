@@ -9,7 +9,7 @@ sidebar_position: 11
 
 ## A. Consumption Forecasts
 
-Consumption-based forecasts, which are based on historical consumption data are most useful in mature, stable programs that have a full supply of planning units and reliable data. This method can be the most reliable predictor of future consumption if the future use is predicted to be very similar to the past. Thus, a user must be able to extrapolate historical data (ideally, 24+ months of monthly actual consumption data is available) and the data must be a series of data over time (i.e. actual <u>adjusted monthly</u> consumption).
+Consumption-based forecasts, which are based on historical consumption data are most useful in mature, stable programs that have a full supply of planning units and reliable data. This method can be the most reliable predictor of future consumption if the future use is predicted to be very similar to the past. Thus, a user must be able to extrapolate historical data (ideally, 24+ months of monthly actual consumption data is available) and the data must be a series of data over time (i.e. actual **adjusted monthly** consumption).
 
 There are four basic components for a consumption forecast:
 
@@ -407,33 +407,33 @@ Node Types:
 Node Attributes:
 - **∑ Aggregation node-specific attributes:** none – it is defined by the sum of its children. For example, if there are two children nodes below the Aggregation node equal to 50 and 100, QAT would automatically add these numbers to define the Aggregation node: 50 (child) + 100 (child) = 150 (Aggregation parent).
 - **# Number node-specific attributes:**
-  - <u>Node Unit:</u> dropdown consisting of either patient, client, customer, people, or unit
-  - <u>Month:</u> choose the month/year this data was reported from. For example, if a user wants to define a number node as Country Population and the data is from January 2020, the node month should be Jan. 2020.
-  - <u>Node Value:</u> Define the number value for this node. For example, if the Country Population in January 2020 is 500,000, the node value should be 500,000. If this value changes over time, users can utilize the [Modeling/Transfer](#d-modelingtransfers) tab to specify the change.
+  - **Node Unit:** dropdown consisting of either patient, client, customer, people, or unit
+  - **Month:** choose the month/year this data was reported from. For example, if a user wants to define a number node as Country Population and the data is from January 2020, the node month should be Jan. 2020.
+  - **Node Value:** Define the number value for this node. For example, if the Country Population in January 2020 is 500,000, the node value should be 500,000. If this value changes over time, users can utilize the [Modeling/Transfer](#d-modelingtransfers) tab to specify the change.
 - **% Percentage node-specific attributes:**
-  - <u>Node Unit:</u> dropdown consisting of either patient, client, customer, people, or unit
-  - <u>Month:</u> choose the month/year this data was reported from. Typically, this will be the start month/year of the forecast.
-  - <u>Percentage of Parent:</u> define the percentage of the parent node. For example, if half of the parent number node, Country Population, are female, the percentage of parent would be 50%.
-  - <u>Parent Value for Month:</u> non-editable and provided only as a reference.
-  - <u>Node Value:</u> auto-calculated by QAT based on the percentage defined by the user and the parent value. This field is non-editable.
+  - **Node Unit:** dropdown consisting of either patient, client, customer, people, or unit
+  - **Month:** choose the month/year this data was reported from. Typically, this will be the start month/year of the forecast.
+  - **Percentage of Parent:** define the percentage of the parent node. For example, if half of the parent number node, Country Population, are female, the percentage of parent would be 50%.
+  - **Parent Value for Month:** non-editable and provided only as a reference.
+  - **Node Value:** auto-calculated by QAT based on the percentage defined by the user and the parent value. This field is non-editable.
 - <img src={require('@site/static/img/media/image279.png').default} alt="FU" style={{ width: '18px', verticalAlign: 'middle', marginRight: '4px' }} /> **Forecasting Unit node-specific attributes:**
-  - <u>Month:</u> choose the month/year this data was reported from. Typically, this will be the start month/year of the forecast.
-  - <u>Percentage of Parent:</u> define the percentage of the parent node.
-  - <u>Parent Value for Month:</u> non-editable and provided only as a reference.
-  - <u>Percentage of Parent Value for Month:</u> non-editable and provided only as a reference.
-  - <u>Tracer Category:</u> dropdown that can be used to help narrow-down forecasting units, but will be auto-filled once the forecasting unit is chosen.
-  - <u>Copy from Template:</u> advanced functionality, in which a user can utilize a [Usage Template](#c-usage-templates) to assist with building a tree efficiently. This dropdown is not required.
-  - <u>Forecasting Unit:</u> dropdown of all available forecasting unit in user program. If a forecasting unit is not available in the dropdown, user should first add it to the [Update Planning Units](10-forecasting-module-program-data.md#d-planning-units) screen.
-  - <u>Planning Unit:</u> dropdown filtered based on forecasting unit chosen. If there is only one planning unit associated with the forecasting unit, this field will automatically be pre-filled.
-  - <u>Type of Use:</u>
+  - **Month:** choose the month/year this data was reported from. Typically, this will be the start month/year of the forecast.
+  - **Percentage of Parent:** define the percentage of the parent node.
+  - **Parent Value for Month:** non-editable and provided only as a reference.
+  - **Percentage of Parent Value for Month:** non-editable and provided only as a reference.
+  - **Tracer Category:** dropdown that can be used to help narrow-down forecasting units, but will be auto-filled once the forecasting unit is chosen.
+  - **Copy from Template:** advanced functionality, in which a user can utilize a [Usage Template](#c-usage-templates) to assist with building a tree efficiently. This dropdown is not required.
+  - **Forecasting Unit:** dropdown of all available forecasting unit in user program. If a forecasting unit is not available in the dropdown, user should first add it to the [Update Planning Units](10-forecasting-module-program-data.md#d-planning-units) screen.
+  - **Planning Unit:** dropdown filtered based on forecasting unit chosen. If there is only one planning unit associated with the forecasting unit, this field will automatically be pre-filled.
+  - **Type of Use:**
     - <img src={require('@site/static/img/media/image269.png').default} alt="Discrete" style={{ width: '16px', verticalAlign: 'middle', marginRight: '4px' }} /> **Discrete:** Every _______ [parent node unit] requires _________ [forecasting unit of measure] __________ times per [day/week/month/year] for _____________ [day/week/month/year]
       - **Calculate (All in the First Month/Month-by-Month):** If selected “All in First Month,” QAT will frontload the total forecasted quantity to the node's start month. If selected “Month-by-Month,” QAT will calculate the quantity discretely month-by-month (see [Advanced Techniques](#f-advanced-techniques) for more information).
       - **Single Use (Yes/No):** allows user to determine if this forecasting unit is used over a specific period of time. If “yes” is selected, the length of time for discrete calculations is not needed.
     - <img src={require('@site/static/img/media/image268.png').default} alt="Continuous" style={{ width: '16px', verticalAlign: 'middle', marginRight: '4px' }} /> **Continuous:** Every _______ [parent node unit] requires _________ [forecasting unit of measure] every _______ [day/week/month/year]
-  - <u>Lag in months:</u> used to detail if a forecasting unit is delayed or has a phased-product usage. See [Advanced Techniques](#f-advanced-techniques) for more information.
+  - **Lag in months:** used to detail if a forecasting unit is delayed or has a phased-product usage. See [Advanced Techniques](#f-advanced-techniques) for more information.
 - <img src={require('@site/static/img/media/image261.png').default} alt="PU" style={{ width: '18px', verticalAlign: 'middle', marginRight: '4px' }} /> **Planning Unit node-specific attributes:** node automatically created when the forecasting unit is added to a tree. Most attributes in the add/edit node screen are non-editable and only for reference; however, a few can be updated based on specific circumstances:
-  - <u>Month:</u> choose the month/year this data was reported from. Typically, this will be the start month/year of the forecast.
-  - <u>Calculation Override:</u> users can choose to use QAT's auto-calculation for number of Planning Units by clicking “Yes” or manually input a value by clicking “No.” See [Advanced Techniques](#f-advanced-techniques) for more information.
+  - **Month:** choose the month/year this data was reported from. Typically, this will be the start month/year of the forecast.
+  - **Calculation Override:** users can choose to use QAT's auto-calculation for number of Planning Units by clicking “Yes” or manually input a value by clicking “No.” See [Advanced Techniques](#f-advanced-techniques) for more information.
 
   - *Percentage of Parent:* define the percentage of the parent node.
 
@@ -519,7 +519,7 @@ For more information and specific examples of changes over time, see [Modeling/T
 
 Forecasting trees are built from the top-down using different types of [nodes](#a-node-types--functions). Each forecast tree must start with either an Aggregation node or a Number node, and include one or more Planning Unit nodes. Planning Unit nodes must be the child of a Forecasting Unit node. Thus, a user must have at least three levels of nodes (Aggregation/Number node, Forecasting Unit node, and Planning Unit node) to produce a forecast output.
 
-**<u>Steps for Building a Manual Tree:</u>**
+****Steps for Building a Manual Tree:****
 <ol style={{ listStyleType: 'decimal', paddingLeft: '20px' }}>
   <li style={{ marginBottom: '15px' }}>Download a program</li>
   <li style={{ marginBottom: '15px' }}>Navigate to the Forecasting Tree → Manage Tree screen</li>
@@ -756,7 +756,7 @@ Click on the modeling calculator <img src={require('@site/static/img/media/image
       <li style={{ marginBottom: '10px' }}>The <strong>Start Date</strong> and <strong>Target Date</strong> will be filled in based on the original inputs for Start date and End date in the modeling table, which are by default, based on the forecast period. The user can change these if desired. These two dates will flow back into the modeling table.</li>
       <li style={{ marginBottom: '10px' }}>The <strong>Start Value</strong> is the node value at beginning of the month for the <strong>Start Date</strong>, as calculated by QAT. In other words, the <strong>Start Value</strong> is the node value before any modeling changes occur. This field is calculated and cannot be directly changed by the user. If the <strong>Start Date</strong> is the month after the “Month” on the <strong>Node Data</strong> tab, then the <strong>Start Value</strong> is equal to the "Node Value” provided by the user on the <strong>Node Data</strong> tab.</li>
       <li style={{ marginBottom: '10px' }}><strong>Period</strong> is calculated as <strong>Target Date</strong> - <strong>Start Date</strong> (in months). This value is not displayed in the front-end of QAT, but is used in the formulas below.</li>
-      <li style={{ marginBottom: '10px' }}>Based on the available data or assumptions, enter data in <u>one</u> of the following fields: <strong>Target Ending Value</strong>, <strong>Target Change (%)</strong> or <strong>Target Change (#)</strong></li>
+      <li style={{ marginBottom: '10px' }}>Based on the available data or assumptions, enter data in **one** of the following fields: <strong>Target Ending Value</strong>, <strong>Target Change (%)</strong> or <strong>Target Change (#)</strong></li>
       <li style={{ marginBottom: '10px' }}>After an input is developed, the other fields will be automatically populated, as well the final <strong>'Calculated Month-on-Month Change'</strong>.</li>
       <li>When user clicks 'Accept', the <strong>Monthly Change (% or #)</strong> will be populated back in the main modeling table, based on the formulas below. All negative changes will be displayed as “decrease” and positive changes displayed as “increase”, with the number shown in absolute value.</li>
     </ol>
@@ -1217,9 +1217,9 @@ o There are 10 patients that require 1 bottle for treatment over the course of 6
 
 **Use cases:**
 
-  - <u>Viral Load tests</u> are used by various populations, but all populations will use the same mix of instruments. Start with a demographic tree which ends in multiple populations. The different populations need to be summed and the various instrument branches sit under the sum.
-  - <u>Malaria Patients</u> enter the health system through different channels (community health workers vs public health facilities), which have different testing algorithms, but once a patient tests positive, they receive the same “mix” of treatments. The different populations testing positive need to summed and the various treatment regimens sit under the sum
-  - Various <u>Contraceptive Methods</u> differ in how they are calculated, but they all derive from the same country population, which needs to be updated each quantification, and may have modeling over time. One tree can be built for implants and injectables, and another built for condoms, but the two trees are linked together at the country population node so their values remain consistent
+  - **Viral Load tests** are used by various populations, but all populations will use the same mix of instruments. Start with a demographic tree which ends in multiple populations. The different populations need to be summed and the various instrument branches sit under the sum.
+  - **Malaria Patients** enter the health system through different channels (community health workers vs public health facilities), which have different testing algorithms, but once a patient tests positive, they receive the same “mix” of treatments. The different populations testing positive need to summed and the various treatment regimens sit under the sum
+  - Various **Contraceptive Methods** differ in how they are calculated, but they all derive from the same country population, which needs to be updated each quantification, and may have modeling over time. One tree can be built for implants and injectables, and another built for condoms, but the two trees are linked together at the country population node so their values remain consistent
 
 **How to link values**
 
