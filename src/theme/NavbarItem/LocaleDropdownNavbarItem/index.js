@@ -21,12 +21,18 @@ export default function LocaleDropdownNavbarItem({
   const { pathname, search, hash } = useLocation();
 
   const localeItems = locales.map((locale) => {
-    // 1. Get the path relative to baseUrl
-    const normalizedBaseUrl = baseUrl.endsWith('/') ? baseUrl : `${baseUrl}/`;
+    // 1. Get the path relative to baseUrl (strip current locale if present)
+    let baseWithoutLocale = baseUrl;
+    if (currentLocale !== defaultLocale) {
+      const regex = new RegExp(`/${currentLocale}/?$`);
+      baseWithoutLocale = baseUrl.replace(regex, '/');
+    }
+    const normalizedBaseUrl = baseWithoutLocale.endsWith('/') ? baseWithoutLocale : `${baseWithoutLocale}/`;
+    
     let relativePath = pathname.startsWith(normalizedBaseUrl)
       ? pathname.substring(normalizedBaseUrl.length)
-      : pathname.startsWith(baseUrl.replace(/\/$/, ''))
-        ? pathname.substring(baseUrl.replace(/\/$/, '').length)
+      : pathname.startsWith(baseWithoutLocale.replace(/\/$/, ''))
+        ? pathname.substring(baseWithoutLocale.replace(/\/$/, '').length)
         : pathname;
 
     // Remove leading slash if any
