@@ -141,70 +141,76 @@ const config = {
           },
         ],
       },
-      // footer: {
-      //   style: 'light',
-      //   links: [
-      //     {
-      //       title: 'QAT Links',
-      //       items: [
-      //         {
-      //           label: 'Login',
-      //           href: 'https://www.quantificationanalytics.org',
-      //         },
-      //         {
-      //           label: 'Login (Demo)',
-      //           href: 'https://demo.quantificationanalytics.org',
-      //         },
-      //         {
-      //           label: 'QAT Helpdesk',
-      //           href: 'https://qathelpdesk.atlassian.net/servicedesk/customer/portals',
-      //         },
-      //         {
-      //           label: 'QAT website',
-      //           href: 'https://www.ghsupplychain.org/quantificationanalyticstool',
-      //         }
-      //       ],
-      //     },
-      //     {
-      //       title: 'Guides',
-      //       items: [
-      //         {
-      //           label: 'End-User Guide',
-      //           to: 'docs/user/intro',
-      //         },
-      //         {
-      //           label: 'Developer Onboarding',
-      //           to: 'docs/developer/intro',
-      //         },
-      //         {
-      //           label: 'Contributor Guide',
-      //           to: 'docs/community/intro',
-      //         },
-      //       ],
-      //     },
-      //     {
-      //       title: 'About QAT',
-      //       items: [
-      //         {
-      //           label: 'Overview',
-      //           href: 'https://www.ghsupplychain.org/sites/default/files/2023-02/QAT_Overview_External.pdf',
-      //         },
-      //         {
-      //           label: 'User Guide',
-      //           to: 'full-manual?print=true',
-      //         },
-      //         {
-      //           label: 'Reports Reference',
-      //           href: 'https://www.ghsupplychain.org/sites/default/files/2023-11/Reports%20Reference%20Sheet.pdf'
-      //         },
-      //         {
-      //           label: 'Reports e-learning module',
-      //           href: 'https://cloud.scorm.com/sc/InvitationConfirmEmail?publicInvitationId=ea8db62e-7ea9-4ba5-bafc-a81a2f427d70',
-      //         },
-      //       ],
-      //     },
-      //   ],
-      // },
+      footer: {
+        style: 'light',
+        logo: {
+          alt: 'Digital Public Goods Badge',
+          src: 'https://github.com/DPGAlliance/dpg-resources/blob/main/docs/assets/dpg-badge/dpg-badge.png?raw=true',
+          href: 'https://www.digitalpublicgoods.net/r/quantification-analytics-tool',
+          width: 100,
+        },
+        links: [
+          {
+            title: 'QAT Links',
+            items: [
+              {
+                label: 'Login',
+                href: 'https://www.quantificationanalytics.org',
+              },
+              {
+                label: 'Login (Demo)',
+                href: 'https://demo.quantificationanalytics.org',
+              },
+              {
+                label: 'QAT Helpdesk',
+                href: 'https://qathelpdesk.atlassian.net/servicedesk/customer/portals',
+              },
+              {
+                label: 'QAT website',
+                href: 'https://www.ghsupplychain.org/quantificationanalyticstool',
+              }
+            ],
+          },
+          {
+            title: 'Guides',
+            items: [
+              {
+                label: 'End-User Guide',
+                to: 'docs/user/intro',
+              },
+              {
+                label: 'Developer Onboarding',
+                to: 'docs/developer/intro',
+              },
+              {
+                label: 'Contributor Guide',
+                to: 'docs/community/intro',
+              },
+            ],
+          },
+          {
+            title: 'About QAT',
+            items: [
+              {
+                label: 'Overview',
+                href: 'https://www.ghsupplychain.org/sites/default/files/2023-02/QAT_Overview_External.pdf',
+              },
+              {
+                label: 'User Guide',
+                to: 'full-manual?print=true',
+              },
+              {
+                label: 'Reports Reference',
+                href: 'https://www.ghsupplychain.org/sites/default/files/2023-11/Reports%20Reference%20Sheet.pdf'
+              },
+              {
+                label: 'Reports e-learning module',
+                href: 'https://cloud.scorm.com/sc/InvitationConfirmEmail?publicInvitationId=ea8db62e-7ea9-4ba5-bafc-a81a2f427d70',
+              },
+            ],
+          },
+        ],
+      },
       zoom: {
         selector: '.markdown :not(em) > img',
         background: {

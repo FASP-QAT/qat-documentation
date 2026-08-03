@@ -20,7 +20,12 @@ function HomepageHeader() {
         </Heading>
         <p style={{ textAlign: 'center', maxWidth: '800px', margin: '2rem auto', fontSize: '1.2rem' }}>
           The Quantification Analytics Tool (QAT) is a cloud-based software for country-led forecasting and supply planning (FASP). QAT has a forecasting module and a supply planning module, and can be used for any health commodity.
-          </p>
+        </p>
+        <div style={{ textAlign: 'center', margin: '1rem 0' }}>
+          <a href="https://www.digitalpublicgoods.net/r/quantification-analytics-tool" target="_blank" rel="noopener noreferrer">
+            <img src="https://github.com/DPGAlliance/dpg-resources/blob/main/docs/assets/dpg-badge/dpg-badge.png?raw=true" width="100" alt="Digital Public Goods Badge" />
+          </a>
+        </div>
       </div>
     </header>
   );
