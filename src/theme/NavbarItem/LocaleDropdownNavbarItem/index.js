@@ -17,7 +17,7 @@ export default function LocaleDropdownNavbarItem({
 }) {
   const {
     siteConfig: { baseUrl },
-    i18n: { currentLocale, locales, localeConfigs },
+    i18n: { currentLocale, defaultLocale, locales, localeConfigs },
   } = useDocusaurusContext();
   const alternatePageUtils = useAlternatePageUtils();
   const { search, hash } = useLocation();
@@ -33,10 +33,18 @@ export default function LocaleDropdownNavbarItem({
     // The alternateUrl is the full pathname for the equivalent page in the target locale.
     // Extract just the path suffix (after the target locale's baseUrl) to check
     // if it's a user module page.
-    // For default locale: baseUrl = /qat-documentation/
-    // For other locales: baseUrl = /qat-documentation/{locale}/
-    const targetLocaleConfig = localeConfigs[locale];
-    const targetBaseUrl = targetLocaleConfig.baseUrl || baseUrl;
+    
+    // Calculate the global base URL by stripping the current locale if necessary
+    const globalBaseUrl = currentLocale === defaultLocale
+      ? baseUrl
+      : baseUrl.endsWith(`/${currentLocale}/`)
+        ? baseUrl.slice(0, -currentLocale.length - 1)
+        : baseUrl;
+
+    const targetBaseUrl = locale === defaultLocale 
+      ? globalBaseUrl 
+      : `${globalBaseUrl}${locale}/`;
+
     const pathSuffix = alternateUrl.startsWith('pathname://')
       ? alternateUrl.substring('pathname://'.length).replace(targetBaseUrl, '')
       : alternateUrl.replace(targetBaseUrl, '');
