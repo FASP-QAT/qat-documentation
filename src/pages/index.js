@@ -23,7 +23,7 @@ function HomepageHeader() {
         </p>
         <div style={{ textAlign: 'center', margin: '1rem 0' }}>
           <a href="https://www.digitalpublicgoods.net/r/quantification-analytics-tool" target="_blank" rel="noopener noreferrer">
-            <img src="https://github.com/DPGAlliance/dpg-resources/blob/main/docs/assets/dpg-badge/dpg-badge.png?raw=true" width="100" alt="Digital Public Goods Badge" />
+            <img src="https://github.com/DPGAlliance/dpg-resources/blob/main/docs/assets/dpg-badge/dpg-badge-w.png?raw=true" width="100" alt="Digital Public Goods Badge" />
           </a>
         </div>
       </div>
