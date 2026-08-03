@@ -11,9 +11,9 @@ def translate_markdown():
         return
 
     target_languages = {
-        'fr': 'French',
+        
         'es': 'Spanish',
-        'pt': 'Portuguese'
+        
     }
     
     for lang_code, lang_name in target_languages.items():
@@ -226,10 +226,18 @@ def translate_markdown():
             translated_body = translated_body.replace('<u> doivent être téléchargés', 'doivent être téléchargés')
             
             # 5. Fix unbalanced tags globally to prevent MDX compilation errors
-            for tag in ['u', 'b', 'i', 'strong', 'em', 'sup', 'sub', 'ul', 'ol', 'li']:
-                open_matches = len(re.findall(rf'<{tag}\b[^>]*>', translated_body, flags=re.IGNORECASE))
+            # Dynamically find all tags present in the translated body
+            all_tags = set(re.findall(r'</?([a-zA-Z0-9]+)\b', translated_body, flags=re.IGNORECASE))
+            self_closing_tags = {'br', 'hr', 'img', 'input', 'meta', 'link'}
+            
+            for tag in all_tags:
+                if tag.lower() in self_closing_tags:
+                    continue
+                    
+                open_matches = len(re.findall(rf'<{tag}\b[^>]*(?<!/)>', translated_body, flags=re.IGNORECASE))
                 close_matches = len(re.findall(rf'</{tag}\b[^>]*>', translated_body, flags=re.IGNORECASE))
-                # Simple check for exact tags. If count is mismatched, strip all instances of that tag.
+                
+                # If count is mismatched, strip all instances of that tag.
                 if open_matches != close_matches:
                     translated_body = re.sub(rf'</?{tag}\b[^>]*>', '', translated_body, flags=re.IGNORECASE)
             
