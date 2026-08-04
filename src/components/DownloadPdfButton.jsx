@@ -1,15 +1,17 @@
 import React, { useState } from 'react';
 import useBaseUrl from '@docusaurus/useBaseUrl';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
+import { useAlternatePageUtils } from '@docusaurus/theme-common/internal';
 import { useDoc } from '@docusaurus/plugin-content-docs/client';
 import { useLocation } from '@docusaurus/router';
 import IconLanguage from '@theme/Icon/Language';
 
 export default function DownloadPdfButton({ label, showEverywhere = false, className }) {
   const { siteConfig, i18n } = useDocusaurusContext();
-  const { pathname } = useLocation();
+  const { search, hash } = useLocation();
   const { baseUrl } = siteConfig;
-  const { currentLocale, locales, localeConfigs, defaultLocale } = i18n;
+  const { currentLocale, defaultLocale, locales, localeConfigs } = i18n;
+  const alternatePageUtils = useAlternatePageUtils();
   const [isGenerating, setIsGenerating] = useState(false);
   
   // Detection logic
@@ -29,38 +31,51 @@ export default function DownloadPdfButton({ label, showEverywhere = false, class
     return null;
   }
 
+  // Use the same URL generation logic as the topbar LocaleDropdownNavbarItem
   const getLocalePath = (targetLocale) => {
-    const normalizedBaseUrl = baseUrl.endsWith('/') ? baseUrl : `${baseUrl}/`;
-    let relativePath = pathname.startsWith(normalizedBaseUrl)
-      ? pathname.substring(normalizedBaseUrl.length)
-      : pathname;
+    const alternateUrl = alternatePageUtils.createUrl({
+      locale: targetLocale,
+      fullyQualified: false,
+    });
 
-    if (relativePath.startsWith('/')) {
-      relativePath = relativePath.substring(1);
-    }
+    // Calculate the global base URL by stripping the current locale if necessary
+    const globalBaseUrl = currentLocale === defaultLocale
+      ? baseUrl
+      : baseUrl.endsWith(`/${currentLocale}/`)
+        ? baseUrl.slice(0, -currentLocale.length - 1)
+        : baseUrl;
 
-    let purePath = relativePath;
-    for (const l of locales) {
-      if (purePath === l || purePath.startsWith(`${l}/`)) {
-        purePath = purePath === l ? '' : purePath.substring(l.length + 1);
-        break;
-      }
-    }
+    const targetBaseUrl = targetLocale === defaultLocale
+      ? globalBaseUrl
+      : `${globalBaseUrl}${targetLocale}/`;
 
-    const isUserModuleOnTarget = purePath.startsWith('docs/user') || purePath.startsWith('full-manual');
-    const isHomePage = purePath === '' || purePath === '/';
-    
-    let targetPath;
+    const pathSuffix = alternateUrl.startsWith('pathname://')
+      ? alternateUrl.substring('pathname://'.length).replace(targetBaseUrl, '')
+      : alternateUrl.replace(targetBaseUrl, '');
+
+    // Only user module docs and the homepage are translated;
+    // other pages redirect to the introduction page.
+    const isUserModuleOnTarget = pathSuffix.startsWith('docs/user') || pathSuffix.startsWith('full-manual');
+    const isHomePage = pathSuffix === '' || pathSuffix === '/';
+
+    let finalUrl;
     if (isUserModuleOnTarget || isHomePage) {
-      targetPath = purePath;
+      finalUrl = alternateUrl;
     } else {
-      targetPath = 'docs/user/introduction';
+      finalUrl = `pathname://${targetBaseUrl}docs/user/introduction`;
     }
 
-    const localePrefix = targetLocale === defaultLocale ? '' : `${targetLocale}/`;
-    const fullPath = `${normalizedBaseUrl}${localePrefix}${targetPath}`.replace(/\/+/g, '/').replace(/\/$/, '');
-    
-    return fullPath || normalizedBaseUrl;
+    // Append search and hash from the current URL
+    if (search || hash) {
+      const hasPrefix = finalUrl.startsWith('pathname://');
+      const rawUrl = hasPrefix ? finalUrl.substring('pathname://'.length) : finalUrl;
+      finalUrl = `${hasPrefix ? 'pathname://' : ''}${rawUrl}${search}${hash}`;
+    }
+
+    // Strip pathname:// prefix for use as plain href
+    return finalUrl.startsWith('pathname://')
+      ? finalUrl.substring('pathname://'.length)
+      : finalUrl;
   };
 
   const printUrl = useBaseUrl('/full-manual');
