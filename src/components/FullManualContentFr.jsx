@@ -20,8 +20,8 @@ import Part17 from '../../i18n/fr/docusaurus-plugin-content-docs/current/user/17
 import Part18 from '../../i18n/fr/docusaurus-plugin-content-docs/current/user/18-acronyms.md';
 
 const parts = [
-  Part01, Part02, Part03, Part04, Part05, Part06, Part07, Part08, Part09,
-  Part10, Part11, Part12, Part13, Part14, Part15, Part16, Part17, Part18
+  Part18, Part04, Part05, Part06, Part01, Part07, Part08, Part09,
+  Part03, Part10, Part11, Part12, Part13, Part14, Part15, Part16, Part17, Part02
 ];
 
 export default function FullManualContentFr() {

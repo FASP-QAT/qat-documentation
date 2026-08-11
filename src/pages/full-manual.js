@@ -12,7 +12,10 @@ export default function FullManualPage() {
     const params = new URLSearchParams(window.location.search);
     if (params.get('print') === 'true') {
       const timer = setTimeout(() => {
+        const originalTitle = document.title;
+        document.title = "User Manual";
         window.print();
+        setTimeout(() => { document.title = originalTitle; }, 100);
       }, 1000);
       return () => clearTimeout(timer);
     }

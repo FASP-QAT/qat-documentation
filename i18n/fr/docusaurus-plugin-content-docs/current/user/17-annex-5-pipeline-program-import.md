@@ -1,54 +1,108 @@
 ---
 id: annex-5-pipeline-program-import
-title: "Annexe 5 : Importation du programme PipeLine"
-sidebar_label: "Annexe 5 : Importation du programme PipeLine"
+title: "Annex 5: PipeLine Program Import"
+sidebar_label: "Annex 5: PipeLine Program Import"
 sidebar_position: 17
 ---
 # Annexe 5 : Importation du programme PipeLine
 
-Cette annexe détaille le processus de migration des anciennes bases de données **PipeLine** vers QAT. Il s'agit d'un processus en trois étapes : conversion, téléchargement et mappage des données.
+Dans certains cas, les utilisateurs recevront un ensemble spécial d'informations d'identification leur permettant d'importer des bases de données PipeLine s'ils souhaitent configurer leur programme de cette manière (voir Configuration d'un nouveau programme dans l'Annexe 1).
 
-> [!IMPORTANT]
-> **Prérequis :**
-> - **Logiciel :** Java JDK 1.8 ou supérieur doit être installé sur votre machine.
-> - **Qualité des données :** Votre base de données PipeLine (.accdb) ne doit pas contenir de valeurs d'inventaire négatives. Assurez-vous que toutes les données d’expédition, de stock et de consommation sont finalisées avant de commencer.
+## Étape 1 : Convertissez le fichier .accdb en fichier JSON :
 
----
+*À propos de l'outil de conversion PipeLine Access DB en JSON :* Étant donné que le système QAT est uniquement capable d'importer les données du programme au format JSON et que les bases de données PipeLine sont au format .accdb, QAT dispose d'un outil téléchargeable pour convertir le fichier .accdb en fichier JSON, permettant ainsi l'importation dans QAT. Une fois installé, cet outil ne nécessite pas d'accès Internet pour fonctionner. De plus, cet outil permet à l'utilisateur de choisir sa langue préférée.
 
-## Étape 1 : Convertir .accdb en JSON
-QAT nécessite des données au format JSON. Utilisez l'**outil de conversion PipeLine** pour cette conversion.
+1. Confirmez que vous disposez de la configuration système requise appropriée :
+   - Système d'exploitation : *Windows / Linux / Ubuntu*
+   - Autres logiciels : *Java JDK 1.8 et supérieur.*
+2. Confirmez que vos données PipeLine sont entièrement mises à jour :
+   - La base de données ne peut pas avoir de valeurs d'inventaire négatives.
+   - Toutes les données d'expédition, de stock, de consommation doivent être mises à jour.
+3. Allez dans « Gestion des programmes » et cliquez sur « Importation de programmes PipeLine ».
+4. Dans le coin supérieur droit, cliquez sur le bouton « Ajouter ». Cela mènera à un écran de saisie de fichier.
+5. Cliquez sur la flèche vers le bas dans le coin supérieur droit.
+6. Cliquez sur « Télécharger PipeLine Converter » à l'écran, puis sélectionnez le système d'exploitation de votre ordinateur (Windows ou Linux). Le convertisseur sera téléchargé dans un fichier zip.
+7. Ouvrez le fichier du convertisseur et exécutez l'outil (fichier .exe / fichier exécutable .java), l'écran suivant s'affichera :
 
-1. Accédez à **Gestion des programmes > Importation du programme PipeLine**.
-2. Cliquez sur le bouton **Ajouter (+)**, puis cliquez sur l'icône **Télécharger (↓)** en haut à droite.
-3. Sélectionnez votre système d'exploitation (Windows ou Linux) et téléchargez le fichier `.zip`.
-4. Extrayez et exécutez le convertisseur (exécutable ou fichier `.jar`).
-5. **Dans le convertisseur :**
-   - **Source :** Parcourez et sélectionnez votre fichier `.accdb`.
-   - **Destination :** Sélectionnez le dossier dans lequel le fichier `.json` résultant doit être enregistré.
-   - Cliquez sur **Convertir**. Une notification apparaîtra en cas de succès.
+<div style={{textAlign: 'center'}}>
 
----
+![Caution Message during PipeLine Import](/img/media/image406.png)
 
-## Étape 2 : Importer sur QAT
-Une fois que vous disposez du fichier `.json`, vous devez le télécharger sur le serveur QAT.
+*Figure 251: Caution Message during PipeLine Import*
 
-1. Dans QAT, revenez à **Gestion des programmes > Importation de programmes PipeLine**.
-2. Cliquez sur **Ajouter (+)**.
-3. Parcourez et sélectionnez votre fichier `.json` converti.
-4. Cliquez sur **Soumettre**. Vous recevrez un message de réussite et le nouveau programme apparaîtra dans la liste d'importation.
+</div>
 
----
+<div style={{textAlign: 'center'}}>
 
-## Étape 3 : Assistant de mappage de données
-La dernière étape consiste à mapper les champs PipeLine existants aux données principales au niveau du domaine de QAT.
+![PipeLine Import Screen](/img/media/image407.jpg)
 
-Cliquez sur la ligne de votre programme importé pour lancer l'**Mapping Wizard**. Vous naviguerez à travers les écrans suivants :
-1. **Informations sur le programme** : cartographiez les domaines techniques et les organisations.
-2. **Unités de planification** : liez les produits PipeLine aux unités de planification QAT.
-3. **Données et sources de financement** : cartographiez les partenaires logistiques et financiers.
-4. **Expéditions et inventaire** : examen final des enregistrements importés.
+*Figure 252: PipeLine Import Screen*
 
-> [!ASTUCE]
-> Utilisez les boutons **Suivant** et **Retour** pour naviguer. Si le système détecte un stock négatif lors de la dernière étape, un avertissement apparaîtra ; vous devez résoudre ces écarts dans les données sources ou lors du mappage.
+</div>
 
-Une fois terminé, le programme sera entièrement actif dans **Gestion du programme > Mettre à jour les informations sur le programme**, où il pourra être téléchargé pour une planification active des approvisionnements.
+8. Cliquez sur le premier bouton Parcourir pour rechercher le fichier .accdb souhaité à importer.
+
+<div style={{textAlign: 'center'}}>
+
+![PipeLine Import Screen – Browse](/img/media/image408.png)
+
+*Figure 253: PipeLine Import Screen – Browse*
+
+</div>
+
+9. Cliquez sur le deuxième bouton Parcourir pour sélectionner l'emplacement où le fichier converti sera stocké sur l'ordinateur local de l'utilisateur.
+10. Cliquez sur Convertir. Lorsque le fichier est converti au format .json, vous recevrez la notification ci-dessous :
+
+<div style={{textAlign: 'center'}}>
+
+![Successful Import PipeLine Screen](/img/media/image409.jpg)
+
+*Figure 254: Successful Import PipeLine Screen*
+
+</div>
+
+## Étape 2 : Téléchargez le fichier JSON dans QAT :
+
+11. Dans QAT, accédez à l'élément de menu "Program Management" &gt; "PipeLine Program Import".
+12. Cliquez sur le bouton "Ajouter" et un nouvel écran s'ouvrira. Parcourez pour trouver le fichier JSON converti (de l’étape 1) à partir de la machine locale. Cliquez sur "Envoyer".
+13. Une fois le processus terminé, l'utilisateur recevra un message indiquant que le programme a été importé avec succès.
+14. Ce programme sera affiché sous forme de ligne dans la liste des programmes. Cliquez sur cette ligne pour passer à l'étape 3.
+
+Remarque : lors de la configuration du programme, l'utilisateur de QAT peut sélectionner plusieurs domaines techniques dans la liste déroulante des domaines techniques.
+
+<div style={{textAlign: 'center'}}>
+
+![PipeLine program import, multiple technical areas](/img/media/image410.png)
+
+*Figure 255: PipeLine program import, multiple technical areas*
+
+</div>
+
+## Étape 3 : Configurer les données à importer dans QAT
+
+Après avoir importé les données PipeLine, l'utilisateur naviguera à travers une série d'écrans où il sera invité à saisir des données. Après avoir modifié les données sur un écran, l'utilisateur doit cliquer sur « Suivant » pour passer à l'écran de saisie de données suivant. Si nécessaire, accédez aux écrans précédents en cliquant sur « Retour ». L'utilisateur doit naviguer à travers les écrans suivants : informations sur le programme, unités de planification, source de données, source de financement, agent d'approvisionnement, consommation, inventaire et expéditions.
+
+<div style={{textAlign: 'center'}}>
+
+![PipeLine Import - Country](/img/media/image411.jpg)
+
+*Figure 256: PipeLine Import - Country*
+
+</div>
+
+Chacun de ces écrans principaux comporte des sous-écrans dans lesquels les utilisateurs doivent saisir des données et mapper les données PipeLine actuelles aux données principales au niveau du domaine QAT ; par exemple, les produits PipeLine doivent être mappés aux unités de planification de QAT. À la dernière étape (écran d'expédition), une fenêtre contextuelle s'affichera si un programme contient un inventaire négatif.
+
+<div style={{textAlign: 'center'}}>
+
+![Pipeline Import - Planning Units](/img/media/image412.jpg)
+
+*Figure 257: Pipeline Import - Planning Units*
+
+</div>
+
+## Une fois le fichier importé avec succès dans QAT :
+
+1. Les utilisateurs peuvent accéder à « Gestion du programme ».
+2. Cliquez sur l'élément de menu "Programmes".
+3. La liste des programmes affichera le programme importé.
+4. L'utilisateur peut désormais « Télécharger », « Importer » et « Exporter » ce programme.

@@ -11,9 +11,9 @@ def translate_markdown():
         return
 
     target_languages = {
-        
+        'fr': 'French',
         'es': 'Spanish',
-        
+        'pt': 'Portuguese'
     }
     
     for lang_code, lang_name in target_languages.items():
