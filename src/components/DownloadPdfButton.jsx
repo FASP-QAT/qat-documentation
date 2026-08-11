@@ -117,6 +117,9 @@ export default function DownloadPdfButton({ label, showEverywhere = false, class
     iframe.onload = () => {
         setTimeout(() => {
             try {
+                if (iframe.contentDocument) {
+                    iframe.contentDocument.title = "User Manual";
+                }
                 iframe.contentWindow.focus();
                 iframe.contentWindow.print();
             } catch (err) {

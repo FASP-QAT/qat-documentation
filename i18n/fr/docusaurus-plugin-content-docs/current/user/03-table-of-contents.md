@@ -1,12 +1,29 @@
 ---
-id: table-of-contents
-title: "Table des matières"
-sidebar_label: "Table des matières"
-sidebar_position: 3
+id: forecasting
+title: "Forecasting Module"
+sidebar_label: "** Forecasting Module **"
+sidebar_position: 8
 ---
+# Module de prévision
+
+Cliquez sur n’importe quelle section pour y accéder.
+
+- [Section 7 : Données du programme](10-forecasting-module-program-data.md#forecasting-module-program-data)
+- [Section 8 : Prévisions](11-forecasting-module-forecasting.md#forecasting-module-forecasting)
+- [Section 9 : Rapports et résultats](12-forecasting-module-reports-and-outputs.md#forecasting-module-reports-and-outputs)
+
+{/*
+
+---
+identifiant : table des matières
+titre : "Table des matières"
+sidebar_label : "Table des matières"
+position_barre latérale : 1
+---
+
 # Table des matières
 
-Vous trouverez ci-dessous la répartition complète de la documentation utilisateur de QAT. Cliquez sur n’importe quelle section pour accéder au guide détaillé.
+Cliquez sur n’importe quelle section pour accéder au guide détaillé.
 
 - [Section 1 : Présentation](04-overview.md#overview)
 - [Section 2 : Démarrage](05-getting-started.md#getting-started)
@@ -24,40 +41,4 @@ Vous trouverez ci-dessous la répartition complète de la documentation utilisat
 - [Annexe 5 : Importation du programme PipeLine](17-annex-5-pipeline-program-import.md#annex-5-pipeline-program-import)
 - [Acronymes](18-acronymes.md)
 
----
-
-## Acronymes
-
-| Acronyme | Définition |
-| :--- | :--- |
-| **AMC** | Consommation mensuelle moyenne |
-| **ARIMA** | Moyenne mobile intégrée auto régressive |
-| **ARTMIS** | Système d'information automatisé de gestion du suivi des demandes |
-| **ARU** | Unité de reporting alternative |
-| **ERP** | Planification des ressources de l'entreprise |
-| **UE** | Unité d'équivalence |
-| **FASP** | Prévisions et planification des approvisionnements |
-| **FEFO** | Première expiration, premier sorti |
-| **FP/HR** | Planification familiale et santé reproductive |
-| **GFPVAN** | Réseau mondial de visibilité et d'analyse sur la planification familiale |
-| **GHSC-PSM** | Chaîne d'approvisionnement mondiale en santé – Gestion des achats et des approvisionnements |
-| **GLN** | Numéro d'emplacement mondial |
-| **GTIN** | Numéro d'article du commerce mondial |
-| **MSE** | Erreur quadratique moyenne |
-| **MAP** | Erreur moyenne absolue en pourcentage |
-| **SMNI** | Santé de la mère, du nouveau-né et de l'enfant |
-| **Ministre de la Santé** | Ministère de la Santé |
-| **MOQ** | Quantité minimum de commande |
-| **MOS** | Mois de stock |
-| **PEPFAR** | Plan d'urgence du Président pour la lutte contre le SIDA |
-| **PMI** | Initiative du président américain contre le paludisme |
-| **PWA** | Application Web progressive |
-| **QAT** | Outil d'analyse de quantification |
-| **RMSE** | Erreur quadratique moyenne |
-| **RO** | Ordre de réquisition |
-| **SKU** | Unité de gestion des stocks |
-| **SOH** | Stock disponible |
-| **STG** | Directives de traitement standard |
-| **TES** | Lissage exponentiel triple (Holt-Winters) |
-| **USAID** | Agence des États-Unis pour le développement international |
-| **WAPE** | Erreur de pourcentage absolu pondéré |
+*/}

@@ -1,16 +1,13 @@
 ---
-id: introduction
-title: "Introducción"
-sidebar_label: "Introducción"
-sidebar_position: 1
+id: supply-planning
+title: "Supply Planning"
+sidebar_label: "** Supply Planning Module **"
+sidebar_position: 4
 ---
+# Módulo de planificación de suministros
 
+Haga clic en cualquier sección para navegar allí.
 
-# Introducción
-
-Bienvenido al Manual de usuario de la herramienta de análisis de cuantificación (QAT). Este manual está diseñado para usuarios finales y proporciona información completa sobre la funcionalidad del sistema, los flujos de trabajo y las mejores prácticas. Los administradores técnicos deben ver las secciones [Desarrollador](/docs/developer/01_Purpose.md) y [API](https://fasp-qat.github.io/qat-documentation/docs/api).
-
-
-La herramienta de análisis de cuantificación (QAT) es una solución modernizada para la previsión y la planificación del suministro dirigidas por los países. QAT aprovecha tecnologías avanzadas para aprovechar la funcionalidad de herramientas heredadas como PipeLine y Quantimed.
-
-Para obtener una descripción general de alto nivel de la estructura del documento, consulte la [Tabla de contenido] (03-table-of-contents.md).
+- [Sección 4: Módulo de planificación de suministros - Datos del programa](07-supply-planning-module-program-data.md#supply-planning-module-program-data)
+- [Sección 5: Módulo de planificación de suministros - Planificación de suministros](08-supply-planning-module-supply-planning.md#supply-planning-module-supply-planning)
+- [Sección 6: Módulo de planificación de suministros - Informes](09-supply-planning-module-reports.md#supply-planning-module-reports)

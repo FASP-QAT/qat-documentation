@@ -1,12 +1,29 @@
 ---
-id: table-of-contents
-title: "Índice"
-sidebar_label: "Índice"
-sidebar_position: 3
+id: forecasting
+title: "Forecasting Module"
+sidebar_label: "** Forecasting Module **"
+sidebar_position: 8
 ---
+# Módulo de previsão
+
+Clique em qualquer seção para navegar até lá.
+
+- [Seção 7: Dados do Programa](10-forecasting-module-program-data.md#forecasting-module-program-data)
+- [Seção 8: Previsão](11-forecasting-module-forecasting.md#forecasting-module-forecasting)
+- [Seção 9: Relatórios e resultados](12-forecasting-module-reports-and-outputs.md#forecasting-module-reports-and-outputs)
+
+{/*
+
+---
+id: índice
+título: "Índice"
+sidebar_label: "Índice"
+posição_da barra lateral: 1
+---
+
 # Índice
 
-Abaixo está o detalhamento completo da documentação do usuário QAT. Clique em qualquer seção para navegar até o guia detalhado.
+Clique em qualquer seção para navegar até o guia detalhado.
 
 - [Seção 1: Visão geral](04-overview.md#overview)
 - [Seção 2: Primeiros passos](05-getting-started.md#getting-started)
@@ -24,40 +41,4 @@ Abaixo está o detalhamento completo da documentação do usuário QAT. Clique e
 - [Anexo 5: Importação do Programa PipeLine](17-annex-5-pipeline-program-import.md#annex-5-pipeline-program-import)
 - [Siglas](18-acrônimos.md)
 
----
-
-## Siglas
-
-| Sigla | Definição |
-| :--- | :--- |
-| **AMC** | Consumo Médio Mensal |
-| **ARIMA** | Média Móvel Integrada Auto Regressiva |
-| **ARTMIS** | Sistema automatizado de informações de gerenciamento de rastreamento de requisições |
-| **ARU** | Unidade de Relatório Alternativa |
-| **ERP** | Planejamento de recursos empresariais |
-| **UE** | Unidade de Equivalência |
-| **FASP** | Previsão e Planejamento de Fornecimento |
-| **FEFO** | Primeiro vencimento, primeiro a sair |
-| **PF/RH** | Planejamento Familiar e Saúde Reprodutiva |
-| **GFPVAN** | Rede global de visibilidade e análise de planejamento familiar |
-| **GHSC-PSM** | Cadeia Global de Abastecimento de Saúde – Aquisição e Gestão de Abastecimento |
-| **GLN** | Número de localização global |
-| **GTIN** | Número global de item comercial |
-| **MSE** | Erro Quadrático Médio |
-| **MAPE** | Erro percentual médio absoluto |
-| **MNCH** | Saúde Materna, Neonatal e Infantil |
-| **MOH** | Ministério da Saúde |
-| **Quantidade mínima** | Quantidade mínima de pedido |
-| **MOS** | Meses de estoque |
-| **PEPFAR** | Plano de Emergência do Presidente para o Alívio da SIDA |
-| **PMI** | Iniciativa do Presidente dos EUA contra a Malária |
-| **PWA** | Aplicativo Web Progressivo |
-| **QAT** | Ferramenta de análise de quantificação |
-| **RMSE** | Erro quadrático médio da raiz |
-| **RO** | Ordem de requisição |
-| **SKU** | Unidade de manutenção de estoque |
-| **SOH** | Estoque disponível |
-| **STG** | Diretrizes de tratamento padrão |
-| **TES** | Suavização Exponencial Tripla (Holt-Winters) |
-| **USAID** | Agência dos Estados Unidos para o Desenvolvimento Internacional |
-| **WAPE** | Erro percentual absoluto ponderado |
+*/}

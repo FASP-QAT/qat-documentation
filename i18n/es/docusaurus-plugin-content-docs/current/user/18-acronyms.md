@@ -1,58 +1,102 @@
 ---
 id: acronyms
-title: "Acrónimos y definiciones"
-sidebar_label: "Acrónimos y definiciones"
-sidebar_position: 18
+title: Acronyms & Terms
+sidebar_label: Acronyms & Terms
+sidebar_position: 0
 ---
-# Acrónimos y definiciones
+# Acrónimos y términos
 
 Esta página proporciona definiciones de acrónimos y términos comúnmente utilizados dentro de la aplicación y documentación QAT.
 
-## Cadena de suministro y logística
+Si está buscando un término específico, use Ctrl+F en su teclado para buscar el término directamente en esta página.
 
-| Acrónimo | Definición |
+| Término | Definición |
 | :--- | :--- |
-| **AMC** | Consumo Promedio Mensual |
-| **ARU** | Unidad de informes alternativa |
-| **FASP** | Previsión y planificación de suministros |
-| **FEFO** | Primer vencimiento, primero en salir |
-| **FU** | Unidad de Previsión |
-| **ESO** | Turnos de inventario |
-| **LEFO** | Último vencimiento, primero en salir |
-| **SMIS** | Sistema de Información de Gestión Logística |
-| **MOS** | Meses de Stock |
-| **PU** | Unidad de Planificación |
-| **PDS** | Punto de prestación de servicios |
-| **WAPE** | Error porcentual absoluto ponderado |
+| **Unidad de informes alternativa (ARU)** | El producto y la unidad en la que se reportan los datos de un país (consumo o existencias). Esto puede diferir de la unidad de planificación. Los usuarios de QAT pueden definir una unidad de informes alternativa y un factor de conversión (multiplicador) a la unidad de planificación. (Por ejemplo, la unidad de planificación es un frasco de 30 tabletas; el inventario reportado en una caja de 20 frascos (unidad de informe alternativa) = 100; el multiplicador es 20. Por lo tanto, el inventario reportado se convierte a unidades de planificación = 20 x 100 = 2000 frascos de 30 tabletas. Consulte la Sección 4.A3 (Unidad de informe alternativa) para obtener más detalles. |
+| **Interfaz de programación de aplicaciones (API)** | Un conjunto de reglas y puntos finales que permiten a QAT intercambiar datos de forma segura con otros sistemas (por ejemplo, LMIS, ARTMIS o GFPVAN). |
+| **Promedio móvil integrado regresivo automático (ARIMA)** | Un método estadístico de pronóstico de series de tiempo utilizado para predecir el consumo o la demanda futuros basándose en tendencias y patrones históricos. |
+| **Sistema automatizado de información de gestión de seguimiento de solicitudes (ARTMIS)** | Sistema de GHSC-PSM para rastrear el estado de adquisición, envío y entrega de productos sanitarios financiados por programas del gobierno de EE. UU. |
+| **Consumo Promedio Mensual (CMM)** | Un valor dinámico calculado mes a mes en función del uso promedio del producto durante un período específico y se utiliza para calcular los meses de existencias (MOS). Para QAT, el AMC predeterminado será un promedio de los últimos tres (3) meses de consumo, el mes actual y dos (2) meses en el futuro. Si faltan datos de consumo mensual dentro del período de tiempo calculado, se tratará como "nulo", no como cero. Los administradores del programa QAT tienen la capacidad de cambiar el período de tiempo de AMC a un máximo de 12 meses en el pasado y 12 meses en el futuro. Consulte la **Figura 1** a continuación. |
+| **Valores separados por comas (CSV)** | Un formato de archivo simple utilizado para almacenar e intercambiar datos tabulares, comúnmente utilizado para importar y exportar datos en QAT. |
+| **Previsión basada en el consumo** | Una predicción de la demanda futura basada en datos históricos de consumo real, utilizando metodologías de extrapolación lineal y no lineal. (Sección 8.A Previsiones de Consumo para más información) |
+| **Uso continuo y discreto** | Al definir la tasa de uso de un producto en un árbol de pronóstico, el usuario puede elegir si es un uso continuo (es decir, interminable) o un uso discreto. Si es discreto, el usuario debe especificar el período de tiempo durante el cual se utiliza el producto, o también puede especificar si el producto es para un solo uso, por lo que no se requiere ningún período. |
+| **Fuente de datos** | Una fuente de datos es la ubicación desde donde se originan los datos que se ingresan en QAT. Los usuarios de QAT deben aplicar fuentes de datos para registros transaccionales (consumo, inventario, ajustes y envíos). La selección de fuentes de datos para cada registro transaccional dependerá de para qué tipo de fuente de datos sea ese registro. |
+| **Vinculación de planificación de recursos empresariales (ERP)** |  QAT está diseñado para interactuar con varios sistemas de gestión de adquisiciones (ERP). Actualmente, QAT está integrado con ARTMIS, el sistema de gestión de pedidos del mecanismo de adquisiciones GHSC-PSM financiado por el Gobierno de los Estados Unidos, y esta integración permite la importación directa de datos de productos y envíos del Gobierno de los Estados Unidos, lo que reduce los esfuerzos de planificación manual al actualizar automáticamente las fechas y estados de entrega. La esperanza es que en el futuro se integren otros sistemas de agentes de adquisiciones. Se utiliza en el módulo de planificación de suministros. |
+| **Unidad de Equivalencia (UE)** | Una unidad estandarizada que convierte diferentes concentraciones de productos o tamaños de paquetes en una medida común para comparación y agregación en la cuantificación. |
+| **Primero vencimiento, primero en salir (FEFO)** | Principio de gestión de inventario según el cual los productos con las fechas de vencimiento más tempranas se emiten o utilizan primero para reducir el desperdicio. |
+| **Módulo de pronóstico/previsión (FC)** | El módulo QAT se utiliza para generar, revisar y ajustar pronósticos de demanda de productos en función de datos históricos, suposiciones y métodos de pronóstico. |
+| **Previsión y planificación de suministros
 
-## Términos de la solicitud QAT
+(FASP)** | Previsión: estimación o predicción de las cantidades de productos que consumirán los clientes o consumidores durante un período futuro.<br />Planificación del suministro: el componente de la gestión de la cadena de suministro centrado en cumplir los requisitos del plan de demanda. El objetivo es equilibrar la oferta y la demanda para cumplir con los objetivos financieros y de prestación de servicios del programa de salud. |
+| **Unidad de pronóstico (FU)** | La unidad de medida más pequeña utilizada en QAT al pronosticar la demanda en QAT (por ejemplo, tabletas, pruebas o viales). Las Unidades de Previsión son siempre menores o iguales que las Unidades de Planificación (PU). |
+| **Planificación familiar y salud reproductiva (PF/SR)** | Un área de enfoque de salud que cubre productos y servicios relacionados con la planificación familiar y la salud reproductiva. |
+| **Fuente de financiación** | Fuente de financiamiento es cualquier institución financiera u otra entidad que proporcione financiamiento o instalaciones para el programa. A cada envío se le debe asignar una fuente de financiación. |
+| **Red global de visibilidad y análisis de la planificación familiar (GFPVAN)** | Una plataforma global que proporciona visibilidad de las carteras de productos de planificación familiar y las cadenas de suministro, a menudo integrada con análisis QAT. |
+| **Programa Global de Cadena de Suministro de Salud – Gestión de Adquisiciones y Suministros (GHSC-PSM)** | Un programa financiado por USAID que apoya la adquisición, la planificación del suministro y los sistemas de datos para productos sanitarios globales, incluido QAT. |
+| **Número de ubicación global (GLN)** | Un identificador único utilizado para identificar ubicaciones físicas u organizaciones en los sistemas de la cadena de suministro. |
+| **Número global de artículo comercial (GTIN)** | Un identificador único a nivel mundial para productos, utilizado para distinguir artículos, tamaños de envases o presentaciones específicos. |
+| **Turnos de inventario (TI)** | Una métrica de rendimiento que indica cuántas veces se utiliza o reemplaza el inventario durante un período determinado. |
+| **Notación de objetos JavaScript (JSON)**| Un formato de datos estructurados comúnmente utilizado para el intercambio de datos entre sistemas y API, incluidas las integraciones QAT. |
+| **Token web JSON (JWT)** | Un token compacto y seguro que se utiliza para la autenticación y autorización al acceder a las API o servicios de QAT. |
+| **Último vencimiento, primero en salir (LEFO)** | Un enfoque de gestión de inventario en el que los productos con las últimas fechas de vencimiento se emiten primero, generalmente no se recomienda debido al mayor riesgo de vencimiento. |
+| **Plazos de entrega** | Los plazos de entrega para los envíos QAT se han asignado a los estados de planificación de suministro y el administrador del programa QAT los ingresa por producto, agente de adquisiciones o programa. Hay seis cálculos de plazo de entrega diferentes:<br />• Planificado a enviado: tiempo desde que se planifica un envío (necesidad identificada) hasta que se ingresa en el sistema del agente de adquisiciones.<br />• Enviado a aprobado: tiempo desde que se ingresa el envío en el sistema del agente de adquisiciones hasta que se aprueba para la adquisición.<br />• Aprobado para Enviado: tiempo desde que el envío se aprueba oficialmente para su adquisición hasta que es enviado por el proveedor.<br />• Enviado hasta la llegada (marítimo) y Envío hasta la llegada (aéreo): tiempo desde que el envío sale de la ubicación del proveedor hasta que llega al puerto de entrada.<br />• Llegado a la recepción: tiempo desde que el envío llega al puerto de entrada y está en el proceso de despacho de aduana hasta que llega a el destino final y está listo para distribuir. |
+| **Sistema de información de gestión logística (LMIS)** | Un sistema que recopila, gestiona y notifica datos de logística e inventario de productos sanitarios. |
+| **Sincronización de datos maestros (MDS)** | Los datos maestros son un conjunto de datos limpios/estandarizados que se comparten y utilizan en todo un sistema. Muchos puntos de datos en QAT están estandarizados; por ejemplo, en el ámbito de la salud global, se comparten listas de productos, estados de envío, fuentes de datos, etc. Los usuarios pueden solicitar actualizaciones y adiciones a estos datos maestros a través de un mecanismo de emisión de tickets. QAT sincronizará el maestro cuando un usuario inicie sesión en línea o si el usuario elige sincronizar manualmente. Tenga en cuenta que para obtener los datos completos de previsión o plan de suministro, utilice
 
-| Acrónimo | Definición |
-| :--- | :--- |
-| **FC** | Módulo de Previsión / Forecasting |
-| **QAT** | Herramienta de análisis de cuantificación |
-| **CPL** | Lista de problemas QAT |
-| **SP** | Plan de Abastecimiento / Módulo de Planificación de Abastecimiento |
-| **TRA** | Área Técnica |
+Los usuarios deben descargar los datos a su computadora local y cargarlos en el servidor cuando terminen. Consulte la Sección 3 Administrar programas y versiones para obtener más información. |
+| **Salud materna, neonatal e infantil (MNCH)** | Un área de enfoque de salud pública que cubre servicios y productos de salud para madres, recién nacidos y niños. |
+| **Error porcentual absoluto medio (MAPE)** | Una métrica de precisión de pronóstico que mide la diferencia porcentual promedio entre los valores pronosticados y reales. |
+| **Error cuadrático medio (MSE)** | Una medida estadística del error de pronóstico que promedia las diferencias al cuadrado entre los valores pronosticados y reales. |
+| **Niveles de stock mínimo y máximo** | El nivel de stock mínimo (en meses) se determina por unidad de planificación y se establece a nivel de programa. Los administradores del programa QAT pueden ajustarlo según lo deseen.<br /><br />Los niveles máximos de existencias (en meses) se calculan dinámicamente en función del nivel mínimo de existencias más el intervalo de reorden. |
+| **Cantidad mínima de pedido (MOQ)** | La cantidad más pequeña de un producto que se puede pedir a un proveedor. |
+| **Ministerio de Salud (MINSA)** | El organismo gubernamental responsable de las políticas, planificación y supervisión de la salud pública en un país. |
+| **Meses de existencias (MOS)** | Una métrica de inventario que indica cuántos meses durarán las existencias existentes en función del consumo mensual promedio. MOS = [Saldo final / Consumo mensual promedio] Esto se calcula dinámicamente cada mes. |
+| **Plan por MOS** | Para productos que se consumen en grandes cantidades, la planificación por Meses de Stock (MOS) es más adecuada. Para estos productos, esperamos:<br />• Vencimientos mínimos<br />• Envíos que reemplazan principalmente el consumo en lugar de productos vencidos<br />• Meses de existencias (MOS) mínimos y máximos en lugar de una cantidad mínima o máxima como método apropiado para planificar el producto.<br />Por lo tanto, QAT ofrece la opción de "Planificar por MOS” Consulte la Sección 4.A2 Unidades de planificación para saber cómo actualizar este parámetro y la Sección 5.A Planificación de suministros: descripción general para obtener más información sobre las implicaciones de la planificación de suministros. |
+| **Planificar por cantidad** | Algunos productos se consumen en pequeñas cantidades, con fines de emergencia y con una caducidad elevada, como el gluconato de calcio para la preeclampsia, el tratamiento grave de la malaria en el contexto de la eliminación de la malaria, el tratamiento antiveneno para picaduras raras o los extintores. Para estos productos de bajo consumo y vencimiento alto, esperamos:<br />• inventario alto en comparación con el consumo<br />• gran cantidad de vencimientos<br />• envíos que reemplazan tanto el consumo (porcentaje pequeño) como el producto vencido (porcentaje grande)<br />• Una cantidad mínima de existencias (p. ej., 2 unidades por instalación) * 2000 instalaciones = 4000 min) en lugar de un mínimo de meses de stock<br />Por lo tanto, QAT ofrece la opción de "Planificar por cantidad". Consulte la Sección 4.A2 Unidades de planificación para saber cómo actualizar este parámetro y la Sección 5.A Planificación de suministro: descripción general para obtener más información sobre las implicaciones de la planificación de suministro. |
+| **Unidad de Planificación** (PU)** | La unidad de medida principal utilizada en QAT para la planificación del suministro, generalmente relacionada con paquetes de productos o cantidades logísticas (por ejemplo, frasco de 30 tabletas, blister de 10x10, etc.). Las PU siempre son mayores o iguales que las Unidades de pronóstico (FU). Los planificadores de suministros también pueden optar por ingresar datos en Unidades de informes alternativas (ARU). |
+| **Plan de Emergencia del Presidente para el Alivio del SIDA (PEPFAR)** | Una iniciativa del gobierno de Estados Unidos para prevenir y responder al VIH/SIDA a nivel mundial. |
+| **Iniciativa del Presidente contra la Malaria (PMI)** | Una iniciativa del gobierno de EE. UU. destinada a reducir la morbilidad y mortalidad por malaria en todo el mundo. |
+| **Programas** | Un programa QAT tiene una estructura similar a una "base de datos de planes de suministro" de PipeLine en el módulo de planificación de suministros, o a un "conjunto de datos de pronóstico" de Quantimed en el módulo de pronóstico. Un programa en QAT está definido por un país, una o más áreas técnicas, una región (generalmente a nivel nacional, pero puede ser subnacional) y una organización.
 
-## Organizaciones y sistemas
+zación (generalmente Ministerio de Salud). 
+| **Aplicación web progresiva (PWA)** | Una aplicación basada en web que ofrece funciones similares a las de una aplicación, como acceso sin conexión y rendimiento mejorado; QAT utiliza tecnología PWA. |
+| **Lista de problemas QAT (QPL)** | Una función QAT que resalta problemas de datos, inconsistencias o advertencias que pueden afectar los pronósticos o los planes de suministro. |
+| **Herramienta de análisis de cuantificación (QAT)** | Una herramienta basada en web que se utiliza para realizar pronósticos, planificación de suministros y análisis de productos sanitarios globales. |
+| **Reino** | QAT se subdivide en ámbitos, cada uno de los cuales se rige por sus propios datos maestros (incluidos el catálogo de productos, los nombres de los financiadores, los nombres de los agentes de adquisiciones, etc.). QAT comenzó con el ámbito de la salud global, pero se podrían establecer ámbitos futuros para otros campos, como las cadenas de suministro de educación, cadenas de suministro de agricultura, etc. |
+| **Región** | Los usuarios de QAT pueden capturar datos a niveles subnacionales estructurando sus programas con regiones. Las regiones se definen a nivel de programa. Si un administrador del programa no tiene datos a nivel subnacional o prefiere ingresar valores agregados, el usuario puede mantener la región como "nacional" o "central". Para definir niveles subnacionales, se deben ingresar tanto el consumo previsto/real como el inventario/ajustes en cada nivel, que luego la aplicación agregaría a un total nacional. |
+| **Orden de solicitud (RO)** | Una solicitud formal de productos básicos, generalmente generada para iniciar la adquisición o el reabastecimiento. |
+| **Intervalo de reorden** | Un número de meses ingresado por el usuario entre envíos. Los administradores del programa QAT pueden ajustar (predeterminado = 1 mes) según lo deseen. El intervalo de reorden se utiliza para calcular el parámetro de stock máximo.<br />• Para plan por MOS, MOS mínimo + intervalo de reorden = MOS máximo.<br />• Para plan por cantidad, cantidad mínima + intervalo de reorden * AMC = cantidad máxima.<br />Consulte la Sección 4.A2 Unidades de planificación para saber cómo actualizar este parámetro. |
+| **Error cuadrático medio (RMSE)** | Una métrica de precisión de pronóstico comúnmente utilizada que mide la raíz cuadrada del error de pronóstico cuadrático promedio. |
+| **Punto de Entrega de Servicios (SDP)** | Una instalación o ubicación donde se brindan servicios y productos de salud directamente a los clientes. |
+| **Envíos** | En QAT, un envío se refiere a una entrega planificada o real de productos básicos (productos) en la cadena de suministro y aparece en el plan de suministro en la fecha prevista de recepción. La palabra "envíos" se utiliza independientemente del estado del pedido.
+| **Estados de envío** | Dentro de QAT, hay un total de nueve estados de planificación de suministro que se han identificado a lo largo del ciclo de vida del envío. Estos nueve estados son:<br />• **Sugerido:** envíos “sugeridos” por QAT como alerta temprana para evitar bajar de los niveles mínimos de existencias. Estos no son envíos reales y, como tales, no afectan las proyecciones de existencias. Solo cuando se acepte un envío sugerido y el estado cambie a planeado, se contará para sus proyecciones de existencias.<br />• **Planificado:** se pueden ingresar manualmente o los envíos sugeridos son aceptados por el usuario de QAT y se incluyen en las proyecciones de existencias. Debe tener un agente de adquisiciones asignado y una fuente de financiamiento (que podría estar por determinar).<br />• **Enviado:** envíos que se han colocado en un sistema de gestión de adquisiciones (es decir, ARTMIS, WAMBO) y tienen un número de pedido designado (es decir, número de RO).<br />• **Aprobado:** envíos que han sido aprobados por el departamento de adquisiciones agente/financiador.<br />• **Enviado:** pedidos que han sido enviados por el proveedor.<br />• **Llegado:** envíos que han llegado al puerto de entrada y están en proceso de despacho de aduana.<br />• **Recibido:** envíos que han sido recibidos en destino y listos para distribuir.<br />• **Cancelado:** el envío se colocó en un sistema de gestión de adquisiciones, pero luego se canceló por varios motivos. Estos no cuentan para los saldos de inventario proyectados.<br />• **En espera:** envío en QAT que se ha realizado
 
-| Acrónimo | Definición |
-| :--- | :--- |
-| **ARTMIS** | Sistema automatizado de información de gestión de seguimiento de solicitudes |
-| **ERP** | Planificación de recursos empresariales |
-| **GFPVAN** | Red global de visibilidad y análisis de la planificación familiar |
-| **GHSC-PSM** | Programa Global de Cadena de Suministro de Salud - Gestión de Adquisiciones y Suministros |
-| **USAID** | Agencia de Estados Unidos para el Desarrollo Internacional |
+ed en el sistema de gestión de adquisiciones pero está esperando la acción de los tomadores de decisiones. Estos cuentan para los saldos de inventario proyectados. |
+| **Pautas de tratamiento estándar (STG)** | Pautas clínicas oficiales que definen los tratamientos recomendados y afectan los supuestos de pronóstico en QAT. |
+| **Unidad de mantenimiento de existencias (SKU)** | Un identificador único para un producto, concentración, formulación y tamaño de paquete específicos utilizados a nivel de país. |
+| **Existencias disponibles (SOH)** | La cantidad de stock utilizable físicamente disponible en una ubicación específica en un momento determinado. |
+| **Plan de suministro / Módulo de planificación de suministro (SP)** | El módulo QAT se utilizaba para planificar adquisiciones y envíos a lo largo del tiempo para satisfacer la demanda prevista y al mismo tiempo mantener los niveles de existencias objetivo. |
+| **Área Técnica** | En QAT, área técnica es sinónimo de grupos de productos básicos (es decir, ARV, planificación familiar, malaria, etc.) y se utilizan para crear un programa QAT. |
+| **Entradas** | Cuando un usuario de un programa nota un problema con QAT (es decir, un error, un error del sistema) o desea actualizar/agregar datos maestros, función/acceso de usuario o un programa, puede enviar un ticket. Este ticket será resuelto por un administrador de dominio o aplicación y se realizarán los cambios correspondientes. |
+| **Pronóstico de árbol** | Estructuras de pronóstico flexibles utilizadas para convertir diferentes tipos de datos (demográficos, morbilidad, servicios) en productos básicos con el fin de extrapolarlos o interpolarlos hacia el futuro en el módulo de pronóstico. (Sección 8.B Pronósticos de árboles para más información) |
+| **Plantilla de árbol** | Árboles de pronóstico predefinidos que se pueden descargar y personalizar según el contexto de cada usuario en el módulo de pronóstico. (Sección 8.B4.a Plantillas de árbol para obtener más información) |
+| **Triple suavizado exponencial (Holt-Winters) (TES)** | Un método de pronóstico de series de tiempo que tiene en cuenta el nivel, la tendencia y la estacionalidad de los datos históricos. |
+| **Gobierno de los Estados Unidos (GEU)** | El gobierno de Estados Unidos |
+| **Demanda insatisfecha** |  QAT sólo permite que el stock disponible (SOH) sea igual o mayor que cero, evitando así saldos de stock negativos. QAT utiliza la demanda insatisfecha para estimar las cantidades de producto que se habrían consumido si hubiera suficientes existencias disponibles:<br />a) Cuando el consumo previsto es mayor que las existencias iniciales disponibles proyectadas para ese mes.<br />b) Cuando el consumo real también incluye períodos de falta de existencias, QAT estima cuál habría sido el consumo durante esos días sin existencias (incluso cuando el saldo final es mayor que cero).<br />c) Cuando un ajuste manual negativo es mayor que el saldo final proyectado.<br />QAT coloca la demanda insatisfecha en una fila separada. Se utiliza en el módulo de planificación de suministros. |
+| **Plantilla de uso** | Tasas de uso predefinidas de productos específicos que se pueden aplicar a través de árboles y programas en el módulo de pronóstico. (Sección 8.B4.c Plantillas de uso para obtener más información) |
+| **Funciones de usuario** | Estas son asignaciones dedicadas a usuarios que permiten diferentes niveles de acceso a datos y áreas funcionales dentro de QAT, y son únicas para cada módulo. Los roles de usuario comunes en el módulo de planificación de suministros son administradores de programas de planes de suministros, usuarios de programas de planes de suministros o visualizadores de planes de suministros. Los roles de usuario comunes en el módulo de pronóstico son administradores de programas de pronóstico, usuarios de programas de pronóstico o visualizadores de pronósticos.  |
+{/* necesitamos esto | **Volumetría** | En QAT, los usuarios del programa podrán definir volúmenes y así estimar la volumetría de los pedidos. | */}
+| **Error porcentual absoluto ponderado (WAPE)** | Una métrica de precisión de pronóstico que mide el error absoluto total como porcentaje de la demanda real total, ponderada por volumen. |
 
-## Términos técnicos
 
-| Acrónimo | Definición |
-| :--- | :--- |
-| **API** | Interfaz de programación de aplicaciones |
-| **CSV** | Valores separados por comas |
-| **JSON** | Notación de objetos JavaScript |
-| **JWT** | Ficha web JSON |
-| **PWA** | Aplicación web progresiva |
-| **RMSE** | Error cuadrático medio |
-| **WAPE** | Error porcentual absoluto ponderado |
+<div style={{textAlign: 'center'}}>
+
+![AMC Formula](/img/media/image6.png)
+
+*Figure 1: Average Monthly Consumption (AMC) Formula*
+
+<!--![MOS Formula](/img/media/image9.png)
+
+*Figure 2: Months of Stock (MOS) Formula* -->
+
+</div>

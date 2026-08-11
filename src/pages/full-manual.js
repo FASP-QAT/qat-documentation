@@ -7,7 +7,7 @@ import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 export default function FullManualPage() {
   const { siteConfig } = useDocusaurusContext();
   const { docVersion } = siteConfig.customFields;
-  const pageTitle = `QAT User Manual - ${docVersion}`;
+  const pageTitle = "User Manual";
   useEffect(() => {
     const params = new URLSearchParams(window.location.search);
     if (params.get('print') === 'true') {

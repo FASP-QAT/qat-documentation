@@ -124,6 +124,12 @@ def translate_markdown():
             
             for p in paragraphs:
                 if len(p) > 4000:
+                    if current_batch:
+                        batch_text = '\n\n'.join(current_batch)
+                        translated_paragraphs.append(translate_with_retry(translator, batch_text))
+                        current_batch = []
+                        current_length = 0
+                    
                     sub_chunks = [p[i:i+4000] for i in range(0, len(p), 4000)]
                     for sc in sub_chunks:
                         translated_paragraphs.append(translate_with_retry(translator, sc))

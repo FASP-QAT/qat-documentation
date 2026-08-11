@@ -1,16 +1,13 @@
 ---
-id: introduction
-title: "Introduction"
-sidebar_label: "Introduction"
-sidebar_position: 1
+id: supply-planning
+title: "Supply Planning"
+sidebar_label: "** Supply Planning Module **"
+sidebar_position: 4
 ---
+# Module de planification des approvisionnements
 
+Cliquez sur n’importe quelle section pour y accéder.
 
-#Présentation
-
-Bienvenue dans le manuel d'utilisation de l'outil d'analyse de quantification (QAT). Ce manuel est conçu pour les utilisateurs finaux et fournit des informations complètes sur les fonctionnalités du système, les flux de travail et les meilleures pratiques. Les administrateurs techniques doivent consulter les sections [Développeur](/docs/developer/01_Purpose.md) et [API](https://fasp-qat.github.io/qat-documentation/docs/api).
-
-
-L'outil d'analyse de quantification (QAT) est une solution modernisée pour les prévisions et la planification des approvisionnements dirigées par les pays. QAT exploite des technologies avancées pour s'appuyer sur les fonctionnalités d'outils existants tels que PipeLine et Quantimed.
-
-Pour un aperçu général de la structure du document, veuillez vous référer à la [Table des matières](03-table-of-contents.md).
+- [Section 4 : Module de planification des approvisionnements - Données du programme](07-supply-planning-module-program-data.md#supply-planning-module-program-data)
+- [Section 5 : Module de planification des approvisionnements - Planification des approvisionnements](08-supply-planning-module-supply-planning.md#supply-planning-module-supply-planning)
+- [Section 6 : Module de planification des approvisionnements - Rapports](09-supply-planning-module-reports.md#supply-planning-module-reports)
