@@ -64,6 +64,9 @@ export default function FullManualPage() {
 
       <div className="container" style={{ marginTop: '5rem', marginBottom: '5rem', maxWidth: 'none' }}>
         <FullManualContent />
+        <Head>
+          <title>User Manual</title>
+        </Head>
       </div>
     </Layout>
   );

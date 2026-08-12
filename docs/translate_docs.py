@@ -130,9 +130,34 @@ def translate_markdown():
                         current_batch = []
                         current_length = 0
                     
-                    sub_chunks = [p[i:i+4000] for i in range(0, len(p), 4000)]
-                    for sc in sub_chunks:
-                        translated_paragraphs.append(translate_with_retry(translator, sc))
+                    lines = p.split('\n')
+                    translated_lines = []
+                    current_line_batch = []
+                    current_line_length = 0
+                    
+                    for line in lines:
+                        if len(line) > 4000:
+                            if current_line_batch:
+                                translated_lines.append(translate_with_retry(translator, '\n'.join(current_line_batch)))
+                                current_line_batch = []
+                                current_line_length = 0
+                            
+                            sub_chunks = [line[i:i+4000] for i in range(0, len(line), 4000)]
+                            translated_sub_chunks = [translate_with_retry(translator, sc) for sc in sub_chunks]
+                            translated_lines.append("".join([sc for sc in translated_sub_chunks if sc]))
+                        else:
+                            if current_line_length + len(line) < 4000:
+                                current_line_batch.append(line)
+                                current_line_length += len(line) + 1
+                            else:
+                                translated_lines.append(translate_with_retry(translator, '\n'.join(current_line_batch)))
+                                current_line_batch = [line]
+                                current_line_length = len(line) + 1
+                                
+                    if current_line_batch:
+                        translated_lines.append(translate_with_retry(translator, '\n'.join(current_line_batch)))
+                        
+                    translated_paragraphs.append('\n'.join([tl for tl in translated_lines if tl]))
                 else:
                     if current_length + len(p) < 4000:
                         current_batch.append(p)
