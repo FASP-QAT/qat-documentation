@@ -9,16 +9,34 @@ export default function FullManualPage() {
   const { docVersion } = siteConfig.customFields;
   const pageTitle = "User Manual";
   useEffect(() => {
+    // Lock the document title to "User Manual" for PDF exporting
+    document.title = "User Manual";
+    const observer = new MutationObserver(() => {
+      if (document.title !== "User Manual") {
+        document.title = "User Manual";
+      }
+    });
+    
+    const titleElement = document.querySelector('title');
+    if (titleElement) {
+      observer.observe(titleElement, { childList: true });
+    } else {
+      // If title element doesn't exist yet, observe the head
+      observer.observe(document.head, { childList: true, subtree: true });
+    }
+
     const params = new URLSearchParams(window.location.search);
     if (params.get('print') === 'true') {
       const timer = setTimeout(() => {
-        const originalTitle = document.title;
-        document.title = "User Manual";
         window.print();
-        setTimeout(() => { document.title = originalTitle; }, 100);
       }, 1000);
-      return () => clearTimeout(timer);
+      return () => {
+        clearTimeout(timer);
+        observer.disconnect();
+      };
     }
+    
+    return () => observer.disconnect();
   }, []);
 
   return (

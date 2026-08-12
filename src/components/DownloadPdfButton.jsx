@@ -120,8 +120,20 @@ export default function DownloadPdfButton({ label, showEverywhere = false, class
                 if (iframe.contentDocument) {
                     iframe.contentDocument.title = "User Manual";
                 }
+                
+                // Temporarily change the main window's title so the browser 
+                // uses it as the default PDF filename
+                const originalTitle = document.title;
+                document.title = "User Manual";
+                
                 iframe.contentWindow.focus();
                 iframe.contentWindow.print();
+                
+                // Restore the original title (runs after print dialog closes)
+                setTimeout(() => {
+                    document.title = originalTitle;
+                }, 1000);
+                
             } catch (err) {
                 console.error('Failed to trigger print on iframe:', err);
                 window.open(printUrl + '?print=true', '_blank');
