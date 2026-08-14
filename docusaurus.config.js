@@ -100,6 +100,14 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
+      announcementBar: {
+        id: 'translation_notice',
+        content:
+          "La version francaise est traduite automatiquement de l'anglais. // La versión en español se traduce automáticamente del inglés. // A versão em português é traduzida automaticamente do inglês.",
+        backgroundColor: '#fafbfc',
+        textColor: '#091E42',
+        isCloseable: true,
+      },
       image: 'img/QAT-login-logo.png',
       docs: {
         sidebar: {

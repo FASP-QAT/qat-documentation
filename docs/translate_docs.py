@@ -115,6 +115,17 @@ def translate_markdown():
             comparisons = list(set(re.findall(r'&[lg]t;|[<>]', body)))
             for i, comp in enumerate(comparisons):
                 body = body.replace(comp, f'[{{ZXCCOMP{i}ZXC}}]')
+
+            # 8. Protect Markdown Table separator lines
+            table_separators = []
+            for line in body.split('\n'):
+                stripped = line.strip()
+                if not stripped: continue
+                if re.fullmatch(r'[\|\-\:\s]+', stripped) and '-' in stripped and '|' in stripped:
+                    table_separators.append(line)
+            table_separators = list(set(table_separators))
+            for i, sep in enumerate(table_separators):
+                body = body.replace(sep, f'[{{ZXCSEP{i}ZXC}}]')
                 
             # Split by paragraphs and translate
             paragraphs = body.split('\n\n')
@@ -239,6 +250,11 @@ def translate_markdown():
                 pattern = re.compile(rf'\[{{\s*Z\s*X\s*C\s*C\s*O\s*M\s*P\s*{i}\s*Z\s*X\s*C\s*}}\]', re.IGNORECASE)
                 translated_body = pattern.sub(lambda m, t=safe_comp: t, translated_body)
                 
+            # Restore Table Separators
+            for i, sep in enumerate(table_separators):
+                pattern = re.compile(rf'\[{{\s*Z\s*X\s*C\s*S\s*E\s*P\s*{i}\s*Z\s*X\s*C\s*}}\]', re.IGNORECASE)
+                translated_body = pattern.sub(lambda m, t=sep: t, translated_body)
+
             # --- POST-PROCESSING FIXES FOR MDX ---
             # 1. Final safety net: strip any remaining hallucinated HTML tags that appeared after restoration
             # Only strip tags that are NOT legitimate (i.e., not part of restored placeholders)
