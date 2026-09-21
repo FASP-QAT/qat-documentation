@@ -161,6 +161,11 @@ export default function DownloadPdfButton({ label, showEverywhere = false, class
       alignItems: 'center',
       gap: '10px'
     }}>
+      {(
+        <span style={{ fontSize: '0.75rem', color: 'var(--ifm-color-emphasis-700)', lineHeight: '1.1', textAlign: 'center', paddingRight: '10px' }}>
+          La version française est traduite automatiquement de l'anglais. // La versión en español se traduce automáticamente del inglés. // A versão em português é traduzida automaticamente do inglês.
+        </span>
+      )}
       <div className="dropdown dropdown--hoverable no-print">
         <button 
           className="button button--sm button--outline button--primary"
@@ -188,8 +193,7 @@ export default function DownloadPdfButton({ label, showEverywhere = false, class
               >
                 {localeConfigs[l].label}
               </a>
-            </li>
-          ))}
+            </li>))}
         </ul>
       </div>
 
