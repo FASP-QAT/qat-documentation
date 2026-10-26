@@ -8,7 +8,7 @@ sidebar_position: 5
 
 # Section 4. Supply Planning Module: Program Data
 
-As previously defined on [Important QAT Concepts and Terms](./04-overview.md#e-important-qat-concepts-and-terms), a program in QAT is defined by one country, one or more technical area(s), one region (generally, national level, but could be sub-national), and one organization (generally MOH). 
+A program in QAT is defined by one country, one or more technical area(s), one region (generally, national level, but could be sub-national), and one organization (generally MOH). 
 
 There are two big categories of program data: Background Data (editable by program admins) and Transactional data (the “big 3” – consumption, inventory, shipments - which are editable by program admins and users).
 
@@ -25,7 +25,7 @@ There are two big categories of program data: Background Data (editable by progr
       <td rowSpan="3" style={{ border: '1px solid #ccc', padding: '10px', verticalAlign: 'middle', textAlign: 'center', backgroundColor: '#eaeaea', fontWeight: 'normal', color: '#000' }}>
         Background Data
       </td>
-      <td style={{ border: '1px solid #ccc', padding: '10px', fontWeight: 'bold', color: '#000' }}>Program Info</td>
+      <td style={{ border: '1px solid #ccc', padding: '10px', fontWeight: 'bold', color: '#000' }}>Program Settings</td>
       <td style={{ border: '1px solid #ccc', padding: '10px', color: '#000' }}>Program Manager, Freight %, Lead Times</td>
     </tr>
     <tr>
@@ -60,11 +60,11 @@ There are two big categories of program data: Background Data (editable by progr
   </tbody>
 </table>
 
-*Table 7: Program level data*
+*Table: Program level data*
 
 ## A. Background Data
 
-Every program within the Global Health realm is governed by the same standardized master data, such as product catalog, procurement agents, funding sources, data sources, etc. However, program admins can select a subset of the realm master data to use for their program and provide additional parameters 
+Every program within a realm is governed by the same standardized master data, such as product catalog, procurement agents, funding sources, data sources, etc. However, program admins can select a subset of the realm master data to use for their program and provide additional parameters 
 
 **Notes:** 
 - All background data must be updated while a user is online. It is recommended that users click “master data sync” after making any background data updates so it is reflected throughout the tool.
@@ -75,7 +75,7 @@ Every program within the Global Health realm is governed by the same standardize
 Program managers in QAT can define their general program parameters, by selecting from a list of dropdowns that contain realm-level master data for each the fields. These general parameters for the supply planning module include program name, program manager, default freight percentages for air, sea, & road freight, lead times by shipment status, and notes. General parameters for the forecasting module include program name, program manager, and notes. **Program users** will be able to list/view all the programs they have access to, while only **Program Admins** are able to update any of the program’s general parameters.
 
 Update program information:
-1. Click on "Program Management" and then select "Update Program Info"
+1. Click on "Program Management" and then select "Program Settings"
 2. Click on the program that needs to be updated<br/>
     <ol style={{ listStyleType: 'lower-alpha' }}>
         <li>Program Admins can add/remove procurement agents and funding sources that already exist<br/>in QAT to their program. This will in turn, add/remove the procurement agents to the<br/>dropdown fields in the [Shipment Data entry](#b3-shipment-data) screens. If a user would like to add a<br/>procurement agent to their program that does not exist in QAT, they can take out a ticket<br/>with the [QAT HelpDesk](./05-getting-started.md#i-qat-helpdesk-and-tickets) system.</li>
@@ -85,17 +85,14 @@ Update program information:
 
 ![Update Program Info - Supply Planning Module](/img/media/image113.png)
 
-Figure 67: Update Program Info - Supply Planning Module
+*Figure: Program Settings*
 
 </div>
 
-![Update Program Info - Supply Planning Module](/img/media/image114.png)
-
 3. Program admins can scroll down to see a list of users who have access to their program. Program admins are encouraged to review this list regularly to ensure those all those users who are listed have a business purpose to view, edit or manage that supply plan.
-
 4. Update fields as desired, and click “Submit”
 
-**Note:** QAT only allows Realm-level Admin or App-level Admins to update the fields which are in gray in the Update Program Info screen. If a user requires these fields to be updated, they can take out a ticket with the [QAT HelpDesk](./05-getting-started.md#i-qat-helpdesk-and-tickets) system.
+**Note:** QAT only allows Realm-level Admin or App-level Admins to update the fields which are in gray in the Program Settings screen. If a user requires these fields to be updated, they can take out a ticket with the [QAT HelpDesk](./05-getting-started.md#i-qat-helpdesk-and-tickets) system.
 
 ### A2. Planning Units
 
@@ -109,7 +106,7 @@ Every program must have at least one planning unit that **Program Admins** can s
 
 ![Parameters to update per planning unit](/img/media/image115.png)
 
-Figure 69: Parameters to update per planning unit.
+*Figure: Parameters to update per planning unit*
 
 </div>
 
@@ -128,7 +125,7 @@ Figure 69: Parameters to update per planning unit.
 - **Notes:** a free text field to add relevant planning unit information (i.e. phasing-in/out timelines, if the planning unit is central/national-level data, etc.). These notes are available for viewing in the Supply Plan report, Supply Plan Version & Review Supply Planning screen, Supply Planning screen, & Scenario Planning screen.
 
 **Update planning units within a program:**
-1. Ensure that you are working in ‘online’ mode. Select “Program Management” and then “Update Planning Units”
+1. Ensure that you are working in ‘online’ mode. Select “Program Management” and then “Planning Unit Settings”
 2. Select the program to display the planning units currently managed<br/>
     <ol style={{ listStyleType: 'lower-alpha' }}>
         <li>If intending to update or reactivate a deactivated planning unit, choose “Inactive” from the planning unit Status dropdown</li>
@@ -151,7 +148,7 @@ Figure 69: Parameters to update per planning unit.
 
 ### A3. Program/Procurement Agent-specific Information
 
-QAT users can manage specific details (freight costs, lead times, unit costs) for procurement agents and planning units within a supply plan. Program procurement agent-specific prices can be set for each planning unit in their programs, in addition to the program’s default (catalog) prices or realm-level procurement agent catalog prices. For example, a user may want to enter the UNDP price for malaria rapid diagnostic tests (mRDT) in the program FASPonia-Malaria, if UNDP’s catalog is not available at the realm level. Users also have the ability to designate freight percentages, lead times (including local lead times), and unit prices for specific planning units, procurement agents, or a combination of the two.
+QAT users can manage specific details (freight costs, lead times, unit costs) for procurement agents and planning units within a supply plan. For example, a user may want to enter the UNDP price for malaria rapid diagnostic tests (mRDT) in the program FASPonia-Malaria. Users also have the ability to designate freight percentages, lead times (including local lead times), and unit prices for specific planning units, procurement agents, or a combination of the two.
 
 **Features and Rules:**
 - **Program + Procurement Agent Combination:** If creating a program and procurement agent combination, the price column will become non-editable if the planning unit is set to ‘All’ since the price already exists in a different screen.
@@ -163,26 +160,14 @@ QAT users can manage specific details (freight costs, lead times, unit costs) fo
 
 **Usage in Supply Planning Module:**
 These program/procurement agent/planning unit-specific details will impact the supply planning module as follows:
-- **Freight Percentages:** Prioritized by program/procurement agent/planning unit settings and then program settings.
-- **Lead Times:** Prioritized by program/procurement agent/planning unit settings, then program settings, and finally realm-level procurement agent settings.
-- **Unit Prices:** Prioritized by program/procurement agent/planning unit settings, then realm-level procurement agent settings, and finally program settings.
+- **Freight Percentages:** Prioritized by program/procurement agent settings and then program-wide settings.
+- **Lead Times:** Prioritized by program/procurement agent settings, then realm procurement agent settings, and finally program-wide settings.
+- **Unit Prices:** Prioritized by program/procurement agent settings, then realm procurement agent settings, and finally program-wide settings.
 
 **Steps to Add or Edit Program/Procurement Agent-specific info:**
-1. Select “Program Management” and then “Update Planning Units”.
-2. Select the program to display the planning units currently managed.
-3. Right-click on the row of the planning unit to add the procurement agent price for and click on “Add Program/Procurement Agent Prices” to show a new screen.
-
-<div style={{textAlign: 'center'}}>
-
-![Accessing the Program/Procurement Agent Prices screen](/img/media/image116.png)
-
-Figure 70. Accessing the Program/Procurement Agent Prices screen
-
-</div>
-
-4. OR select “Program/Procurement Agent Info” from the lefthand menu to go directly to the screen.
-5. Select the program(s) and planning unit(s) to enter information for.
-6. Fill in the required fields and any additional fields. A few reminders from above:<br/>
+1. From the menu, select “Program Management” and then “Program/Procurement Agent Settings”.
+2. Select the program from the dropdown in the top left of the screen.
+3. Add row by clicking the "Add Row" button at the bottom right of the screen or by right clicking on the table and choosing "Add Row". Fill in the required fields for each planning unit-procurement agent combination. A few reminders from above:<br/>
    <ol style={{ listStyleType: 'lower-alpha' }}>
        <li>If creating a program and procurement agent combination, the price column will become non-editable if the planning unit is set to ‘All’ since the price already exists in a different screen.</li>
        <li>At least one of these columns must have a numeric value when adding or editing rows.</li>
@@ -190,12 +175,11 @@ Figure 70. Accessing the Program/Procurement Agent Prices screen
        <li>Only one row is allowed per program/planning unit/procurement agent combination.</li>
    </ol>
 
-
 <div style={{textAlign: 'center'}}>
 
 ![Adding Program/Procurement Agent Info for a planning unit](/img/media/image117.png)
 
-*Figure 71: Adding Program/Procurement Agent Info for a planning unit*
+*Figure: Adding Program/Procurement Agent Settings for a planning unit*
 
 </div>
 
@@ -204,7 +188,7 @@ Figure 70. Accessing the Program/Procurement Agent Prices screen
 
 ### A4. Alternate Reporting Units
 
-An alternate reporting unit (ARU) is the product and unit that the country’s data (consumption, inventory & adjustments) is reported in and it could have the same description as the planning unit, forecasting unit, procurement unit, or in an altogether different packaging description. The ARU is defined within a particular country and requires entering a conversion factor from the ARU to the planning unit it is associated with (could be 1). Of all the product masters, the ARU is the only one program admins manage, because they are country specific. **Application, Realm, and Program Admins** can add/edit ARU for a country and program. Alternate reporting units are useful when:
+An alternate reporting unit (ARU) is the product and unit that the country’s data (consumption, inventory & adjustments) is reported in and it could have the same description as the planning unit, forecasting unit, procurement unit, or in an altogether different packaging description. The ARU is defined within a particular country and requires entering a conversion factor from the ARU to the planning unit it is associated with (could be 1). **Application, Realm, and Program Admins** can add/edit ARU for a country and program. Alternate reporting units are useful when:
 1. Data sources report data in different units (e.g. pieces vs packs)
 2. There’s another common name in country (e.g. brand name)
 
@@ -218,21 +202,21 @@ An alternate reporting unit (ARU) is the product and unit that the country’s d
 3. Click on the “Add Row” button at the bottom right corner of the screen, or right-click on any row to add another.
 4. Enter the details in the newly created row and click on “Submit”.<br/>
    <ol style={{ listStyleType: 'lower-alpha' }}>
-       <li>Note: the conversion factor can be ‘divide’ or ‘multiply’.</li>
+       <li>**Note**: the conversion factor can be ‘divide’ or ‘multiply’.</li>
    </ol>
 <div style={{textAlign: 'center'}}>
 
 ![ARUs](/img/media/image118.png)
 
-Figure 72: ARUs
+*Figure: ARUs*
 
 </div>
 
-*Note that for each planning unit added to a program, QAT will automatically create an Alternate Reporting Unit with a 1:1 conversion factor. QAT will use the Planning Unit description as the Alternate Reporting Unit description.
+**Note:** for each planning unit added to a program, QAT will automatically create an Alternate Reporting Unit with a 1:1 conversion factor. QAT will use the Planning Unit description as the Alternate Reporting Unit description.
 
 ### A5. Default Lead Times
 
-QAT uses six shipment statuses to track the progression of a shipment from planning to product receipt. Each of those steps in the order lifecycle has an associated lead time that is used to estimate when the next action should happen at each step. Lead times are expressed in months and can be partial months or even zero. The priority order for lead times settings is as follows: **Program/Procurement Agent Info** settings take the highest priority, followed by **Program-level** settings, and then **Realm-level** settings.
+QAT uses six shipment statuses to track the progression of a shipment from planning to product receipt. Each of those steps in the shipment lifecycle has an associated lead time that is used to estimate when the next action should happen at each step. Lead times are expressed in months and can be partial months or even zero. The priority order for lead times settings is as follows: **Local Procurements** take the highest priority, followed by **Program/Procurement Agent** settings then **Realm Procurement Agent** settings, and then **Program-wide** settings.
 
 <div style={{textAlign: 'center'}}>
 
@@ -273,57 +257,76 @@ QAT uses six shipment statuses to track the progression of a shipment from plann
 </svg>
 </div>
 
-*Figure 73: QAT shipment statuses*
+*Figure: QAT shipment statuses*
 
 </div>
 
-There is different lead time logic depending on whether procurement is tagged as international or local.
+Basic lead time logic definitions are provided below:
 
-- **For international procurement:**
-  - **Program Admins** manage lead times that are program/country-specific (e.g., planning time, shipment times, custom clearance times, quarantine periods, etc.)
-  - **Realm Admins** manage lead times specific to each procurement agent (more on this in the table below).
-  - Can also set specific lead time configurations for programs and/or procurement agents on a per-planning unit (PU) basis.
-- **For local procurement:**
-  - The entire lead time (‘planned to received’) is determined by what's entered at the program level, per planning unit. All steps in local procurement are typically shorter than those in international procurement.
+| Lead time (from – to) | Definition |
+| :--- | :--- |
+| **Planned to Submitted** | Number of months from identifying procurement need to placing an order with a procurement agent |
+| **Submitted to Approved** | Number of months between order placement and approval of order. This lead time can be defined for each procurement agent.|
+| **Approved to Shipped** | Number of months between order approval and dispatch from the procurement agent/supplier. This lead time can be defined for each procurement agent.|
+| **Shipped to Arrived by Air** | Transit time via air between order dispatch until arrival at port of entry -in number of months.|
+| **Shipped to Arrived by Sea** | Transit time via ocean between order dispatch via air until arrival at port of entry -in number of months.|
+| **Shipped to Arrived by Road** | Transit time via road between order dispatch via road until arrival at requested point of delivery –in number of months.|
+| **Arrived to Received** | Number of months from arrival at port of entry until reception into the warehouse. |
 
-| Lead time (from – to) | Definition | Configuration |
-| :--- | :--- | :--- |
-| **Planned to submitted** | Number of months from identifying procurement need to placing an order with a procurement agent | Always set at the program level by Program Admins |
-| **Submitted to approved** | Number of months between order placement and approval of order. This lead time can be defined for each procurement agent. | Default set at the program level by Program Admins. However, overwritten by realm-level procurement agent setting, if procurement agent is assigned to a shipment. |
-| **Approved to shipped** | Number of months between order approval and dispatch from the procurement agent/supplier. This lead time can be defined for each procurement agent. | Default set at the program level by Program Admins. However, overwritten by realm-level procurement agent setting, if procurement agent is assigned to a shipment. |
-| **Shipped to arrived by air** | Transit time via air between order dispatch until arrival at port of entry -in number of months. | Always set at the program level by Program Admins |
-| **Shipped to arrived by sea** | Transit time via ocean between order dispatch via air until arrival at port of entry -in number of months. | Always set at the program level by Program Admins |
-| **Shipped to arrived by road** | Transit time via road between order dispatch via road until arrival at requested point of delivery –in number of months. | Always set at the program level by Program Admins |
-| **Arrived to received** | Number of months from arrival at port of entry until reception into the warehouse. | Always set at the program level by Program Admins |
+*Table: Lead times by shipment stage - definitions*
 
-*Table 8: Lead times by shipment stage - definitions*
+**Priority Order for Lead Time Settings**
 
-**Priority Order for Lead Time Settings:**
 The priority order for lead time configurations is as follows:
-1. **Program/Procurement Agent Info:** These settings take the highest priority. If lead times are defined at this level, they will override other settings. These can be updated in the ‘Program/Procurement Agent Info’ screen.
-2. **Program-level:** If no lead time is defined at the program/procurement agent level, the program level defaults will be used. These can be updated in the ‘Update Program Info’ and ‘Update Planning Units’ screens.
-3. **Realm-level:** Realm-level lead times will apply if no specific lead time is set at the program level.
+1. **Local Procurements:** These have the highest priority. If the "Local" checkbox is selected in the 'Shipment Data Entry' screen, local procurement lead times are used, first with the Program/Procurement Agent Local lead times, then the Program-wide Local lead times.
+2. **Program/Procurement Agent Settings:** These lead times are defined by planning unit and procurement agent. They can be configured in the ‘Program/Procurement Agent Settings’ screen.
+3. **Realm Procurement Agent Settings:** These are used if no lead time is defined at the Program/Procurement Agent Settings level. Additionally, the applicable lead time is based on the procurement agent selected in the 'Shipment Data Entry' screen. These settings can only be updated by a Realm Admin.
+4. **Program-wide Settings:** These are used when no lead time is defined at the Program/Procurement Agent Setting or Realm Procurement Agent level. These lead times can be configured in the ‘Program Settings’ and ‘Planning Units Settings’ screens.
 
-**Enter/update the default lead times at the program level:**
-1. Go to “Program Management” and then click on “Update Program Info” (see [Updating Program Information](#a1-program-information)).
-2. Scroll down to the second half of the page where all the lead time fields are.
-3. Enter the default program lead times per step.
-4. Click “Update” to save the changes.
+![Lead Time Precedence](/img/media/image413.png)
 
-Refer to [Program/Procurement Agent Info](#a3-programprocurement-agent-specific-information) for instructions on how to add/edit settings at a program/procurement agent level.
+_Figure: Lead Time Precedence_
 
-**Enter/update the default local procurement agent lead times:**
-1. Go to “Program Management” and then click on “Update Planning Units” (see [Updating Planning Units](#a2-planning-units))
+**Enter/update the Local lead times:**
+1. Go to “Program Management” and then click on “Planning Unit Settings” (see [Planning Units Settings](#a2-planning-units))
 2. Select the program from the dropdown on the top left.
 3. Enter the default program lead time for local procurement.
 4. Click “Submit” to save the changes.
 
+![Local Procurement Lead Times](/img/media/image119.png)
 
+_Figure: Planning Unit Settings - Local Procurement Lead Time_
+
+OR
+1. Go to “Program Management” and then click on "Program/Procurement Agent Settings"
+2. Select the program from the dropdown on the top left.
+3. Enter the default program lead time for local procurement by planning unit and procurement agent.
 4. Click “Submit” to save the changes.
 
-<div style={{textAlign: 'center'}}>
+![Local Procurement Lead Times2](/img/media/image414.png)
 
-![](/img/media/image119.png)
+_Figure: Program/Procurement Agent Settings - Local Procurement Lead Time_
+
+**Enter/update the Program/Procurement Agent Setting lead times**
+1. Go to “Program Management” and then click on "Program/Procurement Agent Settings"
+2. Select the program from the dropdown on the top left.
+3. Enter the default program lead times by planning unit and procurement agent.
+4. Click “Submit” to save the changes.
+5. For more information, refer to [Program/Procurement Agent Settings](#a3-programprocurement-agent-specific-information).
+
+![Program/Procurement Lead Times](/img/media/image415.png)
+
+_Figure: Program/Procurement Agent Settings - Lead Times_
+
+**Enter/update the program-wide level lead times:**
+1. Go to “Program Management” and then click on “Program Settings” (see [Program Settings](#a1-program-information)).
+2. Scroll down to the second half of the page where all the lead time fields are.
+3. Enter the default program lead times per step.
+4. Click “Update” to save the changes.
+
+![Program-wide Lead Times](/img/media/image416.png)
+
+_Figure: Planning Unit Settings - Program-wide Lead Times_
 
 </div>
 
@@ -348,7 +351,7 @@ To add or remove programs from a budget, click into the budget and then select o
 
 ![Multiple Program](/img/media/image121.png)
 
-Figure 75: Multiple Program ⊗
+Figure: Adding Multiple Programs to a Single Budget
 
 </div>
 
@@ -368,13 +371,13 @@ If a budget is highlighted in red, it indicates that the budget has either passe
 2. Left click on the budget that you want to update.
 3. A new screen will appear titled “Update Budget”
 4. Update the details of the selected budget as appropriate.
-5. Click “Submit” to save the changes.
+5. Click “Update” to save the changes.
 
 <div style={{textAlign: 'center'}}>
 
 ![Budget Screen](/img/media/image123.png)
 
-Figure 76: Budget Screen
+Figure: Budget Screen
 
 </div>
 
@@ -384,7 +387,7 @@ Figure 76: Budget Screen
 
 ![Update Budget](/img/media/image124.png)
 
-Figure 77: Update Budget
+Figure: Update Budget Screen
 
 </div>
 
