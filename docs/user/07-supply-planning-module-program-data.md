@@ -328,8 +328,6 @@ _Figure: Program/Procurement Agent Settings - Lead Times_
 
 _Figure: Planning Unit Settings - Program-wide Lead Times_
 
-</div>
-
 
 ### A6. Budgets
 
