@@ -7,26 +7,31 @@ sidebar_position: 6
 
 # Section 5. Supply Planning Module: Supply Planning
 
-## A. **Supply Planning: An Overview**
+## A. Supply Planning: An Overview
 
-![Figure 99: Supply Planning Screen – Plan by MOS](/img/media/image153.png)
-*Figure 99: Supply Planning Screen – Plan by MOS*
+<div style={{textAlign: 'center'}}>
 
-![Figure 100: Supply Planning Screen – Plan by Quantity](/img/media/image154.png)
-*Figure 100: Supply Planning Screen – Plan by Quantity*
+![Supply Planning Screen – Plan by MOS](/img/media/image153.png)
+*Supply Planning Screen – Plan by MOS*
 
-* <u>What?</u> All major data points (consumption, shipments, inventory) come together on the supply planning screen, and this is where most QAT users will spend the majority of their time. Users can click on many of the cells in the table to directly edit their data. It is recommended to use this screen for active supply planning (including data updates and planning new shipments), but to use the data entry screen when significant data entry is required. Note that some sections vary based on whether the planning unit is planned by MOS or planned by Quantity (as selected in [Updating Planning Units](./07-supply-planning-module-program-data.md#a2-planning-units)) – differences are noted below.
+![Supply Planning Screen – Plan by Quantity](/img/media/image154.png)
+*Supply Planning Screen – Plan by Quantity*
+
+</div>
+
+* <u>What?</u> All major data points (consumption, shipments, inventory) come together on the supply planning screen, and this is where most QAT users will spend the majority of their time. Users can click on many of the cells in the table to directly edit their data. It is recommended to use this screen for active supply planning (including data updates and planning new shipments), but to use the data entry screen when significant amounts of data entry is required. Note that some sections vary based on whether the planning unit is planned by MOS or planned by Quantity (as selected in [Planning Unit Settings](./07-supply-planning-module-program-data.md#a2-planning-units)) – differences are noted below.
   * This screen can also be viewed by the alternate reporting unit (ARU) associated with the planning unit. This means that users can view their supply plans in terms of the product names and units of measure they enter the data in, with values on the table and graph changing according to the ARU/PU conversion factor that is established by the user (see [Alternate Reporting Units](./07-supply-planning-module-program-data.md#a4-alternate-reporting-units)). The user selects to view by ARU clicking on the radio button and then selecting the desired ARU to display.
     
-    ![Figure 101: Supply Planning Table –by Planning Unit vs by Alternate Reporting Unit](/img/media/image155.png)
-    *Figure 101: Supply Planning Table –by Planning Unit vs by Alternate Reporting Unit*
+    <div style={{textAlign: 'center'}}>
+    ![Supply Planning Table –by Planning Unit vs by Alternate Reporting Unit](/img/media/image155.png)
+    *Supply Planning Table –by Planning Unit vs by Alternate Reporting Unit*
+    </div>
 
 * <u>Who?</u> **Realm Admins**, **Program Admins**, **Supply Plan Reviewers**, and **Program Users** can add data/edit data in the supply plan. Certain “view only” roles can view the supply plan.
 * <u>When?</u> At any time. The user does not have to be online. However, they must have downloaded a program onto their local computer while online before beginning.
 * <u>How?</u>
   
   **Note:** other than step 1 being required, the remaining steps are not sequential, but an explanation of the features available in the supply planning screen.
-  
   <ol style={{ listStyleType: 'decimal', paddingLeft: '20px', marginTop: '15px' }}>
     <li style={{ marginBottom: '20px' }}>
       On the left menu bar, go to Supply Planning &gt; “Supply Planning”
@@ -34,35 +39,32 @@ sidebar_position: 6
         <li style={{ marginBottom: '10px' }}>Select the desired <b>Program</b>. The drop-down list in the supply plan screen will show all the programs that have been downloaded by the user. Refer to <a href="./06-managing-programs-and-versions.md#b-downloaddelete">Download Program</a> for details on how to download a program.</li>
         <li style={{ marginBottom: '10px' }}>Select the desired <b>QAT Planning Unit</b> or <b>Alternate Reporting Unit (ARU)</b>.</li>
       </ol>
-      <br />
       <img src={require('@site/static/img/media/image156.png').default} alt="QAT Planning Unit / Alternate Reporting Unit Selectors" />
     </li>
     <li style={{ marginBottom: '20px' }}>
-      The screen displays two Supply Plan tabs: <b>Local Supply Plan</b> and <b>Server Supply Plan - VX</b>. The “Local Supply Plan” tab is the local version that was selected under “program” and is available to be edited. The “Server Supply Plan” is the latest version available on the server and is only available for viewing (not editable).
-      <br /><br />
+      The screen displays two Supply Plan tabs: <b>Local Supply Plan</b> and <b>Server Supply Plan - vX</b>. The “Local Supply Plan” tab is the local version that was selected under “program” and is available to be edited. The “Server Supply Plan” is the latest version available on the server and is only available for viewing (not editable).
+      <br />
       <img src={require('@site/static/img/media/image157.png').default} alt="Local/Server Supply Plan Tabs" />
     </li>
     <li style={{ marginBottom: '20px' }}>
       By default, the past 3 months and 15 future months from the current date are shown. Use <b>Scroll to Left/Right</b> to show data for 3 months in the past/future
-      <br /><br />
+      <br />
       <img src={require('@site/static/img/media/image158.png').default} alt="Scroll to left / right bar" />
-      <br /><br />
-      Click “Show Formulae” at the top right of the screen for explanations on calculations on this screen.
-      <br /><br />
-      <img src={require('@site/static/img/media/image159.png').default} alt="Show Formulae button" />
-    </li>
+      <br />
+       </li>
     <li style={{ marginBottom: '20px' }}>
-      Click on the PDF &amp; CSV icons to export this report, and will include all planning units in the program. In PDF, only the graph for the selected product will be included, but there will be tables for each planning unit.
-      <br /><br />
+      Click “Show Formulae” at the top right of the screen for explanations on calculations on this screen and click on the PDF &amp; CSV icons to export this report, and will include all planning units in the program. In PDF, only the graph for the selected product will be included, but there will be tables for each planning unit.
+      <br />
+      <img src={require('@site/static/img/media/image159.png').default} alt="Show Formulae button" />
       <img src={require('@site/static/img/media/image160.png').default} alt="PDF and CSV Export Icons" />
     </li>
     <li style={{ marginBottom: '20px' }}>
       Understanding the stock balance calculations on the top half of the table:
-      <br /><br />
-      <img src={require('@site/static/img/media/image161.png').default} alt="Figure 102: Ending Stock Balance Calculation" />
       <br />
-      <i>Figure 102: Ending Stock Balance Calculation</i>
-      <br /><br />
+      <img src={require('@site/static/img/media/image161.png').default} alt="Ending Stock Balance Calculation" />
+      <br />
+      <i>Ending Stock Balance Calculation</i>
+      <br />
       <ul style={{ listStyleType: 'disc', paddingLeft: '20px' }}>
         <li style={{ marginBottom: '5px' }}><b>Opening Balance</b> represents the quantity of stock at the beginning of the month. It is equal to the ending balance of the previous month, except the very first month of the program, where the opening balance is zero. It can be an inventory count from the previous month (<b>bolded</b>), or a projected value (unbolded).</li>
         <li style={{ marginBottom: '5px' }}><b>Ending Balance</b> represents the quantity of stock at the end of the month. It can be an inventory count (<b>bolded</b>), or a projected value (unbolded).</li>
@@ -73,22 +75,23 @@ sidebar_position: 6
   
 The bottom half of the table contains more detail to help the user interpret the stock status.
   
-  ![Figure 103 Differences in the Supply Planning Table - Plan by MOS vs Plan by Quantity](/img/media/image162.png)
-  *Figure 103 Differences in the Supply Planning Table - Plan by MOS vs Plan by Quantity*
+  ![ Differences in the Supply Planning Table - Plan by MOS vs Plan by Quantity](/img/media/image162.png)
+  <br />
+  *Differences in the Supply Planning Table - Plan by MOS vs Plan by Quantity*
   
-  * **Average monthly consumption (AMC)** is an average of the consumption over the months indicated by the AMC parameters, which are displayed above the table. To edit these parameters, see [Updating Planning Units](./07-supply-planning-module-program-data.md#a2-planning-units).
+  * **Average monthly consumption (AMC)** is an average of the consumption over the months indicated by the AMC parameters, which are displayed above the table. To edit these parameters, see [Planning Unit Settings](./07-supply-planning-module-program-data.md#a2-planning-units).
     
-    ![Figure 104 Differences in the Supply Planning Legend- Plan by MOS vs Plan by Quantity](/img/media/image163.png)
-    *Figure 104 Differences in the Supply Planning Legend- Plan by MOS vs Plan by Quantity*
+    ![Differences in the Supply Planning Legend- Plan by MOS vs Plan by Quantity](/img/media/image163.png)
+    <br />
+    *Differences in the Supply Planning Legend- Plan by MOS vs Plan by Quantity*
     
   * **Unmet demand.** Estimated quantities of product that would have been consumed if sufficient stock was available:
     - When the forecast consumption is greater than the projected available beginning stock on hand.
     - When the actual consumption includes days of stock out
     - When a negative manual adjustment is larger than the projected ending balance
-    - The QAT unmet demand functionality is what captures what would have been negative stock in legacy software PipeLine.
   * The second row from the bottom
     - **Planned by MOS: Months of Stock** is calculated as the ending balance of the month divided by the AMC.
-    - **Planned by Quantity: Max Quantity** is calculated as the Minimum Qty + Reorder Frequency x AMC.
+    - **Planned by Quantity: Max Quantity** is calculated as the Minimum Qty + Reorder Frequency * AMC.
   * Stock Status Color-coding
     - **Planned by MOS:** The **“Months of Stock”** row is color-coded based on the stock status using the color coding displayed in the legend. Stock status is determined by comparing the MOS with the MIN MOS and MAX MOS.
     - **Planned by Quantity:** The **“Ending Balance”** row is color-coded based on the stock status using the color coding displayed in the legend. Stock status is determined by comparing the quantity of the “ending balance” with the min quantity (provided by user) and max quantity (calculated).
@@ -97,8 +100,8 @@ The bottom half of the table contains more detail to help the user interpret the
     <li style={{ marginBottom: '20px' }}>
       Reading the stock status graph. The dates on this graph follow the table. By default, all graph elements are displayed. Click on any data element in the legend to hide a data element. The Stock Status graph has two vertical (Y) axes:
       <ul style={{ listStyleType: 'disc', paddingLeft: '20px', marginTop: '10px' }}>
-        <li style={{ marginBottom: '10px' }}>The <b>primary (left) axis is in units</b>, and depicts shipments, consumption, stock, and expiries. For Plan by Quantity, there minimum and maximum quantities use the primary axis.<br/><br/><img src={require('@site/static/img/media/image164.png').default} alt="Figure 105 Supply Planning Graph - Primary Axis (Plan by MOS)" /><br/><i>Figure 105 Supply Planning Graph - Primary Axis (Plan by MOS)</i><br/><br/><img src={require('@site/static/img/media/image165.png').default} alt="Figure 106 Supply Planning Graph - Primary Axis (Plan by Quantity)" /><br/><i>Figure 106 Supply Planning Graph - Primary Axis (Plan by Quantity)</i></li>
-        <li style={{ marginBottom: '10px' }}>For plan by MOS, there is a <b>secondary (right) axis in months</b>, and depicts the stock parameters (minimum, maximum) and the calculated months of stock.<br/><br/><img src={require('@site/static/img/media/image166.png').default} alt="Figure 107 Supply Planning Graph - Secondary Axis (Plan by MOS)" /><br/><i>Figure 107 Supply Planning Graph - Secondary Axis (Plan by MOS)</i></li>
+        <li style={{ marginBottom: '10px' }}>The <b>primary (left) axis is in units</b>, and depicts shipments, consumption, stock, and expiries. For Plan by Quantity, there minimum and maximum quantities use the primary axis.<br/><br/><img src={require('@site/static/img/media/image164.png').default} alt="Figure: Supply Planning Graph - Primary Axis (Plan by MOS)" /><br/><i>Figure: Supply Planning Graph - Primary Axis (Plan by MOS)</i><br/><br/><img src={require('@site/static/img/media/image165.png').default} alt="Figure: Supply Planning Graph - Primary Axis (Plan by Quantity)" /><br/><i>Figure: Supply Planning Graph - Primary Axis (Plan by Quantity)</i></li>
+        <li style={{ marginBottom: '10px' }}>For plan by MOS, there is a <b>secondary (right) axis in months</b>, and depicts the stock parameters (minimum, maximum) and the calculated months of stock.<br/><br/><img src={require('@site/static/img/media/image166.png').default} alt="Figure: Supply Planning Graph - Secondary Axis (Plan by MOS)" /><br/><i>Figure: Supply Planning Graph - Secondary Axis (Plan by MOS)</i></li>
       </ul>
     </li>
   </ol>
@@ -106,18 +109,13 @@ The bottom half of the table contains more detail to help the user interpret the
 ## B. Supply Planning: Consumption
 
 In the supply planning table, only one number will show per month for the whole program in the consumption row. As noted in the legend, <span style={{ color: 'purple', fontStyle: 'italic' }}>forecasted consumption</span> is indicated by purple italic text, while **actual consumption** is indicated by black non-italicized text.
-
-<div style={{float: 'right', width: '300px', border: '1px solid black', padding: '10px', marginLeft: '15px', marginBottom: '15px', fontSize: '13px', backgroundColor: '#ffffff'}}>
-<b>Logic for Consumption Data Displayed</b>
-<ul style={{paddingLeft: '20px', margin: 0, marginTop: '5px', listStyleType: 'disc'}}>
-<li style={{marginBottom: '5px'}}>For single-region programs, the actual consumption will be displayed when it is available. If actual consumption is not available, the forecasted consumption will display.</li>
-<li style={{marginBottom: '5px'}}>For multi-region programs, QAT will display the greater between Σ(actuals) or Σ(forecast) across regional data. (Note: this logic is being reviewed and may be updated in the future).</li>
-</ul>
+<div style={{textAlign: 'center'}}>
+![Consumption Table Legend](/img/media/image167.png)
 </div>
 
-![Consumption Table Legend](/img/media/image167.png)
-
-<div style={{clear: 'both'}} />
+**Logic for Consumption Data Displayed**
+<ul><li>For single-region programs, the actual consumption will be displayed when it is available. If actual consumption is not available, the forecasted consumption will display.</li>
+<li>For multi-region programs, QAT will display the greater between Σ(actuals) or Σ(forecast) across regional data. (Note: this logic is being reviewed and may be updated in the future).</li></ul>
 
 **To add or edit consumption records**
 
@@ -149,17 +147,16 @@ By default, shipments are only shown as one row in the supply planning screen �
 
 To see a detailed breakdown of all shipments in a month, click on the cell in the corresponding month in the '+Shipments' row. To see the detailed breakdown of all shipments by status, click on the cell in the corresponding month in the individual status row.
 
-ERP (enterprise resource planning): data linked to ERP from procurement agents are non-editable (see [ERP Shipment Linking](./07-supply-planning-module-program-data.md#b4-erp-shipment-linking))
+ERP (enterprise resource planning) data is linked to ERP from procurement agents and are non-editable (see [ERP Shipment Linking](./07-supply-planning-module-program-data.md#b4-erp-shipment-linking))
 
 For all shipment rows, the colors indicate the procurement agent. If a month has multiple shipments with different procurement agents, the cell will be green. Red triangles on the top right of the cell indicate that a shipment is an emergency. If the shipment is a local procurement, there will be an L icon in the bottom left of the cell. If the shipment is ERP linked, there will be a link icon in the top left of the cell. Shipments can have multiple icons such as a local ERP linked emergency order. The legend appears at the top of the screen.
 
-![Figure 108: Shipments in Supply Planning](/img/media/image172.png)
-*Figure 108: Shipments in Supply Planning*
-
+![Shipments in Supply Planning](/img/media/image172.png)
+*Shipments in Supply Planning*
 
 The following sections will cover how to update existing shipments and create new shipments within the supply planning screen. See [**Shipment Data**](./07-supply-planning-module-program-data.md#b3-shipment-data) for more tips on the shipment data fields, which apply across the Shipment Data Entry screen and the supply planning screen.
 
-### CI. Updating an Existing Shipment
+### C1. Updating an Existing Shipment
 1. Click on the cell representing the month and shipment to be edited. Clicking on the "+Shipments" row will open up a tab with all shipments for that month regardless of status. Clicking on one of the status rows will open up a tab showing only shipments for that month with that status.
 
 ![Planned Shipment Highlight](/img/media/image173.png)
@@ -191,8 +188,8 @@ Below are the steps to use the recalculate button in the Supply Planning screen:
 
 4. Click 'Recalculate'. A pop-up message will appear telling you how much quantity QAT is suggesting to add and how much quantity the revised shipment will be.
 
-![Figure 109: Recalculate Button](/img/media/image177.png)
-*Figure 109: Recalculate Button*
+![Recalculate Button](/img/media/image177.png)
+*Recalculate Button*
 
 5. Click 'Ok'. The pop-up will go away, and the revised order quantity will appear in the 'Order Quantity' column. Click 'Submit' if you wish to proceed with the revised order quantity. At any point, the user can override the quantity by double clicking into the cell and typing in a new quantity.
 
@@ -207,7 +204,6 @@ There are two ways to create new shipments – 1) converting a QAT suggested shi
 <div style={{textAlign: 'center', fontWeight: 'bold'}}>
 QAT Suggested Shipments
 </div>
-<br/>
 QAT suggests a shipment as an early warning to avoid going below minimum stock levels. These are not actual shipment and as such, do not affect stock projections. Only when a suggested shipment is accepted and the status changes, will it be counted towards your stock projections. QAT will automatically mark a suggested shipment as an emergency shipment if it is within the lead time. See <b>Rules for Suggested Shipments</b> below.
 </div>
 
@@ -257,7 +253,7 @@ Where Month N is the month QAT is calculating for, and X = Distribution Lead Tim
 
 4. Click “Submit” to save the changes and return to the main supply planning screen, where changes will be reflected (**Note**: The Submit button will not appear if all required fields are not filled.)
 
-## D. **Supply Planning: Inventory/Adjustments**
+## D. Supply Planning: Inventory/Adjustments
 
 <div style={{display: 'flex', gap: '20px', alignItems: 'flex-start', flexWrap: 'wrap', margin: '20px 0'}}>
   <div style={{flex: '1 1 450px'}}>
@@ -340,8 +336,8 @@ Where Month N is the month QAT is calculating for, and X = Distribution Lead Tim
   </li>
 </ol>
 
-![Figure 111: Batches included in Final Inventory Pop-up](/img/media/image185.png)
-*Figure 111: Batches included in Final Inventory Pop-up*
+![Batches included in Final Inventory Pop-up](/img/media/image185.png)
+*Batches included in Final Inventory Pop-up*
 
 <ol start="4" style={{paddingLeft: '20px', listStyleType: 'decimal', margin: '20px 0'}}>
   <li style={{marginBottom: '15px'}}>
@@ -362,12 +358,12 @@ Where Month N is the month QAT is calculating for, and X = Distribution Lead Tim
   </li>
 </ol>
 
-![Figure 112: Batches Affecting Final Inventory Pop-up](/img/media/image186.png)
-*Figure 112: Batches Affecting Final Inventory Pop-up*
+![Batches Affecting Final Inventory Pop-up](/img/media/image186.png)
+*Batches Affecting Final Inventory Pop-up*
 
 
 
-## E. **Supply Planning: Project Expired Stock and Batch Information**
+## E. Supply Planning: Project Expired Stock and Batch Information
 
 <div style={{display: 'flex', gap: '20px', alignItems: 'flex-start', flexWrap: 'wrap', margin: '20px 0'}}>
   <div style={{flex: '1 1 450px'}}>
@@ -397,7 +393,7 @@ Where Month N is the month QAT is calculating for, and X = Distribution Lead Tim
         Batches start with <b>shipments</b>.
         <ul style={{listStyleType: 'circle', paddingLeft: '20px', marginTop: '5px'}}>
           <li style={{marginBottom: '5px'}}>QAT automatically generates one batch for each shipment that equals the quantity of the shipment.</li>
-          <li style={{marginBottom: '5px'}}>Batch expiry dates are based on shipment <b>receive date</b> plus planning unit <b>shelf life</b> (Updatable by Program Admins in <a href="./07-supply-planning-module-program-data.md#a2-planning-units">Update Planning Units</a>).</li>
+          <li style={{marginBottom: '5px'}}>Batch expiry dates are based on shipment <b>receive date</b> plus planning unit <b>shelf life</b> (Updatable by Program Admins in <a href="./07-supply-planning-module-program-data.md#a2-planning-units">Planning Unit Settings</a>).</li>
           <li>Users <u>can override</u> the batch number, expiry date, and split shipments into multiple batches.</li>
         </ul>
       </li>
@@ -424,7 +420,7 @@ Where Month N is the month QAT is calculating for, and X = Distribution Lead Tim
 
 <p style={{marginTop: '15px'}}><b>Note:</b> unless the user tags a batch to specific actual consumption or adjustment entries (see “Add/Update Batch Details” in <a href="./07-supply-planning-module-program-data.md#b1-consumption-data">Consumption Data</a> and <a href="./07-supply-planning-module-program-data.md#b2-inventory-data">Inventory Data</a>), QAT will default to monthly batch quantities being placed in the “Auto-Allocated” column in the Batch Ledger.</p>
 
-## F. **Scenario Planning**
+## F. Scenario Planning
 
 QAT provides users with predefined scenarios for supply planning. This functionality will allow users to make changes to- and visualize their data in different ways, without necessarily affecting their current supply plan. Users can apply one or more scenarios to their data to see how those changes affect stock projections. The selected scenario(s) can then be applied to a current supply plan, creating a new version.
 
@@ -445,111 +441,149 @@ To access these scenarios:
 2. Select a predefined scenario from the dropdown menu and edit the required fields
 3. Click Add to view the changes.
 
-![Figure 113 Scenario Planning Screen](/img/media/image191.png)
-*Figure 113 Scenario Planning Screen*
+![Scenario Planning Screen](/img/media/image191.png)
+*Scenario Planning Screen*
 
 4. The scenario will be shown in the "Scenario List".
 
-![Figure 114 Scenario Planning Scenario List](/img/media/image192.png)
-*Figure 114 Scenario Planning Scenario List*
+![Scenario Planning Scenario List](/img/media/image192.png)
+*Scenario Planning Scenario List*
 
 5. If the user wishes to apply the scenario to their supply plan, they can click on the "Submit" button. The new supply plan will get stored in the computer of that user, and the user can upload this to the server as a new version via the Upload functionality.
 6. If the user does not wish to apply the scenario to their current supply plan, they can click on the "Cancel" button or the "Reset" button, and the changes will not take effect.
 
-## G. **Supply Plan Report**
+## G. QAT Problem List
 
-The purpose of the supply plan report is to allow the user to quickly assess the stock status of one or more selected programs and/or planning units, by graphically comparing the stock projections to dynamic minimum and maximum inventory levels and to be able to see all consumption (both actual and forecast), inventory, and shipping details in one place. The report provides a graphical representation of the supply plan, as well as a tabular view. The report can be exported in PDF and/or CSV format.
+**Purpose:** A Supply Plan Review integrated within QAT that allows for a quality check to easily identify problematic data/issues and correct these before uploading a supply plan to the server as a “Draft” or “Final” version.
 
-<ul style={{listStyleType: 'disc', paddingLeft: '20px', margin: '15px 0'}}>
-  <li><b>Accessible to:</b> Realm Admins, Program Admins, Program Users, and Reports Viewer</li>
-  <li><b>Navigation:</b> Supply Planning &rarr; Supply Plan Report</li>
-</ul>
+- **Accessible to:** Realm Admins, Program Admins, and Program Users
+- **Navigation:** Supply Planning → QAT Problem List
 
-Users can utilize the various dropdown parameters at the top of the screen to generate different views of the Supply Plan Report. Each view of report generated, will have both a graphical representation and tabular equivalent of the data. There are three main views of the Supply Plan Report:
+![QAT Problem List](/img/media/image198.png)
+*QAT Problem List*
 
-<ol style={{listStyleType: 'decimal', paddingLeft: '20px'}}>
-  <li>
-    <div>
-      <b>Single Program View</b>
-      <ol style={{listStyleType: 'lower-alpha', paddingLeft: '20px', marginTop: '5px'}}>
-        <li>Single program</li>
-        <li>Single Planning Unit (PU) or single Alternate Reporting Unit (ARU)</li>
-        <li>Shipments disaggregated by status (i.e. planning, shipped, received, etc.)</li>
-      </ol>
-      <br />
-      <img src={require('@site/static/img/media/image193.png').default} alt="Figure 115: Supply Plan Report: Single Program View, Graph" style={{display: 'block', maxWidth: '100%', margin: '15px 0', border: '1px solid #ddd'}} />
-      <i>Figure 115: Supply Plan Report: Single Program View, Graph</i>
-      <br /><br />
-      <img src={require('@site/static/img/media/image194.png').default} alt="Figure 116: Supply Plan Report: Single Program View, Tabular Data" style={{display: 'block', maxWidth: '100%', margin: '15px 0', border: '1px solid #ddd'}} />
-      <i>Figure 116: Supply Plan Report: Single Program View, Tabular Data</i>
-    </div>
-  </li>
-  <br />
-  <li>
-    <div>
-      <b>Multi-Program View</b>
-      <ol style={{listStyleType: 'lower-alpha', paddingLeft: '20px', marginTop: '5px'}}>
-        <li>Multiple programs</li>
-        <li>Single PU or ARU</li>
-        <li>Shipments disaggregated by program (i.e. FASPonia Malaria MOH & FASPonia Malaria Social Marketing)</li>
-        <li><b>Notes:</b> QAT is able to aggregate the supply planning data across multiple programs if they share the <b>same</b> PU/ARU. This could be useful if a country has multiple parallel programs monitoring the same products and would like to see an aggregated or national view of the stock status over time.</li>
-      </ol>
-      <br />
-      <img src={require('@site/static/img/media/image195.png').default} alt="Figure 117: Supply Plan Report: Multi-program View" style={{display: 'block', maxWidth: '100%', margin: '15px 0', border: '1px solid #ddd'}} />
-      <i>Figure 117: Supply Plan Report: Multi-program View</i>
-      <br /><br />
-      <img src={require('@site/static/img/media/image196.png').default} alt="Figure 118: Supply Plan Report: Multi-program/EU View, Tabular Data" style={{display: 'block', maxWidth: '100%', margin: '15px 0', border: '1px solid #ddd'}} />
-      <i>Figure 118: Supply Plan Report: Multi-program/EU View, Tabular Data</i>
-    </div>
-  </li>
-  <br />
-  <li>
-    <div>
-      <b>Equivalency Unit (EU) View</b>
-      <ol style={{listStyleType: 'lower-alpha', paddingLeft: '20px', marginTop: '5px'}}>
-        <li>Single or multiple programs</li>
-        <li>Multiple PUs (<i>ARUs</i> <i>cannot</i> be used with EUs)</li>
-        <li>Shipments disaggregated by program, PU, or program-PU</li>
-        <li><b>Notes:</b> QAT is able to <u>aggregate</u> across PUs that are different (different pack sizes, usage rates, etc.), but related by utilizing an EU (see <a href="./07-supply-planning-module-program-data.md#a5-equivalency-units">Equivalency Units</a> for more information) and a corresponding conversion factor. This could be useful for countries or global viewers that would like to see concepts such as, Malaria Treatments, Couples Year Protection (CYP), ARV Patient Months, etc. as an aggregate.</li>
-      </ol>
-      <br />
-      <img src={require('@site/static/img/media/image197.png').default} alt="Figure 119: Supply Plan Report: Equivalency Unit View" style={{display: 'block', maxWidth: '100%', margin: '15px 0', border: '1px solid #ddd'}} />
-      <i>Figure 119: Supply Plan Report: Equivalency Unit View</i>
-    </div>
-  </li>
-</ol>
+**Note:** Only the Problem associated with the programs that have been downloaded by the user in their local machine will appear in the QAT Problem List. For details on how to download specific programs and versions, refer to the [Download Program](./06-managing-programs-and-versions.md#b-downloaddelete) section of the User Manual.
 
-<div style={{display: 'flex', gap: '20px', alignItems: 'flex-start', flexWrap: 'wrap', margin: '20px 0'}}>
-  <div style={{flex: '1 1 450px'}}>
-    <p style={{fontWeight: 'bold', margin: '0 0 10px 0'}}>Note:</p>
-    <ol style={{listStyleType: 'decimal', paddingLeft: '20px', margin: 0}}>
-      <li style={{marginBottom: '10px'}}>The report utilizes the Planning Unit settings set by the Program Admin for AMC, shelf life, MIN, reorder interval, and MAX</li>
-      <li style={{marginBottom: '10px'}}>The Shipment Quantity column is the sum of all shipments that have a receive date in the same month for that planning unit</li>
-      <li style={{marginBottom: '10px'}}>The “Shipment Quantity | Funding Source | Shipment Status | Procurement Agent | RO – Prime line No | Order No – Prime line No” column allows the user to see the disaggregated shipments that have receive date in the same month, including details of quantity, procurement agent, status, funding source, and order number assigned to that order</li>
-      <li style={{marginBottom: '10px'}}>The “Consensus Consumption” column only appears if a user chooses multiple programs for aggregation</li>
-      <li style={{marginBottom: '10px'}}>The PDF and CSV exports have multiple options, similar to the report dropdowns, allowing for exports of aggregated programs, multiple single product supply plans, or aggregated products (via EUs)</li>
-    </ol>
+### G1. QAT Problem List Basics
+Each Problem that is flagged in the QAT Problem List will have a separate line. This will have the associated planning unit, a description of the problem, a suggestion on how to fix the problem, the problem status, user notes, a checkbox for identifying if the problem has been reviewed, the latest reviewer notes (as applicable), the date it was last reviewed and the criticality.
+
+![Aspects QAT Problem List](/img/media/image199.png)
+*Aspects QAT Problem List*
+
+QAT Problems can be subdivided into four main categories: Data Quality, Procurement Schedule, Supply Planning, and Other. They are also assigned to different levels of criticality: Low (blue), Medium (yellow), High (orange), and Critical (red). The criticality informs users the extent to which a problem affects the quality of the supply plan. However, regardless of criticality, all problems must be “In-compliance” or “Addressed” in the QAT Problem List in order for a program to be uploaded as a Final Version. There are five main statuses associated with the individual problems in the QAT Problem List:
+
+1. **In-Compliance** – Issue has been closed through data entry by the user. Status will be automatically changed, and notes are not required.
+
+   Example – *A planning unit is missing actual consumption in the last 3 months. A user enters actual consumption data for the last 3 months. QAT automatically marks this as 'in-compliance'.*
+2. **Resolved** – Issue has been manually marked by reviewer as 'resolved'. The reviewer uses this status if this issue will unlikely be corrected via data entry and also does not require further notes in the future. Only a reviewer can mark an issue as 'resolved'.
+
+   Example – *A planning unit gets flagged for not following dynamic forecasting. The user enters a note that this planning unit does not follow dynamic forecasting as it is not a seasonal product. The reviewer marks this as resolved because the explanation will most likely not change in the future.*
+3. **Addressed** – Issue has been manually marked by either reviewer or user as 'addressed'. The user applies this status when they cannot resolve the issue through data entry. This status must be accompanied by a note. The reviewer uses this status if this issue cannot be resolved in this review period, but will be resolved in the future, most likely in a few periods, rather than before the next review.
+
+   Example – *A planning unit being phased out only has 8 months of forecasted consumption in the future instead of 18. This is acceptable as it is a phasing out planning unit, but the user will still need to de-activate the planning unit once it is fully phased out, which is why the issue is marked as 'addressed' instead of 'resolved'.*
+4. **Open** – This problem has been automatically flagged by QAT, or the problem has been manually marked by the reviewer as ‘Open’. The reviewer could use this status when rejecting a supply plan to indicate that the notes are not accepted.
+
+   Example – *A user has a planning unit that is missing actual consumption data in the last 3 months. QAT will automatically flag this as 'Open'. If the problem has been 'Addressed' when uploaded and approved, the problem will revert back to the 'Open' status for the next submission.*
+5. **Reviewed** - The issue has been reviewed by the supply plan reviewer. This field is only editable by the supply plan reviewer.
+
+### G2. Closing and Addressing Problems
+
+1. **Closing a problem via data entry:** to change an ‘Open’ problem to one that is ‘In-compliance,’ the user will need to complete the suggestion provided in the “Suggestion” column for the specific problem. For example, the suggestion may be to “provide actual consumption” for specific months. Thus, the user will need to:
+
+   ![Closing a Problem Example](/img/media/image200.png)
+   *Closing a Problem Example*
+
+   <ol style={{listStyleType: 'lower-alpha'}}>
+     <li>Navigate to the Consumption Data Entry screen by either clicking directly on the Problem (which will open a new QAT window) or by clicking on Supply Plan Data → Consumption Data.</li>
+     <li>From the consumption data entry screen, the user will add actual consumption for the requested months. For instructions on how to add consumption, please refer to <a href="./07-supply-planning-module-program-data.md#consumption-data">Consumption Data</a>.</li>
+     <li>Navigate back to the QAT Problem List and click Recalculate to refresh the QAT Problem List to include the most recent addition of actual consumption data. The previously flagged problem should now be “In-compliance” and no longer be flagged by the QAT Problem List.</li>
+   </ol>
+
+   ![QAT Problem List Recalculate/Refresh](/img/media/image201.png)
+   *FQAT Problem List Recalculate/Refresh*
+
+2. **Addressing a problem with a comment:** If a problem that has been flagged in the QAT Problem List cannot be fixed and made 'In-compliance' through data entry as recommended in the "Suggestion" column, a user can provide a comment and manually change the status to "Addressed." For example, a planning unit may be overstock/understocked and the suggestion to "re-evaluate supply plan to meet the min/max parameters" is presented. If a user is unable to fix this problem via data entry, they will need to address the problem:
+   <ol style={{listStyleType: 'lower-alpha'}}>
+     <li>Double-click on the Problem Status dropdown for that problem and choose "Addressed." Users must provide an explanatory note in the Notes column for all problems marked as "Addressed."</li>
+   </ol>
+
+   ![Addressing a Problem & Adding a Note](/img/media/image202.png)
+   *Addressing a Problem & Adding a Note*
+
+   **Note:** the user can also see in the "Problem Transaction Details" screen by right clicking on the Problem. This area will show the user past notes, reviewers, dates reviewed, etc.
+
+   ![Problem Transaction Right Click](/img/media/image203.png)
+   *Figure Problem Transaction Right Click*
+
+   ![Problem Transaction Details](/img/media/image204.png)
+   *Figure: Problem Transaction Details*
+
+   <ol style={{listStyleType: 'lower-alpha'}} start="2">
+     <li>Click "Update." The QAT Problem List will now include the most recent addition of explanatory notes and the status.</li>
+   </ol>
+
+### G3. QAT Problem List: Explanation of Problems
+
+- **Missing recent actual consumption inputs (within the last 3 months)**
+  If a planning unit is missing recent actual consumption data inputs within the last three months, it will be flagged in the QAT Problem List. If the inputs are filled in for any of these last three months, whether it is one month or all three months, the problem will not be flagged by the system.
+
+- **Any gaps in the last 6 months (actual consumption)**
+  QAT checks if a planning unit is missing a month or multiple months of recent actual consumption inputs between two actual consumption entries in the specified 6-month range. This problem is looking for accidental gaps in actual consumption inputs. If there is any gap in actual consumption data in the past 6 months, the QAT Problem List will flag this as an issue. For example, a user inputs actual consumption for September, October, and December. This will be flagged by the QAT Problem list because there is a gap of missing actual consumption inputs for November.
+
+- **Missing recent inventory inputs (within the last 3 months)**
+  If a planning unit is missing recent actual inventory data inputs within the last three months, it will be flagged in the QAT Problem List. If the inputs are filled in for any of these last three months, whether it is one month or all three months, the problem will not be flagged by the system.
+
+- **Supply Plan lacks forecasted consumption within the next 18 months**
+  If a planning unit is missing the forecasted consumption inputs for one or more months for a period of 18 months from the current month, QAT will flag it as a problem. QAT will check for gaps to ensure that all of the future 18 months have forecasted consumption values.
+
+  **Note:** *If there is a planning unit that is phasing out, it is recommended that the user puts zero as the forecasted consumption, until it is fully phased out, at which point the planning unit will need to be deactivated.*
+
+- **Shipments with received dates in the past**
+  QAT will check the receive dates of all shipments to see if any are in the past based on the current date. If the receive date for a shipment is in the past, it will be flagged in the QAT Problem List. For example, there is a planning unit with a receive date of September 30<sup>st</sup>, 2026. As this date is in the past, QAT will flag it, and the user will need to either change the shipment status to “Received” or change the receive date to one that is in the future.
+
+  **Note:** *there is a fourteen-day buffer time for QAT to recognize that the shipment receive date is in the past and for the problem to be flagged.*
+
+- **Shipments that should have been submitted by the target date**
+  QAT will check the estimated shipment dates, which are calculated based on the Program’s pre-defined lead times, to see if there are any shipments with an estimated “Submitted” date in the past. If the estimated shipment submitted date is in the past, it will be flagged in the QAT Problem List. For example, there is a planning unit with a target submitted date of October 15<sup>th</sup>, 2026. As this date is in the past, QAT will flag it, and the user will need to either change the shipment status to “Submitted” or change the receive date to one that is further in the future. Changing the receive date to one further in the future, will cause QAT to automatically recalculate the target shipment dates. If it is not possible to change the status or receive date, a user many ‘Address’ the problem (see [Closing and Addressing Problems](#a2-closing-and-addressing-problems)).
+
+  **Note:** *There is a fourteen-day buffer time for QAT to recognize that the shipment submitted date is in the past and for the problem to be flagged.*
+
+- **Dynamic forecasting is not used (for commodity groups Malaria, ARV, VMMC)**
+  For any products that belong to the following tracer categories: Malaria, ARV, or VMMC, QAT will check for dynamic forecasting. Forecasting best practices encourages forecasting with dynamic monthly values, in order to show that factors, such as seasonality, program scale-up, or campaigns have been taken into account. If a planning unit from one of these three commodity groups has four consecutive months with static consumption, it will be flagged in the QAT Problem List.
+
+- **Supply Plan does not follow minimum/maximum parameters**
+  If a planning unit is overstocked, understocked or stocked out at any point during the next 18 months, it will be flagged in the QAT Problem List, denoting the exact months that are experiencing the issue. The QAT Problem List will also denote the number of shipments being received in the next 18 months.
+
+  **Plan by MOS:** Overstocked is defined by MOS > Maximum MOS. Understocked is defined by MOS < Minimum MOS. See below for an example of a problem and the accompanying supply plan graph:
+
+  <div style={{border: '1.5px solid #000', padding: '15px', margin: '20px auto', maxWidth: '500px', backgroundColor: '#ffffff', textAlign: 'center', color: '#000'}}>
+    <p style={{fontWeight: 'bold', fontSize: '1.15em', margin: '0 0 10px 0'}}>Flagged in Sep 2026</p>
+    <p style={{margin: '0 0 5px 0'}}>In the next 18 months, this supply plan is</p>
+    <p style={{margin: '0 0 5px 0'}}>*OVER MAX for 13 month(s) (Jan-27 to Mar-27, Jul-27 to Apr-28)</p>
+      <br/>
+    <p style={{margin: '0'}}>There are shipment(s) in Nov-26, May-27, Oct-27, Apr-28
   </div>
-  <div style={{flex: '1 1 380px', border: '1.5px solid #000', padding: '15px', borderRadius: '4px', backgroundColor: '#eeeeee', fontSize: '0.9em', color: '#000'}}>
-    <div style={{fontWeight: 'bold', textDecoration: 'underline', marginBottom: '15px'}}>Calculations for the Varying Supply Plan Report Views:</div>
-    
-    <div style={{fontWeight: 'bold', marginBottom: '5px'}}>Single Program</div>
-    <div style={{marginBottom: '10px'}}>
-      <u>Ending Balance</u> = Opening Balance – Consumption + Shipments ± Adjustments – Expiries
-    </div>
-    <div style={{marginBottom: '20px'}}>
-      <u>MOS</u> = Ending Balance / AMC
-    </div>
-    
-    <div style={{fontWeight: 'bold', marginBottom: '5px'}}>Multi-Program/Equivalency Unit</div>
-    <div style={{fontStyle: 'italic', marginBottom: '10px'}}>Same ending balance & MOS calculation</div>
-    
-    <div style={{marginBottom: '15px'}}>
-      <u>Forecast, Actual, Shipment, Adjustment, Expiries, MIN, MAX</u> = Σ selected programs individual data elements
-    </div>
-    <div>
-      <u>Consensus consumption:</u> Σ selected program actuals (if available), otherwise forecasts. <i>Therefore, this could be a sum of actuals and forecasts depending on data available.</i>
-    </div>
-  </div>
-</div>
 
+  ![Supply Plan does not follow min/max MOS parameter example](/img/media/image205.png)
+  *Supply Plan does not follow min/max MOS parameter example*
+
+  **Note:** *If the MOS value for a given month is “N/A”, then all such instances are excluded while calculating the overstocked, understocked or stocked out problems.*
+
+  **Plan by Quantity Example:** Overstocked is defined by Ending Balance Quantity > Maximum Quantity. Understocked is defined by Ending Balance Quantity < Minimum Quantity. Note that QAT will only flag the overstock if this overstock occurs more than distribution lead time in a row (e.g. if lead time is 2 months, then QAT flags if there is an overstock more than 2 months in a row - but won’t flag the problem if the overstock every other month). See below for an example of a problem and the accompanying supply plan graph:
+
+  <div style={{border: '1.5px solid #000', padding: '15px', margin: '20px auto', maxWidth: '550px', backgroundColor: '#ffffff', textAlign: 'center', color: '#000'}}>
+    <p style={{fontWeight: 'bold', fontSize: '1.15em', margin: '0 0 10px 0'}}>Flagged in Feb 2021 (Distribution lead time is 1 month)</p>
+    <p style={{fontStyle: 'italic', margin: '0 0 5px 0'}}>In the next 1-6 months (Mar-23 to Aug-23), inventory is...</p>
+    <p style={{fontStyle: 'italic', margin: '0 0 5px 0'}}>* over the max stock qty + distribution lead time for 1 month(s)</p>
+    <p style={{fontStyle: 'italic', margin: '0 0 15px 0'}}>* under the min stock qty for 0 month(s)</p>
+    <br/>
+    <p style={{fontStyle: 'italic', margin: '0 0 5px 0'}}>In the next 7-18 months (Sep-23 to Aug-24), inventory is...</p>
+    <p style={{fontStyle: 'italic', margin: '0 0 5px 0'}}>* over the max stock qty + distribution lead time for 6 month(s)</p>
+    <p style={{fontStyle: 'italic', margin: '0 0 0 0'}}>* under the min stock qty for 0 month(s)</p>
+  </div>
+
+  ![Supply Plan does not follow min/max quantity parameter example](/img/media/image206.png)
+  *Supply Plan does not follow min/max quantity parameter example*
+
+- **Other – Manual**
+  These are specific questions or clarifications manually entered by the supply plan reviewer that are not automatically flagged by QAT. These problems could be items that supply plan reviewer wants addressed that quarter before finalizing or a reminder for the next quarterly submission. The problem description, suggestion, and the criticality are determined by the supply plan reviewer.
