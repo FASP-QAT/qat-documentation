@@ -1,4 +1,5 @@
 ---
+---
 id: supply-planning-module-reports
 title: "6. Supply Planning Module: Reports"
 sidebar_label: "   6. Supply Plan Reports"
@@ -9,160 +10,108 @@ sidebar_position: 7
 
 QAT reports allow the user to extract and view their supply planning data in graphs, tables, and other visual formats. The user will also be able to navigate, sort, filter, and view the data for specific needs. QAT reports produce visualizations and display data in a way that can support decision making.
 
-The reports are divided into **Global Reports** and **Program-specific Reports**. Program-specific Reports are shown offline, as well as online. However, the Global Reports are shown only in online mode and are only available to Global Users, such as the Realm Administrator and the Application Administrator.
-
 **Note:** All QAT reports have the ability to be exported into an Excel CSV file as well as PDF format. Additionally, all graphs allow for the user to hover over a visual for a tool tip with more information.
 
-## A. **QAT Problem List**
+## A. Supply Plan Report
 
-**Purpose:** A Supply Plan Review integrated within QAT that allows for a quality check to easily identify problematic data/issues and correct these before uploading a supply plan to the server as a “Draft” or “Final” version.
+The purpose of the supply plan report is to allow the user to quickly assess the stock status of one or more selected programs and/or planning units, by graphically comparing the stock projections to dynamic minimum and maximum inventory levels and to be able to see all consumption (both actual and forecast), inventory, and shipping details in one place. The report provides a graphical representation of the supply plan, as well as a tabular view. The report can be exported in PDF and/or CSV format.
 
-- **Accessible to:** Realm Admins, Program Admins, and Program Users
-- **Navigation:** Reports → QAT Problem List
+<ul style={{listStyleType: 'disc', paddingLeft: '20px', margin: '15px 0'}}>
+  <li><b>Accessible to:</b> Realm Admins, Program Admins, Program Users, and Reports Viewer</li>
+  <li><b>Navigation:</b> Reports &rarr; Supply Plan Report</li>
+</ul>
 
-![Figure 120: QAT Problem List](/img/media/image198.png)
-*Figure 120: QAT Problem List*
+Users can utilize the various dropdown parameters at the top of the screen to generate different views of the Supply Plan Report. Each view of report generated, will have both a graphical representation and tabular equivalent of the data. There are three main views of the Supply Plan Report:
 
-**Note:** Only the Problem associated with the programs that have been downloaded by the user in their local machine will appear in the QAT Problem List. For details on how to download specific programs and versions, refer to the [Download Program](./06-managing-programs-and-versions.md#b-downloaddelete) section of the User Manual.
+<ol style={{listStyleType: 'decimal', paddingLeft: '20px'}}>
+  <li>
+    <div>
+      <b>Single Program View</b>
+      <ol style={{listStyleType: 'lower-alpha', paddingLeft: '20px', marginTop: '5px'}}>
+        <li>Single program</li>
+        <li>Single Planning Unit (PU) or single Alternate Reporting Unit (ARU)</li>
+        <li>Shipments disaggregated by status (i.e. planning, shipped, received, etc.)</li>
+      </ol>
+      <br />
+      <img src={require('@site/static/img/media/image193.png').default} alt="Figure 115: Supply Plan Report: Single Program View, Graph" style={{display: 'block', maxWidth: '100%', margin: '15px 0', border: '1px solid #ddd'}} />
+      <i>Figure 115: Supply Plan Report: Single Program View, Graph</i>
+      <br /><br />
+      <img src={require('@site/static/img/media/image194.png').default} alt="Figure 116: Supply Plan Report: Single Program View, Tabular Data" style={{display: 'block', maxWidth: '100%', margin: '15px 0', border: '1px solid #ddd'}} />
+      <i>Figure 116: Supply Plan Report: Single Program View, Tabular Data</i>
+    </div>
+  </li>
+  <br />
+  <li>
+    <div>
+      <b>Multi-Program View</b>
+      <ol style={{listStyleType: 'lower-alpha', paddingLeft: '20px', marginTop: '5px'}}>
+        <li>Multiple programs</li>
+        <li>Single PU or ARU</li>
+        <li>Shipments disaggregated by program (i.e. FASPonia Malaria MOH & FASPonia Malaria Social Marketing)</li>
+        <li><b>Notes:</b> QAT is able to aggregate the supply planning data across multiple programs if they share the <b>same</b> PU/ARU. This could be useful if a country has multiple parallel programs monitoring the same products and would like to see an aggregated or national view of the stock status over time.</li>
+      </ol>
+      <br />
+      <img src={require('@site/static/img/media/image195.png').default} alt="Figure 117: Supply Plan Report: Multi-program View" style={{display: 'block', maxWidth: '100%', margin: '15px 0', border: '1px solid #ddd'}} />
+      <i>Figure 117: Supply Plan Report: Multi-program View</i>
+      <br /><br />
+      <img src={require('@site/static/img/media/image196.png').default} alt="Figure 118: Supply Plan Report: Multi-program/EU View, Tabular Data" style={{display: 'block', maxWidth: '100%', margin: '15px 0', border: '1px solid #ddd'}} />
+      <i>Figure 118: Supply Plan Report: Multi-program/EU View, Tabular Data</i>
+    </div>
+  </li>
+  <br />
+  <li>
+    <div>
+      <b>Equivalency Unit (EU) View</b>
+      <ol style={{listStyleType: 'lower-alpha', paddingLeft: '20px', marginTop: '5px'}}>
+        <li>Single or multiple programs</li>
+        <li>Multiple PUs (<i>ARUs</i> <i>cannot</i> be used with EUs)</li>
+        <li>Shipments disaggregated by program, PU, or program-PU</li>
+        <li><b>Notes:</b> QAT is able to <u>aggregate</u> across PUs that are different (different pack sizes, usage rates, etc.), but related by utilizing an EU (see <a href="./07-supply-planning-module-program-data.md#a5-equivalency-units">Equivalency Units</a> for more information) and a corresponding conversion factor. This could be useful for countries or global viewers that would like to see concepts such as, Malaria Treatments, Couples Year Protection (CYP), ARV Patient Months, etc. as an aggregate.</li>
+      </ol>
+      <br />
+      <img src={require('@site/static/img/media/image197.png').default} alt="Figure 119: Supply Plan Report: Equivalency Unit View" style={{display: 'block', maxWidth: '100%', margin: '15px 0', border: '1px solid #ddd'}} />
+      <i>Figure 119: Supply Plan Report: Equivalency Unit View</i>
+    </div>
+  </li>
+</ol>
 
-### A1. **QAT Problem List Basics**
-Each Problem that is flagged in the QAT Problem List will have a separate line. This will have the associated planning unit, a description of the problem, a suggestion on how to fix the problem, the problem status, user notes, a checkbox for identifying if the problem has been reviewed, the latest reviewer notes (as applicable), the date it was last reviewed and the criticality.
-
-![Figure 121: Aspects QAT Problem List](/img/media/image199.png)
-*Figure 121: Aspects QAT Problem List*
-
-QAT Problems can be subdivided into four main categories: Data Quality, Procurement Schedule, Supply Planning, and Other. They are also assigned to different levels of criticality: Low (yellow), Medium (orange), and High (red). The criticality informs users the extent to which a problem affects the quality of the supply plan. However, regardless of criticality, all problems must be “In-compliance” or “Addressed” in the QAT Problem List to be uploaded as a Final Version. There are five main statuses associated with the individual problems in the QAT Problem List:
-
-1. **In-Compliance** – Issue has been closed through data entry by the user. Status will be automatically changed, and notes are not required.
-
-   Example – *A planning unit is missing actual consumption in the last 3 months. A user enters actual consumption data for the last 3 months. QAT automatically marks this as 'in-compliance'.*
-2. **Resolved** – Issue has been manually marked by reviewer as 'resolved'. The reviewer uses this status if this issue will unlikely be corrected via data entry and also does not require further notes in the future. Only a reviewer can mark an issue as 'resolved'.
-
-   Example – *A planning unit gets flagged for not following dynamic forecasting. The user enters a note that this planning unit does not follow dynamic forecasting as it is not a seasonal product. The reviewer marks this as resolved because the explanation will most likely not change in the future.*
-3. **Addressed** – Issue has been manually marked by either reviewer or user as 'addressed'. The user applies this status when they cannot resolve the issue through data entry. This status must be accompanied by a note. The reviewer uses this status if this issue cannot be resolved in this review period, but will be resolved in the future, most likely in a few periods, rather than before the next review.
-
-   Example – *A planning unit being phased out only has 8 months of forecasted consumption in the future instead of 18. This is acceptable as it is a phasing out planning unit, but the user will still need to de-activate the planning unit once it is fully phased out, which is why the issue is marked as 'addressed' instead of 'resolved'.*
-4. **Open** – This problem has been automatically flagged by QAT, or the problem has been manually marked by the reviewer as ‘Open’. The reviewer could use this status when rejecting a supply plan to indicate that the notes are not accepted.
-
-   Example – *A user has a planning unit that is missing actual consumption data in the last 3 months. QAT will automatically flag this as 'Open'. If the problem has been 'Addressed' when uploaded and approved, the problem will revert back to the 'Open' status for the next submission.*
-5. **Reviewed** - The issue has been reviewed by the supply plan reviewer. This field is only editable by the supply plan reviewer.
-
-### A2. **Closing and Addressing Problems**
-
-1. **Closing a problem via data entry:** to change an ‘Open’ problem to one that is ‘In-compliance,’ the user will need to complete the suggestion provided in the “Suggestion” column for the specific problem. For example, the suggestion may be to “provide actual consumption” for specific months. Thus, the user will need to:
-
-   ![Figure 122: Closing a Problem Example](/img/media/image200.png)
-   *Figure 122: Closing a Problem Example*
-
-   <ol style={{listStyleType: 'lower-alpha'}}>
-     <li>Navigate to the Consumption Data Entry screen by either clicking directly on the Problem (which will open a new QAT window) or by clicking on Supply Plan Data → Consumption Data.</li>
-     <li>From the consumption data entry screen, the user will add actual consumption for the requested months. For instructions on how to add consumption, please refer to <a href="./07-supply-planning-module-program-data.md#consumption-data">Consumption Data</a>.</li>
-     <li>Navigate back to the QAT Problem List and click Recalculate to refresh the QAT Problem List to include the most recent addition of actual consumption data. The previously flagged problem should now be “In-compliance” and no longer be flagged by the QAT Problem List.</li>
-   </ol>
-
-   ![Figure 123: QAT Problem List Recalculate/Refresh](/img/media/image201.png)
-   *Figure 123: QAT Problem List Recalculate/Refresh*
-
-2. **Addressing a problem with a comment:** If a problem that has been flagged in the QAT Problem List cannot be fixed and made 'In-compliance' through data entry as recommended in the "Suggestion" column, a user can provide a comment and manually change the status to "Addressed." For example, a planning unit may be overstock/understocked and the suggestion to "re-evaluate supply plan to meet the min/max parameters" is presented. If a user is unable to fix this problem via data entry, they will need to address the problem:
-   <ol style={{listStyleType: 'lower-alpha'}}>
-     <li>Double-click on the Problem Status dropdown for that problem and choose "Addressed." Users must provide an explanatory note in the Notes column for all problems marked as "Addressed."</li>
-   </ol>
-
-   ![Figure 124: Addressing a Problem & Adding a Note](/img/media/image202.png)
-   *Figure 124: Addressing a Problem & Adding a Note*
-
-   **Note:** the user can also see in the "Problem Transaction Details" screen by right clicking on the Problem. This area will show the user past notes, reviewers, dates reviewed, etc.
-
-   ![Figure 125: Problem Transaction Right Click](/img/media/image203.png)
-   *Figure 125: Problem Transaction Right Click*
-
-   ![Figure 126: Problem Transaction Details](/img/media/image204.png)
-   *Figure 126: Problem Transaction Details*
-
-   <ol style={{listStyleType: 'lower-alpha'}} start="2">
-     <li>Click "Update." The QAT Problem List will now include the most recent addition of explanatory notes and the status.</li>
-   </ol>
-
-### A3. **QAT Problem List: Explanation of Problems**
-
-- **Missing recent actual consumption inputs (within the last 3 months)**
-  If a planning unit is missing recent actual consumption data inputs within the last three months, it will be flagged in the QAT Problem List. If the inputs are filled in for any of these last three months, whether it is one month or all three months, the problem will not be flagged by the system.
-
-- **Any gaps in the last 6 months (actual consumption)**
-  QAT checks if a planning unit is missing a month or multiple months of recent actual consumption inputs between two actual consumption entries in the specified 6-month range. This problem is looking for accidental gaps in actual consumption inputs. If there is any gap in actual consumption data in the past 6 months, the QAT Problem List will flag this as an issue. For example, a user inputs actual consumption for September 2022, December 2022, and January 2023. This will be flagged by the QAT Problem list because there is a gap of missing actual consumption inputs for October 2022 and November 2022.
-
-- **Missing recent inventory inputs (within the last 3 months)**
-  If a planning unit is missing recent actual inventory data inputs within the last three months, it will be flagged in the QAT Problem List. If the inputs are filled in for any of these last three months, whether it is one month or all three months, the problem will not be flagged by the system.
-
-- **Supply Plan lacks forecasted consumption within the next 18 months**
-  If a planning unit is missing the forecasted consumption inputs for one or more months for a period of 18 months from the current month, QAT will flag it as a problem. QAT will check for gaps to ensure that all of the future 18 months have forecasted consumption values.
-
-  **Note:** *If there is a planning unit that is phasing out, it is recommended that the user puts zero as the forecasted consumption, until it is fully phased out, at which point the planning unit will need to be deactivated.*
-
-- **Shipments with received dates in the past**
-  QAT will check the receive dates of all shipments to see if any are in the past based on the current date. If the receive date for a shipment is in the past, it will be flagged in the QAT Problem List. For example, there is a planning unit with a receive date of December 31<sup>st</sup>, 2022. As this date is in the past, QAT will flag it, and the user will need to either change the shipment status to “Received” or change the receive date to one that is in the future.
-
-  **Note:** *there is a fourteen-day buffer time for QAT to recognize that the shipment receive date is in the past and for the problem to be flagged.*
-
-- **Shipments that should have been submitted by the target date**
-  QAT will check the estimated shipment dates, which are calculated based on the Program’s pre-defined lead times, to see if there are any shipments with an estimated “Submitted” date in the past. If the estimated shipment submitted date is in the past, it will be flagged in the QAT Problem List. For example, there is a planning unit with a target submitted date of January 15<sup>th</sup>, 2023. As this date is in the past, QAT will flag it, and the user will need to either change the shipment status to “Submitted” or change the receive date to one that is further in the future. Changing the receive date to one further in the future, will cause QAT to automatically recalculate the target shipment dates. If it is not possible to change the status or receive date, a user many ‘Address’ the problem (see [Closing and Addressing Problems](#a2-closing-and-addressing-problems)).
-
-  **Note:** *There is a fourteen-day buffer time for QAT to recognize that the shipment submitted date is in the past and for the problem to be flagged.*
-
-- **Dynamic forecasting is not used (for commodity groups Malaria, ARV, VMMC)**
-  For any products that belong to the following tracer categories: Malaria, ARV, or VMMC, QAT will check for dynamic forecasting. GHSC-PSM encourages forecasting with dynamic monthly values, in order to show that factors, such as seasonality, program scale-up, or campaigns have been taken into account. If a planning unit from one of these three commodity groups has four consecutive months with static consumption, it will be flagged in the QAT Problem List.
-
-- **Supply Plan does not follow minimum/maximum parameters**
-  If a planning unit is overstocked, understocked or stocked out at any point during the next 18 months, it will be flagged in the QAT Problem List. QAT will count the number of months the planning unit is overstocked and understocked, by subdividing it in two different time windows: those months within lead time (1-6 months) and those within the planning window (7-18 months). The QAT Problem List will also denote the number of shipments being received in the next 1-6 months and the next 7-18 months. Stock-outs will be flagged as a separate problem in the QAT Problem List. QAT will directly state which months are stocked out in the subdivided time periods of 1-6 months and 7-18 months. The QAT Problem List will also denote the number of shipments being received in the next 1-6 months and the next 7-18 months.
-
-  **Plan by MOS:** Overstocked is defined by MOS > Maximum MOS. Understocked is defined by MOS < Minimum MOS. See below for an example of a problem and the accompanying supply plan graph:
-
-  <div style={{border: '1.5px solid #000', padding: '15px', margin: '20px auto', maxWidth: '500px', backgroundColor: '#ffffff', textAlign: 'center', color: '#000'}}>
-    <p style={{fontWeight: 'bold', fontSize: '1.15em', margin: '0 0 10px 0'}}>Flagged in Feb 2021</p>
-    <p style={{fontStyle: 'italic', margin: '0 0 5px 0'}}>In the next 1-6 months (Mar 21 - Aug 21), inventory is...</p>
-    <p style={{fontWeight: 'bold', fontStyle: 'italic', margin: '0 0 5px 0'}}>understocked for 2 month(s)</p>
-    <p style={{fontWeight: 'bold', fontStyle: 'italic', margin: '0 0 10px 0'}}>overstocked for 1 month(s)</p>
-    <p style={{fontStyle: 'italic', margin: '0 0 5px 0'}}>In the next 7-18 months (Sep 21 - Aug 22), inventory is...</p>
-    <p style={{fontWeight: 'bold', fontStyle: 'italic', margin: '0 0 5px 0'}}>understocked for 0 month(s)</p>
-    <p style={{fontWeight: 'bold', fontStyle: 'italic', margin: '0 0 15px 0'}}>overstocked for 3 month(s)</p>
-    <br/>
-    <p style={{margin: '0', fontStyle: 'italic'}}><b>Note:</b> There are 2 shipment(s) in the next 1-6 months, and<br/>there are 3 shipment(s) in the next 7-18 months.</p>
+<div style={{display: 'flex', gap: '20px', alignItems: 'flex-start', flexWrap: 'wrap', margin: '20px 0'}}>
+  <div style={{flex: '1 1 450px'}}>
+    <p style={{fontWeight: 'bold', margin: '0 0 10px 0'}}>Note:</p>
+    <ol style={{listStyleType: 'decimal', paddingLeft: '20px', margin: 0}}>
+      <li style={{marginBottom: '10px'}}>The report utilizes the Planning Unit settings set by the Program Admin for AMC, shelf life, MIN, reorder interval, and MAX</li>
+      <li style={{marginBottom: '10px'}}>The Shipment Quantity column is the sum of all shipments that have a receive date in the same month for that planning unit</li>
+      <li style={{marginBottom: '10px'}}>The “Shipment Quantity | Funding Source | Shipment Status | Procurement Agent | RO – Prime line No | Order No – Prime line No” column allows the user to see the disaggregated shipments that have receive date in the same month, including details of quantity, procurement agent, status, funding source, and order number assigned to that order</li>
+      <li style={{marginBottom: '10px'}}>The “Consensus Consumption” column only appears if a user chooses multiple programs for aggregation</li>
+      <li style={{marginBottom: '10px'}}>The PDF and CSV exports have multiple options, similar to the report dropdowns, allowing for exports of aggregated programs, multiple single product supply plans, or aggregated products (via EUs)</li>
+    </ol>
   </div>
-
-  ![Figure 127: Supply Plan does not follow min/max MOS parameter example](/img/media/image205.png)
-  *Figure 127: Supply Plan does not follow min/max MOS parameter example*
-
-  **Note:** *If the MOS value for a given month is “N/A”, then all such instances are excluded while calculating the overstocked, understocked or stocked out problems.*
-
-  **Plan by Quantity Example:** Overstocked is defined by Ending Balance Quantity > Maximum Quantity. Understocked is defined by Ending Balance Quantity < Minimum Quantity. Note that QAT will only flag the overstock if this overstock occurs more than distribution lead time in a row (e.g. if lead time is 2 months, then QAT flags if there is an overstock more than 2 months in a row - but won’t flag the problem if the overstock every other month). See below for an example of a problem and the accompanying supply plan graph:
-
-  <div style={{border: '1.5px solid #000', padding: '15px', margin: '20px auto', maxWidth: '550px', backgroundColor: '#ffffff', textAlign: 'center', color: '#000'}}>
-    <p style={{fontWeight: 'bold', fontSize: '1.15em', margin: '0 0 10px 0'}}>Flagged in Feb 2021 (Distribution lead time is 1 month)</p>
-    <p style={{fontStyle: 'italic', margin: '0 0 5px 0'}}>In the next 1-6 months (Mar-23 to Aug-23), inventory is...</p>
-    <p style={{fontStyle: 'italic', margin: '0 0 5px 0'}}>* over the max stock qty + distribution lead time for 1 month(s)</p>
-    <p style={{fontStyle: 'italic', margin: '0 0 15px 0'}}>* under the min stock qty for 0 month(s)</p>
-    <br/>
-    <p style={{fontStyle: 'italic', margin: '0 0 5px 0'}}>In the next 7-18 months (Sep-23 to Aug-24), inventory is...</p>
-    <p style={{fontStyle: 'italic', margin: '0 0 5px 0'}}>* over the max stock qty + distribution lead time for 6 month(s)</p>
-    <p style={{fontStyle: 'italic', margin: '0 0 0 0'}}>* under the min stock qty for 0 month(s)</p>
+  <div style={{flex: '1 1 380px', border: '1.5px solid #000', padding: '15px', borderRadius: '4px', backgroundColor: '#eeeeee', fontSize: '0.9em', color: '#000'}}>
+    <div style={{fontWeight: 'bold', textDecoration: 'underline', marginBottom: '15px'}}>Calculations for the Varying Supply Plan Report Views:</div>
+    
+    <div style={{fontWeight: 'bold', marginBottom: '5px'}}>Single Program</div>
+    <div style={{marginBottom: '10px'}}>
+      <u>Ending Balance</u> = Opening Balance – Consumption + Shipments ± Adjustments – Expiries
+    </div>
+    <div style={{marginBottom: '20px'}}>
+      <u>MOS</u> = Ending Balance / AMC
+    </div>
+    
+    <div style={{fontWeight: 'bold', marginBottom: '5px'}}>Multi-Program/Equivalency Unit</div>
+    <div style={{fontStyle: 'italic', marginBottom: '10px'}}>Same ending balance & MOS calculation</div>
+    
+    <div style={{marginBottom: '15px'}}>
+      <u>Forecast, Actual, Shipment, Adjustment, Expiries, MIN, MAX</u> = Σ selected programs individual data elements
+    </div>
+    <div>
+      <u>Consensus consumption:</u> Σ selected program actuals (if available), otherwise forecasts. <i>Therefore, this could be a sum of actuals and forecasts depending on data available.</i>
+    </div>
   </div>
+</div>
 
-  ![Figure 128: Supply Plan does not follow min/max quantity parameter example](/img/media/image206.png)
-  *Figure 128: Supply Plan does not follow min/max quantity parameter example*
+## B. Supply Plan Scorecard
 
-- **Other – Manual**
-  These are specific questions or clarifications manually entered by the supply plan reviewer that are not automatically flagged by QAT. These problems could be items that supply plan reviewer wants addressed that quarter before finalizing or a reminder for the next quarterly submission. The problem description, suggestion, and the criticality are determined by the supply plan reviewer.
-
-## B. Program Catalog
-
-**Purpose:** to view a standardized list of all the planning units and forecasting units in a QAT program and their corresponding attributes.
-
-- **Accessible to:** Realm Admins, Program Admins, Report Viewers, and Program Users
-- **Navigation:** Reports ➔ Program Catalog
-- **Notes:** A user may select all Planning Unit Categories and Tracer Categories, or they may choose a specific category for viewing. If a user would like to add a planning unit that does not appear in the Program Catalog Report, please refer to [Tickets for Adding/Updating Users and Master Data](./05-getting-started.md#i1-tickets-for-addingupdating-users-and-master-data).
-
-![Figure 129: Program Catalog Report](/img/media/image207.png)
-*Figure 129: Program Catalog Report*
+**Coming soon! Check out the Show Guidance page in the meantime.**
 
 ## C. Stock Status Reports
 
