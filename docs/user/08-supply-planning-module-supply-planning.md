@@ -561,7 +561,7 @@ QAT Problems can be subdivided into four main categories: Data Quality, Procurem
     <p style={{margin: '0 0 5px 0'}}>In the next 18 months, this supply plan is</p>
     <p style={{margin: '0 0 5px 0'}}>*OVER MAX for 13 month(s) (Jan-27 to Mar-27, Jul-27 to Apr-28)</p>
       <br/>
-    <p style={{margin: '0'}}>There are shipment(s) in Nov-26, May-27, Oct-27, Apr-28
+    <p style={{margin: '0'}}>There are shipment(s) in Nov-26, May-27, Oct-27, Apr-28</p>
   </div>
 
   ![Supply Plan does not follow min/max MOS parameter example](/img/media/image205.png)
