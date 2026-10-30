@@ -1,5 +1,4 @@
 ---
----
 id: supply-planning-module-reports
 title: "6. Supply Planning Module: Reports"
 sidebar_label: "   6. Supply Plan Reports"
@@ -111,7 +110,7 @@ Users can utilize the various dropdown parameters at the top of the screen to ge
 
 ## B. Supply Plan Scorecard
 
-**Coming soon! Check out the Show Guidance page in the meantime.**
+*Coming soon! Check out the Show Guidance page in the meantime.*
 
 ## C. Stock Status Reports
 
